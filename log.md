@@ -47,4 +47,12 @@
 - Transcribed via Kimi ReadMediaFile (纯视觉分析，视频无语音)
 - Raw captured: raw/articles/avbd-siggraph2025-bilibili.md
 - Created: concepts/avbd-siggraph2025-video.md (single page, non-paper format)
-- Updated: index.md (17 pages total)
+
+## [2026-06-11] ingest | AI4S第二讲：扩散生成模型（B站视频，Kimi ReadMediaFile）
+- Source: https://www.bilibili.com/video/BV15t5m68E3w
+- 94MB 完整视频一次通过 Kimi ReadMediaFile（无需拆分）
+- Speaker: 章敏（浙江大学 × Datawhale × 魔搭社区）
+- Raw captured: raw/articles/diffusion-models-ai4s-lecture2-bilibili.md
+- Created: concepts/diffusion-models-ai4s-lecture2.md (single page, non-paper format)
+- Updated: SCHEMA.md (新增 Generative models + AI4S tag taxonomy)
+- Updated: index.md (18 pages total)

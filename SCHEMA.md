@@ -50,6 +50,12 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   physics-constraint-weight-tuning
 - **Meta:** comparison, review, future-work, limitation, cross-domain-generalization,
   architecture-selection
+- **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
+  score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
+  controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,
+  protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance
+- **AI4S:** ai4s, scientific-discovery, inverse-problem, pinn, deepxde,
+  physics-simulation, material-design, weather-prediction
 
 Rule: every tag must appear in this taxonomy. Add new tags here BEFORE using them.
 

@@ -19,3 +19,10 @@ Thumbs.db
 # Raw sources (copyright)
 raw/
 
+# Video processing artifacts
+processed/
+
+# Paper search data files
+journal-aliases.json
+journal-whitelist.json
+
