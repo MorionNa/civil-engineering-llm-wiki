@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Hermes
+.hermes/
+
+# Raw sources (copyright)
+raw/
+
