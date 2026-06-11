@@ -41,6 +41,16 @@ nav:
           - concepts/ai4s/diffusion-models-ai4s-lecture2.md
       - concepts/agentic-engineering-22-tips.md
       - concepts/avbd-siggraph2025-video.md
+      - Giles 2025 AVBD:
+          - concepts/giles2025-avbd-analysis.md
+          - concepts/giles2025-avbd-method.md
+          - concepts/giles2025-avbd-results.md
+          - concepts/giles2025-avbd-critical.md
+      - Lu 2013 倒塌模拟:
+          - concepts/lu2013-collapse-rc-highrise-analysis.md
+          - concepts/lu2013-collapse-rc-highrise-method.md
+          - concepts/lu2013-collapse-rc-highrise-results.md
+          - concepts/lu2013-collapse-rc-highrise-critical.md
       - Wang 2023 PINN 伪解:
           - concepts/wang2023-pinn-spurious-analysis.md
           - concepts/wang2023-pinn-spurious-method.md
