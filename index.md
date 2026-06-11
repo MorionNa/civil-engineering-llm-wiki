@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 34
+> Last updated: 2026-06-11 | Total pages: 38
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
@@ -23,6 +23,10 @@
 - [[zhao2017-pspnet-method]] — PSPNet 方法：Pyramid Pooling Module 四级池化 + Deeply Supervised ResNet
 - [[zhao2017-pspnet-results]] — PSPNet 实验结果：ADE20K/VOC/Cityscapes SOTA + 组件 ablation
 - [[zhao2017-pspnet-critical]] — PSPNet 贡献+Negative（bin size 固定/α 需搜索）+可迁移（PPM 通用模块）+ 机会
+- [[chen2018-deeplabv3plus-analysis]] — Chen et al. (2018) DeepLabv3+：ASPP encoder + 简洁 decoder，VOC 89.0% SOTA
+- [[chen2018-deeplabv3plus-method]] — DeepLabv3+ 方法：Atrous Separable Conv + Simple Decoder + Modified Xception
+- [[chen2018-deeplabv3plus-results]] — DeepLabv3+ 结果：VOC/Cityscapes SOTA + decoder ablation + trimap 边界分析
+- [[chen2018-deeplabv3plus-critical]] — DeepLabv3+ 贡献+Negative（decoder 超参经验化/JFT 不可复现）+可迁移+机会
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
