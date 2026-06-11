@@ -2,11 +2,15 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 18
+> Last updated: 2026-06-11 | Total pages: 22
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
 - [[avbd-siggraph2025-video]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
+- [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
+- [[giles2025-avbd-method]] — AVBD 方法展开：硬约束、不等式约束、摩擦接触、渐进刚度递增
+- [[giles2025-avbd-results]] — AVBD 实验结果：vs VBD/XPBD/Seq Imp 在刚度比、质量比、碰撞堆叠上的量化对比
+- [[giles2025-avbd-critical]] — AVBD 贡献+Negative+可迁移+研究机会：含 PINN 软约束失效的平行参照
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案

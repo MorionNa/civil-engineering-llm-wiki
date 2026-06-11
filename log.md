@@ -56,3 +56,13 @@
 - Created: concepts/ai4s/diffusion-models-ai4s-lecture2.md (single page, non-paper format)
 - Updated: SCHEMA.md (新增 Generative models + AI4S tag taxonomy)
 - Updated: index.md (18 pages total)
+
+## [2026-06-11] ingest | Giles et al. (2025) AVBD paper (DOI: 10.1145/3731195)
+- Full-text PDF (14MB) saved: raw/papers/giles2025-avbd.pdf
+- Extracted text saved: raw/papers/giles2025-avbd.md (65,670 chars)
+- Created: concepts/giles2025-avbd-analysis.md (overview, 11 dimensions)
+- Created: concepts/giles2025-avbd-method.md (augmented Lagrangian, inequality, friction, stiffness ramping)
+- Created: concepts/giles2025-avbd-results.md (9 experiments, performance table)
+- Created: concepts/giles2025-avbd-critical.md (contributions, 6 negative knowledge items, 6 transferable, 6 research opportunities)
+- Updated: SCHEMA.md (added Physics simulation tag taxonomy)
+- Updated: index.md (22 pages total)
