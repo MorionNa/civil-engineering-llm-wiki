@@ -1,8 +1,8 @@
-site_name: "LLM Research Wiki"
+site_name: "Civil Engineering LLM Wiki"
 site_description: "Physics-informed ML & Computational Mechanics Knowledge Base"
 site_author: "MorionNa"
-repo_url: "https://github.com/MorionNa/llm-wiki"
-repo_name: "MorionNa/llm-wiki"
+repo_url: "https://github.com/MorionNa/civil-engineering-llm-wiki"
+repo_name: "MorionNa/civil-engineering-llm-wiki"
 docs_dir: "docs"
 
 theme:
