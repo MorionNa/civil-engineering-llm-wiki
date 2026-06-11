@@ -64,7 +64,10 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   atrous-convolution, atrous-separable-convolution, depthwise-separable-convolution,
   xception, aspp, output-stride, aligned-xception, spatial-pyramid-pooling,
   high-resolution-representation, multi-resolution-fusion, parallel-convolutions,
-  hrnet, hrnetv2, hrnetv2p, multi-resolution-block
+  hrnet, hrnetv2, hrnetv2p, multi-resolution-block,
+  vision-transformer, hierarchical-transformer, mlp-decoder, mix-ffn,
+  efficient-self-attention, positional-encoding-free, mit-encoder,
+  overlap-patch-merging, sequence-reduction, segformer
 - **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,

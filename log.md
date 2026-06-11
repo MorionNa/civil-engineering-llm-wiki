@@ -117,3 +117,13 @@
 - Updated: SCHEMA.md (added CV tags: high-resolution-representation, multi-resolution-fusion, etc.)
 - Updated: index.md (42 pages total)
 - Note: HRNet opens a 4th paradigm — maintain high resolution throughout (vs U-Net recovery, PSPNet pooling, DeepLabv3+ dilation+decoder). 3× more efficient than PSPNet at same accuracy.
+
+## [2026-06-11] ingest | Xie et al. (2021) SegFormer paper (arXiv: 2105.15203, NeurIPS 2021)
+- Raw PDF: raw/papers/segformer.pdf (5.6MB, 18 pages)
+- Created: concepts/xie2021-segformer-analysis.md (overview, 11 dimensions)
+- Created: concepts/xie2021-segformer-method.md (MiT encoder + Mix-FFN + Eff-SA + All-MLP decoder)
+- Created: concepts/xie2021-segformer-results.md (ADE/Cityscapes/COCO-Stuff SOTA + Cityscapes-C robustness)
+- Created: concepts/xie2021-segformer-critical.md (5 contributions, 9 NK, 5 TK, 6 opportunities)
+- Updated: SCHEMA.md (added Transformer tags: vision-transformer, mix-ffn, etc.)
+- Updated: index.md (46 pages total)
+- Note: SegFormer opens the 5th paradigm — Transformer-based segmentation. No positional encoding, no complex decoder, no context modules. ERF analysis explains why MLP decoder works on Transformer but not CNN.
