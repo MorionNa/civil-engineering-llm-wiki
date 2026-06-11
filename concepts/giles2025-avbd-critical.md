@@ -80,6 +80,9 @@ temporal discretization 天然耗散能量，时间步越大耗散越多。对�
 
 ## 11. 研究机会 (Research Opportunity)
 
+### O0：开源参考实现
+[savant117/avbd-demo2d](https://github.com/savant117/avbd-demo2d) (⭐810, C++, 2D) 和 [avbd-demo3d](https://github.com/savant117/avbd-demo3d) (⭐114, 3D) 提供了完整的 GPU compute shader (DirectX 11) 实现，以及 [MysteryPancake/Houdini-VBD](https://github.com/MysteryPancake/Houdini-VBD) (⭐121, Houdini 插件)。可作为 AVBD 在其他平台（Vulkan/Metal/CUDA）上复现的基准。
+
 ### O1：混合局部/全局求解器
 AVBD 作为 local layer (preconditioner)，在高迭代后切换到 global conjugate gradient 或 direct solve。类似 multigrid 思想——Gauss-Seidel 消除高频误差，全局 solver 消除低频（长程）误差。**预期收益**：长链信息传播从 O(n_frames) 降为 1 帧。
 

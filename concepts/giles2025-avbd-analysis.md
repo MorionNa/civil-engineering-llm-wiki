@@ -17,6 +17,7 @@ confidence: high
 # Augmented Vertex Block Descent (AVBD)
 
 > Giles, Diaz & Yuksel. ACM TOG (SIGGRAPH 2025). DOI: 10.1145/3731195 | CC-BY 4.0
+> **开源代码**: [savant117/avbd-demo2d](https://github.com/savant117/avbd-demo2d) (⭐810, C++) · [avbd-demo3d](https://github.com/savant117/avbd-demo3d) (⭐114)
 
 ## 1. 工程背景 (Engineering Background)
 > 为什么这个问题在工程上重要？不解决会怎样？
