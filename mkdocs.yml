@@ -56,6 +56,11 @@ nav:
           - concepts/ronneberger2015-unet-method.md
           - concepts/ronneberger2015-unet-results.md
           - concepts/ronneberger2015-unet-critical.md
+      - Zhao 2017 PSPNet:
+          - concepts/zhao2017-pspnet-analysis.md
+          - concepts/zhao2017-pspnet-method.md
+          - concepts/zhao2017-pspnet-results.md
+          - concepts/zhao2017-pspnet-critical.md
       - Wang 2023 PINN 伪解:
           - concepts/wang2023-pinn-spurious-analysis.md
           - concepts/wang2023-pinn-spurious-method.md
