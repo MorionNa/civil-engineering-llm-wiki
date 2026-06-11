@@ -41,7 +41,7 @@ nav:
           - concepts/ai4s/diffusion-models-ai4s-lecture2.md
       - concepts/agentic-engineering-22-tips.md
       - concepts/avbd-siggraph2025-video.md
-      - Müller 2023 PINN 伪解:
+      - Wang 2023 PINN 伪解:
           - concepts/wang2023-pinn-spurious-analysis.md
           - concepts/wang2023-pinn-spurious-method.md
           - concepts/wang2023-pinn-spurious-results.md
