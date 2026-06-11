@@ -91,6 +91,6 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
-  - javascripts/katex.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
