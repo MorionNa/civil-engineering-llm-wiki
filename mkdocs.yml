@@ -1,0 +1,96 @@
+site_name: "LLM Research Wiki"
+site_description: "Physics-informed ML & Computational Mechanics Knowledge Base"
+site_author: "MorionNa"
+repo_url: "https://github.com/MorionNa/llm-wiki"
+repo_name: "MorionNa/llm-wiki"
+docs_dir: "docs"
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 暗色模式
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 亮色模式
+
+nav:
+  - 首页: index.md
+  - Concepts:
+      - concepts/index.md
+      - concepts/agentic-engineering-22-tips.md
+      - concepts/ai4s-pinn-deepxde-tutorial.md
+      - concepts/avbd-siggraph2025-video.md
+      - concepts/diffusion-models-ai4s-lecture2.md
+      - Müller 2023 PINN 伪解:
+          - concepts/muller2023-pinn-spurious-analysis.md
+          - concepts/muller2023-pinn-spurious-method.md
+          - concepts/muller2023-pinn-spurious-results.md
+          - concepts/muller2023-pinn-spurious-critical.md
+      - Zhang 2020 PhyLSTM:
+          - concepts/zhang2020-phylstm-analysis.md
+          - concepts/zhang2020-phylstm-method.md
+          - concepts/zhang2020-phylstm-results.md
+          - concepts/zhang2020-phylstm-critical.md
+  - Entities:
+      - entities/index.md
+      - entities/bouc-wen-model.md
+      - entities/peer-strong-motion-database.md
+      - entities/phylstm2.md
+      - entities/phylstm3.md
+      - entities/pseudo-time-stepping.md
+  - Comparisons:
+      - comparisons/index.md
+      - comparisons/phylstm2-vs-phylstm3-vs-lstm.md
+      - comparisons/physics-constrained-training-failure-modes.md
+  - SCHEMA: SCHEMA.md
+  - 日志: log.md
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - roamlinks
+  - search:
+      lang: zh
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js

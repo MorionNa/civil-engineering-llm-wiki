@@ -22,6 +22,9 @@ raw/
 # Video processing artifacts
 processed/
 
+# MkDocs build output
+site/
+
 # Paper search data files
 journal-aliases.json
 journal-whitelist.json

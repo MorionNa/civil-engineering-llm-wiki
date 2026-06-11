@@ -1,0 +1,30 @@
+/* Custom styles for LLM Research Wiki */
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3em;
+}
+
+/* Inline code */
+.md-typeset code {
+  font-size: 0.9em;
+}
+
+/* Blockquotes as callout-like */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-accent-fg-color);
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  font-size: 0.85em;
+}
+
+/* Frontmatter tags display */
+article[data-tags]::before {
+  content: attr(data-tags);
+}
