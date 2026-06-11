@@ -107,3 +107,13 @@
 - Updated: SCHEMA.md (added CV tags: atrous-convolution, depthwise-separable-convolution, etc.)
 - Updated: index.md (38 pages total)
 - Note: DeepLabv3+ completes the semantic segmentation trilogy — U-Net (local fusion), PSPNet (global pooling), DeepLabv3+ (ASPP + decoder, best accuracy)
+
+## [2026-06-11] ingest | Sun et al. (2019) HRNetV2 paper (arXiv: 1904.04514)
+- Raw PDF: raw/papers/arxiv_1904.04514.pdf (13 pages)
+- Created: concepts/sun2019-hrnetv2-analysis.md (overview, 11 dimensions)
+- Created: concepts/sun2019-hrnetv2-method.md (multi-resolution parallel + fusion + HRNetV2 aggregation)
+- Created: concepts/sun2019-hrnetv2-results.md (Cityscapes/PASCAL Context/LIP/face/COSO multi-task SOTA + HRNetV1 vs V2)
+- Created: concepts/sun2019-hrnetv2-critical.md (5 contributions, 9 NK, 5 TK, 6 opportunities)
+- Updated: SCHEMA.md (added CV tags: high-resolution-representation, multi-resolution-fusion, etc.)
+- Updated: index.md (42 pages total)
+- Note: HRNet opens a 4th paradigm — maintain high resolution throughout (vs U-Net recovery, PSPNet pooling, DeepLabv3+ dilation+decoder). 3× more efficient than PSPNet at same accuracy.

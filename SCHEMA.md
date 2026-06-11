@@ -62,7 +62,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   biomedical-imaging, scene-parsing, pyramid-pooling, multi-scale-context,
   auxiliary-loss, deep-supervision, resnet, dilated-convolution, bilinear-upsample,
   atrous-convolution, atrous-separable-convolution, depthwise-separable-convolution,
-  xception, aspp, output-stride, aligned-xception, spatial-pyramid-pooling
+  xception, aspp, output-stride, aligned-xception, spatial-pyramid-pooling,
+  high-resolution-representation, multi-resolution-fusion, parallel-convolutions,
+  hrnet, hrnetv2, hrnetv2p, multi-resolution-block
 - **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,

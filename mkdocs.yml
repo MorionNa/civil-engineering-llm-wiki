@@ -66,6 +66,11 @@ nav:
           - concepts/chen2018-deeplabv3plus-method.md
           - concepts/chen2018-deeplabv3plus-results.md
           - concepts/chen2018-deeplabv3plus-critical.md
+      - Sun 2019 HRNet:
+          - concepts/sun2019-hrnetv2-analysis.md
+          - concepts/sun2019-hrnetv2-method.md
+          - concepts/sun2019-hrnetv2-results.md
+          - concepts/sun2019-hrnetv2-critical.md
       - Wang 2023 PINN 伪解:
           - concepts/wang2023-pinn-spurious-analysis.md
           - concepts/wang2023-pinn-spurious-method.md
