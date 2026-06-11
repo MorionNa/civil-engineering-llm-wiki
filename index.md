@@ -9,10 +9,10 @@
 - [[avbd-siggraph2025-video]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
-- [[muller2023-pinn-spurious-analysis]] — Müller et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
-- [[muller2023-pinn-spurious-method]] — 伪时间步进 + 自适应步长方法展开
-- [[muller2023-pinn-spurious-results]] — Helmholtz/Klein-Gordon/Navier-Stokes/Rayleigh-Taylor 实验结果
-- [[muller2023-pinn-spurious-critical]] — 贡献 + 知识点 + Negative + 可迁移 + 研究机会
+- [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
+- [[wang2023-pinn-spurious-method]] — 伪时间步进 + 自适应步长方法展开
+- [[wang2023-pinn-spurious-results]] — Helmholtz/Klein-Gordon/Navier-Stokes/Rayleigh-Taylor 实验结果
+- [[wang2023-pinn-spurious-critical]] — 贡献 + 知识点 + Negative + 可迁移 + 研究机会
 - [[zhang2020-phylstm-analysis]] — Zhang et al. (2020) PhyLSTM 概述：12 维度论文分析总览
 - [[zhang2020-phylstm-method]] — PhyLSTM2/3 方法机制展开：架构数据流图、损失函数详解、训练策略
 - [[zhang2020-phylstm-results]] — 两个验证案例结果展开：MRF 和 Bouc-Wen

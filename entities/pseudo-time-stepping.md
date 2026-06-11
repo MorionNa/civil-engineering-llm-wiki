@@ -4,7 +4,7 @@ created: 2026-06-10
 updated: 2026-06-10
 type: entity
 tags: [pseudo-time-stepping, adaptive-pseudo-time-stepping, physics-constrained-loss, collocation-resampling, pinns]
-sources: [raw/papers/muller2023-pinn-spurious.md]
+sources: [raw/papers/wang2023-pinn-spurious.md]
 methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian]
 confidence: high
 ---
@@ -15,7 +15,7 @@ confidence: high
 
 伪时间步进（Pseudo-Time Stepping）将稳态 PDE 转化为伪时间演化问题 `∂u/∂τ = N[u]`，通过逐步增大 τ 引导网络避开伪解（spurious solutions），最终收敛到真解。自适应变体通过局域残差 Jacobian 估计自动选最优步长，零调参。
 
-**首次系统分析：** Müller et al. (2023), "When PINNs Go Wrong"
+**首次系统分析：** Wang et al. (2023), "When PINNs Go Wrong"
 
 ## 核心机制
 
@@ -41,7 +41,7 @@ confidence: high
 
 ## 关联
 
-- [[muller2023-pinn-spurious-analysis]] — 论文分析
-- [[muller2023-pinn-spurious-method]] — 方法展开
+- [[wang2023-pinn-spurious-analysis]] — 论文分析
+- [[wang2023-pinn-spurious-method]] — 方法展开
 - [[zhang2020-phylstm-critical]] — PhyLSTM 的权重调参问题
 - [[physics-constrained-training-failure-modes]] — 失败模式对比

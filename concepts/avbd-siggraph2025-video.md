@@ -50,5 +50,5 @@ AVBD（增强顶点块下降法）— 一种新型物理模拟求解器，在**�
 ## 关联
 
 - [[zhang2020-phylstm-analysis]] — 同样使用 physics-informed 方法加速仿真（PhyLSTM 推理 >10³x FEM）
-- [[muller2023-pinn-spurious-analysis]] — 同样是物理计算效率优化
+- [[wang2023-pinn-spurious-analysis]] — 同样是物理计算效率优化
 - 与 PhyLSTM 的对比：AVBD 是**算法层面**的加速（少迭代），PhyLSTM 是**学习层面**的替代（神经网络替 FEM）

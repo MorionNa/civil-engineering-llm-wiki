@@ -1,17 +1,17 @@
 ---
-title: "Müller et al. (2023) — 方法机制展开"
+title: "Wang et al. (2023) — 方法机制展开"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
 tags: [pinns, pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian, physics-constrained-loss, pde, deep-learning]
-sources: [raw/papers/muller2023-pinn-spurious.md]
+sources: [raw/papers/wang2023-pinn-spurious.md]
 methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian, jacobian-stability-estimate]
 confidence: high
 ---
 
-# Müller et al. (2023) — 方法机制展开
+# Wang et al. (2023) — 方法机制展开
 
-> 返回概述 → [[muller2023-pinn-spurious-analysis]]
+> 返回概述 → [[wang2023-pinn-spurious-analysis]]
 
 ## 核心问题：为什么 PINN 的 loss 小但解错？
 
@@ -97,7 +97,7 @@ PhyLSTM 的 physics-constraint-weight-tuning 正是本论文自适应步长试�
 
 ## 关联
 
-- [[muller2023-pinn-spurious-analysis]] — 论文概述
-- [[muller2023-pinn-spurious-results]] — 结果展开
+- [[wang2023-pinn-spurious-analysis]] — 论文概述
+- [[wang2023-pinn-spurious-results]] — 结果展开
 - [[zhang2020-phylstm-method]] — 共享 collocation-strategy, adam-lbfgs
 - [[physics-constrained-training-failure-modes]] — 失败模式对比

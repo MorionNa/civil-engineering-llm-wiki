@@ -24,13 +24,13 @@
 - Created: comparisons/phylstm2-vs-phylstm3-vs-lstm.md
 - Updated: index.md (9 pages total)
 
-## [2026-06-10] ingest | Müller et al. (2023) — When PINNs Go Wrong
+## [2026-06-10] ingest | Wang et al. (2023) — When PINNs Go Wrong
 - Source: DOI, SHA256 a9173427...
-- Raw captured: raw/papers/muller2023-pinn-spurious.md
-- Created: concepts/muller2023-pinn-spurious-analysis.md (overview)
-- Created: concepts/muller2023-pinn-spurious-method.md
-- Created: concepts/muller2023-pinn-spurious-results.md
-- Created: concepts/muller2023-pinn-spurious-critical.md
+- Raw captured: raw/papers/wang2023-pinn-spurious.md
+- Created: concepts/wang2023-pinn-spurious-analysis.md (overview)
+- Created: concepts/wang2023-pinn-spurious-method.md
+- Created: concepts/wang2023-pinn-spurious-results.md
+- Created: concepts/wang2023-pinn-spurious-critical.md
 - Created: entities/pseudo-time-stepping.md
 - Created: comparisons/physics-constrained-training-failure-modes.md
 - Back-linked: PhyLSTM overview + critical pages with PINN cross-references

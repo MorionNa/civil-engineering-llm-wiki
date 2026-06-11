@@ -114,6 +114,6 @@ confidence: medium
 ## 关联
 
 - [[zhang2020-phylstm-analysis]] — 论文分析需要上下文（论文本身+关联论文）
-- [[muller2023-pinn-spurious-analysis]] — 交叉引用提升 wiki 价值的案例
+- [[wang2023-pinn-spurious-analysis]] — 交叉引用提升 wiki 价值的案例
 - Hermes: `plan` skill — plan→build loop 的 Hermes 实现
 - Hermes: skill 系统 — "做两次写成 skill" 的落地方式

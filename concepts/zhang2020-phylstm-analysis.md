@@ -116,7 +116,7 @@ confidence: high
 
 ## 关联页面
 
-**交叉引用 PINN 论文：** [[muller2023-pinn-spurious-analysis]] — 物理约束训练的另一类失败模式（loss-function-weakness）。[[physics-constrained-training-failure-modes]] — 两篇论文失败模式对比。[[pseudo-time-stepping]] — 自适应步长可能解决 PhyLSTM 的权重调参问题。
+**交叉引用 PINN 论文：** [[wang2023-pinn-spurious-analysis]] — 物理约束训练的另一类失败模式（loss-function-weakness）。[[physics-constrained-training-failure-modes]] — 两篇论文失败模式对比。[[pseudo-time-stepping]] — 自适应步长可能解决 PhyLSTM 的权重调参问题。
 
 ## 关联页面
 

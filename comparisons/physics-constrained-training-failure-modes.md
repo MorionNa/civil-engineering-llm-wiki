@@ -4,7 +4,7 @@ created: 2026-06-10
 updated: 2026-06-10
 type: comparison
 tags: [physics-constrained-loss, failure-modes, pinns, phylstm2, phylstm3, pseudo-time-stepping, spurious-solutions, architecture-mismatch-failure, loss-function-weakness]
-sources: [raw/papers/zhang2020-phylstm.md, raw/papers/muller2023-pinn-spurious.md]
+sources: [raw/papers/zhang2020-phylstm.md, raw/papers/wang2023-pinn-spurious.md]
 results: [cross-domain-generalization, extrapolation-ability, spurious-solution-avoidance, adaptive-step-size]
 failure_modes: [architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning, loss-function-weakness, step-size-sensitivity, optimization-vs-accuracy-tradeoff]
 confidence: high
@@ -49,6 +49,6 @@ confidence: high
 
 - [[zhang2020-phylstm-analysis]] — PhyLSTM 概述
 - [[zhang2020-phylstm-critical]] — PhyLSTM failure_modes
-- [[muller2023-pinn-spurious-analysis]] — PINN 概述
-- [[muller2023-pinn-spurious-critical]] — PINN failure_modes
+- [[wang2023-pinn-spurious-analysis]] — PINN 概述
+- [[wang2023-pinn-spurious-critical]] — PINN failure_modes
 - [[pseudo-time-stepping]] — 伪时间步进方法

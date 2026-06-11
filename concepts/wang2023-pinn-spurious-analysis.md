@@ -1,10 +1,10 @@
 ---
-title: "Müller et al. (2023) — When PINNs Go Wrong: Pseudo-Time Stepping Against Spurious Solutions"
+title: "Wang et al. (2023) — When PINNs Go Wrong: Pseudo-Time Stepping Against Spurious Solutions"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
 tags: [pinns, physics-informed, spurious-solutions, pseudo-time-stepping, pde, physics-constrained-loss, soft-constraint, collocation-strategy, adam-lbfgs, two-phase-optimization, deep-learning]
-sources: [raw/papers/muller2023-pinn-spurious.md]
+sources: [raw/papers/wang2023-pinn-spurious.md]
 methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian]
 results: [spurious-solution-avoidance, adaptive-step-size]
 failure_modes: [loss-function-weakness, step-size-sensitivity, optimization-vs-accuracy-tradeoff]
@@ -12,7 +12,7 @@ datasets: [pde-benchmarks, navier-stokes, rayleigh-taylor]
 confidence: high
 ---
 
-# Müller et al. (2023) — When PINNs Go Wrong
+# Wang et al. (2023) — When PINNs Go Wrong
 
 > **Authors:** Sifan Wang, Shawn Koohy, Yiping Lu, Paris Perdikaris  
 > **Code:** [sifanexisted/jaxpi2](https://github.com/sifanexisted/jaxpi2)
@@ -44,7 +44,7 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 - 大步长 → 更快但可能跳进伪解
 - **自适应步长：** 用局域残差 Jacobian 的有限差分估计选步长，保证局部稳定且最大步长
 
-→ [[muller2023-pinn-spurious-method]] 完整架构 + 公式
+→ [[wang2023-pinn-spurious-method]] 完整架构 + 公式
 
 训练：collocation-point 重采样（每步重采样配点）→ 这与 PhyLSTM 的配点策略共享同一设计模式：[[zhang2020-phylstm-method]]（collocation-strategy）。优化：Adam → L-BFGS，同 PhyLSTM：[[zhang2020-phylstm-method]]（adam-lbfgs, two-phase-optimization）。
 
@@ -52,7 +52,7 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 
 在 Helmholtz、Klein-Gordon、Navier-Stokes、Rayleigh-Taylor 等多个 PDE 上验证：自适应伪时间步进一致优于固定步长和 baseline PINN，且不需要逐问题调参。
 
-→ [[muller2023-pinn-spurious-results]] 完整数据
+→ [[wang2023-pinn-spurious-results]] 完整数据
 
 ## 7. 贡献
 
@@ -61,7 +61,7 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 3. 提出自适应伪时间步长（Jacobian 有限差分估计），零调参
 4. 开源 JAX 实现 jaxpi2
 
-→ [[muller2023-pinn-spurious-critical#7-贡献]]
+→ [[wang2023-pinn-spurious-critical#7-贡献]]
 
 ## 8. 核心知识点
 
@@ -76,7 +76,7 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 - 自适应步长依赖 Jacobian 的有限差分估计（引入数值误差，同 PhyLSTM 的有限差分问题：[[zhang2020-phylstm-critical#9-negative-knowledge]]，finite-difference-error）
 - 目前验证限于稳态 PDE，动态系统的扩展未充分探索
 
-→ [[muller2023-pinn-spurious-critical#9-negative-knowledge]]
+→ [[wang2023-pinn-spurious-critical#9-negative-knowledge]]
 
 ## 10. 可迁移知识
 
@@ -90,15 +90,15 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 
 动态系统扩展、高阶自适应步长（不依赖有限差分）、与其他物理约束训练方法（如 PhyLSTM 的 soft-constraint）结合、多保真度伪时间
 
-→ [[muller2023-pinn-spurious-critical#11-研究机会]]
+→ [[wang2023-pinn-spurious-critical#11-研究机会]]
 
 ---
 
 ## 关联页面
 
-- [[muller2023-pinn-spurious-method]] — 方法展开
-- [[muller2023-pinn-spurious-results]] — 结果展开
-- [[muller2023-pinn-spurious-critical]] — 贡献/知识/Negative/可迁移/机会
+- [[wang2023-pinn-spurious-method]] — 方法展开
+- [[wang2023-pinn-spurious-results]] — 结果展开
+- [[wang2023-pinn-spurious-critical]] — 贡献/知识/Negative/可迁移/机会
 - [[zhang2020-phylstm-analysis]] — PhyLSTM：同属物理约束训练
 - [[zhang2020-phylstm-method]] — 共享 collocation-strategy, adam-lbfgs
 - [[zhang2020-phylstm-critical]] — 共享 finite-difference-error, 物理约束局限

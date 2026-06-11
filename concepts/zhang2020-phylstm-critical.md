@@ -77,7 +77,7 @@ confidence: high
 ## 关联失败模式
 
 PINN 论文揭示了物理约束训练的另一种失败模式——PDE 残差 loss 接受伪解（loss-function-weakness），与 PhyLSTM 的 architecture-mismatch-failure 互补。参见：[[physics-constrained-training-failure-modes]]
-[[muller2023-pinn-spurious-critical]] — 伪时间步进可能是 PhyLSTM 权重调参问题的解决方向。
+[[wang2023-pinn-spurious-critical]] — 伪时间步进可能是 PhyLSTM 权重调参问题的解决方向。
 
 ## 10. 可迁移知识 (Transferable Knowledge)
 

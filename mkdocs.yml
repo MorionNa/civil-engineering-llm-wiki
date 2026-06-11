@@ -42,10 +42,10 @@ nav:
       - concepts/agentic-engineering-22-tips.md
       - concepts/avbd-siggraph2025-video.md
       - Müller 2023 PINN 伪解:
-          - concepts/muller2023-pinn-spurious-analysis.md
-          - concepts/muller2023-pinn-spurious-method.md
-          - concepts/muller2023-pinn-spurious-results.md
-          - concepts/muller2023-pinn-spurious-critical.md
+          - concepts/wang2023-pinn-spurious-analysis.md
+          - concepts/wang2023-pinn-spurious-method.md
+          - concepts/wang2023-pinn-spurious-results.md
+          - concepts/wang2023-pinn-spurious-critical.md
       - Zhang 2020 PhyLSTM:
           - concepts/zhang2020-phylstm-analysis.md
           - concepts/zhang2020-phylstm-method.md

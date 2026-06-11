@@ -121,5 +121,5 @@ $$\mathcal{L}_h = \mathbb{I}_{\{h(\hat{u}, \hat{\gamma}) > 0\}} h^2$$
 ## 关联
 
 - [[zhang2020-phylstm-analysis]] — PhyLSTM 物理约束学习
-- [[muller2023-pinn-spurious-analysis]] — PINN 训练失败模式（梯度病理）
+- [[wang2023-pinn-spurious-analysis]] — PINN 训练失败模式（梯度病理）
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败对比

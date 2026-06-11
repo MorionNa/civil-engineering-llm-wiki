@@ -1,18 +1,18 @@
 ---
-title: "Müller et al. (2023) — 结果证据展开"
+title: "Wang et al. (2023) — 结果证据展开"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
 tags: [pinns, pseudo-time-stepping, spurious-solutions, benchmark, helmholtz, klein-gordon, navier-stokes, rayleigh-taylor, pde]
-sources: [raw/papers/muller2023-pinn-spurious.md]
+sources: [raw/papers/wang2023-pinn-spurious.md]
 results: [spurious-solution-avoidance, adaptive-step-size, zero-tuning]
 datasets: [pde-benchmarks, helmholtz, klein-gordon, navier-stokes, rayleigh-taylor]
 confidence: high
 ---
 
-# Müller et al. (2023) — 结果证据展开
+# Wang et al. (2023) — 结果证据展开
 
-> 返回概述 → [[muller2023-pinn-spurious-analysis]]
+> 返回概述 → [[wang2023-pinn-spurious-analysis]]
 
 ## 验证的 PDE 基准
 
@@ -70,7 +70,7 @@ confidence: high
 
 ## 关联
 
-- [[muller2023-pinn-spurious-analysis]] — 概述
-- [[muller2023-pinn-spurious-method]] — 方法展开
+- [[wang2023-pinn-spurious-analysis]] — 概述
+- [[wang2023-pinn-spurious-method]] — 方法展开
 - [[zhang2020-phylstm-results]] — PhyLSTM 结果对比
 - [[physics-constrained-training-failure-modes]] — 失败模式对比

@@ -1,19 +1,19 @@
 ---
-title: "Müller et al. (2023) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
+title: "Wang et al. (2023) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
 created: 2026-06-10
 updated: 2026-06-10
 type: concept
 tags: [pinns, spurious-solutions, pseudo-time-stepping, loss-function-weakness, step-size-sensitivity, zero-tuning, future-work]
-sources: [raw/papers/muller2023-pinn-spurious.md]
+sources: [raw/papers/wang2023-pinn-spurious.md]
 methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping]
 results: [spurious-solution-avoidance, adaptive-step-size]
 failure_modes: [loss-function-weakness, step-size-sensitivity, optimization-vs-accuracy-tradeoff]
 confidence: high
 ---
 
-# Müller et al. (2023) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
+# Wang et al. (2023) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 
-> 返回概述 → [[muller2023-pinn-spurious-analysis]]
+> 返回概述 → [[wang2023-pinn-spurious-analysis]]
 
 ---
 
@@ -90,6 +90,6 @@ confidence: high
 
 ## 关联
 
-- [[muller2023-pinn-spurious-analysis]] — 概述
+- [[wang2023-pinn-spurious-analysis]] — 概述
 - [[zhang2020-phylstm-critical]] — PhyLSTM 的 failure_modes / 物理约束局限
 - [[physics-constrained-training-failure-modes]] — 两篇论文的失败模式对比
