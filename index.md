@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 22
+> Last updated: 2026-06-11 | Total pages: 26
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
@@ -11,6 +11,10 @@
 - [[giles2025-avbd-method]] — AVBD 方法展开：硬约束、不等式约束、摩擦接触、渐进刚度递增
 - [[giles2025-avbd-results]] — AVBD 实验结果：vs VBD/XPBD/Seq Imp 在刚度比、质量比、碰撞堆叠上的量化对比
 - [[giles2025-avbd-critical]] — AVBD 贡献+Negative+可迁移+研究机会：含 PINN 软约束失效的平行参照
+- [[lu2013-collapse-rc-highrise-analysis]] — Lu et al. (2013) RC 高层建筑极端地震倒塌模拟：纤维梁+多层壳+单元去激活
+- [[lu2013-collapse-rc-highrise-method]] — 倒塌模拟方法：纤维梁单元、多层壳单元、应变失效准则/去激活机制
+- [[lu2013-collapse-rc-highrise-results]] — 三组倒塌算例：10层框架/18层框筒/20层框筒双地震动对比
+- [[lu2013-collapse-rc-highrise-critical]] — 贡献+Negative（无足尺验证/准则敏感）+可迁移+ML 交叉机会
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案

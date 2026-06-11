@@ -48,6 +48,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
 - **Models:** bouc-wen, rate-independent, rate-dependent, mrfs, sdof
 - **Failure modes:** architecture-mismatch-failure, finite-difference-error,
   physics-constraint-weight-tuning
+- **Structural engineering:** collapse-simulation, rc-structures, fiber-beam-element,
+  multilayer-shell, elemental-deactivation, finite-element, high-rise-building,
+  progressive-collapse, material-failure-criteria
 - **Physics simulation:** rigid-body-dynamics, contact-mechanics, real-time-simulation,
   gpu-computing, constraint-solver, primal-method, dual-method, augmented-lagrangian,
   gauss-seidel, jacobi, high-stiffness-ratio, hard-constraints, mass-spring,
