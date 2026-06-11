@@ -77,3 +77,13 @@
 - Created: concepts/lu2013-collapse-rc-highrise-critical.md (6 contributions/NK/TK, 5 research opportunities)
 - Updated: SCHEMA.md (added Structural engineering tag taxonomy)
 - Updated: index.md (26 pages total)
+
+## [2026-06-11] ingest | Ronneberger et al. (2015) U-Net paper (DOI: 10.1007/978-3-319-24574-4_28)
+- Downloaded via Crossref OA: raw/papers/10_1007_978-3-319-24574-4_28.pdf (8 pages)
+- Extracted text: raw/papers/ronneberger2015-unet.md (19,739 chars)
+- Created: concepts/ronneberger2015-unet-analysis.md (overview, 11 dimensions)
+- Created: concepts/ronneberger2015-unet-method.md (overlap-tile, elastic augmentation, weighted loss)
+- Created: concepts/ronneberger2015-unet-results.md (ISBI EM/cell tracking challenge results)
+- Created: concepts/ronneberger2015-unet-critical.md (contributions, 5 NK, 5 TK, 4 opportunities)
+- Updated: SCHEMA.md (added Computer vision tag taxonomy)
+- Updated: index.md (30 pages total)

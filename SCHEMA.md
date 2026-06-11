@@ -57,6 +57,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   frictional-contact, substep, information-propagation-limit
 - **Meta:** comparison, review, future-work, limitation, cross-domain-generalization,
   architecture-selection
+- **Computer vision:** semantic-segmentation, encoder-decoder, skip-connections,
+  fully-convolutional, u-net, data-augmentation, small-dataset, overlap-tile,
+  biomedical-imaging
 - **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,
