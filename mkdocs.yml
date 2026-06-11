@@ -36,10 +36,11 @@ nav:
   - 首页: index.md
   - Concepts:
       - concepts/index.md
+      - AI4S 系列:
+          - concepts/ai4s/ai4s-pinn-deepxde-tutorial.md
+          - concepts/ai4s/diffusion-models-ai4s-lecture2.md
       - concepts/agentic-engineering-22-tips.md
-      - concepts/ai4s-pinn-deepxde-tutorial.md
       - concepts/avbd-siggraph2025-video.md
-      - concepts/diffusion-models-ai4s-lecture2.md
       - Müller 2023 PINN 伪解:
           - concepts/muller2023-pinn-spurious-analysis.md
           - concepts/muller2023-pinn-spurious-method.md

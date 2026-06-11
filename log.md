@@ -53,6 +53,6 @@
 - 94MB 完整视频一次通过 Kimi ReadMediaFile（无需拆分）
 - Speaker: 章敏（浙江大学 × Datawhale × 魔搭社区）
 - Raw captured: raw/articles/diffusion-models-ai4s-lecture2-bilibili.md
-- Created: concepts/diffusion-models-ai4s-lecture2.md (single page, non-paper format)
+- Created: concepts/ai4s/diffusion-models-ai4s-lecture2.md (single page, non-paper format)
 - Updated: SCHEMA.md (新增 Generative models + AI4S tag taxonomy)
 - Updated: index.md (18 pages total)
