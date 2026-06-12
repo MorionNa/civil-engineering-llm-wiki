@@ -9,6 +9,13 @@ methods: [hrnet, multi-resolution-parallel, repeated-fusion, hrnetv2, hrnetv2p, 
 results: [cityscapes-81.6, pascal-context-54.0, lip-sota, aflw-sota, coco-detection, sota]
 failure_modes: [hrnetv1-vs-v2-gap, small-model-diminishing-return, imagenet-pretrain-needed, no-context-module]
 datasets: [cityscapes, pascal-context, lip, aflw, cofw, 300w, wflw, coco, imagenet]
+reproducibility: high
+code_url:
+  - https://github.com/HRNet/HRNet-Semantic-Segmentation
+dataset_url:
+  - https://www.cityscapes-dataset.com/
+  - https://cs.stanford.edu/~roozbeh/pascal-context/
+  - https://cocodataset.org/
 confidence: high
 ---
 
@@ -123,6 +130,19 @@ HRNetV1 (旧): 仅最高分辨率 → 输出
 - HRNet + light decoder → 提升边界精度
 - HRNet 用于视频任务（时序多分辨率）
 - 结构图纸分割：HRNet 的高分辨率保持 + 空间精度 → 非常适合细长构件（梁柱边界）→ [[ronneberger2015-unet-analysis]]
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 源码公开，预训练权重可用
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `https://github.com/HRNet/HRNet-Semantic-Segmentation`（PyTorch） |
+| **数据集** | Cityscapes / PASCAL Context / LIP / COCO（完全公开） |
+| **协议** | MIT |
+
+**复现要点**：需要 ImageNet 预训练（官方提供），W18 单卡 1080Ti 可跑。HRNetV2 改进对大模型（W48）边际递减（仅 +0.5%），W18 性价比最高。从头训练可能不稳定，不要跳过预训练。
 
 ## 关联页面
 

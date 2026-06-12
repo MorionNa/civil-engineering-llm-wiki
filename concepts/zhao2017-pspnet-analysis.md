@@ -9,6 +9,14 @@ methods: [pyramid-pooling, auxiliary-loss, dilated-convolution, bilinear-upsampl
 results: [ade20k, pascal-voc-2012, cityscapes, sota, multi-scale-testing]
 failure_modes: [context-dependency, category-confusion, inconspicuous-classes, pyramid-scale-sensitivity, auxiliary-loss-weight-tuning]
 datasets: [ade20k, pascal-voc-2012, cityscapes]
+reproducibility: high
+code_url:
+  - https://github.com/hszhao/PSPNet
+  - https://github.com/hszhao/semseg
+dataset_url:
+  - https://groups.csail.mit.edu/vision/datasets/ADE20K/
+  - http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
+  - https://www.cityscapes-dataset.com/
 confidence: high
 ---
 
@@ -105,6 +113,20 @@ Ablation：PPM > Global Pooling (+1.61 IoU)；Average Pooling > Max Pooling；α
 - 结合 CRF 或其他边界细化模块提升小物体精度
 - 扩展到视频场景解析（时序上下文 + 空间上下文）
 - 与 U-Net 的 skip connection 结合 → [[ronneberger2015-unet-analysis]]
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 源码、数据、训练细节完全公开
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `https://github.com/hszhao/PSPNet`（原始 Caffe） |
+| **PyTorch 复现** | `https://github.com/hszhao/semseg`（同作者 PyTorch 版） |
+| **数据集** | ADE20K / PASCAL VOC 2012 / Cityscapes（完全公开） |
+| **协议** | 学术自由使用 |
+
+**复现要点**：训练细节全公开（poly LR、batchsize=16 Multi-GPU BN、数据增强配方）。辅助 loss 权重 α 需根据数据集重新搜索（论文 α=0.4 不普适）。
 
 ## 关联页面
 

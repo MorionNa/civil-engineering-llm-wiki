@@ -9,6 +9,15 @@ methods: [mit-encoder, mix-ffn, mlp-decoder, efficient-self-attention, hierarchi
 results: [ade20k-51.8, cityscapes-84.0, coco-stuff-46.7, sota, zero-shot-robustness, cityscapes-c]
 failure_modes: [mlp-decoder-cnn-incompatible, edge-device-unknown, imagenet-1k-only, no-decoder-refinement]
 datasets: [ade20k, cityscapes, coco-stuff, cityscapes-c, mapillary-vistas]
+reproducibility: high
+code_url:
+  - https://github.com/NVIDIA/SegFormer
+  - https://huggingface.co/docs/transformers/model_doc/segformer
+dataset_url:
+  - https://groups.csail.mit.edu/vision/datasets/ADE20K/
+  - https://www.cityscapes-dataset.com/
+  - https://github.com/nightrome/cocostuff
+  - https://www.mapillary.com/dataset/vistas
 confidence: high
 ---
 
@@ -114,6 +123,20 @@ ERF 分析：SegFormer Stage-4 天然具有非局部注意力（CNN 需要 ASPP 
 - SegFormer + 边界细化（DeepLabv3+ decoder 风格）→ [[chen2018-deeplabv3plus-analysis]]
 - 结构图纸分割：Transformer 的大 ERF → 全局几何关系的天然理解
 - 时序 SegFormer：视频语义分割的零样本鲁棒性
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 双渠道开源 + HuggingFace 生态集成
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `https://github.com/NVIDIA/SegFormer`（PyTorch，MMSegmentation） |
+| **HF 集成** | `transformers.SegformerForSemanticSegmentation`（一行代码加载 B0-B5） |
+| **数据集** | ADE20K / Cityscapes / COCO-Stuff / Mapillary Vistas（完全公开） |
+| **协议** | NVIDIA 开源协议 |
+
+**复现要点**：仅 ImageNet-1K 预训练（公平对比），更大预训练数据的收益未知。HuggingFace 提供 B0-B5 全部预训练权重，推理极其简单。轻量 B0（3.7M 参数）适合快速验证。
 
 ## 关联页面
 

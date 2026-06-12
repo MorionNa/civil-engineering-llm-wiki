@@ -112,6 +112,11 @@ methods: [<method-keywords>]
 results: [<result-keywords>]
 failure_modes: [<failure-keywords>]
 datasets: [<dataset-names>]
+reproducibility: high | medium | low
+code_url:
+  - <official-repo-url>
+dataset_url:
+  - <dataset-url>
 confidence: high
 ---
 
@@ -152,6 +157,20 @@ confidence: high
 
 ## 11. 研究机会 (Research Opportunity)
 > 下一步可以研究什么？具体方向和建议。
+
+## 12. 可复现性 (Reproducibility)
+> 代码和数据是否公开？能否独立复现论文结果？
+> - 🟢 高：源码 + 数据 + 预训练权重完全公开
+> - 🟡 中：无源码但论文表述详细，大概率可复现
+> - 🔴 低：关键细节缺失，难以独立复现
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢/🟡/🔴 |
+| **官方代码** | `<repo-url>` |
+| **数据集** | `<dataset-names + 是否公开>` |
+| **协议** | `<license>` |
+| **复现要点** | `<关键注意事项，如预训练依赖、已知坑>` |
 
 ## 关联页面
 - [[entity-page-1]] — 说明

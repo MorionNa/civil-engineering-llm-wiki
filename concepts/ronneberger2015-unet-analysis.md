@@ -9,6 +9,13 @@ methods: [encoder-decoder, skip-connections, elastic-deformation, weighted-loss,
 results: [isbi-em-challenge, cell-tracking-challenge, few-shot-segmentation]
 failure_modes: [input-output-size-mismatch, border-pixel-loss, single-channel-design]
 datasets: [isbi-em-2012, isbi-cell-tracking-2015]
+reproducibility: high
+code_url:
+  - http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net
+  - https://github.com/qubvel/segmentation_models.pytorch
+dataset_url:
+  - https://www.ini.uzh.ch/~acardona/data.html
+  - http://celltrackingchallenge.net/
 confidence: high
 ---
 
@@ -108,7 +115,21 @@ confidence: high
 
 1. **U-Net for structural drawing**：三类（梁/柱/背景）分割，弹性变形替换为图纸特定增强（旋转矫正噪声、墨渍模拟、线宽抖动）
 2. **Multi-channel input adaptation**：RGB 扫描图 → 试试 pre-texture 通道（局部方差、Hough 响应、Gabor 滤波）作为额外通道
-3. **与 [[giles2025-avbd-analysis]] 的弱关联**：AVBD 的 vertex coloring 是一种空间划分策略——是否可借鉴 U-Net 的 tile overlap 做并行化？
+- 与 [[giles2025-avbd-analysis]] 的弱关联：AVBD 的 vertex coloring 是一种空间划分策略——是否可借鉴 U-Net 的 tile overlap 做并行化？
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 源码完全公开，数据公开
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net`（原始 Caffe 实现） |
+| **推荐实现** | `https://github.com/qubvel/segmentation_models.pytorch`（PyTorch，预训练 encoder，一行代码创建） |
+| **数据集** | ISBI EM 2012 + ISBI Cell Tracking Challenge 2015（完全公开） |
+| **协议** | 学术自由使用 |
+
+**复现要点**：原始实现基于 Caffe，推荐用 `segmentation-models-pytorch` 一行代码复现，支持 ResNet/EfficientNet 等预训练 encoder。训练只需要 30 张标注图（依赖弹性变形增强）。
 
 ## 关联页面
 - [[ronneberger2015-unet-method]] — 架构展开（overlap-tile + 弹性变形 + 加权 loss）

@@ -11,6 +11,12 @@ methods: [augmented-lagrangian, primal-method, gauss-seidel, quasi-newton, verte
 results: [constraint-error-convergence, mass-ratio-comparison, stiffness-ratio-comparison, gpu-performance]
 failure_modes: [information-propagation-limit, energy-dissipation, collision-detection-bottleneck]
 datasets: [synthetic-scenes]
+reproducibility: high
+code_url:
+  - https://github.com/savant117/avbd-demo2d
+  - https://github.com/savant117/avbd-demo3d
+  - https://github.com/MysteryPancake/Houdini-VBD
+dataset_url: []
 confidence: high
 ---
 
@@ -108,6 +114,21 @@ AVBD 在 VBD 的 primal 迭代（逐顶点解 3×3/6×6 线性系统）之上叠
 2. **高阶积分器 (BDF2)**：减少 Backward Euler 的能量耗散
 3. **GPU 硬件加速碰撞检测**：利用 RT core 做 spatial data structure 遍历和最近点查询
 4. **自适应 iteration budget**：根据场景复杂度动态分配迭代次数
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 多仓库开源，CC-BY 4.0 协议，全 GPU 实现
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `https://github.com/savant117/avbd-demo2d`（⭐810, C++ 2D） |
+| **3D 实现** | `https://github.com/savant117/avbd-demo3d`（⭐114, DirectX 11 compute shader） |
+| **Houdini 插件** | `https://github.com/MysteryPancake/Houdini-VBD`（⭐121） |
+| **数据集** | 合成场景（程序生成），无外部数据集 |
+| **协议** | CC-BY 4.0 |
+
+**复现要点**：2D 版本用于教学验证，3D 版本需要 DirectX 11 GPU。碰撞检测在大场景下（510k 刚体）耗时与求解相当（7.2ms vs 10.3ms），是实际部署的瓶颈。参数 β/α/γ 在简单场景不敏感但复杂场景未经充分消融。
 
 ## 关联页面
 - [[avbd-siggraph2025-video]] — B站视频笔记：AVBD 直观效果展示

@@ -9,6 +9,13 @@ methods: [aspp, atrous-separable-convolution, encoder-decoder, output-stride, de
 results: [pascal-voc-89.0, cityscapes-82.1, sota, trimap-boundary, coco-pretraining, jft-pretraining]
 failure_modes: [output-stride-tradeoff, decoder-design-sensitivity, image-level-feature-dataset-specific, sofa-vs-chair-confusion, occlusion-failure, rare-view-failure]
 datasets: [pascal-voc-2012, cityscapes, ms-coco, imagenet, jft-300m]
+reproducibility: high
+code_url:
+  - https://github.com/tensorflow/models/tree/master/research/deeplab
+dataset_url:
+  - http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
+  - https://www.cityscapes-dataset.com/
+  - https://cocodataset.org/
 confidence: high
 ---
 
@@ -123,6 +130,19 @@ Input → CNN Backbone (ResNet-101 / Modified Xception)
 - 轻量 backbone（MobileNet）替代 Xception → 移动端部署
 - 视频语义分割：时序 atrous convolution
 - 结构图纸分割：结合 DeepLabv3+ 边界精度 + U-Net elastic augmentation → [[ronneberger2015-unet-analysis]]
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 代码公开，但最优结果依赖内部数据集
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高（部分不可复现） |
+| **官方代码** | `https://github.com/tensorflow/models/tree/master/research/deeplab`（TensorFlow） |
+| **数据集** | PASCAL VOC 2012 / Cityscapes / COCO（公开）；**JFT-300M（Google 内部，不可复现）** |
+| **协议** | Apache 2.0 |
+
+**⚠️ 复现注意**：JFT-300M 预训练的 VOC **89.0%** 不可复现，COCO 预训练的 **87.8%** 可复现。Modified Aligned Xception 依赖 JFT，换 ResNet-101 backbone 可完全复现。Decoder 超参数（48ch、2×[3×3,256]）经验性强，换 backbone 需重新搜索。
 
 ## 关联页面
 

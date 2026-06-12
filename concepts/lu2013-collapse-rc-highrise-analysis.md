@@ -11,6 +11,10 @@ methods: [fiber-beam-element, multilayer-shell, elemental-deactivation, finite-e
 results: [collapse-process-simulation, soft-story-identification, failure-criteria-sensitivity]
 failure_modes: [no-full-scale-validation, model-assumption-limitations, failure-criteria-arbitrariness]
 datasets: [el-centro-ground-motion, duzce-ground-motion, fema-p695-far-field]
+reproducibility: medium
+code_url: []
+dataset_url:
+  - https://ngawest2.berkeley.edu/
 confidence: high
 ---
 
@@ -109,6 +113,19 @@ confidence: high
 2. **基于物理的失效准则标定**——用细观模型（如 lattice model）标定宏观 FE 的等效失效应变
 3. **ML 替代倒塌模拟**——用本文模拟结果训练 surrogate model 进行参数量化（倒塌概率、失效准则、地震动变异性的联合影响）
 4. **与 [[zhang2020-phylstm-analysis]] 的交叉**：PhyLSTM 验证案例中包含 Bouc-Wen 滞回模型，是否能与纤维梁/多层壳的滞回退化行为建立联系？
+
+## 12. 可复现性 (Reproducibility)
+
+**🟡 中复现性** — 无开源代码，但方法描述详尽，依赖商业 FE 软件
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟡 中 |
+| **官方代码** | ❌ 无（基于 MSC.MARC 商业软件 + UBEAM 子程序） |
+| **数据集** | 地震动记录公开（PEER NGA-West2：`ngawest2.berkeley.edu`）；FEMA P695 远场地震动集公开 |
+| **协议** | 无 |
+
+**复现要点**：方法论足够详尽——纤维梁/多层壳的单元类型、材料本构参数、四种失效准则的具体应变阈值全部公开。可在其他 FE 平台（Abaqus/OpenSees/ANSYS）复现，但需自行编写子程序。失效准则的应变阈值来自文献范围，换结构体系需重新标定。
 
 ## 关联页面
 - [[lu2013-collapse-rc-highrise-method]] — 方法机制展开（纤维梁+多层壳+去激活）

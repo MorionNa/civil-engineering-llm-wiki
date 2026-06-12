@@ -9,6 +9,11 @@ methods: [physics-constrained-loss, adam-lbfgs, collocation-strategy, two-phase-
 results: [cross-domain-generalization, extrapolation-ability]
 failure_modes: [architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning]
 datasets: [blwn, peer-database]
+reproducibility: high
+code_url:
+  - https://github.com/zhry10/PhyLSTM
+dataset_url:
+  - https://ngawest2.berkeley.edu/
 confidence: high
 ---
 
@@ -113,6 +118,19 @@ confidence: high
 → [[zhang2020-phylstm-critical#11-研究机会-research-opportunity]]
 
 ---
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 代码开源，训练数据通过 FEM 生成可复现
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `https://github.com/zhry10/PhyLSTM`（TensorFlow） |
+| **数据集** | BLWN（人工合成地震动，可复现）+ PEER 强震数据库（公开：`ngawest2.berkeley.edu`） |
+| **协议** | 开源 |
+
+**复现要点**：训练数据需 Abaqus FEM 预生成（论文提供建模参数），PEER 地震动公开可下载。物理损失权重需手动调参。两阶段优化（Adam→L-BFGS）是关键，不要跳过。
 
 ## 关联页面
 

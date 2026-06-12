@@ -9,6 +9,10 @@ methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resam
 results: [spurious-solution-avoidance, adaptive-step-size]
 failure_modes: [loss-function-weakness, step-size-sensitivity, optimization-vs-accuracy-tradeoff]
 datasets: [pde-benchmarks, navier-stokes, rayleigh-taylor]
+reproducibility: high
+code_url:
+  - https://github.com/sifanexisted/jaxpi2
+dataset_url: []
 confidence: high
 ---
 
@@ -93,6 +97,19 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 → [[wang2023-pinn-spurious-critical#11-研究机会]]
 
 ---
+
+## 12. 可复现性 (Reproducibility)
+
+**🟢 高复现性** — 代码开源，标准数学 PDE 无需外部数据集
+
+| 项目 | 说明 |
+|------|------|
+| **等级** | 🟢 高 |
+| **官方代码** | `https://github.com/sifanexisted/jaxpi2`（JAX） |
+| **数据集** | 标准数学 PDE（Helmholtz / Klein-Gordon / Navier-Stokes / Rayleigh-Taylor），无外部数据集依赖 |
+| **协议** | 开源 |
+
+**复现要点**：JAX 实现，验证覆盖多个经典 PDE benchmark。自适应步长依赖 Jacobian 有限差分估计，无需逐问题调参。伪时间步进对步长敏感，固定步长不可靠。
 
 ## 关联页面
 
