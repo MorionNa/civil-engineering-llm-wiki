@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-11 | Total pages: 46
+> Last updated: 2026-06-12 | Total pages: 50
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
@@ -35,6 +35,10 @@
 - [[xie2021-segformer-method]] — SegFormer 方法：MiT encoder (Mix-FFN/Eff-SA) + 纯 MLP decoder + overlap patch
 - [[xie2021-segformer-results]] — SegFormer 结果：ADE/Cityscapes/COCO-Stuff SOTA + Cityscapes-C 零样本鲁棒性
 - [[xie2021-segformer-critical]] — SegFormer 贡献+Negative（MLP decoder 不兼容 CNN）+可迁移+机会
+- [[chen2021-tenas-analysis]] — Chen et al. (2021) TE-NAS：训练-free NAS via NTK 条件数 + 线性区域数，ImageNet 仅 4 GPU 小时
+- [[chen2021-tenas-method]] — TE-NAS 方法：NTK κN + 线性区域 ˆRN + Pruning-by-Importance 搜索
+- [[chen2021-tenas-results]] — TE-NAS 结果：NAS-Bench-201 / DARTS CIFAR-10 / ImageNet mobile SOTA 级零训练搜索
+- [[chen2021-tenas-critical]] — TE-NAS 贡献+Negative（rank corr ~0.5-0.7）+可迁移+机会
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案

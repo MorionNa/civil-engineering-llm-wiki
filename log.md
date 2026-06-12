@@ -126,4 +126,4 @@
 - Created: concepts/xie2021-segformer-critical.md (5 contributions, 9 NK, 5 TK, 6 opportunities)
 - Updated: SCHEMA.md (added Transformer tags: vision-transformer, mix-ffn, etc.)
 - Updated: index.md (46 pages total)
-- Note: SegFormer opens the 5th paradigm — Transformer-based segmentation. No positional encoding, no complex decoder, no context modules. ERF analysis explains why MLP decoder works on Transformer but not CNN.
+- Note: SegFormer opens the 5th paradigm — Transformer-based segmentation. No positional encoding, no complex decoder, no context modules. ERF analysis explains why MLP decoder works on Transformer but not CNN.2026-06-12 | ingest | TE-NAS (Chen et al. 2021) — ICLR 2021, 4 pages: analysis/method/results/critical. Training-free NAS via NTK + linear regions

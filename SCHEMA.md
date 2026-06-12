@@ -68,6 +68,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   vision-transformer, hierarchical-transformer, mlp-decoder, mix-ffn,
   efficient-self-attention, positional-encoding-free, mit-encoder,
   overlap-patch-merging, sequence-reduction, segformer
+- **Neural Architecture Search:** neural-architecture-search, training-free-nas,
+  ntk, neural-tangent-kernel, linear-regions, expressivity, trainability,
+  weight-sharing-nas, pruning-based-nas, nas-bench-201
 - **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,

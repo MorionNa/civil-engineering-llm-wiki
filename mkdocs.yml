@@ -76,6 +76,11 @@ nav:
           - concepts/xie2021-segformer-method.md
           - concepts/xie2021-segformer-results.md
           - concepts/xie2021-segformer-critical.md
+      - Chen 2021 TE-NAS:
+          - concepts/chen2021-tenas-analysis.md
+          - concepts/chen2021-tenas-method.md
+          - concepts/chen2021-tenas-results.md
+          - concepts/chen2021-tenas-critical.md
       - Wang 2023 PINN 伪解:
           - concepts/wang2023-pinn-spurious-analysis.md
           - concepts/wang2023-pinn-spurious-method.md
