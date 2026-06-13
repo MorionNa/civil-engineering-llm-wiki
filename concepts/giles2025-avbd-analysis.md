@@ -131,7 +131,7 @@ AVBD 在 VBD 的 primal 迭代（逐顶点解 3×3/6×6 线性系统）之上叠
 **复现要点**：2D 版本用于教学验证，3D 版本需要 DirectX 11 GPU。碰撞检测在大场景下（510k 刚体）耗时与求解相当（7.2ms vs 10.3ms），是实际部署的瓶颈。参数 β/α/γ 在简单场景不敏感但复杂场景未经充分消融。
 
 ## 关联页面
-- [[avbd-siggraph2025-video]] — B站视频笔记：AVBD 直观效果展示
+- [[notes/videos/avbd-siggraph2025]] — B站视频笔记：AVBD 直观效果展示
 - [[giles2025-avbd-method]] — 方法机制展开
 - [[giles2025-avbd-results]] — 实验结果展开
 - [[giles2025-avbd-critical]] — 贡献 + Negative + 可迁移 + 机会

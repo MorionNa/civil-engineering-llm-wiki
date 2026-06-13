@@ -1,7 +1,45 @@
 # Wiki Schema
 
 ## Domain
-Physics-informed machine learning and computational mechanics — with a focus on deep learning methods for metamodeling, structural dynamics, and nonlinear system identification.
+Physics-informed machine learning and computational mechanics — with a focus on deep learning methods for metamodeling, structural dynamics, and nonlinear system identification. Expanding into semantic segmentation for structural engineering (scan-to-BIM), large language models (NAS/MoE/LLM推理), and AI4S.
+
+## Architecture
+
+```
+wiki/
+├── SCHEMA.md              # This file: conventions, rules, tag taxonomy
+├── index.md                # Content catalog with one-line summaries
+├── log.md                  # Chronological action log (append-only)
+├── raw/                    # L1: Immutable source material (never modified)
+│   ├── articles/           #   Web articles, clippings
+│   ├── papers/             #   PDFs, arxiv papers
+│   ├── transcripts/        #   Meeting/interview transcripts
+│   ├── videos/             #   Raw video files
+│   └── assets/             #   Images, diagrams
+├── concepts/               # L2: Deep paper analyses (1+3 structure only)
+│   └── <paper-slug>-{analysis,method,results,critical}.md
+├── notes/                  # L2: Derivative single-page notes (NON-PAPER ingest)
+│   ├── briefings/          #   PPT meetings, 汇报笔记, 会议纪要
+│   ├── lectures/           #   讲座, 教程笔记
+│   ├── videos/             #   视频内容笔记
+│   └── articles/           #   文章/博客摘录
+├── entities/               # L2: Entity pages (people, orgs, models, algorithms, datasets)
+├── comparisons/            # L2: Side-by-side comparative analyses
+└── queries/                # L2: Filed query results worth keeping
+```
+
+## Ingest Rules
+
+| Source type | Target directory | Format |
+|-------------|-----------------|--------|
+| Academic paper (full text available) | `concepts/` | 1+3 (analysis + method + results + critical) |
+| Academic paper (survey/abstract only) | `concepts/` | Single overview page |
+| PPT/会议汇报 | `notes/briefings/` | Single page |
+| 讲座/教程视频 | `notes/lectures/` | Single page |
+| B站/YouTube 视频 | `notes/videos/` | Single page |
+| 文章/博客 | `notes/articles/` | Single page |
+
+**Entity creation rule**: Every paper ingest MUST create or update ≥1 entity page in `entities/`. Non-paper ingest SHOULD create entities when introducing new models/organizations/people.
 
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `zhang2020-phylstm-analysis.md`)
@@ -18,7 +56,7 @@ Physics-informed machine learning and computational mechanics — with a focus o
 title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: entity | concept | comparison | query | summary
+type: entity | concept | briefing | lecture | video | article | comparison | query | summary
 tags: [from taxonomy below]
 sources: [raw/papers/source-name.md]
 confidence: high | medium | low

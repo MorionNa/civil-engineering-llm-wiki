@@ -110,5 +110,5 @@ AVBD 作为 local layer (preconditioner)，在高迭代后切换到 global conju
 - [[giles2025-avbd-analysis]] — 全维度概述
 - [[giles2025-avbd-method]] — 方法机制
 - [[giles2025-avbd-results]] — 实验结果
-- [[avbd-siggraph2025-video]] — B站视频笔记
+- [[notes/videos/avbd-siggraph2025]] — B站视频笔记
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式（PINN 对比视角）

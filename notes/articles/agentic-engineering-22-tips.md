@@ -2,7 +2,7 @@
 title: "Agentic Engineering 22 条技巧 (Matt Van Horn, 2026.06)"
 created: 2026-06-10
 updated: 2026-06-10
-type: concept
+type: article
 tags: [agentic-engineering, ai-coding, workflow, planning, context, multi-agent, skill-automation, voice-input, remote-work, productivity, claude-code, codex]
 sources: [raw/articles/agentic-engineering-tips-2026.md]
 methods: [ce-plan, ce-brainstorm, ce-work, plan-md, voice-to-llm, tmux-multi-agent, last30days, raw-transcript-input, human-signal, printing-press, skill-scaffolding]

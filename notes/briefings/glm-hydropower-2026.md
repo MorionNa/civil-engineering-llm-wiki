@@ -2,8 +2,8 @@
 title: "GLM 水利水电行业大模型汇报笔记 (2026-06-13)"
 created: 2026-06-13
 updated: 2026-06-13
-type: concept
-tags: [large-language-model, ai4s, domain-specific-llm, hydrology, civil-engineering, glm, mixture-of-experts, fine-tuning, retrieval-augmented-generation, prompt-engineering, model-evaluation]
+type: briefing
+tags: [large-language-model, domain-specific-llm, hydrology, civil-engineering, glm, mixture-of-experts, fine-tuning, retrieval-augmented-generation, prompt-engineering, model-evaluation]
 methods: [domain-pretraining, supervised-fine-tuning, rlhf, lora, qlora, rag, prompt-engineering, chain-of-thought, moe]
 datasets: [hydropower-corpus, textbook-corpus, industry-standards, journal-papers, question-bank]
 reproducibility: low
@@ -204,5 +204,5 @@ L2 场景应用：
 - [[jiang2024-mixtral-of-experts-analysis]] — MoE开源标杆参考
 - [[dai2024-deepseek-moe-analysis]] — 专家特化（与GLM知识增强互补）
 - [[chittyvenkata2022-nas-transformers-survey]] — NAS方法论（与GLM架构搜索相关）
-- [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S视角
-- [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — 扩散模型与AI4S
+- [[notes/lectures/ai4s-pinn-deepxde]] — AI4S视角
+- [[notes/lectures/ai4s-diffusion-models]] — 扩散模型与AI4S

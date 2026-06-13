@@ -2,7 +2,7 @@
 title: "AVBD 物理仿真算法 (SIGGRAPH 2025) — B站视频笔记"
 created: 2026-06-10
 updated: 2026-06-10
-type: concept
+type: video
 tags: [physics-simulation, real-time, game-engine, rigid-body, soft-body, cloth, fracture, pbd, vertex-block-descent, siggraph]
 sources: [raw/articles/avbd-siggraph2025-bilibili.md]
 methods: [avbd, vertex-block-descent, augmented-block-descent, position-based-dynamics]

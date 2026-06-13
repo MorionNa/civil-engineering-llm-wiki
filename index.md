@@ -2,11 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 76
+> Last updated: 2026-06-13 | Total pages: 76 (Concepts: 69, Notes: 5, Entities: 5, Comparisons: 2)
 
 ## Concepts
-- [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
-- [[avbd-siggraph2025-video]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
 - [[giles2025-avbd-method]] — AVBD 方法展开：硬约束、不等式约束、摩擦接触、渐进刚度递增
 - [[giles2025-avbd-results]] — AVBD 实验结果：vs VBD/XPBD/Seq Imp 在刚度比、质量比、碰撞堆叠上的量化对比
@@ -50,10 +48,7 @@
 
 - [[chittyvenkata2022-nas-transformers-survey]] — Chitty-Venkata et al. (2022) NAS for Transformers 综述：RL/Evolutionary/One-Shot/Training-Free 四维分类
 
-- [[glm-hydropower-llm-2026-report]] — GLM 水利水电行业大模型汇报笔记：GLM-5.0 → HydroGLM → 智能中台，60人团队，231GB语料
-- [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
-- [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
-- [[jiang2024-mixtral-of-experts-analysis]] — Jiang et al. (2024) Mixtral 8x7B 概述：SMoE 以 13B 激活参数超越 Llama 2 70B，首个开源实用级 MoE LLM
+- [[jiang2024-mixtral-of-experts-analysis]]
 - [[jiang2024-mixtral-of-experts-method]] — Mixtral 方法展开：8 专家 Top-2 路由 + SwiGLU + Megablocks 稀疏 MM
 - [[jiang2024-mixtral-of-experts-results]] — Mixtral 实验结果：vs Llama/GPT-3.5 全面对比 + 多语言 + 长上下文 + 路由分析
 - [[jiang2024-mixtral-of-experts-critical]] — Mixtral 贡献+Negative（专家不自动特化/训练细节未公开）+可迁移（密集→MoE改造）+机会
@@ -89,6 +84,13 @@
 - [[phylstm2]] — PhyLSTM2 双 LSTM 架构
 - [[phylstm3]] — PhyLSTM3 三 LSTM 架构
 - [[pseudo-time-stepping]] — 伪时间步进方法：自适应步长原理 + 与 PhyLSTM 权重调参的关联
+
+## Notes
+- [[notes/briefings/glm-hydropower-2026]] — GLM 水利水电行业大模型汇报笔记：GLM-5.0 → HydroGLM → 智能中台，60人团队，231GB语料
+- [[notes/lectures/ai4s-pinn-deepxde]] — AI4S 第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
+- [[notes/lectures/ai4s-diffusion-models]] — AI4S 第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
+- [[notes/videos/avbd-siggraph2025]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
+- [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
 
 ## Comparisons
 - [[phylstm2-vs-phylstm3-vs-lstm]] — PhyLSTM2/3/LSTM 性能对比 + 选型指南

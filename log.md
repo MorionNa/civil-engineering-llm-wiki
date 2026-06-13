@@ -210,3 +210,13 @@
 - Source: GLM 汇报 PPT 照片 (20+ slides, vision recognition)
 - Created: concepts/glm-hydropower-llm-2026-report.md (single page, 76 pages total)
 - Note: GLM-5.0 → HydroGLM vertical LLM for hydropower. 60-person team (Zhipu AI + Tsinghua + Guoneng + Daduhe). 231GB domain corpus, A/B evaluation, Skill Agent platform.
+
+## [2026-06-13] restructure | Wiki 架构重构：新增 notes/ 层，迁移非论文内容
+- Moved: concepts/{glm-hydropower, avbd-siggraph2025-video, agentic-engineering-22-tips} → notes/
+- Moved: concepts/ai4s/{ai4s-pinn-deepxde-tutorial, diffusion-models-ai4s-lecture2} → notes/lectures/
+- Created: notes/{briefings, lectures, videos, articles}/ directory structure
+- Updated: SCHEMA.md — ingest rules table + entity creation mandate
+- Updated: index.md — added Notes section, removed 5 entries from Concepts
+- Updated: mkdocs.yml — added Notes nav section
+- Created: notes/index.md, docs/notes/ symlinks
+- Fixed: 18 cross-references across 7 files

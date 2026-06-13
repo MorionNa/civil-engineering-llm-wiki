@@ -2,7 +2,7 @@
 title: "扩散生成模型：从物理原理到蛋白质设计（AI4S 第二讲）"
 created: 2026-06-11
 updated: 2026-06-11
-type: concept
+type: lecture
 tags: [diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion, score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo, controlnet, protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance, ai4s, scientific-discovery]
 sources: [raw/articles/diffusion-models-ai4s-lecture2-bilibili.md]
 methods: [diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion, score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo, controlnet]

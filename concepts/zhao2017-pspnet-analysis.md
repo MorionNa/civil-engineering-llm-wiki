@@ -131,4 +131,4 @@ Ablation：PPM > Global Pooling (+1.61 IoU)；Average Pooling > Max Pooling；α
 ## 关联页面
 
 - [[ronneberger2015-unet-analysis]] — 同为语义分割，U-Net 侧重 encoder-decoder + 局部特征融合，PSPNet 侧重全局上下文
-- [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — PINN 中的 multi-scale 思想有平行参照
+- [[notes/lectures/ai4s-pinn-deepxde]] — PINN 中的 multi-scale 思想有平行参照

@@ -36,11 +36,6 @@ nav:
   - 首页: index.md
   - Concepts:
       - concepts/index.md
-      - AI4S 系列:
-          - concepts/ai4s/ai4s-pinn-deepxde-tutorial.md
-          - concepts/ai4s/diffusion-models-ai4s-lecture2.md
-      - concepts/agentic-engineering-22-tips.md
-      - concepts/avbd-siggraph2025-video.md
       - Giles 2025 AVBD:
           - concepts/giles2025-avbd-analysis.md
           - concepts/giles2025-avbd-method.md
@@ -98,8 +93,6 @@ nav:
           - concepts/xu2021-nas-bert-critical.md
       - Chitty-Venkata 2022 NAS Survey:
           - concepts/chittyvenkata2022-nas-transformers-survey.md
-      - GLM 水利水电大模型 2026:
-          - concepts/glm-hydropower-llm-2026-report.md
       - Fedus 2021 Switch Transformer:
           - concepts/fedus2021-switch-transformer-analysis.md
           - concepts/fedus2021-switch-transformer-method.md
@@ -137,6 +130,17 @@ nav:
       - entities/phylstm2.md
       - entities/phylstm3.md
       - entities/pseudo-time-stepping.md
+  - Notes:
+      - notes/index.md
+      - 汇报:
+          - notes/briefings/glm-hydropower-2026.md
+      - 讲座:
+          - notes/lectures/ai4s-pinn-deepxde.md
+          - notes/lectures/ai4s-diffusion-models.md
+      - 视频:
+          - notes/videos/avbd-siggraph2025.md
+      - 文章:
+          - notes/articles/agentic-engineering-22-tips.md
   - Comparisons:
       - comparisons/index.md
       - comparisons/phylstm2-vs-phylstm3-vs-lstm.md

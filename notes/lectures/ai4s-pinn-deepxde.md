@@ -2,7 +2,7 @@
 title: "AI如何求解物理问题 — PINN 入门到实战 (AI4S第一课)"
 created: 2026-06-10
 updated: 2026-06-10
-type: concept
+type: lecture
 tags: [pinn, physics-informed-neural-networks, deepxde, pde, ai4s, auto-diff, g-pinn, inverse-problem]
 sources: [raw/articles/avbd-siggraph2025-bilibili.md]
 methods: [pinn, g-pinn, deepxde, hard-constraints, rar, deeponet]
