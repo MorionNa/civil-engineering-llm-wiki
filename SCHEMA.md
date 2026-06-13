@@ -39,7 +39,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
 - **Methods:** neural-network, lstm, physics-informed, metamodeling, deep-learning, 
   sequence-modeling, finite-difference, tensor-differentiator, multi-lstm,
   physics-constrained-loss, soft-constraint, adam-lbfgs, two-phase-optimization,
-  collocation-strategy
+  collocation-strategy, conditional-computation, automatic-sharding, spmd,
+  model-parallelism, pipeline-parallelism, distributed-training, sublinear-scaling,
+  compiler-optimization, xla-compiler, transformer
 - **Architecture:** phylstm2, phylstm3
 - **Domain:** structural-dynamics, nonlinear-systems, hysteresis, seismic-response, 
   equation-of-motion, restoring-force, data-scarcity, unobservable-variables,
@@ -77,6 +79,15 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance
 - **AI4S:** ai4s, scientific-discovery, inverse-problem, pinn, deepxde,
   physics-simulation, material-design, weather-prediction
+- **Large Language Models:** mixture-of-experts, sparse-moe, gating-network,
+  top-k-routing, swiglu, decoder-only-transformer, large-language-model,
+  efficient-inference, load-balancing, router-analysis, instruction-tuning,
+  supervised-fine-tuning, direct-preference-optimization, multilingual-data,
+  llm-benchmark, code-generation-benchmark, math-benchmark,
+  commonsense-reasoning, long-context-modeling, bias-evaluation
+- **Models/Architectures:** mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo
+- **Datasets:** the-pile, passkey-retrieval, mt-bench, bbq-bias, bold-bias,
+  humaneval, gsm8k, mbpp, mmlu, hellaswag
 
 Rule: every tag must appear in this taxonomy. Add new tags here BEFORE using them.
 

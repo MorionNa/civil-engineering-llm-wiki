@@ -5,6 +5,15 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-13] ingest | Jiang et al. (2024) — Mixtral of Experts
+- Source: arXiv 2401.04088, raw/papers/jiang2024_mixtral_of_experts.md
+- SCHEMA.md updated: added LLM/MoE tag categories (mixture-of-experts, sparse-moe, gating-network, top-k-routing, swiglu, decoder-only-transformer, large-language-model, efficient-inference, load-balancing, router-analysis, instruction-tuning, supervised-fine-tuning, direct-preference-optimization, multilingual-data, llm-benchmark, code-generation-benchmark, math-benchmark, commonsense-reasoning, long-context-modeling, bias-evaluation, mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo, the-pile, passkey-retrieval, mt-bench, bbq-bias, bold-bias, humaneval, gsm8k, mbpp, mmlu, hellaswag)
+- Created: concepts/jiang2024-mixtral-of-experts-analysis.md (overview)
+- Created: concepts/jiang2024-mixtral-of-experts-method.md (method details)
+- Created: concepts/jiang2024-mixtral-of-experts-results.md (results details)
+- Created: concepts/jiang2024-mixtral-of-experts-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Updated: index.md (54 pages total)
+
 ## [2026-06-10] create | Wiki initialized
 - Domain: Physics-informed machine learning and computational mechanics
 - Structure created with SCHEMA.md, index.md, log.md
@@ -127,3 +136,31 @@
 - Updated: SCHEMA.md (added Transformer tags: vision-transformer, mix-ffn, etc.)
 - Updated: index.md (46 pages total)
 - Note: SegFormer opens the 5th paradigm — Transformer-based segmentation. No positional encoding, no complex decoder, no context modules. ERF analysis explains why MLP decoder works on Transformer but not CNN.2026-06-12 | ingest | TE-NAS (Chen et al. 2021) — ICLR 2021, 4 pages: analysis/method/results/critical. Training-free NAS via NTK + linear regions
+
+## [2026-06-13] ingest | Fedus et al. (2021) Switch Transformer — JMLR 2022
+- Source: arXiv: 2101.03961, raw/papers/fedus2021_switch_transformer.md (40 pages, 101K chars)
+- Created: concepts/fedus2021-switch-transformer-analysis.md (overview, 137 lines)
+- Created: concepts/fedus2021-switch-transformer-method.md (method dim 5 expanded, 187 lines)
+- Created: concepts/fedus2021-switch-transformer-results.md (results dim 6 expanded, 185 lines)
+- Created: concepts/fedus2021-switch-transformer-critical.md (dims 7-12 combined, 134 lines)
+- Updated: index.md (58 pages total)
+
+## [2026-06-13] ingest | Lepikhin et al. (2020) GShard — ICLR 2021
+- Source: arXiv: 2006.16668, raw/papers/lepikhin2021_gshard.md (35 pages, ~123K chars)
+- Created: concepts/lepikhin2021-gshard-analysis.md (overview, 12 dimensions)
+- Created: concepts/lepikhin2021-gshard-method.md (MoE gating + GShard API + SPMD Partitioner + Einsum partitioning)
+- Created: concepts/lepikhin2021-gshard-results.md (Translation quality BLEU + Training efficiency + Memory/runtime scaling)
+- Created: concepts/lepikhin2021-gshard-critical.md (5 contributions, 9 NK, 7 TK, 10 research opportunities)
+- Updated: SCHEMA.md (added distributed-training tags: conditional-computation, spmd, automatic-sharding, etc.)
+- Updated: index.md (62 pages total)
+- Note: GShard is the foundational MoE+distributed-training systems paper. Automatic sharding via annotations + XLA SPMD Partitioner. 600B MoE Transformer trained in 4 days on 2048 TPU v3. Every-other-layer MoE design + top-2 gating with expert capacity/auxiliary loss/random routing.
+
+## [2026-06-13] ingest | Dai et al. (2024) — DeepSeekMoE (DOI: 10.18653/v1/2024.acl-long.70)
+- Source: ACL 2024, PDF downloaded via paper-download crossref_oa
+- Raw captured: raw/papers/dai2024_deepseek_moe.pdf + .md
+- Created: concepts/dai2024-deepseek-moe-analysis.md (overview, 12 dimensions)
+- Created: concepts/dai2024-deepseek-moe-method.md (fine-grained segmentation + shared isolation + balance loss + 2B/16B configs)
+- Created: concepts/dai2024-deepseek-moe-results.md (5 experiments: vs GShard/Switch, upper-bound, ablation, specialization analysis, 16B scaling)
+- Created: concepts/dai2024-deepseek-moe-critical.md (4 contributions, 6 NK, 7 TK, 8 research opportunities, reproducibility 🟢 high)
+- Updated: index.md (66 pages total)
+- Note: DeepSeekMoE completes the MoE quartet with Switch Transformer (routing simplification) → GShard (distributed systems) → Mixtral (open-source application) → DeepSeekMoE (expert specialization). Two novel strategies: fine-grained expert segmentation + shared expert isolation. 16B model matches 7B dense with 40% compute.

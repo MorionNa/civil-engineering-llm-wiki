@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-12 | Total pages: 50
+> Last updated: 2026-06-13 | Total pages: 66
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
@@ -41,6 +41,10 @@
 - [[chen2021-tenas-critical]] — TE-NAS 贡献+Negative（rank corr ~0.5-0.7）+可迁移+机会
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
+- [[jiang2024-mixtral-of-experts-analysis]] — Jiang et al. (2024) Mixtral 8x7B 概述：SMoE 以 13B 激活参数超越 Llama 2 70B，首个开源实用级 MoE LLM
+- [[jiang2024-mixtral-of-experts-method]] — Mixtral 方法展开：8 专家 Top-2 路由 + SwiGLU + Megablocks 稀疏 MM
+- [[jiang2024-mixtral-of-experts-results]] — Mixtral 实验结果：vs Llama/GPT-3.5 全面对比 + 多语言 + 长上下文 + 路由分析
+- [[jiang2024-mixtral-of-experts-critical]] — Mixtral 贡献+Negative（专家不自动特化/训练细节未公开）+可迁移（密集→MoE改造）+机会
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
 - [[wang2023-pinn-spurious-method]] — 伪时间步进 + 自适应步长方法展开
 - [[wang2023-pinn-spurious-results]] — Helmholtz/Klein-Gordon/Navier-Stokes/Rayleigh-Taylor 实验结果
@@ -49,6 +53,19 @@
 - [[zhang2020-phylstm-method]] — PhyLSTM2/3 方法机制展开：架构数据流图、损失函数详解、训练策略
 - [[zhang2020-phylstm-results]] — 两个验证案例结果展开：MRF 和 Bouc-Wen
 - [[zhang2020-phylstm-critical]] — 贡献 + 知识点 + Negative + 可迁移 + 研究机会。**含 PINN 失败模式关联**
+- [[fedus2021-switch-transformer-analysis]] — Fedus et al. (2021) Switch Transformer 概述：简化 MoE to k=1 routing，万亿参数 4× speedup over T5-XXL
+- [[fedus2021-switch-transformer-method]] — Switch 方法：Switch Routing (k=1) + 负载均衡损失 + 选择性精度 + Expert Dropout + 三维并行
+- [[fedus2021-switch-transformer-results]] — Switch 结果：7× speedup over T5-Base，全 101 语言提升，蒸馏 99% 压缩 30% 保留
+- [[fedus2021-switch-transformer-critical]] — Switch 贡献+Negative（训练不稳定/上游→下游断层）+可迁移+5 项研究机会
+- [[lepikhin2021-gshard-analysis]] — Lepikhin et al. (2020) GShard 概述：自动分片+条件计算实现 600B 参数 MoE Transformer 4天训练
+- [[lepikhin2021-gshard-method]] — GShard 方法：三层系统（MoE 门控 + 标注 API + SPMD 分区器）+ Einsum 分区模式
+- [[lepikhin2021-gshard-results]] — GShard 结果：100语言翻译 ∆BLEU +13.5, 600B 训练 4天, 亚线性计算/显存缩放
+- [[lepikhin2021-gshard-critical]] — GShard 贡献+Negative（bfloat16不稳定/容量固定）+可迁移（SPMD范式）+10项研究机会
+
+- [[dai2024-deepseek-moe-analysis]] — Dai et al. (2024) DeepSeekMoE 概述：细粒度专家分割+共享专家隔离，40% 计算量达 7B 密集水平
+- [[dai2024-deepseek-moe-method]] — DeepSeekMoE 方法：m× 专家分割 + Ks 共享专家 + Balance Loss + 2B/16B 双规模配置
+- [[dai2024-deepseek-moe-results]] — DeepSeekMoE 结果：vs GShard/密集上限/Switch，2B 逼近理论上限，16B 仅 40% 计算量
+- [[dai2024-deepseek-moe-critical]] — DeepSeekMoE 贡献+Negative（注意力瓶颈/MCQ弱点）+可迁移（细粒度范式）+8项研究机会
 
 ## Entities
 - [[bouc-wen-model]] — Bouc-Wen 率相关滞回模型

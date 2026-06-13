@@ -81,6 +81,26 @@ nav:
           - concepts/chen2021-tenas-method.md
           - concepts/chen2021-tenas-results.md
           - concepts/chen2021-tenas-critical.md
+      - Fedus 2021 Switch Transformer:
+          - concepts/fedus2021-switch-transformer-analysis.md
+          - concepts/fedus2021-switch-transformer-method.md
+          - concepts/fedus2021-switch-transformer-results.md
+          - concepts/fedus2021-switch-transformer-critical.md
+      - Lepikhin 2021 GShard:
+          - concepts/lepikhin2021-gshard-analysis.md
+          - concepts/lepikhin2021-gshard-method.md
+          - concepts/lepikhin2021-gshard-results.md
+          - concepts/lepikhin2021-gshard-critical.md
+      - Jiang 2024 Mixtral:
+          - concepts/jiang2024-mixtral-of-experts-analysis.md
+          - concepts/jiang2024-mixtral-of-experts-method.md
+          - concepts/jiang2024-mixtral-of-experts-results.md
+          - concepts/jiang2024-mixtral-of-experts-critical.md
+      - Dai 2024 DeepSeekMoE:
+          - concepts/dai2024-deepseek-moe-analysis.md
+          - concepts/dai2024-deepseek-moe-method.md
+          - concepts/dai2024-deepseek-moe-results.md
+          - concepts/dai2024-deepseek-moe-critical.md
       - Wang 2023 PINN 伪解:
           - concepts/wang2023-pinn-spurious-analysis.md
           - concepts/wang2023-pinn-spurious-method.md
