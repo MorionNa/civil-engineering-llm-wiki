@@ -40,7 +40,7 @@ confidence: medium
 | 02 | plan.md 是给 agent 看的 | "Plans are for agents, you silly human." 扫一眼标题→`/ce-work`。不懂追问 TLDR/eli5 |
 | 03 | 同一条 loop 用于所有脑力工作 | 战略文档、产品 spec、竞品分析、board update |
 
-→ 与 Hermes 的 `[[plan]]` skill 同个模式：先计划再执行。
+→ 与 Hermes 的 plan skill 同个模式：先计划再执行。
 
 ### 二、怎么高效喂活给 agent (04-09)
 
@@ -64,7 +64,7 @@ confidence: medium
 | 14 | **笔记做成 agent 知识库** | Bear+BearCLI / Obsidian / gbrain / supermemory。本质是 Personal RAG |
 | 15 | 随时随地工作的硬件 | Mac mini+Mosh+tmux+Hermes+OpenClaw。AgentCookie 同步 cookies |
 
-→ 14 和 15 直接关联 llm-wiki：[[obsidian-integration]]、Hermes 远程工作模式。
+→ 14 和 15 关联 llm-wiki 和 Hermes 远程工作模式。
 
 ### 四、让 agent 走出终端 (16-20)
 
@@ -101,7 +101,7 @@ confidence: medium
 
 | 知识 | 如何迁移到 Hermes |
 |------|-------------------|
-| plan→build loop | 用 [[plan]] skill：先 /plan 再执行 |
+| plan→build loop | Hermes `/plan` 命令：先计划再执行 |
 | 语音输入 | 配置语音转文字→直接喂给 Hermes |
 | 多 tmux 并行 | 用 `delegate_task` 或 `terminal(background=true)` 并行跑多任务 |
 | 原始 transcript 直接喂 | 不总结，把 raw text 直接给 Hermes 处理 |
@@ -115,5 +115,5 @@ confidence: medium
 
 - [[zhang2020-phylstm-analysis]] — 论文分析需要上下文（论文本身+关联论文）
 - [[wang2023-pinn-spurious-analysis]] — 交叉引用提升 wiki 价值的案例
-- Hermes: `plan` skill — plan→build loop 的 Hermes 实现
+- Hermes: plan skill — plan→build loop 的 Hermes 实现
 - Hermes: skill 系统 — "做两次写成 skill" 的落地方式

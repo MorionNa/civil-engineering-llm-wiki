@@ -44,7 +44,7 @@ wiki/
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `zhang2020-phylstm-analysis.md`)
 - Every wiki page starts with YAML frontmatter (see below)
-- Use `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
+- Use backtick-wrapped wikilinks show as code: `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
 - When updating a page, always bump the `updated` date
 - Every new page must be added to `index.md` under the correct section
 - Every action must be appended to `log.md`
@@ -233,8 +233,8 @@ confidence: high
 | **复现要点** | `<关键注意事项，如预训练依赖、已知坑>` |
 
 ## 关联页面
-- [[entity-page-1]] — 说明
-- [[entity-page-2]] — 说明
+- `[[entity-page-1]]` — 说明
+- `[[entity-page-2]]` — 说明
 ```
 
 Dimensions 3 (scientific-question) and 7 (contribution) are the hardest to get right — always verify:

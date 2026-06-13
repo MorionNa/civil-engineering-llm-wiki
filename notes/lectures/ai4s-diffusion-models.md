@@ -145,6 +145,6 @@ $$\mathcal{L} = \|\varepsilon - \varepsilon_\theta(x_t, t)\|^2$$
 
 ## 关联
 
-- [[ai4s-pinn-deepxde-tutorial]] — PINN 入门到实战（AI4S 第一讲）
+- [[notes/lectures/ai4s-pinn-deepxde]] — PINN 入门到实战（AI4S 第一讲）
 - [[zhang2020-phylstm-analysis]] — PhyLSTM 物理约束学习
 - [[wang2023-pinn-spurious-analysis]] — PINN 训练失败模式
