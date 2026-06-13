@@ -7,7 +7,7 @@
 | 目录 | 内容 | 说明 |
 |------|------|------|
 | `raw/` | 原始来源 | 论文全文、公众号推文 OCR、视频转录 |
-| `concepts/` | 概念笔记 | 论文拆解分析（12 维度）、非论文内容笔记 |
+| `papers/` | 论文分析 | 通读论文全文后的深度拆解（12 维度 1+3 结构） |
 | `entities/` | 实体定义 | 方法名、数据集、模型架构等术语解释 |
 | `comparisons/` | 对比分析 | 跨论文跨方法对比 |
 | `queries/` | 问答归档 | 有价值的问答记录 |
@@ -43,6 +43,6 @@
 
 ## 📜 许可
 
-笔记内容（concepts/、entities/、comparisons/、queries/）采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+笔记内容（papers/、entities/、comparisons/、queries/）采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
 
 raw/ 文件夹中的论文全文、推文转载等保留原作者权利。

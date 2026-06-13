@@ -34,95 +34,95 @@ theme:
 
 nav:
   - 首页: index.md
-  - Concepts:
-      - concepts/index.md
+  - Papers:
+      - papers/index.md
       - Giles 2025 AVBD:
-          - concepts/giles2025-avbd-analysis.md
-          - concepts/giles2025-avbd-method.md
-          - concepts/giles2025-avbd-results.md
-          - concepts/giles2025-avbd-critical.md
+          - papers/giles2025-avbd-analysis.md
+          - papers/giles2025-avbd-method.md
+          - papers/giles2025-avbd-results.md
+          - papers/giles2025-avbd-critical.md
       - Lu 2013 倒塌模拟:
-          - concepts/lu2013-collapse-rc-highrise-analysis.md
-          - concepts/lu2013-collapse-rc-highrise-method.md
-          - concepts/lu2013-collapse-rc-highrise-results.md
-          - concepts/lu2013-collapse-rc-highrise-critical.md
+          - papers/lu2013-collapse-rc-highrise-analysis.md
+          - papers/lu2013-collapse-rc-highrise-method.md
+          - papers/lu2013-collapse-rc-highrise-results.md
+          - papers/lu2013-collapse-rc-highrise-critical.md
       - Ronneberger 2015 U-Net:
-          - concepts/ronneberger2015-unet-analysis.md
-          - concepts/ronneberger2015-unet-method.md
-          - concepts/ronneberger2015-unet-results.md
-          - concepts/ronneberger2015-unet-critical.md
+          - papers/ronneberger2015-unet-analysis.md
+          - papers/ronneberger2015-unet-method.md
+          - papers/ronneberger2015-unet-results.md
+          - papers/ronneberger2015-unet-critical.md
       - Zhao 2017 PSPNet:
-          - concepts/zhao2017-pspnet-analysis.md
-          - concepts/zhao2017-pspnet-method.md
-          - concepts/zhao2017-pspnet-results.md
-          - concepts/zhao2017-pspnet-critical.md
+          - papers/zhao2017-pspnet-analysis.md
+          - papers/zhao2017-pspnet-method.md
+          - papers/zhao2017-pspnet-results.md
+          - papers/zhao2017-pspnet-critical.md
       - Chen 2018 DeepLabv3+:
-          - concepts/chen2018-deeplabv3plus-analysis.md
-          - concepts/chen2018-deeplabv3plus-method.md
-          - concepts/chen2018-deeplabv3plus-results.md
-          - concepts/chen2018-deeplabv3plus-critical.md
+          - papers/chen2018-deeplabv3plus-analysis.md
+          - papers/chen2018-deeplabv3plus-method.md
+          - papers/chen2018-deeplabv3plus-results.md
+          - papers/chen2018-deeplabv3plus-critical.md
       - Sun 2019 HRNet:
-          - concepts/sun2019-hrnetv2-analysis.md
-          - concepts/sun2019-hrnetv2-method.md
-          - concepts/sun2019-hrnetv2-results.md
-          - concepts/sun2019-hrnetv2-critical.md
+          - papers/sun2019-hrnetv2-analysis.md
+          - papers/sun2019-hrnetv2-method.md
+          - papers/sun2019-hrnetv2-results.md
+          - papers/sun2019-hrnetv2-critical.md
       - Xie 2021 SegFormer:
-          - concepts/xie2021-segformer-analysis.md
-          - concepts/xie2021-segformer-method.md
-          - concepts/xie2021-segformer-results.md
-          - concepts/xie2021-segformer-critical.md
+          - papers/xie2021-segformer-analysis.md
+          - papers/xie2021-segformer-method.md
+          - papers/xie2021-segformer-results.md
+          - papers/xie2021-segformer-critical.md
       - Chen 2021 TE-NAS:
-          - concepts/chen2021-tenas-analysis.md
-          - concepts/chen2021-tenas-method.md
-          - concepts/chen2021-tenas-results.md
-          - concepts/chen2021-tenas-critical.md
+          - papers/chen2021-tenas-analysis.md
+          - papers/chen2021-tenas-method.md
+          - papers/chen2021-tenas-results.md
+          - papers/chen2021-tenas-critical.md
       - Wang 2020 HAT:
-          - concepts/wang2020-hat-analysis.md
-          - concepts/wang2020-hat-method.md
-          - concepts/wang2020-hat-results.md
-          - concepts/wang2020-hat-critical.md
+          - papers/wang2020-hat-analysis.md
+          - papers/wang2020-hat-method.md
+          - papers/wang2020-hat-results.md
+          - papers/wang2020-hat-critical.md
       - Chen 2021 AutoFormer:
-          - concepts/chen2021-autoformer-analysis.md
-          - concepts/chen2021-autoformer-method.md
-          - concepts/chen2021-autoformer-results.md
-          - concepts/chen2021-autoformer-critical.md
+          - papers/chen2021-autoformer-analysis.md
+          - papers/chen2021-autoformer-method.md
+          - papers/chen2021-autoformer-results.md
+          - papers/chen2021-autoformer-critical.md
       - Xu 2021 NAS-BERT:
-          - concepts/xu2021-nas-bert-analysis.md
-          - concepts/xu2021-nas-bert-method.md
-          - concepts/xu2021-nas-bert-results.md
-          - concepts/xu2021-nas-bert-critical.md
+          - papers/xu2021-nas-bert-analysis.md
+          - papers/xu2021-nas-bert-method.md
+          - papers/xu2021-nas-bert-results.md
+          - papers/xu2021-nas-bert-critical.md
       - Chitty-Venkata 2022 NAS Survey:
-          - concepts/chittyvenkata2022-nas-transformers-survey.md
+          - papers/chittyvenkata2022-nas-transformers-survey.md
       - Fedus 2021 Switch Transformer:
-          - concepts/fedus2021-switch-transformer-analysis.md
-          - concepts/fedus2021-switch-transformer-method.md
-          - concepts/fedus2021-switch-transformer-results.md
-          - concepts/fedus2021-switch-transformer-critical.md
+          - papers/fedus2021-switch-transformer-analysis.md
+          - papers/fedus2021-switch-transformer-method.md
+          - papers/fedus2021-switch-transformer-results.md
+          - papers/fedus2021-switch-transformer-critical.md
       - Lepikhin 2021 GShard:
-          - concepts/lepikhin2021-gshard-analysis.md
-          - concepts/lepikhin2021-gshard-method.md
-          - concepts/lepikhin2021-gshard-results.md
-          - concepts/lepikhin2021-gshard-critical.md
+          - papers/lepikhin2021-gshard-analysis.md
+          - papers/lepikhin2021-gshard-method.md
+          - papers/lepikhin2021-gshard-results.md
+          - papers/lepikhin2021-gshard-critical.md
       - Jiang 2024 Mixtral:
-          - concepts/jiang2024-mixtral-of-experts-analysis.md
-          - concepts/jiang2024-mixtral-of-experts-method.md
-          - concepts/jiang2024-mixtral-of-experts-results.md
-          - concepts/jiang2024-mixtral-of-experts-critical.md
+          - papers/jiang2024-mixtral-of-experts-analysis.md
+          - papers/jiang2024-mixtral-of-experts-method.md
+          - papers/jiang2024-mixtral-of-experts-results.md
+          - papers/jiang2024-mixtral-of-experts-critical.md
       - Dai 2024 DeepSeekMoE:
-          - concepts/dai2024-deepseek-moe-analysis.md
-          - concepts/dai2024-deepseek-moe-method.md
-          - concepts/dai2024-deepseek-moe-results.md
-          - concepts/dai2024-deepseek-moe-critical.md
+          - papers/dai2024-deepseek-moe-analysis.md
+          - papers/dai2024-deepseek-moe-method.md
+          - papers/dai2024-deepseek-moe-results.md
+          - papers/dai2024-deepseek-moe-critical.md
       - Wang 2023 PINN 伪解:
-          - concepts/wang2023-pinn-spurious-analysis.md
-          - concepts/wang2023-pinn-spurious-method.md
-          - concepts/wang2023-pinn-spurious-results.md
-          - concepts/wang2023-pinn-spurious-critical.md
+          - papers/wang2023-pinn-spurious-analysis.md
+          - papers/wang2023-pinn-spurious-method.md
+          - papers/wang2023-pinn-spurious-results.md
+          - papers/wang2023-pinn-spurious-critical.md
       - Zhang 2020 PhyLSTM:
-          - concepts/zhang2020-phylstm-analysis.md
-          - concepts/zhang2020-phylstm-method.md
-          - concepts/zhang2020-phylstm-results.md
-          - concepts/zhang2020-phylstm-critical.md
+          - papers/zhang2020-phylstm-analysis.md
+          - papers/zhang2020-phylstm-method.md
+          - papers/zhang2020-phylstm-results.md
+          - papers/zhang2020-phylstm-critical.md
   - Entities:
       - entities/index.md
       - 大语言模型:

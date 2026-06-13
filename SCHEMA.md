@@ -16,7 +16,7 @@ wiki/
 │   ├── transcripts/        #   Meeting/interview transcripts
 │   ├── videos/             #   Raw video files
 │   └── assets/             #   Images, diagrams
-├── concepts/               # L2: Deep paper analyses (1+3 structure only)
+├── papers/               # L2: Deep paper analyses (1+3 structure only)
 │   └── <paper-slug>-{analysis,method,results,critical}.md
 ├── notes/                  # L2: Derivative single-page notes (NON-PAPER ingest)
 │   ├── briefings/          #   PPT meetings, 汇报笔记, 会议纪要
@@ -32,8 +32,8 @@ wiki/
 
 | Source type | Target directory | Format |
 |-------------|-----------------|--------|
-| Academic paper (full text available) | `concepts/` | 1+3 (analysis + method + results + critical) |
-| Academic paper (survey/abstract only) | `concepts/` | Single overview page |
+| Academic paper (full text available) | `papers/` | 1+3 (analysis + method + results + critical) |
+| Academic paper (survey/abstract only) | `papers/` | Single overview page |
 | PPT/会议汇报 | `notes/briefings/` | Single page |
 | 讲座/教程视频 | `notes/lectures/` | Single page |
 | B站/YouTube 视频 | `notes/videos/` | Single page |
@@ -56,7 +56,7 @@ wiki/
 title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: entity | concept | briefing | lecture | video | article | comparison | query | summary
+type: entity | paper-analysis | briefing | lecture | video | article | comparison | query | summary
 tags: [from taxonomy below]
 sources: [raw/papers/source-name.md]
 confidence: high | medium | low
@@ -139,13 +139,13 @@ Rule: every tag must appear in this taxonomy. Add new tags here BEFORE using the
 
 ## Paper Analysis Page Structure
 
-Every ingested paper produces a **1 overview + 3 sub-page** structure under `concepts/`:
+Every ingested paper produces a **1 overview + 3 sub-page** structure under `papers/`:
 
 ```
-concepts/<author-year>-<keyword>-analysis.md    ← Overview (~80 lines)
-concepts/<author-year>-<keyword>-method.md      ← Dimension 5 expanded
-concepts/<author-year>-<keyword>-results.md     ← Dimension 6 expanded
-concepts/<author-year>-<keyword>-critical.md    ← Dimensions 7-11 combined
+papers/<author-year>-<keyword>-analysis.md    ← Overview (~80 lines)
+papers/<author-year>-<keyword>-method.md      ← Dimension 5 expanded
+papers/<author-year>-<keyword>-results.md     ← Dimension 6 expanded
+papers/<author-year>-<keyword>-critical.md    ← Dimensions 7-11 combined
 ```
 
 - **Overview:** All 11 dimensions in 2-3 sentences each, with `→ [[sub-page]]` links.
@@ -164,7 +164,7 @@ concepts/<author-year>-<keyword>-critical.md    ← Dimensions 7-11 combined
 title: "<Author> (<Year>) — <Short Title>: 论文分析"
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-type: concept
+type: paper-analysis
 tags: [<content-keywords-from-taxonomy>]
 sources: [raw/papers/<source-file>.md]
 # Dimension fields — categorize keywords for structured filtering:
@@ -244,8 +244,8 @@ Dimensions 3 (scientific-question) and 7 (contribution) are the hardest to get r
 ## Entity Pages
 One page per notable entity (model, dataset, method, person). Include: overview, key facts/dates, relationships, source references.
 
-## Concept Pages
-One page per concept. Include: definition, current knowledge state, open questions, related concepts.
+## Paper Pages
+One page per topic. Include: definition, current knowledge state, open questions, related papers.
 
 ## Comparison Pages
 Side-by-side analyses with comparison dimensions (table format preferred), verdict/synthesis, sources.

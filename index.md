@@ -2,9 +2,9 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 99 (Concepts: 69, Notes: 5, Entities: 28, Comparisons: 2)
+> Last updated: 2026-06-13 | Total pages: 99 (Papers: 69, Notes: 5, Entities: 28, Comparisons: 2)
 
-## Concepts
+## Papers
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
 - [[giles2025-avbd-method]] — AVBD 方法展开：硬约束、不等式约束、摩擦接触、渐进刚度递增
 - [[giles2025-avbd-results]] — AVBD 实验结果：vs VBD/XPBD/Seq Imp 在刚度比、质量比、碰撞堆叠上的量化对比
