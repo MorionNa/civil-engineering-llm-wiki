@@ -41,7 +41,8 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   physics-constrained-loss, soft-constraint, adam-lbfgs, two-phase-optimization,
   collocation-strategy, conditional-computation, automatic-sharding, spmd,
   model-parallelism, pipeline-parallelism, distributed-training, sublinear-scaling,
-  compiler-optimization, xla-compiler, transformer
+  compiler-optimization, xla-compiler, transformer, machine-translation,
+  heterogeneous-transformer, encoder-decoder-attention, edge-inference
 - **Architecture:** phylstm2, phylstm3
 - **Domain:** structural-dynamics, nonlinear-systems, hysteresis, seismic-response, 
   equation-of-motion, restoring-force, data-scarcity, unobservable-variables,
@@ -58,7 +59,7 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   gauss-seidel, jacobi, high-stiffness-ratio, hard-constraints, mass-spring,
   frictional-contact, substep, information-propagation-limit
 - **Meta:** comparison, review, future-work, limitation, cross-domain-generalization,
-  architecture-selection
+  architecture-selection, transfer-learning
 - **Computer vision:** semantic-segmentation, encoder-decoder, skip-connections,
   fully-convolutional, u-net, data-augmentation, small-dataset, overlap-tile,
   biomedical-imaging, scene-parsing, pyramid-pooling, multi-scale-context,
@@ -72,7 +73,10 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   overlap-patch-merging, sequence-reduction, segformer
 - **Neural Architecture Search:** neural-architecture-search, training-free-nas,
   ntk, neural-tangent-kernel, linear-regions, expressivity, trainability,
-  weight-sharing-nas, pruning-based-nas, nas-bench-201
+  weight-sharing-nas, pruning-based-nas, nas-bench-201, one-shot-nas,
+  weight-entanglement, evolutionary-search,
+  hardware-aware-nas, latency-prediction, evolutionary-search,
+  weight-sharing-supernet, hardware-specialization, latency-constraint
 - **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,
@@ -85,9 +89,13 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   supervised-fine-tuning, direct-preference-optimization, multilingual-data,
   llm-benchmark, code-generation-benchmark, math-benchmark,
   commonsense-reasoning, long-context-modeling, bias-evaluation
-- **Models/Architectures:** mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo
+- **Models/Architectures:** mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo, autoformer
+- **Model Compression:** knowledge-distillation, bert-compression,
+  task-agnostic-compression, block-wise-training, progressive-shrinking,
+  separable-convolution, supernet, model-compression
 - **Datasets:** the-pile, passkey-retrieval, mt-bench, bbq-bias, bold-bias,
-  humaneval, gsm8k, mbpp, mmlu, hellaswag
+  humaneval, gsm8k, mbpp, mmlu, hellaswag, wmt14,
+  wmt19, iwslt14, glu-e, squad, imagenet, cifar-10, cifar-100
 
 Rule: every tag must appear in this taxonomy. Add new tags here BEFORE using them.
 

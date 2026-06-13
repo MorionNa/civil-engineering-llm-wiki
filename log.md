@@ -5,6 +5,24 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-13] ingest | Chen et al. (2021) — AutoFormer
+- Source: DOI 10.1109/iccv48922.2021.01205 (ICCV 2021, CCF-A), raw/papers/chen2021_autoformer.md
+- SCHEMA.md updated: added one-shot-nas, weight-entanglement, evolutionary-search (NAS section); autoformer (Models); imagenet, cifar-10, cifar-100 (Datasets); transfer-learning (Meta)
+- Created: concepts/chen2021-autoformer-analysis.md (overview)
+- Created: concepts/chen2021-autoformer-method.md (method details)
+- Created: concepts/chen2021-autoformer-results.md (results details)
+- Created: concepts/chen2021-autoformer-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Updated: index.md (74 pages total)
+
+## [2026-06-13] ingest | Xu et al. (2021) — NAS-BERT
+- Source: DOI 10.1145/3447548.3467262 (KDD 2021), raw/papers/xu2021_nas_bert.md
+- SCHEMA.md updated: added Model Compression tag category (knowledge-distillation, bert-compression, task-agnostic-compression, block-wise-training, progressive-shrinking, separable-convolution, supernet, model-compression) + datasets (glu-e, squad)
+- Created: concepts/xu2021-nas-bert-analysis.md (overview)
+- Created: concepts/xu2021-nas-bert-method.md (method details)
+- Created: concepts/xu2021-nas-bert-results.md (results details)
+- Created: concepts/xu2021-nas-bert-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Updated: index.md (70 pages total)
+
 ## [2026-06-13] ingest | Jiang et al. (2024) — Mixtral of Experts
 - Source: arXiv 2401.04088, raw/papers/jiang2024_mixtral_of_experts.md
 - SCHEMA.md updated: added LLM/MoE tag categories (mixture-of-experts, sparse-moe, gating-network, top-k-routing, swiglu, decoder-only-transformer, large-language-model, efficient-inference, load-balancing, router-analysis, instruction-tuning, supervised-fine-tuning, direct-preference-optimization, multilingual-data, llm-benchmark, code-generation-benchmark, math-benchmark, commonsense-reasoning, long-context-modeling, bias-evaluation, mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo, the-pile, passkey-retrieval, mt-bench, bbq-bias, bold-bias, humaneval, gsm8k, mbpp, mmlu, hellaswag)
@@ -164,3 +182,26 @@
 - Created: concepts/dai2024-deepseek-moe-critical.md (4 contributions, 6 NK, 7 TK, 8 research opportunities, reproducibility 🟢 high)
 - Updated: index.md (66 pages total)
 - Note: DeepSeekMoE completes the MoE quartet with Switch Transformer (routing simplification) → GShard (distributed systems) → Mixtral (open-source application) → DeepSeekMoE (expert specialization). Two novel strategies: fine-grained expert segmentation + shared expert isolation. 16B model matches 7B dense with 40% compute.
+
+## [2026-06-13] ingest | Wang et al. (2020) — HAT: Hardware-Aware Transformers
+- Source: ACL 2020, DOI 10.18653/v1/2020.acl-main.686, raw/papers/wang2020_hat.md
+- Created: concepts/wang2020-hat-analysis.md (overview)
+- Created: concepts/wang2020-hat-method.md (SuperTransformer + latency predictor + evolutionary search)
+- Created: concepts/wang2020-hat-results.md (4 tasks × 3 hardware experiments)
+- Created: concepts/wang2020-hat-critical.md (3 contributions, 5 NK, 6 TK, 7 research opportunities)
+- SCHEMA.md updated: added NAS tags (hardware-aware-nas, latency-prediction, evolutionary-search, weight-sharing-supernet, hardware-specialization, latency-constraint), NLP tags (machine-translation, heterogeneous-transformer, encoder-decoder-attention, edge-inference), dataset tags (wmt14, wmt19, iwslt14)
+- Updated: index.md (74 pages total)
+- Note: HAT is the first hardware-aware NAS for NLP. SuperTransformer weight sharing reduces search cost 12,041× vs Evolved Transformer. Key insight: GPU prefers shallow-wide, ARM CPU prefers deep-thin.
+
+## [2026-06-13] ingest | NAS for Transformers — HAT + AutoFormer + NAS-BERT + Survey (13 pages)
+- Source: ACL 2020 / ICCV 2021 / KDD 2021 / IEEE Access 2022
+- PDFs: wang2020_hat.pdf (14p), chen2021_autoformer.pdf (11p), xu2021_nas_bert.pdf (11p)
+- Survey full-text not obtained (IEEE paywall), single overview page from abstract
+- Created: concepts/wang2020-hat-*.md (4 pages) — Hardware-Aware NAS for NLP Transformer, CCF-A
+- Created: concepts/chen2021-autoformer-*.md (4 pages) — Weight Entanglement one-shot NAS for ViT
+- Created: concepts/xu2021-nas-bert-*.md (4 pages) — Task-agnostic BERT compression NAS, CCF-A
+- Created: concepts/chittyvenkata2022-nas-transformers-survey.md (1 page) — Survey overview
+- Updated: SCHEMA.md (NAS tags: hardware-aware-nas, latency-prediction, one-shot-nas, weight-entanglement, evolutionary-search, etc.)
+- Updated: index.md (75 pages total)
+- Updated: mkdocs.yml (4 new nav groups)
+- Note: NAS for Transformers quartet complete — HAT (hardware-aware, RL+evolutionary) → AutoFormer (one-shot, weight entanglement) → NAS-BERT (compression, progressive shrinking) → Survey (taxonomy). With earlier TE-NAS (training-free), wiki now covers 5 NAS paradigms.

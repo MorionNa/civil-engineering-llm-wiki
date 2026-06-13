@@ -81,6 +81,23 @@ nav:
           - concepts/chen2021-tenas-method.md
           - concepts/chen2021-tenas-results.md
           - concepts/chen2021-tenas-critical.md
+      - Wang 2020 HAT:
+          - concepts/wang2020-hat-analysis.md
+          - concepts/wang2020-hat-method.md
+          - concepts/wang2020-hat-results.md
+          - concepts/wang2020-hat-critical.md
+      - Chen 2021 AutoFormer:
+          - concepts/chen2021-autoformer-analysis.md
+          - concepts/chen2021-autoformer-method.md
+          - concepts/chen2021-autoformer-results.md
+          - concepts/chen2021-autoformer-critical.md
+      - Xu 2021 NAS-BERT:
+          - concepts/xu2021-nas-bert-analysis.md
+          - concepts/xu2021-nas-bert-method.md
+          - concepts/xu2021-nas-bert-results.md
+          - concepts/xu2021-nas-bert-critical.md
+      - Chitty-Venkata 2022 NAS Survey:
+          - concepts/chittyvenkata2022-nas-transformers-survey.md
       - Fedus 2021 Switch Transformer:
           - concepts/fedus2021-switch-transformer-analysis.md
           - concepts/fedus2021-switch-transformer-method.md

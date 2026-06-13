@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 66
+> Last updated: 2026-06-13 | Total pages: 75
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
@@ -39,6 +39,16 @@
 - [[chen2021-tenas-method]] — TE-NAS 方法：NTK κN + 线性区域 ˆRN + Pruning-by-Importance 搜索
 - [[chen2021-tenas-results]] — TE-NAS 结果：NAS-Bench-201 / DARTS CIFAR-10 / ImageNet mobile SOTA 级零训练搜索
 - [[chen2021-tenas-critical]] — TE-NAS 贡献+Negative（rank corr ~0.5-0.7）+可迁移+机会
+- [[chen2021-autoformer-analysis]] — Chen et al. (2021) AutoFormer：首个 ViT 专用 NAS，Weight Entanglement 实现 once-for-all supernet
+- [[chen2021-autoformer-method]] — AutoFormer 方法：Weight Entanglement + 五维弹性搜索空间 + 进化搜索 pipeline
+- [[chen2021-autoformer-results]] — AutoFormer 结果：ImageNet T/S/B 74.7/81.7/82.4% + 迁移学习 + 蒸馏
+- [[chen2021-autoformer-critical]] — AutoFormer 贡献+Negative（homogeneous only/CNN gap）+可迁移+7 项研究机会
+- [[xu2021-nas-bert-analysis]] — Xu et al. (2021) NAS-BERT：NAS 搜 BERT 压缩，block-wise + progressive shrinking，输出 5M-60M 多尺寸 task-agnostic 模型
+- [[xu2021-nas-bert-method]] — NAS-BERT 方法：搜索空间设计 + Block-wise 蒸馏 + Progressive shrinking + Model selection
+- [[xu2021-nas-bert-results]] — NAS-BERT 结果：GLUE AVG 84.2 (60M) / SQuAD F1 88.4 / 多尺寸验证 / Progressive shrinking ablation
+- [[xu2021-nas-bert-critical]] — NAS-BERT 贡献+Negative（block-wise isolation/supernet收敛）+可迁移（bin-based shrinking 范式）+6 项研究机会
+
+- [[chittyvenkata2022-nas-transformers-survey]] — Chitty-Venkata et al. (2022) NAS for Transformers 综述：RL/Evolutionary/One-Shot/Training-Free 四维分类
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
 - [[jiang2024-mixtral-of-experts-analysis]] — Jiang et al. (2024) Mixtral 8x7B 概述：SMoE 以 13B 激活参数超越 Llama 2 70B，首个开源实用级 MoE LLM
@@ -66,6 +76,10 @@
 - [[dai2024-deepseek-moe-method]] — DeepSeekMoE 方法：m× 专家分割 + Ks 共享专家 + Balance Loss + 2B/16B 双规模配置
 - [[dai2024-deepseek-moe-results]] — DeepSeekMoE 结果：vs GShard/密集上限/Switch，2B 逼近理论上限，16B 仅 40% 计算量
 - [[dai2024-deepseek-moe-critical]] — DeepSeekMoE 贡献+Negative（注意力瓶颈/MCQ弱点）+可迁移（细粒度范式）+8项研究机会
+- [[wang2020-hat-analysis]] — Wang et al. (2020) HAT 概述：硬件感知 NAS + SuperTransformer 权重共享，为不同硬件搜索专用高效 Transformer
+- [[wang2020-hat-method]] — HAT 方法：SuperTransformer + 延迟预测器 + 进化搜索 + 任意 encoder-decoder attention
+- [[wang2020-hat-results]] — HAT 结果：四任务×三硬件 BLEU-Latency 对比，3× 加速 3.7× 压缩，搜索成本 1/12,041 of Evolved Transformer
+- [[wang2020-hat-critical]] — HAT 贡献+Negative（预测器数据依赖/设计空间固定）+可迁移+7 项研究机会
 
 ## Entities
 - [[bouc-wen-model]] — Bouc-Wen 率相关滞回模型
