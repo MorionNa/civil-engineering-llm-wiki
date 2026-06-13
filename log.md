@@ -220,3 +220,10 @@
 - Updated: mkdocs.yml — added Notes nav section
 - Created: notes/index.md, docs/notes/ symlinks
 - Fixed: 18 cross-references across 7 files
+
+## [2026-06-13] ingest | Entities 系统性重建：28 个实体页面
+- Created 23 new entity pages: models (6 LLM + 5 vision + 3 NAS), algorithms (2), orgs (4), datasets (3)
+- Updated 5 existing entity pages: PhyLSTM2/3, Bouc-Wen, Pseudo-time-stepping, PEER
+- Updated: entities/index.md, main index.md (new Entities structure), mkdocs.yml nav
+- Entities now: 28 total (was 5), organized in 6 categories
+- Wiki total: 99 pages (was 76)

@@ -1,13 +1,10 @@
 ---
-title: "PhyLSTM3 — Physics-informed Triple-LSTM Network"
+title: "PhyLSTM3"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-13
 type: entity
-tags: [phylstm3, multi-lstm, rate-dependent, cross-domain-generalization, physics-constrained-loss, tensor-differentiator, physics-informed, lstm]
+tags: [phylstm3, lstm, structural-dynamics]
 sources: [raw/papers/zhang2020-phylstm.md]
-methods: [physics-constrained-loss, tensor-differentiator]
-results: [cross-domain-generalization]
-confidence: high
 ---
 
 # PhyLSTM3 — Physics-informed Triple-LSTM Network

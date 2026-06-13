@@ -1,12 +1,10 @@
 ---
-title: "Bouc-Wen Hysteresis Model"
+title: "Bouc-Wen Model"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-13
 type: entity
-tags: [bouc-wen, rate-dependent, hysteresis, sdof, nonlinear-systems, structural-dynamics]
+tags: [bouc-wen, hysteresis, structural-dynamics]
 sources: [raw/papers/zhang2020-phylstm.md]
-datasets: [blwn, peer-database]
-confidence: high
 ---
 
 # Bouc-Wen Hysteresis Model

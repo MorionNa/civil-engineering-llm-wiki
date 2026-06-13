@@ -1,12 +1,10 @@
 ---
-title: "PhyLSTM2 — Physics-informed Double-LSTM Network"
+title: "PhyLSTM2"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-13
 type: entity
-tags: [phylstm2, multi-lstm, rate-independent, physics-constrained-loss, tensor-differentiator, soft-constraint, physics-informed, lstm]
+tags: [phylstm2, lstm, structural-dynamics, hysteresis]
 sources: [raw/papers/zhang2020-phylstm.md]
-methods: [physics-constrained-loss, tensor-differentiator, soft-constraint]
-confidence: high
 ---
 
 # PhyLSTM2 — Physics-informed Double-LSTM Network

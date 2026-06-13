@@ -1,11 +1,10 @@
 ---
 title: "PEER Strong Motion Database"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-13
 type: entity
-tags: [peer-database, ground-motion, ida, benchmark, seismic-response]
+tags: [dataset, ground-motion, peer-database, benchmark, seismic-response]
 sources: [raw/papers/zhang2020-phylstm.md]
-datasets: [peer-database]
 confidence: high
 ---
 

@@ -125,11 +125,40 @@ nav:
           - concepts/zhang2020-phylstm-critical.md
   - Entities:
       - entities/index.md
-      - entities/bouc-wen-model.md
-      - entities/peer-strong-motion-database.md
-      - entities/phylstm2.md
-      - entities/phylstm3.md
-      - entities/pseudo-time-stepping.md
+      - 大语言模型:
+          - entities/switch-transformer.md
+          - entities/gshard.md
+          - entities/mixtral-8x7b.md
+          - entities/deepseek-moe.md
+          - entities/glm-5.md
+          - entities/hydroglm.md
+      - 语义分割:
+          - entities/u-net.md
+          - entities/pspnet.md
+          - entities/deeplabv3plus.md
+          - entities/hrnet.md
+          - entities/segformer.md
+      - NAS 模型:
+          - entities/hat.md
+          - entities/autoformer.md
+          - entities/nas-bert.md
+      - 算法:
+          - entities/te-nas.md
+          - entities/avbd.md
+          - entities/phylstm2.md
+          - entities/phylstm3.md
+          - entities/bouc-wen-model.md
+          - entities/pseudo-time-stepping.md
+      - 组织:
+          - entities/zhipu-ai.md
+          - entities/guoneng-bigdata.md
+          - entities/daduhe-company.md
+          - entities/tsinghua-dhe.md
+      - 数据集:
+          - entities/nasbench201.md
+          - entities/ade20k.md
+          - entities/cityscapes.md
+          - entities/peer-strong-motion-database.md
   - Notes:
       - notes/index.md
       - 汇报:

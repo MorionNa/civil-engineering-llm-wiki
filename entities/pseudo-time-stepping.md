@@ -1,12 +1,10 @@
 ---
-title: "Pseudo-Time Stepping"
+title: "Pseudo Time Stepping"
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-13
 type: entity
-tags: [pseudo-time-stepping, adaptive-pseudo-time-stepping, physics-constrained-loss, collocation-resampling, pinns]
+tags: [pinn, collocation-strategy, physics-informed]
 sources: [raw/papers/wang2023-pinn-spurious.md]
-methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian]
-confidence: high
 ---
 
 # Pseudo-Time Stepping

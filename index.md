@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 76 (Concepts: 69, Notes: 5, Entities: 5, Comparisons: 2)
+> Last updated: 2026-06-13 | Total pages: 99 (Concepts: 69, Notes: 5, Entities: 28, Comparisons: 2)
 
 ## Concepts
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
@@ -79,11 +79,45 @@
 - [[wang2020-hat-critical]] — HAT 贡献+Negative（预测器数据依赖/设计空间固定）+可迁移+7 项研究机会
 
 ## Entities
-- [[bouc-wen-model]] — Bouc-Wen 率相关滞回模型
+### 大语言模型
+- [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数
+- [[gshard]] — GShard: 自动分片+条件计算, 600B MoE
+- [[mixtral-8x7b]] — Mixtral 8×7B: 首个开源实用级 MoE LLM
+- [[deepseek-moe]] — DeepSeekMoE: 细粒度专家分割+共享专家
+- [[glm-5]] — GLM-5.0: 全球第四/开源第一
+- [[hydroglm]] — HydroGLM: 水利水电行业大模型, 88.6 分
+
+### 语义分割模型
+- [[u-net]] — U-Net: skip-connections 小样本分割
+- [[pspnet]] — PSPNet: 金字塔池化场景解析
+- [[deeplabv3plus]] — DeepLabv3+: ASPP + decoder
+- [[hrnet]] — HRNet: 高分辨率并行卷积
+- [[segformer]] — SegFormer: Transformer + MLP decoder
+
+### NAS 模型
+- [[hat]] — HAT: Hardware-Aware NAS for Transformer
+- [[autoformer]] — AutoFormer: ViT one-shot NAS
+- [[nas-bert]] — NAS-BERT: BERT 压缩 NAS
+
+### 算法
+- [[te-nas]] — TE-NAS: Training-free NAS
+- [[avbd]] — AVBD: 硬约束物理仿真
+- [[phylstm2]] — PhyLSTM2: 双 LSTM 滞回元模型
+- [[phylstm3]] — PhyLSTM3: 三 LSTM 增强
+- [[bouc-wen-model]] — Bouc-Wen 滞回模型
+- [[pseudo-time-stepping]] — 伪时间步进
+
+### 组织
+- [[zhipu-ai]] — 智谱AI
+- [[guoneng-bigdata]] — 国能大数据
+- [[daduhe-company]] — 大渡河公司
+- [[tsinghua-dhe]] — 清华大学水利系
+
+### 数据集
+- [[nasbench201]] — NAS-Bench-201
+- [[ade20k]] — ADE20K
+- [[cityscapes]] — Cityscapes
 - [[peer-strong-motion-database]] — PEER 强震数据库
-- [[phylstm2]] — PhyLSTM2 双 LSTM 架构
-- [[phylstm3]] — PhyLSTM3 三 LSTM 架构
-- [[pseudo-time-stepping]] — 伪时间步进方法：自适应步长原理 + 与 PhyLSTM 权重调参的关联
 
 ## Notes
 - [[notes/briefings/glm-hydropower-2026]] — GLM 水利水电行业大模型汇报笔记：GLM-5.0 → HydroGLM → 智能中台，60人团队，231GB语料
