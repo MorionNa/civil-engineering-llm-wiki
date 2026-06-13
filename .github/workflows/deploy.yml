@@ -28,6 +28,12 @@ jobs:
         run: |
           pip install mkdocs-material mkdocs-roamlinks-plugin
 
+      - name: Patch roamlinks symlink support
+        run: |
+          PLUGIN=$(python -c "import mkdocs_roamlinks_plugin, os; print(os.path.join(os.path.dirname(mkdocs_roamlinks_plugin.__file__), 'plugin.py'))")
+          sed -i 's/os.walk(self.base_docs_url)/os.walk(self.base_docs_url, followlinks=True)/g' "$PLUGIN"
+          echo "Patched: $PLUGIN"
+
       - name: Build site
         run: mkdocs build
 
