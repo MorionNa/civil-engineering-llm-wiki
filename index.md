@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 75
+> Last updated: 2026-06-13 | Total pages: 76
 
 ## Concepts
 - [[concepts/ai4s/ai4s-pinn-deepxde-tutorial]] — AI4S第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
@@ -49,6 +49,8 @@
 - [[xu2021-nas-bert-critical]] — NAS-BERT 贡献+Negative（block-wise isolation/supernet收敛）+可迁移（bin-based shrinking 范式）+6 项研究机会
 
 - [[chittyvenkata2022-nas-transformers-survey]] — Chitty-Venkata et al. (2022) NAS for Transformers 综述：RL/Evolutionary/One-Shot/Training-Free 四维分类
+
+- [[glm-hydropower-llm-2026-report]] — GLM 水利水电行业大模型汇报笔记：GLM-5.0 → HydroGLM → 智能中台，60人团队，231GB语料
 - [[concepts/ai4s/diffusion-models-ai4s-lecture2]] — AI4S第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行 / skill 自动化
 - [[jiang2024-mixtral-of-experts-analysis]] — Jiang et al. (2024) Mixtral 8x7B 概述：SMoE 以 13B 激活参数超越 Llama 2 70B，首个开源实用级 MoE LLM

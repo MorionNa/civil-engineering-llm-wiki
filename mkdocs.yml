@@ -98,6 +98,8 @@ nav:
           - concepts/xu2021-nas-bert-critical.md
       - Chitty-Venkata 2022 NAS Survey:
           - concepts/chittyvenkata2022-nas-transformers-survey.md
+      - GLM 水利水电大模型 2026:
+          - concepts/glm-hydropower-llm-2026-report.md
       - Fedus 2021 Switch Transformer:
           - concepts/fedus2021-switch-transformer-analysis.md
           - concepts/fedus2021-switch-transformer-method.md

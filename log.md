@@ -205,3 +205,8 @@
 - Updated: index.md (75 pages total)
 - Updated: mkdocs.yml (4 new nav groups)
 - Note: NAS for Transformers quartet complete — HAT (hardware-aware, RL+evolutionary) → AutoFormer (one-shot, weight entanglement) → NAS-BERT (compression, progressive shrinking) → Survey (taxonomy). With earlier TE-NAS (training-free), wiki now covers 5 NAS paradigms.
+
+## [2026-06-13] ingest | GLM 水利水电行业大模型汇报笔记
+- Source: GLM 汇报 PPT 照片 (20+ slides, vision recognition)
+- Created: concepts/glm-hydropower-llm-2026-report.md (single page, 76 pages total)
+- Note: GLM-5.0 → HydroGLM vertical LLM for hydropower. 60-person team (Zhipu AI + Tsinghua + Guoneng + Daduhe). 231GB domain corpus, A/B evaluation, Skill Agent platform.
