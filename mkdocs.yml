@@ -93,6 +93,26 @@ nav:
           - papers/xu2021-nas-bert-critical.md
       - Chitty-Venkata 2022 NAS Survey:
           - papers/chittyvenkata2022-nas-transformers-survey.md
+      - So 2021 Primer:
+          - papers/so2021-primer-analysis.md
+          - papers/so2021-primer-method.md
+          - papers/so2021-primer-results.md
+          - papers/so2021-primer-critical.md
+      - Li 2021 BossNAS:
+          - papers/li2021-bossnas-analysis.md
+          - papers/li2021-bossnas-method.md
+          - papers/li2021-bossnas-results.md
+          - papers/li2021-bossnas-critical.md
+      - Zhao 2021 DNAS:
+          - papers/zhao2021-memory-efficient-dnas-analysis.md
+          - papers/zhao2021-memory-efficient-dnas-method.md
+          - papers/zhao2021-memory-efficient-dnas-results.md
+          - papers/zhao2021-memory-efficient-dnas-critical.md
+      - Serianni 2023 Training-free NAS:
+          - papers/serianni2023-training-free-nas-rnn-transformers-analysis.md
+          - papers/serianni2023-training-free-nas-rnn-transformers-method.md
+          - papers/serianni2023-training-free-nas-rnn-transformers-results.md
+          - papers/serianni2023-training-free-nas-rnn-transformers-critical.md
       - Fedus 2021 Switch Transformer:
           - papers/fedus2021-switch-transformer-analysis.md
           - papers/fedus2021-switch-transformer-method.md
@@ -142,6 +162,10 @@ nav:
           - entities/hat.md
           - entities/autoformer.md
           - entities/nas-bert.md
+          - entities/primer.md
+          - entities/bossnas.md
+          - entities/memory-efficient-dnas.md
+          - entities/training-free-nas-transformers.md
       - 算法:
           - entities/te-nas.md
           - entities/avbd.md

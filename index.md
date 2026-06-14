@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-13 | Total pages: 99 (Papers: 69, Notes: 5, Entities: 28, Comparisons: 2)
+> Last updated: 2026-06-14 | Total pages: 124 (Papers: 85, Notes: 5, Entities: 32, Comparisons: 2)
 
 ## Papers
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
@@ -47,6 +47,23 @@
 - [[xu2021-nas-bert-critical]] — NAS-BERT 贡献+Negative（block-wise isolation/supernet收敛）+可迁移（bin-based shrinking 范式）+6 项研究机会
 
 - [[chittyvenkata2022-nas-transformers-survey]] — Chitty-Venkata et al. (2022) NAS for Transformers 综述：RL/Evolutionary/One-Shot/Training-Free 四维分类
+
+- [[so2021-primer-analysis]] — So et al. (2021) Primer：进化搜索高效 Transformer，Squared ReLU + MDHA，T5 537M 加速 4.2×
+- [[so2021-primer-method]] — Primer 方法：DNA 编码搜索空间 + CC 进化 + weight sharing supernet
+- [[so2021-primer-results]] — Primer 结果：C4/LM1B perplexity + T5 加速 4.2× + GPT-3 1.9B 加速 3×
+- [[so2021-primer-critical]] — Primer 贡献+Negative（decoder-only 限制/encoder-decoder 退化）+可迁移+机会
+- [[li2021-bossnas-analysis]] — Li et al. (2021) BossNAS：块级自监督 NAS，Ensemble Bootstrapping 探索 hybrid CNN-Transformer
+- [[li2021-bossnas-method]] — BossNAS 方法：块级分解 + Siamese Supernet + 种群中心无监督评估
+- [[li2021-bossnas-results]] — BossNAS 结果：HyTra ImageNet SOTA + NATS-Bench SS 评分反超有监督（τ=0.65）
+- [[li2021-bossnas-critical]] — BossNAS 贡献+Negative（块间独立性未理论分析）+可迁移+5 项研究机会
+- [[zhao2021-memory-efficient-dnas-analysis]] — Zhao et al. (2021) DNAS：多分割可逆网络实现内存高效 Transformer 可微搜索
+- [[zhao2021-memory-efficient-dnas-method]] — DNAS 方法：Multi-Split Reversible + BP-with-Reconstruction + Gₖ 设计
+- [[zhao2021-memory-efficient-dnas-results]] — DNAS 结果：WMT14 28.4 BLEU / 120× 成本降低 超 Evolved Transformer
+- [[zhao2021-memory-efficient-dnas-critical]] — DNAS 贡献+Negative（搜索隐藏层必须匹配目标）+可迁移+机会
+- [[serianni2023-training-free-nas-rnn-transformers-analysis]] — Serianni et al. (2023) Training-free NAS：Hidden Covariance 代理用于 RNN/Transformer 搜索
+- [[serianni2023-training-free-nas-rnn-transformers-method]] — Training-free NAS 方法：Expressivity/Trainability 跨架构代理
+- [[serianni2023-training-free-nas-rnn-transformers-results]] — Training-free NAS 结果：NAS-Bench-NLP τ=0.37 / FlexiBERT 全指标被参数计数打败
+- [[serianni2023-training-free-nas-rnn-transformers-critical]] — Training-free NAS 贡献+Negative（Transformer 全指标失败）+可迁移+机会
 
 - [[jiang2024-mixtral-of-experts-analysis]]
 - [[jiang2024-mixtral-of-experts-method]] — Mixtral 方法展开：8 专家 Top-2 路由 + SwiGLU + Megablocks 稀疏 MM
@@ -98,6 +115,10 @@
 - [[hat]] — HAT: Hardware-Aware NAS for Transformer
 - [[autoformer]] — AutoFormer: ViT one-shot NAS
 - [[nas-bert]] — NAS-BERT: BERT 压缩 NAS
+- [[primer]] — Primer: Google 进化搜索高效 Transformer，Squared ReLU + MDHA
+- [[bossnas]] — BossNAS: 块级自监督搜索 hybrid CNN-Transformer
+- [[memory-efficient-dnas]] — Memory-Efficient DNAS: 多分割可逆可微 Transformer 搜索
+- [[training-free-nas-transformers]] — Training-free NAS for RNN/Transformer: Hidden Covariance
 
 ### 算法
 - [[te-nas]] — TE-NAS: Training-free NAS

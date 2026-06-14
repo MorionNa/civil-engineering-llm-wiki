@@ -114,7 +114,11 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   weight-sharing-nas, pruning-based-nas, nas-bench-201, one-shot-nas,
   weight-entanglement, evolutionary-search,
   hardware-aware-nas, latency-prediction, evolutionary-search,
-  weight-sharing-supernet, hardware-specialization, latency-constraint
+  weight-sharing-supernet, hardware-specialization, latency-constraint,
+  differentiable-nas, block-wise-search, self-supervised-nas,
+  ensemble-bootstrapping, hybrid-cnn-transformer, hybrid-search-space,
+  memory-efficient-nas, multi-split-reversible, hidden-covariance,
+  linear-regions-count, sq-tc-search, mdha, squared-relu
 - **Generative models:** diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion,
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,

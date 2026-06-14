@@ -5,6 +5,43 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-14] ingest | So et al. (2021) — Primer
+- Source: arXiv 2109.08668 (NeurIPS 2021), raw/papers/primer2021_efficient_transformers.pdf
+- SCHEMA.md updated: added sq-tc-search, mdha, squared-relu (NAS section)
+- Created: papers/so2021-primer-analysis.md (overview)
+- Created: papers/so2021-primer-method.md (method details)
+- Created: papers/so2021-primer-results.md (results details)
+- Created: papers/so2021-primer-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Created: entities/primer.md (entity page)
+- Updated: index.md, mkdocs.yml (124 pages total)
+
+## [2026-06-14] ingest | Li et al. (2021) — BossNAS
+- Source: arXiv 2103.12424 (ICLR 2021), raw/papers/bossnas2021_iclr.pdf
+- SCHEMA.md updated: added ensemble-bootstrapping, block-wise-search, self-supervised-nas, hybrid-cnn-transformer, hybrid-search-space (NAS section)
+- Created: papers/li2021-bossnas-analysis.md (overview)
+- Created: papers/li2021-bossnas-method.md (method details)
+- Created: papers/li2021-bossnas-results.md (results details)
+- Created: papers/li2021-bossnas-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Created: entities/bossnas.md (entity page)
+
+## [2026-06-14] ingest | Zhao et al. (2021) — Memory-Efficient DNAS
+- Source: arXiv 2105.14669 (ACL-IJCNLP 2021 Findings), raw/papers/memory_efficient_dnas2021.pdf
+- SCHEMA.md updated: added differentiable-nas, memory-efficient-nas, multi-split-reversible (NAS section)
+- Created: papers/zhao2021-memory-efficient-dnas-analysis.md (overview)
+- Created: papers/zhao2021-memory-efficient-dnas-method.md (method details)
+- Created: papers/zhao2021-memory-efficient-dnas-results.md (results details)
+- Created: papers/zhao2021-memory-efficient-dnas-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Created: entities/memory-efficient-dnas.md (entity page)
+
+## [2026-06-14] ingest | Serianni et al. (2023) — Training-free NAS for RNNs/Transformers
+- Source: arXiv 2306.00288, raw/papers/training_free_nas2023.pdf
+- SCHEMA.md updated: added hidden-covariance, linear-regions-count (NAS section)
+- Created: papers/serianni2023-training-free-nas-rnn-transformers-analysis.md (overview)
+- Created: papers/serianni2023-training-free-nas-rnn-transformers-method.md (method details)
+- Created: papers/serianni2023-training-free-nas-rnn-transformers-results.md (results details)
+- Created: papers/serianni2023-training-free-nas-rnn-transformers-critical.md (contribution/knowledge/negative/transferable/opportunities)
+- Created: entities/training-free-nas-transformers.md (entity page)
+
 ## [2026-06-13] ingest | Chen et al. (2021) — AutoFormer
 - Source: DOI 10.1109/iccv48922.2021.01205 (ICCV 2021, CCF-A), raw/papers/chen2021_autoformer.md
 - SCHEMA.md updated: added one-shot-nas, weight-entanglement, evolutionary-search (NAS section); autoformer (Models); imagenet, cifar-10, cifar-100 (Datasets); transfer-learning (Meta)
