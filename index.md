@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-14 | Total pages: 124 (Papers: 85, Notes: 5, Entities: 32, Comparisons: 2)
+> Last updated: 2026-06-15 | Total pages: 144 (Papers: 101, Notes: 5, Entities: 36, Comparisons: 2)
 
 ## Papers
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
@@ -95,6 +95,26 @@
 - [[wang2020-hat-results]] — HAT 结果：四任务×三硬件 BLEU-Latency 对比，3× 加速 3.7× 压缩，搜索成本 1/12,041 of Evolved Transformer
 - [[wang2020-hat-critical]] — HAT 贡献+Negative（预测器数据依赖/设计空间固定）+可迁移+7 项研究机会
 
+- [[real2020-automl-zero-analysis]] — Real et al. (2020) AutoML-Zero：从零进化搜索 ML 算法，重新发现反向传播、梯度下降等核心技术
+- [[real2020-automl-zero-method]] — AutoML-Zero 方法：三组件程序表示 + 65 操作集 + 小种群正则化进化 + FEC
+- [[real2020-automl-zero-results]] — AutoML-Zero 结果：三阶段实验（线性/非线性/从头学），涌现反向传播、学习率衰减
+- [[real2020-automl-zero-critical]] — AutoML-Zero 贡献+Negative（计算开销巨大/大规模未验证）+可迁移+机会
+
+- [[ru2020-nago-analysis]] — Ru et al. (2020) NAGO：搜索架构生成器而非架构本身，8 维超参数编码 >4.58×10⁵⁶ 种架构
+- [[ru2020-nago-method]] — NAGO 方法：HNAG 三级层次图 + BOHB 多保真度 + 异方差 BNN + Pareto 前沿
+- [[ru2020-nago-results]] — NAGO 结果：CIFAR-10 96.6% + ImageNet 76.8% (5.7M) + Pareto 前沿胜 RNAG-D
+- [[ru2020-nago-critical]] — NAGO 贡献+Negative（~15 GPU-day/高维度 BO 失效）+可迁移+机会
+
+- [[akhauri2022-eznas-analysis]] — Akhauri et al. (2022) EZNAS：遗传编程自动发现零成本 NAS 代理，跨空间泛化 SOTA
+- [[akhauri2022-eznas-method]] — EZNAS 方法：表达式树 + 34 操作集 + 抗过拟合三通路评估 + 进化搜索
+- [[akhauri2022-eznas-results]] — EZNAS 结果：NAS-Bench-201 τ 超越 NASWOT/synflow，跨 NDS/NATS-Bench 全 SOTA
+- [[akhauri2022-eznas-critical]] — EZNAS 贡献+Negative（无法区分 top 10%/丢失拓扑）+可迁移+机会
+
+- [[lee2024-aznas-analysis]] — Lee & Ham (2024) AZ-NAS：组装四个互补零成本代理（sE/sP/sT/sC），NAS-Bench-201 τ=0.741
+- [[lee2024-aznas-method]] — AZ-NAS 方法：灵敏度/参数/拓扑/综合四代理 + 非线性 log-Rank 聚合
+- [[lee2024-aznas-results]] — AZ-NAS 结果：NAS-Bench-201 + MobileNetV2 + AutoFormer 三空间均 SOTA
+- [[lee2024-aznas-critical]] — AZ-NAS 贡献+Negative（代理数固定/耦合黑盒）+可迁移+6 个研究机会
+
 ## Entities
 ### 大语言模型
 - [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数
@@ -119,6 +139,10 @@
 - [[bossnas]] — BossNAS: 块级自监督搜索 hybrid CNN-Transformer
 - [[memory-efficient-dnas]] — Memory-Efficient DNAS: 多分割可逆可微 Transformer 搜索
 - [[training-free-nas-transformers]] — Training-free NAS for RNN/Transformer: Hidden Covariance
+- [[automl-zero]] — AutoML-Zero: Google 从零进化搜索 ML 算法框架
+- [[nago]] — NAGO: Neural Architecture Generator Optimization，搜索架构生成器
+- [[eznas]] — EZNAS: 遗传编程自动发现零成本 NAS 代理，跨空间泛化
+- [[az-nas]] — AZ-NAS: 四互补代理组装方案，NAS-Bench-201 τ=0.741 SOTA
 
 ### 算法
 - [[te-nas]] — TE-NAS: Training-free NAS

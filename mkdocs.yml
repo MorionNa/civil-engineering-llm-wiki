@@ -81,6 +81,26 @@ nav:
           - papers/wang2020-hat-method.md
           - papers/wang2020-hat-results.md
           - papers/wang2020-hat-critical.md
+      - Real 2020 AutoML-Zero:
+          - papers/real2020-automl-zero-analysis.md
+          - papers/real2020-automl-zero-method.md
+          - papers/real2020-automl-zero-results.md
+          - papers/real2020-automl-zero-critical.md
+      - Ru 2020 NAGO:
+          - papers/ru2020-nago-analysis.md
+          - papers/ru2020-nago-method.md
+          - papers/ru2020-nago-results.md
+          - papers/ru2020-nago-critical.md
+      - Akhauri 2022 EZNAS:
+          - papers/akhauri2022-eznas-analysis.md
+          - papers/akhauri2022-eznas-method.md
+          - papers/akhauri2022-eznas-results.md
+          - papers/akhauri2022-eznas-critical.md
+      - Lee 2024 AZ-NAS:
+          - papers/lee2024-aznas-analysis.md
+          - papers/lee2024-aznas-method.md
+          - papers/lee2024-aznas-results.md
+          - papers/lee2024-aznas-critical.md
       - Chen 2021 AutoFormer:
           - papers/chen2021-autoformer-analysis.md
           - papers/chen2021-autoformer-method.md
@@ -166,6 +186,10 @@ nav:
           - entities/bossnas.md
           - entities/memory-efficient-dnas.md
           - entities/training-free-nas-transformers.md
+          - entities/automl-zero.md
+          - entities/nago.md
+          - entities/eznas.md
+          - entities/az-nas.md
       - 算法:
           - entities/te-nas.md
           - entities/avbd.md

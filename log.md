@@ -5,6 +5,26 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-15] ingest | Lee & Ham (2024) — AZ-NAS
+- Source: arXiv 2403.19232, raw/papers/aznas_lee2024.pdf
+- Created: papers/lee2024-aznas-{analysis,method,results,critical}.md
+- Created: entities/az-nas.md
+
+## [2026-06-15] ingest | Akhauri et al. (2022) — EZNAS
+- Source: arXiv 2209.07413 (NeurIPS 2022), raw/papers/eznas_akhauri2022.pdf
+- Created: papers/akhauri2022-eznas-{analysis,method,results,critical}.md
+- Created: entities/eznas.md
+
+## [2026-06-15] ingest | Ru et al. (2020) — NAGO
+- Source: arXiv 2004.01395 (NeurIPS 2020), raw/papers/nago_ru2020.pdf
+- Created: papers/ru2020-nago-{analysis,method,results,critical}.md
+- Created: entities/nago.md
+
+## [2026-06-15] ingest | Real et al. (2020) — AutoML-Zero
+- Source: arXiv 2003.03384 (ICML 2020), raw/papers/automl_zero_real2020.pdf
+- Created: papers/real2020-automl-zero-{analysis,method,results,critical}.md
+- Created: entities/automl-zero.md
+
 ## [2026-06-14] ingest | So et al. (2021) — Primer
 - Source: arXiv 2109.08668 (NeurIPS 2021), raw/papers/primer2021_efficient_transformers.pdf
 - SCHEMA.md updated: added sq-tc-search, mdha, squared-relu (NAS section)
