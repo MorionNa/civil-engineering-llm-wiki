@@ -132,6 +132,7 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   llm-benchmark, code-generation-benchmark, math-benchmark,
   commonsense-reasoning, long-context-modeling, bias-evaluation
 - **Models/Architectures:** mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo, autoformer
+- **Neuroscience:** hippocampal-formation, ca3, ca1, sparse-coding, dense-coding, neural-coding, population-coding, place-cells, tetrode-recording, calcium-imaging, dimensionality-expansion, dentate-gyrus
 - **Model Compression:** knowledge-distillation, bert-compression,
   task-agnostic-compression, block-wise-training, progressive-shrinking,
   separable-convolution, supernet, model-compression

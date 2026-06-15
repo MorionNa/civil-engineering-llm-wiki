@@ -101,6 +101,11 @@ nav:
           - papers/lee2024-aznas-method.md
           - papers/lee2024-aznas-results.md
           - papers/lee2024-aznas-critical.md
+      - Maimon 2026 Sparse→Dense:
+          - papers/maimon2026-sparse-dense-analysis.md
+          - papers/maimon2026-sparse-dense-method.md
+          - papers/maimon2026-sparse-dense-results.md
+          - papers/maimon2026-sparse-dense-critical.md
       - Chen 2021 AutoFormer:
           - papers/chen2021-autoformer-analysis.md
           - papers/chen2021-autoformer-method.md
@@ -202,6 +207,8 @@ nav:
           - entities/guoneng-bigdata.md
           - entities/daduhe-company.md
           - entities/tsinghua-dhe.md
+      - 神经科学:
+          - entities/sparse-dense-coding.md
       - 数据集:
           - entities/nasbench201.md
           - entities/ade20k.md

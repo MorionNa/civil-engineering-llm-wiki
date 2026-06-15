@@ -5,6 +5,12 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-15] ingest | Maimon et al. (2026) — Sparse-to-Dense Coding (Nature)
+- Source: DOI 10.1038/s41586-026-10537-0 (Nature 2026), raw/papers/10_1038_s41586-026-10537-0.pdf
+- SCHEMA.md updated: added hippocampal-formation, ca3, ca1, sparse-coding, dense-coding, neural-coding, population-coding, place-cells, tetrode-recording, calcium-imaging, dimensionality-expansion, dentate-gyrus (Neuroscience section)
+- Created: papers/maimon2026-sparse-dense-{analysis,method,results,critical}.md
+- Created: entities/sparse-dense-coding.md
+
 ## [2026-06-15] ingest | Lee & Ham (2024) — AZ-NAS
 - Source: arXiv 2403.19232, raw/papers/aznas_lee2024.pdf
 - Created: papers/lee2024-aznas-{analysis,method,results,critical}.md

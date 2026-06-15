@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-15 | Total pages: 144 (Papers: 101, Notes: 5, Entities: 36, Comparisons: 2)
+> Last updated: 2026-06-15 | Total pages: 150 (Papers: 105, Notes: 5, Entities: 37, Comparisons: 2)
 
 ## Papers
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
@@ -115,6 +115,11 @@
 - [[lee2024-aznas-results]] — AZ-NAS 结果：NAS-Bench-201 + MobileNetV2 + AutoFormer 三空间均 SOTA
 - [[lee2024-aznas-critical]] — AZ-NAS 贡献+Negative（代理数固定/耦合黑盒）+可迁移+6 个研究机会
 
+- [[maimon2026-sparse-dense-analysis]] — Maimon et al. (2026) Sparse→Dense Coding：Nature 论文，发现海马 CA3→CA1 的稀疏到密集编码变换
+- [[maimon2026-sparse-dense-method]] — 方法：无线 tetrode + 钙成像双记录，位置场检测 + 群体解码 + 学习模拟
+- [[maimon2026-sparse-dense-results]] — 结果：CA3 稀疏 (~2% 活跃) → CA1 密集 (~25% 活跃)，维度膨胀 5-10×
+- [[maimon2026-sparse-dense-critical]] — 贡献+Negative（蝙蝠模型泛化限制/因果性未验证）+可迁移+机会
+
 ## Entities
 ### 大语言模型
 - [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数
@@ -157,6 +162,9 @@
 - [[guoneng-bigdata]] — 国能大数据
 - [[daduhe-company]] — 大渡河公司
 - [[tsinghua-dhe]] — 清华大学水利系
+
+### 神经科学
+- [[sparse-dense-coding]] — Sparse→Dense Coding: 海马 DG→CA3→CA1 编码梯度变换，Maimon et al. (2026) Nature
 
 ### 数据集
 - [[nasbench201]] — NAS-Bench-201
