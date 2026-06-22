@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-15 | Total pages: 150 (Papers: 105, Notes: 5, Entities: 37, Comparisons: 2)
+> Last updated: 2026-06-22 | Total pages: 159 (Papers: 109, Notes: 5, Entities: 42, Comparisons: 2)
 
 ## Papers
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
@@ -120,11 +120,20 @@
 - [[maimon2026-sparse-dense-results]] — 结果：CA3 稀疏 (~2% 活跃) → CA1 密集 (~25% 活跃)，维度膨胀 5-10×
 - [[maimon2026-sparse-dense-critical]] — 贡献+Negative（蝙蝠模型泛化限制/因果性未验证）+可迁移+机会
 
+- [[amapcvlab2026-abotearth-analysis]] — AMAP CV Lab (2026) ABot-Earth 0.5：生成式 3D 地球模型，卫星图像→3DGS 城市场景 <10min/km²，覆盖 190+ 国家
+- [[amapcvlab2026-abotearth-method]] — ABot-Earth 方法：compression-generation + 卫星条件 + 原生多 LOD 解码 + EarthScape 生产管线
+- [[amapcvlab2026-abotearth-results]] — ABot-Earth 结果：FID 16.1 vs baselines，vs Google Earth 全球覆盖率+视觉质量对比
+- [[amapcvlab2026-abotearth-critical]] — ABot-Earth 贡献+Negative（仅航拍/全闭源/非公平 FID）+可迁移（"重建→生成"范式/Bhattacharyya 裁剪）+7 项研究机会
+
 ## Entities
+### 远程感知与生成式3D
+- [[abot-earth]] — ABot-Earth: 阿里高德生成式 3D 地球模型，卫星→3DGS
+- [[abot-3dgs]] — ABot-3DGS: 城市级 3DGS 重建引擎
+- [[3d-gaussian-splatting]] — 3D Gaussian Splatting: 实时可微渲染的场景表示
+- [[from-orbit-to-ground]] — FromOrbit2Ground: 卫星图像→3DGS 转换模块
+- [[clod-gs]] — CLOD-GS: 连续 LOD 3DGS 方法
+
 ### 大语言模型
-- [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数
-- [[gshard]] — GShard: 自动分片+条件计算, 600B MoE
-- [[mixtral-8x7b]] — Mixtral 8×7B: 首个开源实用级 MoE LLM
 - [[deepseek-moe]] — DeepSeekMoE: 细粒度专家分割+共享专家
 - [[glm-5]] — GLM-5.0: 全球第四/开源第一
 - [[hydroglm]] — HydroGLM: 水利水电行业大模型, 88.6 分

@@ -5,6 +5,13 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-22] ingest | AMAP CV Lab (2026) — ABot-Earth 0.5: Generative 3D Earth Model
+- Source: tech-report.pdf (AMAP CV Lab, 2026-06-08), raw/papers/amapcvlab2026-abotearth.pdf
+- SCHEMA.md updated: added Remote Sensing & 3D Geospatial section (29 tags), Systems/Models section (5 tags), new datasets (8)
+- Created: papers/amapcvlab2026-abotearth-{analysis,method,results,critical}.md (1+3)
+- Created: entities/abot-earth.md, entities/abot-3dgs.md, entities/3d-gaussian-splatting.md, entities/from-orbit-to-ground.md, entities/clod-gs.md
+- Domain: 遥感 + 生成式 AI — 3DGS 原生生成，卫星条件，<10min/km², 190+ 国家
+
 ## [2026-06-15] ingest | Maimon et al. (2026) — Sparse-to-Dense Coding (Nature)
 - Source: DOI 10.1038/s41586-026-10537-0 (Nature 2026), raw/papers/10_1038_s41586-026-10537-0.pdf
 - SCHEMA.md updated: added hippocampal-formation, ca3, ca1, sparse-coding, dense-coding, neural-coding, population-coding, place-cells, tetrode-recording, calcium-imaging, dimensionality-expansion, dentate-gyrus (Neuroscience section)

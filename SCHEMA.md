@@ -1,7 +1,7 @@
 # Wiki Schema
 
 ## Domain
-Physics-informed machine learning and computational mechanics — with a focus on deep learning methods for metamodeling, structural dynamics, and nonlinear system identification. Expanding into semantic segmentation for structural engineering (scan-to-BIM), large language models (NAS/MoE/LLM推理), and AI4S.
+Physics-informed machine learning and computational mechanics — with a focus on deep learning methods for metamodeling, structural dynamics, and nonlinear system identification. Expanding into semantic segmentation for structural engineering (scan-to-BIM), large language models (NAS/MoE/LLM推理), AI4S, and **remote sensing & generative 3D geospatial modeling** (satellite-conditioned 3DGS scene generation, digital twins).
 
 ## Architecture
 
@@ -138,7 +138,18 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   separable-convolution, supernet, model-compression
 - **Datasets:** the-pile, passkey-retrieval, mt-bench, bbq-bias, bold-bias,
   humaneval, gsm8k, mbpp, mmlu, hellaswag, wmt14,
-  wmt19, iwslt14, glu-e, squad, imagenet, cifar-10, cifar-100
+  wmt19, iwslt14, glu-e, squad, imagenet, cifar-10, cifar-100,
+  dfc-2019, urbanscene3d, urbanbis, crossloc, mill-19, uavd4l, denseuav, uc-gs
+- **Remote Sensing & 3D Geospatial:** 3d-gaussian-splatting, 3dgs, gaussian-primitives,
+  satellite-imagery, remote-sensing, geospatial, digital-earth, digital-twins,
+  3d-scene-generation, generative-3d-earth, 3d-reconstruction, photogrammetry,
+  urban-modeling, multi-lod, lod-hierarchy, level-of-detail, spatial-partitioning,
+  multi-view-rendering, data-curation, vlm-quality-assessment,
+  embodied-ai, uav-navigation, sim-to-real, closed-loop-simulation,
+  web-mercator, enu-coordinates, ogc-3d-tiles, bhattacharyya-distance,
+  reconstruction-based-generation, cross-view-fusion,
+  satellite-conditioned-generation, tile-based-rendering, cdn-streaming
+- **Systems/Models:** abot-earth, abot-3dgs, from-orbit-to-ground, clod-gs, yunjing
 
 Rule: every tag must appear in this taxonomy. Add new tags here BEFORE using them.
 

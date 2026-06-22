@@ -1,5 +1,5 @@
 site_name: "Civil Engineering LLM Wiki"
-site_description: "Physics-informed ML & Computational Mechanics Knowledge Base"
+site_description: "Physics-informed ML, Computational Mechanics, Semantic Segmentation, LLMs, Remote Sensing & Generative 3D Knowledge Base"
 site_author: "MorionNa"
 repo_url: "https://github.com/MorionNa/civil-engineering-llm-wiki"
 repo_name: "MorionNa/civil-engineering-llm-wiki"
@@ -106,6 +106,11 @@ nav:
           - papers/maimon2026-sparse-dense-method.md
           - papers/maimon2026-sparse-dense-results.md
           - papers/maimon2026-sparse-dense-critical.md
+      - AMAP CV Lab 2026 ABot-Earth:
+          - papers/amapcvlab2026-abotearth-analysis.md
+          - papers/amapcvlab2026-abotearth-method.md
+          - papers/amapcvlab2026-abotearth-results.md
+          - papers/amapcvlab2026-abotearth-critical.md
       - Chen 2021 AutoFormer:
           - papers/chen2021-autoformer-analysis.md
           - papers/chen2021-autoformer-method.md
@@ -209,6 +214,12 @@ nav:
           - entities/tsinghua-dhe.md
       - 神经科学:
           - entities/sparse-dense-coding.md
+      - 远程感知与生成式3D:
+          - entities/abot-earth.md
+          - entities/abot-3dgs.md
+          - entities/3d-gaussian-splatting.md
+          - entities/from-orbit-to-ground.md
+          - entities/clod-gs.md
       - 数据集:
           - entities/nasbench201.md
           - entities/ade20k.md
