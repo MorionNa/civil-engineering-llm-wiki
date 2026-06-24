@@ -36,6 +36,11 @@ nav:
   - 首页: index.md
   - Papers:
       - papers/index.md
+      - Xiong 2025 ConfSeq:
+          - papers/xiong2025-confseq-analysis.md
+          - papers/xiong2025-confseq-method.md
+          - papers/xiong2025-confseq-results.md
+          - papers/xiong2025-confseq-critical.md
       - Giles 2025 AVBD:
           - papers/giles2025-avbd-analysis.md
           - papers/giles2025-avbd-method.md

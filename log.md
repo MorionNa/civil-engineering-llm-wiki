@@ -302,5 +302,14 @@
 - Renamed: concepts/ → papers/ (69 files moved)
 - Updated: SCHEMA.md, README.md, index.md, mkdocs.yml
 - Updated: frontmatter type: concept → paper-analysis (69 files)
+
+## [2026-06-24] ingest | Xiong et al. (2025) ConfSeq — 分子构象描述语言 (Nature Machine Intelligence 2026)
+- Downloaded: bioRxiv PDF via cloudscraper (7.3MB, 21pp) + Nature supplementary materials (ESM1-4)
+- Created: papers/xiong2025-confseq-{analysis,method,results,critical}.md (1+3 structure)
+- Created: entities/confseq.md — ConfSeq entity page
+- Updated: SCHEMA.md — added Cheminformatics/Drug Discovery tag category (10 new tags)
+- Updated: index.md — added 4 paper pages + 1 entity (+5 pages, total 165)
+- Updated: mkdocs.yml — added Xiong 2025 ConfSeq nav group
+- Note: Nature version paywalled; BJUT CARSI subscription doesn't cover Nature Machine Intelligence
 - Updated: docs/ symlink, papers/index.md title
 - All wikilinks preserved (internal uses bare slug names, no path prefixed)

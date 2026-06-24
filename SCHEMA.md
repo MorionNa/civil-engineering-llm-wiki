@@ -125,6 +125,10 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance
 - **AI4S:** ai4s, scientific-discovery, inverse-problem, pinn, deepxde,
   physics-simulation, material-design, weather-prediction
+- **Cheminformatics/Drug Discovery:** chemical-language-model, molecular-conformation,
+  3d-molecular-generation, conformation-prediction, internal-coordinates,
+  drug-discovery, dihedral-angle, pseudo-chirality, se3-invariance,
+  virtual-screening, shape-conditioned-generation, molecular-representation
 - **Large Language Models:** mixture-of-experts, sparse-moe, gating-network,
   top-k-routing, swiglu, decoder-only-transformer, large-language-model,
   efficient-inference, load-balancing, router-analysis, instruction-tuning,

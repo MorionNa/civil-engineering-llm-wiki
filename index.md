@@ -2,9 +2,13 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-22 | Total pages: 159 (Papers: 109, Notes: 5, Entities: 42, Comparisons: 2)
+> Last updated: 2026-06-24 | Total pages: 165 (Papers: 113, Notes: 5, Entities: 43, Comparisons: 2)
 
 ## Papers
+- [[xiong2025-confseq-analysis]] — Xiong et al. (2025) ConfSeq：内坐标 token 化 + 标准 Transformer = 3D 分子 SOTA；500× 加速于扩散模型
+- [[xiong2025-confseq-method]] — ConfSeq 方法：二面角/键角/伪手性 token + 四大任务统一 Transformer 架构
+- [[xiong2025-confseq-results]] — ConfSeq 结果：构象预测 COV-P +10.5pp，生成 500× 加速，DUDE AUC 0.76
+- [[xiong2025-confseq-critical]] — ConfSeq 贡献+Negative+可迁移（内坐标范式→蛋白质/材料）+ 8 项研究机会
 - [[giles2025-avbd-analysis]] — Giles et al. (2025) AVBD 论文分析：augmented Lagrangian 扩展 VBD，支持硬约束 + 高刚度比
 - [[giles2025-avbd-method]] — AVBD 方法展开：硬约束、不等式约束、摩擦接触、渐进刚度递增
 - [[giles2025-avbd-results]] — AVBD 实验结果：vs VBD/XPBD/Seq Imp 在刚度比、质量比、碰撞堆叠上的量化对比
@@ -159,6 +163,7 @@
 - [[az-nas]] — AZ-NAS: 四互补代理组装方案，NAS-Bench-201 τ=0.741 SOTA
 
 ### 算法
+- [[confseq]] — ConfSeq: 分子构象描述语言，内坐标 token 化 + 标准 Transformer
 - [[te-nas]] — TE-NAS: Training-free NAS
 - [[avbd]] — AVBD: 硬约束物理仿真
 - [[phylstm2]] — PhyLSTM2: 双 LSTM 滞回元模型
