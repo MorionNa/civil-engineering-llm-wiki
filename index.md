@@ -2,9 +2,25 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-24 | Total pages: 165 (Papers: 113, Notes: 5, Entities: 43, Comparisons: 2)
+> Last updated: 2026-06-27 | Total pages: 191 (Papers: 133, Notes: 5, Entities: 49, Comparisons: 2)
 
 ## Papers
+- [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
+- [[chen2025-at-pinn-hc-method]] — AT-PINN-HC 方法：边界位移/初始位移/初始速度 HC + 三角函数/指数函数最优
+- [[chen2025-at-pinn-hc-results]] — AT-PINN-HC 结果：Euler-Bernoulli 梁/超音速面板/玻璃板三基准，迭代减少 78%
+- [[chen2025-at-pinn-hc-critical]] — AT-PINN-HC 贡献+Negative（逐案例选择/自动机制缺乏）+可迁移+8 项研究机会
+- [[li2025-movingload-pinn-analysis]] — Li et al. (2025) PINN 求解桥梁移动荷载动力响应：FEM-free 替代方案，因果权重+傅里叶嵌入，AEI
+- [[li2025-movingload-pinn-method]] — 移动荷载 PINN 方法：无量纲 PDE + 高斯 Dirac 近似 + 两阶段 Adam→L-BFGS
+- [[li2025-movingload-pinn-results]] — 移动荷载 PINN 结果：5 案例 vs FEM + 消融研究（傅里叶嵌入/因果权重/数据敏感性）
+- [[li2025-movingload-pinn-critical]] — 贡献+Negative（无量纲假设限制/频域未扩展）+可迁移+8 项研究机会
+- [[li2025-girder-dynamic-pinn-analysis]] — Li et al. (2025) 斜拉桥主梁动力线形 PINN 反演：双代理网络 + 时空因果权重，AEI
+- [[li2025-girder-dynamic-pinn-method]] — 斜拉桥 PINN 方法：连续弹性支撑简化 + Net_u/Net_f 双网络 + 差异化损失
+- [[li2025-girder-dynamic-pinn-results]] — 斜拉桥 PINN 结果：传感器/路面/损伤/噪声四维度敏感性验证
+- [[li2025-girder-dynamic-pinn-critical]] — 贡献+Negative（二维简化/恒定刚度）+可迁移+与 li2025-movingload-pinn 对照
+- [[goswami2022-variational-deeponet-analysis]] — Goswami et al. (2022) V-DeepONet：变分能量约束 DeepONet 预测准脆性材料裂纹路径，CMAME
+- [[goswami2022-variational-deeponet-method]] — V-DeepONet 方法：branch-trunk 架构 + 相位场能量泛函 + 混合训练策略
+- [[goswami2022-variational-deeponet-results]] — V-DeepONet 结果：单边缺口拉伸/L 形面板，内插外推均优，毫秒级推理
+- [[goswami2022-variational-deeponet-critical]] — 贡献+Negative（准静态假设/2D 限制/ℓc 敏感）+可迁移+9 项研究机会
 - [[xiong2025-confseq-analysis]] — Xiong et al. (2025) ConfSeq：内坐标 token 化 + 标准 Transformer = 3D 分子 SOTA；500× 加速于扩散模型
 - [[xiong2025-confseq-method]] — ConfSeq 方法：二面角/键角/伪手性 token + 四大任务统一 Transformer 架构
 - [[xiong2025-confseq-results]] — ConfSeq 结果：构象预测 COV-P +10.5pp，生成 500× 加速，DUDE AUC 0.76
@@ -129,7 +145,19 @@
 - [[amapcvlab2026-abotearth-results]] — ABot-Earth 结果：FID 16.1 vs baselines，vs Google Earth 全球覆盖率+视觉质量对比
 - [[amapcvlab2026-abotearth-critical]] — ABot-Earth 贡献+Negative（仅航拍/全闭源/非公平 FID）+可迁移（"重建→生成"范式/Bhattacharyya 裁剪）+7 项研究机会
 
+- [[linka2022-bayesian-pinn-analysis]] — Linka et al. (2022) BPINN 概述：贝叶斯推理+PINN，6模型对比COVID-19动力系统
+- [[linka2022-bayesian-pinn-method]] — BPINN 方法：阻尼谐振子物理 + HMC采样，6模型架构对比
+- [[linka2022-bayesian-pinn-results]] — BPINN 结果：NN/PINN/SAPINN vs BI/BNN/BPINN 完整对比矩阵+决策树
+- [[linka2022-bayesian-pinn-critical]] — BPINN 贡献+Negative（HMC极贵/小数据差）+可迁移（物理→似然范式）+12项研究机会
+
 ## Entities
+### 物理信息机器学习
+- [[bayesian-pinn]] — Bayesian PINN: PINN + 贝叶斯推理，物理残差 = 似然因子，HMC 采样
+- [[hamiltonian-monte-carlo]] — HMC: 哈密顿蒙特卡洛采样，BPINN 核心推理引擎
+- [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
+- [[deeponet]] — DeepONet: 深度算子网络，学习无限维映射的通用神经算子
+- [[cable-stayed-bridge]] — 斜拉桥: 索支撑桥型，主梁动力线形 (MGDA) 健康监测
+
 ### 远程感知与生成式3D
 - [[abot-earth]] — ABot-Earth: 阿里高德生成式 3D 地球模型，卫星→3DGS
 - [[abot-3dgs]] — ABot-3DGS: 城市级 3DGS 重建引擎
@@ -163,6 +191,7 @@
 - [[az-nas]] — AZ-NAS: 四互补代理组装方案，NAS-Bench-201 τ=0.741 SOTA
 
 ### 算法
+- [[at-pinn-hc]] — AT-PINN-HC: 硬约束增强时间推进 PINN，结构振动分析
 - [[confseq]] — ConfSeq: 分子构象描述语言，内坐标 token 化 + 标准 Transformer
 - [[te-nas]] — TE-NAS: Training-free NAS
 - [[avbd]] — AVBD: 硬约束物理仿真

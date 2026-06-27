@@ -80,13 +80,16 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   collocation-strategy, conditional-computation, automatic-sharding, spmd,
   model-parallelism, pipeline-parallelism, distributed-training, sublinear-scaling,
   compiler-optimization, xla-compiler, transformer, machine-translation,
-  heterogeneous-transformer, encoder-decoder-attention, edge-inference
+  heterogeneous-transformer, encoder-decoder-attention, edge-inference,
+  bayesian-inference, hamiltonian-monte-carlo, uncertainty-quantification,
+  self-adaptive-pinn, epidemiology,
+  time-marching, auxiliary-function, hard-constraint-strategies
 - **Architecture:** phylstm2, phylstm3
 - **Domain:** structural-dynamics, nonlinear-systems, hysteresis, seismic-response, 
   equation-of-motion, restoring-force, data-scarcity, unobservable-variables,
-  extrapolation-ability
-- **Data:** dataset, benchmark, ground-motion, synthetic-data, ida, peer-database, blwn
-- **Models:** bouc-wen, rate-independent, rate-dependent, mrfs, sdof
+  extrapolation-ability, vibration-analysis, superscript-panel, euler-bernoulli-beam
+- **Data:** dataset, benchmark, ground-motion, synthetic-data, ida, peer-database, blwn, jhu-covid19
+- **Models:** bouc-wen, rate-independent, rate-dependent, mrfs, sdof, damped-harmonic-oscillator
 - **Failure modes:** architecture-mismatch-failure, finite-difference-error,
   physics-constraint-weight-tuning
 - **Structural engineering:** collapse-simulation, rc-structures, fiber-beam-element,
@@ -95,7 +98,8 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
 - **Physics simulation:** rigid-body-dynamics, contact-mechanics, real-time-simulation,
   gpu-computing, constraint-solver, primal-method, dual-method, augmented-lagrangian,
   gauss-seidel, jacobi, high-stiffness-ratio, hard-constraints, mass-spring,
-  frictional-contact, substep, information-propagation-limit
+  frictional-contact, substep, information-propagation-limit,
+  trigonometric-auxiliary, exponential-auxiliary, polynomial-auxiliary
 - **Meta:** comparison, review, future-work, limitation, cross-domain-generalization,
   architecture-selection, transfer-learning
 - **Computer vision:** semantic-segmentation, encoder-decoder, skip-connections,

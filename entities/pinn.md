@@ -1,0 +1,80 @@
+---
+title: "PINN — 物理信息神经网络 (Physics-Informed Neural Network)"
+created: 2026-06-27
+updated: 2026-06-27
+type: entity
+tags: [physics-informed, pinn, ai4s, deepxde, deep-learning, neural-network, physics-simulation, inverse-problem]
+sources: [raw/papers/10_1016_j_aei_2025_103215_extracted.txt, notes/lectures/ai4s-pinn-deepxde.md]
+confidence: high
+---
+
+# PINN — 物理信息神经网络
+
+## 定义
+
+物理信息神经网络（Physics-Informed Neural Network, PINN）是一种将**物理定律（以偏微分方程 PDE 形式）嵌入神经网络损失函数**的深度学习框架。其核心思想是：利用自动微分计算神经网络的导数，将 PDE 的残差作为损失项，使网络在无标签数据的情况下也能学习物理上一致的解。
+
+$$\mathcal{L}_{PINN} = \underbrace{\mathcal{L}_{PDE}}_{\text{物理残差}} + \underbrace{\mathcal{L}_{BC/IC}}_{\text{边界/初始条件}} + \underbrace{\mathcal{L}_{data}}_{\text{数据拟合（可选）}}$$
+
+**本质公式：** Data + Neural Networks + Physical Laws = PINNs
+
+## 历史脉络
+
+| 时间 | 事件 |
+|------|------|
+| 1995 | 首次出现将 PDE 与神经网络结合的思想 |
+| 2017 | Raissi 等人正式提出 PINN 概念 |
+| 2019 | Raissi et al. 发表在 Journal of Computational Physics (引用 >6000) |
+| 2021 | DeepXDE 库发布（陆路/耶鲁），降低 PINN 使用门槛 |
+| 2023 | Wang et al. 揭示 PINN 的伪解问题和训练失败模式 |
+| 2025 | 应用扩展至桥梁结构动力学（Li et al.） |
+
+## 核心优势
+
+1. **无网格（Mesh-free）：** 不需要传统 FEM/FDM 的网格划分，直接在整个时空域内采样训练
+2. **统一正/反问题框架：** 同一个网络和损失函数可以同时求解 PDE（正问题）和推断未知参数（反问题）
+3. **数据效率：** 物理约束可作为"数据替代品"，大幅减少对标注数据的需求
+4. **自动微分：** 利用 DL 框架的自动微分能力精确计算 PDE 所需的高阶导数
+5. **GPU 加速：** 天然享受 DL 生态的硬件加速
+
+## 关键挑战与解决方案
+
+| 挑战 | 表现 | 解决方案 | 来源 |
+|------|------|---------|------|
+| 伪解（Spurious Solutions） | PDE 残差 loss → 0 但 L2 误差不降 | 伪时间步进、自适应步长 | [[wang2023-pinn-spurious-analysis]] |
+| Dirac 奇异性处理 | 集中力/点源不可微 | 高斯近似 + 自适应采样 | [[li2025-movingload-pinn-analysis]] |
+| 高频分量学习困难 | 标准 MLP 偏向低频函数 | 傅里叶嵌入层 | [[li2025-movingload-pinn-method]] |
+| 时域因果违反 | 网络"先猜后期再反推前期" | 因果权重 | [[li2025-movingload-pinn-method]] |
+| 物理约束权重调参 | 不同损失项的量级不匹配 | 自适应权重、硬约束 | [[notes/lectures/ai4s-pinn-deepxde]] |
+
+## PINN 的应用领域
+
+| 领域 | 代表工作 | 关键贡献 |
+|------|---------|----------|
+| 流体力学 | Raissi et al. (2019) | 奠基性工作：Navier-Stokes 方程求解 |
+| 固体力学/结构动力学 | Li et al. (2025) | 桥梁移动荷载动力响应，首次 PINN 结构时域分析 |
+| 热传导 | — | 瞬态/稳态热传导 |
+| 电磁学 | — | Maxwell 方程求解 |
+| 逆问题 | — | 参数推断、源项识别、边界反演 |
+
+## 变体与增强
+
+- **gPINN（梯度增强 PINN）：** 在 PDE 残差基础上增加梯度残差项，显著提升精度
+- **硬约束 PINN：** 通过网络结构设计自动满足边界条件（如 $u = g(x) + \ell(x) \cdot N(x)$），避免权重调参
+- **RAR（残差自适应细化）：** 在 PDE 残差大的区域自适应增加训练点
+- **cPINN（Conservative PINN）：** 保证物理量的守恒性
+- **BPINN（Bayesian PINN）：** 引入贝叶斯推理进行不确定性量化
+
+## 关联论文（本 Wiki）
+
+- [[li2025-movingload-pinn-analysis]] — Li et al. (2025) 桥梁移动荷载 PINN 分析（首次 PINN 结构动力学时域应用）
+- [[li2025-movingload-pinn-method]] — 方法机制：高斯近似 + 傅里叶嵌入 + 因果权重
+- [[wang2023-pinn-spurious-analysis]] — PINN 伪解问题分析
+- [[physics-constrained-training-failure-modes]] — PINN vs PhyLSTM 物理约束训练失败模式对比
+- [[zhang2020-phylstm-analysis]] — PhyLSTM：另一种物理约束学习范式
+
+## 关联资源
+
+- [[notes/lectures/ai4s-pinn-deepxde]] — AI4S 第一课：PINN 入门到 DeepXDE 实战（90 分钟视频笔记）
+- [[avbd]] — AVBD 硬约束物理仿真（PINN 软约束的对照范式）
+- [[pseudo-time-stepping]] — 伪时间步进（PINN 伪解问题的解决方案之一）

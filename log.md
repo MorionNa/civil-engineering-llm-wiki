@@ -5,6 +5,21 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-27] ingest | Chen et al. (2025) — AT-PINN-HC: 硬约束增强时间推进 PINN 结构振动分析
+
+## [2026-06-27] ingest | Linka et al. (2022) — Bayesian PINNs for real-world nonlinear dynamical systems
+- Source: DOI 10.1016/j.cma.2022.115346 (CMAME Vol 402, 2022), raw/papers/10_1016_j_cma_2022_115346_extracted.txt
+- SCHEMA.md updated: added bayesian-inference, hamiltonian-monte-carlo, uncertainty-quantification, self-adaptive-pinn, epidemiology (Methods); damped-harmonic-oscillator (Models); jhu-covid19 (Data)
+- Created: papers/linka2022-bayesian-pinn-{analysis,method,results,critical}.md (1+3)
+- Created: entities/bayesian-pinn.md, entities/hamiltonian-monte-carlo.md
+- Domain: physics-informed ML — BPINN: 物理残差=贝叶斯似然因子, HMC联合推断网络权重+物理参数, COVID-19 6模型系统对比
+- Source: DOI 10.1016/j.cma.2024.117691 (CMAME Vol. 436, 2025), raw/papers/10_1016_j_cma_2024_117691_extracted.txt
+- SCHEMA.md updated: added time-marching, auxiliary-function, hard-constraint-strategies (Methods), vibration-analysis, superscript-panel, euler-bernoulli-beam (Domain), trigonometric-auxiliary, exponential-auxiliary, polynomial-auxiliary (Physics simulation)
+- Created: papers/chen2025-at-pinn-hc-{analysis,method,results,critical}.md (1+3)
+- Created: entities/at-pinn-hc.md
+- Domain: 物理信息机器学习 + 计算力学 — PINN 硬约束 + 时间推进 + 结构振动
+- Note: 全文未提取（仅摘要+元数据），置信度 medium；正文细节待补充
+
 ## [2026-06-22] ingest | AMAP CV Lab (2026) — ABot-Earth 0.5: Generative 3D Earth Model
 - Source: tech-report.pdf (AMAP CV Lab, 2026-06-08), raw/papers/amapcvlab2026-abotearth.pdf
 - SCHEMA.md updated: added Remote Sensing & 3D Geospatial section (29 tags), Systems/Models section (5 tags), new datasets (8)
@@ -313,3 +328,16 @@
 - Note: Nature version paywalled; BJUT CARSI subscription doesn't cover Nature Machine Intelligence
 - Updated: docs/ symlink, papers/index.md title
 - All wikilinks preserved (internal uses bare slug names, no path prefixed)
+
+## [2026-06-27] ingest | 5 篇 PINN 结构动力计算论文批量入库
+- Source: Elsevier XML (paper-download via API)
+- Created: 5 papers × 4 pages = 20 paper pages
+  - li2025-movingload-pinn-{analysis,method,results,critical}.md (Li YF 2025 AEI: 移动荷载桥梁动力响应)
+  - li2025-girder-dynamic-pinn-{analysis,method,results,critical}.md (Li YF 2025 AEI: 斜拉桥主梁动力线形)
+  - linka2022-bayesian-pinn-{analysis,method,results,critical}.md (Linka 2022 CMAME: BPINN 非线性动力系统)
+  - chen2025-at-pinn-hc-{analysis,method,results,critical}.md (Chen ZL 2025 CMAME: AT-PINN-HC 硬约束振动)
+  - goswami2022-variational-deeponet-{analysis,method,results,critical}.md (Goswami 2022 CMAME: V-DeepONet 裂纹)
+- Created: entities/pinn.md, entities/deeponet.md, entities/cable-stayed-bridge.md
+- Updated: index.md (+15 entries), mkdocs.yml (+5 paper nav + 2 entity sections), SCHEMA.md (+tags)
+- Domain: PINN + structural dynamics + neural operators
+- Wiki: 165→191 pages

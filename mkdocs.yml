@@ -46,6 +46,31 @@ nav:
           - papers/giles2025-avbd-method.md
           - papers/giles2025-avbd-results.md
           - papers/giles2025-avbd-critical.md
+      - Chen 2025 AT-PINN-HC:
+          - papers/chen2025-at-pinn-hc-analysis.md
+          - papers/chen2025-at-pinn-hc-method.md
+          - papers/chen2025-at-pinn-hc-results.md
+          - papers/chen2025-at-pinn-hc-critical.md
+      - Li 2025 移动荷载PINN:
+          - papers/li2025-movingload-pinn-analysis.md
+          - papers/li2025-movingload-pinn-method.md
+          - papers/li2025-movingload-pinn-results.md
+          - papers/li2025-movingload-pinn-critical.md
+      - Li 2025 斜拉桥动力PINN:
+          - papers/li2025-girder-dynamic-pinn-analysis.md
+          - papers/li2025-girder-dynamic-pinn-method.md
+          - papers/li2025-girder-dynamic-pinn-results.md
+          - papers/li2025-girder-dynamic-pinn-critical.md
+      - Linka 2022 Bayesian-PINN:
+          - papers/linka2022-bayesian-pinn-analysis.md
+          - papers/linka2022-bayesian-pinn-method.md
+          - papers/linka2022-bayesian-pinn-results.md
+          - papers/linka2022-bayesian-pinn-critical.md
+      - Goswami 2022 V-DeepONet:
+          - papers/goswami2022-variational-deeponet-analysis.md
+          - papers/goswami2022-variational-deeponet-method.md
+          - papers/goswami2022-variational-deeponet-results.md
+          - papers/goswami2022-variational-deeponet-critical.md
       - Lu 2013 倒塌模拟:
           - papers/lu2013-collapse-rc-highrise-analysis.md
           - papers/lu2013-collapse-rc-highrise-method.md
@@ -206,12 +231,12 @@ nav:
           - entities/eznas.md
           - entities/az-nas.md
       - 算法:
+          - entities/at-pinn-hc.md
+          - entities/confseq.md
           - entities/te-nas.md
           - entities/avbd.md
           - entities/phylstm2.md
           - entities/phylstm3.md
-          - entities/bouc-wen-model.md
-          - entities/pseudo-time-stepping.md
       - 组织:
           - entities/zhipu-ai.md
           - entities/guoneng-bigdata.md
@@ -225,6 +250,15 @@ nav:
           - entities/3d-gaussian-splatting.md
           - entities/from-orbit-to-ground.md
           - entities/clod-gs.md
+      - 物理信息机器学习:
+          - entities/pinn.md
+          - entities/bayesian-pinn.md
+          - entities/hamiltonian-monte-carlo.md
+          - entities/deeponet.md
+          - entities/pseudo-time-stepping.md
+      - 结构工程:
+          - entities/cable-stayed-bridge.md
+          - entities/bouc-wen-model.md
       - 数据集:
           - entities/nasbench201.md
           - entities/ade20k.md
