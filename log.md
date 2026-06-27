@@ -348,3 +348,9 @@
 - Created: entities/neural-tangent-kernel.md
 - Domain: PINN 训练理论 — NTK 谱偏差分析 + 自适应学习率退火
 - Wiki: 191→196 pages
+
+## [2026-06-27] ingest | Jagtap et al. (2019) 自适应激活函数加速 PINN
+- Source: JCP DOI 10.1016/j.jcp.2019.109136 (Elsevier XML, 790KB)
+- Created: papers/jagtap2019-adaptive-activation-{analysis,method,results,critical}.md
+- Domain: PINN 训练加速 — 全局/局部可训练激活斜率 + 斜率恢复项
+- Wiki: 196→200 pages

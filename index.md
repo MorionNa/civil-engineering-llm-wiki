@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-27 | Total pages: 196 (Papers: 137, Notes: 5, Entities: 50, Comparisons: 2)
+> Last updated: 2026-06-27 | Total pages: 200 (Papers: 141, Notes: 5, Entities: 50, Comparisons: 2)
 
 ## Papers
 - [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
@@ -90,6 +90,10 @@
 - [[jiang2024-mixtral-of-experts-results]] — Mixtral 实验结果：vs Llama/GPT-3.5 全面对比 + 多语言 + 长上下文 + 路由分析
 - [[jiang2024-mixtral-of-experts-critical]] — Mixtral 贡献+Negative（专家不自动特化/训练细节未公开）+可迁移（密集→MoE改造）+机会
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
+- [[jagtap2019-adaptive-activation-analysis]] — Jagtap et al. (2019) 自适应激活函数加速 PINN：全局/局部可训练斜率 + 恢复项，JCP
+- [[jagtap2019-adaptive-activation-method]] — 自适应激活方法：全局 σ(nax) vs 局部 σ(na_ix) + 斜率恢复项防退化
+- [[jagtap2019-adaptive-activation-results]] — MNIST/CIFAR/Burgers/Allen-Cahn/Helmholtz 五基准，局部模式加速 5×
+- [[jagtap2019-adaptive-activation-critical]] — 贡献+Negative（仅 tanh/无理论保证）+可迁移+5 研究机会
 - [[wang2021-pinn-ntk-failure-analysis]] — Wang et al. (2021) PINN 训练失败 NTK 分析：谱偏差 + 特征值自适应退火，JCP
 - [[wang2021-pinn-ntk-failure-method]] — PINN NTK 推导：多损失分块 NTK + 收敛速率证明 + 自适应学习率算法
 - [[wang2021-pinn-ntk-failure-results]] — 4 PDE 验证（Poisson/波动/Burgers/Allen-Cahn），NTK 退火 L² 误差降 4 数量级

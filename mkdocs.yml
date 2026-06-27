@@ -193,6 +193,11 @@ nav:
           - papers/dai2024-deepseek-moe-method.md
           - papers/dai2024-deepseek-moe-results.md
           - papers/dai2024-deepseek-moe-critical.md
+      - Jagtap 2019 自适应激活:
+          - papers/jagtap2019-adaptive-activation-analysis.md
+          - papers/jagtap2019-adaptive-activation-method.md
+          - papers/jagtap2019-adaptive-activation-results.md
+          - papers/jagtap2019-adaptive-activation-critical.md
       - Wang 2021 PINN NTK:
           - papers/wang2021-pinn-ntk-failure-analysis.md
           - papers/wang2021-pinn-ntk-failure-method.md
