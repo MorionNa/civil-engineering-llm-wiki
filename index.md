@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-27 | Total pages: 200 (Papers: 141, Notes: 5, Entities: 50, Comparisons: 2)
+> Last updated: 2026-06-27 | Total pages: 204 (Papers: 145, Notes: 5, Entities: 50, Comparisons: 2)
 
 ## Papers
 - [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
@@ -90,6 +90,10 @@
 - [[jiang2024-mixtral-of-experts-results]] — Mixtral 实验结果：vs Llama/GPT-3.5 全面对比 + 多语言 + 长上下文 + 路由分析
 - [[jiang2024-mixtral-of-experts-critical]] — Mixtral 贡献+Negative（专家不自动特化/训练细节未公开）+可迁移（密集→MoE改造）+机会
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
+- [[raissi2019-pinn-analysis]] — Raissi et al. (2019) 🏛️ PINN 开山之作：AD 统一处理非线性 PDE，JCP 16,874c
+- [[raissi2019-pinn-method]] — PINN 方法：连续/离散时间模型 + AD 免线性化处理非线性项（$uu_x$, $u^3$, $\|h\|^2h$）
+- [[raissi2019-pinn-results]] — 五类非线性 PDE (Burgers/Schrödinger/Allen-Cahn/N-S/KdV) 统一验证
+- [[raissi2019-pinn-critical]] — 贡献+Negative（软约束违背/激波误差/非线性刚度）+可迁移+7 研究机会
 - [[jagtap2019-adaptive-activation-analysis]] — Jagtap et al. (2019) 自适应激活函数加速 PINN：全局/局部可训练斜率 + 恢复项，JCP
 - [[jagtap2019-adaptive-activation-method]] — 自适应激活方法：全局 σ(nax) vs 局部 σ(na_ix) + 斜率恢复项防退化
 - [[jagtap2019-adaptive-activation-results]] — MNIST/CIFAR/Burgers/Allen-Cahn/Helmholtz 五基准，局部模式加速 5×

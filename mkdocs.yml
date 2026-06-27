@@ -193,6 +193,11 @@ nav:
           - papers/dai2024-deepseek-moe-method.md
           - papers/dai2024-deepseek-moe-results.md
           - papers/dai2024-deepseek-moe-critical.md
+      - Raissi 2019 PINN 开山:
+          - papers/raissi2019-pinn-analysis.md
+          - papers/raissi2019-pinn-method.md
+          - papers/raissi2019-pinn-results.md
+          - papers/raissi2019-pinn-critical.md
       - Jagtap 2019 自适应激活:
           - papers/jagtap2019-adaptive-activation-analysis.md
           - papers/jagtap2019-adaptive-activation-method.md

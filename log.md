@@ -354,3 +354,15 @@
 - Created: papers/jagtap2019-adaptive-activation-{analysis,method,results,critical}.md
 - Domain: PINN 训练加速 — 全局/局部可训练激活斜率 + 斜率恢复项
 - Wiki: 196→200 pages
+
+## [2026-06-27] ingest | Raissi et al. (2019) PINN 开山之作
+- Source: JCP DOI 10.1016/j.jcp.2018.10.045 (Elsevier XML, 1.0MB)
+- Created: papers/raissi2019-pinn-{analysis,method,results,critical}.md
+- Domain: PINN 奠基 — 自动微分统一处理非线性 PDE (Burgers/Schrödinger/Allen-Cahn/N-S/KdV)
+- Special focus: 非线性 PDE 的 AD 处理机制 vs 传统线性化迭代
+- Wiki: 200→204 pages
+
+## [2026-06-27] ingest | Raissi et al. (2019) PINN 开山之作
+- Source: JCP DOI 10.1016/j.jcp.2018.10.045
+- Created: papers/raissi2019-pinn-{analysis,method,results,critical}.md
+- Wiki: 200→204 pages
