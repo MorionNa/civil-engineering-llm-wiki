@@ -198,6 +198,21 @@ nav:
           - papers/raissi2019-pinn-method.md
           - papers/raissi2019-pinn-results.md
           - papers/raissi2019-pinn-critical.md
+      - Wang 2024 因果性PINN:
+          - papers/wang2024-causal-pinn-analysis.md
+          - papers/wang2024-causal-pinn-method.md
+          - papers/wang2024-causal-pinn-results.md
+          - papers/wang2024-causal-pinn-critical.md
+      - Wang 2024 KINN:
+          - papers/wang2024-kinn-analysis.md
+          - papers/wang2024-kinn-method.md
+          - papers/wang2024-kinn-results.md
+          - papers/wang2024-kinn-critical.md
+      - Sojitra 2026 FEDONet:
+          - papers/sojitra2026-fedonet-analysis.md
+          - papers/sojitra2026-fedonet-method.md
+          - papers/sojitra2026-fedonet-results.md
+          - papers/sojitra2026-fedonet-critical.md
       - Jagtap 2019 自适应激活:
           - papers/jagtap2019-adaptive-activation-analysis.md
           - papers/jagtap2019-adaptive-activation-method.md
@@ -268,6 +283,9 @@ nav:
       - 物理信息机器学习:
           - entities/pinn.md
           - entities/neural-tangent-kernel.md
+          - entities/causal-training.md
+          - entities/kin.md
+          - entities/fedonet.md
           - entities/bayesian-pinn.md
           - entities/hamiltonian-monte-carlo.md
           - entities/deeponet.md

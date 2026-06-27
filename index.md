@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-27 | Total pages: 204 (Papers: 145, Notes: 5, Entities: 50, Comparisons: 2)
+> Last updated: 2026-06-27 | Total pages: 219 (Papers: 157, Notes: 5, Entities: 53, Comparisons: 2)
 
 ## Papers
 - [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
@@ -94,6 +94,18 @@
 - [[raissi2019-pinn-method]] — PINN 方法：连续/离散时间模型 + AD 免线性化处理非线性项（$uu_x$, $u^3$, $\|h\|^2h$）
 - [[raissi2019-pinn-results]] — 五类非线性 PDE (Burgers/Schrödinger/Allen-Cahn/N-S/KdV) 统一验证
 - [[raissi2019-pinn-critical]] — 贡献+Negative（软约束违背/激波误差/非线性刚度）+可迁移+7 研究机会
+- [[wang2024-causal-pinn-analysis]] — Wang et al. (2024) 因果性 PINN：重构损失函数尊重时间因果，解 Sifan Wang 三部曲终章，CMAME
+- [[wang2024-causal-pinn-method]] — 因果权重公式 $w_i=\exp(-\epsilon\sum_{k<i}\mathcal{L}_k)$ + 时间前沿推进算法
+- [[wang2024-causal-pinn-results]] — Lorenz/KS/N-S 三基准验证，因果权重提供诊断能力
+- [[wang2024-causal-pinn-critical]] — 贡献+Negative+可迁移：NTK退火+伪时间步进+因果训练=三重保护
+- [[wang2024-kinn-analysis]] — Wang et al. (2024) KINN：KAN 替代 MLP 做 PINN 骨干，B 样条激活，CMAME
+- [[wang2024-kinn-method]] — KINN 方法：B 样条 KAN + 三种 PDE 形式（强/能量/逆问题）
+- [[wang2024-kinn-results]] — 六类固体力学问题 5/6 优于 MLP-PINN（复杂几何除外）
+- [[wang2024-kinn-critical]] — 贡献+Negative（张量积网格限制/训练慢/NTK缺失）+7 研究机会
+- [[sojitra2026-fedonet-analysis]] — Sojitra et al. (2026) FEDONet：Fourier 嵌入 DeepONet 实现谱精度算子学习，JCP
+- [[sojitra2026-fedonet-method]] — FEDONet 方法：随机 Fourier 特征嵌入 trunk + branch → 自适应 Fourier 级数
+- [[sojitra2026-fedonet-results]] — 5 PDE (Burgers/Poisson/Eikonal/Allen-Cahn/KS) 混沌刚性系统获益最大
+- [[sojitra2026-fedonet-critical]] — 贡献+Negative+可迁移：Fourier-V-DeepONet 潜在方向
 - [[jagtap2019-adaptive-activation-analysis]] — Jagtap et al. (2019) 自适应激活函数加速 PINN：全局/局部可训练斜率 + 恢复项，JCP
 - [[jagtap2019-adaptive-activation-method]] — 自适应激活方法：全局 σ(nax) vs 局部 σ(na_ix) + 斜率恢复项防退化
 - [[jagtap2019-adaptive-activation-results]] — MNIST/CIFAR/Burgers/Allen-Cahn/Helmholtz 五基准，局部模式加速 5×
@@ -169,6 +181,9 @@
 - [[hamiltonian-monte-carlo]] — HMC: 哈密顿蒙特卡洛采样，BPINN 核心推理引擎
 - [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
 - [[neural-tangent-kernel]] — NTK: 神经正切核，解释 PINN 训练失败的理论工具
+- [[causal-training]] — 因果训练: 尊重物理时间因果的损失加权策略
+- [[kin]] — KINN/KAN: 可学习 B 样条激活替代 MLP，Kolmogorov-Arnold 定理
+- [[fedonet]] — FEDONet: Fourier 嵌入 DeepONet，谱精度算子学习
 - [[deeponet]] — DeepONet: 深度算子网络，学习无限维映射的通用神经算子
 - [[cable-stayed-bridge]] — 斜拉桥: 索支撑桥型，主梁动力线形 (MGDA) 健康监测
 

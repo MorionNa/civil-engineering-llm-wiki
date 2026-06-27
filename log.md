@@ -366,3 +366,10 @@
 - Source: JCP DOI 10.1016/j.jcp.2018.10.045
 - Created: papers/raissi2019-pinn-{analysis,method,results,critical}.md
 - Wiki: 200→204 pages
+
+## [2026-06-27] ingest | 3 篇 PINN 非线性 PDE (2024-2026) — KINN, FEDONet, Causal PINN
+- Source: Elsevier XML (CMAME x2, JCP x1)
+- Created: wang2024-kinn-{4p} + entity/kin, sojitra2026-fedonet-{4p} + entity/fedonet, wang2024-causal-pinn-{4p} + entity/causal-training
+- Key: KAN替代MLP / Fourier嵌入DeepONet / 因果时间训练
+- Wang Sifan 三部曲完整: 2021 NTK → 2023 伪解 → 2024 因果
+- Wiki: 204→219 pages
