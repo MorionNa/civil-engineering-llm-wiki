@@ -193,6 +193,11 @@ nav:
           - papers/dai2024-deepseek-moe-method.md
           - papers/dai2024-deepseek-moe-results.md
           - papers/dai2024-deepseek-moe-critical.md
+      - Wang 2021 PINN NTK:
+          - papers/wang2021-pinn-ntk-failure-analysis.md
+          - papers/wang2021-pinn-ntk-failure-method.md
+          - papers/wang2021-pinn-ntk-failure-results.md
+          - papers/wang2021-pinn-ntk-failure-critical.md
       - Wang 2023 PINN 伪解:
           - papers/wang2023-pinn-spurious-analysis.md
           - papers/wang2023-pinn-spurious-method.md
@@ -252,6 +257,7 @@ nav:
           - entities/clod-gs.md
       - 物理信息机器学习:
           - entities/pinn.md
+          - entities/neural-tangent-kernel.md
           - entities/bayesian-pinn.md
           - entities/hamiltonian-monte-carlo.md
           - entities/deeponet.md

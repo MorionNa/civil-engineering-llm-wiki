@@ -341,3 +341,10 @@
 - Updated: index.md (+15 entries), mkdocs.yml (+5 paper nav + 2 entity sections), SCHEMA.md (+tags)
 - Domain: PINN + structural dynamics + neural operators
 - Wiki: 165→191 pages
+
+## [2026-06-27] ingest | Wang et al. (2021) PINN NTK 失败机制分析
+- Source: JCP DOI 10.1016/j.jcp.2021.110768 (Elsevier XML)
+- Created: papers/wang2021-pinn-ntk-failure-{analysis,method,results,critical}.md
+- Created: entities/neural-tangent-kernel.md
+- Domain: PINN 训练理论 — NTK 谱偏差分析 + 自适应学习率退火
+- Wiki: 191→196 pages

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-27 | Total pages: 191 (Papers: 133, Notes: 5, Entities: 49, Comparisons: 2)
+> Last updated: 2026-06-27 | Total pages: 196 (Papers: 137, Notes: 5, Entities: 50, Comparisons: 2)
 
 ## Papers
 - [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
@@ -90,6 +90,11 @@
 - [[jiang2024-mixtral-of-experts-results]] — Mixtral 实验结果：vs Llama/GPT-3.5 全面对比 + 多语言 + 长上下文 + 路由分析
 - [[jiang2024-mixtral-of-experts-critical]] — Mixtral 贡献+Negative（专家不自动特化/训练细节未公开）+可迁移（密集→MoE改造）+机会
 - [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
+- [[wang2021-pinn-ntk-failure-analysis]] — Wang et al. (2021) PINN 训练失败 NTK 分析：谱偏差 + 特征值自适应退火，JCP
+- [[wang2021-pinn-ntk-failure-method]] — PINN NTK 推导：多损失分块 NTK + 收敛速率证明 + 自适应学习率算法
+- [[wang2021-pinn-ntk-failure-results]] — 4 PDE 验证（Poisson/波动/Burgers/Allen-Cahn），NTK 退火 L² 误差降 4 数量级
+- [[wang2021-pinn-ntk-failure-critical]] — 贡献+Negative（无限宽度假设/有限网络偏离）+可迁移+8 项研究机会
+- [[wang2023-pinn-spurious-analysis]] — Wang et al. (2023) PINN 伪解问题概述：PDE 残差 loss 的缺陷 + 伪时间步进方案
 - [[wang2023-pinn-spurious-method]] — 伪时间步进 + 自适应步长方法展开
 - [[wang2023-pinn-spurious-results]] — Helmholtz/Klein-Gordon/Navier-Stokes/Rayleigh-Taylor 实验结果
 - [[wang2023-pinn-spurious-critical]] — 贡献 + 知识点 + Negative + 可迁移 + 研究机会
@@ -155,6 +160,7 @@
 - [[bayesian-pinn]] — Bayesian PINN: PINN + 贝叶斯推理，物理残差 = 似然因子，HMC 采样
 - [[hamiltonian-monte-carlo]] — HMC: 哈密顿蒙特卡洛采样，BPINN 核心推理引擎
 - [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
+- [[neural-tangent-kernel]] — NTK: 神经正切核，解释 PINN 训练失败的理论工具
 - [[deeponet]] — DeepONet: 深度算子网络，学习无限维映射的通用神经算子
 - [[cable-stayed-bridge]] — 斜拉桥: 索支撑桥型，主梁动力线形 (MGDA) 健康监测
 
