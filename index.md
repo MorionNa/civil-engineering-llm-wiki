@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-27 | Total pages: 219 (Papers: 157, Notes: 5, Entities: 53, Comparisons: 2)
+> Last updated: 2026-06-28 | Total pages: 224 (Papers: 161, Notes: 5, Entities: 54, Comparisons: 2)
 
 ## Papers
 - [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
@@ -98,6 +98,10 @@
 - [[wang2024-causal-pinn-method]] — 因果权重公式 $w_i=\exp(-\epsilon\sum_{k<i}\mathcal{L}_k)$ + 时间前沿推进算法
 - [[wang2024-causal-pinn-results]] — Lorenz/KS/N-S 三基准验证，因果权重提供诊断能力
 - [[wang2024-causal-pinn-critical]] — 贡献+Negative+可迁移：NTK退火+伪时间步进+因果训练=三重保护
+- [[zhao2026-causal-attention-analysis]] — Zhao et al. (2026) Causal Attention：自适应初始条件误差驱动的因果权重，采样解耦+免退火，JCP
+- [[zhao2026-causal-attention-method]] — CA 方法：λ(t,x)=exp(-ϵξt) 权重 + mMLP + Fourier 特征 + 重采样集成
+- [[zhao2026-causal-attention-results]] — CA 结果：Allen-Cahn/KdV/KS/Burgers 六 benchmark SOTA，3D 不陷入维度灾难
+- [[zhao2026-causal-attention-critical]] — CA 贡献+Negative（Burgers 次优/IC-BC不兼容/tanh 梯度消失）+ 8 项研究机会
 - [[wang2024-kinn-analysis]] — Wang et al. (2024) KINN：KAN 替代 MLP 做 PINN 骨干，B 样条激活，CMAME
 - [[wang2024-kinn-method]] — KINN 方法：B 样条 KAN + 三种 PDE 形式（强/能量/逆问题）
 - [[wang2024-kinn-results]] — 六类固体力学问题 5/6 优于 MLP-PINN（复杂几何除外）
@@ -182,6 +186,7 @@
 - [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
 - [[neural-tangent-kernel]] — NTK: 神经正切核，解释 PINN 训练失败的理论工具
 - [[causal-training]] — 因果训练: 尊重物理时间因果的损失加权策略
+- [[causal-attention]] — Causal Attention (CA): 初始条件误差驱动的因果权重，采样解耦+免退火
 - [[kin]] — KINN/KAN: 可学习 B 样条激活替代 MLP，Kolmogorov-Arnold 定理
 - [[fedonet]] — FEDONet: Fourier 嵌入 DeepONet，谱精度算子学习
 - [[deeponet]] — DeepONet: 深度算子网络，学习无限维映射的通用神经算子

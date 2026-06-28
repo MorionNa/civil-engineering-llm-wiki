@@ -1,11 +1,11 @@
 ---
 title: "Causal Training — 因果训练 (PINN 时域训练范式)"
 created: 2026-06-27
-updated: 2026-06-27
+updated: 2026-06-28
 type: entity
 tags: [physics-informed, pinn, time-marching, deep-learning, ai4s]
-sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt]
-confidence: medium
+sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt, raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]
+confidence: high
 ---
 
 # Causal Training — 因果训练 (PINN 时域训练范式)
@@ -34,6 +34,7 @@ $$w_i = \exp\left(-\epsilon \sum_{k=1}^{i-1} \mathcal{L}_k\right), \quad \mathca
 | 2023 | Wang et al. 发现 PDE 残差 loss 的伪解问题（loss 小 ≠ 解正确） |
 | **2024** | **Wang et al. 提出因果训练——诊断因果违反为最根本的失败根因** |
 | 2025 | Li et al. 将因果训练迁移到桥梁动力学的移动荷载 PINN |
+| **2026** | **Zhao et al. 提出 Causal Attention (CA)——用初始条件误差替代累积残差驱动因果权重，实现采样解耦 + 免退火** |
 
 ## 与相关方法的关系
 
@@ -64,6 +65,8 @@ $$w_i = \exp\left(-\epsilon \sum_{k=1}^{i-1} \mathcal{L}_k\right), \quad \mathca
 - [[wang2024-causal-pinn-method]] — 因果训练方法展开
 - [[wang2024-causal-pinn-results]] — 因果训练实验结果
 - [[wang2024-causal-pinn-critical]] — 贡献 / Negative / 可迁移 / 研究机会
+- [[zhao2026-causal-attention-analysis]] — **Causal Attention (CA)** — 新一代因果加权（采样解耦 + 免退火）
+- [[causal-attention]] — CA 实体页
 - [[wang2021-pinn-ntk-failure-analysis]] — 同作者 (2021) NTK 谱偏差
 - [[wang2023-pinn-spurious-analysis]] — 同作者 (2023) 伪时间步进
 - [[li2025-movingload-pinn-analysis]] — 因果训练在结构动力学中的工程应用

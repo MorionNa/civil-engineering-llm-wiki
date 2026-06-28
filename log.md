@@ -5,6 +5,14 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-28] ingest | Zhao et al. (2026) — Causal Attention: 自适应因果性时空加权 PINN
+- Source: DOI 10.1016/j.jcp.2026.115071 (JCP 2026), raw/papers/10_1016_j_jcp_2026_115071.xml (Elsevier API fulltext)
+- Created: papers/zhao2026-causal-attention-{analysis,method,results,critical}.md (1+3)
+- Created: entities/causal-attention.md
+- Updated: entities/causal-training.md (added cross-ref to CA, updated history timeline)
+- Domain: 物理信息机器学习 — 时间依赖 PDE 因果性训练。核心：λ(t,x)=exp(-ϵξt) 加权，ξ 为初始条件误差。关键创新：采样解耦（vs Wang causal PINN）+ 固定 ϵ=1000 免退火 + 重采样集成。
+- Tags SCHEMA: causal-attention-weighting, temporal-causality (new); physics-informed, adaptive-weighting (existing)
+
 ## [2026-06-27] ingest | Chen et al. (2025) — AT-PINN-HC: 硬约束增强时间推进 PINN 结构振动分析
 
 ## [2026-06-27] ingest | Linka et al. (2022) — Bayesian PINNs for real-world nonlinear dynamical systems

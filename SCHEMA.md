@@ -83,7 +83,8 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   heterogeneous-transformer, encoder-decoder-attention, edge-inference,
   bayesian-inference, hamiltonian-monte-carlo, uncertainty-quantification,
   self-adaptive-pinn, epidemiology,
-  time-marching, auxiliary-function, hard-constraint-strategies
+  time-marching, auxiliary-function, hard-constraint-strategies,
+  causal-attention-weighting, temporal-causality, adaptive-weighting
 - **Architecture:** phylstm2, phylstm3
 - **Domain:** structural-dynamics, nonlinear-systems, hysteresis, seismic-response, 
   equation-of-motion, restoring-force, data-scarcity, unobservable-variables,

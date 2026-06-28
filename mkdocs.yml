@@ -203,6 +203,11 @@ nav:
           - papers/wang2024-causal-pinn-method.md
           - papers/wang2024-causal-pinn-results.md
           - papers/wang2024-causal-pinn-critical.md
+      - Zhao 2026 Causal Attention:
+          - papers/zhao2026-causal-attention-analysis.md
+          - papers/zhao2026-causal-attention-method.md
+          - papers/zhao2026-causal-attention-results.md
+          - papers/zhao2026-causal-attention-critical.md
       - Wang 2024 KINN:
           - papers/wang2024-kinn-analysis.md
           - papers/wang2024-kinn-method.md
@@ -284,6 +289,7 @@ nav:
           - entities/pinn.md
           - entities/neural-tangent-kernel.md
           - entities/causal-training.md
+          - entities/causal-attention.md
           - entities/kin.md
           - entities/fedonet.md
           - entities/bayesian-pinn.md
