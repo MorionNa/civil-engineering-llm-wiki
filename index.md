@@ -2,9 +2,13 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-06-28 | Total pages: 224 (Papers: 161, Notes: 5, Entities: 54, Comparisons: 2)
+> Last updated: 2026-07-01 | Total pages: 229 (Papers: 165, Notes: 5, Entities: 55, Comparisons: 2)
 
 ## Papers
+- [[wu2025-cm-pinn-analysis]] — Wu et al. (2025) CM-PINNs：本构模型约束 PINN 预测非线性结构地震响应，CMAME
+- [[wu2025-cm-pinn-method]] — CM-PINNs 方法：FC-SLSTM + CDM + NLCM/BLCM + 六项物理/数据损失
+- [[wu2025-cm-pinn-results]] — CM-PINNs 结果：SDOF 2% CI 达 99.01%，5/7-DOF 平均 R≈0.998
+- [[wu2025-cm-pinn-critical]] — 贡献+Negative（双线性/低维/合成数据限制）+本构 PINN 研究机会
 - [[chen2025-at-pinn-hc-analysis]] — Chen et al. (2025) AT-PINN-HC：三硬约束策略 + 五辅助函数，振动 PINN 误差降 1-4 数量级，CMAME
 - [[chen2025-at-pinn-hc-method]] — AT-PINN-HC 方法：边界位移/初始位移/初始速度 HC + 三角函数/指数函数最优
 - [[chen2025-at-pinn-hc-results]] — AT-PINN-HC 结果：Euler-Bernoulli 梁/超音速面板/玻璃板三基准，迭代减少 78%
@@ -184,6 +188,7 @@
 - [[bayesian-pinn]] — Bayesian PINN: PINN + 贝叶斯推理，物理残差 = 似然因子，HMC 采样
 - [[hamiltonian-monte-carlo]] — HMC: 哈密顿蒙特卡洛采样，BPINN 核心推理引擎
 - [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
+- [[cm-pinns]] — CM-PINNs: 本构模型约束 PINN，显式约束非线性恢复力预测地震响应
 - [[neural-tangent-kernel]] — NTK: 神经正切核，解释 PINN 训练失败的理论工具
 - [[causal-training]] — 因果训练: 尊重物理时间因果的损失加权策略
 - [[causal-attention]] — Causal Attention (CA): 初始条件误差驱动的因果权重，采样解耦+免退火

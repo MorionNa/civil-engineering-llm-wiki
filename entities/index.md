@@ -31,6 +31,7 @@
 - [[phylstm3]] — PhyLSTM3: 三 LSTM, 增强非线表征
 - [[bouc-wen-model]] — Bouc-Wen: 率相关滞回模型
 - [[pseudo-time-stepping]] — 伪时间步进: PINN PDE 残差伪解解决方案
+- [[cm-pinns]] — CM-PINNs: 本构模型约束 PINN，预测非线性结构地震响应
 
 ## 组织 (Organizations)
 - [[zhipu-ai]] — 智谱AI: GLM/ChatGLM 系列大模型

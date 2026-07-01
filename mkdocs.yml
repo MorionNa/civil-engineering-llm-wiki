@@ -46,6 +46,11 @@ nav:
           - papers/giles2025-avbd-method.md
           - papers/giles2025-avbd-results.md
           - papers/giles2025-avbd-critical.md
+      - Wu 2025 CM-PINNs:
+          - papers/wu2025-cm-pinn-analysis.md
+          - papers/wu2025-cm-pinn-method.md
+          - papers/wu2025-cm-pinn-results.md
+          - papers/wu2025-cm-pinn-critical.md
       - Chen 2025 AT-PINN-HC:
           - papers/chen2025-at-pinn-hc-analysis.md
           - papers/chen2025-at-pinn-hc-method.md
@@ -287,6 +292,7 @@ nav:
           - entities/clod-gs.md
       - 物理信息机器学习:
           - entities/pinn.md
+          - entities/cm-pinns.md
           - entities/neural-tangent-kernel.md
           - entities/causal-training.md
           - entities/causal-attention.md

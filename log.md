@@ -381,3 +381,12 @@
 - Key: KAN替代MLP / Fourier嵌入DeepONet / 因果时间训练
 - Wang Sifan 三部曲完整: 2021 NTK → 2023 伪解 → 2024 因果
 - Wiki: 204→219 pages
+
+## [2026-07-01] ingest | Wu et al. (2025) CM-PINNs 本构模型约束 PINN
+- Source: CMAME DOI 10.1016/j.cma.2025.118079 (user-provided PDF, 18 pages)
+- Raw: raw/papers/wu2025-cm-pinn.pdf + raw/papers/wu2025-cm-pinn-extracted.md
+- Created: papers/wu2025-cm-pinn-{analysis,method,results,critical}.md
+- Created: entities/cm-pinns.md
+- Domain: 材料本构非线性 + 结构滞回响应；FC-SLSTM + CDM + NLCM/BLCM；对 PhyLSTM 的本构显式化扩展
+- Key results: SDOF 2% CI 99.01%；5-DOF/7-DOF 平均 R≈0.998；MDOF 位移 Max EPeak 相比 PhyLSTM 显著下降
+- Wiki: 224→229 pages
