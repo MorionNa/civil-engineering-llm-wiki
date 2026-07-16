@@ -26,6 +26,10 @@
 
 ## 物理信息结构响应模型
 - [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer，多建筑预训练、LoRA 个性化与稀疏传感器重建
+- [[phy-rlk]] — Phy-RLK: Newmark-β 物理残差 LSTM + KAN，双向非线性 RC 结构响应代理
+- [[hcff-pinn]] — HCFF-PINN: 结构频率 Fourier 特征 + 初值硬约束，线性结构动力响应求解
+- [[fpikan]] — FPIKAN: Fourier 输入与 Fourier-series KAN 激活增强的地震响应 PINN（摘要证据）
+- [[seismic-site-response-pinn]] — 地震场地反应 PINN: 集中质量土柱 + Fourier embedding + TPE
 
 ## 算法 (Algorithms)
 - [[te-nas]] — TE-NAS: Training-free NAS via NTK + 线性区域
@@ -35,6 +39,9 @@
 - [[bouc-wen-model]] — Bouc-Wen: 率相关滞回模型
 - [[pseudo-time-stepping]] — 伪时间步进: PINN PDE 残差伪解解决方案
 - [[cm-pinns]] — CM-PINNs: 本构模型约束 PINN，预测非线性结构地震响应
+- [[adaptive-loss-weighting-pinn]] — APINNs: 基于近期任务损失量级的有界自适应加权
+- [[mrf-pinn]] — MRF-PINN: 多感受野卷积 + Taylor padding + 高阶有限差分（摘要证据）
+- [[backlund-transformation-pinn]] — Bäcklund Transformation PINN: 以跨方程变换残差恢复无标签目标解
 
 ## 组织 (Organizations)
 - [[zhipu-ai]] — 智谱AI: GLM/ChatGLM 系列大模型

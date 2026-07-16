@@ -44,7 +44,7 @@ wiki/
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `zhang2020-phylstm-analysis.md`)
 - Every wiki page starts with YAML frontmatter (see below)
-- Use backtick-wrapped wikilinks show as code: `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
+- Use bare `[[wikilinks]]` between pages (minimum 2 outbound links per page). Do **not** wrap a wikilink in backticks, because that renders it as code instead of a navigable link.
 - When updating a page, always bump the `updated` date
 - Every new page must be added to `index.md` under the correct section
 - Every action must be appended to `log.md`
@@ -57,6 +57,7 @@ title: Page Title
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: entity | paper-analysis | briefing | lecture | video | article | comparison | query | summary
+evidence_scope: abstract-only  # required only when the source is not full text; omit for full-text papers
 tags: [from taxonomy below]
 sources: [raw/papers/source-name.md]
 confidence: high | medium | low
@@ -190,6 +191,7 @@ title: "<Author> (<Year>) — <Short Title>: 论文分析"
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: paper-analysis
+evidence_scope: abstract-only  # omit for full-text papers
 tags: [<content-keywords-from-taxonomy>]
 sources: [raw/papers/<source-file>.md]
 # Dimension fields — categorize keywords for structured filtering:

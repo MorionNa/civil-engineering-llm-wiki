@@ -412,3 +412,16 @@
 - Domain: structural dynamics foundation model — SDR + mass–stiffness PIGNN + SDG-Mixer + LoRA + sparse-sensor assimilation
 - Key results: 270,694 buildings / 2,053,880 NLTHA / >10B time steps; 5,963–60,733× CPU-FEA speedup; zero-shot steel/masonry/isolation; shake-table and IDA validation
 - Wiki: 235→241 pages
+
+## [2026-07-16] ingest | 8 篇白名单 PINN/PDE/结构地震响应论文（2025–2026）
+- Publications: Computers & Mathematics with Applications; Nonlinear Dynamics; Computational Mechanics; Artificial Intelligence Review; Computers and Geotechnics; Engineering Applications of Artificial Intelligence; Computer Methods in Applied Mechanics and Engineering; Bulletin of Earthquake Engineering
+- Full text (6): Gao et al. APINNs; Li & Wang Bäcklund-PINN; Luo et al. PINN-PDE review; Liu et al. site-response PINN; Du et al. HCFF-PINN; Guo & Xu Phy-RLK
+- Abstract only (2): Zhang et al. MRF-PINN; Tao et al. FPIKAN — both pages explicitly mark `evidence_scope: abstract-only`; no unverified architecture, benchmark or numerical claims were added
+- Created: 26 paper pages（6× analysis/method/results/critical + 2 abstract overviews）
+- Created entities: adaptive-loss-weighting-pinn, backlund-transformation-pinn, mrf-pinn, seismic-site-response-pinn, hcff-pinn, fpikan, phy-rlk
+- Updated: entities/pinn.md, entities/index.md, index.md, mkdocs.yml, SCHEMA.md
+- Nonlinearity boundaries: Gao/Li/MRF cover PDE-operator nonlinearity; Liu/HCFF validate linear structural/site response only; Phy-RLK uses nonlinear OpenSees constitutive labels; FPIKAN abstract is insufficient to classify material nonlinearity; Luo review spans multiple types
+- Negative knowledge retained: finite-collocation low loss is not proof of uniqueness; site-response PINN retrains per scenario and has no speed benchmark; HCFF requires frequency/constraint priors; Phy-RLK is supervised and synthetic-label dependent; MRF/FPIKAN evidence remains abstract-level
+- Reconciliation: 33 new pages, all frontmatter/taxonomy/wikilinks checked; 7 substantive entities created, Luo review recorded `Skipped entity: no new models/algorithms/datasets.`
+- Raw: publisher XML/PDF/abstract extracts retained under raw/papers/ and excluded from GitHub by repository policy
+- Wiki: 241→274 pages（Papers 173→199; Entities 57→64）

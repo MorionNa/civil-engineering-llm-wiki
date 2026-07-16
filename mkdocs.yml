@@ -41,6 +41,40 @@ nav:
           - papers/meng2026-seisgpt-method.md
           - papers/meng2026-seisgpt-results.md
           - papers/meng2026-seisgpt-critical.md
+      - Guo 2026 Phy-RLK:
+          - papers/guo2026-phy-rlk-analysis.md
+          - papers/guo2026-phy-rlk-method.md
+          - papers/guo2026-phy-rlk-results.md
+          - papers/guo2026-phy-rlk-critical.md
+      - Du 2026 HCFF-PINN:
+          - papers/du2026-hcff-pinn-analysis.md
+          - papers/du2026-hcff-pinn-method.md
+          - papers/du2026-hcff-pinn-results.md
+          - papers/du2026-hcff-pinn-critical.md
+      - Tao 2026 FPIKAN 摘要级:
+          - papers/tao2026-fpikan.md
+      - Liu 2025 地震场地反应 PINN:
+          - papers/liu2025-site-response-pinn-analysis.md
+          - papers/liu2025-site-response-pinn-method.md
+          - papers/liu2025-site-response-pinn-results.md
+          - papers/liu2025-site-response-pinn-critical.md
+      - Gao 2025 APINNs:
+          - papers/gao2025-adaptive-loss-pinn-analysis.md
+          - papers/gao2025-adaptive-loss-pinn-method.md
+          - papers/gao2025-adaptive-loss-pinn-results.md
+          - papers/gao2025-adaptive-loss-pinn-critical.md
+      - Zhang 2025 MRF-PINN 摘要级:
+          - papers/zhang2025-mrf-pinn.md
+      - Luo 2025 PINN-PDE 综述:
+          - papers/luo2025-pinn-pde-review-analysis.md
+          - papers/luo2025-pinn-pde-review-method.md
+          - papers/luo2025-pinn-pde-review-results.md
+          - papers/luo2025-pinn-pde-review-critical.md
+      - Li 2025 局域波 PINN:
+          - papers/li2025-localized-waves-pinn-analysis.md
+          - papers/li2025-localized-waves-pinn-method.md
+          - papers/li2025-localized-waves-pinn-results.md
+          - papers/li2025-localized-waves-pinn-critical.md
       - Lee 2026 Skyfall-GS:
           - papers/lee2026-skyfall-gs-analysis.md
           - papers/lee2026-skyfall-gs-method.md
@@ -304,6 +338,13 @@ nav:
       - 物理信息机器学习:
           - entities/seisgpt.md
           - entities/pinn.md
+          - entities/phy-rlk.md
+          - entities/hcff-pinn.md
+          - entities/fpikan.md
+          - entities/seismic-site-response-pinn.md
+          - entities/adaptive-loss-weighting-pinn.md
+          - entities/mrf-pinn.md
+          - entities/backlund-transformation-pinn.md
           - entities/cm-pinns.md
           - entities/neural-tangent-kernel.md
           - entities/causal-training.md

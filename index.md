@@ -2,13 +2,39 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-16 | Total pages: 241 (Papers: 173, Notes: 5, Entities: 57, Comparisons: 4)
+> Last updated: 2026-07-16 | Total pages: 274 (Papers: 199, Notes: 5, Entities: 64, Comparisons: 4)
 
 ## Papers
 - [[meng2026-seisgpt-analysis]] — Meng et al. (2026) SeisGPT：物理信息结构响应基础模型，270,694 建筑、205 万 NLTHA、约 40,000× 加速，Nature Communications
 - [[meng2026-seisgpt-method]] — SeisGPT 方法：SDR 低保真先验 + 质量刚度图编码 + Spectral Duhamel–Green Mixer
 - [[meng2026-seisgpt-results]] — SeisGPT 结果：未见建筑、真实微调、跨体系零样本、稀疏传感器、IDA 与振动台验证
 - [[meng2026-seisgpt-critical]] — SeisGPT 贡献+Negative（FE 标签依赖/楼层域/无失稳后倒塌/无不确定度）+研究机会
+- [[guo2026-phy-rlk-analysis]] — Guo & Xu (2026) Phy-RLK：Newmark-β 残差嵌入 LSTM-KAN，预测双向地震下非线性 RC 框架响应，CMAME
+- [[guo2026-phy-rlk-method]] — Phy-RLK 方法：物理残差门控 + 三层 LSTM + KAN 解码 + 双向 MIMO 监督学习
+- [[guo2026-phy-rlk-results]] — Phy-RLK 结果：R² 0.896–0.921，峰值位移误差 0.074±0.077，推理毫秒级
+- [[guo2026-phy-rlk-critical]] — Phy-RLK 贡献+Negative（OpenSees/SRM 标签依赖、逐结构训练、无实测/UQ/代码）
+- [[du2026-hcff-pinn-analysis]] — Du et al. (2026) HCFF-PINN：Fourier 频率先验 + 初值硬约束的无标签线性结构响应求解，EAAI
+- [[du2026-hcff-pinn-method]] — HCFF-PINN 方法：结构自振频率 Fourier 编码 + tanh²(t) 调制 + 单 ODE 残差
+- [[du2026-hcff-pinn-results]] — HCFF-PINN 结果：MDOF 相对 L2 约 0.24–0.30%，四类地震动均低于 0.5%
+- [[du2026-hcff-pinn-critical]] — HCFF-PINN 贡献+Negative（频率先验/调制函数依赖、复杂边界与真实非线性未验证）
+- [[tao2026-fpikan]] — Tao et al. (2026) FPIKAN 摘要级概览：Fourier 输入 + Fourier-series KAN 激活求结构地震响应，BEE
+- [[liu2025-site-response-pinn-analysis]] — Liu et al. (2025) 一维地震场地反应 PINN：Fourier 特征 + TPE，线性 Kelvin–Voigt 土层，Computers and Geotechnics
+- [[liu2025-site-response-pinn-method]] — 场地反应 PINN 方法：集中质量模型、无量纲化、Fourier embedding、TPE/Adam
+- [[liu2025-site-response-pinn-results]] — 场地反应结果：1/3/10 层，PGA 0.003–1.8g，与 RK45/Newmark-beta 近浮点精度一致
+- [[liu2025-site-response-pinn-critical]] — 场地反应贡献+Negative（每场景重训、无速度基准、有限配点非唯一、全非线性未验证）
+- [[gao2025-adaptive-loss-pinn-analysis]] — Gao et al. (2025) APINNs：多任务自适应损失权重求解三类非线性 PDE，CAMWA
+- [[gao2025-adaptive-loss-pinn-method]] — APINNs 方法：近期损失量级归一化 + 有界动态任务权重
+- [[gao2025-adaptive-loss-pinn-results]] — APINNs 结果：三基准相对 L2 误差改善约 3.16–43.29 倍，含报告一致性核查
+- [[gao2025-adaptive-loss-pinn-critical]] — APINNs 贡献+Negative（权重更新频率/窗口/实现缺失、仅一维解析基准）
+- [[zhang2025-mrf-pinn]] — Zhang et al. (2025) MRF-PINN 摘要级概览：多感受野、Taylor padding、高阶差分与维度平衡，Computational Mechanics
+- [[luo2025-pinn-pde-review-analysis]] — Luo et al. (2025) PINN-PDE 综述：架构、采样、损失、域分解与软件生态，Artificial Intelligence Review
+- [[luo2025-pinn-pde-review-method]] — PINN-PDE 综述方法页：按表示、采样、约束、分解和优化分类的方法地图
+- [[luo2025-pinn-pde-review-results]] — PINN-PDE 综述证据页：区分作者示例、被引结果与未统一复核的性能陈述
+- [[luo2025-pinn-pde-review-critical]] — PINN-PDE 综述批判：无系统检索协议/公开语料/统一复跑，适合作入口而非 meta-analysis
+- [[li2025-localized-waves-pinn-analysis]] — Li & Wang (2025) Bäcklund 变换约束 PINN：从 mKdV 数据恢复目标非线性 PDE 局域波，Nonlinear Dynamics
+- [[li2025-localized-waves-pinn-method]] — 局域波 PINN 方法：双输出网络 + 双 PDE 残差 + Bäcklund 关系残差
+- [[li2025-localized-waves-pinn-results]] — 局域波结果：单/双孤子与 Gaussian 初波；双波迭代和耗时显著增长
+- [[li2025-localized-waves-pinn-critical]] — 局域波贡献+Negative（目标 v 无独立真值、多解性/术语/代码与调权规则缺口）
 - [[lee2026-skyfall-gs-analysis]] — Lee et al. (2026) Skyfall-GS：卫星 3DGS 重建 + 扩散 IDU，生成可自由飞行的沉浸式 3D 城市，ECCV 2026
 - [[lee2026-skyfall-gs-method]] — Skyfall-GS 方法：多时相外观建模、opacity 正则、MoGe 伪深度、课程式 FlowEdit IDU
 - [[lee2026-skyfall-gs-results]] — Skyfall-GS 结果：DFC FIDCLIP 27.03，NYC 10.29；用户偏好 79–94%；1km 多块扩展
@@ -194,6 +220,13 @@
 ## Entities
 ### 物理信息机器学习
 - [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer 的多建筑结构响应基础模型
+- [[phy-rlk]] — Phy-RLK: Newmark-β 物理残差 LSTM + KAN 的双向非线性结构响应代理
+- [[hcff-pinn]] — HCFF-PINN: 结构频率 Fourier 特征 + 初值硬约束的 label-free 结构动力 PINN
+- [[fpikan]] — FPIKAN: Fourier 输入与 Fourier-series KAN 激活增强的结构地震响应 PINN（摘要证据）
+- [[seismic-site-response-pinn]] — 地震场地反应 PINN: 集中质量土柱 + Fourier embedding + TPE 的逐实例神经求解器
+- [[adaptive-loss-weighting-pinn]] — APINNs: 基于近期任务损失量级的有界自适应权重 PINN
+- [[mrf-pinn]] — MRF-PINN: 多感受野卷积 + Taylor padding + 高阶差分（摘要证据）
+- [[backlund-transformation-pinn]] — Bäcklund Transformation PINN: 用跨方程变换残差联合恢复无标签目标解
 - [[bayesian-pinn]] — Bayesian PINN: PINN + 贝叶斯推理，物理残差 = 似然因子，HMC 采样
 - [[hamiltonian-monte-carlo]] — HMC: 哈密顿蒙特卡洛采样，BPINN 核心推理引擎
 - [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
