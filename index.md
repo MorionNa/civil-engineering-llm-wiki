@@ -2,9 +2,13 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-16 | Total pages: 235 (Papers: 169, Notes: 5, Entities: 56, Comparisons: 3)
+> Last updated: 2026-07-16 | Total pages: 241 (Papers: 173, Notes: 5, Entities: 57, Comparisons: 4)
 
 ## Papers
+- [[meng2026-seisgpt-analysis]] — Meng et al. (2026) SeisGPT：物理信息结构响应基础模型，270,694 建筑、205 万 NLTHA、约 40,000× 加速，Nature Communications
+- [[meng2026-seisgpt-method]] — SeisGPT 方法：SDR 低保真先验 + 质量刚度图编码 + Spectral Duhamel–Green Mixer
+- [[meng2026-seisgpt-results]] — SeisGPT 结果：未见建筑、真实微调、跨体系零样本、稀疏传感器、IDA 与振动台验证
+- [[meng2026-seisgpt-critical]] — SeisGPT 贡献+Negative（FE 标签依赖/楼层域/无失稳后倒塌/无不确定度）+研究机会
 - [[lee2026-skyfall-gs-analysis]] — Lee et al. (2026) Skyfall-GS：卫星 3DGS 重建 + 扩散 IDU，生成可自由飞行的沉浸式 3D 城市，ECCV 2026
 - [[lee2026-skyfall-gs-method]] — Skyfall-GS 方法：多时相外观建模、opacity 正则、MoGe 伪深度、课程式 FlowEdit IDU
 - [[lee2026-skyfall-gs-results]] — Skyfall-GS 结果：DFC FIDCLIP 27.03，NYC 10.29；用户偏好 79–94%；1km 多块扩展
@@ -189,6 +193,7 @@
 
 ## Entities
 ### 物理信息机器学习
+- [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer 的多建筑结构响应基础模型
 - [[bayesian-pinn]] — Bayesian PINN: PINN + 贝叶斯推理，物理残差 = 似然因子，HMC 采样
 - [[hamiltonian-monte-carlo]] — HMC: 哈密顿蒙特卡洛采样，BPINN 核心推理引擎
 - [[pinn]] — Physics-Informed Neural Network: 物理约束神经网络，PDE 正逆问题求解范式
@@ -267,6 +272,7 @@
 - [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
 
 ## Comparisons
+- [[seisgpt-vs-phylstm-cm-pinns]] — SeisGPT vs PhyLSTM vs CM-PINNs：大规模基础模型、物理序列模型与本构约束路线对比
 - [[skyfall-gs-vs-abot-earth]] — Skyfall-GS vs ABot-Earth：逐场景观测精修路线 vs 行星级前向生成路线
 - [[phylstm2-vs-phylstm3-vs-lstm]] — PhyLSTM2/3/LSTM 性能对比 + 选型指南
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式：PhyLSTM vs PINN 对比分析
