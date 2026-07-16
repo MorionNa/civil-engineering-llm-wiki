@@ -1,10 +1,10 @@
 ---
 title: "3D Gaussian Splatting (3DGS)"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-16
 type: entity
 tags: [3d-gaussian-splatting, 3dgs, gaussian-primitives, differentiable-rendering, 3d-reconstruction, novel-view-synthesis]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+sources: [raw/papers/amapcvlab2026-abotearth.pdf, raw/papers/lee2026-skyfall-gs.pdf]
 confidence: high
 ---
 
@@ -39,13 +39,28 @@ ABot-Earth 0.5 是第一篇**直接在 3DGS 原生空间中做生成**的工作�
 3. 扩散模型在潜在空间中生成新场景
 4. 解码器直接输出 3DGS 原语（而非 mesh 或 NeRF）
 
+## 在 Skyfall-GS 中的应用
+
+`[[skyfall-gs]]` 不训练一个前向 3DGS 生成器，而是把 3DGS 作为**跨视角共识容器**：
+
+1. 先用多视角、多时相卫星影像拟合地点特异的初始 3DGS；
+2. 用 appearance embedding、opacity entropy regularization 与 MoGe 伪深度提高初始几何稳定性；
+3. 将当前 3DGS 从高空到低空逐步渲染，交给 FlowEdit/FLUX.1 修复；
+4. 把多个 2D 修复样本重新监督同一组高斯，使独立生成结果通过共享 3D 表示形成折中；
+5. 训练后把外观参数烘焙并融合为标准 PLY，供实时查看器使用。
+
+这说明 3DGS 除了是渲染表示，还可以作为“**重建观测 + 生成先验**”之间的优化接口。详见 `[[lee2026-skyfall-gs-analysis]]` 与 `[[skyfall-gs-vs-abot-earth]]`。
+
 ## 相关技术
 
 - **CLOD-GS**: 连续 LOD 3DGS 管理 → `[[entities/clod-gs]]`
 - **Bhattacharyya 距离裁剪**: 用于高斯简化/多 LOD 的解析方法
 - **OGC 3D Tiles**: 3DGS 的 Web 标准化分发格式
+- **Iterative Dataset Update**: 用逐轮渲染—编辑—重训练提高不可见区域质量
 
 ## 关联页面
 - `[[entities/abot-earth]]` — ABot-Earth 生成系统
 - `[[entities/abot-3dgs]]` — ABot-3DGS 重建引擎
 - `[[amapcvlab2026-abotearth-analysis]]` — ABot-Earth 论文分析
+- `[[skyfall-gs]]` — 逐场景卫星 3DGS + 扩散精修框架
+- `[[lee2026-skyfall-gs-method]]` — Skyfall-GS 的 3DGS 优化机制
