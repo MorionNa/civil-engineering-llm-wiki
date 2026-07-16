@@ -390,3 +390,15 @@
 - Domain: 材料本构非线性 + 结构滞回响应；FC-SLSTM + CDM + NLCM/BLCM；对 PhyLSTM 的本构显式化扩展
 - Key results: SDOF 2% CI 99.01%；5-DOF/7-DOF 平均 R≈0.998；MDOF 位移 Max EPeak 相比 PhyLSTM 显著下降
 - Wiki: 224→229 pages
+
+## [2026-07-16] ingest | Lee et al. (2026) Skyfall-GS — 卫星影像到沉浸式 3D 城市
+- Source: user-provided `Skyfall-GS_highres.pdf` (43 pages, SHA256 e179f565f694e8638a2e05272cb098e966ac9454b974edbb66c88e03a2b23141)
+- Raw local only: raw/papers/lee2026-skyfall-gs.pdf + raw/papers/lee2026-skyfall-gs-extracted.md v1（raw/ 按仓库策略不提交 GitHub）
+- Created: papers/lee2026-skyfall-gs-{analysis,method,results,critical}.md
+- Created: entities/skyfall-gs.md
+- Created: comparisons/skyfall-gs-vs-abot-earth.md
+- Updated: entities/3d-gaussian-splatting.md, entities/abot-earth.md, index.md, mkdocs.yml
+- Domain: 卫星条件 3DGS；多时相外观建模 + opacity 正则 + MoGe 伪深度 + 课程式 FlowEdit IDU
+- Key results: DFC2019 FIDCLIP 27.03 / CMMD 2.110；GoogleEarth FIDCLIP 10.29；1km×512m 多块场景；开源代码/数据/PLY
+- Wiki: 229→235 pages
+
