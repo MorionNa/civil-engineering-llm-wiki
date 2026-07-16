@@ -24,6 +24,9 @@
 - [[autoformer]] — AutoFormer: 首个 ViT 专用 NAS, one-shot supernet
 - [[nas-bert]] — NAS-BERT: BERT 压缩 NAS, 5M-60M task-agnostic
 
+## 物理信息结构响应模型
+- [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer，多建筑预训练、LoRA 个性化与稀疏传感器重建
+
 ## 算法 (Algorithms)
 - [[te-nas]] — TE-NAS: Training-free NAS via NTK + 线性区域
 - [[avbd]] — AVBD: Augmented Lagrangian VBD，硬约束物理仿真

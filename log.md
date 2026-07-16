@@ -401,4 +401,14 @@
 - Domain: 卫星条件 3DGS；多时相外观建模 + opacity 正则 + MoGe 伪深度 + 课程式 FlowEdit IDU
 - Key results: DFC2019 FIDCLIP 27.03 / CMMD 2.110；GoogleEarth FIDCLIP 10.29；1km×512m 多块场景；开源代码/数据/PLY
 - Wiki: 229→235 pages
-
+## [2026-07-16] ingest | Meng et al. (2026) SeisGPT — 物理信息结构响应基础模型
+- Source: user-provided `s41467-026-75508-5_reference.pdf` (40 pages, SHA256 4206cb8eb4456caa6bafe2465c1dfee02e3211f230f089886ada1ed693a1c456)
+- Publication: Nature Communications, Article in Press, DOI 10.1038/s41467-026-75508-5, accepted 2026-07-03
+- Raw source retained outside GitHub; `raw/` remains excluded by repository policy
+- Created: papers/meng2026-seisgpt-{analysis,method,results,critical}.md
+- Created: entities/seisgpt.md
+- Created: comparisons/seisgpt-vs-phylstm-cm-pinns.md
+- Updated: index.md, entities/index.md, comparisons/index.md, mkdocs.yml
+- Domain: structural dynamics foundation model — SDR + mass–stiffness PIGNN + SDG-Mixer + LoRA + sparse-sensor assimilation
+- Key results: 270,694 buildings / 2,053,880 NLTHA / >10B time steps; 5,963–60,733× CPU-FEA speedup; zero-shot steel/masonry/isolation; shake-table and IDA validation
+- Wiki: 235→241 pages

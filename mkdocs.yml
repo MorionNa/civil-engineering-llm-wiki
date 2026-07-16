@@ -36,6 +36,11 @@ nav:
   - 首页: index.md
   - Papers:
       - papers/index.md
+      - Meng 2026 SeisGPT:
+          - papers/meng2026-seisgpt-analysis.md
+          - papers/meng2026-seisgpt-method.md
+          - papers/meng2026-seisgpt-results.md
+          - papers/meng2026-seisgpt-critical.md
       - Lee 2026 Skyfall-GS:
           - papers/lee2026-skyfall-gs-analysis.md
           - papers/lee2026-skyfall-gs-method.md
@@ -297,6 +302,7 @@ nav:
           - entities/from-orbit-to-ground.md
           - entities/clod-gs.md
       - 物理信息机器学习:
+          - entities/seisgpt.md
           - entities/pinn.md
           - entities/cm-pinns.md
           - entities/neural-tangent-kernel.md
@@ -329,6 +335,7 @@ nav:
           - notes/articles/agentic-engineering-22-tips.md
   - Comparisons:
       - comparisons/index.md
+      - comparisons/seisgpt-vs-phylstm-cm-pinns.md
       - comparisons/phylstm2-vs-phylstm3-vs-lstm.md
       - comparisons/physics-constrained-training-failure-modes.md
       - comparisons/skyfall-gs-vs-abot-earth.md
