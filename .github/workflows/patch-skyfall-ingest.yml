@@ -25,71 +25,75 @@ jobs:
           from pathlib import Path
 
           # ---- index.md ----
-          path = Path('index.md')
-          text = path.read_text(encoding='utf-8')
+          path = Path("index.md")
+          text = path.read_text(encoding="utf-8")
           text = text.replace(
-              '> Last updated: 2026-07-01 | Total pages: 229 (Papers: 165, Notes: 5, Entities: 55, Comparisons: 2)',
-              '> Last updated: 2026-07-16 | Total pages: 235 (Papers: 169, Notes: 5, Entities: 56, Comparisons: 3)'
+              "> Last updated: 2026-07-01 | Total pages: 229 (Papers: 165, Notes: 5, Entities: 55, Comparisons: 2)",
+              "> Last updated: 2026-07-16 | Total pages: 235 (Papers: 169, Notes: 5, Entities: 56, Comparisons: 3)",
           )
-          paper_entries = '''- [[lee2026-skyfall-gs-analysis]] — Lee et al. (2026) Skyfall-GS：卫星 3DGS 重建 + 扩散 IDU，生成可自由飞行的沉浸式 3D 城市，ECCV 2026
-          - [[lee2026-skyfall-gs-method]] — Skyfall-GS 方法：多时相外观建模、opacity 正则、MoGe 伪深度、课程式 FlowEdit IDU
-          - [[lee2026-skyfall-gs-results]] — Skyfall-GS 结果：DFC FIDCLIP 27.03，NYC 10.29；用户偏好 79–94%；1km 多块扩展
-          - [[lee2026-skyfall-gs-critical]] — Skyfall-GS 贡献+Negative（off-nadir/扩散幻觉/逐场景成本）+可迁移+研究机会
-          '''.replace('          ', '')
-          if '[[lee2026-skyfall-gs-analysis]]' not in text:
-              text = text.replace('## Papers\n', '## Papers\n' + paper_entries, 1)
-          entity_entry = '- [[skyfall-gs]] — Skyfall-GS: 多视角卫星重建 + 课程式扩散 IDU 的可自由飞行 3D 城市\n'
-          if '[[skyfall-gs]] — Skyfall-GS:' not in text:
-              text = text.replace('### 远程感知与生成式3D\n', '### 远程感知与生成式3D\n' + entity_entry, 1)
-          comparison_entry = '- [[skyfall-gs-vs-abot-earth]] — Skyfall-GS vs ABot-Earth：逐场景观测精修路线 vs 行星级前向生成路线\n'
-          if '[[skyfall-gs-vs-abot-earth]]' not in text:
-              text = text.replace('## Comparisons\n', '## Comparisons\n' + comparison_entry, 1)
-          path.write_text(text, encoding='utf-8')
+          paper_entries = "\n".join([
+              "- [[lee2026-skyfall-gs-analysis]] — Lee et al. (2026) Skyfall-GS：卫星 3DGS 重建 + 扩散 IDU，生成可自由飞行的沉浸式 3D 城市，ECCV 2026",
+              "- [[lee2026-skyfall-gs-method]] — Skyfall-GS 方法：多时相外观建模、opacity 正则、MoGe 伪深度、课程式 FlowEdit IDU",
+              "- [[lee2026-skyfall-gs-results]] — Skyfall-GS 结果：DFC FIDCLIP 27.03，NYC 10.29；用户偏好 79–94%；1km 多块扩展",
+              "- [[lee2026-skyfall-gs-critical]] — Skyfall-GS 贡献+Negative（off-nadir/扩散幻觉/逐场景成本）+可迁移+研究机会",
+              "",
+          ])
+          if "[[lee2026-skyfall-gs-analysis]]" not in text:
+              text = text.replace("## Papers\n", "## Papers\n" + paper_entries, 1)
+          entity_entry = "- [[skyfall-gs]] — Skyfall-GS: 多视角卫星重建 + 课程式扩散 IDU 的可自由飞行 3D 城市\n"
+          if "[[skyfall-gs]] — Skyfall-GS:" not in text:
+              text = text.replace("### 远程感知与生成式3D\n", "### 远程感知与生成式3D\n" + entity_entry, 1)
+          comparison_entry = "- [[skyfall-gs-vs-abot-earth]] — Skyfall-GS vs ABot-Earth：逐场景观测精修路线 vs 行星级前向生成路线\n"
+          if "[[skyfall-gs-vs-abot-earth]]" not in text:
+              text = text.replace("## Comparisons\n", "## Comparisons\n" + comparison_entry, 1)
+          path.write_text(text, encoding="utf-8")
 
           # ---- mkdocs.yml ----
-          path = Path('mkdocs.yml')
-          text = path.read_text(encoding='utf-8')
-          paper_nav = '''      - Lee 2026 Skyfall-GS:
-                    - papers/lee2026-skyfall-gs-analysis.md
-                    - papers/lee2026-skyfall-gs-method.md
-                    - papers/lee2026-skyfall-gs-results.md
-                    - papers/lee2026-skyfall-gs-critical.md
-          '''.replace('          ', '')
-          if 'Lee 2026 Skyfall-GS:' not in text:
-              text = text.replace('      - papers/index.md\n', '      - papers/index.md\n' + paper_nav, 1)
-          if '          - entities/skyfall-gs.md' not in text:
+          path = Path("mkdocs.yml")
+          text = path.read_text(encoding="utf-8")
+          paper_nav = "\n".join([
+              "      - Lee 2026 Skyfall-GS:",
+              "          - papers/lee2026-skyfall-gs-analysis.md",
+              "          - papers/lee2026-skyfall-gs-method.md",
+              "          - papers/lee2026-skyfall-gs-results.md",
+              "          - papers/lee2026-skyfall-gs-critical.md",
+              "",
+          ])
+          if "Lee 2026 Skyfall-GS:" not in text:
+              text = text.replace("      - papers/index.md\n", "      - papers/index.md\n" + paper_nav, 1)
+          if "          - entities/skyfall-gs.md" not in text:
               text = text.replace(
-                  '      - 远程感知与生成式3D:\n',
-                  '      - 远程感知与生成式3D:\n          - entities/skyfall-gs.md\n',
-                  1
+                  "      - 远程感知与生成式3D:\n",
+                  "      - 远程感知与生成式3D:\n          - entities/skyfall-gs.md\n",
+                  1,
               )
-          if '      - comparisons/skyfall-gs-vs-abot-earth.md' not in text:
+          if "      - comparisons/skyfall-gs-vs-abot-earth.md" not in text:
               text = text.replace(
-                  '      - comparisons/physics-constrained-training-failure-modes.md\n',
-                  '      - comparisons/physics-constrained-training-failure-modes.md\n      - comparisons/skyfall-gs-vs-abot-earth.md\n',
-                  1
+                  "      - comparisons/physics-constrained-training-failure-modes.md\n",
+                  "      - comparisons/physics-constrained-training-failure-modes.md\n      - comparisons/skyfall-gs-vs-abot-earth.md\n",
+                  1,
               )
-          path.write_text(text, encoding='utf-8')
+          path.write_text(text, encoding="utf-8")
 
           # ---- log.md (append-only) ----
-          path = Path('log.md')
-          text = path.read_text(encoding='utf-8')
-          entry = '''
-
-          ## [2026-07-16] ingest | Lee et al. (2026) Skyfall-GS — 卫星影像到沉浸式 3D 城市
-          - Source: user-provided `Skyfall-GS_highres.pdf` (43 pages, SHA256 e179f565f694e8638a2e05272cb098e966ac9454b974edbb66c88e03a2b23141)
-          - Raw local only: raw/papers/lee2026-skyfall-gs.pdf + raw/papers/lee2026-skyfall-gs-extracted.md v1（raw/ 按仓库策略不提交 GitHub）
-          - Created: papers/lee2026-skyfall-gs-{analysis,method,results,critical}.md
-          - Created: entities/skyfall-gs.md
-          - Created: comparisons/skyfall-gs-vs-abot-earth.md
-          - Updated: entities/3d-gaussian-splatting.md, entities/abot-earth.md, index.md, mkdocs.yml
-          - Domain: 卫星条件 3DGS；多时相外观建模 + opacity 正则 + MoGe 伪深度 + 课程式 FlowEdit IDU
-          - Key results: DFC2019 FIDCLIP 27.03 / CMMD 2.110；GoogleEarth FIDCLIP 10.29；1km×512m 多块场景；开源代码/数据/PLY
-          - Wiki: 229→235 pages
-          '''.replace('          ', '')
-          if '## [2026-07-16] ingest | Lee et al. (2026) Skyfall-GS' not in text:
-              text = text.rstrip() + entry + '\n'
-          path.write_text(text, encoding='utf-8')
+          path = Path("log.md")
+          text = path.read_text(encoding="utf-8")
+          entry = "\n" + "\n".join([
+              "## [2026-07-16] ingest | Lee et al. (2026) Skyfall-GS — 卫星影像到沉浸式 3D 城市",
+              "- Source: user-provided `Skyfall-GS_highres.pdf` (43 pages, SHA256 e179f565f694e8638a2e05272cb098e966ac9454b974edbb66c88e03a2b23141)",
+              "- Raw source retained outside GitHub; `raw/` remains excluded by repository policy",
+              "- Created: papers/lee2026-skyfall-gs-{analysis,method,results,critical}.md",
+              "- Created: entities/skyfall-gs.md",
+              "- Created: comparisons/skyfall-gs-vs-abot-earth.md",
+              "- Updated: entities/3d-gaussian-splatting.md, entities/abot-earth.md, index.md, mkdocs.yml",
+              "- Domain: 卫星条件 3DGS；多时相外观建模 + opacity 正则 + MoGe 伪深度 + 课程式 FlowEdit IDU",
+              "- Key results: DFC2019 FIDCLIP 27.03 / CMMD 2.110；GoogleEarth FIDCLIP 10.29；1km×512m 多块场景；开源代码/数据/PLY",
+              "- Wiki: 229→235 pages",
+              "",
+          ])
+          if "## [2026-07-16] ingest | Lee et al. (2026) Skyfall-GS" not in text:
+              text = text.rstrip() + entry
+          path.write_text(text, encoding="utf-8")
           PY
 
       - name: Validate patched files
@@ -101,16 +105,16 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           required = [
-              'papers/lee2026-skyfall-gs-analysis.md',
-              'papers/lee2026-skyfall-gs-method.md',
-              'papers/lee2026-skyfall-gs-results.md',
-              'papers/lee2026-skyfall-gs-critical.md',
-              'entities/skyfall-gs.md',
-              'comparisons/skyfall-gs-vs-abot-earth.md',
+              "papers/lee2026-skyfall-gs-analysis.md",
+              "papers/lee2026-skyfall-gs-method.md",
+              "papers/lee2026-skyfall-gs-results.md",
+              "papers/lee2026-skyfall-gs-critical.md",
+              "entities/skyfall-gs.md",
+              "comparisons/skyfall-gs-vs-abot-earth.md",
           ]
           missing = [p for p in required if not Path(p).exists()]
           if missing:
-              raise SystemExit(f'Missing ingest files: {missing}')
+              raise SystemExit(f"Missing ingest files: {missing}")
           PY
 
       - name: Commit patched metadata
