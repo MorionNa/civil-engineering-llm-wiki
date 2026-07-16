@@ -1,10 +1,10 @@
 ---
 title: "ABot-Earth"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-07-16
 type: entity
 tags: [3d-gaussian-splatting, generative-3d-earth, digital-earth, satellite-imagery, urban-modeling, multi-lod, abot-earth]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+sources: [raw/papers/amapcvlab2026-abotearth.pdf, raw/papers/lee2026-skyfall-gs.pdf]
 confidence: high
 ---
 
@@ -52,9 +52,22 @@ ABot-Earth 是一个**原生 3D Gaussian Splatting (3DGS) 生成框架**，能�
 | 覆盖国家 | 190+ |
 | 输出规模 | 3.2 万亿高斯原语 |
 
+## 与 Skyfall-GS 的关系
+
+`[[skyfall-gs]]` 与 ABot-Earth 都以卫星影像约束 3DGS 城市场景，但路线不同：
+
+- ABot-Earth 训练原生 3DGS 前向生成模型，优势是全球批量生成、原生多 LOD 和生产吞吐；
+- Skyfall-GS 对具体地点逐场景重建，再用课程式扩散 IDU 精修，优势是输入地点绑定更强、代码数据公开并覆盖较低飞行视角；
+- 两者可形成“大范围快速初始化 → 重点区域观测驱动精修”的混合管线。
+
+详细对比见 `[[skyfall-gs-vs-abot-earth]]`。
+
 ## 开源状态
 
 🔴 **闭源**。仅提供展示页面，核心算法代码、训练数据、预训练权重均未公开。
 
 ## 关联论文
+
 - `[[amapcvlab2026-abotearth-analysis]]` — ABot-Earth 0.5 技术报告分析
+- `[[lee2026-skyfall-gs-analysis]]` — Skyfall-GS 论文分析
+- `[[skyfall-gs-vs-abot-earth]]` — 两种卫星条件 3D 城市路线对比
