@@ -2,9 +2,13 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-01 | Total pages: 229 (Papers: 165, Notes: 5, Entities: 55, Comparisons: 2)
+> Last updated: 2026-07-16 | Total pages: 235 (Papers: 169, Notes: 5, Entities: 56, Comparisons: 3)
 
 ## Papers
+- [[lee2026-skyfall-gs-analysis]] — Lee et al. (2026) Skyfall-GS：卫星 3DGS 重建 + 扩散 IDU，生成可自由飞行的沉浸式 3D 城市，ECCV 2026
+- [[lee2026-skyfall-gs-method]] — Skyfall-GS 方法：多时相外观建模、opacity 正则、MoGe 伪深度、课程式 FlowEdit IDU
+- [[lee2026-skyfall-gs-results]] — Skyfall-GS 结果：DFC FIDCLIP 27.03，NYC 10.29；用户偏好 79–94%；1km 多块扩展
+- [[lee2026-skyfall-gs-critical]] — Skyfall-GS 贡献+Negative（off-nadir/扩散幻觉/逐场景成本）+可迁移+研究机会
 - [[wu2025-cm-pinn-analysis]] — Wu et al. (2025) CM-PINNs：本构模型约束 PINN 预测非线性结构地震响应，CMAME
 - [[wu2025-cm-pinn-method]] — CM-PINNs 方法：FC-SLSTM + CDM + NLCM/BLCM + 六项物理/数据损失
 - [[wu2025-cm-pinn-results]] — CM-PINNs 结果：SDOF 2% CI 达 99.01%，5/7-DOF 平均 R≈0.998
@@ -198,6 +202,7 @@
 - [[cable-stayed-bridge]] — 斜拉桥: 索支撑桥型，主梁动力线形 (MGDA) 健康监测
 
 ### 远程感知与生成式3D
+- [[skyfall-gs]] — Skyfall-GS: 多视角卫星重建 + 课程式扩散 IDU 的可自由飞行 3D 城市
 - [[abot-earth]] — ABot-Earth: 阿里高德生成式 3D 地球模型，卫星→3DGS
 - [[abot-3dgs]] — ABot-3DGS: 城市级 3DGS 重建引擎
 - [[3d-gaussian-splatting]] — 3D Gaussian Splatting: 实时可微渲染的场景表示
@@ -262,6 +267,7 @@
 - [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
 
 ## Comparisons
+- [[skyfall-gs-vs-abot-earth]] — Skyfall-GS vs ABot-Earth：逐场景观测精修路线 vs 行星级前向生成路线
 - [[phylstm2-vs-phylstm3-vs-lstm]] — PhyLSTM2/3/LSTM 性能对比 + 选型指南
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式：PhyLSTM vs PINN 对比分析
 

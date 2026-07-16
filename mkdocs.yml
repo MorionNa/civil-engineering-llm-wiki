@@ -36,6 +36,11 @@ nav:
   - 首页: index.md
   - Papers:
       - papers/index.md
+      - Lee 2026 Skyfall-GS:
+- papers/lee2026-skyfall-gs-analysis.md
+- papers/lee2026-skyfall-gs-method.md
+- papers/lee2026-skyfall-gs-results.md
+- papers/lee2026-skyfall-gs-critical.md
       - Xiong 2025 ConfSeq:
           - papers/xiong2025-confseq-analysis.md
           - papers/xiong2025-confseq-method.md
@@ -285,6 +290,7 @@ nav:
       - 神经科学:
           - entities/sparse-dense-coding.md
       - 远程感知与生成式3D:
+          - entities/skyfall-gs.md
           - entities/abot-earth.md
           - entities/abot-3dgs.md
           - entities/3d-gaussian-splatting.md
@@ -325,6 +331,7 @@ nav:
       - comparisons/index.md
       - comparisons/phylstm2-vs-phylstm3-vs-lstm.md
       - comparisons/physics-constrained-training-failure-modes.md
+      - comparisons/skyfall-gs-vs-abot-earth.md
   - SCHEMA: SCHEMA.md
   - 日志: log.md
 
