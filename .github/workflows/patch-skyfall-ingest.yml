@@ -3,6 +3,7 @@ name: Patch Skyfall-GS ingest indexes
 on:
   push:
     branches:
+      - main
       - ingest/skyfall-gs-2026-07-16
 
 permissions:
@@ -15,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ingest/skyfall-gs-2026-07-16
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Patch index, navigation, and log
@@ -24,7 +25,6 @@ jobs:
           python - <<'PY'
           from pathlib import Path
 
-          # ---- index.md ----
           path = Path("index.md")
           text = path.read_text(encoding="utf-8")
           text = text.replace(
@@ -48,7 +48,6 @@ jobs:
               text = text.replace("## Comparisons\n", "## Comparisons\n" + comparison_entry, 1)
           path.write_text(text, encoding="utf-8")
 
-          # ---- mkdocs.yml ----
           path = Path("mkdocs.yml")
           text = path.read_text(encoding="utf-8")
           paper_nav = "\n".join([
@@ -75,7 +74,6 @@ jobs:
               )
           path.write_text(text, encoding="utf-8")
 
-          # ---- log.md (append-only) ----
           path = Path("log.md")
           text = path.read_text(encoding="utf-8")
           entry = "\n" + "\n".join([
@@ -128,4 +126,4 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.md mkdocs.yml log.md
           git commit -m '[auto-patch] update Skyfall-GS index, navigation, and log'
-          git push origin HEAD:ingest/skyfall-gs-2026-07-16
+          git push origin HEAD:${{ github.ref_name }}
