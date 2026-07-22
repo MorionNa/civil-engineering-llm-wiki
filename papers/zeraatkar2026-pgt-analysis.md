@@ -1,144 +1,184 @@
 ---
-title: "Zeraatkar et al. (2026) — Physics-Guided Transformer (PGT): Physics-Aware Attention Mechanism for PINNs"
+title: "Physics-Guided Transformer (PGT)：面向 PINN 的物理感知注意力机制"
 created: 2026-07-22
 updated: 2026-07-22
 type: paper-analysis
-tags: [physics-informed, pinn, transformer, attention, ai4s, neural-operator, sparse-reconstruction]
+tags: [物理信息神经网络, PINN, Transformer, 物理感知注意力, 科学机器学习]
 sources: [raw/papers/2603.27929v1.pdf]
 confidence: high
 ---
 
-# Physics-Guided Transformer (PGT)
+# Physics-Guided Transformer (PGT)：面向 PINN 的物理感知注意力机制
 
-## 1. Core Idea
+## 1. 工程背景
 
-PGT addresses the limitation that conventional PINNs introduce physics only through loss functions. The paper argues that governing equations should influence representation learning itself. The proposed model embeds physical structure into Transformer self-attention through a physics-guided bias term.
+物理信息神经网络（PINN）通过在损失函数中加入控制方程残差，使神经网络满足物理规律。然而，当观测数据稀疏、方程存在多尺度特征或优化问题复杂时，仅依靠 PDE residual 约束容易产生梯度不平衡、训练不稳定等问题。PGT 提出的核心思想是：**物理规律不应只作为损失函数中的外部约束，而应进入神经网络的信息传播过程。**
 
-The paper introduces PGT for reconstructing continuous physical fields from sparse observations in PDE-governed nonlinear systems. The authors test one-dimensional heat diffusion and two-dimensional incompressible Navier–Stokes systems. fileciteturn103file0L6-L18
+论文针对由偏微分方程控制的连续物理场重构问题开展研究，验证对象包括一维热扩散方程和二维不可压缩 Navier–Stokes 方程。fileciteturn103file0L6-L18
 
-## 2. Physics-aware Attention
+## 2. 科学问题
 
-Standard attention:
+如何让 Transformer 的注意力机制具备物理传播规律，使模型在稀疏观测条件下仍能够：
+
+- 保持 PDE 约束一致性；
+- 避免纯数据驱动 attention 的非物理信息传播；
+- 提升复杂动力系统重构能力。
+
+## 3. 核心思想
+
+传统 Transformer：
 
 $$Attention(Q,K,V)=softmax(QK^T/\sqrt d)V$$
 
-PGT introduces:
+PGT 修改 attention：
 
 $$Attention(Q,K,V)=softmax(QK^T/\sqrt d+\Gamma)V$$
 
-where Gamma is obtained from the Green's function of the governing PDE. The paper defines:
+其中，$\Gamma$ 为由 PDE Green 函数构造的物理偏置。
 
-$$\Gamma_{ij}=log G(x_i-x_j,t_i-t_j;\theta_p)$$
+也就是说：
 
-The logarithm converts the multiplicative Green function into an additive attention bias. Tokens outside the causal domain receive $-\infty$ bias and therefore zero attention weight. fileciteturn103file0L204-L213
+> 普通 Transformer 学习“哪些信息相关”；PGT 让物理规律提前决定“哪些信息可能传播”。
 
-## 3. Heat Kernel Bias
+## 4. 方法机制
 
-For diffusion systems, the heat kernel provides:
+### 4.1 Physics-aware Attention
 
-$$\Gamma_{ij}=-\frac{||x_i-x_j||^2}{4\alpha\Delta t}-\frac d2 log(4\pi\alpha\Delta t)$$
+PGT定义：
 
-This embeds:
+$$\Gamma_{ij}=logG(x_i-x_j,t_i-t_j;\theta_p)$$
 
-- spatial locality;
-- diffusion length scale;
-- temporal causality.
+其中：
 
-The influence radius follows the physical diffusion scale:
+- $G$ 为控制方程对应的 Green 函数；
+- $\theta_p$ 为物理参数。
 
-$$\sigma=\sqrt{2\alpha\Delta t}$$
+对于未来时间或不存在物理传播关系的位置，设置：
 
-The paper notes that hyperbolic systems can use wave-front causal kernels, while elliptic problems use spatial Green functions. fileciteturn103file0L214-L235
+$$\Gamma=-\infty$$
 
-## 4. Architecture
+使其经过 softmax 后权重为 0。fileciteturn103file0L204-L213
 
-PGT contains:
+### 4.2 热核物理偏置
 
-1. Physics-guided Transformer encoder;
-2. Cross-attention query conditioning;
-3. FiLM-modulated SIREN implicit decoder.
+对于扩散问题：
 
-Sparse observations are converted into context tokens, processed by physics-guided attention, and queried at arbitrary coordinates $(x,t)$. fileciteturn103file0L160-L165
+$$\Gamma_{ij}=-\frac{||x_i-x_j||^2}{4\alpha\Delta t}-\frac d2log(4\pi\alpha\Delta t)$$
 
-The decoder uses FiLM modulation to adjust amplitude, bias and frequency according to inferred physical context. fileciteturn103file0L260-L273
+该项编码：
 
-## 5. Loss Function
+- 空间局部性；
+- 扩散尺度；
+- 时间因果性。
 
-Unlike pure architecture-only physics models, PGT still uses physics losses.
+论文指出，不同类型 PDE 可以替换不同 Green 函数，例如波动方程使用有限传播速度约束。fileciteturn103file0L214-L235
 
-Total objective:
+## 5. 网络结构
+
+PGT包括：
+
+1. 物理感知 Transformer encoder；
+2. query-coordinate cross attention；
+3. FiLM 调制 SIREN 隐式解码器。
+
+输入的稀疏观测首先转换为 context tokens，然后通过 physics-guided attention 建立物理一致的潜在表示，再查询任意时空位置得到连续场。fileciteturn103file0L160-L165
+
+## 6. 损失函数设计
+
+PGT并非完全取消物理 loss，而是采用：
 
 $$L=\frac{1}{2\sigma^2_{data}}L_{data}+\frac{1}{2\sigma^2_{PDE}}L_{PDE}+\frac{1}{2\sigma^2_{BC}}L_{BC}+\frac{1}{2\sigma^2_{IC}}L_{IC}$$
 
-Components:
+包括：
 
-### Data loss
+### 数据误差
 
-$$L_{data}=||u_\Theta-u^{obs}||^2$$
+$$L_{data}=||u_\theta-u^{obs}||^2$$
 
-### PDE residual
+### PDE残差
 
-$$L_{PDE}=||F(u_\Theta)-f||^2$$
+$$L_{PDE}=||F(u_\theta)-f||^2$$
 
-### Boundary and initial conditions
+### 边界条件和初始条件
 
 $$L_{BC},L_{IC}$$
 
-The weights are uncertainty-based and learned automatically through trainable variance parameters, avoiding manual balancing of loss terms. fileciteturn103file0L279-L281 fileciteturn103file0L336-L368
+不同于传统 PINN 手动设置权重，PGT通过可学习的不确定度参数自动调整各项权重。fileciteturn103file0L279-L281 fileciteturn103file0L336-L368
 
-## 6. Experimental Results
+## 7. 实验结果
 
-Heat equation:
+### 热扩散方程
 
-- 100 observations;
-- relative L2 error $5.9\times10^{-3}$;
-- about 38 times lower than PINN. fileciteturn103file0L21-L23
+100个观测点条件下：
 
-Navier-Stokes cylinder wake:
+- Relative L2 error = $5.9\times10^{-3}$；
+- 相比 PINN 提升约38倍。fileciteturn103file0L21-L23
 
-- 1500 scattered spatiotemporal samples;
-- PDE residual $8.3\times10^{-4}$;
-- relative L2 error 0.034. fileciteturn103file0L24-L29
+### Navier–Stokes
 
-## 7. Ablation Findings
+1500个散点观测：
 
-The paper shows:
+- PDE residual = $8.3\times10^{-4}$；
+- Relative L2 error = 0.034。fileciteturn103file0L24-L29
 
-- removing physics-guided attention mainly harms reconstruction accuracy;
-- removing PDE loss mainly harms PDE compliance;
-- both mechanisms are complementary.
+## 8. 消融分析
 
-The full model achieves reconstruction error $6.50\times10^{-5}$ and PDE residual $8.30\times10^{-4}$ in the Navier-Stokes ablation. fileciteturn103file0L570-L584
+论文证明：
 
-## 8. Relation to Structural Dynamics
+- 去掉 physics-guided attention，重构精度明显下降；
+- 去掉 PDE loss，物理残差增加；
+- 二者不是替代关系，而是互补关系。fileciteturn103file0L570-L584
 
-PGT differs from CM-PINNs and SeisGPT:
+## 9. 对结构动力学研究的启示
 
-| Method | Physics injection |
-|-|-|
-| CM-PINNs | constitutive constraints in loss |
-| PGT | physics-aware attention propagation |
-| SeisGPT | structural operators and spectral propagation |
+PGT提供了一种新的物理信息神经网络设计方向：
 
-Potential structural adaptation:
+传统结构PINN：
+
+$$L=L_{data}+\lambda L_{equilibrium}$$
+
+PGT思想：
+
+$$Attention=Attention(Q,K)+\Gamma_{physics}$$
+
+对于结构动力响应，可构造：
 
 $$\Gamma=f(M,K,C,\Phi,t)$$
 
-where attention bias can encode:
+使 attention 感知：
 
-- modal coupling;
-- floor connectivity;
-- causal wave propagation;
-- damping effects.
+- 模态耦合；
+- 楼层连接关系；
+- 波传播路径；
+- 阻尼衰减。
 
-## 9. Limitations
+## 10. Negative Knowledge
 
-- Tested mainly on PDE field reconstruction;
-- heat-kernel bias is naturally suited to diffusion-like systems;
-- nonlinear constitutive behavior is not explicitly modeled;
-- extension to strong nonlinear structural dynamics remains open.
+- 当前验证主要针对 PDE 场重构，而非结构滞回动力学；
+- Green函数需要已知物理传播规律；
+- 未显式描述材料本构非线性；
+- 对倒塌、接触、断裂等强非线性问题仍需进一步研究。
 
-## Related
+## 11. 可迁移知识
+
+|机制|可迁移方向|
+|-|-|
+|Physics-aware attention|将结构动力学算子加入 Transformer 信息传播|
+|Green函数偏置|构造符合物理传播规律的 attention kernel|
+|物理架构+物理loss|结合显式约束和数据学习|
+|不确定度权重|自动平衡多物理约束|
+
+## 12. 与相关方法关系
+
+|方法|物理进入位置|
+|-|-|
+|CM-PINNs|本构关系和物理方程约束|
+|PGT|注意力传播机制|
+|SeisGPT|结构算子和谱传播|
+
+三者代表物理信息神经网络发展的不同方向。
+
+## 关联页面
 
 - [[pgt]]
 - [[pinn]]
