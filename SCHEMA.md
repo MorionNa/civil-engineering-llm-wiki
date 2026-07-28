@@ -102,6 +102,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   gauss-seidel, jacobi, high-stiffness-ratio, hard-constraints, mass-spring,
   frictional-contact, substep, information-propagation-limit,
   trigonometric-auxiliary, exponential-auxiliary, polynomial-auxiliary
+- **Mathematical physics & kinetic theory:** statistical-mechanics, kinetic-theory,
+  entropy, irreversibility, boltzmann-equation, hilbert-sixth-problem,
+  hard-sphere-dynamics, boltzmann-grad-limit
 - **Meta:** comparison, review, future-work, limitation, cross-domain-generalization,
   architecture-selection, transfer-learning
 - **Computer vision:** semantic-segmentation, encoder-decoder, skip-connections,

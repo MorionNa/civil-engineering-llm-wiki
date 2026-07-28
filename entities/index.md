@@ -43,6 +43,10 @@
 - [[mrf-pinn]] — MRF-PINN: 多感受野卷积 + Taylor padding + 高阶有限差分（摘要证据）
 - [[backlund-transformation-pinn]] — Bäcklund Transformation PINN: 以跨方程变换残差恢复无标签目标解
 
+## 数学物理与动理学
+- [[boltzmann-equation]] — 玻尔兹曼方程: 自由输运 + 二体碰撞算子，连接粒子动力学与流体方程
+- [[hilbert-sixth-problem]] — 希尔伯特第六问题: 从硬球牛顿动力学经动理学到连续介质方程的严格推导计划
+
 ## 组织 (Organizations)
 - [[zhipu-ai]] — 智谱AI: GLM/ChatGLM 系列大模型
 - [[guoneng-bigdata]] — 国能大数据: HydroGLM 总体架构

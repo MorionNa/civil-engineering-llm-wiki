@@ -11,6 +11,7 @@
 
 ## Videos (视频)
 - [[notes/videos/avbd-siggraph2025]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
+- [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] — 时间为何不能倒流：玻尔兹曼方程、H 定理、分子混沌与希尔伯特第六问题
 
 ## Articles (文章)
 - [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
