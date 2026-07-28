@@ -435,3 +435,26 @@
 - Updated: SCHEMA.md, index.md, notes/index.md, entities/index.md, mkdocs.yml
 - Primary-source reconciliation: corrected ASR names/terms against arXiv:2408.07818 and arXiv:2503.01800; retained the hard-sphere, Boltzmann–Grad and regular-solution boundaries
 - Negative knowledge retained: microscopic reversibility does not imply unconditional entropy increase; molecular chaos is a propagated statistical property; the long-time result is not a theorem for dense or internally structured real molecules
+
+## [2026-07-28] ingest | Zhang et al. (2026) LegONet — 可插拔结构保持 PDE 算子块
+- Source: user-provided `2603.07882v1.pdf` (40 pages, arXiv:2603.07882v1)
+- Created: papers/zhang2026-legonet-{analysis,method,results,critical}.md
+- Created: entities/legonet.md
+- Updated: index.md, docs/index.md, papers/index.md, entities/index.md, mkdocs.yml, SCHEMA.md
+- Domain: 组合式神经算子；boundary-adapted baseplate + E/H/R blocks + trajectory-free matching + Strang splitting
+- Key results: 4 baseplates / 10 PDEs；2D Navier–Stokes T=50 error <4%；3D Swift–Hohenberg ID/OOD error 10^-5–10^-4
+## [2026-07-28] ingest | Li et al. (2025) Functional Scaling Laws — 完整损失轨迹与学习率计划
+- Source: user-provided NeurIPS 2025 PDF (arXiv:2509.19189)
+- Created: papers/li2025-functional-scaling-laws-{analysis,method,results,critical}.md
+- Created: entities/functional-scaling-law.md
+- Updated: index.md, docs/index.md, papers/index.md, entities/index.md, mkdocs.yml, SCHEMA.md
+- Domain: intrinsic-time SDE + forgetting-kernel convolution；WSD/exp/constant scaling efficiency
+## [2026-07-23] ingest | Li et al. (2026) SGNO — 稳定长时 PDE 滚动预测
+- Created: papers/li2026-sgno-analysis.md, entities/sgno.md
+- Domain: spectral generator + ETD-inspired carry/correction
+## [2026-07-23] ingest | Li et al. (2025) NODE-ONet — 物理编码 Neural ODE 算子网络
+- Created: papers/li2025-node-onet-analysis.md, entities/node-onet.md
+- Domain: physics-encoded neural ODE + operator learning
+## [2026-07-22] ingest | Zeraatkar et al. (2026) PGT — 物理感知 Transformer attention
+- Created: papers/zeraatkar2026-pgt-analysis.md, entities/pgt.md
+- Domain: Green-function physics bias + Transformer information propagation

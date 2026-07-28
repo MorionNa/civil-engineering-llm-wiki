@@ -36,6 +36,22 @@ nav:
   - 首页: index.md
   - Papers:
       - papers/index.md
+      - Zhang 2026 LegONet:
+          - papers/zhang2026-legonet-analysis.md
+          - papers/zhang2026-legonet-method.md
+          - papers/zhang2026-legonet-results.md
+          - papers/zhang2026-legonet-critical.md
+      - Li 2025 Functional Scaling Laws:
+          - papers/li2025-functional-scaling-laws-analysis.md
+          - papers/li2025-functional-scaling-laws-method.md
+          - papers/li2025-functional-scaling-laws-results.md
+          - papers/li2025-functional-scaling-laws-critical.md
+      - Li 2026 SGNO:
+          - papers/li2026-sgno-analysis.md
+      - Li 2025 NODE-ONet:
+          - papers/li2025-node-onet-analysis.md
+      - Zeraatkar 2026 PGT:
+          - papers/zeraatkar2026-pgt-analysis.md
       - Meng 2026 SeisGPT:
           - papers/meng2026-seisgpt-analysis.md
           - papers/meng2026-seisgpt-method.md
@@ -336,6 +352,11 @@ nav:
           - entities/from-orbit-to-ground.md
           - entities/clod-gs.md
       - 物理信息机器学习:
+          - entities/legonet.md
+          - entities/functional-scaling-law.md
+          - entities/sgno.md
+          - entities/node-onet.md
+          - entities/pgt.md
           - entities/seisgpt.md
           - entities/pinn.md
           - entities/phy-rlk.md

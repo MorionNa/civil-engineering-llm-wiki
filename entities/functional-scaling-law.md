@@ -26,5 +26,5 @@ Functional Scaling Law (FSL) 是 Li et al. (NeurIPS 2025) 提出的训练轨迹�
 ## 关联
 
 - [[li2025-functional-scaling-laws-analysis]]
-- [[intrinsic-time]]
-- [[learning-rate-schedule]]
+- [[wang2021-pinn-ntk-failure-analysis]]
+- [[li2026-sgno-analysis]]

@@ -2,9 +2,20 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-16 | Total pages: 274 (Papers: 199, Notes: 5, Entities: 64, Comparisons: 4)
+> Last updated: 2026-07-28 | Total pages: 293 (Papers: 210, Notes: 6, Entities: 71, Comparisons: 4)
 
 ## Papers
+- [[zhang2026-legonet-analysis]] — Zhang et al. (2026) LegONet：边界适配谱基 + E/H/R 结构保持块 + Strang splitting，组合式复用 PDE 机制
+- [[zhang2026-legonet-method]] — LegONet 方法：baseplate、共享系数接口、trajectory-free operator matching 与可插拔推理
+- [[zhang2026-legonet-results]] — LegONet 结果：4 类 baseplate、10 个 PDE；湍流/刚性/3D/OOD 长时稳定性验证
+- [[zhang2026-legonet-critical]] — LegONet 贡献+Negative（baseplate 依赖/有限块库/splitting error）+结构动力学迁移
+- [[li2025-functional-scaling-laws-analysis]] — Li et al. (2025) FSL：用内禀时间与遗忘核统一描述学习率计划下完整 loss trajectory，NeurIPS 2025
+- [[li2025-functional-scaling-laws-method]] — FSL 方法：intrinsic-time SDE + Volterra 卷积 + signal-learning/noise-forgetting 分解
+- [[li2025-functional-scaling-laws-results]] — FSL 结果：WSD > 指数衰减 > 恒定学习率；0.1B–1B LLM 跨计划拟合与预测
+- [[li2025-functional-scaling-laws-critical]] — FSL 贡献+Negative（核代理/连续时间/渐近隐藏常数/规模限制）+PINN 调度迁移
+- [[li2026-sgno-analysis]] — Li et al. (2026) SGNO：非正谱生成元 + ETD-inspired correction，提高 PDE 长时自回归稳定性
+- [[li2025-node-onet-analysis]] — Li et al. (2025) NODE-ONet：物理编码 Neural ODE 学习 PDE 算子并增强时间外推
+- [[zeraatkar2026-pgt-analysis]] — Zeraatkar et al. (2026) PGT：Green 函数物理偏置进入 Transformer attention
 - [[meng2026-seisgpt-analysis]] — Meng et al. (2026) SeisGPT：物理信息结构响应基础模型，270,694 建筑、205 万 NLTHA、约 40,000× 加速，Nature Communications
 - [[meng2026-seisgpt-method]] — SeisGPT 方法：SDR 低保真先验 + 质量刚度图编码 + Spectral Duhamel–Green Mixer
 - [[meng2026-seisgpt-results]] — SeisGPT 结果：未见建筑、真实微调、跨体系零样本、稀疏传感器、IDA 与振动台验证
@@ -219,6 +230,11 @@
 
 ## Entities
 ### 物理信息机器学习
+- [[legonet]] — LegONet: 边界适配 baseplate 上可插拔的耗散/守恒/残差 PDE 算子块库
+- [[functional-scaling-law]] — Functional Scaling Law: 内禀时间 + 遗忘核描述完整训练 loss 轨迹
+- [[sgno]] — SGNO: 面向长时 PDE 自回归预测的谱生成神经算子
+- [[node-onet]] — NODE-ONet: 物理编码 Neural ODE 算子网络
+- [[pgt]] — PGT: Green 函数物理偏置引导 Transformer 信息传播
 - [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer 的多建筑结构响应基础模型
 - [[phy-rlk]] — Phy-RLK: Newmark-β 物理残差 LSTM + KAN 的双向非线性结构响应代理
 - [[hcff-pinn]] — HCFF-PINN: 结构频率 Fourier 特征 + 初值硬约束的 label-free 结构动力 PINN

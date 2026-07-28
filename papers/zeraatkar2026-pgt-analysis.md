@@ -3,7 +3,7 @@ title: "Physics-Guided Transformer (PGT)：面向 PINN 的物理感知注意力�
 created: 2026-07-22
 updated: 2026-07-22
 type: paper-analysis
-tags: [物理信息神经网络, PINN, Transformer, 物理感知注意力, 科学机器学习]
+tags: [physics-informed, pinn, transformer, physics-aware-attention, scientific-machine-learning]
 sources: [raw/papers/2603.27929v1.pdf]
 confidence: high
 ---

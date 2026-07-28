@@ -132,6 +132,7 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo,
   controlnet, dreambooth, textual-inversion, image-generation, molecule-generation,
   protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance
+- **Neural operators & training dynamics:** neural-operator, operator-learning, neural-ode, physics-encoded-network, physics-aware-attention, fourier-operator, structure-preserving, operator-splitting, compositional-modeling, trajectory-free-training, spectral-method, boundary-condition, hamiltonian, dissipative-dynamics, long-horizon-rollout, autoregressive-rollout, exponential-time-differencing, scientific-machine-learning, pde, digital-twin, scaling-law, kernel-regression, stochastic-gradient-descent, learning-rate-schedule, intrinsic-time, compute-optimal-training
 - **AI4S:** ai4s, scientific-discovery, inverse-problem, pinn, deepxde,
   physics-simulation, material-design, weather-prediction
 - **Cheminformatics/Drug Discovery:** chemical-language-model, molecular-conformation,

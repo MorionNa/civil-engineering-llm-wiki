@@ -134,8 +134,7 @@ $$
 ## 关联页面
 
 - [[functional-scaling-law]]
-- [[intrinsic-time]]
 - [[li2025-functional-scaling-laws-method]]
 - [[li2025-functional-scaling-laws-results]]
 - [[li2025-functional-scaling-laws-critical]]
-- [[constant-vs-exponential-vs-wsd]]
+- [[wang2021-pinn-ntk-failure-analysis]]

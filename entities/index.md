@@ -32,6 +32,12 @@
 - [[seismic-site-response-pinn]] — 地震场地反应 PINN: 集中质量土柱 + Fourier embedding + TPE
 
 ## 算法 (Algorithms)
+
+- [[legonet]] — LegONet: 边界适配 baseplate 上可插拔的耗散/守恒/残差 PDE 算子块库
+- [[functional-scaling-law]] — Functional Scaling Law: 内禀时间 + 遗忘核描述完整训练 loss 轨迹
+- [[sgno]] — SGNO: 面向长时 PDE 自回归预测的谱生成神经算子
+- [[node-onet]] — NODE-ONet: 物理编码 Neural ODE 算子网络
+- [[pgt]] — PGT: Green 函数物理偏置引导 Transformer 信息传播
 - [[te-nas]] — TE-NAS: Training-free NAS via NTK + 线性区域
 - [[avbd]] — AVBD: Augmented Lagrangian VBD，硬约束物理仿真
 - [[phylstm2]] — PhyLSTM2: 双 LSTM, physics-constrained 非线性滞回元模型
