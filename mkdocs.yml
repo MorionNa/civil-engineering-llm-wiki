@@ -358,6 +358,9 @@ nav:
       - 结构工程:
           - entities/cable-stayed-bridge.md
           - entities/bouc-wen-model.md
+      - 数学物理与动理学:
+          - entities/boltzmann-equation.md
+          - entities/hilbert-sixth-problem.md
       - 数据集:
           - entities/nasbench201.md
           - entities/ade20k.md
@@ -372,6 +375,7 @@ nav:
           - notes/lectures/ai4s-diffusion-models.md
       - 视频:
           - notes/videos/avbd-siggraph2025.md
+          - notes/videos/boltzmann-entropy-hilbert-sixth-problem.md
       - 文章:
           - notes/articles/agentic-engineering-22-tips.md
   - Comparisons:

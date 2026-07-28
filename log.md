@@ -425,3 +425,13 @@
 - Reconciliation: 33 new pages, all frontmatter/taxonomy/wikilinks checked; 7 substantive entities created, Luo review recorded `Skipped entity: no new models/algorithms/datasets.`
 - Raw: publisher XML/PDF/abstract extracts retained under raw/papers/ and excluded from GitHub by repository policy
 - Wiki: 241→274 pages（Papers 173→199; Entities 57→64）
+
+## [2026-07-28] ingest | 时间为何不能倒流：玻尔兹曼方程与希尔伯特第六问题（B站视频）
+- Source: https://www.bilibili.com/video/BV1pH3c6TEQT
+- Raw captured: raw/transcripts/bv1ph3c6teqt/{transcript.md,segments.json,metadata.json}
+- Transcribed via CUDA FunASR + separate FSMN-VAD timestamps (106 speech windows), with Kimi K3 visual-only extraction (527 events across 11 source segments)
+- Created: notes/videos/boltzmann-entropy-hilbert-sixth-problem.md
+- Created entities: entities/boltzmann-equation.md, entities/hilbert-sixth-problem.md
+- Updated: SCHEMA.md, index.md, notes/index.md, entities/index.md, mkdocs.yml
+- Primary-source reconciliation: corrected ASR names/terms against arXiv:2408.07818 and arXiv:2503.01800; retained the hard-sphere, Boltzmann–Grad and regular-solution boundaries
+- Negative knowledge retained: microscopic reversibility does not imply unconditional entropy increase; molecular chaos is a propagated statistical property; the long-time result is not a theorem for dense or internally structured real molecules

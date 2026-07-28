@@ -239,6 +239,10 @@
 - [[deeponet]] — DeepONet: 深度算子网络，学习无限维映射的通用神经算子
 - [[cable-stayed-bridge]] — 斜拉桥: 索支撑桥型，主梁动力线形 (MGDA) 健康监测
 
+### 数学物理与动理学
+- [[boltzmann-equation]] — 玻尔兹曼方程: 自由输运 + 二体碰撞，连接微观硬球动力学与宏观流体模型
+- [[hilbert-sixth-problem]] — 希尔伯特第六问题: 牛顿力学 → 玻尔兹曼动理学 → 流体方程的严格推导计划
+
 ### 远程感知与生成式3D
 - [[skyfall-gs]] — Skyfall-GS: 多视角卫星重建 + 课程式扩散 IDU 的可自由飞行 3D 城市
 - [[abot-earth]] — ABot-Earth: 阿里高德生成式 3D 地球模型，卫星→3DGS
@@ -302,6 +306,7 @@
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S 第一课：PINN 从入门到 DeepXDE 实战（陆路/耶鲁，90min）
 - [[notes/lectures/ai4s-diffusion-models]] — AI4S 第二讲：扩散生成模型从物理原理到蛋白质设计（章敏/浙大，90min）
 - [[notes/videos/avbd-siggraph2025]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
+- [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] — 时间为何不能倒流：玻尔兹曼方程、H 定理、分子混沌与希尔伯特第六问题
 - [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
 
 ## Comparisons
