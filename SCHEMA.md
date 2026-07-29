@@ -85,7 +85,12 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   bayesian-inference, hamiltonian-monte-carlo, uncertainty-quantification,
   self-adaptive-pinn, epidemiology,
   time-marching, auxiliary-function, hard-constraint-strategies,
-  causal-attention-weighting, temporal-causality, adaptive-weighting
+  causal-attention-weighting, temporal-causality, adaptive-weighting,
+  domain-decomposition, overlapping-domain-decomposition, fbpinn, multilevel-fbpinn,
+  xpinn, schwarz-method, nonlinear-preconditioning, quasi-newton, layerwise-decomposition
+- **Optimization:** optimizer, muon, matrix-orthogonalization, newton-schulz,
+  sgd-momentum, nesterov-momentum, adamw, shampoo, preconditioning, spectral-norm,
+  training-efficiency, sample-efficiency, wallclock-efficiency
 - **Architecture:** phylstm2, phylstm3
 - **Domain:** structural-dynamics, nonlinear-systems, hysteresis, seismic-response, 
   equation-of-motion, restoring-force, data-scarcity, unobservable-variables,
@@ -134,7 +139,9 @@ Tags should be searchable across papers: a good tag appears on 3-15 pages.
   protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance
 - **Neural operators & training dynamics:** neural-operator, operator-learning, neural-ode, physics-encoded-network, physics-aware-attention, fourier-operator, structure-preserving, operator-splitting, compositional-modeling, trajectory-free-training, spectral-method, boundary-condition, hamiltonian, dissipative-dynamics, long-horizon-rollout, autoregressive-rollout, exponential-time-differencing, scientific-machine-learning, pde, digital-twin, scaling-law, kernel-regression, stochastic-gradient-descent, learning-rate-schedule, intrinsic-time, compute-optimal-training
 - **AI4S:** ai4s, scientific-discovery, inverse-problem, pinn, deepxde,
-  physics-simulation, material-design, weather-prediction
+  physics-simulation, material-design, weather-prediction, graph-neural-network,
+  message-passing-neural-network, learnable-physics-engine, sobolev-training,
+  peridynamics, elastoplasticity, constitutive-model, geomaterials, drucker-prager
 - **Cheminformatics/Drug Discovery:** chemical-language-model, molecular-conformation,
   3d-molecular-generation, conformation-prediction, internal-coordinates,
   drug-discovery, dihedral-angle, pseudo-chirality, se3-invariance,

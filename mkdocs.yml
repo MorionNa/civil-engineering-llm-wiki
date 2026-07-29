@@ -36,6 +36,31 @@ nav:
   - 首页: index.md
   - Papers:
       - papers/index.md
+      - Moseley 2023 FBPINN:
+          - papers/moseley2023-fbpinn-analysis.md
+          - papers/moseley2023-fbpinn-method.md
+          - papers/moseley2023-fbpinn-results.md
+          - papers/moseley2023-fbpinn-critical.md
+      - Dolean 2024 Multilevel FBPINN:
+          - papers/dolean2024-multilevel-fbpinn-analysis.md
+          - papers/dolean2024-multilevel-fbpinn-method.md
+          - papers/dolean2024-multilevel-fbpinn-results.md
+          - papers/dolean2024-multilevel-fbpinn-critical.md
+      - Kopaničáková 2024 Schwarz Preconditioning:
+          - papers/kopanicakova2024-dd-preconditioning-analysis.md
+          - papers/kopanicakova2024-dd-preconditioning-method.md
+          - papers/kopanicakova2024-dd-preconditioning-results.md
+          - papers/kopanicakova2024-dd-preconditioning-critical.md
+      - Hu 2022 XPINN Generalization:
+          - papers/hu2022-xpinn-generalization-analysis.md
+          - papers/hu2022-xpinn-generalization-method.md
+          - papers/hu2022-xpinn-generalization-results.md
+          - papers/hu2022-xpinn-generalization-critical.md
+      - Zhou 2025 Learnable Physics Engine:
+          - papers/zhou2025-learnable-physics-engine-analysis.md
+          - papers/zhou2025-learnable-physics-engine-method.md
+          - papers/zhou2025-learnable-physics-engine-results.md
+          - papers/zhou2025-learnable-physics-engine-critical.md
       - Zhang 2026 LegONet:
           - papers/zhang2026-legonet-analysis.md
           - papers/zhang2026-legonet-method.md
@@ -357,6 +382,10 @@ nav:
           - entities/sgno.md
           - entities/node-onet.md
           - entities/pgt.md
+          - entities/fbpinn.md
+          - entities/xpinn.md
+          - entities/schwarz-preconditioned-pinn.md
+          - entities/learnable-physics-engine.md
           - entities/seisgpt.md
           - entities/pinn.md
           - entities/phy-rlk.md
@@ -376,6 +405,8 @@ nav:
           - entities/hamiltonian-monte-carlo.md
           - entities/deeponet.md
           - entities/pseudo-time-stepping.md
+      - 优化算法:
+          - entities/muon.md
       - 结构工程:
           - entities/cable-stayed-bridge.md
           - entities/bouc-wen-model.md
@@ -399,6 +430,7 @@ nav:
           - notes/videos/boltzmann-entropy-hilbert-sixth-problem.md
       - 文章:
           - notes/articles/agentic-engineering-22-tips.md
+          - notes/articles/jordan2024-muon-optimizer.md
   - Comparisons:
       - comparisons/index.md
       - comparisons/seisgpt-vs-phylstm-cm-pinns.md

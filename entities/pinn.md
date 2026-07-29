@@ -1,7 +1,7 @@
 ---
 title: "PINN — 物理信息神经网络 (Physics-Informed Neural Network)"
 created: 2026-06-27
-updated: 2026-07-16
+updated: 2026-07-28
 type: entity
 tags: [physics-informed, pinn, ai4s, deepxde, deep-learning, neural-network, physics-simulation, inverse-problem]
 sources:
@@ -15,6 +15,10 @@ sources:
   - raw/papers/extracted/10_1007_s00466-024-02554-5_abstract_extracted.txt
   - raw/papers/extracted/10_1007_s10518-026-02408-w_abstract_extracted.txt
   - notes/lectures/ai4s-pinn-deepxde.md
+  - raw/papers/moseley2023-fbpinn.pdf
+  - raw/papers/dolean2024-multilevel-fbpinn.xml
+  - raw/papers/kopanicakova2024-dd-preconditioning.pdf
+  - raw/papers/hu2022-xpinn-generalization.pdf
 confidence: high
 ---
 
@@ -78,6 +82,9 @@ $$\mathcal{L}_{PINN} = \underbrace{\mathcal{L}_{PDE}}_{\text{物理残差}} + \u
 - **RAR（残差自适应细化）：** 在 PDE 残差大的区域自适应增加训练点
 - **cPINN（Conservative PINN）：** 保证物理量的守恒性
 - **BPINN（Bayesian PINN）：** 引入贝叶斯推理进行不确定性量化
+- **FBPINN / Multilevel FBPINN：** 重叠域分解、局部归一化与粗层全局通信 → [[fbpinn]]
+- **XPINN：** 非重叠域分解；泛化取决于局部复杂度与样本稀释权衡 → [[xpinn]]
+- **Schwarz-preconditioned PINN：** 在网络层参数空间做非线性预条件 → [[schwarz-preconditioned-pinn]]
 
 ## 2025–2026 白名单论文证据地图
 
@@ -93,6 +100,10 @@ $$\mathcal{L}_{PINN} = \underbrace{\mathcal{L}_{PDE}}_{\text{物理残差}} + \u
 | [[guo2026-phy-rlk-analysis|Phy-RLK]] | 架构：Newmark-β 残差注入 LSTM-KAN | OpenSees 双向非线性 RC 响应代理 | 仍是强监督、合成标签与逐结构训练，不是无标签方程求解 |
 
 ## 关联论文（本 Wiki）
+
+- [[moseley2023-fbpinn-analysis]] / [[dolean2024-multilevel-fbpinn-analysis]] — 单层与多层重叠域分解
+- [[hu2022-xpinn-generalization-analysis]] — XPINN 泛化权衡
+- [[kopanicakova2024-dd-preconditioning-analysis]] — 参数空间 Schwarz 预条件
 
 - [[li2025-movingload-pinn-analysis]] — Li et al. (2025) 桥梁移动荷载 PINN 分析（首次 PINN 结构动力学时域应用）
 - [[li2025-movingload-pinn-method]] — 方法机制：高斯近似 + 傅里叶嵌入 + 因果权重

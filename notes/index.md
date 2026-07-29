@@ -15,3 +15,4 @@
 
 ## Articles (文章)
 - [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
+- [[notes/articles/jordan2024-muon-optimizer]] — Keller Jordan (2024) Muon：隐藏层矩阵更新的 Newton–Schulz 正交化

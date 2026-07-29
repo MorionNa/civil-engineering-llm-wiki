@@ -31,6 +31,13 @@
 - [[fpikan]] — FPIKAN: Fourier 输入与 Fourier-series KAN 激活增强的地震响应 PINN（摘要证据）
 - [[seismic-site-response-pinn]] — 地震场地反应 PINN: 集中质量土柱 + Fourier embedding + TPE
 
+## 科学机器学习与神经 PDE
+
+- [[fbpinn]] — FBPINN：重叠局部神经基函数与 multilevel 粗层
+- [[xpinn]] — XPINN：非重叠域分解与泛化权衡
+- [[schwarz-preconditioned-pinn]] — 参数空间 Schwarz 预条件训练
+- [[learnable-physics-engine]] — 可解释 MPNN 弹塑性物理引擎
+
 ## 算法 (Algorithms)
 
 - [[legonet]] — LegONet: 边界适配 baseplate 上可插拔的耗散/守恒/残差 PDE 算子块库
@@ -44,6 +51,7 @@
 - [[phylstm3]] — PhyLSTM3: 三 LSTM, 增强非线表征
 - [[bouc-wen-model]] — Bouc-Wen: 率相关滞回模型
 - [[pseudo-time-stepping]] — 伪时间步进: PINN PDE 残差伪解解决方案
+- [[muon]] — Muon: SGD momentum + Newton–Schulz 矩阵正交化
 - [[cm-pinns]] — CM-PINNs: 本构模型约束 PINN，预测非线性结构地震响应
 - [[adaptive-loss-weighting-pinn]] — APINNs: 基于近期任务损失量级的有界自适应加权
 - [[mrf-pinn]] — MRF-PINN: 多感受野卷积 + Taylor padding + 高阶有限差分（摘要证据）

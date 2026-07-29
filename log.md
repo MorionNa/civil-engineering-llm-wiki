@@ -458,3 +458,19 @@
 ## [2026-07-22] ingest | Zeraatkar et al. (2026) PGT — 物理感知 Transformer attention
 - Created: papers/zeraatkar2026-pgt-analysis.md, entities/pgt.md
 - Domain: Green-function physics bias + Transformer information propagation
+
+## [2026-07-28] ingest | 五篇域分解/预条件/图物理引擎全文
+- Canonical full text: raw/papers/{moseley2023-fbpinn.pdf,dolean2024-multilevel-fbpinn.xml,kopanicakova2024-dd-preconditioning.pdf,hu2022-xpinn-generalization.pdf,zhou2025-learnable-physics-engine.xml}
+- Created: 20 paper pages（每篇 analysis/method/results/critical）
+- Created entities: entities/fbpinn.md, entities/xpinn.md, entities/schwarz-preconditioned-pinn.md, entities/learnable-physics-engine.md
+- Working evidence: raw/ingest-artifacts/2026-07-28/<slug>/{paper-card.md,source_bundle.json,audit-report.json}; Elsevier XML paper uses structure-grounded card + audit-report
+- Updated: SCHEMA.md, index.md, papers/index.md, entities/index.md, entities/pinn.md, mkdocs.yml
+- Excluded: duplicate downloads, manifests, metadata-only Elsevier XML, and the one-page incomplete IJRMMS PDF
+- Evidence note: XPINN Table 3 was used to correct a prose label reversal; its conclusion paragraph also contains heat/wave classification inconsistencies retained as negative knowledge
+
+## [2026-07-29] sync | GitHub 远端 Muon 优化器笔记
+- Pulled: commit 9ee3f53, notes/articles/jordan2024-muon-optimizer.md
+- Registered: index.md, notes/index.md, mkdocs.yml
+- Created entity: entities/muon.md
+- Added Muon/优化器标签到 SCHEMA.md
+- Provenance note: upstream note references raw/articles/jordan2024-muon-blog.pdf; the ignored raw file is not present in this checkout, while the public source URL remains recorded in the note body
