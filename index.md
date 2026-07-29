@@ -2,9 +2,29 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-07-28 | Total pages: 293 (Papers: 210, Notes: 6, Entities: 71, Comparisons: 4)
+> Last updated: 2026-07-29 | Total pages: 319 (Papers: 230, Notes: 7, Entities: 76, Comparisons: 4)
 
 ## Papers
+- [[moseley2023-fbpinn-analysis]] — Moseley et al. (2023) FBPINN：重叠子域、局部归一化与训练调度缓解大域/高频 PINN
+- [[moseley2023-fbpinn-method]] — FBPINN 方法：光滑窗函数、连续拼接、active/fixed/inactive 调度与邻域通信
+- [[moseley2023-fbpinn-results]] — FBPINN 结果：高频/多尺度、二阶 ODE、Burgers 与 2+1D 波动证据
+- [[moseley2023-fbpinn-critical]] — FBPINN 负知识：单线程成本、划分敏感、高维采样与传统法差距
+- [[dolean2024-multilevel-fbpinn-analysis]] — Dolean et al. (2024) Multilevel FBPINN：粗层增强跨子域全局通信
+- [[dolean2024-multilevel-fbpinn-method]] — Multilevel FBPINN 方法：指数层级、稀疏点—子域映射与强/弱缩放定义
+- [[dolean2024-multilevel-fbpinn-results]] — Multilevel FBPINN 结果：Laplacian/Helmholtz 强弱缩放与基线比较
+- [[dolean2024-multilevel-fbpinn-critical]] — Multilevel FBPINN 负知识：术语边界、最高波数失败与多 GPU 未验证
+- [[kopanicakova2024-dd-preconditioning-analysis]] — Kopaničáková et al. (2024) Schwarz 参数域预条件 PINN
+- [[kopanicakova2024-dd-preconditioning-method]] — ASPQN/MSPQN 方法：层参数子域、局部 L-BFGS 与全局准牛顿校正
+- [[kopanicakova2024-dd-preconditioning-results]] — SPQN 结果：共同误差阈值下 MSPQN 约 10×、ASPQN 约 28× 墙钟加速
+- [[kopanicakova2024-dd-preconditioning-critical]] — SPQN 负知识：多 GPU 资源混杂、全网复制与固定层分组
+- [[hu2022-xpinn-generalization-analysis]] — Hu et al. (2022) XPINN 泛化：复杂度下降与子域样本稀释的权衡
+- [[hu2022-xpinn-generalization-method]] — XPINN 方法：prior/posterior bound、PDE 稳定性与分区诊断
+- [[hu2022-xpinn-generalization-results]] — XPINN 结果：KdV/heat/advection/Poisson/Euler 五题重建矩阵
+- [[hu2022-xpinn-generalization-critical]] — XPINN 负知识：oracle 分区、loss 竞争及原文数值主语/总结冲突
+- [[zhou2025-learnable-physics-engine-analysis]] — Zhou & Feng (2025) MPNN 可解释岩土弹塑性 Learnable Physics Engine
+- [[zhou2025-learnable-physics-engine-method]] — LPE 方法：OSB-PD 图、H2 Sobolev 能量、level-set 屈服与 Newton 修正
+- [[zhou2025-learnable-physics-engine-results]] — LPE 结果：冲头/洞室/边坡与 3,600–90,000 材料点效率
+- [[zhou2025-learnable-physics-engine-critical]] — LPE 负知识：同源监督、训练摊销、过度平滑与热力学边界
 - [[zhang2026-legonet-analysis]] — Zhang et al. (2026) LegONet：边界适配谱基 + E/H/R 结构保持块 + Strang splitting，组合式复用 PDE 机制
 - [[zhang2026-legonet-method]] — LegONet 方法：baseplate、共享系数接口、trajectory-free operator matching 与可插拔推理
 - [[zhang2026-legonet-results]] — LegONet 结果：4 类 baseplate、10 个 PDE；湍流/刚性/3D/OOD 长时稳定性验证
@@ -230,6 +250,10 @@
 
 ## Entities
 ### 物理信息机器学习
+- [[fbpinn]] — FBPINN：重叠局部神经基函数、子域归一化与 multilevel 粗层
+- [[xpinn]] — XPINN：非重叠域分解及复杂度—样本量泛化权衡
+- [[schwarz-preconditioned-pinn]] — 参数空间 Schwarz 预条件 PINN：ASPQN/MSPQN
+- [[learnable-physics-engine]] — Learnable Physics Engine：能量/屈服可解释模块 + 图状态推进
 - [[legonet]] — LegONet: 边界适配 baseplate 上可插拔的耗散/守恒/残差 PDE 算子块库
 - [[functional-scaling-law]] — Functional Scaling Law: 内禀时间 + 遗忘核描述完整训练 loss 轨迹
 - [[sgno]] — SGNO: 面向长时 PDE 自回归预测的谱生成神经算子
@@ -301,6 +325,7 @@
 - [[phylstm3]] — PhyLSTM3: 三 LSTM 增强
 - [[bouc-wen-model]] — Bouc-Wen 滞回模型
 - [[pseudo-time-stepping]] — 伪时间步进
+- [[muon]] — Muon：对隐藏层矩阵更新做 Newton–Schulz 近似正交化的优化器
 
 ### 组织
 - [[zhipu-ai]] — 智谱AI
@@ -324,6 +349,7 @@
 - [[notes/videos/avbd-siggraph2025]] — AVBD 物理仿真算法 (SIGGRAPH 2025)：B站视频笔记，少迭代收敛 + 大质量比稳定
 - [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] — 时间为何不能倒流：玻尔兹曼方程、H 定理、分子混沌与希尔伯特第六问题
 - [[notes/articles/agentic-engineering-22-tips]] — Matt Van Horn (2026.06) Agentic Engineering 22 条技巧：plan→build loop / 上下文为王 / 语音输入 / 多 agent 并行
+- [[notes/articles/jordan2024-muon-optimizer]] — Keller Jordan (2024) Muon：隐藏层矩阵更新的 Newton–Schulz 正交化
 
 ## Comparisons
 - [[seisgpt-vs-phylstm-cm-pinns]] — SeisGPT vs PhyLSTM vs CM-PINNs：大规模基础模型、物理序列模型与本构约束路线对比
