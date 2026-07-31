@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install migration dependency
+        run: pip install pyyaml
+
       - name: Reconstruct audited migration tools
         if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
         shell: bash
@@ -58,7 +61,7 @@ jobs:
         run: git diff --exit-code -- raw
 
       - name: Install validation dependencies
-        run: pip install pyyaml mkdocs-material mkdocs-roamlinks-plugin
+        run: pip install mkdocs-material mkdocs-roamlinks-plugin
 
       - name: Patch roamlinks symlink support
         shell: bash
