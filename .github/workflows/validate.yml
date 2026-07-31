@@ -18,17 +18,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install MkDocs dependencies
+      - name: Install validation dependencies
         run: |
-          pip install mkdocs-material mkdocs-roamlinks-plugin
+          pip install pyyaml mkdocs-material mkdocs-roamlinks-plugin
 
-      - name: Build MkDocs
-        run: mkdocs build
-
-      - name: Check required Sep-PI-DeepONet pages
+      - name: Patch roamlinks symlink support
         run: |
-          test -f papers/mandl2025-separable-pi-deeponet-analysis.md
-          test -f papers/mandl2025-separable-pi-deeponet-method.md
-          test -f papers/mandl2025-separable-pi-deeponet-results.md
-          test -f papers/mandl2025-separable-pi-deeponet-critical.md
-          test -f entities/separable-pi-deeponet.md
+          PLUGIN=$(python -c "import mkdocs_roamlinks_plugin, os; print(os.path.join(os.path.dirname(mkdocs_roamlinks_plugin.__file__), 'plugin.py'))")
+          sed -i 's/os.walk(self.base_docs_url)/os.walk(self.base_docs_url, followlinks=True)/g' "$PLUGIN"
+          echo "Patched: $PLUGIN"
+
+      - name: Run llm-wiki compliance lint
+        run: python scripts/wiki_lint.py
+
+      - name: Build MkDocs strictly
+        run: mkdocs build --strict
