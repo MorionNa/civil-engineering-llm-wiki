@@ -1,0 +1,34 @@
+name: Validate Wiki
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MkDocs dependencies
+        run: |
+          pip install mkdocs-material mkdocs-roamlinks-plugin
+
+      - name: Build MkDocs
+        run: mkdocs build
+
+      - name: Check required Sep-PI-DeepONet pages
+        run: |
+          test -f papers/mandl2025-separable-pi-deeponet-analysis.md
+          test -f papers/mandl2025-separable-pi-deeponet-method.md
+          test -f papers/mandl2025-separable-pi-deeponet-results.md
+          test -f papers/mandl2025-separable-pi-deeponet-critical.md
+          test -f entities/separable-pi-deeponet.md
