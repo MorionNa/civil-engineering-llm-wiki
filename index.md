@@ -1,17 +1,30 @@
+---
+id: index
+title: "Civil Engineering LLM Wiki Index"
+type: index
+status: active
+project: civil-engineering-llm-wiki
+tags: []
+sources: []
+created: 2026-07-16
+updated: 2026-07-31
+confidence: high
+---
+
 # Civil Engineering LLM Wiki
 
 > 面向物理信息机器学习、结构动力学、计算力学、建筑图纸解析、AI4S 与生成式三维的中文科研知识库。
->
-> Last updated: 2026-07-31
 
-## 知识库入口
+## Dashboard
 
-- [[papers/index]] — 论文知识页索引；每篇全文论文按 `analysis + method + results + critical` 组织。
-- [[entities/index]] — 模型、算法、数据集与组织实体索引。
-- [[notes/index]] — 讲座、视频、汇报和文章笔记。
-- [[comparisons/index]] — 方法横向比较与失败模式总结。
-- [[SCHEMA]] — 文件结构、frontmatter、标签和 ingest 规范。
-- [[log]] — 追加式知识库操作记录。
+- **论文知识页：** [[papers/index]]
+- **模型、算法与数据实体：** [[entities/index]]
+- **讲座、视频、汇报与文章笔记：** [[notes/index]]
+- **横向比较：** [[comparisons/index]]
+- **知识库规范：** [[SCHEMA]]
+- **操作记录：** [[log]]
+
+所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，不承担完整页面清单职责。
 
 ## 最新知识链：NequIP → Allegro → SevenNet
 
@@ -29,7 +42,7 @@
 
 - [[musaelian2023-allegro-analysis]] — 严格局部 pair-centered 等变原子势概览。
 - [[musaelian2023-allegro-method]] — 双潜空间、局部环境嵌入与迭代张量积。
-- [[musaelian2023-allegro-results]] — QM9、revMD-17、Li$_3$PO$_4$ 与超大规模模拟。
+- [[musaelian2023-allegro-results]] — QM9、revised MD-17、Li$_3$PO$_4$ 与超大规模模拟。
 - [[musaelian2023-allegro-critical]] — 局部性、长程项、显存和结构图迁移。
 - [[allegro]] — Allegro 实体页。
 
@@ -37,7 +50,7 @@
 
 - [[park2024-sevennet-parallel-gnn-ip-analysis]] — NequIP 类 GNN 原子势空间分解并行概览。
 - [[park2024-sevennet-parallel-gnn-ip-method]] — ghost atoms、正向节点特征和反向梯度通信。
-- [[park2024-sevennet-parallel-gnn-ip-results]] — 32 GPU 扩展与 112,000 原子 Si$_3$N$_4$ 模拟。
+- [[park2024-sevennet-parallel-gnn-ip-results]] — 32 GPU 弱扩展与约 112,000 原子 Si$_3$N$_4$ 模拟。
 - [[park2024-sevennet-parallel-gnn-ip-critical]] — GPU 利用率、通信成本与子结构并行迁移。
 - [[sevennet]] — SevenNet 实体页。
 
@@ -58,43 +71,41 @@
 - [[li2025-node-onet-analysis]] — NODE-ONet：物理编码 Neural ODE 算子网络。
 - [[li2026-sgno-analysis]] — SGNO：谱生成神经算子与长时稳定性。
 - [[zeraatkar2026-pgt-analysis]] — PGT：Green 函数物理偏置注意力。
-- [[zhang2026-legonet-analysis]] — LegONet：可组合结构保持 PDE 算子块。
-- [[goswami2022-variational-deeponet-analysis]] — V-DeepONet：变分能量约束神经算子。
+- [[goswami2022-variational-deeponet-analysis]] — V-DeepONet：变分能量约束算子学习。
 
 ## 计算力学与倒塌模拟
 
 - [[giles2025-avbd-analysis]] — AVBD：增广拉格朗日硬约束物理仿真。
 - [[lu2013-collapse-rc-highrise-analysis]] — RC 高层建筑极端地震倒塌模拟。
-- [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式总结。
+- [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式比较。
 
 ## 建筑图纸解析与计算机视觉
 
 - [[ronneberger2015-unet-analysis]] — U-Net。
 - [[zhao2017-pspnet-analysis]] — PSPNet。
 - [[chen2018-deeplabv3plus-analysis]] — DeepLabv3+。
-- [[sun2019-hrnetv2-analysis]] — HRNet。
+- [[sun2019-hrnetv2-analysis]] — HRNetV2。
 - [[xie2021-segformer-analysis]] — SegFormer。
 
-## 遥感、生成式三维与数字地球
+## 生成式三维与遥感
 
-- [[lee2026-skyfall-gs-analysis]] — Skyfall-GS：卫星 3DGS 重建与扩散式视角扩展。
-- [[amapcvlab2026-abotearth-analysis]] — ABot-Earth：生成式三维地球模型。
-- [[skyfall-gs-vs-abot-earth]] — 两类城市三维路线比较。
+- [[lee2026-skyfall-gs-analysis]] — Skyfall-GS。
+- [[amapcvlab2026-abotearth-analysis]] — ABot-Earth。
+- [[skyfall-gs-vs-abot-earth]] — 两类城市三维生成路线比较。
 
-## 大模型、NAS 与训练系统
+## 大语言模型与架构搜索
 
-- [[li2025-functional-scaling-laws-analysis]] — Functional Scaling Laws。
+- [[fedus2021-switch-transformer-analysis]] — Switch Transformer。
+- [[lepikhin2021-gshard-analysis]] — GShard。
+- [[jiang2024-mixtral-of-experts-analysis]] — Mixtral。
+- [[dai2024-deepseek-moe-analysis]] — DeepSeekMoE。
 - [[wang2024-nas-pinn-analysis]] — NAS-PINN。
 - [[chen2021-tenas-analysis]] — TE-NAS。
-- [[chen2021-autoformer-analysis]] — AutoFormer。
-- [[fedus2021-switch-transformer-analysis]] — Switch Transformer。
-- [[dai2024-deepseek-moe-analysis]] — DeepSeekMoE。
 
-## 使用方式
+## Maintenance Rules
 
-1. 从本页或各分类索引定位主题；
-2. 优先阅读论文 `analysis` 页面建立全局认识；
-3. 需要公式、架构和训练细节时进入 `method`；
-4. 需要量化证据时进入 `results`；
-5. 设计新研究前重点阅读 `critical` 中的 Negative Knowledge 与可迁移机会；
-6. 通过页面间 `[[wikilinks]]` 沿知识链继续检索。
+1. 新论文先创建 source metadata，再完成 1+3 页面并创建/更新实体。
+2. 只使用持久化 provenance marker；禁止提交临时 `filecite` 或 `turnNfileM`。
+3. 新页面必须进入对应分区索引，并在必要时进入本页高优先级知识链。
+4. 每次 ingest/revise/verify/lint 均追加 [[log]]。
+5. 合并前运行严格 lint 和 MkDocs build；GitHub Actions 只验证与部署，不修改仓库。
