@@ -1,107 +1,112 @@
 ---
+id: paper-batzner2022-nequip-method
 title: "Batzner et al. (2022) — NequIP 方法机制"
+type: paper-analysis
+status: verified
+project: civil-engineering-llm-wiki
+tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, se3-equivariance, material-design]
+sources: [raw/papers/batzner2022-nequip-source.md]
 created: 2026-07-31
 updated: 2026-07-31
-type: paper-analysis
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design]
-sources: [raw/papers/batzner2022-nequip-source.md]
 confidence: high
+methods: [e3-equivariance, tensor-field-network, spherical-harmonics, radial-network, clebsch-gordan-tensor-product, energy-conserving-force-field]
+reproducibility: high
 ---
 
 # NequIP 方法机制
 
-## 1. 问题定义
+## 输入、输出与物理约束
 
-给定原子种类 $\{Z_i\}$ 与原子坐标 $\{\mathbf r_i\}$，模型预测系统总势能与原子力：
+NequIP 的输入是原子种类 $Z_i$ 与三维坐标 $\mathbf r_i$。模型在 cutoff 邻接图上预测每个原子的标量势能 $E_i$，再汇总为系统总势能：
 
 $$
-E_{\mathrm{pot}}=\sum_i E_{i,\mathrm{atomic}},
-\qquad
+E_{\mathrm{pot}}=\sum_i E_i.
+$$
+
+原子力由总势能对坐标的负梯度获得：
+
+$$
 \mathbf F_i=-\nabla_{\mathbf r_i}E_{\mathrm{pot}}.
 $$
 
-先预测势能再求导，使原子力天然满足能量一致性，而不是将每个力分量独立回归。
+因此，平移和旋转后的力会按几何规则变换，同时力场与一个标量势能保持一致。^[raw/papers/batzner2022-nequip-source.md]
 
-## 2. 局部原子图
+## 原子图与局部邻域
 
-以截断半径 $r_c$ 构建原子邻接图：
+每个原子是图节点；距离小于 cutoff $r_c$ 的原子对形成边。卷积仅在局部邻域内进行，因此单层计算量随原子数近似线性增长。周期体系通过邻居列表处理周期镜像。^[raw/papers/batzner2022-nequip-source.md]
 
-- 节点：原子种类和节点特征；
-- 边：相对位移 $\mathbf r_{ij}=\mathbf r_j-\mathbf r_i$；
-- 距离 $r_{ij}$ 进入径向网络；
-- 方向 $\hat{\mathbf r}_{ij}$ 进入球谐函数。
+多层消息传递会扩大最终节点表示的有效感受野：即使每层只访问 $r_c$ 邻域，经过多层后信息仍可跨越多跳邻域。该性质提高表达能力，但也是分布式扩展时的通信来源。
 
-截断邻域使单层计算随原子数近线性增长，但多层消息传递会扩大有效感受野。
+## O(3) 不可约表示
 
-## 3. O(3) 不可约表示
-
-每个节点特征由多个 O(3) 不可约表示的直和组成：
-
-$$
-V^{(l,p)}_{acm},
-$$
-
-其中：
+每个节点的隐藏特征不是普通标量向量，而是不同 O(3) 不可约表示的直和：
 
 - $l=0$：标量；
 - $l=1$：向量；
-- $l\ge 2$：高阶张量；
-- $p\in\{+1,-1\}$：反演奇偶性；
-- $m=-l,\ldots,l$：表示分量；
-- $c$：通道索引。
+- $l\ge 2$：更高阶几何张量；
+- $p\in\{+1,-1\}$：反演下的奇偶性。
 
-这种组织方式使网络内部特征在旋转、反射和坐标变换下按已知规则变化。
+同一 $l$ 下有 $2l+1$ 个表示分量。网络参数对这些表示分量共享，以保证旋转后输出严格按对应表示矩阵变换。^[raw/papers/batzner2022-nequip-source.md]
 
-## 4. 等变卷积滤波器
+## 等变卷积滤波器
 
-卷积滤波器写成径向函数和球谐函数的乘积：
+边方向滤波器由径向函数和球谐函数相乘得到：
 
 $$
 S_m^{(l)}(\mathbf r_{ij})
 =R(r_{ij})Y_m^{(l)}(\hat{\mathbf r}_{ij}).
 $$
 
-径向函数由 Bessel 距离基、平滑截断包络和 MLP 构成：
+其中：
+
+- $R(r_{ij})$ 是旋转不变的可学习径向网络；
+- $Y_m^{(l)}(\hat{\mathbf r}_{ij})$ 表示边方向；
+- 距离先经 Bessel 基和光滑多项式 envelope 编码；
+- envelope 在 cutoff 处平滑衰减，降低邻居进出截断范围时的不连续性。
+
+^[raw/papers/batzner2022-nequip-source.md]
+
+## Clebsch–Gordan 张量积
+
+输入特征与边滤波器通过 Clebsch–Gordan 系数进行等变张量积。若输入阶数为 $l_i$、滤波器阶数为 $l_f$，输出允许的阶数满足：
 
 $$
-R(r_{ij})=W_n\sigma(\cdots\sigma(W_1B(r_{ij}))).
-$$
-
-所有可学习权重位于旋转不变的径向部分，方向变化由球谐函数显式承担。
-
-## 5. Clebsch–Gordan 张量积
-
-输入特征与方向滤波器通过 Clebsch–Gordan 张量积组合：
-
-$$
-l_i\otimes l_f\rightarrow l_o,
-\qquad
 |l_i-l_f|\le l_o\le l_i+l_f.
 $$
 
-同时满足奇偶性选择规则：
+奇偶性满足：
 
 $$
-p_o=p_ip_f.
+p_o=p_i p_f.
 $$
 
-模型设置最大旋转阶 $l_{\max}$，舍弃输出阶数超过该上限的张量积路径。若只保留 $0\otimes0\rightarrow0$，网络就退化为只处理标量的不变 GNN。
+网络只保留不超过超参数 $l_{\max}$ 的输出表示，并将产生相同 $(l_o,p_o)$ 的路径拼接、线性混合。^[raw/papers/batzner2022-nequip-source.md]
 
-## 6. Interaction Block
+## Interaction block
 
-每个交互块包含：
+一个 interaction block 主要包括：
 
-1. 原子级 self-interaction；
-2. 等变卷积；
-3. 相同 $(l,p)$ 输出路径的拼接与通道混合；
-4. ResNet 式残差更新；
-5. 保持等变性的门控非线性。
+```text
+邻居张量特征
+      ↓
+等变卷积：径向权重 × 球谐 × 张量积
+      ↓
+按输出 irrep 拼接与线性混合
+      ↓
+等变 gate 非线性
+      ↓
+ResNet-style 残差更新
+```
 
-偶标量使用 SiLU，奇标量使用 tanh；高阶张量由标量门控，以避免普通逐元素激活破坏等变性。
+偶标量使用 SiLU，奇标量使用 tanh；非标量通道由门控标量调制。残差支路使用按元素种类区分的自交互权重。^[raw/papers/batzner2022-nequip-source.md]
 
-## 7. 输出与训练损失
+## Output block
 
-最终只读取 $l=0$ 标量特征，并输出每原子势能。训练使用能量和力的加权均方损失：
+最终 interaction block 的偶标量特征被两层 atom-wise self-interaction 映射为每原子单一标量能量。原子能求和后，通过自动微分计算全部力分量。
+
+## 损失函数
+
+训练目标是能量误差与力误差的加权和：
 
 $$
 \mathcal L
@@ -109,39 +114,28 @@ $$
 +\lambda_F\frac{1}{3N}
 \sum_{i=1}^{N}\sum_{\alpha=1}^{3}
 \left|-
-\frac{\partial \hat E}{\partial r_{i,\alpha}}
--F_{i,\alpha}\right|^2.
+\frac{\partial \hat E}{\partial r_{i,\alpha}}-F_{i,\alpha}\right|^2.
 $$
 
-论文建议能量与力的默认相对权重考虑原子数平方，因为能量是全局量，而力是局部多分量量。
+论文针对不同体系调整 $\lambda_E$、$\lambda_F$、cutoff、特征数和 $l_{\max}$。对固定规模体系，目标能量减去训练集均值，能量和力按训练集力分量 RMS 缩放；对水/冰混合规模体系采用按原子能量初始化的尺度与偏置。^[raw/papers/batzner2022-nequip-source.md]
 
-## 8. 计算图
+## 训练设置
 
-```text
-原子坐标/种类
-      ↓
-cutoff neighbor list
-      ↓
-scalar embedding
-      ↓
-[radial MLP × spherical harmonics]
-      ↓
-Clebsch–Gordan tensor product
-      ↓
-scalar/vector/higher-order features
-      ↓
-多层 interaction blocks
-      ↓
-每原子能量 → 总势能
-      ↓
-autodiff → 原子力
-```
+- 小分子通常使用 5 个 interaction blocks、batch size 5；
+- 周期体系通常使用 6 个 interaction blocks、batch size 1；
+- 优化器为 Adam AMSGrad；
+- 按验证集力损失执行学习率衰减；
+- 用指数移动平均权重评估验证集和最终模型；
+- 训练使用 float32 和单张 NVIDIA V100。
 
-## 9. 与后续模型的关系
+^[raw/papers/batzner2022-nequip-source.md]
 
-- [[allegro]] 保留等变张量积思想，但去除跨层 atom-centered message passing，以严格局部 pair 表示提高扩展性；
-- [[sevennet]] 保留 NequIP 类消息传递，通过逐层正向特征通信和反向梯度通信实现空间分解；
-- 对结构动力，可将局部坐标、位移、力和构件方向组织为等变特征，再与 MechConv 的矩阵边权和动力平衡残差组合。
+## 方法边界
+
+- E(3) 等变性约束坐标变换，但不等同于长程物理或材料本构正确；
+- cutoff 和层数共同决定可访问的空间范围；
+- 势能求导保证保守力，但训练和推理时需要额外梯度计算；
+- $l_{\max}$、通道数和张量积路径增加时，显存与计算成本显著上升。
 
 ## 关联页面
 
