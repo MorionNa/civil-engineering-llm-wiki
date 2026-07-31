@@ -1,14 +1,31 @@
 ---
-title: "Wang et al. (2024) KINN：以 Kolmogorov–Arnold 网络替代 MLP 的物理信息神经网络骨干"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-kinn-analysis
+title: Wang et al. (2024) KINN：以 Kolmogorov–Arnold 网络替代 MLP 的物理信息神经网络骨干
 type: paper-analysis
-tags: [physics-informed, pinn, kin, kolmogorov-arnold, spline, nonlinear-pde, solid-mechanics, forward-problem, inverse-problem, computational-mechanics]
-sources: [raw/papers/10_1016_j_cma_2024_117518_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- computational-mechanics
+- forward-problem
+- inverse-problem
+- kin
+- kolmogorov-arnold
+- nonlinear-pde
+- physics-informed
+- pinn
+- solid-mechanics
+- spline
+sources:
+- sources/papers/wang2024-kinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 reproducibility: 🟡
-code_url: []
-dataset_url: []
 ---
 
 # Wang et al. (2024) — Kolmogorov–Arnold-Informed neural network (KINN): 基于 Kolmogorov–Arnold 网络的物理信息深度学习框架
@@ -129,3 +146,22 @@ PINN 自 Raissi et al. (2019) 提出以来已成为求解非线性 PDE 的新范
 - [[jagtap2019-adaptive-activation-analysis]] — 自适应激活（MLP 框架内的激活函数改进，可对比 KAN 的可学习激活）
 - [[chen2025-at-pinn-hc-analysis]] — 硬约束 PINN（可与 KINN 结合）
 - [[wang2023-pinn-spurious-analysis]] — PINN 伪解（KAN 是否也能缓解伪解？）
+
+## 12. 可复现性 (Reproducibility)
+
+- 复现应以本页列出的原始来源、代码、数据与超参数为准。
+- 未公开实现细节应记录为复现缺口，不以模型推测补齐。
+
+## Paper Family Pages
+
+- [[wang2024-kinn-critical]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-kinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117518_extracted.txt`
+
+^[sources/papers/wang2024-kinn.md]

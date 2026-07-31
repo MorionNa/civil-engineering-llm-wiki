@@ -1,27 +1,80 @@
 ---
-title: "Meng et al. (2026) — SeisGPT：面向高保真结构响应预测的物理信息基础模型"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--meng2026-seisgpt-analysis
+title: Meng et al. (2026) — SeisGPT：面向高保真结构响应预测的物理信息基础模型
 type: paper-analysis
-tags: [physics-informed, metamodeling, deep-learning, sequence-modeling, transformer, lora, structural-dynamics, nonlinear-systems, seismic-response, finite-element, high-rise-building, real-time-simulation, gpu-computing, transfer-learning, cross-domain-generalization, dataset, ground-motion, synthetic-data, ida]
-sources: [raw/papers/meng2026-seisgpt.pdf, raw/papers/meng2026-seisgpt-extracted.md]
-methods: [simplified-dynamic-response, mass-stiffness-graph-encoder, spectral-duhamel-green-mixer, modal-green-function-propagation, rational-spectral-correction, sliding-window, lora, sparse-sensor-data-assimilation]
-results: [unseen-building-generalization, zero-shot-cross-system-transfer, sparse-sensor-reconstruction, ida-limit-state-agreement, 40000x-speedup]
-failure_modes: [floor-defined-domain, synthetic-data-bias, no-post-instability-collapse, coarse-dt-degradation, no-calibrated-uncertainty]
-datasets: [synthetic-code-compliant-buildings, real-building-fe-models, shake-table-test, nga-west2]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+- method/transformer
+keywords:
+- cross-domain-generalization
+- dataset
+- deep-learning
+- finite-element
+- gpu-computing
+- ground-motion
+- high-rise-building
+- ida
+- lora
+- metamodeling
+- nonlinear-systems
+- physics-informed
+- real-time-simulation
+- seismic-response
+- sequence-modeling
+- structural-dynamics
+- synthetic-data
+- transfer-learning
+- transformer
+sources:
+- sources/papers/meng2026-seisgpt.md
+created: '2026-07-16'
+updated: '2026-07-31'
+confidence: high
+methods:
+- simplified-dynamic-response
+- mass-stiffness-graph-encoder
+- spectral-duhamel-green-mixer
+- modal-green-function-propagation
+- rational-spectral-correction
+- sliding-window
+- lora
+- sparse-sensor-data-assimilation
+results:
+- unseen-building-generalization
+- zero-shot-cross-system-transfer
+- sparse-sensor-reconstruction
+- ida-limit-state-agreement
+- 40000x-speedup
+failure_modes:
+- floor-defined-domain
+- synthetic-data-bias
+- no-post-instability-collapse
+- coarse-dt-degradation
+- no-calibrated-uncertainty
+datasets:
+- synthetic-code-compliant-buildings
+- real-building-fe-models
+- shake-table-test
+- nga-west2
 reproducibility: high
 code_url:
-  - https://doi.org/10.6084/m9.figshare.29957834
+- https://doi.org/10.6084/m9.figshare.29957834
 dataset_url:
-  - https://doi.org/10.6084/m9.figshare.29957834
-confidence: high
+- https://doi.org/10.6084/m9.figshare.29957834
 ---
 
 # A physics-informed foundation model for rapid high-fidelity structural response prediction
 
-> **作者：** Shiqiao Meng, Ying Zhou, Bingxu Liao, Mushi Chang, Tianshu Zhang, Abouzar Jafari, Abderrahim Djerrad  
-> **期刊：** *Nature Communications*，Article in Press，accepted 2026-07-03  
-> **DOI：** 10.1038/s41467-026-75508-5  
+> **作者：** Shiqiao Meng, Ying Zhou, Bingxu Liao, Mushi Chang, Tianshu Zhang, Abouzar Jafari, Abderrahim Djerrad
+> **期刊：** *Nature Communications*，Article in Press，accepted 2026-07-03
+> **DOI：** 10.1038/s41467-026-75508-5
 > **一句话定位：** SeisGPT 用楼层质量—刚度图表示和可微谱动力传播替代通用注意力，在 270,694 个建筑模型、约 205 万次非线性时程分析、超过 100 亿响应时间步上预训练，实现跨建筑、跨结构体系的快速响应预测与稀疏传感器全楼重建。
 
 ## 1. 工程背景 (Engineering Background)
@@ -160,3 +213,13 @@ SeisGPT 包含三条部署路线：
 - `[[zhang2020-phylstm-analysis]]` — 物理约束 LSTM 先导路线
 - `[[wu2025-cm-pinn-analysis]]` — 本构显式约束路线
 - `[[seisgpt-vs-phylstm-cm-pinns]]` — 三类结构响应学习范式对比
+
+## Evidence By Source
+
+### `sources/papers/meng2026-seisgpt.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/meng2026-seisgpt.pdf`, `raw/papers/meng2026-seisgpt-extracted.md`
+
+^[sources/papers/meng2026-seisgpt.md]

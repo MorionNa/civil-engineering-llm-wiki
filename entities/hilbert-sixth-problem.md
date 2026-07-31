@@ -1,11 +1,29 @@
 ---
-title: "希尔伯特第六问题 (Hilbert's Sixth Problem)"
-created: 2026-07-28
-updated: 2026-07-28
+id: entities--hilbert-sixth-problem
+title: 希尔伯特第六问题 (Hilbert's Sixth Problem)
 type: entity
-tags: [hilbert-sixth-problem, kinetic-theory, boltzmann-equation, hard-sphere-dynamics, boltzmann-grad-limit, scientific-discovery]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- boltzmann-equation
+- boltzmann-grad-limit
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- hard-sphere-dynamics
+- hilbert-sixth-problem
+- kinetic-theory
+- method/pinn
+- scientific-discovery
 sources:
-  - raw/transcripts/bv1ph3c6teqt/transcript.md
+- raw/transcripts/bv1ph3c6teqt/transcript.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -36,3 +54,12 @@ Lanford 的经典定理只覆盖平均碰撞时间的一小部分。Yu Deng、Za
 - [[boltzmann-equation]] — 连接硬球动力学与流体方程的介观模型
 - [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] — 40 分钟视频的结构化学习笔记
 - [[pinn]] — 以既定 PDE 为约束的计算方法，与从微观规律推导 PDE 的问题层级不同
+
+## Evidence By Source
+
+### `raw/transcripts/bv1ph3c6teqt/transcript.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/transcripts/bv1ph3c6teqt/transcript.md]

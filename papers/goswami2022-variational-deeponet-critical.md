@@ -1,14 +1,41 @@
 ---
-title: "Goswami et al. (2022) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--goswami2022-variational-deeponet-critical
+title: Goswami et al. (2022) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [deeponet, variational-formulation, phase-field-fracture, hybrid-training, energy-minimization, physics-informed, future-work, limitation]
-sources: [raw/papers/10_1016_j_cma_2022_114587_extracted.txt]
-methods: [v-deeponet, variational-energy-loss, hybrid-training-strategy]
-results: [crack-path-prediction, interpolation, extrapolation]
-failure_modes: [crack-topology-sensitivity, training-data-dependency, extrapolation-risk, length-scale-sensitivity]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- deeponet
+- energy-minimization
+- future-work
+- hybrid-training
+- limitation
+- phase-field-fracture
+- physics-informed
+- variational-formulation
+sources:
+- sources/papers/goswami2022-variational-deeponet.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- v-deeponet
+- variational-energy-loss
+- hybrid-training-strategy
+results:
+- crack-path-prediction
+- interpolation
+- extrapolation
+failure_modes:
+- crack-topology-sensitivity
+- training-data-dependency
+- extrapolation-risk
+- length-scale-sensitivity
 ---
 
 # Goswami et al. (2022) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
@@ -99,3 +126,13 @@ confidence: high
 - [[deeponet]] — DeepONet 神经算子基础
 - [[pinn]] — PINN 物理信息学习（变分 V-DeepONet 是另一种物理约束范式）
 - [[wang2023-pinn-spurious-critical]] — PINN 伪解问题（能量最小化天然避免了一些伪解模式）
+
+## Evidence By Source
+
+### `sources/papers/goswami2022-variational-deeponet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_114587_extracted.txt`
+
+^[sources/papers/goswami2022-variational-deeponet.md]

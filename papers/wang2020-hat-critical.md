@@ -1,12 +1,33 @@
 ---
-title: "HAT 贡献·局限·可迁移·研究机会"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--wang2020-hat-critical
+title: HAT 贡献·局限·可迁移·研究机会
 type: paper-analysis
-tags: [hardware-aware-nas, latency-prediction, evolutionary-search, weight-sharing-supernet, hardware-specialization, edge-inference, neural-architecture-search, transformer]
-sources: [raw/papers/wang2020_hat.md]
-failure_modes: [latency-predictor-training-data-dependency, supertransformer-proxy-ranking-approximation, fixed-design-space-coverage, machine-translation-only-validation]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- edge-inference
+- evolutionary-search
+- hardware-aware-nas
+- hardware-specialization
+- latency-prediction
+- neural-architecture-search
+- transformer
+- weight-sharing-supernet
+sources:
+- sources/papers/wang2020-hat.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- latency-predictor-training-data-dependency
+- supertransformer-proxy-ranking-approximation
+- fixed-design-space-coverage
+- machine-translation-only-validation
 ---
 
 # HAT 贡献·局限·可迁移·研究机会
@@ -134,3 +155,13 @@ Evolved Transformer 搜索成本 250 GPU 年（So et al., 2019），无法为每
 - [[wang2020-hat-results]] — 实验数据
 - [[chen2021-tenas-critical]] — TE-NAS 的 training-free NAS 范式对比（研究机会 5 的出发点）
 - [[jiang2024-mixtral-of-experts-critical]] — Mixtral MoE 也是效率优化路线，但方法是稀疏激活而非架构搜索
+
+## Evidence By Source
+
+### `sources/papers/wang2020-hat.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2020_hat.md`
+
+^[sources/papers/wang2020-hat.md]

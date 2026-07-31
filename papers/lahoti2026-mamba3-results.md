@@ -1,3 +1,19 @@
+---
+id: papers--lahoti2026-mamba3-results
+title: Mamba-3 结果
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/transformer
+sources:
+- sources/papers/lahoti2026-mamba3.md
+created: '2026-07-31'
+updated: '2026-07-31'
+confidence: medium
+---
+
 # Mamba-3 结果
 
 ## Language Modeling
@@ -23,3 +39,18 @@ MIMO 通过提高 arithmetic intensity，在增加计算量的同时保持接近
 - 主要验证集中于语言模型；
 - 固定状态模型仍存在部分检索能力不足；
 - 科学计算任务尚未验证。
+
+## Evidence By Source
+
+### `sources/papers/lahoti2026-mamba3.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lahoti2026-mamba3-source.md`
+
+^[sources/papers/lahoti2026-mamba3.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

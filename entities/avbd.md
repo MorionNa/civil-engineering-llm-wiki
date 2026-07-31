@@ -1,10 +1,24 @@
 ---
-title: "AVBD"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--avbd
+title: AVBD
 type: entity
-tags: [physics-simulation, rigid-body-dynamics, augmented-lagrangian, contact-mechanics]
-sources: [raw/papers/giles2025-avbd.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computational-mechanics
+- entity/model
+keywords:
+- augmented-lagrangian
+- contact-mechanics
+- domain/computational-mechanics
+- entity/model
+- physics-simulation
+- rigid-body-dynamics
+sources:
+- raw/papers/giles2025-avbd.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # AVBD (Augmented Vertex Block Descent)
@@ -19,3 +33,16 @@ AVBD 将 **Augmented Lagrangian** 方法引入 Vertex Block Descent (VBD) 框架
 
 ## 关联页面
 - [[giles2025-avbd-analysis]] — 论文完整分析
+
+## Evidence By Source
+
+### `raw/papers/giles2025-avbd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/giles2025-avbd.md]
+
+## Related Indexes
+
+- [[entities/index]]

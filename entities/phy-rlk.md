@@ -1,13 +1,37 @@
 ---
-title: "Phy-RLK — Physical Residual LSTM-KAN"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--phy-rlk
+title: Phy-RLK — Physical Residual LSTM-KAN
 type: entity
-tags: [physics-informed, neural-network, lstm, sequence-modeling, structural-dynamics, nonlinear-systems, seismic-response, equation-of-motion, restoring-force, ground-motion]
-sources: [raw/papers/10_1016_j_cma_2025_118422.xml]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- equation-of-motion
+- ground-motion
+- lstm
+- method/pinn
+- neural-network
+- nonlinear-systems
+- physics-informed
+- restoring-force
+- seismic-response
+- sequence-modeling
+- structural-dynamics
+sources:
+- raw/papers/10_1016_j_cma_2025_118422.xml
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 contested: false
-contradictions: []
 ---
 
 # Phy-RLK
@@ -92,3 +116,12 @@ Phy-RLK 处理的是**材料本构/结构动力非线性**：训练标签来自�
 - [[guo2026-phy-rlk-results]] — 两个 RC 框架结果
 - [[guo2026-phy-rlk-critical]] — 证据与泛化边界
 - [[kin]] — KAN 用于 physics-informed 学习的另一条路线
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2025_118422.xml`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2025_118422.xml]

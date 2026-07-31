@@ -1,14 +1,47 @@
 ---
-title: "Lepikhin et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--lepikhin2021-gshard-critical
+title: Lepikhin et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [mixture-of-experts, conditional-computation, automatic-sharding, spmd, model-parallelism, distributed-training, sublinear-scaling, limitation, future-work]
-sources: [raw/papers/lepikhin2021_gshard.md]
-methods: [top-2-gating, expert-capacity, auxiliary-loss, spmd-partitioning, alltoall-resharding, einsum-partitioning]
-results: [sublinear-scaling, superlinear-quality, sample-efficiency, constant-memory]
-failure_modes: [capacity-bottleneck, diminishing-returns, numerical-stability-bfloat16, gating-sequential-bottleneck, expert-load-imbalance]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/graph-neural-network
+- method/transformer
+keywords:
+- automatic-sharding
+- conditional-computation
+- distributed-training
+- future-work
+- limitation
+- mixture-of-experts
+- model-parallelism
+- spmd
+- sublinear-scaling
+sources:
+- sources/papers/lepikhin2021-gshard.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+methods:
+- top-2-gating
+- expert-capacity
+- auxiliary-loss
+- spmd-partitioning
+- alltoall-resharding
+- einsum-partitioning
+results:
+- sublinear-scaling
+- superlinear-quality
+- sample-efficiency
+- constant-memory
+failure_modes:
+- capacity-bottleneck
+- diminishing-returns
+- numerical-stability-bfloat16
+- gating-sequential-bottleneck
+- expert-load-imbalance
 ---
 
 # Lepikhin et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
@@ -117,3 +150,13 @@ confidence: high
 - [[lepikhin2021-gshard-analysis]] — 论文概述
 - [[lepikhin2021-gshard-method]] — 方法机制展开
 - [[lepikhin2021-gshard-results]] — 结果证据展开
+
+## Evidence By Source
+
+### `sources/papers/lepikhin2021-gshard.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lepikhin2021_gshard.md`
+
+^[sources/papers/lepikhin2021-gshard.md]

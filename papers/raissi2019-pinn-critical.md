@@ -1,9 +1,25 @@
 ---
-title: "Raissi et al. (2019) PINN — 贡献·Negative·可迁移·研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--raissi2019-pinn-critical
+title: Raissi et al. (2019) PINN — 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, nonlinear-pde, future-work, limitation, automatic-differentiation]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- automatic-differentiation
+- future-work
+- limitation
+- nonlinear-pde
+- physics-informed
+- pinn
+sources:
+- sources/papers/raissi2019-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -22,7 +38,7 @@ confidence: high
 1. **AD 是 PINN 处理非线性的"引擎"** — 将 Jacobian 组装替换为计算图遍历
 2. 非线性强度不影响 PINN 的算法复杂度 — Burgers 和 Allen-Cahn 收敛速度相近
 3. 软约束的物理惩罚 → 可能被违背（vs 有限元硬约束）
-4. 配点策略至关重要 — 均匀随机 → 自适应采样是[[wang2022-adaptive-sampling|后续改进方向]]
+4. 配点策略至关重要 — 均匀随机 → 自适应采样是[[adaptive-sampling-pinn|后续改进方向]]
 5. L-BFGS 第二阶段对非线性 PDE 尤为关键 — Adam 单独不足以收敛
 
 ## 9. ⚡ 关于非线性处理的局限（6 项）
@@ -46,13 +62,13 @@ confidence: high
 | 知识 | 迁移到 | 做法 |
 |------|--------|------|
 | AD 处理非线性 | 所有 ML-for-PDE 方法 | 非线性项 = 计算图节点，无需特殊处理 |
-| 两阶段优化 | [[jagtap2019-adaptive-activation-method\|自适应激活]] | Adam 探索 + L-BFGS 精调 |
-| 连续→离散时间 | [[chen2025-at-pinn-hc-method\|AT-PINN-HC]] | 时间步进 + PINN 每步求解 |
-| 软约束的代价 | [[goswami2022-variational-deeponet-method\|V-DeepONet]] | 变分能量约束 → 更严格的物理满足 |
+| 两阶段优化 | [[jagtap2019-adaptive-activation-method|自适应激活]] | Adam 探索 + L-BFGS 精调 |
+| 连续→离散时间 | [[chen2025-at-pinn-hc-method|AT-PINN-HC]] | 时间步进 + PINN 每步求解 |
+| 软约束的代价 | [[goswami2022-variational-deeponet-method|V-DeepONet]] | 变分能量约束 → 更严格的物理满足 |
 
 ## 11. 研究机会（7 项）
 
-| # | 方向 | 难度 | 
+| # | 方向 | 难度 |
 |---|------|:---:|
 | 1 | 强非线性 PDE 的自适应配点策略 | 🟡 |
 | 2 | 硬约束 PINN (精确满足 BC/IC) | 🟡 |
@@ -67,3 +83,13 @@ confidence: high
 - [[raissi2019-pinn-analysis|← 总览]]
 - [[raissi2019-pinn-method|← 方法]]
 - [[raissi2019-pinn-results|← 结果]]
+
+## Evidence By Source
+
+### `sources/papers/raissi2019-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2018_10_045.xml`
+
+^[sources/papers/raissi2019-pinn.md]

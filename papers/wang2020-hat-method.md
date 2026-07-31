@@ -1,10 +1,25 @@
 ---
-title: "HAT 方法机制：SuperTransformer + 延迟预测器 + 进化搜索"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--wang2020-hat-method
+title: HAT 方法机制：SuperTransformer + 延迟预测器 + 进化搜索
 type: paper-analysis
-tags: [hardware-aware-nas, latency-prediction, evolutionary-search, weight-sharing-supernet, heterogeneous-transformer, encoder-decoder-attention, latency-constraint]
-sources: [raw/papers/wang2020_hat.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- encoder-decoder-attention
+- evolutionary-search
+- hardware-aware-nas
+- heterogeneous-transformer
+- latency-constraint
+- latency-prediction
+- weight-sharing-supernet
+sources:
+- sources/papers/wang2020-hat.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -90,7 +105,7 @@ SuperTransformer = 搜索空间中最大的模型（embed dim 640, hidden dim 30
 弹性 Embedding Dim 权重共享:
   Max Embed Dim = 640
   SubTransformer (embed=512) ─→ 取前 512 维的 embedding + FC 权重
-  
+
 弹性 FFN Hidden Dim 权重共享:
   Max Hidden Dim = 3072
   SubTransformer (hidden=1024) ─→ 取前 1024 维的 FC 权重
@@ -150,7 +165,7 @@ SuperTransformer = 搜索空间中最大的模型（embed dim 640, hidden dim 30
 
 模型: 3 层 MLP (400 hidden dim, ReLU)
   特征归一化 → FC(10→400)→ReLU → FC(400→400)→ReLU → FC(400→1)
-  
+
 精度: RMSE ~0.1s（图 6，预测值与实测值接近 y=x）
 ```
 
@@ -172,7 +187,7 @@ SuperTransformer = 搜索空间中最大的模型（embed dim 640, hidden dim 30
   ├─→ SuperTransformer ← 适应度评估：validation loss
   │
   ├─→ 选择: Top 25 作为 parents
-  ├─→ 变异: 25 → 50 (0.3 概率变异) 
+  ├─→ 变异: 25 → 50 (0.3 概率变异)
   ├─→ 交叉: 25 → 50 (crossover)
   │
   └─→ 新一代 125 子代 → 下一轮
@@ -208,3 +223,13 @@ SuperTransformer = 搜索空间中最大的模型（embed dim 640, hidden dim 30
 - [[wang2020-hat-results]] — 实验结果
 - [[wang2020-hat-critical]] — 贡献·局限·可迁移·机会
 - [[chen2021-tenas-method]] — TE-NAS 的 training-free 评估 vs HAT 的权重共享评估
+
+## Evidence By Source
+
+### `sources/papers/wang2020-hat.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2020_hat.md`
+
+^[sources/papers/wang2020-hat.md]

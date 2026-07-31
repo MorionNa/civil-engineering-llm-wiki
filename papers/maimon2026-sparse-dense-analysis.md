@@ -1,20 +1,55 @@
 ---
-title: "Maimon et al. (2026) — Sparse-to-Dense Coding Transformation Between Hippocampal CA3 and CA1 论文分析"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--maimon2026-sparse-dense-analysis
+title: Maimon et al. (2026) — Sparse-to-Dense Coding Transformation Between Hippocampal CA3 and CA1 论文分析
 type: paper-analysis
-tags: [hippocampal-formation, ca3, ca1, sparse-coding, dense-coding, neural-coding, population-coding, place-cells, tetrode-recording, dimensionality-expansion]
-methods: [tetrode-recording, wireless-neural-logger, place-field-detection, maximum-likelihood-decoding, node-perturbation-learning, weight-perturbation-learning, spike-sorting, firing-rate-map]
-results: [ca3-ultrasparse-single-field, ca1-dense-multifield, field-size-invariant, retrospective-coding-over-100m, sparse-to-dense-fast-learning, landmark-perturbation-ca1-specific, compression-factor-four]
-failure_modes: [small-environments-mask-difference, retrospective-weak-in-ca3, prospective-coding-weak, no-explicit-memory-task]
-datasets: []
-sources: [raw/papers/10_1038_s41586-026-10537-0.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/neuroscience
+- evidence/paper
+keywords:
+- ca1
+- ca3
+- dense-coding
+- dimensionality-expansion
+- hippocampal-formation
+- neural-coding
+- place-cells
+- population-coding
+- sparse-coding
+- tetrode-recording
+sources:
+- sources/papers/maimon2026-sparse-dense.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: high
+methods:
+- tetrode-recording
+- wireless-neural-logger
+- place-field-detection
+- maximum-likelihood-decoding
+- node-perturbation-learning
+- weight-perturbation-learning
+- spike-sorting
+- firing-rate-map
+results:
+- ca3-ultrasparse-single-field
+- ca1-dense-multifield
+- field-size-invariant
+- retrospective-coding-over-100m
+- sparse-to-dense-fast-learning
+- landmark-perturbation-ca1-specific
+- compression-factor-four
+failure_modes:
+- small-environments-mask-difference
+- retrospective-weak-in-ca3
+- prospective-coding-weak
+- no-explicit-memory-task
 reproducibility: high
 code_url:
-  -
+- null
 dataset_url:
-  -
-confidence: high
+- null
 ---
 
 # Maimon et al. (2026) — Sparse-to-Dense Coding Transformation Between Hippocampal CA3 and CA1
@@ -161,3 +196,13 @@ CA3 位于 CA1 的上游，向 CA1 进行大量投射。但这两个亚区的解
 - [[place-cells]] — 位置细胞
 - [[hippocampal-formation]] — 海马结构
 - [[dentate-gyrus]] — 齿状回
+
+## Evidence By Source
+
+### `sources/papers/maimon2026-sparse-dense.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1038_s41586-026-10537-0.pdf`
+
+^[sources/papers/maimon2026-sparse-dense.md]

@@ -1,10 +1,22 @@
 ---
-title: "TE-NAS 方法机制：NTK 条件数 + 线性区域 + Pruning 搜索"
-created: 2026-06-12
-updated: 2026-06-12
+id: papers--chen2021-tenas-method
+title: TE-NAS 方法机制：NTK 条件数 + 线性区域 + Pruning 搜索
 type: paper-analysis
-tags: [training-free-nas, ntk, neural-tangent-kernel, linear-regions, pruning-based-nas]
-sources: [raw/papers/TE-NAS_chen2021_ICLR.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- linear-regions
+- neural-tangent-kernel
+- ntk
+- pruning-based-nas
+- training-free-nas
+sources:
+- sources/papers/chen2021-tenas.md
+created: '2026-06-12'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -115,3 +127,13 @@ Score(arch_i) = Rank_κN(arch_i) + Rank_ˆRN(arch_i)
 - [[chen2021-tenas-analysis]] — 全维度总览
 - [[chen2021-tenas-results]] — 实验结果
 - [[chen2021-tenas-critical]] — 贡献·局限·可迁移·机会
+
+## Evidence By Source
+
+### `sources/papers/chen2021-tenas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/TE-NAS_chen2021_ICLR.pdf`
+
+^[sources/papers/chen2021-tenas.md]

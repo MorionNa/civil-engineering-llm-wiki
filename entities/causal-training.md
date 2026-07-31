@@ -1,10 +1,29 @@
 ---
-title: "Causal Training — 因果训练 (PINN 时域训练范式)"
-created: 2026-06-27
-updated: 2026-06-28
+id: entities--causal-training
+title: Causal Training — 因果训练 (PINN 时域训练范式)
 type: entity
-tags: [physics-informed, pinn, time-marching, deep-learning, ai4s]
-sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt, raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- domain/ai4s
+- entity/model
+- method/neural-operator
+- method/pinn
+- physics-informed
+- pinn
+- time-marching
+sources:
+- raw/papers/10_1016_j_cma_2024_116813_extracted.txt
+- raw/papers/10_1016_j_jcp_2026_115071_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -71,3 +90,12 @@ $$w_i = \exp\left(-\epsilon \sum_{k=1}^{i-1} \mathcal{L}_k\right), \quad \mathca
 - [[wang2023-pinn-spurious-analysis]] — 同作者 (2023) 伪时间步进
 - [[li2025-movingload-pinn-analysis]] — 因果训练在结构动力学中的工程应用
 - [[pinn]] — PINN 实体
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2024_116813_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2024_116813_extracted.txt]

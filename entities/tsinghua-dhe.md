@@ -1,10 +1,21 @@
 ---
-title: "清华大学水利系 (Tsinghua DHE)"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--tsinghua-dhe
+title: 清华大学水利系 (Tsinghua DHE)
 type: entity
-tags: [organization, hydrology, large-language-model, academic]
-sources: [notes/briefings/glm-hydropower-2026.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+keywords:
+- academic
+- entity/model
+- hydrology
+- large-language-model
+- organization
+sources:
+- notes/briefings/glm-hydropower-2026.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -33,3 +44,12 @@ confidence: high
 - [[hydroglm]] — HydroGLM 行业大模型
 - [[notes/briefings/glm-hydropower-2026]] — 项目完整汇报笔记
 - [[zhipu-ai]] — 智谱AI（清华孵化）
+
+## Evidence By Source
+
+### `notes/briefings/glm-hydropower-2026.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[notes/briefings/glm-hydropower-2026.md]

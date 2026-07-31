@@ -1,18 +1,63 @@
 ---
-title: "Chitty-Venkata et al. (2022) — NAS for Transformers Survey: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--chittyvenkata2022-nas-transformers-survey
+title: 'Chitty-Venkata et al. (2022) — NAS for Transformers Survey: 论文分析'
 type: paper-analysis
-tags: [neural-architecture-search, hardware-aware-nas, training-free-nas, one-shot-nas, weight-sharing-nas, evolutionary-search, review, comparison, transformer]
-sources: [raw/papers/nas_transformers_survey2022.pdf]
-methods: [survey, taxonomy, design-space, hardware-aware-search, one-shot-nas, evolutionary-nas, reinforcement-learning-nas, training-free-nas, compression-aware-nas]
-results: [nas-bert, hat, autoformer, bossnas, vit-nas, hardware-efficiency, energy-efficiency]
-failure_modes: [search-cost, proxy-accuracy-gap, hardware-generalization, benchmark-limitation]
-datasets: [nas-bench-201, nas-bench-nlp, wmt, imagenet, glu-e, squad]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/reinforcement-learning
+- method/transformer
+keywords:
+- comparison
+- evolutionary-search
+- hardware-aware-nas
+- neural-architecture-search
+- one-shot-nas
+- review
+- training-free-nas
+- transformer
+- weight-sharing-nas
+sources:
+- sources/papers/chittyvenkata2022-nas-transformers-survey.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
+evidence_scope: abstract-only
+methods:
+- survey
+- taxonomy
+- design-space
+- hardware-aware-search
+- one-shot-nas
+- evolutionary-nas
+- reinforcement-learning-nas
+- training-free-nas
+- compression-aware-nas
+results:
+- nas-bert
+- hat
+- autoformer
+- bossnas
+- vit-nas
+- hardware-efficiency
+- energy-efficiency
+failure_modes:
+- search-cost
+- proxy-accuracy-gap
+- hardware-generalization
+- benchmark-limitation
+datasets:
+- nas-bench-201
+- nas-bench-nlp
+- wmt
+- imagenet
+- glu-e
+- squad
 reproducibility: medium
 code_url:
-  - https://github.com/Chitty-Venkata/NAS-Transformers-Survey （未确认）
-confidence: medium
+- https://github.com/Chitty-Venkata/NAS-Transformers-Survey （未确认）
 ---
 
 # Neural Architecture Search for Transformers: A Survey
@@ -90,3 +135,13 @@ NAS 方法已经在 CNN 架构搜索上取得巨大成功（NASNet、DARTS、TE-
 - [[chen2021-autoformer-analysis]] — AutoFormer (One-shot NAS for ViT)
 - [[xu2021-nas-bert-analysis]] — NAS-BERT (任务无关 BERT 压缩 NAS)
 - [[chen2021-tenas-analysis]] — TE-NAS (Training-free NAS，可扩展至 Transformer)
+
+## Evidence By Source
+
+### `sources/papers/chittyvenkata2022-nas-transformers-survey.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/nas_transformers_survey2022.pdf`
+
+^[sources/papers/chittyvenkata2022-nas-transformers-survey.md]

@@ -1,16 +1,38 @@
 ---
 id: paper-park2024-sevennet-parallel-gnn-ip-results
-title: "Park et al. (2024) — SevenNet 结果证据"
+title: Park et al. (2024) — SevenNet 结果证据
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, distributed-training, gpu-computing, material-design]
-sources: [raw/papers/park2024-sevennet-parallel-gnn-ip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+keywords:
+- deep-learning
+- distributed-training
+- gpu-computing
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+sources:
+- sources/papers/park2024-sevennet-parallel-gnn-ip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-results: [parallel-correctness, weak-scaling, gpu-utilization, sevennet-zero, amorphous-material-md]
-datasets: [materials-project, m3gnet-dataset, amorphous-silica, amorphous-silicon-nitride]
+results:
+- parallel-correctness
+- weak-scaling
+- gpu-utilization
+- sevennet-zero
+- amorphous-material-md
+datasets:
+- materials-project
+- m3gnet-dataset
+- amorphous-silica
+- amorphous-silicon-nitride
 reproducibility: high
 ---
 
@@ -122,3 +144,13 @@ SevenNet-0 使用 Materials Project/M3GNet 数据集训练，覆盖 89 种元素
 - [[sevennet]]
 - [[nequip]]
 - [[allegro]]
+
+## Evidence By Source
+
+### `sources/papers/park2024-sevennet-parallel-gnn-ip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/park2024-sevennet-parallel-gnn-ip-source.md`
+
+^[sources/papers/park2024-sevennet-parallel-gnn-ip.md]

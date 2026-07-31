@@ -1,10 +1,27 @@
 ---
-title: "Wang et al. (2024) KINN — 贡献·Negative·可迁移·研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-kinn-critical
+title: Wang et al. (2024) KINN — 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, kin, kolmogorov-arnold, limitation, future-work, solid-mechanics]
-sources: [raw/papers/10_1016_j_cma_2024_117518_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- future-work
+- kin
+- kolmogorov-arnold
+- limitation
+- physics-informed
+- pinn
+- solid-mechanics
+sources:
+- sources/papers/wang2024-kinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -57,9 +74,9 @@ confidence: high
 
 | 知识 | 迁移到 | 做法 |
 |------|--------|------|
-| KAN 替代 MLP 的 PINN | [[raissi2019-pinn-method\|经典 PINN]] | 定义域规则 → 直接替换 MLP 为 KAN |
-| 能量形式 × KAN | [[goswami2022-variational-deeponet-method\|V-DeepONet]] | DeepONet 的 Trunk/Branch 网络可用 KAN |
-| 样条局部性 → 奇异性 | [[li2025-movingload-pinn-method\|移动荷载 PINN]] | 集中力 → 奇异性 → KINN 可能优于 MLP-PINN |
+| KAN 替代 MLP 的 PINN | [[raissi2019-pinn-method|经典 PINN]] | 定义域规则 → 直接替换 MLP 为 KAN |
+| 能量形式 × KAN | [[goswami2022-variational-deeponet-method|V-DeepONet]] | DeepONet 的 Trunk/Branch 网络可用 KAN |
+| 样条局部性 → 奇异性 | [[li2025-movingload-pinn-method|移动荷载 PINN]] | 集中力 → 奇异性 → KINN 可能优于 MLP-PINN |
 | 多分辨率能力 | 多尺度 PDE | 无需 Fourier 特征嵌入即可捕捉高频 |
 | B-样条 AD 稳定性 | 任何高阶 PDE | KAN + AD 的组合天然适合二阶以上 PDE |
 
@@ -98,3 +115,13 @@ confidence: high
 - [[wang2024-kinn-analysis|← 总览]]
 - [[wang2024-kinn-method|← 方法]]
 - [[wang2024-kinn-results|← 结果]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-kinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117518_extracted.txt`
+
+^[sources/papers/wang2024-kinn.md]

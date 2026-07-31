@@ -1,10 +1,28 @@
 ---
-title: "Separable Physics-Informed DeepONet (Sep-PI-DeepONet)"
-created: 2026-07-31
-updated: 2026-07-31
+id: entities--separable-pi-deeponet
+title: Separable Physics-Informed DeepONet (Sep-PI-DeepONet)
 type: entity
-tags: [physics-informed, neural-operator, deeponet, operator-learning, scientific-machine-learning]
-sources: [raw/papers/mandl2025-separable-pi-deeponet-source.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/neural-operator
+- method/pinn
+keywords:
+- deeponet
+- domain/ai4s
+- entity/model
+- method/neural-operator
+- method/pinn
+- neural-operator
+- operator-learning
+- physics-informed
+- scientific-machine-learning
+sources:
+- raw/papers/mandl2025-separable-pi-deeponet-source.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -43,3 +61,12 @@ $$\sum_r \prod_q t_q(x_q)$$
 - [[mandl2025-separable-pi-deeponet-analysis]]
 - [[kolmogorov-n-width-piml]]
 - [[rathore2024-pinn-loss-landscape-analysis]]
+
+## Evidence By Source
+
+### `raw/papers/mandl2025-separable-pi-deeponet-source.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/mandl2025-separable-pi-deeponet-source.md]

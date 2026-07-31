@@ -1,10 +1,28 @@
 ---
-title: "EZNAS"
-created: 2026-06-15
-updated: 2026-06-15
+id: entities--eznas
+title: EZNAS
 type: entity
-tags: [training-free-nas, genetic-programming, zero-cost-proxy, nas-method, evolutionary-search]
-sources: [raw/papers/eznas_akhauri2022.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- domain/llm
+- entity/dataset
+- evolutionary-search
+- genetic-programming
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- training-free-nas
+- zero-cost-proxy
+sources:
+- raw/papers/eznas_akhauri2022.pdf
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -96,3 +114,12 @@ Serianni & Kalita (2023) 将训练-free NAS 拓展到 RNN 和 Transformer，发�
 - [[nasbench201]] — NAS-Bench-201 基准数据集
 - [[te-nas]] — TE-NAS 实体（手工设计的零成本代理）
 - [[training-free-nas-transformers]] — 训练-free NAS 到 Transformer 的拓展（可通过 EZNAS 框架进一步自动化）
+
+## Evidence By Source
+
+### `raw/papers/eznas_akhauri2022.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/eznas_akhauri2022.pdf]

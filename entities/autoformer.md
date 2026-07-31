@@ -1,10 +1,26 @@
 ---
-title: "AutoFormer"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--autoformer
+title: AutoFormer
 type: entity
-tags: [neural-architecture-search, vision-transformer, weight-sharing-nas, one-shot-nas]
-sources: [raw/papers/chen2021_autoformer.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- entity/model
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- one-shot-nas
+- vision-transformer
+- weight-sharing-nas
+sources:
+- raw/papers/chen2021_autoformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # AutoFormer
@@ -32,3 +48,16 @@ AutoFormer 是首个专为 Vision Transformer (ViT) 设计的神经架构搜索�
 
 ## 关联页面
 - [[chen2021-autoformer-analysis]] — 完整论文分析
+
+## Evidence By Source
+
+### `raw/papers/chen2021_autoformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/chen2021_autoformer.md]
+
+## Related Indexes
+
+- [[entities/index]]

@@ -1,10 +1,25 @@
 ---
-title: "Linka et al. (2022) — Bayesian PINNs: 贡献/知识/Negative/可迁移/机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--linka2022-bayesian-pinn-critical
+title: 'Linka et al. (2022) — Bayesian PINNs: 贡献/知识/Negative/可迁移/机会'
 type: paper-analysis
-tags: [physics-informed, pinn, bayesian-inference, uncertainty-quantification, hamiltonian-monte-carlo, limitation, future-work]
-sources: [raw/papers/10_1016_j_cma_2022_115346_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- bayesian-inference
+- future-work
+- hamiltonian-monte-carlo
+- limitation
+- physics-informed
+- pinn
+- uncertainty-quantification
+sources:
+- sources/papers/linka2022-bayesian-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -37,7 +52,7 @@ confidence: high
 
 | # | 知识点 | 详细 |
 |---|--------|------|
-| 1 | **物理作为似然** | $P(Θ\|data, physics) ∝ P(data\|Θ) · P(physics\|Θ) · P(Θ)$ — 物理方程提供独立的信息源 |
+| 1 | **物理作为似然** | $P(Θ|data, physics) ∝ P(data|Θ) · P(physics|Θ) · P(Θ)$ — 物理方程提供独立的信息源 |
 | 2 | **BPINN = PINN ∩ BNN** | 取两者的优点（物理一致性 + 不确定性量化），但也继承了两者的缺点（ε 敏感 + 计算贵） |
 | 3 | **参数可辨识性** | BPINN 中网络权重和物理参数存在 trade-off → 物理参数后验比纯 BI 更宽 |
 | 4 | **计算-收益曲线** | NN < PINN < SAPINN < BI < BNN < BPINN（计算成本递增，但收益不单调） |
@@ -137,3 +152,13 @@ BPINN 的能力边界：
 - [[pseudo-time-stepping]] — PINN 训练稳定性（潜在结合方向）
 - [[wang2023-pinn-spurious-critical]] — PINN 失败模式
 - [[zhang2020-phylstm-critical]] — 物理约束权重调参问题
+
+## Evidence By Source
+
+### `sources/papers/linka2022-bayesian-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_115346_extracted.txt`
+
+^[sources/papers/linka2022-bayesian-pinn.md]

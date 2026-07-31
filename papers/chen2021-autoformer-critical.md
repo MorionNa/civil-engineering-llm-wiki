@@ -1,12 +1,35 @@
 ---
-title: "AutoFormer 贡献·局限·可迁移·研究机会"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--chen2021-autoformer-critical
+title: AutoFormer 贡献·局限·可迁移·研究机会
 type: paper-analysis
-tags: [neural-architecture-search, one-shot-nas, weight-entanglement, vision-transformer, transformer, autoformer, evolutionary-search]
-sources: [raw/papers/chen2021_autoformer.md]
-failure_modes: [classical-weight-sharing-failure, transformer-overfit-scaling, cnn-efficiency-gap, weight-entanglement-homogeneous-only, search-space-discrete]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- evidence/paper
+- method/neural-architecture-search
+- method/pinn
+- method/transformer
+keywords:
+- autoformer
+- evolutionary-search
+- neural-architecture-search
+- one-shot-nas
+- transformer
+- vision-transformer
+- weight-entanglement
+sources:
+- sources/papers/chen2021-autoformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- classical-weight-sharing-failure
+- transformer-overfit-scaling
+- cnn-efficiency-gap
+- weight-entanglement-homogeneous-only
+- search-space-discrete
 ---
 
 # AutoFormer 贡献·局限·可迁移·研究机会
@@ -113,3 +136,13 @@ confidence: high
 - [[chen2021-autoformer-results]] — 实验数据
 - [[chen2021-tenas-analysis]] — TE-NAS 训练-free NAS，互补搜索范式
 - [[xie2021-segformer-analysis]] — SegFormer 的 ViT 架构设计，潜在搜索目标
+
+## Evidence By Source
+
+### `sources/papers/chen2021-autoformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/chen2021_autoformer.md`
+
+^[sources/papers/chen2021-autoformer.md]

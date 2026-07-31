@@ -1,10 +1,24 @@
 ---
-title: "Jagtap et al. (2019) 自适应激活函数加速 PINN 收敛"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--jagtap2019-adaptive-activation-analysis
+title: Jagtap et al. (2019) 自适应激活函数加速 PINN 收敛
 type: paper-analysis
-tags: [physics-informed, pinn, adaptive-activation, convergence-acceleration, activation-function, neural-network]
-sources: [raw/papers/10_1016_j_jcp_2019_109136.xml]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- activation-function
+- adaptive-activation
+- convergence-acceleration
+- neural-network
+- physics-informed
+- pinn
+sources:
+- sources/papers/jagtap2019-adaptive-activation.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 reproducibility: 🟡
 code_url: n/a
@@ -13,8 +27,8 @@ dataset_url: n/a
 
 # Jagtap et al. (2019) — Adaptive activation functions accelerate convergence in deep and physics-informed neural networks
 
-> **作者:** Ameya D. Jagtap, Kenji Kawaguchi, George Em Karniadakis  
-> **期刊:** Journal of Computational Physics, Vol 404, 109136 (2020年3月发表)  
+> **作者:** Ameya D. Jagtap, Kenji Kawaguchi, George Em Karniadakis
+> **期刊:** Journal of Computational Physics, Vol 404, 109136 (2020年3月发表)
 > **DOI:** 10.1016/j.jcp.2019.109136 | **引用:** 1,006+
 
 ---
@@ -74,3 +88,28 @@ PINN 训练收敛慢是制约其工程实用化的核心瓶颈。特别是**高�
 - [[wang2021-pinn-ntk-failure-analysis]] — NTK 谱偏差 → 本文从激活侧修复
 - [[pinn]] — PINN 实体
 - [[phycrnet]] — PhyCRNet 的 conv-recurrent 也可受益
+
+## 10. 可迁移知识 (Transferable Knowledge)
+
+- 将论文中的可复用机制抽取为方法组件，而不是直接照搬完整网络。
+- 迁移到结构工程或其他物理系统时，需要重新定义变量、边界、对称性与评价基准。
+
+## 11. 研究机会 (Research Opportunity)
+
+- 在更复杂边界、非线性、多尺度和高维任务上检验方法边界。
+- 对照统一 wall-clock、精度、稳定性和数据效率指标开展复现。
+
+## 12. 可复现性 (Reproducibility)
+
+- 复现应以本页列出的原始来源、代码、数据与超参数为准。
+- 未公开实现细节应记录为复现缺口，不以模型推测补齐。
+
+## Evidence By Source
+
+### `sources/papers/jagtap2019-adaptive-activation.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2019_109136.xml`
+
+^[sources/papers/jagtap2019-adaptive-activation.md]

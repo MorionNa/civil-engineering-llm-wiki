@@ -1,10 +1,33 @@
 ---
-title: "CM-PINNs — Constitutive model-constrained physics-informed neural networks"
-created: 2026-07-01
-updated: 2026-07-01
+id: entities--cm-pinns
+title: CM-PINNs — Constitutive model-constrained physics-informed neural networks
 type: entity
-tags: [physics-informed, pinn, lstm, structural-dynamics, hysteresis, seismic-response, restoring-force, metamodeling]
-sources: [raw/papers/wu2025-cm-pinn-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- hysteresis
+- lstm
+- metamodeling
+- method/pinn
+- physics-informed
+- pinn
+- restoring-force
+- seismic-response
+- structural-dynamics
+sources:
+- raw/papers/wu2025-cm-pinn-extracted.md
+created: '2026-07-01'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -73,3 +96,12 @@ CM-PINNs 可看作 `[[zhang2020-phylstm-analysis]]` 的本构显式化扩展：
 - [[phylstm2]] / [[phylstm3]] — 直接先导方法
 - [[bouc-wen-model]] — 可扩展的率相关滞回本构
 - [[pseudo-time-stepping]] — 可组合的 PINN 训练稳定化方法
+
+## Evidence By Source
+
+### `raw/papers/wu2025-cm-pinn-extracted.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/wu2025-cm-pinn-extracted.md]

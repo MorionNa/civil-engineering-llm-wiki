@@ -1,12 +1,35 @@
 ---
-title: "AI如何求解物理问题 — PINN 入门到实战 (AI4S第一课)"
-created: 2026-06-10
-updated: 2026-06-10
+id: notes--lectures--ai4s-pinn-deepxde
+title: AI如何求解物理问题 — PINN 入门到实战 (AI4S第一课)
 type: lecture
-tags: [pinn, physics-informed-neural-networks, deepxde, pde, ai4s, auto-diff, g-pinn, inverse-problem]
-sources: [raw/articles/avbd-siggraph2025-bilibili.md]
-methods: [pinn, g-pinn, deepxde, hard-constraints, rar, deeponet]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/transcript
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- automatic-differentiation
+- deepxde
+- g-pinn
+- inverse-problem
+- pde
+- physics-informed
+- pinn
+sources:
+- raw/articles/avbd-siggraph2025-bilibili.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+methods:
+- pinn
+- g-pinn
+- deepxde
+- hard-constraints
+- rar
+- deeponet
 ---
 
 # AI如何求解物理问题 — PINN 入门到实战
@@ -123,3 +146,12 @@ $$\mathcal{L}_h = \mathbb{I}_{\{h(\hat{u}, \hat{\gamma}) > 0\}} h^2$$
 - [[zhang2020-phylstm-analysis]] — PhyLSTM 物理约束学习
 - [[wang2023-pinn-spurious-analysis]] — PINN 训练失败模式（梯度病理）
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败对比
+
+## Evidence By Source
+
+### `raw/articles/avbd-siggraph2025-bilibili.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/articles/avbd-siggraph2025-bilibili.md]

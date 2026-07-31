@@ -1,12 +1,33 @@
 ---
-title: "TE-NAS 贡献·局限·可迁移·研究机会"
-created: 2026-06-12
-updated: 2026-06-12
+id: papers--chen2021-tenas-critical
+title: TE-NAS 贡献·局限·可迁移·研究机会
 type: paper-analysis
-tags: [training-free-nas, ntk, neural-tangent-kernel, linear-regions, pruning-based-nas, nas-bench-201]
-sources: [raw/papers/TE-NAS_chen2021_ICLR.pdf]
-failure_modes: [ntk-correlation-limited, operator-preference-bias, combined-score-naive, no-architecture-novelty, theory-approximation-gap]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-architecture-search
+- method/pinn
+- method/transformer
+keywords:
+- linear-regions
+- nas-bench-201
+- neural-tangent-kernel
+- ntk
+- pruning-based-nas
+- training-free-nas
+sources:
+- sources/papers/chen2021-tenas.md
+created: '2026-06-12'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- ntk-correlation-limited
+- operator-preference-bias
+- combined-score-naive
+- no-architecture-novelty
+- theory-approximation-gap
 ---
 
 # TE-NAS 贡献·局限·可迁移·研究机会
@@ -92,3 +113,13 @@ confidence: high
 - [[chen2021-tenas-results]] — 实验数据
 - [[xie2021-segformer-analysis]] — SegFormer 的架构设计哲学对比
 - [[wang2023-pinn-spurious-analysis]] — PINN 训练稳定性与 NTK 分析的潜在关联
+
+## Evidence By Source
+
+### `sources/papers/chen2021-tenas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/TE-NAS_chen2021_ICLR.pdf`
+
+^[sources/papers/chen2021-tenas.md]

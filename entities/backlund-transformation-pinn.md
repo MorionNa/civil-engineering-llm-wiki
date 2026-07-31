@@ -1,18 +1,50 @@
 ---
-title: "Bäcklund Transformation PINN — 变换约束的双方程物理信息学习"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--backlund-transformation-pinn
+title: Bäcklund Transformation PINN — 变换约束的双方程物理信息学习
 type: entity
-tags: [neural-network, physics-informed, deep-learning, soft-constraint, nonlinear-systems, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1007_s11071-024-10359-7.pdf]
-methods: [backlund-transformation, multi-output-pinn, relation-constrained-learning, automatic-differentiation]
-results: [two-equation-simultaneous-solution, unsupervised-target-field-reconstruction]
-failure_modes: [nonunique-inverse, spurious-solution-risk, loss-weight-imbalance, no-target-reference-solution]
-datasets: [modified-kdv-one-soliton, modified-kdv-two-soliton, gaussian-initial-wave]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+- neural-network
+- nonlinear-systems
+- physics-informed
+- physics-simulation
+- pinn
+- soft-constraint
+sources:
+- raw/papers/10_1007_s11071-024-10359-7.pdf
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- backlund-transformation
+- multi-output-pinn
+- relation-constrained-learning
+- automatic-differentiation
+results:
+- two-equation-simultaneous-solution
+- unsupervised-target-field-reconstruction
+failure_modes:
+- nonunique-inverse
+- spurious-solution-risk
+- loss-weight-imbalance
+- no-target-reference-solution
+datasets:
+- modified-kdv-one-soliton
+- modified-kdv-two-soliton
+- gaussian-initial-wave
+reproducibility: low
 ---
 
 # Bäcklund Transformation PINN
@@ -64,3 +96,12 @@ $$F(u)=0,\qquad G(v)=0,\qquad BT(u,v)=0,$$
 - [[li2025-localized-waves-pinn-analysis]] — 12 维度总览
 - [[li2025-localized-waves-pinn-results]] — 单波、双波与 Gaussian 证据
 - [[li2025-localized-waves-pinn-critical]] — 证据边界与研究路线
+
+## Evidence By Source
+
+### `raw/papers/10_1007_s11071-024-10359-7.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1007_s11071-024-10359-7.pdf]

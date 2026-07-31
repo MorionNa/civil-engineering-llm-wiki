@@ -1,10 +1,25 @@
 ---
-title: "智谱AI (Zhipu AI)"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--zhipu-ai
+title: 智谱AI (Zhipu AI)
 type: entity
-tags: [organization, large-language-model, glm, china-ai]
-sources: [notes/briefings/glm-hydropower-2026.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/model
+- method/transformer
+keywords:
+- china-ai
+- domain/llm
+- entity/model
+- glm
+- large-language-model
+- method/transformer
+- organization
+sources:
+- notes/briefings/glm-hydropower-2026.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -36,3 +51,12 @@ confidence: high
 - [[glm-5]] — GLM-5.0 模型
 - [[hydroglm]] — HydroGLM 行业大模型
 - [[notes/briefings/glm-hydropower-2026]] — HydroGLM 项目笔记
+
+## Evidence By Source
+
+### `notes/briefings/glm-hydropower-2026.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[notes/briefings/glm-hydropower-2026.md]

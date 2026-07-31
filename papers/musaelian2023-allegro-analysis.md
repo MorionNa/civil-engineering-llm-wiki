@@ -1,28 +1,63 @@
 ---
 id: paper-musaelian2023-allegro-analysis
-title: "Musaelian et al. (2023) — Allegro：严格局部等变原子势"
+title: Musaelian et al. (2023) — Allegro：严格局部等变原子势
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance, gpu-computing, cross-domain-generalization]
-sources: [raw/papers/musaelian2023-allegro-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- ai4s
+- cross-domain-generalization
+- deep-learning
+- gpu-computing
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/musaelian2023-allegro.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-methods: [strict-locality, pair-centered-representation, equivariant-tensor-products, learned-environment-embedding, energy-conserving-force-field]
-results: [qm9-accuracy, revmd17-accuracy, temperature-transfer, li3po4-dynamics, hundred-million-atom-scaling]
-failure_modes: [long-range-interaction-gap, pair-feature-memory, locality-bias, accuracy-speed-tradeoff]
-datasets: [revised-md17, 3bpa, qm9, li3po4, silver-vacancy]
+methods:
+- strict-locality
+- pair-centered-representation
+- equivariant-tensor-products
+- learned-environment-embedding
+- energy-conserving-force-field
+results:
+- qm9-accuracy
+- revmd17-accuracy
+- temperature-transfer
+- li3po4-dynamics
+- hundred-million-atom-scaling
+failure_modes:
+- long-range-interaction-gap
+- pair-feature-memory
+- locality-bias
+- accuracy-speed-tradeoff
+datasets:
+- revised-md17
+- 3bpa
+- qm9
+- li3po4
+- silver-vacancy
 reproducibility: high
 code_url:
-  - https://github.com/mir-group/allegro
-  - https://github.com/mir-group/pair_allegro
+- https://github.com/mir-group/allegro
+- https://github.com/mir-group/pair_allegro
 ---
 
 # Learning local equivariant representations for large-scale atomistic dynamics
 
-> **作者：** Albert Musaelian, Simon Batzner, Anders Johansson, Lixin Sun, Cameron J. Owen, Mordechai Kornbluth, Boris Kozinsky  
-> **期刊：** Nature Communications 14 (2023), 579  
+> **作者：** Albert Musaelian, Simon Batzner, Anders Johansson, Lixin Sun, Cameron J. Owen, Mordechai Kornbluth, Boris Kozinsky
+> **期刊：** Nature Communications 14 (2023), 579
 > **一句话定位：** Allegro 用严格局部、pair-centered 的等变张量表示替代跨层 atom-centered message passing，在固定 cutoff 内学习高阶多体相互作用，从而兼顾原子势精度与超大规模并行能力。
 
 ## 1. 工程背景 (Engineering Background)
@@ -170,3 +205,13 @@ F = -∇E
 - [[sevennet]]
 - [[pinn]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `sources/papers/musaelian2023-allegro.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/musaelian2023-allegro-source.md`
+
+^[sources/papers/musaelian2023-allegro.md]

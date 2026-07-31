@@ -1,18 +1,64 @@
 ---
-title: "Liu et al. (2025) — PINN 用于一维地震场地反应分析：论文分析"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--liu2025-site-response-pinn-analysis
+title: Liu et al. (2025) — PINN 用于一维地震场地反应分析：论文分析
 type: paper-analysis
-tags: [neural-network, physics-informed, deep-learning, soft-constraint, collocation-strategy, structural-dynamics, seismic-response, equation-of-motion, ground-motion, synthetic-data, benchmark, physics-constraint-weight-tuning, neural-tangent-kernel, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1016_j_compgeo_2025_107137.xml, raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt]
-methods: [fourier-feature-embedding, nondimensionalization, tree-structured-parzen-estimator, batch-normalization, adam, automatic-differentiation, lumped-mass-formulation]
-results: [rk45-agreement, newmark-beta-agreement, single-layer, three-layer, ten-layer, wide-intensity-range]
-failure_modes: [finite-collocation-nonuniqueness, per-scenario-retraining, spectral-bias, sigma-sensitivity, no-speed-benchmark, linear-soil-only, missing-code]
-datasets: [NGA-West2-ground-motion-records, synthetic-layered-soil-profiles]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- benchmark
+- collocation-strategy
+- deep-learning
+- equation-of-motion
+- ground-motion
+- neural-network
+- neural-tangent-kernel
+- physics-constraint-weight-tuning
+- physics-informed
+- physics-simulation
+- pinn
+- seismic-response
+- soft-constraint
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/liu2025-site-response-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- fourier-feature-embedding
+- nondimensionalization
+- tree-structured-parzen-estimator
+- batch-normalization
+- adam
+- automatic-differentiation
+- lumped-mass-formulation
+results:
+- rk45-agreement
+- newmark-beta-agreement
+- single-layer
+- three-layer
+- ten-layer
+- wide-intensity-range
+failure_modes:
+- finite-collocation-nonuniqueness
+- per-scenario-retraining
+- spectral-bias
+- sigma-sensitivity
+- no-speed-benchmark
+- linear-soil-only
+- missing-code
+datasets:
+- NGA-West2-ground-motion-records
+- synthetic-layered-soil-profiles
+reproducibility: low
 ---
 
 # Leveraging PINNs in geotechnical earthquake engineering
@@ -102,3 +148,13 @@ Table 2 中，PINN 相对 RK45/NB 的位移 RMSE 分别为 $5.35\times10^{-8}/3.
 - [[seismic-site-response-pinn]] — 方法实体
 - [[pinn]] — PINN 基础实体
 - [[neural-tangent-kernel]] — 谱偏置与梯度失衡
+
+## Evidence By Source
+
+### `sources/papers/liu2025-site-response-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_compgeo_2025_107137.xml`, `raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt`
+
+^[sources/papers/liu2025-site-response-pinn.md]

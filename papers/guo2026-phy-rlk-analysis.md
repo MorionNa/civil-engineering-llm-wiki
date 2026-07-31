@@ -1,20 +1,59 @@
 ---
-title: "Guo & Xu (2026) Phy-RLK：双向地震作用下非线性结构响应的物理残差 LSTM-KAN"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--guo2026-phy-rlk-analysis
+title: Guo & Xu (2026) Phy-RLK：双向地震作用下非线性结构响应的物理残差 LSTM-KAN
 type: paper-analysis
-tags: [physics-informed, neural-network, lstm, sequence-modeling, structural-dynamics, nonlinear-systems, seismic-response, equation-of-motion, restoring-force, ground-motion, synthetic-data, finite-element]
-sources: [raw/papers/10_1016_j_cma_2025_118422.xml]
-methods: [physical-residual-lstm, newmark-beta-residual, embedded-physics, kan-decoder, bidirectional-mimo, supervised-learning]
-results: [bidirectional-response-prediction, peak-displacement-error, cross-structure-validation, inference-speedup]
-failure_modes: [synthetic-label-dependence, structure-specific-retraining, no-public-code, no-public-data, no-real-world-validation, no-uncertainty-quantification]
-datasets: [srm-bidirectional-ground-motions, opensees-six-story-rc-frame, opensees-five-story-rc-frame]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- equation-of-motion
+- finite-element
+- ground-motion
+- lstm
+- neural-network
+- nonlinear-systems
+- physics-informed
+- restoring-force
+- seismic-response
+- sequence-modeling
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/guo2026-phy-rlk.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physical-residual-lstm
+- newmark-beta-residual
+- embedded-physics
+- kan-decoder
+- bidirectional-mimo
+- supervised-learning
+results:
+- bidirectional-response-prediction
+- peak-displacement-error
+- cross-structure-validation
+- inference-speedup
+failure_modes:
+- synthetic-label-dependence
+- structure-specific-retraining
+- no-public-code
+- no-public-data
+- no-real-world-validation
+- no-uncertainty-quantification
+datasets:
+- srm-bidirectional-ground-motions
+- opensees-six-story-rc-frame
+- opensees-five-story-rc-frame
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # Physics-guided hybrid network for predicting nonlinear dynamic response of structures under bi-directional ground motions
@@ -118,3 +157,13 @@ contradictions: []
 - [[phylstm2]] / [[phylstm3]] — 物理损失型 LSTM 前序路线
 - [[cm-pinns]] — 本构模型约束型路线
 - [[bouc-wen-model]] — 可用于后续显式滞回残差的对照本构
+
+## Evidence By Source
+
+### `sources/papers/guo2026-phy-rlk.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2025_118422.xml`
+
+^[sources/papers/guo2026-phy-rlk.md]

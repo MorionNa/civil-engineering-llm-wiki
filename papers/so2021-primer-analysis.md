@@ -1,18 +1,56 @@
 ---
-title: "So et al. (2021) — Primer: Searching for Efficient Transformers for Language Modeling 论文分析"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--so2021-primer-analysis
+title: 'So et al. (2021) — Primer: Searching for Efficient Transformers for Language Modeling 论文分析'
 type: paper-analysis
-tags: [neural-architecture-search, transformer, efficient-inference, evolutionary-search, weight-sharing-supernet, search-space-design]
-sources: [raw/papers/primer2021_efficient_transformers.pdf]
-methods: [sq-tc-search, evolutionary-search, conceptual-initialization, halving-hurdles, low-level-primitive-search]
-results: [c4-perplexity, lm1b-speedup, glue, squad, superglue, downstream-transfer, scaling-laws]
-failure_modes: [redundant-search-cost, encoder-decoder-gap, negative-knowledge-extraneous-mutations, fixed-budget-proxy-noise, open-ended-space-degeneracy]
-datasets: [lm1b, c4, pg19, glue, squad, superglue]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- efficient-inference
+- evolutionary-search
+- neural-architecture-search
+- search-space-design
+- transformer
+- weight-sharing-supernet
+sources:
+- sources/papers/so2021-primer.md
+created: '2026-06-14'
+updated: '2026-07-31'
+confidence: high
+methods:
+- sq-tc-search
+- evolutionary-search
+- conceptual-initialization
+- halving-hurdles
+- low-level-primitive-search
+results:
+- c4-perplexity
+- lm1b-speedup
+- glue
+- squad
+- superglue
+- downstream-transfer
+- scaling-laws
+failure_modes:
+- redundant-search-cost
+- encoder-decoder-gap
+- negative-knowledge-extraneous-mutations
+- fixed-budget-proxy-noise
+- open-ended-space-degeneracy
+datasets:
+- lm1b
+- c4
+- pg19
+- glue
+- squad
+- superglue
 reproducibility: high
 code_url:
-  - https://github.com/google-research/google-research/tree/master/primer
-confidence: high
+- https://github.com/google-research/google-research/tree/master/primer
 ---
 
 # So et al. (2021) — Primer: Efficient Transformers for Language Modeling
@@ -172,3 +210,13 @@ Scaling Law：Primer 和 Transformer 的 l vs c 在双对数空间中平行，�
 | 硬件 | TPUv2/v3/v4 — 大部分人无法复现硬件环境 |
 | 闭源部分 | ❌ GPT-3 式 one-shot 实验使用 proprietary pretraining 数据 |
 | 总体评价 | **高** — 核心开源 + 清晰附录，但 TPU 和部分数据限制了完整复现 |
+
+## Evidence By Source
+
+### `sources/papers/so2021-primer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/primer2021_efficient_transformers.pdf`
+
+^[sources/papers/so2021-primer.md]

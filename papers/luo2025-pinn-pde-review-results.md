@@ -1,20 +1,44 @@
 ---
-title: "Luo et al. (2025) PINN-PDE 综述结果：分类、比较与证据层级"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--luo2025-pinn-pde-review-results
+title: Luo et al. (2025) PINN-PDE 综述结果：分类、比较与证据层级
 type: paper-analysis
-tags: [physics-informed, pinn, review, comparison, collocation-strategy, deepxde, physics-simulation]
-sources: [raw/papers/10_1007_s10462-025-11322-7.pdf]
-methods: [narrative-review, taxonomy, evidence-stratification]
-results: [pinn-taxonomy, hybrid-adaptive-sampling-example, software-comparison, application-map]
-failure_modes: [heterogeneous-evidence, no-unified-benchmark, self-reported-comparisons]
-datasets: []
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-architecture-search
+- method/pinn
+- method/transformer
+keywords:
+- collocation-strategy
+- comparison
+- deepxde
+- physics-informed
+- physics-simulation
+- pinn
+- review
+sources:
+- sources/papers/luo2025-pinn-pde-review.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- narrative-review
+- taxonomy
+- evidence-stratification
+results:
+- pinn-taxonomy
+- hybrid-adaptive-sampling-example
+- software-comparison
+- application-map
+failure_modes:
+- heterogeneous-evidence
+- no-unified-benchmark
+- self-reported-comparisons
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # 结果展开：哪些是综述发现，哪些只是被引结果
@@ -104,3 +128,13 @@ contradictions: []
 - [[luo2025-pinn-pde-review-analysis|← 概述]]
 - [[luo2025-pinn-pde-review-method|← 分类方法]]
 - [[luo2025-pinn-pde-review-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/luo2025-pinn-pde-review.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s10462-025-11322-7.pdf`
+
+^[sources/papers/luo2025-pinn-pde-review.md]

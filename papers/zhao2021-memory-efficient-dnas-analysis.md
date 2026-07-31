@@ -1,18 +1,45 @@
 ---
-title: "Zhao et al. (2021) — Memory-Efficient Differentiable Transformer Architecture Search 论文分析"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--zhao2021-memory-efficient-dnas-analysis
+title: Zhao et al. (2021) — Memory-Efficient Differentiable Transformer Architecture Search 论文分析
 type: paper-analysis
-tags: [neural-architecture-search, transformer, efficient-inference, differentiable-search, machine-translation]
-sources: [raw/papers/memory_efficient_dnas2021.pdf]
-methods: [differentiable-nas, memory-efficient-nas, gradient-checkpointing, reversible-layer]
-results: [wmt14-en-de, wmt14-en-fr, wmt18-en-cs, bleu]
-failure_modes: [search-evaluation-gap, split-number-sensitivity, sampling-baseline-failure, convergence-difficulty-large-search-space]
-datasets: [wmt14, wmt18]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- differentiable-search
+- efficient-inference
+- machine-translation
+- neural-architecture-search
+- transformer
+sources:
+- sources/papers/zhao2021-memory-efficient-dnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
+confidence: high
+methods:
+- differentiable-nas
+- memory-efficient-nas
+- gradient-checkpointing
+- reversible-layer
+results:
+- wmt14-en-de
+- wmt14-en-fr
+- wmt18-en-cs
+- bleu
+failure_modes:
+- search-evaluation-gap
+- split-number-sensitivity
+- sampling-baseline-failure
+- convergence-difficulty-large-search-space
+datasets:
+- wmt14
+- wmt18
 reproducibility: high
 code_url:
-  - https://github.com/microsoft/DARTSformer
-confidence: high
+- https://github.com/microsoft/DARTSformer
 ---
 
 # Memory-Efficient Differentiable Transformer Architecture Search
@@ -128,3 +155,13 @@ Transformer (Vaswani et al., 2017) 在机器翻译、语言建模等序列任务
 - [[memory-efficient-dnas]] — 实体页
 - [[xu2021-nas-bert-analysis]] — 同样将 NAS 用于 NLP/Transformer 搜索，NAS-BERT 走压缩路线形成对比
 - [[wang2020-hat-analysis]] — HAT 是进化-based NAS for Transformer，与本文的 gradient-based 形成方法论对比
+
+## Evidence By Source
+
+### `sources/papers/zhao2021-memory-efficient-dnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/memory_efficient_dnas2021.pdf`
+
+^[sources/papers/zhao2021-memory-efficient-dnas.md]

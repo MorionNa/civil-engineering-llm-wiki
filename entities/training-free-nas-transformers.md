@@ -1,10 +1,26 @@
 ---
-title: "Training-free NAS for Transformers"
-created: 2026-06-14
-updated: 2026-06-14
+id: entities--training-free-nas-transformers
+title: Training-free NAS for Transformers
 type: entity
-tags: [training-free-nas, transformer, rnn, nas-method, benchmark]
-sources: [raw/papers/training_free_nas2023.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- benchmark
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- rnn
+- training-free-nas
+- transformer
+sources:
+- raw/papers/training_free_nas2023.pdf
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -70,3 +86,12 @@ confidence: high
 - [[so2021-primer-analysis]] — Primer（cell-based Transformer 搜索空间，本文建议的未来方向）
 - [[entities/nasbench201]] — NAS-Bench-201
 - [[entities/te-nas]] — TE-NAS 实体
+
+## Evidence By Source
+
+### `raw/papers/training_free_nas2023.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/training_free_nas2023.pdf]

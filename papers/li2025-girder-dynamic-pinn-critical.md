@@ -1,13 +1,38 @@
 ---
-title: "Li et al. (2025) — 贡献 / Negative / 可迁移 / 研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-girder-dynamic-pinn-critical
+title: Li et al. (2025) — 贡献 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, cable-stayed-bridge, dynamic-alignment, future-work, limitation, inverse-problem, physics-constraint-weight-tuning]
-sources: [raw/papers/10_1016_j_aei_2025_103581_extracted.txt]
-methods: [physics-informed, pinn, fourier-embedding, causal-weight, two-surrogate-model]
-failure_modes: [physics-constraint-weight-tuning]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- cable-stayed-bridge
+- dynamic-alignment
+- future-work
+- inverse-problem
+- limitation
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- structural-dynamics
+sources:
+- sources/papers/li2025-girder-dynamic-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-informed
+- pinn
+- fourier-embedding
+- causal-weight
+- two-surrogate-model
+failure_modes:
+- physics-constraint-weight-tuning
 ---
 
 # Li et al. (2025) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
@@ -99,7 +124,7 @@ confidence: high
 
 3. **高频路面激励的自适应频率选择：** 根据路面等级自动扩展傅里叶嵌入的频率数 k 或转向可学习频率的嵌入层（类似 [[te-nas]] 的自动特征选择思想）
 
-4. **与 [[li2025-movingload-pinn]] 的混合框架：** 已知移动荷载（高斯近似处理）+ 未知环境激励（双代理模型）——融合两篇论文的优势
+4. **与 [[li2025-movingload-pinn-analysis]] 的混合框架：** 已知移动荷载（高斯近似处理）+ 未知环境激励（双代理模型）——融合两篇论文的优势
 
 ### 中期探索（2-5 年）
 
@@ -117,7 +142,7 @@ confidence: high
 
 ## 与已有工作的关联
 
-| 维度 | [[li2025-movingload-pinn]] | 本文 (li2025-girder-dynamic-pinn) |
+| 维度 | [[li2025-movingload-pinn-analysis]] | 本文 (li2025-girder-dynamic-pinn) |
 |------|---------------------------|----------------------------------|
 | 研究对象 | 均匀/非均匀梁 | 斜拉桥（弹性地基梁 + 轴向力） |
 | 未知量类型 | 恒定参数（$P$, $E$, $k_\theta$） | 时变场（$f(x,t)$） |
@@ -139,3 +164,13 @@ confidence: high
 - [[li2025-movingload-pinn-critical]] — 移动荷载 PINN 的贡献与限制（对照参照）
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式对比
 - [[abot-earth]] — 3D 数字孪生（远期愿景关联）
+
+## Evidence By Source
+
+### `sources/papers/li2025-girder-dynamic-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103581_extracted.txt`
+
+^[sources/papers/li2025-girder-dynamic-pinn.md]

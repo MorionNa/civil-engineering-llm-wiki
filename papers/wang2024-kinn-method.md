@@ -1,12 +1,35 @@
 ---
-title: "Wang et al. (2024) KINN 方法机制展开：KAN 替换 MLP + 三种 PDE 形式"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-kinn-method
+title: Wang et al. (2024) KINN 方法机制展开：KAN 替换 MLP + 三种 PDE 形式
 type: paper-analysis
-tags: [physics-informed, pinn, kin, kolmogorov-arnold, spline, b-spline, strong-form, energy-form, inverse-problem, automatic-differentiation]
-sources: [raw/papers/10_1016_j_cma_2024_117518_extracted.txt]
-methods: [kan-backbone, b-spline-activation, strong-form-pde, energy-form-pde, inverse-form-pde]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- automatic-differentiation
+- b-spline
+- energy-form
+- inverse-problem
+- kin
+- kolmogorov-arnold
+- physics-informed
+- pinn
+- spline
+- strong-form
+sources:
+- sources/papers/wang2024-kinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- kan-backbone
+- b-spline-activation
+- strong-form-pde
+- energy-form-pde
+- inverse-form-pde
 ---
 
 # Wang et al. (2024) — KINN 方法机制展开
@@ -97,7 +120,7 @@ PDE 可被表述为数学上等价但**计算上不等价**的三种形式。KIN
 
 直接最小化 PDE 残差：
 
-$$\mathcal{L}_{\text{strong}} = \frac{1}{N_r} \sum_{i=1}^{N_r} \left\| \mathcal{N}[u_\theta(x_i)] - f(x_i) \right\|^2 + \lambda_{BC} \mathcal{L}_{BC}$$
+$$\mathcal{L}_{\text{strong}} = \frac{1}{N_r} \sum_{i=1}^{N_r} \left| \mathcal{N}[u_\theta(x_i)] - f(x_i) \right|^2 + \lambda_{BC} \mathcal{L}_{BC}$$
 
 其中 $\mathcal{N}$ 是微分算子，$u_\theta$ 是 KAN 网络的输出。
 
@@ -121,7 +144,7 @@ $$\delta \Pi = 0 \iff \text{原 PDE}$$
 
 从观测数据推断未知参数 $\lambda$：
 
-$$\mathcal{L}_{\text{inverse}} = \frac{1}{N_d} \sum_{i=1}^{N_d} \|u_\theta(x_i) - u_{\text{obs}}(x_i)\|^2 + \lambda_{PDE} \mathcal{L}_{PDE}$$
+$$\mathcal{L}_{\text{inverse}} = \frac{1}{N_d} \sum_{i=1}^{N_d} |u_\theta(x_i) - u_{\text{obs}}(x_i)|^2 + \lambda_{PDE} \mathcal{L}_{PDE}$$
 
 参数 $\lambda$ 作为**可训练变量**与网络权重联合优化（与 [[raissi2019-pinn-method]] 的逆问题框架一致）。
 
@@ -180,3 +203,13 @@ $$B_i'(x) = \frac{k}{\xi_{i+k} - \xi_i} B_i^{k-1}(x) - \frac{k}{\xi_{i+k+1} - \x
 - [[wang2024-kinn-analysis|← 总览]]
 - [[wang2024-kinn-results|结果展开 →]]
 - [[wang2024-kinn-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-kinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117518_extracted.txt`
+
+^[sources/papers/wang2024-kinn.md]

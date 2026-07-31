@@ -1,13 +1,36 @@
 ---
-title: "Chen et al. (2025) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--chen2025-at-pinn-hc-critical
+title: Chen et al. (2025) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, hard-constraints, structural-dynamics, auxiliary-function, future-work, limitation]
-sources: [raw/papers/10_1016_j_cma_2024_117691_extracted.txt]
-methods: [hard-constraint-strategies, time-marching, auxiliary-function]
-failure_modes: [case-by-case-selection, hard-constraint-sensitivity, long-duration-drift]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- auxiliary-function
+- future-work
+- hard-constraints
+- limitation
+- physics-informed
+- pinn
+- structural-dynamics
+sources:
+- sources/papers/chen2025-at-pinn-hc.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
+methods:
+- hard-constraint-strategies
+- time-marching
+- auxiliary-function
+failure_modes:
+- case-by-case-selection
+- hard-constraint-sensitivity
+- long-duration-drift
 ---
 
 # Chen et al. (2025) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
@@ -100,3 +123,13 @@ confidence: medium
 - [[wang2023-pinn-spurious-critical]] — PINN 伪解负知识（共享 BC/IC 精度问题）
 - [[zhang2020-phylstm-critical]] — PhyLSTM 物理约束局限（软硬约束对比）
 - [[pseudo-time-stepping]] — 伪时间步进实体（潜在结合方向）
+
+## Evidence By Source
+
+### `sources/papers/chen2025-at-pinn-hc.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117691_extracted.txt`
+
+^[sources/papers/chen2025-at-pinn-hc.md]

@@ -1,10 +1,25 @@
 ---
-title: "GShard"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--gshard
+title: GShard
 type: entity
-tags: [mixture-of-experts, automatic-sharding, spmd]
-sources: [raw/papers/lepikhin2021_gshard.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/model
+- method/transformer
+keywords:
+- automatic-sharding
+- domain/llm
+- entity/model
+- method/transformer
+- mixture-of-experts
+- spmd
+sources:
+- raw/papers/lepikhin2021_gshard.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # GShard
@@ -34,3 +49,12 @@ GShard 是 Google 提出的自动分片 + 条件计算框架，将 MoE Transform
 ## 关联页面
 - [[lepikhin2021-gshard-analysis]] — 完整论文分析
 - [[lepikhin2021-gshard-method]] — 方法机制
+
+## Evidence By Source
+
+### `raw/papers/lepikhin2021_gshard.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/lepikhin2021_gshard.md]

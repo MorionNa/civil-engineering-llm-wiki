@@ -1,12 +1,31 @@
 ---
-title: "HRNet 方法机制展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--sun2019-hrnetv2-method
+title: HRNet 方法机制展开
 type: paper-analysis
-tags: [semantic-segmentation, high-resolution-representation, multi-resolution-fusion, parallel-convolutions, hrnet]
-sources: [raw/papers/arxiv_1904.04514.pdf]
-methods: [hrnet, multi-resolution-parallel, repeated-fusion, hrnetv2, multi-resolution-block, multi-resolution-group-convolution, multi-resolution-convolution]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- high-resolution-representation
+- hrnet
+- multi-resolution-fusion
+- parallel-convolutions
+- semantic-segmentation
+sources:
+- sources/papers/sun2019-hrnetv2.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+methods:
+- hrnet
+- multi-resolution-parallel
+- repeated-fusion
+- hrnetv2
+- multi-resolution-block
+- multi-resolution-group-convolution
+- multi-resolution-convolution
 ---
 
 # HRNet 方法机制
@@ -72,14 +91,14 @@ Multi-resolution convolution 把这种全连接映射推广到多分辨率：
         │  │  │            │  │  │              │  │  │
         ▼  ▼  ▼            ▼  ▼  ▼              ▼  ▼  ▼
       对每个输入分辨率 x，变换到每个输出分辨率 y：
-      
+
       变换类型:
       - 同分辨率: 普通 3×3 conv
       - 降分辨率: strided 3×3 conv (stride=2)
       - 升分辨率: bilinear upsample + 1×1 conv
-    
+
       每个输出分辨率 = Σ(所有输入分辨率经相应变换)
-      
+
 输出: R1' (1×,  C ch)   R2' (1/2×, 2C ch)   R3' (1/4×, 4C ch)
 ```
 
@@ -159,3 +178,13 @@ HRNet:        High ═══════ High     (全程保持高分，低分�
 - [[ronneberger2015-unet-method]] — U-Net 架构对比
 - [[zhao2017-pspnet-method]] — PPM 对比
 - [[chen2018-deeplabv3plus-method]] — ASPP + Decoder 对比
+
+## Evidence By Source
+
+### `sources/papers/sun2019-hrnetv2.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/arxiv_1904.04514.pdf`
+
+^[sources/papers/sun2019-hrnetv2.md]

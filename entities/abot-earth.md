@@ -1,10 +1,27 @@
 ---
-title: "ABot-Earth"
-created: 2026-06-22
-updated: 2026-07-16
+id: entities--abot-earth
+title: ABot-Earth
 type: entity
-tags: [3d-gaussian-splatting, generative-3d-earth, digital-earth, satellite-imagery, urban-modeling, multi-lod, abot-earth]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf, raw/papers/lee2026-skyfall-gs.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- entity/model
+keywords:
+- 3d-gaussian-splatting
+- abot-earth
+- digital-earth
+- domain/remote-sensing
+- entity/model
+- generative-3d-earth
+- multi-lod
+- satellite-imagery
+- urban-modeling
+sources:
+- raw/papers/amapcvlab2026-abotearth.pdf
+- raw/papers/lee2026-skyfall-gs.pdf
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -71,3 +88,12 @@ ABot-Earth 是一个**原生 3D Gaussian Splatting (3DGS) 生成框架**，能�
 - `[[amapcvlab2026-abotearth-analysis]]` — ABot-Earth 0.5 技术报告分析
 - `[[lee2026-skyfall-gs-analysis]]` — Skyfall-GS 论文分析
 - `[[skyfall-gs-vs-abot-earth]]` — 两种卫星条件 3D 城市路线对比
+
+## Evidence By Source
+
+### `raw/papers/amapcvlab2026-abotearth.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/amapcvlab2026-abotearth.pdf]

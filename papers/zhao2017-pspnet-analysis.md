@@ -1,23 +1,58 @@
 ---
-title: "Zhao et al. (2017) — Pyramid Scene Parsing Network (PSPNet): 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--zhao2017-pspnet-analysis
+title: 'Zhao et al. (2017) — Pyramid Scene Parsing Network (PSPNet): 论文分析'
 type: paper-analysis
-tags: [semantic-segmentation, scene-parsing, pyramid-pooling, multi-scale-context, fully-convolutional, deep-supervision, auxiliary-loss, resnet]
-sources: [raw/papers/1612.01105v2.pdf]
-methods: [pyramid-pooling, auxiliary-loss, dilated-convolution, bilinear-upsample]
-results: [ade20k, pascal-voc-2012, cityscapes, sota, multi-scale-testing]
-failure_modes: [context-dependency, category-confusion, inconspicuous-classes, pyramid-scale-sensitivity, auxiliary-loss-weight-tuning]
-datasets: [ade20k, pascal-voc-2012, cityscapes]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computer-vision
+- evidence/paper
+- method/pinn
+keywords:
+- auxiliary-loss
+- deep-supervision
+- fully-convolutional
+- multi-scale-context
+- pyramid-pooling
+- resnet
+- scene-parsing
+- semantic-segmentation
+sources:
+- sources/papers/zhao2017-pspnet.md
+created: '2026-06-11'
+updated: '2026-07-31'
+confidence: high
+methods:
+- pyramid-pooling
+- auxiliary-loss
+- dilated-convolution
+- bilinear-upsample
+results:
+- ade20k
+- pascal-voc-2012
+- cityscapes
+- sota
+- multi-scale-testing
+failure_modes:
+- context-dependency
+- category-confusion
+- inconspicuous-classes
+- pyramid-scale-sensitivity
+- auxiliary-loss-weight-tuning
+datasets:
+- ade20k
+- pascal-voc-2012
+- cityscapes
 reproducibility: high
 code_url:
-  - https://github.com/hszhao/PSPNet
-  - https://github.com/hszhao/semseg
+- https://github.com/hszhao/PSPNet
+- https://github.com/hszhao/semseg
 dataset_url:
-  - https://groups.csail.mit.edu/vision/datasets/ADE20K/
-  - http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
-  - https://www.cityscapes-dataset.com/
-confidence: high
+- https://groups.csail.mit.edu/vision/datasets/ADE20K/
+- http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
+- https://www.cityscapes-dataset.com/
 ---
 
 # Pyramid Scene Parsing Network (PSPNet)
@@ -132,3 +167,13 @@ Ablation：PPM > Global Pooling (+1.61 IoU)；Average Pooling > Max Pooling；α
 
 - [[ronneberger2015-unet-analysis]] — 同为语义分割，U-Net 侧重 encoder-decoder + 局部特征融合，PSPNet 侧重全局上下文
 - [[notes/lectures/ai4s-pinn-deepxde]] — PINN 中的 multi-scale 思想有平行参照
+
+## Evidence By Source
+
+### `sources/papers/zhao2017-pspnet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/1612.01105v2.pdf`
+
+^[sources/papers/zhao2017-pspnet.md]

@@ -1,18 +1,47 @@
 ---
-title: "Gao et al. (2025) — APINNs 贡献、局限与研究机会"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--gao2025-adaptive-loss-pinn-critical
+title: Gao et al. (2025) — APINNs 贡献、局限与研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, adaptive-weighting, physics-constrained-loss, soft-constraint, neural-network, nonlinear-systems, synthetic-data, physics-constraint-weight-tuning, limitation, future-work]
-sources: [raw/papers/10_1016_j_camwa_2025_01_007.xml, raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt]
-methods: [multitask-learning, adaptive-loss-weighting, loss-magnitude-normalization]
-results: [relative-l2-error-reduction, loss-scale-balancing]
-failure_modes: [physics-constraint-weight-tuning, update-frequency-uncertainty, reporting-inconsistency, external-validity-limit]
-datasets: [benjamin-ono-analytic-solution, sine-gordon-analytic-solution, mukherjee-kundu-analytic-solution]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- future-work
+- limitation
+- neural-network
+- nonlinear-systems
+- physics-constrained-loss
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- soft-constraint
+- synthetic-data
+sources:
+- sources/papers/gao2025-adaptive-loss-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- multitask-learning
+- adaptive-loss-weighting
+- loss-magnitude-normalization
+results:
+- relative-l2-error-reduction
+- loss-scale-balancing
+failure_modes:
+- physics-constraint-weight-tuning
+- update-frequency-uncertainty
+- reporting-inconsistency
+- external-validity-limit
+datasets:
+- benjamin-ono-analytic-solution
+- sine-gordon-analytic-solution
+- mukherjee-kundu-analytic-solution
+reproducibility: low
 ---
 
 # Gao et al. (2025) — APINNs 贡献、局限与研究机会
@@ -92,3 +121,13 @@ APINNs 是一个直观、低开销且在所测基准上有效的损失平衡方�
 - [[wang2021-pinn-ntk-failure-analysis]] — PINN 多损失失衡的理论对照
 - [[jagtap2019-adaptive-activation-analysis]] — 表达侧自适应对照
 - [[gao2025-adaptive-loss-pinn-method]] — 可核对的方法公式与证据缺口
+
+## Evidence By Source
+
+### `sources/papers/gao2025-adaptive-loss-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_camwa_2025_01_007.xml`, `raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt`
+
+^[sources/papers/gao2025-adaptive-loss-pinn.md]

@@ -1,23 +1,60 @@
 ---
-title: "Li et al. (2025) — Functional Scaling Laws：学习率计划下完整损失轨迹的函数型缩放律"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--li2025-functional-scaling-laws-analysis
+title: Li et al. (2025) — Functional Scaling Laws：学习率计划下完整损失轨迹的函数型缩放律
 type: paper-analysis
-tags: [deep-learning, large-language-model, scaling-law, kernel-regression, stochastic-gradient-descent, learning-rate-schedule, intrinsic-time, compute-optimal-training]
-sources: [raw/papers/li2025-functional-scaling-laws.pdf]
-methods: [intrinsic-time-sde, functional-scaling-law, power-law-kernel-regression, volterra-integral-equation, learning-rate-schedule-analysis]
-results: [full-loss-trajectory-prediction, wsd-scaling-efficiency, llm-loss-curve-transfer, learning-rate-schedule-optimization]
-failure_modes: [kernel-surrogate-scope, continuous-time-approximation, asymptotic-constants, unreleased-code-data, unreported-compute-resources]
-datasets: [power-law-kernel-simulation, llama-pretraining, qwenmoe-pretraining, gpt2-pretraining]
-reproducibility: medium
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- domain/llm
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- compute-optimal-training
+- deep-learning
+- intrinsic-time
+- kernel-regression
+- large-language-model
+- learning-rate-schedule
+- scaling-law
+- stochastic-gradient-descent
+sources:
+- sources/papers/li2025-functional-scaling-laws.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
+methods:
+- intrinsic-time-sde
+- functional-scaling-law
+- power-law-kernel-regression
+- volterra-integral-equation
+- learning-rate-schedule-analysis
+results:
+- full-loss-trajectory-prediction
+- wsd-scaling-efficiency
+- llm-loss-curve-transfer
+- learning-rate-schedule-optimization
+failure_modes:
+- kernel-surrogate-scope
+- continuous-time-approximation
+- asymptotic-constants
+- unreleased-code-data
+- unreported-compute-resources
+datasets:
+- power-law-kernel-simulation
+- llama-pretraining
+- qwenmoe-pretraining
+- gpt2-pretraining
+reproducibility: medium
 ---
 
 # Functional Scaling Laws in Kernel Regression: Loss Dynamics and Learning Rate Schedules
 
-> **作者：** Binghui Li, Fengling Chen, Zixun Huang, Lean Wang, Lei Wu  
-> **会议：** NeurIPS 2025  
-> **arXiv：** 2509.19189  
+> **作者：** Binghui Li, Fengling Chen, Zixun Huang, Lean Wang, Lei Wu
+> **会议：** NeurIPS 2025
+> **arXiv：** 2509.19189
 > **一句话定位：** 传统 scaling law 只预测训练结束时的 loss；本文用“内禀时间 + 遗忘核卷积”建立 Functional Scaling Law（FSL），统一描述任意学习率计划下 SGD 的完整损失轨迹，并解释为什么 WSD 通常优于纯衰减和恒定学习率。
 
 ## 1. 工程背景 (Engineering Background)
@@ -138,3 +175,13 @@ $$
 - [[li2025-functional-scaling-laws-results]]
 - [[li2025-functional-scaling-laws-critical]]
 - [[wang2021-pinn-ntk-failure-analysis]]
+
+## Evidence By Source
+
+### `sources/papers/li2025-functional-scaling-laws.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/li2025-functional-scaling-laws.pdf`
+
+^[sources/papers/li2025-functional-scaling-laws.md]

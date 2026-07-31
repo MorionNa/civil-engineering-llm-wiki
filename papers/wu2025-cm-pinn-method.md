@@ -1,12 +1,36 @@
 ---
-title: "Wu et al. (2025) — CM-PINNs 方法机制展开"
-created: 2026-07-01
-updated: 2026-07-01
+id: papers--wu2025-cm-pinn-method
+title: Wu et al. (2025) — CM-PINNs 方法机制展开
 type: paper-analysis
-tags: [physics-informed, pinn, lstm, multi-lstm, finite-difference, physics-constrained-loss, adaptive-weighting, structural-dynamics, hysteresis, restoring-force]
-sources: [raw/papers/wu2025-cm-pinn-extracted.md]
-methods: [physics-constrained-loss, finite-difference, multi-lstm, adaptive-weighting]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- finite-difference
+- hysteresis
+- lstm
+- multi-lstm
+- physics-constrained-loss
+- physics-informed
+- pinn
+- restoring-force
+- structural-dynamics
+sources:
+- sources/papers/wu2025-cm-pinn.md
+created: '2026-07-01'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-constrained-loss
+- finite-difference
+- multi-lstm
+- adaptive-weighting
 ---
 
 # Wu et al. (2025) — CM-PINNs 方法机制展开
@@ -57,7 +81,7 @@ CDM 模块用中心差分计算 $\dot Z=\{\dot u,\ddot u,\dot r\}$。内部时�
 | $f_{s1}$ | FC-SLSTM2($Z$) | 数据驱动恢复力加速度，负责从状态中学习复杂局部非线性 |
 | $f_{s2}$ | NLCM/BLCM($u$, history) | 本构模型计算出的物理恢复力加速度 |
 
-损失项 $L^P_{fs}=\|f_{s2}-f_{s1}\|^2$ 强迫二者一致。这样做比只用运动方程约束更强，因为运动方程只要求某个恢复力能平衡外力，而本构约束进一步要求这个恢复力来自合理的材料/构件关系。
+损失项 $L^P_{fs}=|f_{s2}-f_{s1}|^2$ 强迫二者一致。这样做比只用运动方程约束更强，因为运动方程只要求某个恢复力能平衡外力，而本构约束进一步要求这个恢复力来自合理的材料/构件关系。
 
 ## 5. BLCM：双线性本构模块
 
@@ -117,3 +141,13 @@ $$L_{total}=\frac{L^D_u+\sum_j\omega_jL_j}{6}$$
 - [[wu2025-cm-pinn-results]] — 实验结果
 - [[cm-pinns]] — 方法实体
 - [[zhang2020-phylstm-method]] — PhyLSTM 方法对照
+
+## Evidence By Source
+
+### `sources/papers/wu2025-cm-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wu2025-cm-pinn-extracted.md`
+
+^[sources/papers/wu2025-cm-pinn.md]

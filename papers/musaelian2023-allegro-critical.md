@@ -1,15 +1,36 @@
 ---
 id: paper-musaelian2023-allegro-critical
-title: "Musaelian et al. (2023) — Allegro 批判、迁移与研究机会"
+title: Musaelian et al. (2023) — Allegro 批判、迁移与研究机会
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance, gpu-computing, limitation, future-work]
-sources: [raw/papers/musaelian2023-allegro-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- future-work
+- gpu-computing
+- limitation
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/musaelian2023-allegro.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-failure_modes: [long-range-interaction-gap, pair-feature-memory, locality-bias, accuracy-speed-tradeoff, strong-scaling-saturation]
+failure_modes:
+- long-range-interaction-gap
+- pair-feature-memory
+- locality-bias
+- accuracy-speed-tradeoff
+- strong-scaling-saturation
 reproducibility: high
 ---
 
@@ -118,3 +139,13 @@ QM9 的高精度模型具有数百万参数，而 Li$_3$PO$_4$/Ag scaling 模型
 - [[sevennet]]
 - [[pinn]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `sources/papers/musaelian2023-allegro.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/musaelian2023-allegro-source.md`
+
+^[sources/papers/musaelian2023-allegro.md]

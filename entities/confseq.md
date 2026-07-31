@@ -1,10 +1,23 @@
 ---
-title: "ConfSeq — 分子构象描述语言"
-created: 2026-06-24
-updated: 2026-06-24
+id: entities--confseq
+title: ConfSeq — 分子构象描述语言
 type: entity
-tags: [chemical-language-model, molecular-conformation, sequence-modeling, internal-coordinates]
-sources: [raw/papers/10_1101_2025.05.07.652440.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+- method/transformer
+keywords:
+- chemical-language-model
+- entity/model
+- internal-coordinates
+- method/transformer
+- molecular-conformation
+- sequence-modeling
+sources:
+- raw/papers/10_1101_2025.05.07.652440.pdf
+created: '2026-06-24'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -21,7 +34,7 @@ confidence: high
 | 要素 | Token 格式 | 含义 |
 |------|-----------|------|
 | 二面角 | `<113>` | 四原子二面角，替换 SMILES 中键 token |
-| 键角 | `<30>\|` | 三原子键角，插入中心原子后 |
+| 键角 | `<30>|` | 三原子键角，插入中心原子后 |
 | 伪手性 | `{` / `}` | 逆/顺时针，区分非手性中心构象 |
 
 ## 关键特性
@@ -54,3 +67,12 @@ Zenodo: `10.5281/zenodo.19706011` | 需要 RDKit + Indigo
 - `[[xiong2025-confseq-method]]` — 方法机制展开
 - `[[xiong2025-confseq-results]]` — 实验结果
 - `[[xiong2025-confseq-critical]]` — 贡献+Negative+机会
+
+## Evidence By Source
+
+### `raw/papers/10_1101_2025.05.07.652440.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1101_2025.05.07.652440.pdf]

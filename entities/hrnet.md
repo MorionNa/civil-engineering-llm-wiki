@@ -1,10 +1,23 @@
 ---
-title: "HRNet"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--hrnet
+title: HRNet
 type: entity
-tags: [semantic-segmentation, high-resolution-representation, multi-resolution-fusion]
-sources: [raw/papers/arxiv_1904.04514.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- entity/model
+keywords:
+- domain/computer-vision
+- entity/model
+- high-resolution-representation
+- multi-resolution-fusion
+- semantic-segmentation
+sources:
+- raw/papers/arxiv_1904.04514.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # HRNet
@@ -19,3 +32,16 @@ HRNet (High-Resolution Network) 全程保持高分辨率表示，通过并行的
 
 ## 关联页面
 - [[sun2019-hrnetv2-analysis]] — HRNetV2 论文完整分析
+
+## Evidence By Source
+
+### `raw/papers/arxiv_1904.04514.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/arxiv_1904.04514.pdf]
+
+## Related Indexes
+
+- [[entities/index]]

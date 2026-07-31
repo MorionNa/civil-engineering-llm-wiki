@@ -1,12 +1,33 @@
 ---
-title: "Wang et al. (2023) — 方法机制展开"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--wang2023-pinn-spurious-method
+title: Wang et al. (2023) — 方法机制展开
 type: paper-analysis
-tags: [pinns, pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian, physics-constrained-loss, pde, deep-learning]
-sources: [raw/papers/wang2023-pinn-spurious.md]
-methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian, jacobian-stability-estimate]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-pseudo-time-stepping
+- collocation-resampling
+- deep-learning
+- finite-difference-jacobian
+- pde
+- physics-constrained-loss
+- pinn
+- pseudo-time-stepping
+sources:
+- sources/papers/wang2023-pinn-spurious.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+methods:
+- pseudo-time-stepping
+- adaptive-pseudo-time-stepping
+- collocation-resampling
+- finite-difference-jacobian
+- jacobian-stability-estimate
 ---
 
 # Wang et al. (2023) — 方法机制展开
@@ -101,3 +122,13 @@ PhyLSTM 的 physics-constraint-weight-tuning 正是本论文自适应步长试�
 - [[wang2023-pinn-spurious-results]] — 结果展开
 - [[zhang2020-phylstm-method]] — 共享 collocation-strategy, adam-lbfgs
 - [[physics-constrained-training-failure-modes]] — 失败模式对比
+
+## Evidence By Source
+
+### `sources/papers/wang2023-pinn-spurious.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2023-pinn-spurious.md`
+
+^[sources/papers/wang2023-pinn-spurious.md]

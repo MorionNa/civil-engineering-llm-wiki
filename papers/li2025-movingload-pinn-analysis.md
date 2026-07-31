@@ -1,20 +1,54 @@
 ---
-title: "Li et al. (2025) — 基于物理信息神经网络的桥梁移动荷载动力响应分析：论文分析"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-movingload-pinn-analysis
+title: Li et al. (2025) — 基于物理信息神经网络的桥梁移动荷载动力响应分析：论文分析
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, equation-of-motion, ai4s, physics-simulation, neural-network, deep-learning, collocation-strategy, inverse-problem]
-sources: [raw/papers/10_1016_j_aei_2025_103215_extracted.txt]
-methods: [physics-informed, pinn, fourier-embedding, causal-weight, collocation-strategy, gaussian-approximation]
-results: [bridge-dynamics, moving-load-response, nondimensional-pde, uniform-beam, non-uniform-beam, parameter-identification]
-failure_modes: [physics-constraint-weight-tuning]
-datasets: [synthetic-data]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- collocation-strategy
+- deep-learning
+- equation-of-motion
+- inverse-problem
+- neural-network
+- physics-informed
+- physics-simulation
+- pinn
+- structural-dynamics
+sources:
+- sources/papers/li2025-movingload-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
+confidence: high
+methods:
+- physics-informed
+- pinn
+- fourier-embedding
+- causal-weight
+- collocation-strategy
+- gaussian-approximation
+results:
+- bridge-dynamics
+- moving-load-response
+- nondimensional-pde
+- uniform-beam
+- non-uniform-beam
+- parameter-identification
+failure_modes:
+- physics-constraint-weight-tuning
+datasets:
+- synthetic-data
 reproducibility: medium
 code_url:
-  - 未公开
+- 未公开
 dataset_url:
-  - 合成数据（数值模拟生成）
-confidence: high
+- 合成数据（数值模拟生成）
 ---
 
 # 基于物理信息神经网络的桥梁移动荷载动力响应分析
@@ -149,3 +183,13 @@ PINN 已在静态荷载结构响应分析中展现了强大能力，但在**移�
 - [[wang2023-pinn-spurious-analysis]] — PINN 伪解问题与训练失败模式
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式对比
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S PINN 入门讲座（DeepXDE 实战）
+
+## Evidence By Source
+
+### `sources/papers/li2025-movingload-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103215_extracted.txt`
+
+^[sources/papers/li2025-movingload-pinn.md]

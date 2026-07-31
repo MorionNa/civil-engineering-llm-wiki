@@ -1,23 +1,65 @@
 ---
-title: "Song (2025) — RL-PINNs：强化学习驱动的单轮自适应配点"
-created: 2026-07-29
-updated: 2026-07-29
+id: papers--song2025-rl-pinns-analysis
+title: Song (2025) — RL-PINNs：强化学习驱动的单轮自适应配点
 type: paper-analysis
-tags: [physics-informed, pinn, reinforcement-learning, deep-q-network, adaptive-sampling, collocation-strategy, gradient-free-reward, delayed-reward, high-dimensional-pde, high-order-pde, scientific-machine-learning, ai4s]
-sources: [raw/papers/2504.12949v1.pdf]
-methods: [markov-decision-process, deep-q-network, function-variation-reward, semi-sparse-reward, single-round-adaptive-sampling]
-results: [single-round-sampling, localized-feature-resolution, high-dimensional-poisson, biharmonic-equation, negligible-sampling-overhead]
-failure_modes: [pretrained-solution-bias, function-variation-residual-mismatch, local-action-space, hyperparameter-sensitivity, no-code-release]
-datasets: [single-peak-poisson, dual-peak-poisson, burgers-equation, wave-equation, ten-dimensional-poisson, biharmonic-equation]
-reproducibility: medium
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+- method/reinforcement-learning
+keywords:
+- adaptive-sampling
+- ai4s
+- collocation-strategy
+- deep-q-network
+- delayed-reward
+- gradient-free-reward
+- high-dimensional-pde
+- high-order-pde
+- physics-informed
+- pinn
+- reinforcement-learning
+- scientific-machine-learning
+sources:
+- sources/papers/song2025-rl-pinns.md
+created: '2026-07-29'
+updated: '2026-07-31'
 confidence: high
+methods:
+- markov-decision-process
+- deep-q-network
+- function-variation-reward
+- semi-sparse-reward
+- single-round-adaptive-sampling
+results:
+- single-round-sampling
+- localized-feature-resolution
+- high-dimensional-poisson
+- biharmonic-equation
+- negligible-sampling-overhead
+failure_modes:
+- pretrained-solution-bias
+- function-variation-residual-mismatch
+- local-action-space
+- hyperparameter-sensitivity
+- no-code-release
+datasets:
+- single-peak-poisson
+- dual-peak-poisson
+- burgers-equation
+- wave-equation
+- ten-dimensional-poisson
+- biharmonic-equation
+reproducibility: medium
 ---
 
 # RL-PINNs: Reinforcement Learning-Driven Adaptive Sampling for Efficient Training of PINNs
 
-> **作者：** Zhenao Song  
-> **单位：** Southeast University, School of Mathematics  
-> **状态：** arXiv:2504.12949v1，2025-04-17  
+> **作者：** Zhenao Song
+> **单位：** Southeast University, School of Mathematics
+> **状态：** arXiv:2504.12949v1，2025-04-17
 > **一句话定位：** RL-PINNs 将 PINN 配点选择建模为 DQN 控制的序列决策问题，以相邻位置的网络函数变化量替代 PDE 残差作为无导数奖励，在一次独立采样阶段中寻找高变化区域，再用选出的配点完成最终 PINN 训练。
 
 ## 1. 工程背景 (Engineering Background)
@@ -155,3 +197,13 @@ MDP 的核心定义：
 - [[wang2021-pinn-ntk-failure-analysis]]
 - [[luo2025-pinn-pde-review-analysis]]
 - [[optimizer-for-ai4s-and-physics-models]]
+
+## Evidence By Source
+
+### `sources/papers/song2025-rl-pinns.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2504.12949v1.pdf`
+
+^[sources/papers/song2025-rl-pinns.md]

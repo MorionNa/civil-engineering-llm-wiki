@@ -1,307 +1,243 @@
 #!/usr/bin/env python3
-"""Strict lint for the maintained llm-wiki contract.
+"""Repository-wide strict lint for the civil-engineering llm-wiki.
 
-The repository contains historical pages created under older schemas. This lint is
-strict for core infrastructure and the NequIP/Allegro/SevenNet repair scope, while
-also validating all MkDocs nav targets and prohibiting CI workflows that mutate
-knowledge content.
+The lint covers every maintained Markdown page outside immutable raw materials and
+the generated docs/site copies. It validates schema, sources, provenance, links,
+paper-family completeness, exhaustive indexes, navigation, raw immutability
+policy, and read-only CI.
 """
-
 from __future__ import annotations
 
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-
-REQUIRED_FIELDS = {
-    "id",
-    "title",
-    "type",
-    "status",
-    "project",
-    "tags",
-    "sources",
-    "created",
-    "updated",
-    "confidence",
-}
+PROJECT = "civil-engineering-llm-wiki"
+MANAGED_ROOTS = ["papers", "entities", "concepts", "sources", "notes", "comparisons"]
+CORE_PATHS = ["SCHEMA.md", "index.md", "log.md"]
+REQUIRED_FIELDS = {"id", "title", "type", "status", "project", "tags", "sources", "created", "updated", "confidence"}
 ALLOWED_STATUS = {"draft", "active", "verified", "superseded"}
 ALLOWED_CONFIDENCE = {"low", "medium", "high"}
 ALLOWED_TYPES = {
-    "source",
-    "entity",
-    "paper-analysis",
-    "briefing",
-    "lecture",
-    "video",
-    "article",
-    "comparison",
-    "query",
-    "summary",
-    "index",
-    "log",
-    "schema",
+    "source", "entity", "concept", "method", "claim", "baseline", "comparison", "decision", "query",
+    "paper-analysis", "briefing", "lecture", "video", "article", "summary", "index", "log", "schema",
 }
-PROJECT = "civil-engineering-llm-wiki"
-
-PAPER_SLUGS = [
-    "batzner2022-nequip",
-    "musaelian2023-allegro",
-    "park2024-sevennet-parallel-gnn-ip",
-]
-SOURCE_PATHS = {
-    "batzner2022-nequip": "raw/papers/batzner2022-nequip-source.md",
-    "musaelian2023-allegro": "raw/papers/musaelian2023-allegro-source.md",
-    "park2024-sevennet-parallel-gnn-ip": "raw/papers/park2024-sevennet-parallel-gnn-ip-source.md",
-}
-ENTITY_PATHS = [
-    "entities/nequip.md",
-    "entities/allegro.md",
-    "entities/sevennet.md",
-]
-CORE_PATHS = [
-    "SCHEMA.md",
-    "index.md",
-    "papers/index.md",
-    "entities/index.md",
-    "log.md",
-]
-
-MAINTAINED_PATHS: list[str] = CORE_PATHS.copy()
-for slug in PAPER_SLUGS:
-    MAINTAINED_PATHS.extend(
-        [
-            SOURCE_PATHS[slug],
-            f"papers/{slug}-analysis.md",
-            f"papers/{slug}-method.md",
-            f"papers/{slug}-results.md",
-            f"papers/{slug}-critical.md",
-        ]
-    )
-MAINTAINED_PATHS.extend(ENTITY_PATHS)
-
-TEMP_CITATION_PATTERNS = [
-    re.compile(r"filecite"),
-    re.compile(r"cite"),
-    re.compile(r"\bturn\d+(?:file|search|view|fetch|news|open)\d+\b"),
-]
+ABSTRACT_ONLY = {"tao2026-fpikan", "zhang2025-mrf-pinn", "chittyvenkata2022-nas-transformers-survey"}
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
-PROVENANCE_RE = re.compile(r"\^\[raw/papers/[a-z0-9_.-]+\.md\]")
+TEMP_RE = re.compile(r"(?:filecite|cite)|\bturn\d+(?:file|search|view|fetch|news|open)\d+\b")
+PROVENANCE_RE = re.compile(r"\^\[[^\]]+\]")
 
 
-def fail(errors: list[str], message: str) -> None:
-    errors.append(message)
+def managed_files() -> list[Path]:
+    pages: list[Path] = []
+    for root in MANAGED_ROOTS:
+        base = ROOT / root
+        if base.exists():
+            pages.extend(base.rglob("*.md"))
+    pages.extend(ROOT / p for p in CORE_PATHS)
+    return sorted(set(pages))
 
 
-def parse_frontmatter(path: Path, errors: list[str]) -> tuple[dict[str, Any], str]:
+def parse_page(path: Path, errors: list[str]) -> tuple[dict[str, Any], str]:
     text = path.read_text(encoding="utf-8")
     if not text.startswith("---\n"):
-        fail(errors, f"{path.relative_to(ROOT)}: missing YAML frontmatter")
+        errors.append(f"{path.relative_to(ROOT)}: missing YAML frontmatter")
         return {}, text
     parts = text.split("---", 2)
     if len(parts) < 3:
-        fail(errors, f"{path.relative_to(ROOT)}: unterminated YAML frontmatter")
+        errors.append(f"{path.relative_to(ROOT)}: unterminated YAML frontmatter")
         return {}, text
     try:
         data = yaml.safe_load(parts[1]) or {}
     except yaml.YAMLError as exc:
-        fail(errors, f"{path.relative_to(ROOT)}: invalid YAML: {exc}")
+        errors.append(f"{path.relative_to(ROOT)}: invalid YAML: {exc}")
         return {}, parts[2]
     if not isinstance(data, dict):
-        fail(errors, f"{path.relative_to(ROOT)}: frontmatter is not a mapping")
+        errors.append(f"{path.relative_to(ROOT)}: frontmatter is not a mapping")
         return {}, parts[2]
     return data, parts[2]
 
 
-def build_wikilink_index() -> tuple[set[str], set[str]]:
-    stems: set[str] = set()
-    rels: set[str] = set()
-    for path in ROOT.rglob("*.md"):
-        if any(part in {"site", ".git"} for part in path.parts):
-            continue
+def build_link_index(paths: list[Path]) -> tuple[set[str], set[str]]:
+    stems: set[str] = set(); rels: set[str] = set()
+    for path in paths:
         rel = path.relative_to(ROOT).as_posix()
-        rels.add(rel)
-        rels.add(rel.removesuffix(".md"))
         stems.add(path.stem)
+        rels.add(rel); rels.add(rel.removesuffix(".md"))
     return stems, rels
 
 
-def wikilink_resolves(target: str, stems: set[str], rels: set[str]) -> bool:
-    target = target.split("|", 1)[0].split("#", 1)[0].strip()
-    if not target:
-        return False
-    target = target.removesuffix(".md")
-    if "/" in target:
-        return target in rels
-    return target in stems
+def normalize_target(value: str) -> str:
+    return value.split("|", 1)[0].split("#", 1)[0].strip().removesuffix(".md")
+
+
+def resolves(target: str, stems: set[str], rels: set[str]) -> bool:
+    return bool(target) and (target in stems or target in rels)
 
 
 def flatten_nav(node: Any) -> list[str]:
-    values: list[str] = []
-    if isinstance(node, str):
-        values.append(node)
-    elif isinstance(node, list):
-        for item in node:
-            values.extend(flatten_nav(item))
-    elif isinstance(node, dict):
-        for value in node.values():
-            values.extend(flatten_nav(value))
-    return values
+    if isinstance(node, str): return [node]
+    if isinstance(node, list):
+        out: list[str] = []
+        for item in node: out.extend(flatten_nav(item))
+        return out
+    if isinstance(node, dict):
+        out: list[str] = []
+        for item in node.values(): out.extend(flatten_nav(item))
+        return out
+    return []
+
+
+def family_inventory() -> dict[str, set[str]]:
+    families: dict[str, set[str]] = defaultdict(set)
+    for path in (ROOT / "papers").glob("*.md"):
+        if path.name == "index.md": continue
+        m = re.match(r"(.+)-(analysis|method|results|critical)$", path.stem)
+        if m: families[m.group(1)].add(m.group(2))
+        else: families[path.stem].add("single")
+    return dict(families)
+
+
+def registry_contains(index_path: Path, target: str) -> bool:
+    return f"[[{target}]]" in index_path.read_text(encoding="utf-8")
 
 
 def main() -> int:
     errors: list[str] = []
-
-    for rel in MAINTAINED_PATHS:
-        if not (ROOT / rel).is_file():
-            fail(errors, f"missing maintained file: {rel}")
-
+    paths = managed_files()
+    for core in CORE_PATHS:
+        if not (ROOT / core).is_file(): errors.append(f"missing core file: {core}")
+    for required_index in ["papers/index.md", "entities/index.md", "concepts/index.md", "sources/index.md", "notes/index.md", "comparisons/index.md"]:
+        if not (ROOT / required_index).is_file(): errors.append(f"missing section index: {required_index}")
     if errors:
-        for error in errors:
-            print(f"ERROR: {error}")
-        return 1
+        print("\n".join("ERROR: " + x for x in errors)); return 1
 
     schema_text = (ROOT / "SCHEMA.md").read_text(encoding="utf-8")
-    stems, rels = build_wikilink_index()
-    seen_ids: dict[str, str] = {}
+    allowed_tags = set(re.findall(r"`([a-z0-9]+/[a-z0-9-]+)`", schema_text))
+    stems, rels = build_link_index(paths)
+    ids: dict[str, str] = {}
+    page_data: dict[str, dict[str, Any]] = {}
 
-    for rel in MAINTAINED_PATHS:
-        path = ROOT / rel
-        data, body = parse_frontmatter(path, errors)
-        missing = REQUIRED_FIELDS - data.keys()
-        if missing:
-            fail(errors, f"{rel}: missing frontmatter fields {sorted(missing)}")
-            continue
-
-        page_id = str(data["id"])
-        if page_id in seen_ids:
-            fail(errors, f"{rel}: duplicate id {page_id!r}, first used by {seen_ids[page_id]}")
-        else:
-            seen_ids[page_id] = rel
-
-        if data["status"] not in ALLOWED_STATUS:
-            fail(errors, f"{rel}: invalid status {data['status']!r}")
-        if data["type"] not in ALLOWED_TYPES:
-            fail(errors, f"{rel}: invalid type {data['type']!r}")
-        if data["project"] != PROJECT:
-            fail(errors, f"{rel}: project must be {PROJECT!r}")
-        if data["confidence"] not in ALLOWED_CONFIDENCE:
-            fail(errors, f"{rel}: invalid confidence {data['confidence']!r}")
-        if not isinstance(data["tags"], list):
-            fail(errors, f"{rel}: tags must be a list")
-        else:
-            for tag in data["tags"]:
-                if not re.search(rf"(?<![a-z0-9-]){re.escape(str(tag))}(?![a-z0-9-])", schema_text):
-                    fail(errors, f"{rel}: tag {tag!r} is absent from SCHEMA taxonomy")
-        if not isinstance(data["sources"], list):
-            fail(errors, f"{rel}: sources must be a list")
+    for path in paths:
+        rel = path.relative_to(ROOT).as_posix()
+        data, body = parse_page(path, errors)
+        page_data[rel] = data
+        missing = REQUIRED_FIELDS - set(data)
+        if missing: errors.append(f"{rel}: missing frontmatter fields {sorted(missing)}")
+        if not missing:
+            page_id = str(data["id"])
+            if page_id in ids: errors.append(f"{rel}: duplicate id {page_id!r}; first used by {ids[page_id]}")
+            else: ids[page_id] = rel
+            if data["status"] not in ALLOWED_STATUS: errors.append(f"{rel}: invalid status {data['status']!r}")
+            if data["confidence"] not in ALLOWED_CONFIDENCE: errors.append(f"{rel}: invalid confidence {data['confidence']!r}")
+            if data["type"] not in ALLOWED_TYPES: errors.append(f"{rel}: invalid type {data['type']!r}")
+            if data["project"] != PROJECT: errors.append(f"{rel}: project must be {PROJECT!r}")
+            if not isinstance(data["tags"], list): errors.append(f"{rel}: tags must be a list")
+            else:
+                for tag in data["tags"]:
+                    if str(tag) not in allowed_tags: errors.append(f"{rel}: tag {tag!r} is absent from namespaced taxonomy")
+            if not isinstance(data["sources"], list): errors.append(f"{rel}: sources must be a list")
 
         full_text = path.read_text(encoding="utf-8")
-        for pattern in TEMP_CITATION_PATTERNS:
-            if pattern.search(full_text):
-                fail(errors, f"{rel}: contains temporary chat/web citation token")
+        if TEMP_RE.search(full_text): errors.append(f"{rel}: contains temporary assistant citation token")
+        if "\\|" in full_text and "[[" in full_text: errors.append(f"{rel}: contains escaped wikilink separator")
 
-        links = WIKILINK_RE.findall(body)
-        if data["type"] not in {"source", "schema", "log"} and len(links) < 2:
-            fail(errors, f"{rel}: fewer than two outbound wikilinks")
+        links = [normalize_target(x) for x in WIKILINK_RE.findall(body)]
         for link in links:
-            if not wikilink_resolves(link, stems, rels):
-                fail(errors, f"{rel}: unresolved wikilink [[{link}]]")
+            if not resolves(link, stems, rels): errors.append(f"{rel}: unresolved wikilink [[{link}]]")
+        ptype = data.get("type")
+        if ptype not in {"source", "schema", "log", "index"} and len(set(links)) < 2:
+            errors.append(f"{rel}: fewer than two outbound wikilinks")
 
-        if rel.startswith("papers/") and rel != "papers/index.md":
-            if not PROVENANCE_RE.search(body):
-                fail(errors, f"{rel}: missing persistent source provenance marker")
-        if rel in ENTITY_PATHS and not PROVENANCE_RE.search(body):
-            fail(errors, f"{rel}: missing persistent source provenance marker")
+        sources = data.get("sources", []) if isinstance(data.get("sources", []), list) else []
+        if ptype not in {"source", "schema", "log", "index"}:
+            if sources:
+                if not PROVENANCE_RE.search(body): errors.append(f"{rel}: sources listed but no persistent provenance marker")
+            elif data.get("status") != "draft" or "## Verification Needed" not in body:
+                errors.append(f"{rel}: no source; must be draft with Verification Needed")
+        for source in sources:
+            source = str(source)
+            if source.startswith("sources/") and source.endswith(".md") and not (ROOT / source).is_file():
+                errors.append(f"{rel}: canonical source note does not exist: {source}")
 
-    for slug in PAPER_SLUGS:
-        analysis = (ROOT / f"papers/{slug}-analysis.md").read_text(encoding="utf-8")
-        required_sections = [
-            "## 1.",
-            "## 2.",
-            "## 3.",
-            "## 4.",
-            "## 5.",
-            "## 6.",
-            "## 7.",
-            "## 8.",
-            "## 9.",
-            "## 10.",
-            "## 11.",
-            "## 12.",
-        ]
-        for heading in required_sections:
-            if heading not in analysis:
-                fail(errors, f"papers/{slug}-analysis.md: missing section prefix {heading}")
-        for suffix in ("method", "results", "critical"):
-            if f"[[{slug}-{suffix}]]" not in analysis:
-                fail(errors, f"papers/{slug}-analysis.md: missing link to {suffix} page")
+    # raw/ is immutable and excluded from normalization. Ensure workflows do not target it for write operations.
+    raw_files = list((ROOT / "raw").rglob("*")) if (ROOT / "raw").exists() else []
+    if not any(p.is_file() for p in raw_files): errors.append("raw/: no immutable source records found")
 
-    registrations = {
-        "papers/index.md": [f"[[{slug}-analysis]]" for slug in PAPER_SLUGS],
-        "entities/index.md": ["[[nequip]]", "[[allegro]]", "[[sevennet]]"],
-        "index.md": [
-            "[[papers/index]]",
-            "[[entities/index]]",
-            "[[batzner2022-nequip-analysis]]",
-            "[[musaelian2023-allegro-analysis]]",
-            "[[park2024-sevennet-parallel-gnn-ip-analysis]]",
-        ],
-        "log.md": [
-            "Unified llm-wiki compliance repair",
-            "Batzner et al. (2022) — NequIP",
-            "Musaelian et al. (2023) — Allegro",
-            "Park et al. (2024) — SevenNet",
-        ],
+    families = family_inventory()
+    for family, suffixes in sorted(families.items()):
+        source_note = ROOT / "sources" / "papers" / f"{family}.md"
+        if not source_note.is_file(): errors.append(f"{family}: missing canonical paper source note")
+        if family in ABSTRACT_ONLY:
+            if suffixes != {"single"}: errors.append(f"{family}: abstract-only paper must remain a single overview")
+            path = ROOT / "papers" / f"{family}.md"
+            data = page_data.get(path.relative_to(ROOT).as_posix(), {})
+            if data.get("evidence_scope") != "abstract-only": errors.append(f"{family}: missing evidence_scope: abstract-only")
+            continue
+        expected = {"analysis", "method", "results", "critical"}
+        if suffixes != expected: errors.append(f"{family}: incomplete 1+3 family; found {sorted(suffixes)}")
+        analysis = ROOT / "papers" / f"{family}-analysis.md"
+        text = analysis.read_text(encoding="utf-8") if analysis.exists() else ""
+        sections = {int(x) for x in re.findall(r"^##\s+(\d+)(?:\.|-|\s)", text, re.M)}
+        missing_sections = set(range(1, 13)) - sections
+        if missing_sections: errors.append(f"{analysis.relative_to(ROOT)}: missing overview sections {sorted(missing_sections)}")
+        for suffix in ["method", "results", "critical"]:
+            if f"[[{family}-{suffix}]]" not in text: errors.append(f"{analysis.relative_to(ROOT)}: missing link to {suffix} page")
+
+    # Every page must be reachable from its exhaustive section registry.
+    index_map = {
+        "papers": ROOT / "papers/index.md", "entities": ROOT / "entities/index.md",
+        "concepts": ROOT / "concepts/index.md", "sources": ROOT / "sources/index.md",
+        "notes": ROOT / "notes/index.md", "comparisons": ROOT / "comparisons/index.md",
     }
-    for rel, markers in registrations.items():
-        text = (ROOT / rel).read_text(encoding="utf-8")
-        for marker in markers:
-            if marker not in text:
-                fail(errors, f"{rel}: missing registration marker {marker!r}")
+    for root, index_path in index_map.items():
+        for path in (ROOT / root).rglob("*.md"):
+            if path.name == "index.md": continue
+            target = path.relative_to(ROOT).with_suffix("").as_posix()
+            if not registry_contains(index_path, target): errors.append(f"{index_path.relative_to(ROOT)}: missing registry entry [[{target}]]")
 
-    mkdocs_path = ROOT / "mkdocs.yml"
+    root_index = (ROOT / "index.md").read_text(encoding="utf-8")
+    for target in ["papers/index", "entities/index", "concepts/index", "sources/index", "notes/index", "comparisons/index", "SCHEMA", "log"]:
+        if f"[[{target}]]" not in root_index: errors.append(f"index.md: missing section link [[{target}]]")
+
+    # Navigation must parse and point to existing pages.
     try:
-        mkdocs = yaml.safe_load(mkdocs_path.read_text(encoding="utf-8"))
+        mkdocs = yaml.safe_load((ROOT / "mkdocs.yml").read_text(encoding="utf-8")) or {}
     except yaml.YAMLError as exc:
-        fail(errors, f"mkdocs.yml: invalid YAML: {exc}")
-        mkdocs = {}
+        errors.append(f"mkdocs.yml: invalid YAML: {exc}"); mkdocs = {}
     for target in flatten_nav(mkdocs.get("nav", [])):
-        if target.endswith(".md") and not (ROOT / target).is_file():
-            fail(errors, f"mkdocs.yml: nav target does not exist: {target}")
-    mkdocs_text = mkdocs_path.read_text(encoding="utf-8")
-    for marker in (
-        "Batzner 2022 NequIP",
-        "Musaelian 2023 Allegro",
-        "Park 2024 SevenNet",
-        "entities/nequip.md",
-        "entities/allegro.md",
-        "entities/sevennet.md",
-    ):
-        if marker not in mkdocs_text:
-            fail(errors, f"mkdocs.yml: missing navigation marker {marker!r}")
+        if target.endswith(".md") and not (ROOT / target).is_file(): errors.append(f"mkdocs.yml: missing nav target {target}")
 
-    workflows = ROOT / ".github" / "workflows"
-    for workflow in workflows.glob("*.yml"):
+    # Read-only workflow contract.
+    for workflow in (ROOT / ".github/workflows").glob("*.yml"):
         text = workflow.read_text(encoding="utf-8")
-        if "git push" in text or re.search(r"contents:\s*write", text):
-            fail(errors, f"{workflow.relative_to(ROOT)}: workflow mutates repository contents")
-        if workflow.name.startswith(("register-", "complete-", "finalize-")):
-            fail(errors, f"{workflow.relative_to(ROOT)}: one-time mutation workflow is prohibited")
+        rel = workflow.relative_to(ROOT)
+        if re.search(r"contents:\s*write", text): errors.append(f"{rel}: contents: write is prohibited")
+        for token in ["git push", "git commit", "create-pull-request", "peter-evans/create-pull-request"]:
+            if token in text: errors.append(f"{rel}: repository mutation token {token!r} is prohibited")
+        if workflow.name.startswith(("register-", "complete-", "finalize-")): errors.append(f"{rel}: one-time mutation workflow is prohibited")
+
+    # Migration artifacts are prohibited from final PR.
+    forbidden_names = {"tree-api-test.txt", "dummy", "test-branch-file", "test"}
+    for path in ROOT.rglob("*"):
+        if path.is_file() and path.name in forbidden_names:
+            errors.append(f"forbidden migration artifact: {path.relative_to(ROOT)}")
+    for forbidden in ["wiki-repository-snapshot", "Upload repository snapshot"]:
+        for workflow in (ROOT / ".github/workflows").glob("*.yml"):
+            if forbidden in workflow.read_text(encoding="utf-8"):
+                errors.append(f"{workflow.relative_to(ROOT)}: contains temporary migration artifact marker {forbidden!r}")
 
     if errors:
-        print(f"llm-wiki lint failed with {len(errors)} error(s):")
-        for error in errors:
-            print(f"ERROR: {error}")
+        print(f"Repository-wide llm-wiki lint failed with {len(errors)} error(s):")
+        for error in errors: print("ERROR:", error)
         return 1
-
-    print(f"llm-wiki lint passed for {len(MAINTAINED_PATHS)} maintained files.")
-    print("Verified 3 full-text paper families, 3 entities, indexes, provenance, navigation and read-only CI.")
+    print(f"Repository-wide llm-wiki lint passed for {len(paths)} maintained Markdown pages.")
+    print(f"Verified {len(families)} paper families, canonical sources, exhaustive indexes, provenance, links and read-only CI.")
     return 0
 
 

@@ -1,18 +1,47 @@
 ---
-title: "Goswami et al. (2022) — A Physics-Informed Variational DeepONet for Crack Path Prediction: 论文分析"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--goswami2022-variational-deeponet-analysis
+title: 'Goswami et al. (2022) — A Physics-Informed Variational DeepONet for Crack Path Prediction: 论文分析'
 type: paper-analysis
-tags: [physics-informed, deep-learning, neural-network, finite-element, ai4s, physics-simulation, metamodeling, data-scarcity]
-sources: [raw/papers/10_1016_j_cma_2022_114587_extracted.txt]
-methods: [deeponet, variational-formulation, energy-minimization, phase-field-fracture, hybrid-training]
-results: [crack-path-prediction, interpolation-extrapolation, single-edge-notch, l-shape-panel]
-failure_modes: [crack-topology-sensitivity, training-data-dependency, extrapolation-risk]
-datasets: [phase-field-fracture-benchmarks]
-reproducibility: medium
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- data-scarcity
+- deep-learning
+- finite-element
+- metamodeling
+- neural-network
+- physics-informed
+- physics-simulation
+sources:
+- sources/papers/goswami2022-variational-deeponet.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- deeponet
+- variational-formulation
+- energy-minimization
+- phase-field-fracture
+- hybrid-training
+results:
+- crack-path-prediction
+- interpolation-extrapolation
+- single-edge-notch
+- l-shape-panel
+failure_modes:
+- crack-topology-sensitivity
+- training-data-dependency
+- extrapolation-risk
+datasets:
+- phase-field-fracture-benchmarks
+reproducibility: medium
 ---
 
 # Goswami et al. (2022) — A Physics-Informed Variational DeepONet for Crack Path Prediction
@@ -117,3 +146,13 @@ V-DeepONet = DeepONet 算子架构 + 变分能量损失。输入：初始裂纹�
 - [[deeponet]] — DeepONet 神经算子基础
 - [[pinn]] — PINN：物理信息学习的另一范式
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式对比
+
+## Evidence By Source
+
+### `sources/papers/goswami2022-variational-deeponet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_114587_extracted.txt`
+
+^[sources/papers/goswami2022-variational-deeponet.md]

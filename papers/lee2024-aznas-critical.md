@@ -1,10 +1,21 @@
 ---
-title: "Lee & Ham (2024) — AZ-NAS: 贡献 / 失败知识 / 可迁移知识 / 研究机会"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--lee2024-aznas-critical
+title: 'Lee & Ham (2024) — AZ-NAS: 贡献 / 失败知识 / 可迁移知识 / 研究机会'
 type: paper-analysis
-tags: [training-free-nas, neural-architecture-search, zero-shot]
-sources: [raw/papers/aznas_lee2024.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- neural-architecture-search
+- training-free-nas
+- zero-shot
+sources:
+- sources/papers/lee2024-aznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -200,3 +211,13 @@ AZ-NAS 的进化搜索（Algorithm 1）每次基于**历史累积的所有架构
 - [[training-free-nas-transformers]] — 训练-free NAS 在 Transformer 上的探索
 - [[te-nas]] — TE-NAS：双代理训练-free NAS（NTK + 线性区域计数）
 - [[nago]] — NAGO：贝叶斯优化的 NAS 框架（不同范式）
+
+## Evidence By Source
+
+### `sources/papers/lee2024-aznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/aznas_lee2024.pdf`
+
+^[sources/papers/lee2024-aznas.md]

@@ -1,18 +1,57 @@
 ---
-title: "Liu et al. (2025) — 场地反应 PINN：结果与定量证据"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--liu2025-site-response-pinn-results
+title: Liu et al. (2025) — 场地反应 PINN：结果与定量证据
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, seismic-response, equation-of-motion, ground-motion, synthetic-data, benchmark, neural-tangent-kernel, ai4s, physics-simulation]
-sources: [raw/papers/10_1016_j_compgeo_2025_107137.xml, raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt]
-methods: [fourier-feature-embedding, nondimensionalization, adam, rk45, newmark-beta]
-results: [displacement-rmse, velocity-rmse, acceleration-rmse, frequency-spectrum-agreement, single-layer, three-layer, ten-layer, wide-intensity-range]
-failure_modes: [spectral-bias, sigma-sensitivity, derivative-error-propagation, per-scenario-retraining, no-speed-benchmark]
-datasets: [NGA-West2-ground-motion-records, synthetic-layered-soil-profiles]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- benchmark
+- equation-of-motion
+- ground-motion
+- neural-tangent-kernel
+- physics-informed
+- physics-simulation
+- pinn
+- seismic-response
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/liu2025-site-response-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- fourier-feature-embedding
+- nondimensionalization
+- adam
+- rk45
+- newmark-beta
+results:
+- displacement-rmse
+- velocity-rmse
+- acceleration-rmse
+- frequency-spectrum-agreement
+- single-layer
+- three-layer
+- ten-layer
+- wide-intensity-range
+failure_modes:
+- spectral-bias
+- sigma-sensitivity
+- derivative-error-propagation
+- per-scenario-retraining
+- no-speed-benchmark
+datasets:
+- NGA-West2-ground-motion-records
+- synthetic-layered-soil-profiles
+reproducibility: low
 ---
 
 # Liu et al. (2025) — 结果与定量证据
@@ -78,3 +117,13 @@ $m=200$ 只比 $m=100$ 略好但更耗时；$\sigma$ 过小会过度平滑，过
 - [[seismic-site-response-pinn]] — 方法适用范围
 - [[pinn]] — PINN 基础实体
 - [[liu2025-site-response-pinn-method]] — Fourier/TPE 训练流程
+
+## Evidence By Source
+
+### `sources/papers/liu2025-site-response-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_compgeo_2025_107137.xml`, `raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt`
+
+^[sources/papers/liu2025-site-response-pinn.md]

@@ -1,9 +1,23 @@
 ---
-title: "Wang et al. (2021) PINN 失败机制 — 结果展开：四个 PDE 谱偏差验证"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2021-pinn-ntk-failure-results
+title: Wang et al. (2021) PINN 失败机制 — 结果展开：四个 PDE 谱偏差验证
 type: paper-analysis
-tags: [physics-informed, pinn, spectral-bias, gradient-pathology, pde-benchmarks]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- gradient-pathology
+- pde-benchmarks
+- physics-informed
+- pinn
+- spectral-bias
+sources:
+- sources/papers/wang2021-pinn-ntk-failure.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -89,3 +103,13 @@ $$\frac{\partial u}{\partial t} = \epsilon \frac{\partial^2 u}{\partial x^2} - \
 - [[wang2021-pinn-ntk-failure-analysis|← 总览]]
 - [[wang2021-pinn-ntk-failure-method|← 方法]]
 - [[wang2021-pinn-ntk-failure-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/wang2021-pinn-ntk-failure.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2021_110768.xml`
+
+^[sources/papers/wang2021-pinn-ntk-failure.md]

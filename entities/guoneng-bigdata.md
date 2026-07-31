@@ -1,10 +1,21 @@
 ---
-title: "国能大数据"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--guoneng-bigdata
+title: 国能大数据
 type: entity
-tags: [organization, hydrology, large-language-model, energy]
-sources: [notes/briefings/glm-hydropower-2026.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+keywords:
+- energy
+- entity/model
+- hydrology
+- large-language-model
+- organization
+sources:
+- notes/briefings/glm-hydropower-2026.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -36,3 +47,12 @@ confidence: high
 - [[hydroglm]] — HydroGLM 行业大模型
 - [[notes/briefings/glm-hydropower-2026]] — 项目完整汇报笔记
 - [[daduhe-company]] — 大渡河公司
+
+## Evidence By Source
+
+### `notes/briefings/glm-hydropower-2026.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[notes/briefings/glm-hydropower-2026.md]

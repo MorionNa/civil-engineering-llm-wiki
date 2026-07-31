@@ -1,10 +1,22 @@
 ---
-title: "TE-NAS 实验结果：NAS-Bench-201 / DARTS / ImageNet"
-created: 2026-06-12
-updated: 2026-06-12
+id: papers--chen2021-tenas-results
+title: TE-NAS 实验结果：NAS-Bench-201 / DARTS / ImageNet
 type: paper-analysis
-tags: [training-free-nas, nas-bench-201, cifar10-darts, imagenet-mobile]
-sources: [raw/papers/TE-NAS_chen2021_ICLR.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- cifar10-darts
+- imagenet-mobile
+- nas-bench-201
+- training-free-nas
+sources:
+- sources/papers/chen2021-tenas.md
+created: '2026-06-12'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -82,3 +94,13 @@ TE-NAS 揭示了一个关键洞察——**κN 和 ˆRN 对不同算子有截然�
 - [[chen2021-tenas-analysis]] — 全维度总览
 - [[chen2021-tenas-method]] — 方法展开
 - [[chen2021-tenas-critical]] — 贡献·局限·可迁移·机会
+
+## Evidence By Source
+
+### `sources/papers/chen2021-tenas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/TE-NAS_chen2021_ICLR.pdf`
+
+^[sources/papers/chen2021-tenas.md]

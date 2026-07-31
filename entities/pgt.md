@@ -1,9 +1,26 @@
 ---
-title: "Physics-Guided Transformer (PGT)：物理感知注意力机制"
-created: 2026-07-22
-updated: 2026-07-22
+id: entities--pgt
+title: Physics-Guided Transformer (PGT)：物理感知注意力机制
 type: entity
-tags: [PINN, Transformer, physics-guided-learning]
+status: draft
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+- method/transformer
+keywords:
+- domain/ai4s
+- entity/model
+- method/pinn
+- method/transformer
+- physics-guided-learning
+- pinn
+- transformer
+sources: []
+created: '2026-07-22'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Physics-Guided Transformer (PGT)
@@ -33,3 +50,12 @@ $$Attention=softmax(QK^T+\Gamma)V$$
 ## 局限
 
 目前主要验证 PDE 场重构，对结构强非线性、本构演化和倒塌问题仍需扩展。
+
+## Verification Needed
+
+- This historical page has no explicit source record. Recover and verify the original evidence before changing `status` from `draft`.
+
+## Related Indexes
+
+- [[entities/index]]
+- [[index]]

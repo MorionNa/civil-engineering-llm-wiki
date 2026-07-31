@@ -1,10 +1,25 @@
 ---
-title: "DARTSformer 批判分析：贡献 · 知识点 · Negative · 可迁移 · 研究机会"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--zhao2021-memory-efficient-dnas-critical
+title: DARTSformer 批判分析：贡献 · 知识点 · Negative · 可迁移 · 研究机会
 type: paper-analysis
-tags: [neural-architecture-search, transformer, differentiable-search, reversible-network, memory-efficient]
-sources: [raw/papers/memory_efficient_dnas2021.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- differentiable-search
+- memory-efficient
+- neural-architecture-search
+- reversible-network
+- transformer
+sources:
+- sources/papers/zhao2021-memory-efficient-dnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -112,3 +127,13 @@ DARTSformer 仅验证了 encoder-decoder 翻译架构。将 multi-split reversib
 - [[memory-efficient-dnas]] — 实体页
 - [[chen2021-tenas-critical]] — TE-NAS training-free NAS 的局限与机会对比
 - [[wang2020-hat-critical]] — HAT 进化搜索 NAS 的方法论对比
+
+## Evidence By Source
+
+### `sources/papers/zhao2021-memory-efficient-dnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/memory_efficient_dnas2021.pdf`
+
+^[sources/papers/zhao2021-memory-efficient-dnas.md]

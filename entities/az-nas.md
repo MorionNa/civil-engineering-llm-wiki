@@ -1,10 +1,25 @@
 ---
-title: "AZ-NAS"
-created: 2026-06-15
-updated: 2026-06-15
+id: entities--az-nas
+title: AZ-NAS
 type: entity
-tags: [training-free-nas, neural-architecture-search, zero-cost-proxy, ensemble-method, nas-method]
-sources: [raw/papers/aznas_lee2024.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- ensemble-method
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- training-free-nas
+- zero-cost-proxy
+sources:
+- raw/papers/aznas_lee2024.pdf
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -108,3 +123,12 @@ sAZ(i) = Σ_{M∈{E,P,T,C}} log(Rank(sM(i)) / m)
 - [[training-free-nas-transformers]] — 训练-free NAS 在 RNN/Transformer 上的探索
 - [[nasbench201]] — NAS-Bench-201 基准数据集
 - [[nago]] — NAGO：贝叶斯优化 NAS 框架
+
+## Evidence By Source
+
+### `raw/papers/aznas_lee2024.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/aznas_lee2024.pdf]

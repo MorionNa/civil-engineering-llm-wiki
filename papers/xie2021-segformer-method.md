@@ -1,12 +1,33 @@
 ---
-title: "SegFormer 方法机制展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--xie2021-segformer-method
+title: SegFormer 方法机制展开
 type: paper-analysis
-tags: [semantic-segmentation, vision-transformer, hierarchical-transformer, mix-ffn, efficient-self-attention, mlp-decoder]
-sources: [raw/papers/segformer.pdf]
-methods: [mit-encoder, mix-ffn, mlp-decoder, efficient-self-attention, hierarchical-transformer, overlap-patch-merging, sequence-reduction]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+- method/transformer
+keywords:
+- efficient-self-attention
+- hierarchical-transformer
+- mix-ffn
+- mlp-decoder
+- semantic-segmentation
+- vision-transformer
+sources:
+- sources/papers/xie2021-segformer.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+methods:
+- mit-encoder
+- mix-ffn
+- mlp-decoder
+- efficient-self-attention
+- hierarchical-transformer
+- overlap-patch-merging
+- sequence-reduction
 ---
 
 # SegFormer 方法机制
@@ -160,3 +181,13 @@ M = Linear(C, N_cls)(F)                # Step 4: 预测
 - [[xie2021-segformer-analysis]] — 总览
 - [[chen2018-deeplabv3plus-method]] — ASPP decoder vs MLP decoder
 - [[sun2019-hrnetv2-method]] — 全分辨率保持 vs Transformer 大 ERF
+
+## Evidence By Source
+
+### `sources/papers/xie2021-segformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/segformer.pdf`
+
+^[sources/papers/xie2021-segformer.md]

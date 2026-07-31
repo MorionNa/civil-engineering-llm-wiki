@@ -1,11 +1,27 @@
 ---
-title: "EZNAS 结果证据 — 跨搜索空间评分-精度相关性"
-created: 2026-06-15
-updated: 2026-06-15
-type: paper-results
-parent: akhauri2022-eznas-analysis
-tags: [nas-bench-201, nds, nats-bench, kendall-tau, spearman-rho, zero-cost-proxy, training-free-nas]
+id: papers--akhauri2022-eznas-results
+title: EZNAS 结果证据 — 跨搜索空间评分-精度相关性
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- kendall-tau
+- nas-bench-201
+- nats-bench
+- nds
+- spearman-rho
+- training-free-nas
+- zero-cost-proxy
+sources:
+- sources/papers/akhauri2022-eznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
+parent: akhauri2022-eznas-analysis
 ---
 
 # EZNAS 实验结果详解
@@ -111,3 +127,13 @@ EZNAS-A 的评分-精度相关性随 batch size 增大而**单调提升**（CIFA
 - [[akhauri2022-eznas-critical]] — 批判性分析
 - [[eznas]] — EZNAS 实体
 - [[nasbench201]] — NAS-Bench-201 基准
+
+## Evidence By Source
+
+### `sources/papers/akhauri2022-eznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/eznas_akhauri2022.pdf`
+
+^[sources/papers/akhauri2022-eznas.md]

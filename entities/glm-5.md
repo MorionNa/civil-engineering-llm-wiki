@@ -1,10 +1,27 @@
 ---
-title: "GLM-5.0"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--glm-5
+title: GLM-5.0
 type: entity
-tags: [large-language-model, glm, open-source, reasoning, coding, agent]
-sources: [notes/briefings/glm-hydropower-2026.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/model
+- method/transformer
+keywords:
+- agent
+- coding
+- domain/llm
+- entity/model
+- glm
+- large-language-model
+- method/transformer
+- open-source
+- reasoning
+sources:
+- notes/briefings/glm-hydropower-2026.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -37,3 +54,12 @@ GLM-5.0 作为 L0 基础大模型，经领域预训练 + SFT 微调后派生出 
 - [[hydroglm]] — HydroGLM 行业大模型
 - [[zhipu-ai]] — 智谱AI 公司
 - [[fedus2021-switch-transformer-analysis]] — MoE 架构参考
+
+## Evidence By Source
+
+### `notes/briefings/glm-hydropower-2026.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[notes/briefings/glm-hydropower-2026.md]

@@ -1,11 +1,28 @@
 ---
-title: "Serianni & Kalita (2023) — Method: Training-free NAS Proxies for RNNs and Transformers"
-created: 2026-06-14
-updated: 2026-06-14
-type: paper-method
-tags: [training-free-nas, hidden-covariance, attention-confidence, expressivity, rnn, transformer]
-parent: [[serianni2023-training-free-nas-rnn-transformers-analysis]]
+id: papers--serianni2023-training-free-nas-rnn-transformers-method
+title: 'Serianni & Kalita (2023) — Method: Training-free NAS Proxies for RNNs and Transformers'
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- attention-confidence
+- expressivity
+- hidden-covariance
+- rnn
+- training-free-nas
+- transformer
+sources:
+- sources/papers/serianni2023-training-free-nas-rnn-transformers.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
+parent:
+- - serianni2023-training-free-nas-rnn-transformers-analysis
 ---
 
 # Method: Training-free NAS Proxies for RNNs and Transformers
@@ -177,3 +194,13 @@ S_normalized = S_raw / (number_of_features_in_architecture)
 - [[serianni2023-training-free-nas-rnn-transformers-critical]] — 批判性分析
 - [[chen2021-tenas-method]] — TE-NAS 的 NTK + 线性区域方法
 - [[entities/training-free-nas-transformers]] — 实体页
+
+## Evidence By Source
+
+### `sources/papers/serianni2023-training-free-nas-rnn-transformers.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/training_free_nas2023.pdf`
+
+^[sources/papers/serianni2023-training-free-nas-rnn-transformers.md]

@@ -1,8 +1,16 @@
 ---
-title: "ExSGD 方法机制"
-created: 2026-07-30
-updated: 2026-07-30
+id: papers--li2026-exsgd-method
+title: ExSGD 方法机制
 type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+sources:
+- sources/papers/li2026-exsgd.md
+created: '2026-07-30'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Method & Mechanism
@@ -40,3 +48,18 @@ Network parameter update
 ```
 
 该设计针对大 batch SGD 中梯度平均造成的信息损失问题。
+
+## Evidence By Source
+
+### `sources/papers/li2026-exsgd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/li2026-exsgd-source.md`
+
+^[sources/papers/li2026-exsgd.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

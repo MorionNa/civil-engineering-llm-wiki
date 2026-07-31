@@ -1,10 +1,25 @@
 ---
-title: "Maimon et al. (2026) — 方法机制详解"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--maimon2026-sparse-dense-method
+title: Maimon et al. (2026) — 方法机制详解
 type: paper-analysis
-tags: [tetrode-recording, wireless-neural-logger, place-field-detection, maximum-likelihood-decoding, node-perturbation-learning, hippocampal-formation, ca1, ca3]
-sources: [raw/papers/10_1038_s41586-026-10537-0.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/neuroscience
+- evidence/paper
+keywords:
+- ca1
+- ca3
+- hippocampal-formation
+- maximum-likelihood-decoding
+- node-perturbation-learning
+- place-field-detection
+- tetrode-recording
+- wireless-neural-logger
+sources:
+- sources/papers/maimon2026-sparse-dense.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -187,3 +202,13 @@ Maimon 等人的方法体系包括三个层面：**（1）大规模行为实验�
 - [[maimon2026-sparse-dense-results]] → 结果证据
 - [[sparse-dense-coding]] — 稀疏-密集编码概念实体
 - [[tetrode-recording]]
+
+## Evidence By Source
+
+### `sources/papers/maimon2026-sparse-dense.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1038_s41586-026-10537-0.pdf`
+
+^[sources/papers/maimon2026-sparse-dense.md]

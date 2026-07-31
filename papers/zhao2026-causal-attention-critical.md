@@ -1,10 +1,22 @@
 ---
-title: "Casual Attention 批判性分析：贡献 / Negative / 可迁移 / 研究机会"
-created: 2026-06-28
-updated: 2026-06-28
+id: papers--zhao2026-causal-attention-critical
+title: Casual Attention 批判性分析：贡献 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [temporal-causality, adaptive-weighting, negative-knowledge, future-directions]
-sources: [raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- future-work
+- limitation
+- temporal-causality
+sources:
+- sources/papers/zhao2026-causal-attention.md
+created: '2026-06-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -149,3 +161,18 @@ CA 权重仅依赖初始条件拟合——在反问题中，观测数据取代�
 | 数据 | 所有 benchmark 方程均为标准公开形式 |
 
 **复现风险**：低。代码 + 超参 + 参考解全部公开。唯一非确定性来自 GPU 浮点运算。
+
+## Evidence By Source
+
+### `sources/papers/zhao2026-causal-attention.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2026_115071_extracted.txt`
+
+^[sources/papers/zhao2026-causal-attention.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

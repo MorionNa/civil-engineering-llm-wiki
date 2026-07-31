@@ -1,12 +1,33 @@
 ---
-title: "DeepLabv3+ 方法机制展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--chen2018-deeplabv3plus-method
+title: DeepLabv3+ 方法机制展开
 type: paper-analysis
-tags: [semantic-segmentation, encoder-decoder, atrous-convolution, aspp, depthwise-separable-convolution, atrous-separable-convolution, xception]
-sources: [raw/papers/deepLabv3plus.pdf]
-methods: [aspp, atrous-separable-convolution, encoder-decoder, output-stride, depthwise-separable-convolution, aligned-xception, bilinear-upsample]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- aspp
+- atrous-convolution
+- atrous-separable-convolution
+- depthwise-separable-convolution
+- encoder-decoder
+- semantic-segmentation
+- xception
+sources:
+- sources/papers/chen2018-deeplabv3plus.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+methods:
+- aspp
+- atrous-separable-convolution
+- encoder-decoder
+- output-stride
+- depthwise-separable-convolution
+- aligned-xception
+- bilinear-upsample
 ---
 
 # DeepLabv3+ 方法机制
@@ -176,3 +197,13 @@ eval OS:  测试时的输出 stride（可以不同！）
 - [[chen2018-deeplabv3plus-analysis]] — 总览
 - [[zhao2017-pspnet-method]] — PPM vs ASPP
 - [[ronneberger2015-unet-method]] — U-Net skip connections
+
+## Evidence By Source
+
+### `sources/papers/chen2018-deeplabv3plus.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/deepLabv3plus.pdf`
+
+^[sources/papers/chen2018-deeplabv3plus.md]

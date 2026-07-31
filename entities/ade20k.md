@@ -1,10 +1,24 @@
 ---
-title: "ADE20K"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--ade20k
+title: ADE20K
 type: entity
-tags: [dataset, benchmark, semantic-segmentation, scene-parsing]
+status: draft
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- entity/dataset
+- method/transformer
+keywords:
+- benchmark
+- dataset
+- domain/computer-vision
+- entity/dataset
+- method/transformer
+- scene-parsing
+- semantic-segmentation
 sources: []
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -39,3 +53,7 @@ Zhou et al. (IJCV 2019) 发布的场景解析基准数据集。包含 20K 训练
 - [[zhao2017-pspnet-analysis]] — PSPNet 论文分析
 - [[chen2018-deeplabv3plus-analysis]] — DeepLabv3+ 论文分析
 - [[sun2019-hrnetv2-analysis]] — HRNetV2 论文分析
+
+## Verification Needed
+
+- This historical page has no explicit source record. Recover and verify the original evidence before changing `status` from `draft`.

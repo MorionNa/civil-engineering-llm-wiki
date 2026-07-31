@@ -1,10 +1,26 @@
 ---
-title: "3D Gaussian Splatting (3DGS)"
-created: 2026-06-22
-updated: 2026-07-16
+id: entities--3d-gaussian-splatting
+title: 3D Gaussian Splatting (3DGS)
 type: entity
-tags: [3d-gaussian-splatting, 3dgs, gaussian-primitives, differentiable-rendering, 3d-reconstruction, novel-view-synthesis]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf, raw/papers/lee2026-skyfall-gs.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- entity/dataset
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- 3dgs
+- differentiable-rendering
+- domain/remote-sensing
+- entity/dataset
+- gaussian-primitives
+- novel-view-synthesis
+sources:
+- raw/papers/amapcvlab2026-abotearth.pdf
+- raw/papers/lee2026-skyfall-gs.pdf
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -64,3 +80,12 @@ ABot-Earth 0.5 是第一篇**直接在 3DGS 原生空间中做生成**的工作�
 - `[[amapcvlab2026-abotearth-analysis]]` — ABot-Earth 论文分析
 - `[[skyfall-gs]]` — 逐场景卫星 3DGS + 扩散精修框架
 - `[[lee2026-skyfall-gs-method]]` — Skyfall-GS 的 3DGS 优化机制
+
+## Evidence By Source
+
+### `raw/papers/amapcvlab2026-abotearth.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/amapcvlab2026-abotearth.pdf]

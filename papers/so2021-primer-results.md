@@ -1,12 +1,31 @@
 ---
-title: "So et al. (2021) — Primer: 关键实验与结果"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--so2021-primer-results
+title: 'So et al. (2021) — Primer: 关键实验与结果'
 type: paper-analysis
-tags: [transformer, efficient-inference, scaling-laws, lm1b, c4, one-shot-learning]
-sources: [raw/papers/primer2021_efficient_transformers.pdf]
-datasets: [lm1b, c4, pg19, glue, squad, superglue]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/transformer
+keywords:
+- c4
+- efficient-inference
+- lm1b
+- one-shot-nas
+- scaling-law
+- transformer
+sources:
+- sources/papers/so2021-primer.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
+datasets:
+- lm1b
+- c4
+- pg19
+- glue
+- squad
+- superglue
 ---
 
 # Primer 关键实验与结果
@@ -166,3 +185,17 @@ Primer-EZ Decoder 在 SGLUE 上略优，但整体不如 Transformer++。Decoder 
 | One-shot pretraining | 2×71.8K TPUv4-hours | 29.26 MTCO₂e |
 | One-shot 节省 | Primer 3× compute reduction | 9.75 MTCO₂e saved |
 | 搜索 return | One-shot 节省 / 搜索成本 | **4.7×** (CO₂) / **9.24×** (FLOPs) |
+
+## Evidence By Source
+
+### `sources/papers/so2021-primer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/primer2021_efficient_transformers.pdf`
+
+^[sources/papers/so2021-primer.md]
+
+## Related Indexes
+
+- [[papers/index]]

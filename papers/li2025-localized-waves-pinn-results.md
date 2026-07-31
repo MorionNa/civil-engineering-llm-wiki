@@ -1,18 +1,50 @@
 ---
-title: "Li & Wang (2025) — 局域波实验：数值结果与证据"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--li2025-localized-waves-pinn-results
+title: Li & Wang (2025) — 局域波实验：数值结果与证据
 type: paper-analysis
-tags: [neural-network, physics-informed, deep-learning, nonlinear-systems, synthetic-data, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1007_s11071-024-10359-7.pdf]
-methods: [backlund-transformation, multi-output-pinn, lbfgs, latin-hypercube-sampling]
-results: [one-soliton, signed-sech-wave, flat-top-wave, stair-wave, gaussian-wave-evolution, residual-verification]
-failure_modes: [no-v-reference-solution, multi-wave-cost-growth, waveform-terminology-ambiguity, incomplete-gaussian-metrics]
-datasets: [modified-kdv-one-soliton, modified-kdv-two-soliton, gaussian-initial-wave]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- neural-network
+- nonlinear-systems
+- physics-informed
+- physics-simulation
+- pinn
+- synthetic-data
+sources:
+- sources/papers/li2025-localized-waves-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- backlund-transformation
+- multi-output-pinn
+- lbfgs
+- latin-hypercube-sampling
+results:
+- one-soliton
+- signed-sech-wave
+- flat-top-wave
+- stair-wave
+- gaussian-wave-evolution
+- residual-verification
+failure_modes:
+- no-v-reference-solution
+- multi-wave-cost-growth
+- waveform-terminology-ambiguity
+- incomplete-gaussian-metrics
+datasets:
+- modified-kdv-one-soliton
+- modified-kdv-two-soliton
+- gaussian-initial-wave
+reproducibility: low
 ---
 
 # Li & Wang (2025) — 结果与证据
@@ -23,7 +55,7 @@ confidence: high
 
 论文对已知 mKdV 解 $u$ 计算相对误差
 
-$$RE_u=\frac{\|\hat u-u\|_2}{\|u\|_2}.$$
+$$RE_u=\frac{|\hat u-u|_2}{|u|_2}.$$
 
 单波数据网格为 $N_x\times N_t=513\times201$，区域 $x\in[-12,4]$、$t\in[0,3]$；训练用 $N_u=200$ 个初边界点和 $N_f=10{,}000$ 个内部配点。误差、耗时和迭代数均为五次实验平均值。
 
@@ -88,3 +120,13 @@ $$u_0(x)=e^{-x^2/20},\qquad u_1(t)=u_2(t)=0,\qquad x\in[-20,20].$$
 - [[pinn]] — PINN 基础实体
 - [[raissi2019-pinn-analysis]] — 非线性 PDE 基线
 - [[li2025-localized-waves-pinn-critical]] — 证据缺口与研究机会
+
+## Evidence By Source
+
+### `sources/papers/li2025-localized-waves-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s11071-024-10359-7.pdf`
+
+^[sources/papers/li2025-localized-waves-pinn.md]

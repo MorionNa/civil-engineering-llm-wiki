@@ -1,22 +1,60 @@
 ---
-title: "Sun et al. (2019) — High-Resolution Representations for Labeling Pixels and Regions (HRNetV2): 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--sun2019-hrnetv2-analysis
+title: 'Sun et al. (2019) — High-Resolution Representations for Labeling Pixels and Regions (HRNetV2): 论文分析'
 type: paper-analysis
-tags: [semantic-segmentation, high-resolution-representation, multi-resolution-fusion, parallel-convolutions, hrnet, fully-convolutional]
-sources: [raw/papers/arxiv_1904.04514.pdf]
-methods: [hrnet, multi-resolution-parallel, repeated-fusion, hrnetv2, hrnetv2p, bilinear-upsample]
-results: [cityscapes-81.6, pascal-context-54.0, lip-sota, aflw-sota, coco-detection, sota]
-failure_modes: [hrnetv1-vs-v2-gap, small-model-diminishing-return, imagenet-pretrain-needed, no-context-module]
-datasets: [cityscapes, pascal-context, lip, aflw, cofw, 300w, wflw, coco, imagenet]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- fully-convolutional
+- high-resolution-representation
+- hrnet
+- multi-resolution-fusion
+- parallel-convolutions
+- semantic-segmentation
+sources:
+- sources/papers/sun2019-hrnetv2.md
+created: '2026-06-11'
+updated: '2026-07-31'
+confidence: high
+methods:
+- hrnet
+- multi-resolution-parallel
+- repeated-fusion
+- hrnetv2
+- hrnetv2p
+- bilinear-upsample
+results:
+- cityscapes-81.6
+- pascal-context-54.0
+- lip-sota
+- aflw-sota
+- coco-detection
+- sota
+failure_modes:
+- hrnetv1-vs-v2-gap
+- small-model-diminishing-return
+- imagenet-pretrain-needed
+- no-context-module
+datasets:
+- cityscapes
+- pascal-context
+- lip
+- aflw
+- cofw
+- 300w
+- wflw
+- coco
+- imagenet
 reproducibility: high
 code_url:
-  - https://github.com/HRNet/HRNet-Semantic-Segmentation
+- https://github.com/HRNet/HRNet-Semantic-Segmentation
 dataset_url:
-  - https://www.cityscapes-dataset.com/
-  - https://cs.stanford.edu/~roozbeh/pascal-context/
-  - https://cocodataset.org/
-confidence: high
+- https://www.cityscapes-dataset.com/
+- https://cs.stanford.edu/~roozbeh/pascal-context/
+- https://cocodataset.org/
 ---
 
 # HRNet (High-Resolution Network)
@@ -149,3 +187,13 @@ HRNetV1 (旧): 仅最高分辨率 → 输出
 - [[ronneberger2015-unet-analysis]] — U-Net：恢复路线，先降后升；HRNet：保持路线，全程高分辨率
 - [[zhao2017-pspnet-analysis]] — PSPNet：全局上下文模块；HRNet：隐式多分辨率融合
 - [[chen2018-deeplabv3plus-analysis]] — DeepLabv3+：ASPP + decoder；HRNet 比它快 2-3×
+
+## Evidence By Source
+
+### `sources/papers/sun2019-hrnetv2.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/arxiv_1904.04514.pdf`
+
+^[sources/papers/sun2019-hrnetv2.md]

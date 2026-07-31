@@ -1,10 +1,37 @@
 ---
-title: "SeisGPT 结果：跨建筑预测、跨体系零样本、稀疏重建与 IDA"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--meng2026-seisgpt-results
+title: SeisGPT 结果：跨建筑预测、跨体系零样本、稀疏重建与 IDA
 type: paper-analysis
-tags: [physics-informed, metamodeling, deep-learning, structural-dynamics, nonlinear-systems, seismic-response, finite-element, high-rise-building, real-time-simulation, gpu-computing, transfer-learning, cross-domain-generalization, dataset, ground-motion, synthetic-data, ida]
-sources: [raw/papers/meng2026-seisgpt.pdf, raw/papers/meng2026-seisgpt-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- cross-domain-generalization
+- dataset
+- deep-learning
+- finite-element
+- gpu-computing
+- ground-motion
+- high-rise-building
+- ida
+- metamodeling
+- nonlinear-systems
+- physics-informed
+- real-time-simulation
+- seismic-response
+- structural-dynamics
+- synthetic-data
+- transfer-learning
+sources:
+- sources/papers/meng2026-seisgpt.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -169,3 +196,13 @@ SeisGPT 的证据链覆盖了“未见建筑→真实建筑→跨体系→少样
 - `[[meng2026-seisgpt-critical]]`
 - `[[seisgpt]]`
 - `[[seisgpt-vs-phylstm-cm-pinns]]`
+
+## Evidence By Source
+
+### `sources/papers/meng2026-seisgpt.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/meng2026-seisgpt.pdf`, `raw/papers/meng2026-seisgpt-extracted.md`
+
+^[sources/papers/meng2026-seisgpt.md]

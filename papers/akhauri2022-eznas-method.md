@@ -1,11 +1,25 @@
 ---
-title: "EZNAS 方法机制 — 遗传编程驱动零成本 NAS 代理自动发现"
-created: 2026-06-15
-updated: 2026-06-15
-type: paper-method
-parent: akhauri2022-eznas-analysis
-tags: [genetic-programming, expression-tree, zero-cost-proxy, evolutionary-algorithm, kendall-tau, training-free-nas]
+id: papers--akhauri2022-eznas-method
+title: EZNAS 方法机制 — 遗传编程驱动零成本 NAS 代理自动发现
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- evolutionary-algorithm
+- expression-tree
+- genetic-programming
+- kendall-tau
+- training-free-nas
+- zero-cost-proxy
+sources:
+- sources/papers/akhauri2022-eznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
+parent: akhauri2022-eznas-analysis
 ---
 
 # EZNAS 方法机制详解
@@ -16,7 +30,7 @@ confidence: high
 
 ### 为什么需要表达式树？
 
-EZNAS 的初始尝试使用类似 [[AutoML-Zero]] 的**顺序指令 + 内存地址**表示——程序是一系列 4 元组指令（写地址、操作 ID、读地址 1、读地址 2），有 22 个静态内存地址（网络统计量）+ 80 个动态地址（中间张量）。
+EZNAS 的初始尝试使用类似 [[automl-zero]] 的**顺序指令 + 内存地址**表示——程序是一系列 4 元组指令（写地址、操作 ID、读地址 1、读地址 2），有 22 个静态内存地址（网络统计量）+ 80 个动态地址（中间张量）。
 
 **问题**：这种表示导致程序长度膨胀和大量冗余计算——许多指令对最终输出毫无贡献，评估速度极慢。
 
@@ -175,3 +189,13 @@ EZNAS-A 仅在 **NDS-DARTS CIFAR-10** 上进化发现，其结构：
 - [[akhauri2022-eznas-critical]] — 批判性分析
 - [[eznas]] — EZNAS 实体
 - [[te-nas]] — TE-NAS（NTK 条件数 + 线性区域数的手工零成本指标）
+
+## Evidence By Source
+
+### `sources/papers/akhauri2022-eznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/eznas_akhauri2022.pdf`
+
+^[sources/papers/akhauri2022-eznas.md]

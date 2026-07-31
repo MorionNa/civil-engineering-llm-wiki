@@ -1,10 +1,24 @@
 ---
-title: "Wang et al. (2024) 因果训练 PINN — 结果展开：混沌系统首次成功"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-causal-pinn-results
+title: Wang et al. (2024) 因果训练 PINN — 结果展开：混沌系统首次成功
 type: paper-analysis
-tags: [physics-informed, pinn, deep-learning, time-marching, physics-simulation]
-sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- deep-learning
+- physics-informed
+- physics-simulation
+- pinn
+- time-marching
+sources:
+- sources/papers/wang2024-causal-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -116,3 +130,13 @@ $$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} =
 - [[wang2024-causal-pinn-analysis|← 总览]]
 - [[wang2024-causal-pinn-method|← 方法]]
 - [[wang2024-causal-pinn-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-causal-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_116813_extracted.txt`
+
+^[sources/papers/wang2024-causal-pinn.md]

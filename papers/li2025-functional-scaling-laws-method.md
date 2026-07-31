@@ -1,10 +1,21 @@
 ---
-title: "Functional Scaling Laws 方法：内禀时间、SDE 与遗忘核卷积"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--li2025-functional-scaling-laws-method
+title: Functional Scaling Laws 方法：内禀时间、SDE 与遗忘核卷积
 type: paper-analysis
-tags: [scaling-law, stochastic-gradient-descent, kernel-regression, learning-rate-schedule, intrinsic-time]
-sources: [raw/papers/li2025-functional-scaling-laws.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- intrinsic-time
+- kernel-regression
+- learning-rate-schedule
+- scaling-law
+- stochastic-gradient-descent
+sources:
+- sources/papers/li2025-functional-scaling-laws.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -57,3 +68,13 @@ $$\int_0^tK(t-z)[e(z)+\sigma^2]\gamma(z)dz$$
 - [[li2025-functional-scaling-laws-results]]
 - [[li2025-functional-scaling-laws-critical]]
 - [[functional-scaling-law]]
+
+## Evidence By Source
+
+### `sources/papers/li2025-functional-scaling-laws.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/li2025-functional-scaling-laws.pdf`
+
+^[sources/papers/li2025-functional-scaling-laws.md]

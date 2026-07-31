@@ -1,10 +1,24 @@
 ---
-title: "PEER Strong Motion Database"
-created: 2026-06-10
-updated: 2026-06-13
+id: entities--peer-strong-motion-database
+title: PEER Strong Motion Database
 type: entity
-tags: [dataset, ground-motion, peer-database, benchmark, seismic-response]
-sources: [raw/papers/zhang2020-phylstm.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- entity/dataset
+keywords:
+- benchmark
+- dataset
+- domain/civil-engineering
+- entity/dataset
+- ground-motion
+- peer-database
+- seismic-response
+sources:
+- raw/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -41,3 +55,12 @@ PEER (Pacific Earthquake Engineering Research Center) 强震数据库是地震�
 - [[zhang2020-phylstm-analysis]] — 论文完整分析
 - [[phylstm2]] — PhyLSTM2 架构
 - [[phylstm3]] — PhyLSTM3 架构
+
+## Evidence By Source
+
+### `raw/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/zhang2020-phylstm.md]

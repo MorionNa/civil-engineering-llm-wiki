@@ -1,16 +1,41 @@
 ---
 id: paper-musaelian2023-allegro-results
-title: "Musaelian et al. (2023) — Allegro 结果证据"
+title: Musaelian et al. (2023) — Allegro 结果证据
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance, gpu-computing]
-sources: [raw/papers/musaelian2023-allegro-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/transformer
+keywords:
+- ai4s
+- deep-learning
+- gpu-computing
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/musaelian2023-allegro.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-results: [revmd17-accuracy, qm9-accuracy, temperature-transfer, li3po4-dynamics, strong-scaling, hundred-million-atom-simulation]
-datasets: [revised-md17, 3bpa, qm9, li3po4, silver-vacancy]
+results:
+- revmd17-accuracy
+- qm9-accuracy
+- temperature-transfer
+- li3po4-dynamics
+- strong-scaling
+- hundred-million-atom-simulation
+datasets:
+- revised-md17
+- 3bpa
+- qm9
+- li3po4
+- silver-vacancy
 reproducibility: high
 ---
 
@@ -145,3 +170,13 @@ QM9 包含约 134k 个由 C、H、O、N、F 构成的小分子。论文比较 $U
 - [[allegro]]
 - [[nequip]]
 - [[sevennet]]
+
+## Evidence By Source
+
+### `sources/papers/musaelian2023-allegro.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/musaelian2023-allegro-source.md`
+
+^[sources/papers/musaelian2023-allegro.md]

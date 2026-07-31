@@ -1,10 +1,37 @@
 ---
-title: "HCFF-PINN — 频率先验 Fourier 特征与初值硬约束 PINN"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--hcff-pinn
+title: HCFF-PINN — 频率先验 Fourier 特征与初值硬约束 PINN
 type: entity
-tags: [physics-informed, pinn, neural-network, deep-learning, hard-constraint-strategies, auxiliary-function, hard-constraints, structural-dynamics, seismic-response, equation-of-motion, vibration-analysis]
-sources: [raw/papers/10_1016_j_engappai_2025_113640.xml, raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- auxiliary-function
+- deep-learning
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- equation-of-motion
+- hard-constraint-strategies
+- hard-constraints
+- method/pinn
+- neural-network
+- physics-informed
+- pinn
+- seismic-response
+- structural-dynamics
+- vibration-analysis
+sources:
+- raw/papers/10_1016_j_engappai_2025_113640.xml
+- raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -75,3 +102,12 @@ HCFF-PINN 不再使用初值标签和初值损失，因此相对标准 [[pinn]] 
 - [[du2026-hcff-pinn-method]] — Fourier 与硬约束机制
 - [[du2026-hcff-pinn-critical]] — 局限与研究机会
 - [[pinn]] — 基础 PINN 实体
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_engappai_2025_113640.xml`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_engappai_2025_113640.xml]

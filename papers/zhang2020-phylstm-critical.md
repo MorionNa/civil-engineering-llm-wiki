@@ -1,14 +1,41 @@
 ---
-title: "Zhang et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--zhang2020-phylstm-critical
+title: Zhang et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [extrapolation-ability, architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning, two-phase-optimization, adam-lbfgs, collocation-strategy, data-scarcity, cross-domain-generalization, future-work, limitation]
-sources: [raw/papers/zhang2020-phylstm.md]
-methods: [adam-lbfgs, collocation-strategy, two-phase-optimization]
-results: [cross-domain-generalization, extrapolation-ability]
-failure_modes: [architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- architecture-mismatch-failure
+- collocation-strategy
+- cross-domain-generalization
+- data-scarcity
+- extrapolation-ability
+- finite-difference-error
+- future-work
+- limitation
+- physics-constraint-weight-tuning
+- two-phase-optimization
+sources:
+- sources/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+methods:
+- adam-lbfgs
+- collocation-strategy
+- two-phase-optimization
+results:
+- cross-domain-generalization
+- extrapolation-ability
+failure_modes:
+- architecture-mismatch-failure
+- finite-difference-error
+- physics-constraint-weight-tuning
 ---
 
 # Zhang et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
@@ -115,3 +142,13 @@ PINN 论文揭示了物理约束训练的另一种失败模式——PDE 残差 l
 - [[zhang2020-phylstm-results]] — 结果证据展开
 - [[phylstm2]] — PhyLSTM2 架构
 - [[phylstm3]] — PhyLSTM3 架构
+
+## Evidence By Source
+
+### `sources/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/zhang2020-phylstm.md`
+
+^[sources/papers/zhang2020-phylstm.md]

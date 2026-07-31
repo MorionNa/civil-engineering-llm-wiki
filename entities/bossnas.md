@@ -1,10 +1,28 @@
 ---
-title: "BossNAS"
-created: 2026-06-14
-updated: 2026-06-14
+id: entities--bossnas
+title: BossNAS
 type: entity
-tags: [nas-method, neural-architecture-search, self-supervised, hybrid-cnn-transformer, ensemble-bootstrapping, block-wise-nas, weight-sharing, hybra]
-sources: [raw/papers/bossnas2021_iclr.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- block-wise-nas
+- ensemble-bootstrapping
+- entity/dataset
+- hybra
+- hybrid-cnn-transformer
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- self-supervised
+- weight-sharing
+sources:
+- raw/papers/bossnas2021_iclr.pdf
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -58,3 +76,12 @@ Fabric-like 混合 CNN-Transformer 搜索空间。候选块包括 ResConv（3×3
 - [[nasbench201]] — NAS-Bench-201 benchmark（同领域 NAS 评测标准）
 - [[chen2021-autoformer-analysis]] — AutoFormer（搜索纯 ViT 架构，有监督权重共享）
 - [[chen2021-tenas-analysis]] — TE-NAS（训练无关 NAS，NTK + 线性区域数）
+
+## Evidence By Source
+
+### `raw/papers/bossnas2021_iclr.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/bossnas2021_iclr.pdf]

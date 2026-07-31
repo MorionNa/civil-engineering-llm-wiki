@@ -1,13 +1,38 @@
 ---
-title: "Wang et al. (2023) — 结果证据展开"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--wang2023-pinn-spurious-results
+title: Wang et al. (2023) — 结果证据展开
 type: paper-analysis
-tags: [pinns, pseudo-time-stepping, spurious-solutions, benchmark, helmholtz, klein-gordon, navier-stokes, rayleigh-taylor, pde]
-sources: [raw/papers/wang2023-pinn-spurious.md]
-results: [spurious-solution-avoidance, adaptive-step-size, zero-tuning]
-datasets: [pde-benchmarks, helmholtz, klein-gordon, navier-stokes, rayleigh-taylor]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- benchmark
+- helmholtz
+- klein-gordon
+- navier-stokes
+- pde
+- pinn
+- pseudo-time-stepping
+- rayleigh-taylor
+- spurious-solutions
+sources:
+- sources/papers/wang2023-pinn-spurious.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+results:
+- spurious-solution-avoidance
+- adaptive-step-size
+- zero-tuning
+datasets:
+- pde-benchmarks
+- helmholtz
+- klein-gordon
+- navier-stokes
+- rayleigh-taylor
 ---
 
 # Wang et al. (2023) — 结果证据展开
@@ -74,3 +99,13 @@ confidence: high
 - [[wang2023-pinn-spurious-method]] — 方法展开
 - [[zhang2020-phylstm-results]] — PhyLSTM 结果对比
 - [[physics-constrained-training-failure-modes]] — 失败模式对比
+
+## Evidence By Source
+
+### `sources/papers/wang2023-pinn-spurious.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2023-pinn-spurious.md`
+
+^[sources/papers/wang2023-pinn-spurious.md]

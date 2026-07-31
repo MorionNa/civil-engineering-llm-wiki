@@ -1,28 +1,56 @@
 ---
-title: "Ronneberger et al. (2015) — U-Net: 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--ronneberger2015-unet-analysis
+title: 'Ronneberger et al. (2015) — U-Net: 论文分析'
 type: paper-analysis
-tags: [semantic-segmentation, encoder-decoder, skip-connections, fully-convolutional, u-net, data-augmentation, small-dataset]
-sources: [raw/papers/ronneberger2015-unet.md, raw/papers/10_1007_978-3-319-24574-4_28.pdf]
-methods: [encoder-decoder, skip-connections, elastic-deformation, weighted-loss, overlap-tile]
-results: [isbi-em-challenge, cell-tracking-challenge, few-shot-segmentation]
-failure_modes: [input-output-size-mismatch, border-pixel-loss, single-channel-design]
-datasets: [isbi-em-2012, isbi-cell-tracking-2015]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computer-vision
+- evidence/paper
+keywords:
+- data-augmentation
+- encoder-decoder
+- fully-convolutional
+- semantic-segmentation
+- skip-connections
+- small-dataset
+- u-net
+sources:
+- sources/papers/ronneberger2015-unet.md
+created: '2026-06-11'
+updated: '2026-07-31'
+confidence: high
+methods:
+- encoder-decoder
+- skip-connections
+- elastic-deformation
+- weighted-loss
+- overlap-tile
+results:
+- isbi-em-challenge
+- cell-tracking-challenge
+- few-shot-segmentation
+failure_modes:
+- input-output-size-mismatch
+- border-pixel-loss
+- single-channel-design
+datasets:
+- isbi-em-2012
+- isbi-cell-tracking-2015
 reproducibility: high
 code_url:
-  - http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net
-  - https://github.com/qubvel/segmentation_models.pytorch
+- http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net
+- https://github.com/qubvel/segmentation_models.pytorch
 dataset_url:
-  - https://www.ini.uzh.ch/~acardona/data.html
-  - http://celltrackingchallenge.net/
-confidence: high
+- https://www.ini.uzh.ch/~acardona/data.html
+- http://celltrackingchallenge.net/
 ---
 
 # U-Net: Convolutional Networks for Biomedical Image Segmentation
 
-> Olaf Ronneberger, Philipp Fischer, Thomas Brox. University of Freiburg.  
-> MICCAI 2015, LNCS Vol. 9351, pp. 234–241. DOI: 10.1007/978-3-319-24574-4_28  
+> Olaf Ronneberger, Philipp Fischer, Thomas Brox. University of Freiburg.
+> MICCAI 2015, LNCS Vol. 9351, pp. 234–241. DOI: 10.1007/978-3-319-24574-4_28
 > **引用量 70,000+** | 代码: http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net
 
 ## 1. 工程背景 (Engineering Background)
@@ -135,3 +163,13 @@ confidence: high
 - [[ronneberger2015-unet-method]] — 架构展开（overlap-tile + 弹性变形 + 加权 loss）
 - [[ronneberger2015-unet-results]] — 三组实验结果
 - [[ronneberger2015-unet-critical]] — 贡献 + Negative + 可迁移 + 研究机会
+
+## Evidence By Source
+
+### `sources/papers/ronneberger2015-unet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/ronneberger2015-unet.md`, `raw/papers/10_1007_978-3-319-24574-4_28.pdf`
+
+^[sources/papers/ronneberger2015-unet.md]

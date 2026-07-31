@@ -1,10 +1,24 @@
 ---
-title: "NAGO (Neural Architecture Generator Optimization)"
-created: 2026-06-15
-updated: 2026-06-15
+id: entities--nago
+title: NAGO (Neural Architecture Generator Optimization)
 type: entity
-tags: [method, neural-architecture-search, bayesian-optimization, nas-framework]
-sources: [raw/papers/nago_ru2020.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- bayesian-optimization
+- entity/dataset
+- method
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+sources:
+- raw/papers/nago_ru2020.pdf
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -59,3 +73,12 @@ Ru et al. (NeurIPS 2020) 提出的神经架构搜索框架，将 NAS 从"搜索�
 - [[ru2020-nago-method]] — HNAG + BO 方法细节
 - [[ru2020-nago-results]] — 完整实验结果
 - [[ru2020-nago-critical]] — 贡献 · 局限 · 延伸分析
+
+## Evidence By Source
+
+### `raw/papers/nago_ru2020.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/nago_ru2020.pdf]

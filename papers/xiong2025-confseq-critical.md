@@ -1,10 +1,21 @@
 ---
-title: "ConfSeq 贡献 + Negative + 可迁移 + 研究机会"
-created: 2026-06-24
-updated: 2026-06-24
+id: papers--xiong2025-confseq-critical
+title: ConfSeq 贡献 + Negative + 可迁移 + 研究机会
 type: paper-analysis
-tags: [chemical-language-model, molecular-conformation, future-work, limitation]
-sources: [raw/papers/10_1101_2025.05.07.652440.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/transformer
+keywords:
+- chemical-language-model
+- future-work
+- limitation
+- molecular-conformation
+sources:
+- sources/papers/xiong2025-confseq.md
+created: '2026-06-24'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -86,3 +97,17 @@ confidence: high
 ### 长期
 7. **通用分子语言**：ConfSeq 作为化学领域的"通用语"，统一 2D/3D 分子建模的表示层
 8. **与 AlphaFold 3 结合**：用 ConfSeq 生成的配体对接 AlphaFold 3 预测的结构
+
+## Evidence By Source
+
+### `sources/papers/xiong2025-confseq.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1101_2025.05.07.652440.pdf`
+
+^[sources/papers/xiong2025-confseq.md]
+
+## Related Indexes
+
+- [[papers/index]]

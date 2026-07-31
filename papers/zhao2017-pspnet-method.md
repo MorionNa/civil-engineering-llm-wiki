@@ -1,12 +1,31 @@
 ---
-title: "PSPNet 方法机制展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--zhao2017-pspnet-method
+title: PSPNet 方法机制展开
 type: paper-analysis
-tags: [semantic-segmentation, pyramid-pooling, multi-scale-context, fully-convolutional, deep-supervision, auxiliary-loss]
-sources: [raw/papers/1612.01105v2.pdf]
-methods: [pyramid-pooling-module, auxiliary-loss, dilated-convolution, bilinear-upsample, poly-lr-schedule, dimension-reduction]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- auxiliary-loss
+- deep-supervision
+- fully-convolutional
+- multi-scale-context
+- pyramid-pooling
+- semantic-segmentation
+sources:
+- sources/papers/zhao2017-pspnet.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+methods:
+- pyramid-pooling-module
+- auxiliary-loss
+- dilated-convolution
+- bilinear-upsample
+- poly-lr-schedule
+- dimension-reduction
 ---
 
 # PSPNet 方法机制
@@ -119,3 +138,13 @@ ResNet101 Architecture:
 ## 关联页面
 - [[zhao2017-pspnet-analysis]] — 总览
 - [[ronneberger2015-unet-method]] — U-Net 方法对比
+
+## Evidence By Source
+
+### `sources/papers/zhao2017-pspnet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/1612.01105v2.pdf`
+
+^[sources/papers/zhao2017-pspnet.md]

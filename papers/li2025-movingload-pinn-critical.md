@@ -1,13 +1,36 @@
 ---
-title: "Li et al. (2025) — 贡献 / Negative / 可迁移 / 研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-movingload-pinn-critical
+title: Li et al. (2025) — 贡献 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, equation-of-motion, future-work, limitation, inverse-problem, physics-constraint-weight-tuning]
-sources: [raw/papers/10_1016_j_aei_2025_103215_extracted.txt]
-methods: [physics-informed, pinn, fourier-embedding, causal-weight]
-failure_modes: [physics-constraint-weight-tuning]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- equation-of-motion
+- future-work
+- inverse-problem
+- limitation
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- structural-dynamics
+sources:
+- sources/papers/li2025-movingload-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-informed
+- pinn
+- fourier-embedding
+- causal-weight
+failure_modes:
+- physics-constraint-weight-tuning
 ---
 
 # Li et al. (2025) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
@@ -136,3 +159,13 @@ confidence: high
 - [[zhang2020-phylstm-critical]] — PhyLSTM 失败模式（平行参照）
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S PINN 入门
 - [[abot-earth]] — 3D 数字孪生（远期愿景关联）
+
+## Evidence By Source
+
+### `sources/papers/li2025-movingload-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103215_extracted.txt`
+
+^[sources/papers/li2025-movingload-pinn.md]

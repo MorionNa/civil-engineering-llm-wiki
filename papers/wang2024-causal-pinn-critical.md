@@ -1,10 +1,25 @@
 ---
-title: "Wang et al. (2024) 因果训练 PINN — 贡献 / 知识点 / Negative / 可迁移 / 研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-causal-pinn-critical
+title: Wang et al. (2024) 因果训练 PINN — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, deep-learning, time-marching, spectral-bias, loss-function-weakness]
-sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- deep-learning
+- loss-function-weakness
+- physics-informed
+- pinn
+- spectral-bias
+- time-marching
+sources:
+- sources/papers/wang2024-causal-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -112,3 +127,13 @@ confidence: medium
 - [[li2025-movingload-pinn-analysis]] — 因果权重在工程中的直接应用
 - [[linka2022-bayesian-pinn-analysis]] — BPINN：因果先验的潜在结合方向
 - [[pinn]] — PINN 实体
+
+## Evidence By Source
+
+### `sources/papers/wang2024-causal-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_116813_extracted.txt`
+
+^[sources/papers/wang2024-causal-pinn.md]

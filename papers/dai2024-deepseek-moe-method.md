@@ -1,10 +1,23 @@
 ---
-title: "Dai et al. (2024) — DeepSeekMoE 方法展开"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--dai2024-deepseek-moe-method
+title: Dai et al. (2024) — DeepSeekMoE 方法展开
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, gating-network, top-k-routing, load-balancing]
-sources: [raw/papers/dai2024_deepseek_moe.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- gating-network
+- load-balancing
+- mixture-of-experts
+- sparse-moe
+- top-k-routing
+sources:
+- sources/papers/dai2024-deepseek-moe.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -129,3 +142,13 @@ P_i = (1/T) · Σ_t s_{i,t}                              ← 平均路由概率
 
 ← 返回总览：[[dai2024-deepseek-moe-analysis]]
 → 实验结果：[[dai2024-deepseek-moe-results]]
+
+## Evidence By Source
+
+### `sources/papers/dai2024-deepseek-moe.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/dai2024_deepseek_moe.pdf`
+
+^[sources/papers/dai2024-deepseek-moe.md]

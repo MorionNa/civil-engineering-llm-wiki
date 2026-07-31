@@ -1,10 +1,23 @@
 ---
-title: "Dai et al. (2024) — DeepSeekMoE 实验结果"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--dai2024-deepseek-moe-results
+title: Dai et al. (2024) — DeepSeekMoE 实验结果
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, large-language-model, decoder-only-transformer, efficient-inference]
-sources: [raw/papers/dai2024_deepseek_moe.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- decoder-only-transformer
+- efficient-inference
+- large-language-model
+- mixture-of-experts
+- sparse-moe
+sources:
+- sources/papers/dai2024-deepseek-moe.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -95,3 +108,13 @@ Disable 共享专家、多激活 1 个路由专家（计算量不变）：Pile l
 
 ← 方法机制：[[dai2024-deepseek-moe-method]]
 → 贡献与反思：[[dai2024-deepseek-moe-critical]]
+
+## Evidence By Source
+
+### `sources/papers/dai2024-deepseek-moe.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/dai2024_deepseek_moe.pdf`
+
+^[sources/papers/dai2024-deepseek-moe.md]

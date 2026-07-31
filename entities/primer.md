@@ -1,10 +1,27 @@
 ---
-title: "Primer"
-created: 2026-06-14
-updated: 2026-06-14
+id: entities--primer
+title: Primer
 type: entity
-tags: [architecture, transformer, efficient-inference, language-model, nas, primer]
-sources: [raw/papers/primer2021_efficient_transformers.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- architecture
+- efficient-inference
+- entity/dataset
+- language-model
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- primer
+- transformer
+sources:
+- raw/papers/primer2021_efficient_transformers.pdf
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -62,3 +79,12 @@ So et al. (NeurIPS 2021) 通过底层 TF 原语进化搜索发现的 Transformer
 - [[so2021-primer-critical]] — 贡献、负面知识、可迁移、研究机会
 - [[chen2021-tenas-analysis]] — TE-NAS（训练-free NAS，潜在加速 Primer 搜索的方法）
 - [[entities/nasbench201]] — NAS-Bench-201（NAS benchmark）
+
+## Evidence By Source
+
+### `raw/papers/primer2021_efficient_transformers.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/primer2021_efficient_transformers.pdf]

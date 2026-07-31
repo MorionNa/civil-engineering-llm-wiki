@@ -1,10 +1,21 @@
 ---
-title: "Lee & Ham (2024) — AZ-NAS: 方法机制详解"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--lee2024-aznas-method
+title: 'Lee & Ham (2024) — AZ-NAS: 方法机制详解'
 type: paper-analysis
-tags: [training-free-nas, neural-architecture-search, zero-shot]
-sources: [raw/papers/aznas_lee2024.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- neural-architecture-search
+- training-free-nas
+- zero-shot
+sources:
+- sources/papers/lee2024-aznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -209,3 +220,13 @@ AZ-NAS 总计：42.7 ms/arch —— 只比最快的单代理方法（ZenNAS 19.9
 - [[lee2024-aznas-critical]] — 贡献 / 失败知识 / 研究机会
 - [[az-nas]] — 实体页面
 - [[te-nas]] — TE-NAS：另一个双代理方法（NTK + 线性区域计数）
+
+## Evidence By Source
+
+### `sources/papers/lee2024-aznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/aznas_lee2024.pdf`
+
+^[sources/papers/lee2024-aznas.md]

@@ -1,10 +1,20 @@
 ---
-title: "AVBD 方法机制展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--giles2025-avbd-method
+title: AVBD 方法机制展开
 type: paper-analysis
-tags: [augmented-lagrangian, primal-method, hard-constraints, high-stiffness-ratio]
-sources: [raw/papers/giles2025-avbd.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- augmented-lagrangian
+- hard-constraints
+- high-stiffness-ratio
+- primal-method
+sources:
+- sources/papers/giles2025-avbd.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -105,3 +115,13 @@ k^(0) = max(γ k_t, k_start)，λ^(0) = α γ λ_t，γ=0.99
 - [[giles2025-avbd-analysis]] — 全维度概述
 - [[giles2025-avbd-results]] — 实验结果
 - [[giles2025-avbd-critical]] — 贡献 + 局限性 + 可迁移
+
+## Evidence By Source
+
+### `sources/papers/giles2025-avbd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/giles2025-avbd.md`
+
+^[sources/papers/giles2025-avbd.md]

@@ -1,14 +1,49 @@
 ---
-title: "GLM 水利水电行业大模型汇报笔记 (2026-06-13)"
-created: 2026-06-13
-updated: 2026-06-13
+id: notes--briefings--glm-hydropower-2026
+title: GLM 水利水电行业大模型汇报笔记 (2026-06-13)
 type: briefing
-tags: [large-language-model, domain-specific-llm, hydrology, civil-engineering, glm, mixture-of-experts, fine-tuning, retrieval-augmented-generation, prompt-engineering, model-evaluation]
-methods: [domain-pretraining, supervised-fine-tuning, rlhf, lora, qlora, rag, prompt-engineering, chain-of-thought, moe]
-datasets: [hydropower-corpus, textbook-corpus, industry-standards, journal-papers, question-bank]
-reproducibility: low
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/llm
+- evidence/report
+- method/neural-architecture-search
+- method/pinn
+- method/transformer
+keywords:
+- civil-engineering
+- domain-specific-llm
+- fine-tuning
+- glm
+- hydrology
+- large-language-model
+- mixture-of-experts
+- model-evaluation
+- prompt-engineering
+- retrieval-augmented-generation
+sources:
+- GLM 汇报 PPT 照片 20 余张
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
-sources: [GLM 汇报 PPT 照片 20 余张]
+methods:
+- domain-pretraining
+- supervised-fine-tuning
+- rlhf
+- lora
+- qlora
+- rag
+- prompt-engineering
+- chain-of-thought
+- moe
+datasets:
+- hydropower-corpus
+- textbook-corpus
+- industry-standards
+- journal-papers
+- question-bank
+reproducibility: low
 ---
 
 # GLM 水利水电行业大模型 — 汇报笔记
@@ -206,3 +241,12 @@ L2 场景应用：
 - [[chittyvenkata2022-nas-transformers-survey]] — NAS方法论（与GLM架构搜索相关）
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S视角
 - [[notes/lectures/ai4s-diffusion-models]] — 扩散模型与AI4S
+
+## Evidence By Source
+
+### `GLM 汇报 PPT 照片 20 余张`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[GLM 汇报 PPT 照片 20 余张]

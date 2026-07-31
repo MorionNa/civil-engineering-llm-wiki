@@ -1,20 +1,56 @@
 ---
-title: "Xu et al. (2021) — NAS-BERT: Task-Agnostic BERT Compression with NAS: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--xu2021-nas-bert-analysis
+title: 'Xu et al. (2021) — NAS-BERT: Task-Agnostic BERT Compression with NAS: 论文分析'
 type: paper-analysis
-tags: [neural-architecture-search, bert-compression, transformer, task-agnostic-compression, weight-sharing-nas, pruning-based-nas, knowledge-distillation, block-wise-training, progressive-shrinking, separable-convolution, supernet]
-sources: [raw/papers/xu2021_nas_bert.md]
-methods: [block-wise-search, progressive-shrinking, knowledge-distillation, supernet-training, performance-approximation]
-results: [glu-e, squad, adaptive-size, task-agnostic, model-compression]
-failure_modes: [supernet-convergence-difficulty, search-cost-explosion, block-wise-isolation-bias]
-datasets: [glu-e, squad, bookcorpus, wikipedia]
-reproducibility: medium
-code_url: []
-dataset_url:
-  - https://gluebenchmark.com/
-  - https://rajpurkar.github.io/SQuAD-explorer/
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- bert-compression
+- block-wise-training
+- knowledge-distillation
+- neural-architecture-search
+- progressive-shrinking
+- pruning-based-nas
+- separable-convolution
+- supernet
+- task-agnostic-compression
+- transformer
+- weight-sharing-nas
+sources:
+- sources/papers/xu2021-nas-bert.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+methods:
+- block-wise-search
+- progressive-shrinking
+- knowledge-distillation
+- supernet-training
+- performance-approximation
+results:
+- glu-e
+- squad
+- adaptive-size
+- task-agnostic
+- model-compression
+failure_modes:
+- supernet-convergence-difficulty
+- search-cost-explosion
+- block-wise-isolation-bias
+datasets:
+- glu-e
+- squad
+- bookcorpus
+- wikipedia
+reproducibility: medium
+dataset_url:
+- https://gluebenchmark.com/
+- https://rajpurkar.github.io/SQuAD-explorer/
 ---
 
 # NAS-BERT: Task-Agnostic and Adaptive-Size BERT Compression with Neural Architecture Search
@@ -124,3 +160,13 @@ BERT 等预训练语言模型在 NLP 下游任务表现优异，但参数量大�
 - [[xu2021-nas-bert-critical]] — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
 - [[chen2021-tenas-analysis]] — 同样是 NAS 搜索，TE-NAS 走 training-free 路线形成对比
 - [[jiang2024-mixtral-of-experts-analysis]] — Mixtral 的稀疏 MoE 可作为 NAS-BERT 未来搜索空间的候选操作
+
+## Evidence By Source
+
+### `sources/papers/xu2021-nas-bert.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/xu2021_nas_bert.md`
+
+^[sources/papers/xu2021-nas-bert.md]

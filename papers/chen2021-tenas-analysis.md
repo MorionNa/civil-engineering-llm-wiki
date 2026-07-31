@@ -1,20 +1,55 @@
 ---
-title: "Chen et al. (2021) — TE-NAS: Training-Free NAS via NTK: 论文分析"
-created: 2026-06-12
-updated: 2026-06-12
+id: papers--chen2021-tenas-analysis
+title: 'Chen et al. (2021) — TE-NAS: Training-Free NAS via NTK: 论文分析'
 type: paper-analysis
-tags: [neural-architecture-search, training-free-nas, ntk, neural-tangent-kernel, linear-regions, expressivity, trainability, weight-sharing-nas, pruning-based-nas]
-sources: [raw/papers/TE-NAS_chen2021_ICLR.pdf]
-methods: [ntk-condition-number, linear-region-counting, pruning-by-importance, training-free-evaluation]
-results: [nas-bench-201, cifar10-darts, imagenet-mobile, gpu-hours-four]
-failure_modes: [ntk-correlation-limited, operator-preference-bias, combined-score-naive, no-architecture-novelty, theory-approximation-gap]
-datasets: [nas-bench-201, cifar-10, cifar-100, imagenet-16-120, imagenet]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- expressivity
+- linear-regions
+- neural-architecture-search
+- neural-tangent-kernel
+- ntk
+- pruning-based-nas
+- trainability
+- training-free-nas
+- weight-sharing-nas
+sources:
+- sources/papers/chen2021-tenas.md
+created: '2026-06-12'
+updated: '2026-07-31'
+confidence: high
+methods:
+- ntk-condition-number
+- linear-region-counting
+- pruning-by-importance
+- training-free-evaluation
+results:
+- nas-bench-201
+- cifar10-darts
+- imagenet-mobile
+- gpu-hours-four
+failure_modes:
+- ntk-correlation-limited
+- operator-preference-bias
+- combined-score-naive
+- no-architecture-novelty
+- theory-approximation-gap
+datasets:
+- nas-bench-201
+- cifar-10
+- cifar-100
+- imagenet-16-120
+- imagenet
 reproducibility: high
 code_url:
-  - https://github.com/VITA-Group/TENAS
+- https://github.com/VITA-Group/TENAS
 dataset_url:
-  - https://github.com/D-X-Y/NAS-Bench-201
-confidence: high
+- https://github.com/D-X-Y/NAS-Bench-201
 ---
 
 # TE-NAS (Training-Free Neural Architecture Search)
@@ -132,3 +167,13 @@ NAS 的核心瓶颈不是"搜不到好架构"，而是**搜的过程太贵**。D
 - [[chen2021-tenas-results]] — NAS-Bench-201 / DARTS / ImageNet 完整数据
 - [[chen2021-tenas-critical]] — 贡献 / Negative / 可迁移 / 机会
 - [[xie2021-segformer-analysis]] — SegFormer 也是"less is more"的架构设计哲学
+
+## Evidence By Source
+
+### `sources/papers/chen2021-tenas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/TE-NAS_chen2021_ICLR.pdf`
+
+^[sources/papers/chen2021-tenas.md]

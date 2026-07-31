@@ -1,23 +1,55 @@
 ---
-title: "Giles et al. (2025) — Augmented Vertex Block Descent (AVBD): 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--giles2025-avbd-analysis
+title: 'Giles et al. (2025) — Augmented Vertex Block Descent (AVBD): 论文分析'
 type: paper-analysis
-tags: [augmented-lagrangian, primal-method, hard-constraints, high-stiffness-ratio,
-       rigid-body-dynamics, contact-mechanics, real-time-simulation, gpu-computing,
-       constraint-solver, frictional-contact, physics-simulation, nonlinear-systems]
-sources: [raw/papers/giles2025-avbd.md]
-methods: [augmented-lagrangian, primal-method, gauss-seidel, quasi-newton, vertex-block-descent, warm-starting]
-results: [constraint-error-convergence, mass-ratio-comparison, stiffness-ratio-comparison, gpu-performance]
-failure_modes: [information-propagation-limit, energy-dissipation, collision-detection-bottleneck]
-datasets: [synthetic-scenes]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- augmented-lagrangian
+- constraint-solver
+- contact-mechanics
+- frictional-contact
+- gpu-computing
+- hard-constraints
+- high-stiffness-ratio
+- nonlinear-systems
+- physics-simulation
+- primal-method
+- real-time-simulation
+- rigid-body-dynamics
+sources:
+- sources/papers/giles2025-avbd.md
+created: '2026-06-11'
+updated: '2026-07-31'
+confidence: high
+methods:
+- augmented-lagrangian
+- primal-method
+- gauss-seidel
+- quasi-newton
+- vertex-block-descent
+- warm-starting
+results:
+- constraint-error-convergence
+- mass-ratio-comparison
+- stiffness-ratio-comparison
+- gpu-performance
+failure_modes:
+- information-propagation-limit
+- energy-dissipation
+- collision-detection-bottleneck
+datasets:
+- synthetic-scenes
 reproducibility: high
 code_url:
-  - https://github.com/savant117/avbd-demo2d
-  - https://github.com/savant117/avbd-demo3d
-  - https://github.com/MysteryPancake/Houdini-VBD
-dataset_url: []
-confidence: high
+- https://github.com/savant117/avbd-demo2d
+- https://github.com/savant117/avbd-demo3d
+- https://github.com/MysteryPancake/Houdini-VBD
 ---
 
 # Augmented Vertex Block Descent (AVBD)
@@ -135,3 +167,13 @@ AVBD 在 VBD 的 primal 迭代（逐顶点解 3×3/6×6 线性系统）之上叠
 - [[giles2025-avbd-method]] — 方法机制展开
 - [[giles2025-avbd-results]] — 实验结果展开
 - [[giles2025-avbd-critical]] — 贡献 + Negative + 可迁移 + 机会
+
+## Evidence By Source
+
+### `sources/papers/giles2025-avbd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/giles2025-avbd.md`
+
+^[sources/papers/giles2025-avbd.md]

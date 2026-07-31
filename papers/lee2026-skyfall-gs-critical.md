@@ -1,10 +1,29 @@
 ---
-title: "Skyfall-GS 批判性分析：贡献、幻觉边界、可迁移机制与研究机会"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--lee2026-skyfall-gs-critical
+title: Skyfall-GS 批判性分析：贡献、幻觉边界、可迁移机制与研究机会
 type: paper-analysis
-tags: [3d-gaussian-splatting, satellite-imagery, 3d-scene-generation, 3d-reconstruction, diffusion-models, digital-twins, embodied-ai, uav-navigation, future-work, limitation, cross-domain-generalization]
-sources: [raw/papers/lee2026-skyfall-gs.pdf, raw/papers/lee2026-skyfall-gs-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computational-mechanics
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- 3d-scene-generation
+- cross-domain-generalization
+- diffusion-models
+- digital-twins
+- embodied-ai
+- future-work
+- limitation
+- satellite-imagery
+- uav-navigation
+sources:
+- sources/papers/lee2026-skyfall-gs.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -149,3 +168,13 @@ Skyfall-GS 可提供建筑外观、道路环境和可视化底座，但不能从
 - `[[lee2026-skyfall-gs-results]]`
 - `[[skyfall-gs]]`
 - `[[skyfall-gs-vs-abot-earth]]`
+
+## Evidence By Source
+
+### `sources/papers/lee2026-skyfall-gs.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lee2026-skyfall-gs.pdf`, `raw/papers/lee2026-skyfall-gs-extracted.md`
+
+^[sources/papers/lee2026-skyfall-gs.md]

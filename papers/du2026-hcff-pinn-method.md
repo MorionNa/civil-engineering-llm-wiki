@@ -1,18 +1,56 @@
 ---
-title: "Du et al. (2026) — HCFF-PINN 方法机制展开"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--du2026-hcff-pinn-method
+title: Du et al. (2026) — HCFF-PINN 方法机制展开
 type: paper-analysis
-tags: [physics-informed, pinn, neural-network, deep-learning, hard-constraint-strategies, auxiliary-function, hard-constraints, structural-dynamics, seismic-response, equation-of-motion, vibration-analysis, sdof, adam-lbfgs, two-phase-optimization, collocation-strategy]
-sources: [raw/papers/10_1016_j_engappai_2025_113640.xml, raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt]
-methods: [physics-guided-fourier-features, hard-initial-conditions, tanh-squared-modulation, automatic-differentiation, static-condensation, adam-lbfgs-optimization]
-results: [spectral-bias-mitigation, single-residual-training, smooth-loss-convergence]
-failure_modes: [frequency-prior-mismatch, hard-constraint-function-mismatch, nonzero-initial-condition-unsupported]
-datasets: [synthetic-harmonic-loads, northridge-symlar, san-simeon-diablo-canyon]
-reproducibility: medium
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- auxiliary-function
+- collocation-strategy
+- deep-learning
+- equation-of-motion
+- hard-constraint-strategies
+- hard-constraints
+- neural-network
+- physics-informed
+- pinn
+- sdof
+- seismic-response
+- structural-dynamics
+- two-phase-optimization
+- vibration-analysis
+sources:
+- sources/papers/du2026-hcff-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-guided-fourier-features
+- hard-initial-conditions
+- tanh-squared-modulation
+- automatic-differentiation
+- static-condensation
+- adam-lbfgs-optimization
+results:
+- spectral-bias-mitigation
+- single-residual-training
+- smooth-loss-convergence
+failure_modes:
+- frequency-prior-mismatch
+- hard-constraint-function-mismatch
+- nonzero-initial-condition-unsupported
+datasets:
+- synthetic-harmonic-loads
+- northridge-symlar
+- san-simeon-diablo-canyon
+reproducibility: medium
 ---
 
 # Du et al. (2026) — HCFF-PINN 方法机制展开
@@ -98,3 +136,13 @@ HCFF-PINN 不需要 initial points；表格中的 1000 initial points 对应含 
 - [[du2026-hcff-pinn-results]] — 数值证据
 - [[hcff-pinn]] — 方法实体
 - [[neural-tangent-kernel]] — 理论动机
+
+## Evidence By Source
+
+### `sources/papers/du2026-hcff-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_engappai_2025_113640.xml`, `raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt`
+
+^[sources/papers/du2026-hcff-pinn.md]

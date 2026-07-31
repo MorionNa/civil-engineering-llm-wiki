@@ -1,19 +1,53 @@
 ---
-title: "Zhang et al. (2025) — MRF-PINN：多感受野卷积物理信息网络（摘要级概览）"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--zhang2025-mrf-pinn
+title: Zhang et al. (2025) — MRF-PINN：多感受野卷积物理信息网络（摘要级概览）
 type: paper-analysis
-evidence_scope: abstract-only
-tags: [neural-network, physics-informed, deep-learning, finite-difference, physics-constrained-loss, soft-constraint, adaptive-weighting, nonlinear-systems, benchmark, multi-scale-context, pinn, ai4s, physics-simulation, limitation]
-sources: [raw/papers/extracted/10_1007_s00466-024-02554-5_abstract_extracted.txt]
-methods: [multi-receptive-field-convolution, taylor-virtual-node-padding, high-order-finite-difference, dimensional-balance-loss-weighting]
-results: [elliptic-pde, parabolic-pde, hyperbolic-pde, navier-stokes, qualitative-improvement-over-mlp-pinn-and-unet-pinn]
-failure_modes: [below-fem-fvm-competitiveness, finite-difference-discretization-error, abstract-only-evidence, unverified-hyperparameters, missing-code]
-datasets: []
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- ai4s
+- benchmark
+- deep-learning
+- finite-difference
+- limitation
+- multi-scale-context
+- neural-network
+- nonlinear-systems
+- physics-constrained-loss
+- physics-informed
+- physics-simulation
+- pinn
+- soft-constraint
+sources:
+- sources/papers/zhang2025-mrf-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: medium
+evidence_scope: abstract-only
+methods:
+- multi-receptive-field-convolution
+- taylor-virtual-node-padding
+- high-order-finite-difference
+- dimensional-balance-loss-weighting
+results:
+- elliptic-pde
+- parabolic-pde
+- hyperbolic-pde
+- navier-stokes
+- qualitative-improvement-over-mlp-pinn-and-unet-pinn
+failure_modes:
+- below-fem-fvm-competitiveness
+- finite-difference-discretization-error
+- abstract-only-evidence
+- unverified-hyperparameters
+- missing-code
+reproducibility: low
 ---
 
 # A multi-receptive field physics-informed neural network for solving partial differential equations
@@ -79,3 +113,13 @@ confidence: medium
 | **数据集** | 未在摘要中说明 |
 | **可核实结果** | 定性优于若干 MLP-PINN/UNet-PINN；仍未达到 FEM/FVM 的精度/成本竞争力 |
 | **待全文补充** | 架构、差分阶数、Taylor padding、损失权重公式、训练配置、误差表、复杂度和消融 |
+
+## Evidence By Source
+
+### `sources/papers/zhang2025-mrf-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/extracted/10_1007_s00466-024-02554-5_abstract_extracted.txt`
+
+^[sources/papers/zhang2025-mrf-pinn.md]

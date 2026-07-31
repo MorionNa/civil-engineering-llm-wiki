@@ -1,15 +1,32 @@
 ---
 id: paper-musaelian2023-allegro-method
-title: "Musaelian et al. (2023) — Allegro 方法机制"
+title: Musaelian et al. (2023) — Allegro 方法机制
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, material-design, se3-equivariance]
-sources: [raw/papers/musaelian2023-allegro-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+keywords:
+- deep-learning
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/musaelian2023-allegro.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-methods: [strict-locality, pair-energy-decomposition, scalar-equivariant-dual-latent, learned-environment-embedding, density-trick, iterative-tensor-product]
+methods:
+- strict-locality
+- pair-energy-decomposition
+- scalar-equivariant-dual-latent
+- learned-environment-embedding
+- density-trick
+- iterative-tensor-product
 reproducibility: high
 ---
 
@@ -59,7 +76,7 @@ Allegro 为每个有向 pair $(i,j)$ 维护两个相互作用的潜空间：
 $$
 x_{ij,0}
 =\mathrm{MLP}_{2\text{-body}}
-\left[\mathrm{OneHot}(Z_i)\,\|\,\mathrm{OneHot}(Z_j)\,\|\,B(r_{ij})\right]
+\left[\mathrm{OneHot}(Z_i)\,|\,\mathrm{OneHot}(Z_j)\,|\,B(r_{ij})\right]
 u(r_{ij}).
 $$
 
@@ -134,7 +151,7 @@ V_ij,L-1 ──────────────── tensor product
 $$
 x_{ij,L}
 =\mathrm{MLP}_{\mathrm{latent},L}
-\left(x_{ij,L-1}\,\|\,\bigoplus V_{ij,L}^{l_{out}=0,p=1}\right)u(r_{ij}).
+\left(x_{ij,L-1}\,|\,\bigoplus V_{ij,L}^{l_{out}=0,p=1}\right)u(r_{ij}).
 $$
 
 每层还采用标量残差更新，以便传播低阶信息并改善训练。^[raw/papers/musaelian2023-allegro-source.md]
@@ -191,3 +208,13 @@ $$
 - [[allegro]]
 - [[nequip]]
 - [[sevennet]]
+
+## Evidence By Source
+
+### `sources/papers/musaelian2023-allegro.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/musaelian2023-allegro-source.md`
+
+^[sources/papers/musaelian2023-allegro.md]

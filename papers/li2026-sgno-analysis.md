@@ -1,23 +1,48 @@
 ---
-title: "Li et al. (2026) — SGNO：稳定长时域 PDE 滚动预测的谱生成神经算子"
-created: 2026-07-23
-updated: 2026-07-23
+id: papers--li2026-sgno-analysis
+title: Li et al. (2026) — SGNO：稳定长时域 PDE 滚动预测的谱生成神经算子
 type: paper-analysis
-tags: [neural-operator, deep-learning, time-marching, extrapolation-ability, ai4s, nonlinear-systems]
-sources: [raw/papers/2602.18801v2.pdf]
-methods: [spectral-generator-neural-operator, exponential-time-differencing, autoregressive-rollout, fourier-operator]
-results: [long-horizon-rollout, spectral-energy-error, phase-error]
-failure_modes: [spectral-amplitude-drift, phase-misalignment, nonlinear-mode-interaction-error]
-datasets: [apebench]
-reproducibility: high
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+keywords:
+- ai4s
+- deep-learning
+- extrapolation-ability
+- neural-operator
+- nonlinear-systems
+- time-marching
+sources:
+- sources/papers/li2026-sgno.md
+created: '2026-07-23'
+updated: '2026-07-31'
 confidence: high
+methods:
+- spectral-generator-neural-operator
+- exponential-time-differencing
+- autoregressive-rollout
+- fourier-operator
+results:
+- long-horizon-rollout
+- spectral-energy-error
+- phase-error
+failure_modes:
+- spectral-amplitude-drift
+- phase-misalignment
+- nonlinear-mode-interaction-error
+datasets:
+- apebench
+reproducibility: high
 ---
 
 # Spectral Generator Neural Operator for Stable Long-Horizon PDE Rollouts
 
 ## 1. 工程背景
 
-自回归神经 PDE 代理模型通过反复应用单步算子实现长时间预测，但微小单步误差会在闭环滚动中累积，表现为谱幅值漂移、相位偏移和非线性模态交互错误。SGNO 针对具有 Fourier 结构的周期线性和半线性演化 PDE，试图从单步更新结构上提高长时稳定性。论文指出，自回归误差在 Fourier 结构问题中具有明确的频谱表现。fileciteturn121file0L16-L21
+自回归神经 PDE 代理模型通过反复应用单步算子实现长时间预测，但微小单步误差会在闭环滚动中累积，表现为谱幅值漂移、相位偏移和非线性模态交互错误。SGNO 针对具有 Fourier 结构的周期线性和半线性演化 PDE，试图从单步更新结构上提高长时稳定性。论文指出，自回归误差在 Fourier 结构问题中具有明确的频谱表现。
 
 ## 2. Research Gap
 
@@ -44,13 +69,13 @@ $$f_\theta(w)=w+G_\theta([w,x])$$
 - 谱 carry：利用非正对角生成元控制 Fourier 模态增益；
 - learned correction：学习相位、非线性和闭合效应。
 
-论文将该思想类比于 ETD 方法中的线性传播项与强迫修正项分离。fileciteturn121file0L156-L159
+论文将该思想类比于 ETD 方法中的线性传播项与强迫修正项分离。
 
 ## 6. 结果证据
 
 → [[li2026-sgno-results]]
 
-在 10 个 APEBench 任务上，SGNO 获得最低长时误差。论文报告相对于最强非 SGNO 基线，中位 GMean100 比值为 0.252。fileciteturn121file0L401-L405
+在 10 个 APEBench 任务上，SGNO 获得最低长时误差。论文报告相对于最强非 SGNO 基线，中位 GMean100 比值为 0.252。
 
 ## 7. 贡献
 
@@ -100,3 +125,13 @@ $$f_\theta(w)=w+G_\theta([w,x])$$
 - [[node-onet]]
 - [[pgt]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `sources/papers/li2026-sgno.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2602.18801v2.pdf`
+
+^[sources/papers/li2026-sgno.md]

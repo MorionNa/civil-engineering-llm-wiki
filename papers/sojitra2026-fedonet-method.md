@@ -1,12 +1,34 @@
 ---
-title: "Sojitra et al. (2026) — 方法机制展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--sojitra2026-fedonet-method
+title: Sojitra et al. (2026) — 方法机制展开
 type: paper-analysis
-tags: [deeponet, fourier-embedding, random-fourier-features, neural-operator, spectral-accuracy, branch-trunk, pde-surrogate]
-sources: [raw/papers/10_1016_j_jcp_2026_114931_extracted.txt]
-methods: [fedonet, fourier-embedding-layer, deeponet-architecture, random-fourier-features, trunk-embedding, branch-embedding]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- branch-trunk
+- deeponet
+- fourier-embedding
+- neural-operator
+- pde-surrogate
+- random-fourier-features
+- spectral-accuracy
+sources:
+- sources/papers/sojitra2026-fedonet.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- fedonet
+- fourier-embedding-layer
+- deeponet-architecture
+- random-fourier-features
+- trunk-embedding
+- branch-embedding
 ---
 
 # Sojitra et al. (2026) — 方法机制展开
@@ -79,7 +101,7 @@ FEDONet 的 Fourier 嵌入与 NeRF（Neural Radiance Fields）中的**位置编�
 
 ```
 标准 DeepONet Trunk:               FEDONet Trunk:
-                                    
+
   y (坐标, ℝᵈ)                       y (坐标, ℝᵈ)
        ↓                                  ↓
   Linear(d, h₁)                    ✨ Fourier Embed γ(y) (ℝ²ᵐ)
@@ -181,3 +203,13 @@ Loss = (1/N) Σᵢ Σⱼ ||G_θ(uᵢ)(yⱼ) - G(uᵢ)(yⱼ)||²
 - [[fedonet]] — FEDONet 实体页
 - [[deeponet]] — DeepONet 神经算子基础
 - [[goswami2022-variational-deeponet-method]] — V-DeepONet 方法对比（物理约束 vs 空间表达增强）
+
+## Evidence By Source
+
+### `sources/papers/sojitra2026-fedonet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2026_114931_extracted.txt`
+
+^[sources/papers/sojitra2026-fedonet.md]

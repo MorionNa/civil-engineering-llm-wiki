@@ -1,10 +1,29 @@
 ---
-title: "Adaptive Loss Weighting PINN (APINNs) — 多任务自适应损失加权 PINN"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--adaptive-loss-weighting-pinn
+title: Adaptive Loss Weighting PINN (APINNs) — 多任务自适应损失加权 PINN
 type: entity
-tags: [physics-informed, pinn, adaptive-weighting, physics-constrained-loss, soft-constraint, neural-network, physics-constraint-weight-tuning]
-sources: [raw/papers/10_1016_j_camwa_2025_01_007.xml, raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+keywords:
+- adaptive-weighting
+- domain/ai4s
+- entity/model
+- method/pinn
+- neural-network
+- physics-constrained-loss
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- soft-constraint
+sources:
+- raw/papers/10_1016_j_camwa_2025_01_007.xml
+- raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -59,3 +78,12 @@ $$\mathcal{L}=\lambda_1\mathrm{MSE}_{u_0}+\lambda_2\mathrm{MSE}_{lb}+\lambda_3\m
 - [[pinn]] — 基础 PINN 实体
 - [[wang2021-pinn-ntk-failure-analysis]] — 多损失训练失衡的理论背景
 - [[jagtap2019-adaptive-activation-analysis]] — 另一种 PINN 自适应机制
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_camwa_2025_01_007.xml`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_camwa_2025_01_007.xml]

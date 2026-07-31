@@ -1,10 +1,25 @@
 ---
-title: "Pseudo Time Stepping"
-created: 2026-06-10
-updated: 2026-06-13
+id: entities--pseudo-time-stepping
+title: Pseudo Time Stepping
 type: entity
-tags: [pinn, collocation-strategy, physics-informed]
-sources: [raw/papers/wang2023-pinn-spurious.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+keywords:
+- collocation-strategy
+- domain/ai4s
+- entity/model
+- method/pinn
+- physics-informed
+- pinn
+sources:
+- raw/papers/wang2023-pinn-spurious.md
+created: '2026-06-10'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Pseudo-Time Stepping
@@ -43,3 +58,12 @@ sources: [raw/papers/wang2023-pinn-spurious.md]
 - [[wang2023-pinn-spurious-method]] — 方法展开
 - [[zhang2020-phylstm-critical]] — PhyLSTM 的权重调参问题
 - [[physics-constrained-training-failure-modes]] — 失败模式对比
+
+## Evidence By Source
+
+### `raw/papers/wang2023-pinn-spurious.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/wang2023-pinn-spurious.md]

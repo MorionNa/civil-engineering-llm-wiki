@@ -1,10 +1,34 @@
 ---
-title: "斜拉桥 (Cable-Stayed Bridge) — 结构体系与动力学建模"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--cable-stayed-bridge
+title: 斜拉桥 (Cable-Stayed Bridge) — 结构体系与动力学建模
 type: entity
-tags: [cable-stayed-bridge, structural-dynamics, structural-health-monitoring, dynamic-alignment, deflection-reconstruction, mgda, pinn, physics-informed, ai4s]
-sources: [raw/papers/10_1016_j_aei_2025_103581_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- ai4s
+- cable-stayed-bridge
+- deflection-reconstruction
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- dynamic-alignment
+- entity/model
+- method/pinn
+- mgda
+- physics-informed
+- pinn
+- structural-dynamics
+- structural-health-monitoring
+sources:
+- raw/papers/10_1016_j_aei_2025_103581_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -83,3 +107,12 @@ PINN 在斜拉桥中的应用正处于起步阶段：
 
 - [[pinn]] — 物理信息神经网络
 - [[structural-health-monitoring]] — 结构健康监测（待创建）
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_aei_2025_103581_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_aei_2025_103581_extracted.txt]

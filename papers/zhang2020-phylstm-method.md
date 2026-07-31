@@ -1,12 +1,40 @@
 ---
-title: "Zhang et al. (2020) — 方法机制展开"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--zhang2020-phylstm-method
+title: Zhang et al. (2020) — 方法机制展开
 type: paper-analysis
-tags: [physics-informed, multi-lstm, phylstm2, phylstm3, tensor-differentiator, physics-constrained-loss, soft-constraint, sequence-modeling, adam-lbfgs, collocation-strategy, two-phase-optimization, finite-difference]
-sources: [raw/papers/zhang2020-phylstm.md]
-methods: [physics-constrained-loss, adam-lbfgs, collocation-strategy, two-phase-optimization, soft-constraint, tensor-differentiator, finite-difference, sequence-modeling]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- collocation-strategy
+- finite-difference
+- multi-lstm
+- phylstm2
+- phylstm3
+- physics-constrained-loss
+- physics-informed
+- sequence-modeling
+- soft-constraint
+- tensor-differentiator
+- two-phase-optimization
+sources:
+- sources/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-constrained-loss
+- adam-lbfgs
+- collocation-strategy
+- two-phase-optimization
+- soft-constraint
+- tensor-differentiator
+- finite-difference
+- sequence-modeling
 ---
 
 # Zhang et al. (2020) — 方法机制展开
@@ -146,3 +174,13 @@ JΦ 约束 LSTM3 输出的 Φ = {∆ẇ, r}ᵀ 满足滞回微分方程（如 Bo
 - [[phylstm2]] — PhyLSTM2 实体页
 - [[phylstm3]] — PhyLSTM3 实体页
 - [[zhang2020-phylstm-results]] — 结果证据展开
+
+## Evidence By Source
+
+### `sources/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/zhang2020-phylstm.md`
+
+^[sources/papers/zhang2020-phylstm.md]

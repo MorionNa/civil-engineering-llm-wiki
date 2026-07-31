@@ -1,10 +1,24 @@
 ---
-title: "U-Net"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--u-net
+title: U-Net
 type: entity
-tags: [semantic-segmentation, encoder-decoder, skip-connections, biomedical-imaging]
-sources: [raw/papers/ronneberger2015-unet.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- entity/model
+keywords:
+- biomedical-imaging
+- domain/computer-vision
+- encoder-decoder
+- entity/model
+- semantic-segmentation
+- skip-connections
+sources:
+- raw/papers/ronneberger2015-unet.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # U-Net
@@ -19,3 +33,16 @@ U-Net 是一种对称的 encoder-decoder 卷积架构，通过 skip connections 
 
 ## 关联页面
 - [[ronneberger2015-unet-analysis]] — 论文完整分析
+
+## Evidence By Source
+
+### `raw/papers/ronneberger2015-unet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/ronneberger2015-unet.md]
+
+## Related Indexes
+
+- [[entities/index]]

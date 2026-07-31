@@ -1,10 +1,25 @@
 ---
-title: "Causal Attention (CA) Weighting — 自适应因果性时空加权"
-created: 2026-06-28
-updated: 2026-06-28
+id: entities--causal-attention
+title: Causal Attention (CA) Weighting — 自适应因果性时空加权
 type: entity
-tags: [physics-informed, temporal-causality, adaptive-weighting, pinn]
-sources: [raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+keywords:
+- adaptive-weighting
+- domain/ai4s
+- entity/model
+- method/pinn
+- physics-informed
+- pinn
+- temporal-causality
+sources:
+- raw/papers/10_1016_j_jcp_2026_115071_extracted.txt
+created: '2026-06-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -69,3 +84,12 @@ $$\lambda(t, x) = e^{-\epsilon \\xi t}, \\quad \\xi = \\frac{\\sum_i (u_0(x_i) -
 ## 代码
 
 https://github.com/Chenrui-Z/Causal-Attention/
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_jcp_2026_115071_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]

@@ -1,24 +1,54 @@
 ---
-title: "Wang et al. (2023) — When PINNs Go Wrong: Pseudo-Time Stepping Against Spurious Solutions"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--wang2023-pinn-spurious-analysis
+title: 'Wang et al. (2023) — When PINNs Go Wrong: Pseudo-Time Stepping Against Spurious Solutions'
 type: paper-analysis
-tags: [pinns, physics-informed, spurious-solutions, pseudo-time-stepping, pde, physics-constrained-loss, soft-constraint, collocation-strategy, adam-lbfgs, two-phase-optimization, deep-learning]
-sources: [raw/papers/wang2023-pinn-spurious.md]
-methods: [pseudo-time-stepping, adaptive-pseudo-time-stepping, collocation-resampling, finite-difference-jacobian]
-results: [spurious-solution-avoidance, adaptive-step-size]
-failure_modes: [loss-function-weakness, step-size-sensitivity, optimization-vs-accuracy-tradeoff]
-datasets: [pde-benchmarks, navier-stokes, rayleigh-taylor]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- collocation-strategy
+- deep-learning
+- pde
+- physics-constrained-loss
+- physics-informed
+- pinn
+- pseudo-time-stepping
+- soft-constraint
+- spurious-solutions
+- two-phase-optimization
+sources:
+- sources/papers/wang2023-pinn-spurious.md
+created: '2026-06-10'
+updated: '2026-07-31'
+confidence: high
+methods:
+- pseudo-time-stepping
+- adaptive-pseudo-time-stepping
+- collocation-resampling
+- finite-difference-jacobian
+results:
+- spurious-solution-avoidance
+- adaptive-step-size
+failure_modes:
+- loss-function-weakness
+- step-size-sensitivity
+- optimization-vs-accuracy-tradeoff
+datasets:
+- pde-benchmarks
+- navier-stokes
+- rayleigh-taylor
 reproducibility: high
 code_url:
-  - https://github.com/sifanexisted/jaxpi2
-dataset_url: []
-confidence: high
+- https://github.com/sifanexisted/jaxpi2
 ---
 
 # Wang et al. (2023) — When PINNs Go Wrong
 
-> **Authors:** Sifan Wang, Shawn Koohy, Yiping Lu, Paris Perdikaris  
+> **Authors:** Sifan Wang, Shawn Koohy, Yiping Lu, Paris Perdikaris
 > **Code:** [sifanexisted/jaxpi2](https://github.com/sifanexisted/jaxpi2)
 
 ---
@@ -120,3 +150,13 @@ PINNs（物理信息神经网络）已被广泛用于求解 PDE、反问题、�
 - [[zhang2020-phylstm-method]] — 共享 collocation-strategy, adam-lbfgs
 - [[zhang2020-phylstm-critical]] — 共享 finite-difference-error, 物理约束局限
 - [[physics-constrained-training-failure-modes]] — 两篇论文的失败模式对比
+
+## Evidence By Source
+
+### `sources/papers/wang2023-pinn-spurious.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2023-pinn-spurious.md`
+
+^[sources/papers/wang2023-pinn-spurious.md]

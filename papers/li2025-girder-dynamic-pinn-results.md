@@ -1,12 +1,41 @@
 ---
-title: "Li et al. (2025) — 实验结果：传感器稀疏条件下的MGDA重建验证"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-girder-dynamic-pinn-results
+title: Li et al. (2025) — 实验结果：传感器稀疏条件下的MGDA重建验证
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, cable-stayed-bridge, dynamic-alignment, mgda-reconstruction, sensor-number, road-roughness, damage-state, measurement-noise]
-sources: [raw/papers/10_1016_j_aei_2025_103581_extracted.txt]
-results: [mgda-reconstruction, cable-stayed-bridge, deflection-reconstruction, random-load, vehicle-load, road-roughness, damage-state, measurement-noise, sensor-number]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- cable-stayed-bridge
+- damage-state
+- dynamic-alignment
+- measurement-noise
+- mgda-reconstruction
+- physics-informed
+- pinn
+- road-roughness
+- sensor-number
+- structural-dynamics
+sources:
+- sources/papers/li2025-girder-dynamic-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+results:
+- mgda-reconstruction
+- cable-stayed-bridge
+- deflection-reconstruction
+- random-load
+- vehicle-load
+- road-roughness
+- damage-state
+- measurement-noise
+- sensor-number
 ---
 
 # Li et al. (2025) — 实验结果展开
@@ -143,3 +172,13 @@ confidence: high
 - [[cable-stayed-bridge]] — 斜拉桥实体
 - [[li2025-movingload-pinn-results]] — 移动荷载 PINN 结果（互补参照）
 - [[pinn]] — 物理信息神经网络实体
+
+## Evidence By Source
+
+### `sources/papers/li2025-girder-dynamic-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103581_extracted.txt`
+
+^[sources/papers/li2025-girder-dynamic-pinn.md]

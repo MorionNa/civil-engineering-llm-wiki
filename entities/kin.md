@@ -1,10 +1,34 @@
 ---
-title: "KINN — Kolmogorov–Arnold-Informed Neural Network (KAN + PINN)"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--kin
+title: KINN — Kolmogorov–Arnold-Informed Neural Network (KAN + PINN)
 type: entity
-tags: [physics-informed, pinn, kan, kolmogorov-arnold, spline, b-spline, solid-mechanics, neural-operator, ai4s]
-sources: [raw/papers/10_1016_j_cma_2024_117518_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- b-spline
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- kan
+- kolmogorov-arnold
+- method/neural-operator
+- method/pinn
+- neural-operator
+- physics-informed
+- pinn
+- solid-mechanics
+- spline
+sources:
+- raw/papers/10_1016_j_cma_2024_117518_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -90,9 +114,9 @@ KINN 支持 PDE 的三种数学上等价、计算上不等价的表述：
 
 | 形式 | 损失函数 | 最佳匹配场景 |
 |------|----------|------------|
-| 强形式 (Strong) | $\mathcal{L} = \|\mathcal{N}[u] - f\|^2$ | 一般 PDE |
+| 强形式 (Strong) | $\mathcal{L} = |\mathcal{N}[u] - f|^2$ | 一般 PDE |
 | 能量形式 (Energy) | $\mathcal{L} = \Pi(u)$（变分泛函） | 固体力学（弹性/超弹性） |
-| 逆形式 (Inverse) | $\mathcal{L} = \|u_{\text{pred}} - u_{\text{obs}}\|^2 + \lambda \mathcal{L}_{PDE}$ | 参数发现 |
+| 逆形式 (Inverse) | $\mathcal{L} = |u_{\text{pred}} - u_{\text{obs}}|^2 + \lambda \mathcal{L}_{PDE}$ | 参数发现 |
 
 ## 历史脉络
 
@@ -117,3 +141,12 @@ KINN 支持 PDE 的三种数学上等价、计算上不等价的表述：
 - [[chen2025-at-pinn-hc-analysis]] — 硬约束 PINN（可与 KINN 结合的约束策略）
 - [[pinn]] — PINN 实体
 - [[deeponet]] — DeepONet（另一种神经算子，可混合 KAN 表达）
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2024_117518_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2024_117518_extracted.txt]

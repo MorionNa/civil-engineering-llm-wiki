@@ -1,10 +1,35 @@
 ---
-title: "SeisGPT 方法：SDR 低保真先验、质量刚度图编码与 SDG-Mixer"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--meng2026-seisgpt-method
+title: SeisGPT 方法：SDR 低保真先验、质量刚度图编码与 SDG-Mixer
 type: paper-analysis
-tags: [physics-informed, metamodeling, deep-learning, sequence-modeling, transformer, lora, structural-dynamics, nonlinear-systems, seismic-response, finite-element, high-rise-building, real-time-simulation, gpu-computing]
-sources: [raw/papers/meng2026-seisgpt.pdf, raw/papers/meng2026-seisgpt-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+- method/transformer
+keywords:
+- deep-learning
+- finite-element
+- gpu-computing
+- high-rise-building
+- lora
+- metamodeling
+- nonlinear-systems
+- physics-informed
+- real-time-simulation
+- seismic-response
+- sequence-modeling
+- structural-dynamics
+- transformer
+sources:
+- sources/papers/meng2026-seisgpt.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -163,7 +188,7 @@ SeisGPT-Base 在大规模合成数据上预训练后，用 694 个真实建筑 F
 
 PIGNN 输出 $H_i$ 与传感器嵌入 $S_i$ 在结构编码后融合：
 
-$$\alpha_i=\sigma(W[H_i\|S_i]+b),$$
+$$\alpha_i=\sigma(W[H_i|S_i]+b),$$
 
 $$Z_i=\alpha_iS_i+(1-\alpha_i)H_i.$$
 
@@ -186,3 +211,13 @@ SeisGPT 的关键不是单个模块，而是三级物理注入：
 - `[[meng2026-seisgpt-critical]]`
 - `[[seisgpt]]`
 - `[[seisgpt-vs-phylstm-cm-pinns]]`
+
+## Evidence By Source
+
+### `sources/papers/meng2026-seisgpt.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/meng2026-seisgpt.pdf`, `raw/papers/meng2026-seisgpt-extracted.md`
+
+^[sources/papers/meng2026-seisgpt.md]

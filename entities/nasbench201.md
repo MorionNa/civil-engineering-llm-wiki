@@ -1,10 +1,23 @@
 ---
-title: "NAS-Bench-201"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--nasbench201
+title: NAS-Bench-201
 type: entity
-tags: [dataset, benchmark, neural-architecture-search, nas-bench-201]
-sources: [raw/papers/TE-NAS_chen2021_ICLR.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+keywords:
+- benchmark
+- dataset
+- entity/dataset
+- method/neural-architecture-search
+- nas-bench-201
+- neural-architecture-search
+sources:
+- raw/papers/TE-NAS_chen2021_ICLR.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -40,3 +53,12 @@ TE-NAS (Chen et al., ICLR 2021) 使用 NAS-Bench-201 作为主要 benchmark 来�
 - [[chen2021-tenas-analysis]] — TE-NAS 论文分析
 - [[chen2021-tenas-results]] — TE-NAS 实验结果
 - [[chen2021-tenas-method]] — TE-NAS 方法细节
+
+## Evidence By Source
+
+### `raw/papers/TE-NAS_chen2021_ICLR.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/TE-NAS_chen2021_ICLR.pdf]

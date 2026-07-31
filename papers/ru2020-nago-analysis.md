@@ -1,19 +1,49 @@
 ---
-title: "Ru et al. (2020) — Neural Architecture Generator Optimization 论文分析"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--ru2020-nago-analysis
+title: Ru et al. (2020) — Neural Architecture Generator Optimization 论文分析
 type: paper-analysis
-tags: [neural-architecture-search]
-methods: [bayesian-optimization, multi-fidelity-bo, multi-objective-bo, heteroscedastic-bnn, watts-strogatz-graph, erdos-renyi-graph]
-results: [cifar10, cifar100, sport8, mit67, flowers102, imagenet, pareto-front-memory-accuracy]
-failure_modes: [expanded-space-degradation, bo-dimensionality-limit, no-droppath-auxiliary, compute-cost-high]
-datasets: [cifar-10, cifar-100, imagenet, sport8, mit67, flowers102]
-sources: [raw/papers/nago_ru2020.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- neural-architecture-search
+sources:
+- sources/papers/ru2020-nago.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: high
+methods:
+- bayesian-optimization
+- multi-fidelity-bo
+- multi-objective-bo
+- heteroscedastic-bnn
+- watts-strogatz-graph
+- erdos-renyi-graph
+results:
+- cifar10
+- cifar100
+- sport8
+- mit67
+- flowers102
+- imagenet
+- pareto-front-memory-accuracy
+failure_modes:
+- expanded-space-degradation
+- bo-dimensionality-limit
+- no-droppath-auxiliary
+- compute-cost-high
+datasets:
+- cifar-10
+- cifar-100
+- imagenet
+- sport8
+- mit67
+- flowers102
 reproducibility: high
 code_url:
-  - https://github.com/ruoa/nago
-dataset_url: []
-confidence: high
+- https://github.com/ruoa/nago
 ---
 
 # NAGO (Neural Architecture Generator Optimization)
@@ -118,3 +148,13 @@ NAS 领域长期存在一个深层矛盾：搜索空间越窄，精度越高，�
 - [[ru2020-nago-results]] — 完整实验结果
 - [[ru2020-nago-critical]] — 贡献 / 局限 / 延伸分析
 - [[randomly-wired-networks]] — RNAG 基础工作 (Xie et al. 2019)
+
+## Evidence By Source
+
+### `sources/papers/ru2020-nago.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/nago_ru2020.pdf`
+
+^[sources/papers/ru2020-nago.md]

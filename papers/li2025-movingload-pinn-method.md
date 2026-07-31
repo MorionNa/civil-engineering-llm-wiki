@@ -1,12 +1,37 @@
 ---
-title: "Li et al. (2025) — 方法机制：PINN 桥梁移动荷载动力响应分析"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-movingload-pinn-method
+title: Li et al. (2025) — 方法机制：PINN 桥梁移动荷载动力响应分析
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, equation-of-motion, neural-network, deep-learning, collocation-strategy]
-sources: [raw/papers/10_1016_j_aei_2025_103215_extracted.txt]
-methods: [physics-informed, pinn, fourier-embedding, causal-weight, collocation-strategy, gaussian-approximation, nondimensional-pde]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- collocation-strategy
+- deep-learning
+- equation-of-motion
+- neural-network
+- physics-informed
+- pinn
+- structural-dynamics
+sources:
+- sources/papers/li2025-movingload-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-informed
+- pinn
+- fourier-embedding
+- causal-weight
+- collocation-strategy
+- gaussian-approximation
+- nondimensional-pde
 ---
 
 # Li et al. (2025) — 方法机制展开
@@ -177,3 +202,13 @@ $$\mathcal{L}_{data} = \frac{1}{N_d}\sum_{i=1}^{N_d} \left|u_\theta(x_i^{obs}, t
 - [[li2025-movingload-pinn-critical]] — 贡献 / Negative / 可迁移
 - [[pinn]] — 物理信息神经网络实体
 - [[notes/lectures/ai4s-pinn-deepxde]] — DeepXDE 实战参考
+
+## Evidence By Source
+
+### `sources/papers/li2025-movingload-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103215_extracted.txt`
+
+^[sources/papers/li2025-movingload-pinn.md]

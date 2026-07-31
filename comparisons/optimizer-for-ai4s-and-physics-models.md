@@ -1,22 +1,50 @@
 ---
-title: "AdamW vs Adafactor vs Lion vs Shampoo vs SOAP vs Muon：AI4S 与物理模型优化器选型"
-created: 2026-07-29
-updated: 2026-07-29
+id: comparisons--optimizer-for-ai4s-and-physics-models
+title: AdamW vs Adafactor vs Lion vs Shampoo vs SOAP vs Muon：AI4S 与物理模型优化器选型
 type: comparison
-tags: [comparison, optimizer, adamw, adafactor, lion-optimizer, shampoo-optimizer, soap-optimizer, muon, preconditioning, matrix-orthogonalization, newton-schulz, training-efficiency, memory-efficiency, wallclock-efficiency, scientific-machine-learning, ai4s, pinn, neural-operator]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- method/evaluation
+- method/graph-neural-network
+- method/neural-operator
+- method/pinn
+- method/transformer
+keywords:
+- adafactor
+- adamw
+- ai4s
+- comparison
+- lion-optimizer
+- matrix-orthogonalization
+- memory-efficiency
+- muon
+- neural-operator
+- newton-schulz
+- optimizer
+- pinn
+- preconditioning
+- scientific-machine-learning
+- shampoo-optimizer
+- soap-optimizer
+- training-efficiency
+- wallclock-efficiency
 sources:
-  - raw/articles/jordan2024-muon-blog.pdf
-  - https://arxiv.org/abs/1711.05101
-  - https://proceedings.mlr.press/v80/shazeer18a.html
-  - https://proceedings.mlr.press/v80/gupta18a.html
-  - https://arxiv.org/abs/2302.06675
-  - https://proceedings.iclr.cc/paper_files/paper/2025/hash/e988664070e9591f93fdcf605f7dc623-Abstract-Conference.html
+- raw/articles/jordan2024-muon-blog.pdf
+- https://arxiv.org/abs/1711.05101
+- https://proceedings.mlr.press/v80/shazeer18a.html
+- https://proceedings.mlr.press/v80/gupta18a.html
+- https://arxiv.org/abs/2302.06675
+- https://proceedings.iclr.cc/paper_files/paper/2025/hash/e988664070e9591f93fdcf605f7dc623-Abstract-Conference.html
+created: '2026-07-29'
+updated: '2026-07-31'
 confidence: high
 ---
 
 # AdamW vs Adafactor vs Lion vs Shampoo vs SOAP vs Muon
 
-> **用途：** 为 PINN、神经算子、物理 Transformer、结构动力响应代理和一般 AI4S 模型选择训练优化器。  
+> **用途：** 为 PINN、神经算子、物理 Transformer、结构动力响应代理和一般 AI4S 模型选择训练优化器。
 > **结论先行：** AdamW 仍应作为默认与公平 baseline；显存优先考虑 Adafactor/Lion；矩阵隐藏层和大批量训练优先试 Muon；能够承担矩阵预条件及分布式复杂度时再试 SOAP，Shampoo 更适合作为完整预条件路线和机制参照。
 
 ## 1. 这六类优化器解决的不是同一个问题
@@ -381,3 +409,12 @@ failure / divergence rate
 - [[pgt]]
 - [[legonet]]
 - [[sgno]]
+
+## Evidence By Source
+
+### `raw/articles/jordan2024-muon-blog.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/articles/jordan2024-muon-blog.pdf]

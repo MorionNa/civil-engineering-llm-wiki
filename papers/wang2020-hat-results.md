@@ -1,10 +1,24 @@
 ---
-title: "HAT 实验结果：四任务×三硬件 BLEU-Latency 全面对比"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--wang2020-hat-results
+title: HAT 实验结果：四任务×三硬件 BLEU-Latency 全面对比
 type: paper-analysis
-tags: [hardware-aware-nas, machine-translation, wmt14, wmt19, iwslt14, edge-inference, evolutionary-search]
-sources: [raw/papers/wang2020_hat.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/transformer
+keywords:
+- edge-inference
+- evolutionary-search
+- hardware-aware-nas
+- iwslt14
+- machine-translation
+- wmt14
+- wmt19
+sources:
+- sources/papers/wang2020-hat.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -159,3 +173,13 @@ HAT 的总 GPU 小时甚至低于训练一个 Transformer-Big（因为 HAT 模�
 - [[wang2020-hat-method]] — 方法展开
 - [[wang2020-hat-critical]] — 贡献·局限·可迁移·机会
 - [[jiang2024-mixtral-of-experts-results]] — Mixtral 的效率对比视角
+
+## Evidence By Source
+
+### `sources/papers/wang2020-hat.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2020_hat.md`
+
+^[sources/papers/wang2020-hat.md]

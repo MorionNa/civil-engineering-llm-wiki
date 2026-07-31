@@ -1,10 +1,27 @@
 ---
-title: "ABot-Earth 0.5 — 方法机制展开"
-created: 2026-06-22
-updated: 2026-06-22
+id: papers--amapcvlab2026-abotearth-method
+title: ABot-Earth 0.5 — 方法机制展开
 type: paper-analysis
-tags: [3d-gaussian-splatting, compression-generation, multi-lod, bhattacharyya-distance, spatial-partitioning, multi-view-rendering, vlm-quality-assessment, cross-view-fusion, tile-based-rendering, satellite-conditioned-generation]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- bhattacharyya-distance
+- compression-generation
+- cross-view-fusion
+- multi-lod
+- multi-view-rendering
+- satellite-conditioned-generation
+- spatial-partitioning
+- tile-based-rendering
+- vlm-quality-assessment
+sources:
+- sources/papers/amapcvlab2026-abotearth.md
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -135,3 +152,13 @@ ABot-Earth 0.5 是一个**重建驱动 + 原生 3DGS 生成**的两阶段框架�
 - `[[entities/abot-earth]]` — ABot-Earth 系统概述
 - `[[entities/abot-3dgs]]` — ABot-3DGS 重建引擎
 - `[[entities/3d-gaussian-splatting]]` — 3DGS 技术概述
+
+## Evidence By Source
+
+### `sources/papers/amapcvlab2026-abotearth.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/amapcvlab2026-abotearth.pdf`
+
+^[sources/papers/amapcvlab2026-abotearth.md]

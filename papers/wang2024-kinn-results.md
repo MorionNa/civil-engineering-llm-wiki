@@ -1,12 +1,37 @@
 ---
-title: "Wang et al. (2024) KINN 结果展开：六类固体力学问题的 KAN vs MLP 系统对比"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-kinn-results
+title: Wang et al. (2024) KINN 结果展开：六类固体力学问题的 KAN vs MLP 系统对比
 type: paper-analysis
-tags: [physics-informed, pinn, kin, kolmogorov-arnold, solid-mechanics, multi-scale, singularity, stress-concentration, hyperelasticity, heterogeneous]
-sources: [raw/papers/10_1016_j_cma_2024_117518_extracted.txt]
-results: [multi-scale, singularity, stress-concentration, nonlinear-hyperelasticity, heterogeneous, complex-geometry]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- heterogeneous
+- hyperelasticity
+- kin
+- kolmogorov-arnold
+- multi-scale
+- physics-informed
+- pinn
+- singularity
+- solid-mechanics
+- stress-concentration
+sources:
+- sources/papers/wang2024-kinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+results:
+- multi-scale
+- singularity
+- stress-concentration
+- nonlinear-hyperelasticity
+- heterogeneous
+- complex-geometry
 ---
 
 # Wang et al. (2024) — KINN 结果展开
@@ -180,3 +205,13 @@ KAN 的 B-样条定义在**规则张量积网格**上。对于非规则几何域
 - [[wang2024-kinn-analysis|← 总览]]
 - [[wang2024-kinn-method|← 方法]]
 - [[wang2024-kinn-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-kinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117518_extracted.txt`
+
+^[sources/papers/wang2024-kinn.md]

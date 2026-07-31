@@ -1,19 +1,51 @@
 ---
-title: "Akhauri et al. (2022) — EZNAS: Evolving Zero Cost Proxies For NAS Scoring 论文分析"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--akhauri2022-eznas-analysis
+title: 'Akhauri et al. (2022) — EZNAS: Evolving Zero Cost Proxies For NAS Scoring 论文分析'
 type: paper-analysis
-tags: [training-free-nas, neural-architecture-search, zero-shot, nas-bench-201, evolutionary-search]
-methods: [genetic-programming, expression-tree, kendall-tau, zero-cost-proxy, evolutionary-algorithm]
-results: [nas-bench-201, nds, nats-bench, kendall-tau-0.65, spearman-rho-0.89]
-failure_modes: [top-10-percent-ranking-failure, batch-size-sensitivity, connectivity-blind, rcb-structure-rigid]
-datasets: [nas-bench-201, cifar-10, cifar-100, imagenet-16-120, nds, nats-bench]
-sources: [raw/papers/eznas_akhauri2022.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- evolutionary-search
+- nas-bench-201
+- neural-architecture-search
+- training-free-nas
+- zero-shot
+sources:
+- sources/papers/akhauri2022-eznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: high
+methods:
+- genetic-programming
+- expression-tree
+- kendall-tau
+- zero-cost-proxy
+- evolutionary-algorithm
+results:
+- nas-bench-201
+- nds
+- nats-bench
+- kendall-tau-0.65
+- spearman-rho-0.89
+failure_modes:
+- top-10-percent-ranking-failure
+- batch-size-sensitivity
+- connectivity-blind
+- rcb-structure-rigid
+datasets:
+- nas-bench-201
+- cifar-10
+- cifar-100
+- imagenet-16-120
+- nds
+- nats-bench
 reproducibility: high
 code_url:
-  - https://github.com/EzNAS/EZNAS
-dataset_url: []
-confidence: high
+- https://github.com/EzNAS/EZNAS
 ---
 
 # EZNAS: 演化零成本代理用于神经架构评分
@@ -140,3 +172,13 @@ confidence: high
 - [[eznas]] — EZNAS 实体页面
 - [[te-nas]] — TE-NAS（训练无关 NAS 先驱，NTK + 线性区域数）
 - [[nasbench201]] — NAS-Bench-201 基准数据集
+
+## Evidence By Source
+
+### `sources/papers/akhauri2022-eznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/eznas_akhauri2022.pdf`
+
+^[sources/papers/akhauri2022-eznas.md]

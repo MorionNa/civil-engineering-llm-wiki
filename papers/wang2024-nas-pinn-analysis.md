@@ -1,31 +1,65 @@
 ---
-title: "Wang & Zhong (2024) — NAS-PINN: Neural architecture search-guided physics-informed neural network"
-created: 2026-07-30
-updated: 2026-07-30
+id: papers--wang2024-nas-pinn-analysis
+title: 'Wang & Zhong (2024) — NAS-PINN: Neural architecture search-guided physics-informed neural network'
 type: paper-analysis
-tags: [physics-informed, pinn, neural-architecture-search, differentiable-nas, bi-level-optimization, ai4s, pde]
-sources: [raw/papers/wang2024-nas-pinn-source.md]
-methods: [darts, continuous-search-space, mask-based-search, architecture-parameter-optimization, weight-parameter-optimization]
-results: [poisson-equation, burgers-equation, advection-equation, irregular-domain, high-dimensional-pde]
-failure_modes: [search-cost, small-search-space, PDE-specific-architecture, no-code-release, data-availability-limited]
-datasets: [poisson-equation, burgers-equation, advection-equation]
-reproducibility: medium
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-architecture-search
+- method/pinn
+keywords:
+- ai4s
+- bi-level-optimization
+- differentiable-nas
+- neural-architecture-search
+- pde
+- physics-informed
+- pinn
+sources:
+- sources/papers/wang2024-nas-pinn.md
+created: '2026-07-30'
+updated: '2026-07-31'
 confidence: high
+methods:
+- darts
+- continuous-search-space
+- mask-based-search
+- architecture-parameter-optimization
+- weight-parameter-optimization
+results:
+- poisson-equation
+- burgers-equation
+- advection-equation
+- irregular-domain
+- high-dimensional-pde
+failure_modes:
+- search-cost
+- small-search-space
+- PDE-specific-architecture
+- no-code-release
+- data-availability-limited
+datasets:
+- poisson-equation
+- burgers-equation
+- advection-equation
+reproducibility: medium
 ---
 
 # NAS-PINN: Neural architecture search-guided physics-informed neural network for solving PDEs
 
-> **作者：** Yifan Wang, Linlin Zhong  
-> **期刊：** Journal of Computational Physics 496 (2024) 112603  
+> **作者：** Yifan Wang, Linlin Zhong
+> **期刊：** Journal of Computational Physics 496 (2024) 112603
 > **一句话定位：** NAS-PINN 将神经架构搜索引入 PINN，通过连续化搜索空间和双层优化自动寻找适合特定 PDE 的网络深度与宽度，避免依赖人工经验设计 PINN 网络结构。
 
 ## 1. 工程背景 (Engineering Background)
 
-PINN 通过将 PDE 物理约束写入损失函数实现无监督求解，但网络结构通常依赖经验设计。作者指出，传统 PINN 常采用固定 4–6 层、每层相同神经元数量的全连接网络，这种经验规则无法保证针对不同 PDE 达到最优性能。fileciteturn23file0L71-L74
+PINN 通过将 PDE 物理约束写入损失函数实现无监督求解，但网络结构通常依赖经验设计。作者指出，传统 PINN 常采用固定 4–6 层、每层相同神经元数量的全连接网络，这种经验规则无法保证针对不同 PDE 达到最优性能。
 
 ## 2. Research Gap
 
-已有 PINN 研究主要关注损失函数、采样策略和梯度优化，而网络架构设计研究较少。论文认为，神经网络结构会显著影响 PINN 性能，但此前探索往往零散且耗时。fileciteturn23file0L70-L76
+已有 PINN 研究主要关注损失函数、采样策略和梯度优化，而网络架构设计研究较少。论文认为，神经网络结构会显著影响 PINN 性能，但此前探索往往零散且耗时。
 
 ## 3. Scientific Question
 
@@ -62,7 +96,7 @@ NAS-PINN 基于可微 NAS 思想，将离散架构搜索转化为连续优化问
 1. **连续搜索空间**：借鉴 DARTS，将候选结构松弛为连续权重；
 2. **Mask机制**：通过 zero-one mask 模拟不同神经元数量；
 3. **Identity operation**：通过跳跃层选择实现网络深度搜索；
-4. **双层优化**：内层优化网络权重，外层优化架构参数。论文明确将该过程描述为 bi-level optimization。fileciteturn23file0L227-L236
+4. **双层优化**：内层优化网络权重，外层优化架构参数。论文明确将该过程描述为 bi-level optimization。
 
 ## 6. Result & Evidence
 
@@ -81,9 +115,9 @@ NAS-PINN 基于可微 NAS 思想，将离散架构搜索转化为连续优化问
 - NAS-PINN 可以找到搜索空间中的有效架构；
 - 更深网络并不一定更好；
 - Poisson 和 Advection 更偏向浅层宽网络；
-- 复杂问题中残差连接可能提升性能。fileciteturn23file0L21-L28
+- 复杂问题中残差连接可能提升性能。
 
-Poisson 方程实验中，NAS-PINN 找到架构误差最低，优于人工架构和 SMAC 搜索结果。fileciteturn23file0L309-L317
+Poisson 方程实验中，NAS-PINN 找到架构误差最低，优于人工架构和 SMAC 搜索结果。
 
 ## 7. Contribution
 
@@ -142,3 +176,13 @@ Poisson 方程实验中，NAS-PINN 找到架构误差最低，优于人工架构
 - [[wang2024-nas-pinn-critical]]
 - [[pinn]]
 - [[neural-architecture-search]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-nas-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wang2024-nas-pinn-source.md`
+
+^[sources/papers/wang2024-nas-pinn.md]

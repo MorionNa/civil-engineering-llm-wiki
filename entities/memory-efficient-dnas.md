@@ -1,10 +1,28 @@
 ---
-title: "DARTSformer (Memory-Efficient DARTS for Transformers)"
-created: 2026-06-14
-updated: 2026-06-14
+id: entities--memory-efficient-dnas
+title: DARTSformer (Memory-Efficient DARTS for Transformers)
 type: entity
-tags: [neural-architecture-search, transformer, memory-efficient, reversible-networks, differentiable-search, darts, machine-translation]
-sources: [raw/papers/memory_efficient_dnas2021.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- darts
+- differentiable-search
+- entity/model
+- machine-translation
+- memory-efficient
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- reversible-networks
+- transformer
+sources:
+- raw/papers/memory_efficient_dnas2021.pdf
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -43,3 +61,12 @@ DARTSformer 是 Yuekai Zhao, Li Dong, Yelong Shen, Zhihua Zhang, Furu Wei, Weizh
 - [[zhao2021-memory-efficient-dnas-critical]] — 贡献·知识点·局限·可迁移·研究机会
 - [[autoformer]] — 同样使用 DARTS 搜索 Transformer 架构（CV 领域）
 - [[hat]] — HAT: 进化-based NAS for Transformer，方法论对比
+
+## Evidence By Source
+
+### `raw/papers/memory_efficient_dnas2021.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/memory_efficient_dnas2021.pdf]

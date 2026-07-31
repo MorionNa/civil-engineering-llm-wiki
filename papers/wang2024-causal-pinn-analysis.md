@@ -1,21 +1,38 @@
 ---
-title: "Wang et al. (2024) — Respecting Causality for Training PINNs: 因果训练范式"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-causal-pinn-analysis
+title: 'Wang et al. (2024) — Respecting Causality for Training PINNs: 因果训练范式'
 type: paper-analysis
-tags: [physics-informed, pinn, deep-learning, ai4s, physics-simulation, time-marching, spectral-bias, loss-function-weakness]
-sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- loss-function-weakness
+- physics-informed
+- physics-simulation
+- pinn
+- spectral-bias
+- time-marching
+sources:
+- sources/papers/wang2024-causal-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
 reproducibility: 🟢
 code_url:
-  - https://github.com/PredictiveIntelligenceLab/CausalPINNs
-dataset_url: []
+- https://github.com/PredictiveIntelligenceLab/CausalPINNs
 ---
 
 # Wang et al. (2024) — Respecting Causality for Training Physics-Informed Neural Networks
 
-> **作者:** Sifan Wang, Shyam Sankaran, Paris Perdikaris  
-> **期刊:** Computer Methods in Applied Mechanics and Engineering (CMAME), 2024  
+> **作者:** Sifan Wang, Shyam Sankaran, Paris Perdikaris
+> **期刊:** Computer Methods in Applied Mechanics and Engineering (CMAME), 2024
 > **DOI:** 10.1016/j.cma.2024.116813 | **引用:** 270+
 
 ---
@@ -112,3 +129,13 @@ PINN 在求解**时间依赖的动力学系统**时持续失败——尤其是�
 - [[raissi2019-pinn-analysis]] — PINN 开山之作
 - [[linka2022-bayesian-pinn-analysis]] — Bayesian PINN
 - [[li2025-movingload-pinn-analysis]] — 因果权重在结构动力学中的延伸应用
+
+## Evidence By Source
+
+### `sources/papers/wang2024-causal-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_116813_extracted.txt`
+
+^[sources/papers/wang2024-causal-pinn.md]

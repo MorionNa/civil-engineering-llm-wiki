@@ -1,9 +1,28 @@
 ---
-title: "NODE-ONet：物理编码神经 ODE 算子网络"
+id: entities--node-onet
+title: NODE-ONet：物理编码神经 ODE 算子网络
 type: entity
-created: 2026-07-23
-updated: 2026-07-23
-tags: [neural-operator, neural-ode, physics-encoded-network]
+status: draft
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/neural-operator
+- method/pinn
+keywords:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/neural-operator
+- method/pinn
+- neural-ode
+- neural-operator
+- physics-encoded-network
+sources: []
+created: '2026-07-23'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # NODE-ONet
@@ -39,3 +58,12 @@ $$v\rightarrow z(t)\rightarrow u$$
 $$\dot z=F_\theta(z,M,K,C,f_{NL})$$
 
 将结构动力学参数编码到 latent evolution 中。
+
+## Verification Needed
+
+- This historical page has no explicit source record. Recover and verify the original evidence before changing `status` from `draft`.
+
+## Related Indexes
+
+- [[entities/index]]
+- [[index]]

@@ -1,10 +1,25 @@
 ---
-title: "Mixtral 8x7B 实验结果展开"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--jiang2024-mixtral-of-experts-results
+title: Mixtral 8x7B 实验结果展开
 type: paper-analysis
-tags: [llm-benchmark, code-generation-benchmark, math-benchmark, multilingual-data, commonsense-reasoning, long-context-modeling, bias-evaluation, router-analysis]
-sources: [raw/papers/jiang2024_mixtral_of_experts.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+keywords:
+- bias-evaluation
+- code-generation-benchmark
+- commonsense-reasoning
+- llm-benchmark
+- long-context-modeling
+- math-benchmark
+- multilingual-data
+- router-analysis
+sources:
+- sources/papers/jiang2024-mixtral-of-experts.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -131,3 +146,13 @@ confidence: high
 - [[jiang2024-mixtral-of-experts-analysis]] — 全维度概述
 - [[jiang2024-mixtral-of-experts-method]] — 方法机制
 - [[jiang2024-mixtral-of-experts-critical]] — 贡献 + Negative + 可迁移
+
+## Evidence By Source
+
+### `sources/papers/jiang2024-mixtral-of-experts.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/jiang2024_mixtral_of_experts.md`
+
+^[sources/papers/jiang2024-mixtral-of-experts.md]

@@ -1,23 +1,65 @@
 ---
-title: "Fedus et al. (2021) — Switch Transformers: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--fedus2021-switch-transformer-analysis
+title: 'Fedus et al. (2021) — Switch Transformers: 论文分析'
 type: paper-analysis
-tags: []
-sources: [raw/papers/fedus2021_switch_transformer.md]
-methods: [mixture-of-experts, switch-routing, load-balancing-loss, selective-precision, expert-dropout, expert-parallelism, model-parallelism, data-parallelism, distillation, top-1-routing]
-results: [pre-training-speedup-7x, downstream-fine-tuning-sota, multilingual-101-languages, distillation-99pct-compression, trillion-parameter-scaling, perplexity, t5-baseline]
-failure_modes: [training-instability-bfloat16, large-model-instability, upstream-downstream-translation-gap, expert-overflow, token-dropping]
-datasets: [c4, mc4, glue, superglue, squad, cnndm, bbc-xsum, winogrande, trivia-qa, natural-questions, web-questions, arc, anli]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+sources:
+- sources/papers/fedus2021-switch-transformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: high
+methods:
+- mixture-of-experts
+- switch-routing
+- load-balancing-loss
+- selective-precision
+- expert-dropout
+- expert-parallelism
+- model-parallelism
+- data-parallelism
+- distillation
+- top-1-routing
+results:
+- pre-training-speedup-7x
+- downstream-fine-tuning-sota
+- multilingual-101-languages
+- distillation-99pct-compression
+- trillion-parameter-scaling
+- perplexity
+- t5-baseline
+failure_modes:
+- training-instability-bfloat16
+- large-model-instability
+- upstream-downstream-translation-gap
+- expert-overflow
+- token-dropping
+datasets:
+- c4
+- mc4
+- glue
+- superglue
+- squad
+- cnndm
+- bbc-xsum
+- winogrande
+- trivia-qa
+- natural-questions
+- web-questions
+- arc
+- anli
 reproducibility: high
 code_url:
-  - https://github.com/google-research/t5x
-  - https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/moe.py
+- https://github.com/google-research/t5x
+- https://github.com/tensorflow/mesh/blob/master/mesh_tensorflow/transformer/moe.py
 dataset_url:
-  - https://www.tensorflow.org/datasets/catalog/c4
-  - https://www.tensorflow.org/datasets/catalog/glue
-  - https://www.tensorflow.org/datasets/catalog/super_glue
-confidence: high
+- https://www.tensorflow.org/datasets/catalog/c4
+- https://www.tensorflow.org/datasets/catalog/glue
+- https://www.tensorflow.org/datasets/catalog/super_glue
 ---
 
 # Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
@@ -135,3 +177,13 @@ Shazeer et al. (2017) 的 MoE Transformer 使用 top-k（k≥2）路由——每
 - [[fedus2021-switch-transformer-method]] — 方法机制展开
 - [[fedus2021-switch-transformer-results]] — 结果证据展开
 - [[fedus2021-switch-transformer-critical]] — 贡献/知识点/Negative/可迁移/研究机会
+
+## Evidence By Source
+
+### `sources/papers/fedus2021-switch-transformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/fedus2021_switch_transformer.md`
+
+^[sources/papers/fedus2021-switch-transformer.md]

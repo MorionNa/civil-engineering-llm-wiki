@@ -1,13 +1,40 @@
 ---
-title: "Fedus et al. (2021) — 结果证据展开"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--fedus2021-switch-transformer-results
+title: Fedus et al. (2021) — 结果证据展开
 type: paper-analysis
-tags: []
-sources: [raw/papers/fedus2021_switch_transformer.md]
-results: [pre-training-speedup-7x, downstream-fine-tuning-sota, multilingual-101-languages, distillation-99pct-compression, trillion-parameter-scaling, perplexity, t5-baseline]
-datasets: [c4, mc4, glue, superglue, squad, cnndm, bbc-xsum, winogrande, trivia-qa, natural-questions, web-questions, arc, anli]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+sources:
+- sources/papers/fedus2021-switch-transformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+results:
+- pre-training-speedup-7x
+- downstream-fine-tuning-sota
+- multilingual-101-languages
+- distillation-99pct-compression
+- trillion-parameter-scaling
+- perplexity
+- t5-baseline
+datasets:
+- c4
+- mc4
+- glue
+- superglue
+- squad
+- cnndm
+- bbc-xsum
+- winogrande
+- trivia-qa
+- natural-questions
+- web-questions
+- arc
+- anli
 ---
 
 # Fedus et al. (2021) — 结果证据展开
@@ -183,3 +210,13 @@ confidence: high
 - [[fedus2021-switch-transformer-analysis]] — 论文概述
 - [[fedus2021-switch-transformer-method]] — 方法机制展开
 - [[fedus2021-switch-transformer-critical]] — 贡献/知识点/Negative/可迁移/研究机会
+
+## Evidence By Source
+
+### `sources/papers/fedus2021-switch-transformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/fedus2021_switch_transformer.md`
+
+^[sources/papers/fedus2021-switch-transformer.md]

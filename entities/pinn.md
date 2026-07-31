@@ -1,20 +1,40 @@
 ---
-title: "PINN — 物理信息神经网络 (Physics-Informed Neural Network)"
-created: 2026-06-27
-updated: 2026-07-16
+id: entities--pinn
+title: PINN — 物理信息神经网络 (Physics-Informed Neural Network)
 type: entity
-tags: [physics-informed, pinn, ai4s, deepxde, deep-learning, neural-network, physics-simulation, inverse-problem]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/tool
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- deepxde
+- domain/ai4s
+- domain/computational-mechanics
+- entity/tool
+- inverse-problem
+- method/pinn
+- neural-network
+- physics-informed
+- physics-simulation
+- pinn
 sources:
-  - raw/papers/10_1016_j_aei_2025_103215_extracted.txt
-  - raw/papers/10_1016_j_camwa_2025_01_007.xml
-  - raw/papers/10_1007_s11071-024-10359-7.pdf
-  - raw/papers/10_1007_s10462-025-11322-7.pdf
-  - raw/papers/10_1016_j_compgeo_2025_107137.xml
-  - raw/papers/10_1016_j_engappai_2025_113640.xml
-  - raw/papers/10_1016_j_cma_2025_118422.xml
-  - raw/papers/extracted/10_1007_s00466-024-02554-5_abstract_extracted.txt
-  - raw/papers/extracted/10_1007_s10518-026-02408-w_abstract_extracted.txt
-  - notes/lectures/ai4s-pinn-deepxde.md
+- raw/papers/10_1016_j_aei_2025_103215_extracted.txt
+- raw/papers/10_1016_j_camwa_2025_01_007.xml
+- raw/papers/10_1007_s11071-024-10359-7.pdf
+- raw/papers/10_1007_s10462-025-11322-7.pdf
+- raw/papers/10_1016_j_compgeo_2025_107137.xml
+- raw/papers/10_1016_j_engappai_2025_113640.xml
+- raw/papers/10_1016_j_cma_2025_118422.xml
+- raw/papers/extracted/10_1007_s00466-024-02554-5_abstract_extracted.txt
+- raw/papers/extracted/10_1007_s10518-026-02408-w_abstract_extracted.txt
+- notes/lectures/ai4s-pinn-deepxde.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -110,3 +130,12 @@ $$\mathcal{L}_{PINN} = \underbrace{\mathcal{L}_{PDE}}_{\text{物理残差}} + \u
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S 第一课：PINN 入门到 DeepXDE 实战（90 分钟视频笔记）
 - [[avbd]] — AVBD 硬约束物理仿真（PINN 软约束的对照范式）
 - [[pseudo-time-stepping]] — 伪时间步进（PINN 伪解问题的解决方案之一）
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_aei_2025_103215_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_aei_2025_103215_extracted.txt]

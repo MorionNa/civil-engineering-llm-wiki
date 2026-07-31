@@ -1,10 +1,25 @@
 ---
-title: "SegFormer"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--segformer
+title: SegFormer
 type: entity
-tags: [semantic-segmentation, vision-transformer, hierarchical-transformer]
-sources: [raw/papers/segformer.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- entity/model
+- method/transformer
+keywords:
+- domain/computer-vision
+- entity/model
+- hierarchical-transformer
+- method/transformer
+- semantic-segmentation
+- vision-transformer
+sources:
+- raw/papers/segformer.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # SegFormer
@@ -19,3 +34,16 @@ SegFormer 将 **hierarchical Transformer encoder** 与轻量 **All-MLP decoder**
 
 ## 关联页面
 - [[xie2021-segformer-analysis]] — 论文完整分析
+
+## Evidence By Source
+
+### `raw/papers/segformer.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/segformer.pdf]
+
+## Related Indexes
+
+- [[entities/index]]

@@ -1,17 +1,50 @@
 ---
-title: "Agentic Engineering 22 条技巧 (Matt Van Horn, 2026.06)"
-created: 2026-06-10
-updated: 2026-06-10
+id: notes--articles--agentic-engineering-22-tips
+title: Agentic Engineering 22 条技巧 (Matt Van Horn, 2026.06)
 type: article
-tags: [agentic-engineering, ai-coding, workflow, planning, context, multi-agent, skill-automation, voice-input, remote-work, productivity, claude-code, codex]
-sources: [raw/articles/agentic-engineering-tips-2026.md]
-methods: [ce-plan, ce-brainstorm, ce-work, plan-md, voice-to-llm, tmux-multi-agent, last30days, raw-transcript-input, human-signal, printing-press, skill-scaffolding]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/llm
+- evidence/webpage
+- method/pinn
+keywords:
+- agentic-engineering
+- ai-coding
+- claude-code
+- codex
+- context
+- multi-agent
+- planning
+- productivity
+- remote-work
+- skill-automation
+- voice-input
+- workflow
+sources:
+- raw/articles/agentic-engineering-tips-2026.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: medium
+methods:
+- ce-plan
+- ce-brainstorm
+- ce-work
+- plan-md
+- voice-to-llm
+- tmux-multi-agent
+- last30days
+- raw-transcript-input
+- human-signal
+- printing-press
+- skill-scaffolding
 ---
 
 # Agentic Engineering 22 条技巧 — Matt Van Horn (2026.06)
 
-> **来源：** [X/@mvanhorn](https://x.com/mvanhorn/status/2061877533885473181) | 整理：Datawhale  
+> **来源：** [X/@mvanhorn](https://x.com/mvanhorn/status/2061877533885473181) | 整理：Datawhale
 > **作者背景：** last30days (2.7 万星)、PrintingPress (4k+ 星)、Python/Go/GStack/Paperclip 顶级贡献者
 
 ---
@@ -117,3 +150,12 @@ confidence: medium
 - [[wang2023-pinn-spurious-analysis]] — 交叉引用提升 wiki 价值的案例
 - Hermes: plan skill — plan→build loop 的 Hermes 实现
 - Hermes: skill 系统 — "做两次写成 skill" 的落地方式
+
+## Evidence By Source
+
+### `raw/articles/agentic-engineering-tips-2026.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/articles/agentic-engineering-tips-2026.md]

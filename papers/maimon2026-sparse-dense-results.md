@@ -1,10 +1,25 @@
 ---
-title: "Maimon et al. (2026) — 实验结果证据详解"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--maimon2026-sparse-dense-results
+title: Maimon et al. (2026) — 实验结果证据详解
 type: paper-analysis
-tags: [ca1, ca3, sparse-coding, dense-coding, place-cells, retrospective-coding, population-coding, neural-coding]
-sources: [raw/papers/10_1038_s41586-026-10537-0.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/neuroscience
+- evidence/paper
+keywords:
+- ca1
+- ca3
+- dense-coding
+- neural-coding
+- place-cells
+- population-coding
+- retrospective-coding
+- sparse-coding
+sources:
+- sources/papers/maimon2026-sparse-dense.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -209,3 +224,13 @@ confidence: high
 - [[maimon2026-sparse-dense-critical]] → 贡献 / 失败知识 / 研究机会
 - [[sparse-dense-coding]] — 稀疏-密集编码概念实体
 - [[retrospective-coding]] — 回顾性编码
+
+## Evidence By Source
+
+### `sources/papers/maimon2026-sparse-dense.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1038_s41586-026-10537-0.pdf`
+
+^[sources/papers/maimon2026-sparse-dense.md]

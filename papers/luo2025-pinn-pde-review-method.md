@@ -1,20 +1,47 @@
 ---
-title: "Luo et al. (2025) PINN-PDE 综述方法：多轴分类框架"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--luo2025-pinn-pde-review-method
+title: Luo et al. (2025) PINN-PDE 综述方法：多轴分类框架
 type: paper-analysis
-tags: [physics-informed, pinn, review, neural-network, collocation-strategy, adaptive-weighting, soft-constraint, neural-tangent-kernel, deepxde]
-sources: [raw/papers/10_1007_s10462-025-11322-7.pdf]
-methods: [narrative-review, taxonomy, architecture-comparison, adaptive-sampling, loss-design, feature-embedding]
-results: [pinn-taxonomy, application-map, software-comparison]
-failure_modes: [no-systematic-search-protocol, overlapping-taxonomy, no-quality-appraisal]
-datasets: []
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-architecture-search
+- method/pinn
+- method/transformer
+keywords:
+- adaptive-weighting
+- collocation-strategy
+- deepxde
+- neural-network
+- neural-tangent-kernel
+- physics-informed
+- pinn
+- review
+- soft-constraint
+sources:
+- sources/papers/luo2025-pinn-pde-review.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- narrative-review
+- taxonomy
+- architecture-comparison
+- adaptive-sampling
+- loss-design
+- feature-embedding
+results:
+- pinn-taxonomy
+- application-map
+- software-comparison
+failure_modes:
+- no-systematic-search-protocol
+- overlapping-taxonomy
+- no-quality-appraisal
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # 方法展开：综述分类框架，而非单一算法
@@ -113,3 +140,13 @@ $\mathcal L_f$、$\mathcal L_b$、$\mathcal L_i$ 分别约束域内 PDE 残差�
 - [[luo2025-pinn-pde-review-analysis|← 概述]]
 - [[luo2025-pinn-pde-review-results|结果证据 →]]
 - [[luo2025-pinn-pde-review-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/luo2025-pinn-pde-review.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s10462-025-11322-7.pdf`
+
+^[sources/papers/luo2025-pinn-pde-review.md]

@@ -1,10 +1,29 @@
 ---
-title: "Bayesian Physics Informed Neural Network (BPINN)"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--bayesian-pinn
+title: Bayesian Physics Informed Neural Network (BPINN)
 type: entity
-tags: [physics-informed, pinn, bayesian-inference, uncertainty-quantification, hamiltonian-monte-carlo, neural-network, ai4s]
-sources: [raw/papers/10_1016_j_cma_2022_115346_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+keywords:
+- ai4s
+- bayesian-inference
+- domain/ai4s
+- entity/model
+- hamiltonian-monte-carlo
+- method/pinn
+- neural-network
+- physics-informed
+- pinn
+- uncertainty-quantification
+sources:
+- raw/papers/10_1016_j_cma_2022_115346_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Bayesian Physics Informed Neural Network (BPINN)
@@ -81,3 +100,12 @@ $$P(Θ|\text{data}, \text{physics}) ∝ P(\text{data}|Θ) · P(\text{physics}|Θ
 - [[linka2022-bayesian-pinn-critical]] — 批判分析
 - [[wang2023-pinn-spurious-analysis]] — PINN 伪解问题（互补失败模式）
 - [[zhang2020-phylstm-analysis]] — PhyLSTM（同类物理约束方法）
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2022_115346_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2022_115346_extracted.txt]

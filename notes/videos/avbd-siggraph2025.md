@@ -1,14 +1,45 @@
 ---
-title: "AVBD 物理仿真算法 (SIGGRAPH 2025) — B站视频笔记"
-created: 2026-06-10
-updated: 2026-06-10
+id: notes--videos--avbd-siggraph2025
+title: AVBD 物理仿真算法 (SIGGRAPH 2025) — B站视频笔记
 type: video
-tags: [physics-simulation, real-time, game-engine, rigid-body, soft-body, cloth, fracture, pbd, vertex-block-descent, siggraph]
-sources: [raw/articles/avbd-siggraph2025-bilibili.md]
-methods: [avbd, vertex-block-descent, augmented-block-descent, position-based-dynamics]
-results: [few-iteration-convergence, large-mass-ratio-stability, parameter-robustness]
-datasets: [lego-wall, prism-array, cloth-particle, pendulum-test, brick-wall-fracture]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/transcript
+- method/pinn
+keywords:
+- cloth
+- fracture
+- game-engine
+- pbd
+- physics-simulation
+- real-time
+- rigid-body
+- siggraph
+- soft-body
+- vertex-block-descent
+sources:
+- raw/articles/avbd-siggraph2025-bilibili.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: medium
+methods:
+- avbd
+- vertex-block-descent
+- augmented-block-descent
+- position-based-dynamics
+results:
+- few-iteration-convergence
+- large-mass-ratio-stability
+- parameter-robustness
+datasets:
+- lego-wall
+- prism-array
+- cloth-particle
+- pendulum-test
+- brick-wall-fracture
 ---
 
 # AVBD — Augmented Vertex Block Descent (SIGGRAPH 2025)
@@ -52,3 +83,12 @@ AVBD（增强顶点块下降法）— 一种新型物理模拟求解器，在**�
 - [[zhang2020-phylstm-analysis]] — 同样使用 physics-informed 方法加速仿真（PhyLSTM 推理 >10³x FEM）
 - [[wang2023-pinn-spurious-analysis]] — 同样是物理计算效率优化
 - 与 PhyLSTM 的对比：AVBD 是**算法层面**的加速（少迭代），PhyLSTM 是**学习层面**的替代（神经网络替 FEM）
+
+## Evidence By Source
+
+### `raw/articles/avbd-siggraph2025-bilibili.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/articles/avbd-siggraph2025-bilibili.md]

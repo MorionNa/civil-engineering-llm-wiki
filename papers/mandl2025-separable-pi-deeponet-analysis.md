@@ -1,15 +1,40 @@
 ---
-title: "Mandl et al. (2025) — Separable Physics-Informed DeepONet"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--mandl2025-separable-pi-deeponet-analysis
+title: Mandl et al. (2025) — Separable Physics-Informed DeepONet
 type: paper-analysis
-tags: [physics-informed, neural-operator, deeponet, scientific-machine-learning, pde, curse-of-dimensionality]
-sources: [raw/papers/mandl2025-separable-pi-deeponet-source.md]
-methods: [separable-operator-learning, low-rank-representation, pi-deeponet]
-results: [high-dimensional-pde, reduced-collocation-cost]
-failure_modes: [rank-selection-dependence, separability-assumption]
-reproducibility: high
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/neural-operator
+- method/pinn
+keywords:
+- curse-of-dimensionality
+- deeponet
+- neural-operator
+- pde
+- physics-informed
+- scientific-machine-learning
+sources:
+- sources/papers/mandl2025-separable-pi-deeponet.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
+methods:
+- separable-operator-learning
+- low-rank-representation
+- pi-deeponet
+results:
+- high-dimensional-pde
+- reduced-collocation-cost
+failure_modes:
+- rank-selection-dependence
+- separability-assumption
+reproducibility: high
 ---
 
 # Separable Physics-Informed DeepONet
@@ -71,3 +96,13 @@ Combine separable operators with graph neural networks, Mamba/SSM temporal model
 ## 12. Reproducibility
 
 Official code is available.
+
+## Evidence By Source
+
+### `sources/papers/mandl2025-separable-pi-deeponet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/mandl2025-separable-pi-deeponet-source.md`
+
+^[sources/papers/mandl2025-separable-pi-deeponet.md]

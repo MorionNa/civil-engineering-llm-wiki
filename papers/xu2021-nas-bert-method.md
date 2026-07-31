@@ -1,10 +1,25 @@
 ---
-title: "NAS-BERT 方法机制：Block-Wise Supernet 训练 + Progressive Shrinking + Model Selection"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--xu2021-nas-bert-method
+title: NAS-BERT 方法机制：Block-Wise Supernet 训练 + Progressive Shrinking + Model Selection
 type: paper-analysis
-tags: [neural-architecture-search, bert-compression, block-wise-training, progressive-shrinking, supernet, knowledge-distillation, weight-sharing-nas]
-sources: [raw/papers/xu2021_nas_bert.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- bert-compression
+- block-wise-training
+- knowledge-distillation
+- neural-architecture-search
+- progressive-shrinking
+- supernet
+- weight-sharing-nas
+sources:
+- sources/papers/xu2021-nas-bert.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -138,3 +153,13 @@ confidence: high
 - [[xu2021-nas-bert-results]] — 实验数据
 - [[xu2021-nas-bert-critical]] — 贡献·局限·可迁移·机会
 - [[chen2021-tenas-method]] — TE-NAS 的 training-free NAS 方法论对比
+
+## Evidence By Source
+
+### `sources/papers/xu2021-nas-bert.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/xu2021_nas_bert.md`
+
+^[sources/papers/xu2021-nas-bert.md]

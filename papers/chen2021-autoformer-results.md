@@ -1,10 +1,26 @@
 ---
-title: "AutoFormer 实验结果：ImageNet / 迁移学习 / 蒸馏"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--chen2021-autoformer-results
+title: AutoFormer 实验结果：ImageNet / 迁移学习 / 蒸馏
 type: paper-analysis
-tags: [neural-architecture-search, one-shot-nas, weight-entanglement, autoformer, imagenet, cifar-10, cifar-100, transfer-learning, knowledge-distillation]
-sources: [raw/papers/chen2021_autoformer.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- autoformer
+- cifar-10
+- cifar-100
+- imagenet
+- knowledge-distillation
+- neural-architecture-search
+- one-shot-nas
+- transfer-learning
+- weight-entanglement
+sources:
+- sources/papers/chen2021-autoformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -130,3 +146,13 @@ ImageNet 预训练 → 下游数据集 finetune（DeiT training recipe）：
 - [[chen2021-autoformer-analysis]] — 全维度总览
 - [[chen2021-autoformer-method]] — 方法展开
 - [[chen2021-autoformer-critical]] — 贡献·局限·可迁移·机会
+
+## Evidence By Source
+
+### `sources/papers/chen2021-autoformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/chen2021_autoformer.md`
+
+^[sources/papers/chen2021-autoformer.md]

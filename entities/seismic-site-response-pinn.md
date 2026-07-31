@@ -1,18 +1,61 @@
 ---
-title: "Seismic Site Response PINN — 地震场地反应物理信息神经求解器"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--seismic-site-response-pinn
+title: Seismic Site Response PINN — 地震场地反应物理信息神经求解器
 type: entity
-tags: [neural-network, physics-informed, deep-learning, soft-constraint, structural-dynamics, seismic-response, equation-of-motion, ground-motion, physics-constraint-weight-tuning, neural-tangent-kernel, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1016_j_compgeo_2025_107137.xml, raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt]
-methods: [lumped-mass-formulation, fourier-feature-embedding, nondimensionalization, hyperparameter-search, automatic-differentiation]
-results: [linear-site-response, rk45-agreement, newmark-beta-agreement, multi-layer-response]
-failure_modes: [finite-collocation-nonuniqueness, per-scenario-retraining, no-speed-benchmark, linear-soil-only, sigma-sensitivity]
-datasets: [NGA-West2-ground-motion-records, synthetic-layered-soil-profiles]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- equation-of-motion
+- ground-motion
+- method/pinn
+- neural-network
+- neural-tangent-kernel
+- physics-constraint-weight-tuning
+- physics-informed
+- physics-simulation
+- pinn
+- seismic-response
+- soft-constraint
+- structural-dynamics
+sources:
+- raw/papers/10_1016_j_compgeo_2025_107137.xml
+- raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- lumped-mass-formulation
+- fourier-feature-embedding
+- nondimensionalization
+- hyperparameter-search
+- automatic-differentiation
+results:
+- linear-site-response
+- rk45-agreement
+- newmark-beta-agreement
+- multi-layer-response
+failure_modes:
+- finite-collocation-nonuniqueness
+- per-scenario-retraining
+- no-speed-benchmark
+- linear-soil-only
+- sigma-sensitivity
+datasets:
+- NGA-West2-ground-motion-records
+- synthetic-layered-soil-profiles
+reproducibility: low
 ---
 
 # Seismic Site Response PINN
@@ -77,3 +120,12 @@ timestamps ─► Fourier(m,σ) ─► MLP + BatchNorm + tanh ─► u(t)
 - [[liu2025-site-response-pinn-results]] — 定量精度与覆盖范围
 - [[liu2025-site-response-pinn-critical]] — 不可外推边界和研究路线
 - [[pinn]] — PINN 基础方法
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_compgeo_2025_107137.xml`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_compgeo_2025_107137.xml]

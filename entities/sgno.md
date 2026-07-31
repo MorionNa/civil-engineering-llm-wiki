@@ -1,10 +1,25 @@
 ---
-title: "Spectral Generator Neural Operator (SGNO)"
-created: 2026-07-23
-updated: 2026-07-23
+id: entities--sgno
+title: Spectral Generator Neural Operator (SGNO)
 type: entity
-tags: [neural-operator, fourier-operator, time-marching, ai4s]
-sources: [raw/papers/2602.18801v2.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/neural-operator
+keywords:
+- ai4s
+- domain/ai4s
+- entity/model
+- fourier-operator
+- method/neural-operator
+- neural-operator
+- time-marching
+sources:
+- raw/papers/2602.18801v2.pdf
+created: '2026-07-23'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -26,3 +41,12 @@ Spectral Generator Neural Operator 是一种面向长时 PDE 自回归预测的�
 - [[node-onet]]
 - [[pgt]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `raw/papers/2602.18801v2.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/2602.18801v2.pdf]

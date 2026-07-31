@@ -1,12 +1,34 @@
 ---
-title: "Chen et al. (2025) — AT-PINN-HC 实验结果展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--chen2025-at-pinn-hc-results
+title: Chen et al. (2025) — AT-PINN-HC 实验结果展开
 type: paper-analysis
-tags: [physics-informed, pinn, hard-constraints, structural-dynamics, vibration-analysis, euler-bernoulli-beam, supersonic-panel]
-sources: [raw/papers/10_1016_j_cma_2024_117691_extracted.txt]
-results: [error-reduction-1to4-orders, iteration-reduction-78percent, euler-bernoulli-beam, supersonic-panel, glass-plate-wind-load]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- euler-bernoulli-beam
+- hard-constraints
+- physics-informed
+- pinn
+- structural-dynamics
+- supersonic-panel
+- vibration-analysis
+sources:
+- sources/papers/chen2025-at-pinn-hc.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
+results:
+- error-reduction-1to4-orders
+- iteration-reduction-78percent
+- euler-bernoulli-beam
+- supersonic-panel
+- glass-plate-wind-load
 ---
 
 # Chen et al. (2025) — AT-PINN-HC 实验结果展开
@@ -102,3 +124,13 @@ AT-PINN-HC 的时间推进策略将长时程 `[0, T]` 分解为 N 个子区间�
 - [[chen2025-at-pinn-hc-method]] — 方法展开
 - [[at-pinn-hc]] — AT-PINN-HC 实体页
 - [[wang2023-pinn-spurious-results]] — PINN 伪解实验（基准对比参考）
+
+## Evidence By Source
+
+### `sources/papers/chen2025-at-pinn-hc.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117691_extracted.txt`
+
+^[sources/papers/chen2025-at-pinn-hc.md]

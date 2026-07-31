@@ -1,21 +1,52 @@
 ---
-title: "Tao et al. (2026) FPIKAN：Fourier 特征增强的物理信息 KAN（摘要级概览）"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--tao2026-fpikan
+title: Tao et al. (2026) FPIKAN：Fourier 特征增强的物理信息 KAN（摘要级概览）
 type: paper-analysis
-evidence_scope: abstract-only
-tags: [physics-informed, pinn, neural-network, deep-learning, structural-dynamics, seismic-response, equation-of-motion, vibration-analysis, ground-motion, physics-constrained-loss, soft-constraint, limitation]
-sources: [raw/papers/extracted/10_1007_s10518-026-02408-w_abstract_extracted.txt]
-methods: [fourier-input-encoding, fourier-series-kan-activations, physics-constrained-loss]
-results: [multi-frequency-response, high-frequency-response, noise-robustness, missing-sample-robustness, low-frequency-sampling]
-failure_modes: [abstract-only-evidence, unverified-architecture, unverified-benchmarks, unverified-physical-nonlinearity, missing-code]
-datasets: []
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- deep-learning
+- equation-of-motion
+- ground-motion
+- limitation
+- neural-network
+- physics-constrained-loss
+- physics-informed
+- pinn
+- seismic-response
+- soft-constraint
+- structural-dynamics
+- vibration-analysis
+sources:
+- sources/papers/tao2026-fpikan.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: medium
+evidence_scope: abstract-only
+methods:
+- fourier-input-encoding
+- fourier-series-kan-activations
+- physics-constrained-loss
+results:
+- multi-frequency-response
+- high-frequency-response
+- noise-robustness
+- missing-sample-robustness
+- low-frequency-sampling
+failure_modes:
+- abstract-only-evidence
+- unverified-architecture
+- unverified-benchmarks
+- unverified-physical-nonlinearity
+- missing-code
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # Physics-informed Kolmogorov–Arnold network with Fourier features for structural response computation under earthquake excitation
@@ -100,3 +131,13 @@ contradictions: []
 - [[pinn]] — 标准物理信息神经网络
 - [[kin]] — KAN-PINN 路线
 - [[du2026-hcff-pinn-analysis]] — 可作 Fourier 结构动力方法对照的全文论文
+
+## Evidence By Source
+
+### `sources/papers/tao2026-fpikan.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/extracted/10_1007_s10518-026-02408-w_abstract_extracted.txt`
+
+^[sources/papers/tao2026-fpikan.md]

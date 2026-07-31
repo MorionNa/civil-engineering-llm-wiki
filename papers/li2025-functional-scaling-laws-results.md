@@ -1,10 +1,20 @@
 ---
-title: "Functional Scaling Laws 结果：WSD 优势与 LLM loss 轨迹预测"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--li2025-functional-scaling-laws-results
+title: Functional Scaling Laws 结果：WSD 优势与 LLM loss 轨迹预测
 type: paper-analysis
-tags: [scaling-law, large-language-model, learning-rate-schedule]
-sources: [raw/papers/li2025-functional-scaling-laws.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+keywords:
+- large-language-model
+- learning-rate-schedule
+- scaling-law
+sources:
+- sources/papers/li2025-functional-scaling-laws.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -39,3 +49,13 @@ FSL 能够准确拟合不同 learning rate schedule 下的 SGD risk trajectory�
 - [[li2025-functional-scaling-laws-analysis]]
 - [[li2025-functional-scaling-laws-method]]
 - [[li2025-functional-scaling-laws-critical]]
+
+## Evidence By Source
+
+### `sources/papers/li2025-functional-scaling-laws.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/li2025-functional-scaling-laws.pdf`
+
+^[sources/papers/li2025-functional-scaling-laws.md]

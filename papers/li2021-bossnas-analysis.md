@@ -1,17 +1,45 @@
 ---
-title: "Li et al. (2021) — BossNAS: Block-wisely Self-supervised NAS for Hybrid CNN-Transformers 论文分析"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--li2021-bossnas-analysis
+title: 'Li et al. (2021) — BossNAS: Block-wisely Self-supervised NAS for Hybrid CNN-Transformers 论文分析'
 type: paper-analysis
-tags: [neural-architecture-search, transformer, hybrid-cnn-transformer, block-wise-training, self-supervised]
-sources: [raw/papers/bossnas2021_iclr.pdf]
-methods: [ensemble-bootstrapping, block-wise-search, self-supervised-nas, hybrid-search-space]
-results: [imagenet, cifar, transfer-learning]
-failure_modes: [teacher-bias, block-wise-separation-granularity, contrastive-loss-doesnt-rank-architectures, search-space-coupling]
-datasets: [imagenet, cifar-10, cifar-100]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- block-wise-training
+- hybrid-cnn-transformer
+- neural-architecture-search
+- self-supervised
+- transformer
+sources:
+- sources/papers/li2021-bossnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
+confidence: medium
+methods:
+- ensemble-bootstrapping
+- block-wise-search
+- self-supervised-nas
+- hybrid-search-space
+results:
+- imagenet
+- cifar
+- transfer-learning
+failure_modes:
+- teacher-bias
+- block-wise-separation-granularity
+- contrastive-loss-doesnt-rank-architectures
+- search-space-coupling
+datasets:
+- imagenet
+- cifar-10
+- cifar-100
 reproducibility: high
 code_url:
-  - https://github.com/changlinli/BossNAS
+- https://github.com/changlinli/BossNAS
 ---
 
 # Li et al. (2021) — BossNAS: 块级自监督混合 CNN-Transformer 架构搜索
@@ -98,3 +126,13 @@ BossNAS 在 3 个不同粒度的搜索空间（HyTra 混合空间、MBConv 纯 C
 ---
 
 *见 [[bossnas]] 实体页 | 方法细节 [[li2021-bossnas-method]] | 实验 [[li2021-bossnas-results]] | 批评 [[li2021-bossnas-critical]]*
+
+## Evidence By Source
+
+### `sources/papers/li2021-bossnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/bossnas2021_iclr.pdf`
+
+^[sources/papers/li2021-bossnas.md]

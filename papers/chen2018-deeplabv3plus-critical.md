@@ -1,12 +1,32 @@
 ---
-title: "DeepLabv3+ 贡献·Negative·可迁移·研究机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--chen2018-deeplabv3plus-critical
+title: DeepLabv3+ 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [semantic-segmentation, encoder-decoder, atrous-convolution, depthwise-separable-convolution, aspp]
-sources: [raw/papers/deepLabv3plus.pdf]
-failure_modes: [output-stride-tradeoff, decoder-design-empirical, image-level-feature-dataset-specific, sofa-vs-chair-confusion, occlusion-failure, rare-view-failure, jft-unavailable]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- aspp
+- atrous-convolution
+- depthwise-separable-convolution
+- encoder-decoder
+- semantic-segmentation
+sources:
+- sources/papers/chen2018-deeplabv3plus.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- output-stride-tradeoff
+- decoder-design-empirical
+- image-level-feature-dataset-specific
+- sofa-vs-chair-confusion
+- occlusion-failure
+- rare-view-failure
+- jft-unavailable
 ---
 
 # DeepLabv3+ 贡献·Negative·可迁移·研究机会
@@ -94,3 +114,13 @@ TensorFlow 开源实现 + 完整训练细节 + 所有设计选择的 ablation �
 - [[chen2018-deeplabv3plus-analysis]] — 总览
 - [[zhao2017-pspnet-critical]] — PSPNet NK/TK 对比
 - [[ronneberger2015-unet-critical]] — U-Net NK/TK 对比
+
+## Evidence By Source
+
+### `sources/papers/chen2018-deeplabv3plus.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/deepLabv3plus.pdf`
+
+^[sources/papers/chen2018-deeplabv3plus.md]

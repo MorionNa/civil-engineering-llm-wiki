@@ -1,12 +1,31 @@
 ---
-title: "So et al. (2021) — Primer 贡献·局限·可迁移·研究机会"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--so2021-primer-critical
+title: So et al. (2021) — Primer 贡献·局限·可迁移·研究机会
 type: paper-analysis
-tags: [neural-architecture-search, transformer, efficient-inference, evolutionary-search, negative-knowledge]
-sources: [raw/papers/primer2021_efficient_transformers.pdf]
-failure_modes: [redundant-search-cost, encoder-decoder-gap, extraneous-mutations, open-ended-space-degeneracy]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computational-mechanics
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- efficient-inference
+- evolutionary-search
+- limitation
+- neural-architecture-search
+- transformer
+sources:
+- sources/papers/so2021-primer.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- redundant-search-cost
+- encoder-decoder-gap
+- extraneous-mutations
+- open-ended-space-degeneracy
 ---
 
 # Primer 贡献·局限·可迁移·研究机会
@@ -137,3 +156,13 @@ confidence: high
 - 推荐从 **Primer-EZ** 开始——只需改两处代码
 - T5 代码库已有 Primer 对比实验脚本
 - GPU 复现建议用 110M/525K steps 设置（图 9），成本可控
+
+## Evidence By Source
+
+### `sources/papers/so2021-primer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/primer2021_efficient_transformers.pdf`
+
+^[sources/papers/so2021-primer.md]

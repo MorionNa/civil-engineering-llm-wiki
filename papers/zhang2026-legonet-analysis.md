@@ -1,25 +1,65 @@
 ---
-title: "Zhang et al. (2026) — LegONet：可插拔、结构保持的组合式 PDE 神经算子积木"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--zhang2026-legonet-analysis
+title: Zhang et al. (2026) — LegONet：可插拔、结构保持的组合式 PDE 神经算子积木
 type: paper-analysis
-tags: [neural-operator, operator-learning, structure-preserving, operator-splitting, compositional-modeling, trajectory-free-training, spectral-method, boundary-condition, hamiltonian, dissipative-dynamics, long-horizon-rollout, scientific-machine-learning, ai4s, pde]
-sources: [raw/papers/2603.07882v1.pdf]
-methods: [boundary-adapted-baseplate, coefficient-space-operator-block, generator-induced-vector-field, instantaneous-operator-matching, strang-splitting]
-results: [cross-pde-recombination, boundary-reconfiguration, long-horizon-stability, structure-preservation, ood-initial-condition-robustness]
-failure_modes: [baseplate-specificity, finite-block-library, splitting-error, trusted-operator-label-dependence, same-trial-space-reference]
-datasets: [ten-pde-benchmark]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- boundary-condition
+- compositional-modeling
+- dissipative-dynamics
+- hamiltonian
+- long-horizon-rollout
+- neural-operator
+- operator-learning
+- operator-splitting
+- pde
+- scientific-machine-learning
+- spectral-method
+- structure-preserving
+- trajectory-free-training
+sources:
+- sources/papers/zhang2026-legonet.md
+created: '2026-07-28'
+updated: '2026-07-31'
+confidence: high
+methods:
+- boundary-adapted-baseplate
+- coefficient-space-operator-block
+- generator-induced-vector-field
+- instantaneous-operator-matching
+- strang-splitting
+results:
+- cross-pde-recombination
+- boundary-reconfiguration
+- long-horizon-stability
+- structure-preservation
+- ood-initial-condition-robustness
+failure_modes:
+- baseplate-specificity
+- finite-block-library
+- splitting-error
+- trusted-operator-label-dependence
+- same-trial-space-reference
+datasets:
+- ten-pde-benchmark
 reproducibility: high
 code_url:
-  - https://github.com/Yooki-YueqiWang/LegONet
-confidence: high
+- https://github.com/Yooki-YueqiWang/LegONet
 ---
 
 # LegONet: Plug-and-Play Structure-Preserving Neural Operator Blocks for Compositional PDE Learning
 
-> **作者：** Jiahao Zhang, Yueqi Wang, Guang Lin  
-> **单位：** Purdue University  
-> **状态：** arXiv:2603.07882v1，2026-03-09  
+> **作者：** Jiahao Zhang, Yueqi Wang, Guang Lin
+> **单位：** Purdue University
+> **状态：** arXiv:2603.07882v1，2026-03-09
 > **一句话定位：** LegONet 不再为每个 PDE 训练一个端到端求解器，而是把扩散、输运、Poisson 反演等机制训练成共享系数空间上的可插拔结构保持块，再用 Strang splitting 组合成新的 PDE 求解器。
 
 ## 1. 工程背景 (Engineering Background)
@@ -157,3 +197,13 @@ $$
 - [[li2026-sgno-analysis]]
 - [[zeraatkar2026-pgt-analysis]]
 - [[sojitra2026-fedonet-analysis]]
+
+## Evidence By Source
+
+### `sources/papers/zhang2026-legonet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2603.07882v1.pdf`
+
+^[sources/papers/zhang2026-legonet.md]

@@ -1,28 +1,70 @@
 ---
-title: "Jiang et al. (2024) — Mixtral of Experts: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--jiang2024-mixtral-of-experts-analysis
+title: 'Jiang et al. (2024) — Mixtral of Experts: 论文分析'
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, gating-network, top-k-routing, large-language-model, decoder-only-transformer, efficient-inference, swiglu]
-sources: [raw/papers/jiang2024_mixtral_of_experts.md]
-methods: [mixture-of-experts, sparse-moe, top-k-routing, gating-network, swiglu, supervised-fine-tuning, direct-preference-optimization]
-results: [llm-benchmark, code-generation-benchmark, math-benchmark, multilingual-data, commonsense-reasoning, long-context-modeling, bias-evaluation]
-failure_modes: [load-balancing, router-analysis]
-datasets: [the-pile, mmlu, hellaswag, humaneval, gsm8k, mbpp, passkey-retrieval, mt-bench, bbq-bias, bold-bias]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- decoder-only-transformer
+- efficient-inference
+- gating-network
+- large-language-model
+- mixture-of-experts
+- sparse-moe
+- swiglu
+- top-k-routing
+sources:
+- sources/papers/jiang2024-mixtral-of-experts.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: high
+methods:
+- mixture-of-experts
+- sparse-moe
+- top-k-routing
+- gating-network
+- swiglu
+- supervised-fine-tuning
+- direct-preference-optimization
+results:
+- llm-benchmark
+- code-generation-benchmark
+- math-benchmark
+- multilingual-data
+- commonsense-reasoning
+- long-context-modeling
+- bias-evaluation
+failure_modes:
+- load-balancing
+- router-analysis
+datasets:
+- the-pile
+- mmlu
+- hellaswag
+- humaneval
+- gsm8k
+- mbpp
+- passkey-retrieval
+- mt-bench
+- bbq-bias
+- bold-bias
 reproducibility: high
 code_url:
-  - https://github.com/mistralai/mistral-src
-  - https://github.com/vllm-project/vllm
-  - https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard
+- https://github.com/mistralai/mistral-src
+- https://github.com/vllm-project/vllm
+- https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard
 dataset_url:
-  - https://mistral.ai/news/mixtral-of-experts/
-confidence: high
+- https://mistral.ai/news/mixtral-of-experts/
 ---
 
 # Mixtral of Experts
 
-> Albert Q. Jiang, Alexandre Sablayrolles, Antoine Roux, et al. (Mistral AI).  
-> arXiv:2401.04088, Jan 2024 | License: Apache 2.0  
+> Albert Q. Jiang, Alexandre Sablayrolles, Antoine Roux, et al. (Mistral AI).
+> arXiv:2401.04088, Jan 2024 | License: Apache 2.0
 > 代码: https://github.com/mistralai/mistral-src
 
 ## 1. 工程背景 (Engineering Background)
@@ -125,3 +167,13 @@ Mixtral 基于 Mistral 7B 的 transformer decoder-only 架构，将每个 transf
 - [[jiang2024-mixtral-of-experts-method]] — SMoE 架构展开（router + expert + Megablocks）
 - [[jiang2024-mixtral-of-experts-results]] — 全套 benchmark + 路由分析
 - [[jiang2024-mixtral-of-experts-critical]] — 贡献 + Negative + 可迁移 + 研究机会
+
+## Evidence By Source
+
+### `sources/papers/jiang2024-mixtral-of-experts.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/jiang2024_mixtral_of_experts.md`
+
+^[sources/papers/jiang2024-mixtral-of-experts.md]

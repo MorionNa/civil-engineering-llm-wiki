@@ -1,13 +1,37 @@
 ---
-title: "Goswami et al. (2022) — 结果证据展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--goswami2022-variational-deeponet-results
+title: Goswami et al. (2022) — 结果证据展开
 type: paper-analysis
-tags: [deeponet, phase-field-fracture, crack-path-prediction, surrogate-model, brittle-fracture, interpolation-extrapolation, physics-informed]
-sources: [raw/papers/10_1016_j_cma_2022_114587_extracted.txt]
-results: [single-edge-notch-tension, l-shape-panel, interior-crack, edge-crack, relative-l2-error, interpolation, extrapolation]
-datasets: [phase-field-fracture-benchmarks]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- brittle-fracture
+- crack-path-prediction
+- deeponet
+- interpolation-extrapolation
+- phase-field-fracture
+- physics-informed
+- surrogate-model
+sources:
+- sources/papers/goswami2022-variational-deeponet.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+results:
+- single-edge-notch-tension
+- l-shape-panel
+- interior-crack
+- edge-crack
+- relative-l2-error
+- interpolation
+- extrapolation
+datasets:
+- phase-field-fracture-benchmarks
 ---
 
 # Goswami et al. (2022) — 结果证据展开
@@ -94,3 +118,13 @@ V-DeepONet 预测的损伤场显示：
 - [[goswami2022-variational-deeponet-method]] — 方法展开
 - [[deeponet]] — DeepONet 神经算子
 - [[wang2023-pinn-spurious-analysis]] — PINN 物理约束对比
+
+## Evidence By Source
+
+### `sources/papers/goswami2022-variational-deeponet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_114587_extracted.txt`
+
+^[sources/papers/goswami2022-variational-deeponet.md]
