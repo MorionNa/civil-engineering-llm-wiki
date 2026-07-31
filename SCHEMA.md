@@ -103,14 +103,14 @@ Rules:
 - Use `sources` for page-level provenance.
 - Use persistent paragraph markers such as `^[raw/papers/source-file.md]` for source-derived evidence.
 - State page, section, figure or table positions in prose when useful.
-- Never commit temporary ChatGPT tokens such as `filecite...`, `turnNfileM`, `turnNsearchM` or web reference IDs.
+- Never commit temporary assistant citation-control tokens, conversation-local source IDs, or web-result reference IDs.
 - Do not claim independent reproduction unless experiments were actually rerun.
 - Label cross-domain transfer as inference, migration or research proposal rather than a paper conclusion.
 - Preserve conflicting evidence in a `Conflict` or `Counterevidence` section; do not silently overwrite it.
 
 ## Wikilinks
 
-- Use bare `[[wikilinks]]`; never wrap them in backticks.
+- Use bare double-bracket wikilinks; never wrap them in backticks.
 - Maintained knowledge pages have at least two outbound links unless they are terminal source records.
 - Wikilinks must resolve to an existing Markdown page or recognized section-index path.
 - Prefer existing entities over near-duplicate entity names.
