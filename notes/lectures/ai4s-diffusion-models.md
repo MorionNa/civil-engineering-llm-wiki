@@ -1,12 +1,51 @@
 ---
-title: "扩散生成模型：从物理原理到蛋白质设计（AI4S 第二讲）"
-created: 2026-06-11
-updated: 2026-06-11
+id: notes--lectures--ai4s-diffusion-models
+title: 扩散生成模型：从物理原理到蛋白质设计（AI4S 第二讲）
 type: lecture
-tags: [diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion, score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo, controlnet, protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance, ai4s, scientific-discovery]
-sources: [raw/articles/diffusion-models-ai4s-lecture2-bilibili.md]
-methods: [diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion, score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo, controlnet]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/transcript
+- method/pinn
+- method/transformer
+keywords:
+- ai4s
+- alphafold3
+- classifier-free-guidance
+- controlnet
+- ddim
+- ddpm
+- diffusion-models
+- dpo
+- langevin-dynamics
+- latent-diffusion
+- lora
+- protein-design
+- protpainter
+- rfdiffusion
+- scientific-discovery
+- score-based-models
+- se3-equivariance
+- stable-diffusion
+sources:
+- raw/articles/diffusion-models-ai4s-lecture2-bilibili.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+methods:
+- diffusion-models
+- ddpm
+- ddim
+- stable-diffusion
+- latent-diffusion
+- score-based-models
+- langevin-dynamics
+- classifier-free-guidance
+- lora
+- dpo
+- controlnet
 ---
 
 # 扩散生成模型：从物理原理到蛋白质设计
@@ -56,7 +95,7 @@ $$x_t = \sqrt{\bar{\alpha}_t} \cdot x_0 + \sqrt{1 - \bar{\alpha}_t} \cdot \varep
 核心优点：无需逐步迭代，可直接采样任意时刻 t，训练效率提升数个数量级。
 
 **训练目标（猜噪声游戏）：**
-$$\mathcal{L} = \|\varepsilon - \varepsilon_\theta(x_t, t)\|^2$$
+$$\mathcal{L} = |\varepsilon - \varepsilon_\theta(x_t, t)|^2$$
 
 给网络一张加了噪的图，问"我加了什么噪？"猜得越准（$\varepsilon_\theta \approx \varepsilon$），去噪能力越强。训练时随机选择 t，使网络学会在所有噪声水平上都准确预测。
 
@@ -148,3 +187,12 @@ $$\mathcal{L} = \|\varepsilon - \varepsilon_\theta(x_t, t)\|^2$$
 - [[notes/lectures/ai4s-pinn-deepxde]] — PINN 入门到实战（AI4S 第一讲）
 - [[zhang2020-phylstm-analysis]] — PhyLSTM 物理约束学习
 - [[wang2023-pinn-spurious-analysis]] — PINN 训练失败模式
+
+## Evidence By Source
+
+### `raw/articles/diffusion-models-ai4s-lecture2-bilibili.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/articles/diffusion-models-ai4s-lecture2-bilibili.md]

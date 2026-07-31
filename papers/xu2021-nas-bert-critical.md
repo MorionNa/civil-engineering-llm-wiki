@@ -1,10 +1,26 @@
 ---
-title: "NAS-BERT 批判分析：贡献 · 知识点 · Negative · 可迁移 · 研究机会"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--xu2021-nas-bert-critical
+title: NAS-BERT 批判分析：贡献 · 知识点 · Negative · 可迁移 · 研究机会
 type: paper-analysis
-tags: [bert-compression, neural-architecture-search, knowledge-distillation, supernet, block-wise-training, progressive-shrinking]
-sources: [raw/papers/xu2021_nas_bert.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- bert-compression
+- block-wise-training
+- knowledge-distillation
+- neural-architecture-search
+- progressive-shrinking
+- supernet
+sources:
+- sources/papers/xu2021-nas-bert.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -100,3 +116,13 @@ NAS-BERT 搜出的架构是"架构模板"，仍需从头 pre-train。能否利�
 - [[xu2021-nas-bert-results]] — 实验数据
 - [[chen2021-tenas-critical]] — TE-NAS training-free NAS 的局限与机会对比
 - [[jiang2024-mixtral-of-experts-critical]] — MoE 可视为 NAS-BERT 搜索空间的未来扩展操作
+
+## Evidence By Source
+
+### `sources/papers/xu2021-nas-bert.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/xu2021_nas_bert.md`
+
+^[sources/papers/xu2021-nas-bert.md]

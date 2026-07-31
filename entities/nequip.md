@@ -1,13 +1,34 @@
 ---
 id: entity-nequip
-title: "NequIP — E(3) 等变图神经网络原子势"
+title: NequIP — E(3) 等变图神经网络原子势
 type: entity
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance]
-sources: [raw/papers/batzner2022-nequip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/graph-neural-network
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- material-design
+- method/graph-neural-network
+- method/pinn
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- raw/papers/batzner2022-nequip-source.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 

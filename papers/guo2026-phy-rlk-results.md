@@ -1,20 +1,53 @@
 ---
-title: "Guo & Xu (2026) Phy-RLK 结果：双向 RC 框架响应与峰值误差"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--guo2026-phy-rlk-results
+title: Guo & Xu (2026) Phy-RLK 结果：双向 RC 框架响应与峰值误差
 type: paper-analysis
-tags: [physics-informed, neural-network, lstm, structural-dynamics, nonlinear-systems, seismic-response, ground-motion, synthetic-data, finite-element, comparison]
-sources: [raw/papers/10_1016_j_cma_2025_118422.xml]
-methods: [physical-residual-lstm, kan-decoder, opensees-nltha, srm-ground-motion]
-results: [global-response-metrics, peak-displacement-error, pga-robustness, cross-structure-validation, inference-speedup]
-failure_modes: [synthetic-label-dependence, timing-inconsistency, no-real-world-validation]
-datasets: [srm-bidirectional-ground-motions, opensees-six-story-rc-frame, opensees-five-story-rc-frame]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- comparison
+- finite-element
+- ground-motion
+- lstm
+- neural-network
+- nonlinear-systems
+- physics-informed
+- seismic-response
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/guo2026-phy-rlk.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physical-residual-lstm
+- kan-decoder
+- opensees-nltha
+- srm-ground-motion
+results:
+- global-response-metrics
+- peak-displacement-error
+- pga-robustness
+- cross-structure-validation
+- inference-speedup
+failure_modes:
+- synthetic-label-dependence
+- timing-inconsistency
+- no-real-world-validation
+datasets:
+- srm-bidirectional-ground-motions
+- opensees-six-story-rc-frame
+- opensees-five-story-rc-frame
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # 结果展开：两类 RC 框架的全时程与峰值响应
@@ -102,3 +135,13 @@ Phy-RLK 的 MSE 为 0.067/0.014/0.066，所有 PGA 水平的三类响应 $R^2>0.
 - [[guo2026-phy-rlk-method|← 方法]]
 - [[guo2026-phy-rlk-critical|批判分析 →]]
 - [[phy-rlk]] — 模型实体
+
+## Evidence By Source
+
+### `sources/papers/guo2026-phy-rlk.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2025_118422.xml`
+
+^[sources/papers/guo2026-phy-rlk.md]

@@ -1,10 +1,24 @@
 ---
-title: "Mixtral 8x7B 贡献·局限·可迁移·机会"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--jiang2024-mixtral-of-experts-critical
+title: Mixtral 8x7B 贡献·局限·可迁移·机会
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, large-language-model, efficient-inference, load-balancing, router-analysis]
-sources: [raw/papers/jiang2024_mixtral_of_experts.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- efficient-inference
+- large-language-model
+- load-balancing
+- mixture-of-experts
+- router-analysis
+- sparse-moe
+sources:
+- sources/papers/jiang2024-mixtral-of-experts.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -132,3 +146,13 @@ Mixtral 提到 EP 的负载均衡问题但未解决。可以研究：
 - [[jiang2024-mixtral-of-experts-analysis]] — 全维度概述
 - [[jiang2024-mixtral-of-experts-method]] — 方法机制
 - [[jiang2024-mixtral-of-experts-results]] — 实验结果
+
+## Evidence By Source
+
+### `sources/papers/jiang2024-mixtral-of-experts.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/jiang2024_mixtral_of_experts.md`
+
+^[sources/papers/jiang2024-mixtral-of-experts.md]

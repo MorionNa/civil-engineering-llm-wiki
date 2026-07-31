@@ -1,10 +1,22 @@
 ---
-title: "LegONet 方法机制：结构保持 operator blocks 与组合式 PDE 求解"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--zhang2026-legonet-method
+title: LegONet 方法机制：结构保持 operator blocks 与组合式 PDE 求解
 type: paper-analysis
-tags: [neural-operator, structure-preserving, operator-splitting, spectral-method]
-sources: [raw/papers/2603.07882v1.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+keywords:
+- neural-operator
+- operator-splitting
+- spectral-method
+- structure-preserving
+sources:
+- sources/papers/zhang2026-legonet.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -55,3 +67,13 @@ $$F_i^\theta(a)\approx F_i^{ref}(a)$$
 - [[zhang2026-legonet-analysis]]
 - [[zhang2026-legonet-results]]
 - [[legonet]]
+
+## Evidence By Source
+
+### `sources/papers/zhang2026-legonet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2603.07882v1.pdf`
+
+^[sources/papers/zhang2026-legonet.md]

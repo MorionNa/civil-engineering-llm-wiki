@@ -1,18 +1,50 @@
 ---
-title: "Li & Wang (2025) — Bäcklund-PINN 的贡献、局限与研究机会"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--li2025-localized-waves-pinn-critical
+title: Li & Wang (2025) — Bäcklund-PINN 的贡献、局限与研究机会
 type: paper-analysis
-tags: [neural-network, physics-informed, soft-constraint, nonlinear-systems, pinn, ai4s, limitation, future-work, cross-domain-generalization]
-sources: [raw/papers/10_1007_s11071-024-10359-7.pdf]
-methods: [backlund-transformation, multi-output-pinn, relation-constrained-learning]
-results: [unsupervised-v-reconstruction, flat-top-wave, stair-wave, gaussian-wave-evolution]
-failure_modes: [nonunique-inverse, spurious-solution-risk, no-v-reference-solution, missing-weight-update-rule, missing-code, multi-wave-cost-growth, waveform-terminology-ambiguity]
-datasets: [modified-kdv-one-soliton, modified-kdv-two-soliton, gaussian-initial-wave]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- cross-domain-generalization
+- future-work
+- limitation
+- neural-network
+- nonlinear-systems
+- physics-informed
+- pinn
+- soft-constraint
+sources:
+- sources/papers/li2025-localized-waves-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- backlund-transformation
+- multi-output-pinn
+- relation-constrained-learning
+results:
+- unsupervised-v-reconstruction
+- flat-top-wave
+- stair-wave
+- gaussian-wave-evolution
+failure_modes:
+- nonunique-inverse
+- spurious-solution-risk
+- no-v-reference-solution
+- missing-weight-update-rule
+- missing-code
+- multi-wave-cost-growth
+- waveform-terminology-ambiguity
+datasets:
+- modified-kdv-one-soliton
+- modified-kdv-two-soliton
+- gaussian-initial-wave
+reproducibility: low
 ---
 
 # Li & Wang (2025) — 批判分析
@@ -82,3 +114,13 @@ confidence: high
 - [[li2025-localized-waves-pinn-method]] — 损失与训练设置
 - [[wang2023-pinn-spurious-analysis]] — 伪解风险参照
 - [[pinn]] — PINN 方法总览
+
+## Evidence By Source
+
+### `sources/papers/li2025-localized-waves-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s11071-024-10359-7.pdf`
+
+^[sources/papers/li2025-localized-waves-pinn.md]

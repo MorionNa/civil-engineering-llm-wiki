@@ -1,9 +1,19 @@
 ---
-title: "Penwarden et al. (2024) — Kolmogorov n-width PIML 批判分析"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--penwarden2024-kolmogorov-n-width-piml-critical
+title: Penwarden et al. (2024) — Kolmogorov n-width PIML 批判分析
 type: paper-analysis
-sources: [raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/graph-neural-network
+- method/neural-operator
+- method/pinn
+sources:
+- sources/papers/penwarden2024-kolmogorov-n-width-piml.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -53,3 +63,18 @@ $$
 3. 用 FEM/OpenSees 作为参考误差估计器；
 4. 用最坏任务搜索指导训练数据增广；
 5. 分析大规模图结构拆分后的全局模态损失。
+
+## Evidence By Source
+
+### `sources/papers/penwarden2024-kolmogorov-n-width-piml.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md`
+
+^[sources/papers/penwarden2024-kolmogorov-n-width-piml.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

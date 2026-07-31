@@ -1,10 +1,26 @@
 ---
-title: "HAT (Hardware-Aware Transformer)"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--hat
+title: HAT (Hardware-Aware Transformer)
 type: entity
-tags: [hardware-aware-nas, transformer, evolutionary-search, latency-prediction]
-sources: [raw/papers/wang2020_hat.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- entity/model
+- evolutionary-search
+- hardware-aware-nas
+- latency-prediction
+- method/neural-architecture-search
+- method/transformer
+- transformer
+sources:
+- raw/papers/wang2020_hat.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # HAT (Hardware-Aware Transformer)
@@ -33,3 +49,12 @@ HAT 是首个面向 NLP Transformer 的硬件感知神经架构搜索（Hardware
 ## 关联页面
 - [[wang2020-hat-analysis]] — 完整论文分析
 - [[wang2020-hat-method]] — 方法机制
+
+## Evidence By Source
+
+### `raw/papers/wang2020_hat.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/wang2020_hat.md]

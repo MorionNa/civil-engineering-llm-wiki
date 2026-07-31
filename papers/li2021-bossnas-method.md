@@ -1,10 +1,24 @@
 ---
-title: "BossNAS 方法细节：Ensemble Bootstrapping 与 HyTra 搜索空间"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--li2021-bossnas-method
+title: BossNAS 方法细节：Ensemble Bootstrapping 与 HyTra 搜索空间
 type: paper-analysis
-tags: [neural-architecture-search, ensemble-bootstrapping, hybra-search-space, block-wise-training, self-supervised, byol]
-sources: [raw/papers/bossnas2021_iclr.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- block-wise-training
+- byol
+- ensemble-bootstrapping
+- hybra-search-space
+- neural-architecture-search
+- self-supervised
+sources:
+- sources/papers/li2021-bossnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -59,7 +73,7 @@ $$S(W, \mathcal{A}) = \{S_k(W_k, \mathcal{A}_k)\}$$
 $$\widehat{T}_k(\{\alpha_p\}; \{x'_p\}) = \frac{1}{|p|} \sum_{p=1}^{|p|} T_k(W^\bullet, \alpha_p; x'_p)$$
 
 **在线网络每条路径学习预测该集成：**
-$$\mathcal{L}_{\text{train}} = \left\| S_k(W_k, \alpha_p; x_p) - \widehat{T}_k(W^\bullet_k, \{\alpha_p\}; \{x'_p\}) \right\|_2^2$$
+$$\mathcal{L}_{\text{train}} = \left| S_k(W_k, \alpha_p; x_p) - \widehat{T}_k(W^\bullet_k, \{\alpha_p\}; \{x'_p\}) \right|_2^2$$
 
 **为什么要集成？** 没有集成时，每条路径 bootstrap 自己的 EMA 版本 —— 权重共享导致优化目标不一致，训练不稳定。集成提供了**所有路径共享的优化目标**，使权重共享下的多条路径协调收敛。
 
@@ -83,7 +97,7 @@ $$\mathcal{L}_{\text{train}} = \left\| S_k(W_k, \alpha_p; x_p) - \widehat{T}_k(W
 $$\widehat{S}_k(\mathcal{A}_k; x^2) = \frac{1}{|\mathcal{A}_k|} \sum_{\alpha\in\mathcal{A}_k} S_k(\alpha; x^2)$$
 
 **每个架构的评分（到中心的距离）：**
-$$\mathcal{L}_{\text{val}}(\alpha; x) = \|S_k(\alpha; x^1) - \widehat{S}_k(\mathcal{A}_k; x^2)\|_2^2$$
+$$\mathcal{L}_{\text{val}}(\alpha; x) = |S_k(\alpha; x^1) - \widehat{S}_k(\mathcal{A}_k; x^2)|_2^2$$
 
 **最终搜索（各块评分加权求和）：**
 $$\alpha^* = \arg\min_{\forall\alpha\in\mathcal{A}} \sum_{k=1}^{|k|} \lambda_k \mathcal{L}_{\text{val}}(\alpha; x_k)$$
@@ -145,3 +159,13 @@ HyTra 的设计灵感来自 Convolutional Neural Fabrics [57]：
 ---
 
 *上接 [[li2021-bossnas-analysis]] | 实验结果 [[li2021-bossnas-results]] | 批判分析 [[li2021-bossnas-critical]]*
+
+## Evidence By Source
+
+### `sources/papers/li2021-bossnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/bossnas2021_iclr.pdf`
+
+^[sources/papers/li2021-bossnas.md]

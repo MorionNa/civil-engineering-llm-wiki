@@ -1,10 +1,25 @@
 ---
-title: "Casual Attention 方法展开：CA 权重 + mMLP + Fourier 特征 + 重采样"
-created: 2026-06-28
-updated: 2026-06-28
+id: papers--zhao2026-causal-attention-method
+title: Casual Attention 方法展开：CA 权重 + mMLP + Fourier 特征 + 重采样
 type: paper-analysis
-tags: [causal-attention-weighting, temporal-causality, adaptive-weighting, resampling, modified-mlp, fourier-feature-embedding, time-marching]
-sources: [raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- causal-attention-weighting
+- fourier-feature-embedding
+- modified-mlp
+- resampling
+- temporal-causality
+- time-marching
+sources:
+- sources/papers/zhao2026-causal-attention.md
+created: '2026-06-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -127,3 +142,18 @@ KdV 终止时间误差集中的根因：t=T 处仅有左导数，缺右导数信
 ### 4.4 三维 Fourier 特征限制
 
 Nyquist 采样定理约束：m=2 需 199,494+ 点才能解析最高频率；76,800 点只够 m=1。故 3D 实验中设 m=1。
+
+## Evidence By Source
+
+### `sources/papers/zhao2026-causal-attention.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2026_115071_extracted.txt`
+
+^[sources/papers/zhao2026-causal-attention.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

@@ -1,10 +1,24 @@
 ---
-title: "Linka et al. (2022) — Bayesian PINNs: 结果证据展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--linka2022-bayesian-pinn-results
+title: 'Linka et al. (2022) — Bayesian PINNs: 结果证据展开'
 type: paper-analysis
-tags: [physics-informed, pinn, bayesian-inference, uncertainty-quantification, epidemiology, covid19]
-sources: [raw/papers/10_1016_j_cma_2022_115346_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- bayesian-inference
+- covid19
+- epidemiology
+- physics-informed
+- pinn
+- uncertainty-quantification
+sources:
+- sources/papers/linka2022-bayesian-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -135,3 +149,17 @@ PINN 性能对权重系数 ε 高度敏感：
                 ├── 是 → BPINN (完整 UQ + 网络能力)
                 └── 否 → 不推荐 BPINN
 ```
+
+## Evidence By Source
+
+### `sources/papers/linka2022-bayesian-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_115346_extracted.txt`
+
+^[sources/papers/linka2022-bayesian-pinn.md]
+
+## Related Indexes
+
+- [[papers/index]]

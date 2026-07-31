@@ -1,10 +1,25 @@
 ---
-title: "Maimon et al. (2026) — 贡献 / 失败知识 / 可迁移知识 / 研究机会"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--maimon2026-sparse-dense-critical
+title: Maimon et al. (2026) — 贡献 / 失败知识 / 可迁移知识 / 研究机会
 type: paper-analysis
-tags: [hippocampal-formation, ca3, ca1, sparse-coding, dense-coding, neural-coding, negative-knowledge, research-opportunities]
-sources: [raw/papers/10_1038_s41586-026-10537-0.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/neuroscience
+- evidence/paper
+keywords:
+- ca1
+- ca3
+- dense-coding
+- future-work
+- hippocampal-formation
+- limitation
+- neural-coding
+- sparse-coding
+sources:
+- sources/papers/maimon2026-sparse-dense.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -225,3 +240,13 @@ CA3 稀疏→CA1 密集的编码转换可以启发新型神经网络架构：
 - [[maimon2026-sparse-dense-results]] → 结果证据
 - [[sparse-dense-coding]] — 稀疏-密集编码概念实体
 - [[dentate-gyrus]] — 齿状回（稀疏→密集梯度起点）
+
+## Evidence By Source
+
+### `sources/papers/maimon2026-sparse-dense.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1038_s41586-026-10537-0.pdf`
+
+^[sources/papers/maimon2026-sparse-dense.md]

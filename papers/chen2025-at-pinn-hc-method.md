@@ -1,12 +1,34 @@
 ---
-title: "Chen et al. (2025) — AT-PINN-HC 方法机制展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--chen2025-at-pinn-hc-method
+title: Chen et al. (2025) — AT-PINN-HC 方法机制展开
 type: paper-analysis
-tags: [physics-informed, pinn, hard-constraints, structural-dynamics, time-marching, auxiliary-function, deep-learning]
-sources: [raw/papers/10_1016_j_cma_2024_117691_extracted.txt]
-methods: [hard-constraint-strategies, time-marching, auxiliary-function, trigonometric-auxiliary, exponential-auxiliary]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- auxiliary-function
+- deep-learning
+- hard-constraints
+- physics-informed
+- pinn
+- structural-dynamics
+- time-marching
+sources:
+- sources/papers/chen2025-at-pinn-hc.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
+methods:
+- hard-constraint-strategies
+- time-marching
+- auxiliary-function
+- trigonometric-auxiliary
+- exponential-auxiliary
 ---
 
 # Chen et al. (2025) — AT-PINN-HC 方法机制展开
@@ -119,3 +141,13 @@ u(x, t) = u_0(x) + t · v_0(x) + k(t) · N(x, t; θ)
 - [[chen2025-at-pinn-hc-results]] — 结果展开
 - [[at-pinn-hc]] — AT-PINN-HC 实体页
 - [[wang2023-pinn-spurious-method]] — 共享 adam-lbfgs, two-phase-optimization
+
+## Evidence By Source
+
+### `sources/papers/chen2025-at-pinn-hc.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117691_extracted.txt`
+
+^[sources/papers/chen2025-at-pinn-hc.md]

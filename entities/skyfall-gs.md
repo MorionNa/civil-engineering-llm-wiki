@@ -1,19 +1,40 @@
 ---
-title: "Skyfall-GS"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--skyfall-gs
+title: Skyfall-GS
 type: entity
-tags: [3d-gaussian-splatting, 3dgs, satellite-imagery, remote-sensing, 3d-scene-generation, 3d-reconstruction, diffusion-models, satellite-conditioned-generation, reconstruction-based-generation, embodied-ai, uav-navigation]
-sources: [raw/papers/lee2026-skyfall-gs.pdf, raw/papers/lee2026-skyfall-gs-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- entity/dataset
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- 3d-scene-generation
+- 3dgs
+- diffusion-models
+- domain/remote-sensing
+- embodied-ai
+- entity/dataset
+- reconstruction-based-generation
+- remote-sensing
+- satellite-conditioned-generation
+- satellite-imagery
+- uav-navigation
+sources:
+- raw/papers/lee2026-skyfall-gs.pdf
+- raw/papers/lee2026-skyfall-gs-extracted.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
 # Skyfall-GS
 
-> **类型：** 卫星条件的混合 3D 重建—生成框架  
-> **输入：** 多视角、多时相、最好包含 off-nadir 的卫星影像  
-> **输出：** 可自由飞行浏览、可实时渲染的城市街区 3D Gaussian Splatting  
-> **论文：** ECCV 2026，arXiv:2510.15869  
+> **类型：** 卫星条件的混合 3D 重建—生成框架
+> **输入：** 多视角、多时相、最好包含 off-nadir 的卫星影像
+> **输出：** 可自由飞行浏览、可实时渲染的城市街区 3D Gaussian Splatting
+> **论文：** ECCV 2026，arXiv:2510.15869
 > **代码：** https://github.com/jayin92/Skyfall-GS
 
 ## 定义
@@ -85,3 +106,12 @@ Skyfall-GS 是**逐场景、观测驱动的精修路线**：速度慢，但位�
 - `[[3d-gaussian-splatting]]` — 显式场景表示
 - `[[abot-earth]]` — 卫星条件 3D 地球生成路线
 - `[[from-orbit-to-ground]]` — 卫星→地面 3DGS 相关模块
+
+## Evidence By Source
+
+### `raw/papers/lee2026-skyfall-gs.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/lee2026-skyfall-gs.pdf]

@@ -1,19 +1,48 @@
 ---
-title: "Real et al. (2020) — AutoML-Zero: 从零进化机器学习算法 论文分析"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--real2020-automl-zero-analysis
+title: 'Real et al. (2020) — AutoML-Zero: 从零进化机器学习算法 论文分析'
 type: paper-analysis
-tags: [evolutionary-search, neural-architecture-search]
-methods: [regularized-evolution, genetic-programming, functional-equivalence-checking, tournament-selection, mutation-search]
-results: [cifar-10-binary-classification, svhn, imagenet-downsampled, fashion-mnist, algorithm-discovery, backpropagation-rediscovery]
-failure_modes: [hyperparameter-decoupling, search-space-bias, interpretation-difficulty, compute-intensive, no-batch-norm-support]
-datasets: [cifar-10, mnist, svhn, imagenet-resized, fashion-mnist]
-sources: [raw/papers/automl_zero_real2020.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- evolutionary-search
+- neural-architecture-search
+sources:
+- sources/papers/real2020-automl-zero.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: high
+methods:
+- regularized-evolution
+- genetic-programming
+- functional-equivalence-checking
+- tournament-selection
+- mutation-search
+results:
+- cifar-10-binary-classification
+- svhn
+- imagenet-downsampled
+- fashion-mnist
+- algorithm-discovery
+- backpropagation-rediscovery
+failure_modes:
+- hyperparameter-decoupling
+- search-space-bias
+- interpretation-difficulty
+- compute-intensive
+- no-batch-norm-support
+datasets:
+- cifar-10
+- mnist
+- svhn
+- imagenet-resized
+- fashion-mnist
 reproducibility: high
 code_url:
-  - https://github.com/google-research/google-research/tree/master/automl_zero
-dataset_url: []
-confidence: high
+- https://github.com/google-research/google-research/tree/master/automl_zero
 ---
 
 # Real et al. (2020) — AutoML-Zero: 从零进化机器学习算法 论文分析
@@ -134,3 +163,13 @@ confidence: high
 - [[automl-zero]] — 实体页
 - [[primer]] — PRIMER (So et al., 2021) 也用进化搜索发现 Transformer 架构，形成方法论对比
 - [[te-nas]] — TE-NAS 走训练无关的 NAS 路线，与 AutoML-Zero 的进化+从头搜索形成互补
+
+## Evidence By Source
+
+### `sources/papers/real2020-automl-zero.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/automl_zero_real2020.pdf`
+
+^[sources/papers/real2020-automl-zero.md]

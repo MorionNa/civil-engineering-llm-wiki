@@ -1,10 +1,23 @@
 ---
-title: "PSPNet"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--pspnet
+title: PSPNet
 type: entity
-tags: [semantic-segmentation, pyramid-pooling, scene-parsing]
-sources: [raw/papers/10_1145_3731195_abstract.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- entity/model
+keywords:
+- domain/computer-vision
+- entity/model
+- pyramid-pooling
+- scene-parsing
+- semantic-segmentation
+sources:
+- raw/papers/10_1145_3731195_abstract.txt
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # PSPNet
@@ -19,3 +32,16 @@ Pyramid Scene Parsing Network (PSPNet) 引入 **Pyramid Pooling Module**，通�
 
 ## 关联页面
 - [[zhao2017-pspnet-analysis]] — 论文完整分析
+
+## Evidence By Source
+
+### `raw/papers/10_1145_3731195_abstract.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1145_3731195_abstract.txt]
+
+## Related Indexes
+
+- [[entities/index]]

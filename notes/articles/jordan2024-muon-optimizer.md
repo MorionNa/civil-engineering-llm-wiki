@@ -1,19 +1,41 @@
 ---
-title: "Keller Jordan (2024) — Muon：面向神经网络隐藏层的矩阵正交化优化器"
-created: 2026-07-28
-updated: 2026-07-28
+id: notes--articles--jordan2024-muon-optimizer
+title: Keller Jordan (2024) — Muon：面向神经网络隐藏层的矩阵正交化优化器
 type: article
-tags: [optimizer, muon, matrix-orthogonalization, newton-schulz, stochastic-gradient-descent, sgd-momentum, nesterov-momentum, adamw, shampoo, preconditioning, spectral-norm, training-efficiency, sample-efficiency, wallclock-efficiency, large-language-model]
-sources: [raw/articles/jordan2024-muon-blog.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/webpage
+- method/transformer
+keywords:
+- adamw
+- large-language-model
+- matrix-orthogonalization
+- muon
+- nesterov-momentum
+- newton-schulz
+- optimizer
+- preconditioning
+- sample-efficiency
+- sgd-momentum
+- shampoo
+- spectral-norm
+- stochastic-gradient-descent
+- training-efficiency
+- wallclock-efficiency
+sources:
+- raw/articles/jordan2024-muon-blog.pdf
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
 # Muon: An optimizer for hidden layers in neural networks
 
-> **作者：** Keller Jordan（文末 citation 同时列出 Yuchen Jin、Vlado Boza、Jiacheng You、Franz Cesista、Laker Newhouse、Jeremy Bernstein）  
-> **来源类型：** 技术博客，不是同行评审论文  
-> **发布日期：** 2024-12-08；当前 PDF 还包含 2025-07-12 后补的历史关联小节  
-> **原文：** https://kellerjordan.github.io/posts/muon/  
+> **作者：** Keller Jordan（文末 citation 同时列出 Yuchen Jin、Vlado Boza、Jiacheng You、Franz Cesista、Laker Newhouse、Jeremy Bernstein）
+> **来源类型：** 技术博客，不是同行评审论文
+> **发布日期：** 2024-12-08；当前 PDF 还包含 2025-07-12 后补的历史关联小节
+> **原文：** https://kellerjordan.github.io/posts/muon/
 > **一句话定位：** Muon 把隐藏层二维权重的 SGD-momentum 更新矩阵用低精度 Newton–Schulz 迭代近似正交化，使各奇异方向获得更均衡的更新尺度；embedding、输出层以及标量/向量参数仍使用 AdamW。
 
 ## 1. Muon 是什么
@@ -81,7 +103,7 @@ $$
 
 $$
 \operatorname{Ortho}(G)=
-\arg\min_O\|O-G\|_F,
+\arg\min_O|O-G|_F,
 $$
 
 并要求 $O^TO=I$ 或 $OO^T=I$，取决于矩阵是高矩阵还是宽矩阵。
@@ -108,7 +130,7 @@ Muon 不直接做 SVD，因为完整 SVD 太慢；也不采用需要 float32 才
 核心实现先归一化：
 
 $$
-X_0=G/(\|G\|_F+\varepsilon),
+X_0=G/(|G|_F+\varepsilon),
 $$
 
 再重复 5 次：
@@ -277,3 +299,12 @@ Orthogonal-SGDM: gradient → orthogonalization → momentum
 - [[wang2021-pinn-ntk-failure-analysis]]
 - [[pgt]]
 - [[legonet]]
+
+## Evidence By Source
+
+### `raw/articles/jordan2024-muon-blog.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/articles/jordan2024-muon-blog.pdf]

@@ -1,10 +1,20 @@
 ---
-title: "AVBD 实验结果展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--giles2025-avbd-results
+title: AVBD 实验结果展开
 type: paper-analysis
-tags: [rigid-body-dynamics, constraint-solver, gpu-computing]
-sources: [raw/papers/giles2025-avbd.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computational-mechanics
+- evidence/paper
+keywords:
+- constraint-solver
+- gpu-computing
+- rigid-body-dynamics
+sources:
+- sources/papers/giles2025-avbd.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -117,3 +127,13 @@ GPU (RTX 4090)，所有方法参数以场景不崩溃的最小迭代数。
 - [[giles2025-avbd-analysis]] — 全维度概述
 - [[giles2025-avbd-method]] — 方法机制
 - [[giles2025-avbd-critical]] — 贡献 + 局限性 + 可迁移
+
+## Evidence By Source
+
+### `sources/papers/giles2025-avbd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/giles2025-avbd.md`
+
+^[sources/papers/giles2025-avbd.md]

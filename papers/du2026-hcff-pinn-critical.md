@@ -1,18 +1,56 @@
 ---
-title: "Du et al. (2026) — HCFF-PINN 贡献、局限与研究机会"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--du2026-hcff-pinn-critical
+title: Du et al. (2026) — HCFF-PINN 贡献、局限与研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, neural-network, deep-learning, hard-constraint-strategies, auxiliary-function, hard-constraints, structural-dynamics, seismic-response, equation-of-motion, vibration-analysis, ground-motion, finite-element, limitation, future-work]
-sources: [raw/papers/10_1016_j_engappai_2025_113640.xml, raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt]
-methods: [physics-guided-fourier-features, hard-initial-conditions, tanh-squared-modulation, static-condensation]
-results: [mixed-frequency-error-reduction, cross-ground-motion-robustness, frequency-prior-sensitivity]
-failure_modes: [frequency-prior-mismatch, hard-constraint-function-mismatch, high-dimensional-boundary-generalization, nonlinear-structure-unvalidated, label-free-overstatement]
-datasets: [synthetic-harmonic-loads, peer-nga-west2-records, san-simeon-diablo-canyon]
-reproducibility: medium
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- auxiliary-function
+- deep-learning
+- equation-of-motion
+- finite-element
+- future-work
+- ground-motion
+- hard-constraint-strategies
+- hard-constraints
+- limitation
+- neural-network
+- physics-informed
+- pinn
+- seismic-response
+- structural-dynamics
+- vibration-analysis
+sources:
+- sources/papers/du2026-hcff-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-guided-fourier-features
+- hard-initial-conditions
+- tanh-squared-modulation
+- static-condensation
+results:
+- mixed-frequency-error-reduction
+- cross-ground-motion-robustness
+- frequency-prior-sensitivity
+failure_modes:
+- frequency-prior-mismatch
+- hard-constraint-function-mismatch
+- high-dimensional-boundary-generalization
+- nonlinear-structure-unvalidated
+- label-free-overstatement
+datasets:
+- synthetic-harmonic-loads
+- peer-nga-west2-records
+- san-simeon-diablo-canyon
+reproducibility: medium
 ---
 
 # Du et al. (2026) — HCFF-PINN 贡献、局限与研究机会
@@ -91,3 +129,13 @@ HCFF-PINN 在本文线性结构基准上把“频谱表示”和“初值约束�
 - [[du2026-hcff-pinn-method]] — 方法公式与训练配置
 - [[du2026-hcff-pinn-results]] — 数值证据及正文/表格不一致
 - [[at-pinn-hc]] — 硬约束结构振动的互补路线
+
+## Evidence By Source
+
+### `sources/papers/du2026-hcff-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_engappai_2025_113640.xml`, `raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt`
+
+^[sources/papers/du2026-hcff-pinn.md]

@@ -1,18 +1,59 @@
 ---
-title: "Serianni & Kalita (2023) — Training-free NAS for RNNs and Transformers 论文分析"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--serianni2023-training-free-nas-rnn-transformers-analysis
+title: Serianni & Kalita (2023) — Training-free NAS for RNNs and Transformers 论文分析
 type: paper-analysis
-tags: [neural-architecture-search, training-free-nas, rnn, transformer, ntk, expressivity, trainability, hidden-covariance, attention-confidence, nas-bench-nlp, flexibert]
-sources: [raw/papers/training_free_nas2023.pdf]
-methods: [hidden-covariance, attention-confidence, attention-importance, softmax-confidence, jacobian-covariance, synaptic-saliency, activation-distance, synaptic-diversity]
-results: [nas-bench-nlp, flexibert-electra-benchmark, kendall-tau, spearman-rho, parameter-count-correlation]
-failure_modes: [transformer-search-space-inflexible, parameter-count-confounding, low-correlation-bert, small-sample-nas-bert-benchmark]
-datasets: [nas-bench-nlp, openwebtext, glue, penn-treebank]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- attention-confidence
+- expressivity
+- flexibert
+- hidden-covariance
+- nas-bench-nlp
+- neural-architecture-search
+- ntk
+- rnn
+- trainability
+- training-free-nas
+- transformer
+sources:
+- sources/papers/serianni2023-training-free-nas-rnn-transformers.md
+created: '2026-06-14'
+updated: '2026-07-31'
+confidence: high
+methods:
+- hidden-covariance
+- attention-confidence
+- attention-importance
+- softmax-confidence
+- jacobian-covariance
+- synaptic-saliency
+- activation-distance
+- synaptic-diversity
+results:
+- nas-bench-nlp
+- flexibert-electra-benchmark
+- kendall-tau
+- spearman-rho
+- parameter-count-correlation
+failure_modes:
+- transformer-search-space-inflexible
+- parameter-count-confounding
+- low-correlation-bert
+- small-sample-nas-bert-benchmark
+datasets:
+- nas-bench-nlp
+- openwebtext
+- glue
+- penn-treebank
 reproducibility: high
 code_url:
-  - https://github.com/aaronserianni/training-free-nas
-confidence: high
+- https://github.com/aaronserianni/training-free-nas
 ---
 
 # Training-free Neural Architecture Search for RNNs and Transformers
@@ -127,3 +168,13 @@ confidence: high
 | 训练环境 | Google Colab TPUv2-8 训练，CPU 评估指标 |
 | 消融实验 | 初始化种子 ×10、输入批次 ×10 的完整消融 |
 | 已知局限 | 仅 500 BERT 架构；仅 encoder-only；仅英文数据集 |
+
+## Evidence By Source
+
+### `sources/papers/serianni2023-training-free-nas-rnn-transformers.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/training_free_nas2023.pdf`
+
+^[sources/papers/serianni2023-training-free-nas-rnn-transformers.md]

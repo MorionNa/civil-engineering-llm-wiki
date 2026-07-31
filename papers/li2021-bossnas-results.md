@@ -1,10 +1,21 @@
 ---
-title: "BossNAS 实验结果：ImageNet / CIFAR / 迁移学习"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--li2021-bossnas-results
+title: BossNAS 实验结果：ImageNet / CIFAR / 迁移学习
 type: paper-analysis
-tags: [neural-architecture-search, imagenet, cifar, benchmark, experimental-results]
-sources: [raw/papers/bossnas2021_iclr.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- benchmark
+- cifar
+- imagenet
+- neural-architecture-search
+sources:
+- sources/papers/li2021-bossnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -155,3 +166,13 @@ BossNAS 在无任何标签、无真值架构性能的条件下，评分精度超
 ---
 
 *上接 [[li2021-bossnas-analysis]] | 方法细节 [[li2021-bossnas-method]] | 批判分析 [[li2021-bossnas-critical]]*
+
+## Evidence By Source
+
+### `sources/papers/li2021-bossnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/bossnas2021_iclr.pdf`
+
+^[sources/papers/li2021-bossnas.md]

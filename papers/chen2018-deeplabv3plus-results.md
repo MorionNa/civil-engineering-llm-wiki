@@ -1,13 +1,34 @@
 ---
-title: "DeepLabv3+ 实验结果展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--chen2018-deeplabv3plus-results
+title: DeepLabv3+ 实验结果展开
 type: paper-analysis
-tags: [semantic-segmentation, encoder-decoder, atrous-convolution, sota]
-sources: [raw/papers/deepLabv3plus.pdf]
-results: [pascal-voc-89.0, cityscapes-82.1, trimap-boundary, coco-pretraining, jft-pretraining]
-datasets: [pascal-voc-2012, cityscapes, ms-coco, imagenet, jft-300m]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- atrous-convolution
+- benchmark
+- encoder-decoder
+- semantic-segmentation
+sources:
+- sources/papers/chen2018-deeplabv3plus.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+results:
+- pascal-voc-89.0
+- cityscapes-82.1
+- trimap-boundary
+- coco-pretraining
+- jft-pretraining
+datasets:
+- pascal-voc-2012
+- cityscapes
+- ms-coco
+- imagenet
+- jft-300m
 ---
 
 # DeepLabv3+ 实验结果
@@ -136,3 +157,13 @@ confidence: high
 - [[chen2018-deeplabv3plus-analysis]] — 总览
 - [[zhao2017-pspnet-results]] — PSPNet 结果对比
 - [[ronneberger2015-unet-results]] — U-Net 挑战赛结果
+
+## Evidence By Source
+
+### `sources/papers/chen2018-deeplabv3plus.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/deepLabv3plus.pdf`
+
+^[sources/papers/chen2018-deeplabv3plus.md]

@@ -1,10 +1,25 @@
 ---
-title: "NAS-BERT"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--nas-bert
+title: NAS-BERT
 type: entity
-tags: [neural-architecture-search, transformer, pruning-based-nas]
-sources: [raw/papers/xu2021_nas_bert.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- entity/model
+- method/neural-architecture-search
+- method/transformer
+- neural-architecture-search
+- pruning-based-nas
+- transformer
+sources:
+- raw/papers/xu2021_nas_bert.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # NAS-BERT
@@ -32,3 +47,16 @@ NAS-BERT 是面向 BERT 模型压缩的神经架构搜索方法，通过 Block-W
 
 ## 关联页面
 - [[xu2021-nas-bert-analysis]] — 完整论文分析
+
+## Evidence By Source
+
+### `raw/papers/xu2021_nas_bert.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/xu2021_nas_bert.md]
+
+## Related Indexes
+
+- [[entities/index]]

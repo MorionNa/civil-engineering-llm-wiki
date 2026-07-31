@@ -1,18 +1,45 @@
 ---
-title: "Gao et al. (2025) — APINNs 方法机制展开"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--gao2025-adaptive-loss-pinn-method
+title: Gao et al. (2025) — APINNs 方法机制展开
 type: paper-analysis
-tags: [physics-informed, pinn, adaptive-weighting, physics-constrained-loss, soft-constraint, collocation-strategy, neural-network, nonlinear-systems, physics-constraint-weight-tuning]
-sources: [raw/papers/10_1016_j_camwa_2025_01_007.xml, raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt]
-methods: [multitask-learning, adaptive-loss-weighting, loss-magnitude-normalization, automatic-differentiation]
-results: [loss-scale-balancing, convergence-acceleration]
-failure_modes: [physics-constraint-weight-tuning, update-frequency-uncertainty, incomplete-training-recipe]
-datasets: [benjamin-ono-analytic-solution, sine-gordon-analytic-solution, mukherjee-kundu-analytic-solution]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- collocation-strategy
+- neural-network
+- nonlinear-systems
+- physics-constrained-loss
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- soft-constraint
+sources:
+- sources/papers/gao2025-adaptive-loss-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- multitask-learning
+- adaptive-loss-weighting
+- loss-magnitude-normalization
+- automatic-differentiation
+results:
+- loss-scale-balancing
+- convergence-acceleration
+failure_modes:
+- physics-constraint-weight-tuning
+- update-frequency-uncertainty
+- incomplete-training-recipe
+datasets:
+- benjamin-ono-analytic-solution
+- sine-gordon-analytic-solution
+- mukherjee-kundu-analytic-solution
+reproducibility: low
 ---
 
 # Gao et al. (2025) — APINNs 方法机制展开
@@ -107,3 +134,13 @@ Benjamin–Ono 的正文图示配置与表 1 首行的 $N_b=2000$ 不一致，�
 - [[gao2025-adaptive-loss-pinn-results]] — 全部数值与一致性核查
 - [[pinn]] — 标准 PINN 结构
 - [[adaptive-loss-weighting-pinn]] — APINNs 实体
+
+## Evidence By Source
+
+### `sources/papers/gao2025-adaptive-loss-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_camwa_2025_01_007.xml`, `raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt`
+
+^[sources/papers/gao2025-adaptive-loss-pinn.md]

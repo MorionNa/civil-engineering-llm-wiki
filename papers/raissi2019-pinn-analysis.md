@@ -1,10 +1,26 @@
 ---
-title: "Raissi et al. (2019) PINN 开山之作：非线性 PDE 的深度学习求解框架"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--raissi2019-pinn-analysis
+title: Raissi et al. (2019) PINN 开山之作：非线性 PDE 的深度学习求解框架
 type: paper-analysis
-tags: [physics-informed, pinn, nonlinear-pde, automatic-differentiation, inverse-problem, data-driven-discovery, scientific-machine-learning]
-sources: [raw/papers/10_1016_j_jcp_2018_10_045.xml]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- automatic-differentiation
+- data-driven-discovery
+- inverse-problem
+- nonlinear-pde
+- physics-informed
+- pinn
+- scientific-machine-learning
+sources:
+- sources/papers/raissi2019-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 reproducibility: 🟡
 code_url: https://github.com/maziarraissi/PINNs
@@ -13,9 +29,9 @@ dataset_url: n/a
 
 # Raissi et al. (2019) — Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations
 
-> **作者:** M. Raissi, P. Perdikaris, G.E. Karniadakis  
-> **期刊:** Journal of Computational Physics, Vol 378, pp 686-707 (2019)  
-> **DOI:** 10.1016/j.jcp.2018.10.045 | **引用:** 16,874  
+> **作者:** M. Raissi, P. Perdikaris, G.E. Karniadakis
+> **期刊:** Journal of Computational Physics, Vol 378, pp 686-707 (2019)
+> **DOI:** 10.1016/j.jcp.2018.10.045 | **引用:** 16,874
 > 🏛️ **PINN 范式奠基之作**
 
 ---
@@ -118,3 +134,32 @@ loss = mean(f**2)                       # 直接作为损失
 - [[wang2021-pinn-ntk-failure-analysis]] — NTK 解释为何非线性 PDE 训练更难（谱偏差）
 - [[goswami2022-variational-deeponet-analysis]] — V-DeepONet：PINN 后继者
 - [[notes/lectures/ai4s-pinn-deepxde]] — DeepXDE 教程
+
+## 10. 可迁移知识 (Transferable Knowledge)
+
+- 将论文中的可复用机制抽取为方法组件，而不是直接照搬完整网络。
+- 迁移到结构工程或其他物理系统时，需要重新定义变量、边界、对称性与评价基准。
+
+## 11. 研究机会 (Research Opportunity)
+
+- 在更复杂边界、非线性、多尺度和高维任务上检验方法边界。
+- 对照统一 wall-clock、精度、稳定性和数据效率指标开展复现。
+
+## 12. 可复现性 (Reproducibility)
+
+- 复现应以本页列出的原始来源、代码、数据与超参数为准。
+- 未公开实现细节应记录为复现缺口，不以模型推测补齐。
+
+## Paper Family Pages
+
+- [[raissi2019-pinn-results]]
+
+## Evidence By Source
+
+### `sources/papers/raissi2019-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2018_10_045.xml`
+
+^[sources/papers/raissi2019-pinn.md]

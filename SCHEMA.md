@@ -1,21 +1,27 @@
 ---
 id: schema
-title: "Civil Engineering LLM Wiki Schema"
+title: Civil Engineering LLM Wiki Schema
 type: schema
 status: active
 project: civil-engineering-llm-wiki
 tags: []
+keywords:
+- entity-first
+- llm-wiki
+- source-grounded
 sources: []
-created: 2026-07-16
-updated: 2026-07-31
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
-# Wiki Schema
+# Civil Engineering LLM Wiki Schema
 
-## Domain
+## Core Principle
 
-Physics-informed machine learning and computational mechanics, with emphasis on structural dynamics, nonlinear system identification, scientific machine learning, engineering computer vision, AI4S, large language models, and remote-sensing / generative 3D knowledge.
+This wiki is **entity-first and source-grounded**. Evidence from a source should normally be written into the reusable page whose subject will matter later: an entity, concept, method, claim, comparison, decision or baseline. A standalone source note is created when a long or complex source supports multiple pages, needs independent review, or would otherwise require repeated rereading.
+
+The repository retains a compatibility extension for deep academic-paper reading: a full-text paper may be represented by an `analysis + method + results + critical` family. These pages are still subject-oriented knowledge pages; the canonical source record lives under `sources/papers/` and the original material remains immutable under `raw/` or at the recorded external location.
 
 ## Architecture
 
@@ -24,49 +30,86 @@ wiki/
 ├── SCHEMA.md
 ├── index.md
 ├── log.md
-├── raw/                    # immutable source material or source metadata
+├── raw/                       # immutable original materials; never rewritten by migration
 │   ├── articles/
 │   ├── papers/
 │   ├── transcripts/
-│   ├── videos/
-│   └── assets/
-├── papers/                 # full-text paper analyses: 1 overview + 3 sub-pages
-├── notes/                  # non-paper notes
-│   ├── briefings/
-│   ├── lectures/
-│   ├── videos/
-│   └── articles/
-├── entities/               # models, methods, datasets, tools, organizations, people
-├── comparisons/
-├── queries/
-└── scripts/                # validation and maintenance scripts
+│   ├── webpages/
+│   ├── assets/
+│   └── misc/
+├── sources/                   # optional standalone source notes
+│   ├── index.md
+│   └── papers/
+├── entities/                  # named models, datasets, tools, people and organizations
+├── concepts/                  # reusable ideas, mechanisms, metrics, assumptions and limitations
+├── papers/                    # compatibility extension for deep full-text paper families
+├── methods/                   # reusable procedures or algorithms when separated from paper pages
+├── claims/                    # evidence/confidence/counterevidence records
+├── baselines/                 # reference methods and reproducibility settings
+├── comparisons/               # structured trade-off analyses
+├── decisions/                 # project decisions and revisit conditions
+├── notes/                     # briefings, lectures, videos and articles
+├── queries/                   # reusable research questions
+└── scripts/                   # migration, lint and maintenance utilities
 ```
+
+Directories may be introduced when the first qualifying page is created. Do not create empty topical pages merely to mirror this diagram.
+
+## Routing Rule
+
+Choose a page location by the **subject of the note**, not by where the information came from:
+
+- `entities/`: named model, dataset, tool, benchmark, person, organization or venue.
+- `concepts/`: reusable idea, definition, mechanism, metric, assumption or limitation.
+- `methods/`: reusable procedure, algorithm, protocol or implementation pattern.
+- `claims/`: statement requiring explicit evidence, confidence, scope and counterevidence.
+- `comparisons/`: two-or-more-option trade-off analysis.
+- `decisions/`: selected option, rationale, alternatives and revisit conditions.
+- `baselines/`: reference configuration, metrics and comparability risks.
+- `sources/`: independent reading/provenance record for a long, complex or multi-page source.
+- `papers/`: the project-specific deep-reading extension for a full-text academic paper.
+
+Do not use `entities/` as a generic location for source summaries unless the source is primarily about one named entity.
 
 ## Ingest Rules
 
-| Source type | Target | Required output |
-|---|---|---|
-| Full-text academic paper | `raw/papers/`, `papers/`, `entities/` | Source metadata + analysis/method/results/critical + ≥1 entity |
-| Abstract-only paper | `papers/` | One overview with `evidence_scope: abstract-only` |
-| PPT / meeting | `notes/briefings/` | One source-grounded note |
-| Lecture / tutorial | `notes/lectures/` | One source-grounded note |
-| Video | `notes/videos/` | One source-grounded note |
-| Article / blog | `notes/articles/` | One source-grounded note |
+| Source | Required handling |
+|---|---|
+| Full-text academic paper | Preserve original under `raw/` or record a stable external source; create `sources/papers/<slug>.md`; create/update reusable entity/concept/method pages; when deep paper review is needed, create `analysis + method + results + critical` |
+| Abstract-only academic paper | One overview is allowed with `evidence_scope: abstract-only`; do not invent method/results detail absent from the abstract |
+| PPT / meeting | Source-grounded briefing or reusable subject pages; record source and scope |
+| Lecture / tutorial / video | Transcript/source note when available, then reusable concept/method/entity pages |
+| Article / blog / webpage | Preserve URL or raw capture; separate author claims from verified facts |
 
-Raw source material is immutable after ingest. A source metadata note may be revised only to correct metadata or add provenance; it must never silently replace or rewrite the original source.
+### Source Note Policy
+
+Create a standalone source note when at least one condition holds:
+
+- one source supports multiple reusable pages;
+- the source is long, complex or likely to be revisited;
+- the source contains many claims requiring traceability;
+- the reading record itself needs review;
+- the project uses the 1+3 paper extension.
+
+A source note records evidence scope and original-material locations. It does not replace the original source.
+
+## Raw Immutability
+
+Files under `raw/` are immutable after ingest. Migration and lint scripts must not overwrite, normalize, rename or delete raw source files. Metadata corrections are recorded in a source note or a new versioned raw record rather than silently changing the original.
 
 ## Strict Frontmatter Contract
 
-Every maintained knowledge page and section index starts with:
+Every maintained Markdown page outside `raw/` starts with:
 
 ```yaml
 ---
 id: short-stable-id
 title: Human-readable title
-type: source | entity | paper-analysis | briefing | lecture | video | article | comparison | query | summary | index | log | schema
+type: source | entity | concept | method | claim | baseline | comparison | decision | query | paper-analysis | briefing | lecture | video | article | summary | index | log | schema
 status: draft | active | verified | superseded
 project: civil-engineering-llm-wiki
 tags: []
+keywords: []
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -74,10 +117,10 @@ confidence: low | medium | high
 ---
 ```
 
-Optional structured fields:
+`keywords` is optional for new pages but is retained during historical migration so legacy retrieval terms are not lost. Optional structured fields include:
 
 ```yaml
-evidence_scope: abstract-only
+evidence_scope: full-text | abstract-only | transcript | webpage | secondary-synthesis
 methods: []
 results: []
 failure_modes: []
@@ -91,131 +134,145 @@ contradictions: []
 
 Rules:
 
-- `id` is stable and unique.
-- `status: verified` means checked against the listed source, not independently reproduced.
-- `project` is fixed to `civil-engineering-llm-wiki`.
-- `sources` explicitly reference source metadata or raw paths.
-- Bump `updated` whenever content changes.
-- A replaced page uses `status: superseded` and links the replacement.
+- `id` is stable and unique across the repository.
+- `status: verified` means checked against listed evidence, not independently reproduced.
+- `status: draft` is required when no explicit source is available; include `## Verification Needed`.
+- `sources` points to a canonical source note, raw path or stable external source.
+- `created` is preserved; `updated` changes on meaningful revision.
+- Replaced pages use `status: superseded` and link to the replacement.
+- Conflicting evidence is retained under `Conflict` or `Counterevidence`; never silently reconciled.
+
+## Namespaced Tag Taxonomy
+
+`tags` is a deliberately small, stable routing/filtering set. Detailed historical terminology belongs in `keywords`.
+
+### Domain
+
+- `domain/civil-engineering`
+- `domain/computational-mechanics`
+- `domain/ai4s`
+- `domain/computer-vision`
+- `domain/remote-sensing`
+- `domain/llm`
+- `domain/neuroscience`
+- `domain/knowledge-management`
+
+### Method
+
+- `method/pinn`
+- `method/neural-operator`
+- `method/graph-neural-network`
+- `method/transformer`
+- `method/neural-architecture-search`
+- `method/reinforcement-learning`
+- `method/evaluation`
+- `method/workflow`
+
+### Evidence
+
+- `evidence/paper`
+- `evidence/code`
+- `evidence/report`
+- `evidence/webpage`
+- `evidence/transcript`
+
+### Entity / Decision / Status / Risk
+
+- `entity/model`
+- `entity/dataset`
+- `entity/tool`
+- `entity/person`
+- `entity/organization`
+- `decision/architecture`
+- `decision/implementation`
+- `status/draft`
+- `status/verified`
+- `risk/uncertain`
+
+New namespaced tags are added only when they will recur. Do not promote every one-off paper term to a tag.
 
 ## Provenance And Evidence
 
-- Use `sources` for page-level provenance.
-- Use persistent paragraph markers such as `^[raw/papers/source-file.md]` for source-derived evidence.
-- State page, section, figure or table positions in prose when useful.
-- Never commit temporary assistant citation-control tokens, conversation-local source IDs, or web-result reference IDs.
-- Do not claim independent reproduction unless experiments were actually rerun.
-- Label cross-domain transfer as inference, migration or research proposal rather than a paper conclusion.
-- Preserve conflicting evidence in a `Conflict` or `Counterevidence` section; do not silently overwrite it.
+- Use frontmatter `sources` for page-level provenance.
+- Use an `Evidence By Source` section for reusable notes that synthesize source evidence.
+- A persistent marker may reference either a canonical source note or original material, for example `^[sources/papers/example.md]` or `^[raw/papers/example.pdf]`.
+- State page, section, equation, figure or table positions in prose when useful.
+- Never commit temporary conversation citation controls, `turn...` IDs or assistant-only reference tokens.
+- Do not claim independent reproduction unless code/experiments were actually rerun.
+- Mark cross-domain applications as **migration inference**, **design proposal** or **research opportunity**, not as a paper conclusion.
+- Crossref metadata, abstracts and memory records do not count as full-text evidence unless the full text was actually read.
 
-## Wikilinks
+## Page Creation Threshold
 
-- Use bare double-bracket wikilinks; never wrap them in backticks.
-- Maintained knowledge pages have at least two outbound links unless they are terminal source records.
-- Wikilinks must resolve to an existing Markdown page or recognized section-index path.
-- Prefer existing entities over near-duplicate entity names.
+Create a dedicated reusable page when at least one condition is true:
 
-## Index And Navigation Contract
+- the subject appears in two or more sources;
+- it affects a research, implementation or evaluation decision;
+- it is likely to be reused later;
+- it contains a claim needing evidence tracking;
+- multiple existing pages already reference it.
 
-- Register pages in the relevant section index.
-- `index.md` is the global dashboard and links every section index plus high-priority knowledge chains.
-- Exhaustive page lists may live in section indexes; every page must remain reachable through a finite index path.
-- `mkdocs.yml` may remain curated, while unlisted pages remain searchable and reachable through indexes/wikilinks.
-- Append every meaningful create, ingest, revise, verify, lint or deployment repair to `log.md`.
+One-off details remain in the relevant page’s `Evidence By Source` section. Historical unresolved references may be migrated to `status: draft` stubs only when the references demonstrate likely reuse; such stubs must contain `Verification Needed` and must not masquerade as verified knowledge.
 
-## CI/CD Contract
+## Paper Deep-Reading Extension
 
-GitHub Actions may lint, build, upload and deploy. GitHub Actions must not edit knowledge pages, create commits, push branches or self-delete workflows. All repository mutations occur before PR validation.
-
-## Tag Taxonomy
-
-Tags are reusable retrieval keywords, not section headings. Add a tag only when it is expected to recur.
-
-### Methods
-
-neural-network, lstm, physics-informed, metamodeling, deep-learning, sequence-modeling, finite-difference, tensor-differentiator, multi-lstm, physics-constrained-loss, soft-constraint, adam-lbfgs, two-phase-optimization, collocation-strategy, conditional-computation, automatic-sharding, spmd, model-parallelism, pipeline-parallelism, distributed-training, sublinear-scaling, compiler-optimization, xla-compiler, transformer, machine-translation, heterogeneous-transformer, encoder-decoder-attention, edge-inference, bayesian-inference, hamiltonian-monte-carlo, uncertainty-quantification, self-adaptive-pinn, epidemiology, time-marching, auxiliary-function, hard-constraint-strategies, causal-attention-weighting, temporal-causality, adaptive-weighting
-
-### Architecture And Domain
-
-phylstm2, phylstm3, structural-dynamics, nonlinear-systems, hysteresis, seismic-response, equation-of-motion, restoring-force, data-scarcity, unobservable-variables, extrapolation-ability, vibration-analysis, superscript-panel, euler-bernoulli-beam, collapse-simulation, rc-structures, fiber-beam-element, multilayer-shell, elemental-deactivation, finite-element, high-rise-building, progressive-collapse, material-failure-criteria
-
-### Data, Models, Failure Modes And Meta
-
-dataset, benchmark, ground-motion, synthetic-data, ida, peer-database, blwn, jhu-covid19, bouc-wen, rate-independent, rate-dependent, mrfs, sdof, damped-harmonic-oscillator, architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning, comparison, review, future-work, limitation, cross-domain-generalization, architecture-selection, transfer-learning
-
-### Physics Simulation
-
-rigid-body-dynamics, contact-mechanics, real-time-simulation, gpu-computing, constraint-solver, primal-method, dual-method, augmented-lagrangian, gauss-seidel, jacobi, high-stiffness-ratio, hard-constraints, mass-spring, frictional-contact, substep, information-propagation-limit, trigonometric-auxiliary, exponential-auxiliary, polynomial-auxiliary
-
-### Mathematical Physics
-
-statistical-mechanics, kinetic-theory, entropy, irreversibility, boltzmann-equation, hilbert-sixth-problem, hard-sphere-dynamics, boltzmann-grad-limit
-
-### Computer Vision
-
-semantic-segmentation, encoder-decoder, skip-connections, fully-convolutional, u-net, data-augmentation, small-dataset, overlap-tile, biomedical-imaging, scene-parsing, pyramid-pooling, multi-scale-context, auxiliary-loss, deep-supervision, resnet, dilated-convolution, bilinear-upsample, atrous-convolution, atrous-separable-convolution, depthwise-separable-convolution, xception, aspp, output-stride, aligned-xception, spatial-pyramid-pooling, high-resolution-representation, multi-resolution-fusion, parallel-convolutions, hrnet, hrnetv2, hrnetv2p, multi-resolution-block, vision-transformer, hierarchical-transformer, mlp-decoder, mix-ffn, efficient-self-attention, positional-encoding-free, mit-encoder, overlap-patch-merging, sequence-reduction, segformer
-
-### Neural Architecture Search
-
-neural-architecture-search, training-free-nas, ntk, neural-tangent-kernel, linear-regions, expressivity, trainability, weight-sharing-nas, pruning-based-nas, nas-bench-201, one-shot-nas, weight-entanglement, evolutionary-search, hardware-aware-nas, latency-prediction, weight-sharing-supernet, hardware-specialization, latency-constraint, differentiable-nas, block-wise-search, self-supervised-nas, ensemble-bootstrapping, hybrid-cnn-transformer, hybrid-search-space, memory-efficient-nas, multi-split-reversible, hidden-covariance, linear-regions-count, sq-tc-search, mdha, squared-relu
-
-### Generative Models And Equivariance
-
-diffusion-models, ddpm, ddim, stable-diffusion, latent-diffusion, score-based-models, langevin-dynamics, classifier-free-guidance, lora, dpo, controlnet, dreambooth, textual-inversion, image-generation, molecule-generation, protein-design, rfdiffusion, protpainter, alphafold3, se3-equivariance
-
-### Neural Operators And Training Dynamics
-
-neural-operator, operator-learning, neural-ode, physics-encoded-network, physics-aware-attention, fourier-operator, structure-preserving, operator-splitting, compositional-modeling, trajectory-free-training, spectral-method, boundary-condition, hamiltonian, dissipative-dynamics, long-horizon-rollout, autoregressive-rollout, exponential-time-differencing, scientific-machine-learning, pde, digital-twin, scaling-law, kernel-regression, stochastic-gradient-descent, learning-rate-schedule, intrinsic-time, compute-optimal-training
-
-### AI4S
-
-ai4s, scientific-discovery, inverse-problem, pinn, deepxde, physics-simulation, material-design, weather-prediction
-
-### Cheminformatics
-
-chemical-language-model, molecular-conformation, 3d-molecular-generation, conformation-prediction, internal-coordinates, drug-discovery, dihedral-angle, pseudo-chirality, se3-invariance, virtual-screening, shape-conditioned-generation, molecular-representation
-
-### Large Language Models
-
-mixture-of-experts, sparse-moe, gating-network, top-k-routing, swiglu, decoder-only-transformer, large-language-model, efficient-inference, load-balancing, router-analysis, instruction-tuning, supervised-fine-tuning, direct-preference-optimization, multilingual-data, llm-benchmark, code-generation-benchmark, math-benchmark, commonsense-reasoning, long-context-modeling, bias-evaluation, mixtral-8x7b, mistral-7b, llama-2, gpt-3.5-turbo, autoformer
-
-### Neuroscience And Compression
-
-hippocampal-formation, ca3, ca1, sparse-coding, dense-coding, neural-coding, population-coding, place-cells, tetrode-recording, calcium-imaging, dimensionality-expansion, dentate-gyrus, knowledge-distillation, bert-compression, task-agnostic-compression, block-wise-training, progressive-shrinking, separable-convolution, supernet, model-compression
-
-### Datasets
-
-the-pile, passkey-retrieval, mt-bench, bbq-bias, bold-bias, humaneval, gsm8k, mbpp, mmlu, hellaswag, wmt14, wmt19, iwslt14, glu-e, squad, imagenet, cifar-10, cifar-100, dfc-2019, urbanscene3d, urbanbis, crossloc, mill-19, uavd4l, denseuav, uc-gs
-
-### Remote Sensing And 3D
-
-3d-gaussian-splatting, 3dgs, gaussian-primitives, satellite-imagery, remote-sensing, geospatial, digital-earth, digital-twins, 3d-scene-generation, generative-3d-earth, 3d-reconstruction, photogrammetry, urban-modeling, multi-lod, lod-hierarchy, level-of-detail, spatial-partitioning, multi-view-rendering, data-curation, vlm-quality-assessment, embodied-ai, uav-navigation, sim-to-real, closed-loop-simulation, web-mercator, enu-coordinates, ogc-3d-tiles, bhattacharyya-distance, reconstruction-based-generation, cross-view-fusion, satellite-conditioned-generation, tile-based-rendering, cdn-streaming, abot-earth, abot-3dgs, from-orbit-to-ground, clod-gs, yunjing
-
-Rule: every tag used in frontmatter must appear in this taxonomy.
-
-## Paper Analysis Page Structure
-
-Every full-text paper produces:
+Every full-text paper selected for deep review produces:
 
 ```text
+sources/papers/<slug>.md
 papers/<slug>-analysis.md
 papers/<slug>-method.md
 papers/<slug>-results.md
 papers/<slug>-critical.md
 ```
 
-The overview contains all 12 sections: engineering background, research gap, scientific question, research objective, method, results, contribution, core knowledge, Negative Knowledge, transferable knowledge, research opportunities and reproducibility.
+The overview contains 12 explicit sections:
 
-The method page includes architecture/data flow, equations, inputs/outputs, training or solution strategy, assumptions and failure boundaries.
+1. engineering background;
+2. research gap;
+3. scientific question;
+4. research objective;
+5. method and mechanism;
+6. result and evidence;
+7. contribution;
+8. core knowledge;
+9. Negative Knowledge;
+10. transferable knowledge;
+11. research opportunities;
+12. reproducibility.
 
-The results page includes numerical tables where supported, comparison conditions, per-example conclusions and result interpretation boundaries.
+The method page includes architecture/data flow, equations, inputs/outputs, training/solution strategy, assumptions and failure boundaries. The results page records numerical evidence only when supported, together with comparison conditions and interpretation limits. The critical page includes contribution, Negative Knowledge, do-not-copy cautions, transfer opportunities and an explicit paper-claim versus migration-inference distinction.
 
-The critical page includes contribution, core knowledge, Negative Knowledge, do-not-copy cautions, transferable knowledge, research opportunities and an explicit distinction between paper claims and cross-domain inference.
+Abstract-only pages are exempt from 1+3, but must carry `evidence_scope: abstract-only` and clearly identify what requires full-text verification.
+
+## Wikilinks
+
+- Use bare double-bracket wikilinks; do not wrap them in backticks.
+- Non-terminal knowledge pages have at least two outbound links.
+- Every link resolves to a maintained Markdown page or section index.
+- Prefer canonical pages over aliases or near-duplicates.
+- Raw paths and external URLs are provenance, not wikilinks.
+
+## Index And Navigation Contract
+
+- Register every maintained page in its section index.
+- `index.md` links every section index and high-priority knowledge chain.
+- Section indexes provide exhaustive finite reachability; curated prose may coexist with an auto-generated registry.
+- `mkdocs.yml` may remain curated because unlisted pages remain searchable and reachable through indexes.
+- Append every meaningful create, ingest, revise, verify, lint, migration or deployment repair to `log.md`.
+
+## CI/CD Contract
+
+GitHub Actions may checkout, lint, build, upload artifacts and deploy. It must not edit knowledge pages, create commits, push branches or self-delete workflows. Repository mutations happen before PR validation. Validation and deployment use read-only `contents` permission.
+
+## Historical Migration Policy
+
+The repository-wide migration preserves existing page bodies and legacy retrieval terms, normalizes frontmatter, creates canonical source notes, removes temporary citation controls, repairs links and indexes, and fills objectively incomplete 1+3 families. It does **not** silently fabricate missing source evidence. Pages whose provenance cannot be recovered remain `status: draft` with explicit verification tasks.
 
 ## Update Policy
 
-1. Check dates and source versions before revising claims.
-2. Record newer evidence without silently rewriting incompatible older evidence.
-3. Use `contradictions` and a `Conflict`/`Counterevidence` section when needed.
-4. Update section indexes, global dashboard and log after meaningful changes.
-5. Run strict lint and MkDocs build before merging to `main`.
+1. Check source version and date before revising claims.
+2. Preserve incompatible older evidence and record contradictions.
+3. Update affected source/subject pages, indexes and log together.
+4. Run repository-wide lint and MkDocs build before merging to `main`.
+5. Keep `raw/` immutable and workflows read-only.

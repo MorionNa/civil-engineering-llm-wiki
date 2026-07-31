@@ -1,12 +1,28 @@
 ---
-title: "HRNetV2 贡献·Negative·可迁移·研究机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--sun2019-hrnetv2-critical
+title: HRNetV2 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [semantic-segmentation, high-resolution-representation, multi-resolution-fusion, hrnet]
-sources: [raw/papers/arxiv_1904.04514.pdf]
-failure_modes: [hrnetv1-vs-v2-diminishing-return-large-model, no-explicit-context-module, imagenet-pretrain-dependent, bilinear-upsample-boundary, no-dense-prediction-beyond-tested-tasks]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- high-resolution-representation
+- hrnet
+- multi-resolution-fusion
+- semantic-segmentation
+sources:
+- sources/papers/sun2019-hrnetv2.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- hrnetv1-vs-v2-diminishing-return-large-model
+- no-explicit-context-module
+- imagenet-pretrain-dependent
+- bilinear-upsample-boundary
+- no-dense-prediction-beyond-tested-tasks
 ---
 
 # HRNetV2 贡献·Negative·可迁移·研究机会
@@ -96,3 +112,13 @@ confidence: high
 - [[zhao2017-pspnet-critical]] — PSPNet NK/TK
 - [[chen2018-deeplabv3plus-critical]] — DeepLabv3+ NK/TK
 - [[ronneberger2015-unet-critical]] — U-Net NK/TK
+
+## Evidence By Source
+
+### `sources/papers/sun2019-hrnetv2.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/arxiv_1904.04514.pdf`
+
+^[sources/papers/sun2019-hrnetv2.md]

@@ -1,10 +1,24 @@
 ---
-title: "Penwarden et al. (2024) — Kolmogorov n-width PIML 方法"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--penwarden2024-kolmogorov-n-width-piml-method
+title: Penwarden et al. (2024) — Kolmogorov n-width PIML 方法
 type: paper-analysis
-tags: [physics-informed, pinn, neural-operator, kolmogorov-n-width, operator-learning]
-sources: [raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- kolmogorov-n-width
+- neural-operator
+- operator-learning
+- physics-informed
+- pinn
+sources:
+- sources/papers/penwarden2024-kolmogorov-n-width-piml.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -92,3 +106,18 @@ Adam → L-BFGS
 - basis → 动力响应共享模态/图特征；
 - task coefficient → 结构参数与地震输入条件；
 - worst-case task → 极端结构-地震组合。
+
+## Evidence By Source
+
+### `sources/papers/penwarden2024-kolmogorov-n-width-piml.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md`
+
+^[sources/papers/penwarden2024-kolmogorov-n-width-piml.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

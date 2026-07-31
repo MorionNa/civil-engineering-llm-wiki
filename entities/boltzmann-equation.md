@@ -1,11 +1,30 @@
 ---
-title: "玻尔兹曼方程 (Boltzmann Equation)"
-created: 2026-07-28
-updated: 2026-07-28
+id: entities--boltzmann-equation
+title: 玻尔兹曼方程 (Boltzmann Equation)
 type: entity
-tags: [statistical-mechanics, kinetic-theory, entropy, irreversibility, boltzmann-equation, hard-sphere-dynamics, boltzmann-grad-limit]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- boltzmann-equation
+- boltzmann-grad-limit
+- domain/ai4s
+- domain/computational-mechanics
+- entity/model
+- entropy
+- hard-sphere-dynamics
+- irreversibility
+- kinetic-theory
+- method/pinn
+- statistical-mechanics
 sources:
-  - raw/transcripts/bv1ph3c6teqt/transcript.md
+- raw/transcripts/bv1ph3c6teqt/transcript.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -42,3 +61,12 @@ H[f]=\int f\log f\,dx\,dv
 - [[hilbert-sixth-problem]] — 玻尔兹曼方程在物理公理化和流体方程推导中的位置
 - [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] — 视频中的直观推导、反演悖论与长时间证明
 - [[pinn]] — 以 PDE 约束机器学习的计算范式
+
+## Evidence By Source
+
+### `raw/transcripts/bv1ph3c6teqt/transcript.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/transcripts/bv1ph3c6teqt/transcript.md]

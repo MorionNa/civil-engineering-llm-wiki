@@ -1,10 +1,22 @@
 ---
-title: "AVBD 贡献·局限·可迁移·机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--giles2025-avbd-critical
+title: AVBD 贡献·局限·可迁移·机会
 type: paper-analysis
-tags: [augmented-lagrangian, primal-method, hard-constraints, information-propagation-limit]
-sources: [raw/papers/giles2025-avbd.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- augmented-lagrangian
+- hard-constraints
+- information-propagation-limit
+- primal-method
+sources:
+- sources/papers/giles2025-avbd.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -112,3 +124,13 @@ AVBD 作为 local layer (preconditioner)，在高迭代后切换到 global conju
 - [[giles2025-avbd-results]] — 实验结果
 - [[notes/videos/avbd-siggraph2025]] — B站视频笔记
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式（PINN 对比视角）
+
+## Evidence By Source
+
+### `sources/papers/giles2025-avbd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/giles2025-avbd.md`
+
+^[sources/papers/giles2025-avbd.md]

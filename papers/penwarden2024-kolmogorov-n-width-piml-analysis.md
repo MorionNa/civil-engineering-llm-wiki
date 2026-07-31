@@ -1,24 +1,62 @@
 ---
-title: "Penwarden et al. (2024) — Kolmogorov n-width：多任务 PIML 的最坏情形泛化度量"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--penwarden2024-kolmogorov-n-width-piml-analysis
+title: Penwarden et al. (2024) — Kolmogorov n-width：多任务 PIML 的最坏情形泛化度量
 type: paper-analysis
-tags: [physics-informed, pinn, neural-operator, operator-learning, scientific-machine-learning, pde, cross-domain-generalization, architecture-selection, spectral-method, soft-constraint, adam-lbfgs]
-sources: [raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md]
-methods: [kolmogorov-n-width, inf-sup-inf-optimization, competitive-bi-optimization, tri-optimization-regularization, learned-basis-analysis, singular-value-spectrum]
-results: [worst-case-generalization-gap, regularization-improves-n-width, activation-function-spectral-bias, sampled-error-can-mislead]
-failure_modes: [selective-task-sampling, discrete-task-overfitting, nonconvex-minmax-instability, manufactured-solution-bias, reference-solver-dependence]
-datasets: [one-dimensional-poisson-family, two-dimensional-allen-cahn-family]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/graph-neural-network
+- method/neural-operator
+- method/pinn
+keywords:
+- adam-lbfgs
+- architecture-selection
+- cross-domain-generalization
+- neural-operator
+- operator-learning
+- pde
+- physics-informed
+- pinn
+- scientific-machine-learning
+- soft-constraint
+- spectral-method
+sources:
+- sources/papers/penwarden2024-kolmogorov-n-width-piml.md
+created: '2026-07-31'
+updated: '2026-07-31'
+confidence: high
+methods:
+- kolmogorov-n-width
+- inf-sup-inf-optimization
+- competitive-bi-optimization
+- tri-optimization-regularization
+- learned-basis-analysis
+- singular-value-spectrum
+results:
+- worst-case-generalization-gap
+- regularization-improves-n-width
+- activation-function-spectral-bias
+- sampled-error-can-mislead
+failure_modes:
+- selective-task-sampling
+- discrete-task-overfitting
+- nonconvex-minmax-instability
+- manufactured-solution-bias
+- reference-solver-dependence
+datasets:
+- one-dimensional-poisson-family
+- two-dimensional-allen-cahn-family
 reproducibility: high
 code_url:
-  - https://github.com/mpenwarden/Knw-PIML
-confidence: high
+- https://github.com/mpenwarden/Knw-PIML
 ---
 
 # Kolmogorov n-widths for multitask physics-informed machine learning methods
 
-> **作者：** Michael Penwarden, Houman Owhadi, Robert M. Kirby  
-> **期刊：** Neural Networks 180 (2024), 106703  
+> **作者：** Michael Penwarden, Houman Owhadi, Robert M. Kirby
+> **期刊：** Neural Networks 180 (2024), 106703
 > **一句话定位：** 本文不再只用离散测试任务的平均误差评价多任务 PIML，而是通过 Kolmogorov $n$-width 的数值近似，寻找整个有界任务族中最难逼近的任务，并把这一“最坏情形误差”进一步写入训练正则项。
 
 ## 1. 工程背景 (Engineering Background)
@@ -63,7 +101,7 @@ $$
 \tilde{\mathcal K}(\mathcal M,\mathcal A)
 =
 \inf_{W^1}\sup_{c}\inf_{W^2}
-\left\|u(x;c)-\tilde u(x;W^1,W^2)\right\|_{\mathcal M},
+\left|u(x;c)-\tilde u(x;W^1,W^2)\right|_{\mathcal M},
 \qquad c_i\in[a,b].
 $$
 
@@ -168,3 +206,13 @@ $$
 - [[pinn]]
 - [[deeponet]]
 - [[rathore2024-pinn-loss-landscape-analysis]]
+
+## Evidence By Source
+
+### `sources/papers/penwarden2024-kolmogorov-n-width-piml.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md`
+
+^[sources/papers/penwarden2024-kolmogorov-n-width-piml.md]

@@ -1,10 +1,23 @@
 ---
-title: "ABot-Earth 0.5 — 实验结果与证据"
-created: 2026-06-22
-updated: 2026-06-22
+id: papers--amapcvlab2026-abotearth-results
+title: ABot-Earth 0.5 — 实验结果与证据
 type: paper-analysis
-tags: [3d-gaussian-splatting, 3d-scene-generation, fid, kid, urban-modeling, digital-earth]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- 3d-scene-generation
+- digital-earth
+- fid
+- kid
+- urban-modeling
+sources:
+- sources/papers/amapcvlab2026-abotearth.md
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -60,7 +73,7 @@ confidence: high
 | 纹理保真度 | **3.79** (更高) | 3.30 |
 | 美学评分 | 3.15 | **3.91** (更高) |
 
-**分析**: 
+**分析**:
 - Google Earth 几何和纹理占优——预期结果（多年优化 + "Manhattan-world" 强先验 + 人工后处理）
 - ABot-Earth 美学占优——用户更看重光照和色彩和谐而非微观精度的整体感受
 - 作者类比：这相当于"手工建模 vs 第一代生成模型 (LRM/CLAY)" 的质量差距
@@ -115,3 +128,13 @@ confidence: high
 ## 关联页面
 - `[[amapcvlab2026-abotearth-analysis]]` — 论文总览
 - `[[amapcvlab2026-abotearth-critical]]` — 贡献+Negative+可迁移+研究机会
+
+## Evidence By Source
+
+### `sources/papers/amapcvlab2026-abotearth.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/amapcvlab2026-abotearth.pdf`
+
+^[sources/papers/amapcvlab2026-abotearth.md]

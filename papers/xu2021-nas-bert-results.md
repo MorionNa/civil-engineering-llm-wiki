@@ -1,10 +1,23 @@
 ---
-title: "NAS-BERT 实验结果：GLUE · SQuAD · Ablation · Multi-Size 验证"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--xu2021-nas-bert-results
+title: NAS-BERT 实验结果：GLUE · SQuAD · Ablation · Multi-Size 验证
 type: paper-analysis
-tags: [bert-compression, glu-e, squad, model-compression, neural-architecture-search]
-sources: [raw/papers/xu2021_nas_bert.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- bert-compression
+- glu-e
+- model-compression
+- neural-architecture-search
+- squad
+sources:
+- sources/papers/xu2021-nas-bert.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -155,3 +168,13 @@ NAS-BERT 可输出 5M–60M 以 5M 为间隔的 12 种架构，部分示例：
 - [[xu2021-nas-bert-analysis]] — 全维度总览
 - [[xu2021-nas-bert-method]] — 方法机制
 - [[xu2021-nas-bert-critical]] — 贡献·局限·可迁移·机会
+
+## Evidence By Source
+
+### `sources/papers/xu2021-nas-bert.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/xu2021_nas_bert.md`
+
+^[sources/papers/xu2021-nas-bert.md]

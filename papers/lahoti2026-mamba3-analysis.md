@@ -1,24 +1,66 @@
 ---
-title: "Lahoti et al. (2026) — Mamba-3：基于状态空间原理的高效序列建模"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--lahoti2026-mamba3-analysis
+title: Lahoti et al. (2026) — Mamba-3：基于状态空间原理的高效序列建模
 type: paper-analysis
-tags: [sequence-modeling, deep-learning, efficient-inference, long-context-modeling, large-language-model, gpu-computing, benchmark, synthetic-data, extrapolation-ability]
-sources: [raw/papers/lahoti2026-mamba3-source.md]
-methods: [exponential-trapezoidal-discretization, complex-valued-ssm, data-dependent-rope, mimo-ssm, state-space-duality, bc-normalization]
-results: [pareto-frontier-improvement, state-tracking-recovery, half-state-size-quality-match, low-latency-decode]
-failure_modes: [fixed-state-retrieval-bottleneck, mimo-training-overhead, prefill-overhead, hybrid-normalization-ambiguity, preprint-evidence]
-datasets: [fineweb-edu, lambada, hellaswag, piqa, arc, winogrande, openbookqa, ruler-niah]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+- method/transformer
+keywords:
+- benchmark
+- deep-learning
+- efficient-inference
+- extrapolation-ability
+- gpu-computing
+- large-language-model
+- long-context-modeling
+- sequence-modeling
+- synthetic-data
+sources:
+- sources/papers/lahoti2026-mamba3.md
+created: '2026-07-31'
+updated: '2026-07-31'
+confidence: high
+methods:
+- exponential-trapezoidal-discretization
+- complex-valued-ssm
+- data-dependent-rope
+- mimo-ssm
+- state-space-duality
+- bc-normalization
+results:
+- pareto-frontier-improvement
+- state-tracking-recovery
+- half-state-size-quality-match
+- low-latency-decode
+failure_modes:
+- fixed-state-retrieval-bottleneck
+- mimo-training-overhead
+- prefill-overhead
+- hybrid-normalization-ambiguity
+- preprint-evidence
+datasets:
+- fineweb-edu
+- lambada
+- hellaswag
+- piqa
+- arc
+- winogrande
+- openbookqa
+- ruler-niah
 reproducibility: high
 code_url:
-  - https://github.com/state-spaces/mamba
-confidence: high
+- https://github.com/state-spaces/mamba
 ---
 
 # Mamba-3: Improved Sequence Modeling using State Space Principles
 
-> **作者：** Aakash Lahoti, Kevin Y. Li, Berlin Chen, Caitlin Wang, Aviv Bick, J. Zico Kolter, Tri Dao, Albert Gu  
-> **版本：** arXiv:2603.15569v1，2026-03-16  
+> **作者：** Aakash Lahoti, Kevin Y. Li, Berlin Chen, Caitlin Wang, Aviv Bick, J. Zico Kolter, Tri Dao, Albert Gu
+> **版本：** arXiv:2603.15569v1，2026-03-16
 > **一句话定位：** Mamba-3 从连续状态空间模型出发，以更高阶的输入离散化、复值状态旋转和 MIMO 状态更新，同时提升线性序列模型的表达力、状态跟踪能力与解码硬件利用率。
 
 ## 1. 工程背景 (Engineering Background)
@@ -175,3 +217,13 @@ M x¨ + C x˙ + f_int = F 物理残差
 - [[sgno]]
 - [[node-onet]]
 - [[phylstm3]]
+
+## Evidence By Source
+
+### `sources/papers/lahoti2026-mamba3.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lahoti2026-mamba3-source.md`
+
+^[sources/papers/lahoti2026-mamba3.md]

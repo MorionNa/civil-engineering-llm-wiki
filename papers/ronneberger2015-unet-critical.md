@@ -1,10 +1,22 @@
 ---
-title: "U-Net 贡献·局限·可迁移·机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--ronneberger2015-unet-critical
+title: U-Net 贡献·局限·可迁移·机会
 type: paper-analysis
-tags: [semantic-segmentation, encoder-decoder, u-net, data-augmentation]
-sources: [raw/papers/ronneberger2015-unet.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computer-vision
+- evidence/paper
+keywords:
+- data-augmentation
+- encoder-decoder
+- semantic-segmentation
+- u-net
+sources:
+- sources/papers/ronneberger2015-unet.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -77,3 +89,13 @@ U-Net 的 4 次下采样是为了捕获大范围 context（如器官整体形状
 - [[ronneberger2015-unet-analysis]] — 全维度概述
 - [[ronneberger2015-unet-method]] — 方法机制
 - [[ronneberger2015-unet-results]] — 实验结果
+
+## Evidence By Source
+
+### `sources/papers/ronneberger2015-unet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/ronneberger2015-unet.md`, `raw/papers/10_1007_978-3-319-24574-4_28.pdf`
+
+^[sources/papers/ronneberger2015-unet.md]

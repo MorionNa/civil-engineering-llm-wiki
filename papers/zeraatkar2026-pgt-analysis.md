@@ -1,10 +1,24 @@
 ---
-title: "Physics-Guided Transformer (PGT)：面向 PINN 的物理感知注意力机制"
-created: 2026-07-22
-updated: 2026-07-22
+id: papers--zeraatkar2026-pgt-analysis
+title: Physics-Guided Transformer (PGT)：面向 PINN 的物理感知注意力机制
 type: paper-analysis
-tags: [physics-informed, pinn, transformer, physics-aware-attention, scientific-machine-learning]
-sources: [raw/papers/2603.27929v1.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- physics-aware-attention
+- physics-informed
+- pinn
+- scientific-machine-learning
+- transformer
+sources:
+- sources/papers/zeraatkar2026-pgt.md
+created: '2026-07-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -14,7 +28,7 @@ confidence: high
 
 物理信息神经网络（PINN）通过在损失函数中加入控制方程残差，使神经网络满足物理规律。然而，当观测数据稀疏、方程存在多尺度特征或优化问题复杂时，仅依靠 PDE residual 约束容易产生梯度不平衡、训练不稳定等问题。PGT 提出的核心思想是：**物理规律不应只作为损失函数中的外部约束，而应进入神经网络的信息传播过程。**
 
-论文针对由偏微分方程控制的连续物理场重构问题开展研究，验证对象包括一维热扩散方程和二维不可压缩 Navier–Stokes 方程。fileciteturn103file0L6-L18
+论文针对由偏微分方程控制的连续物理场重构问题开展研究，验证对象包括一维热扩散方程和二维不可压缩 Navier–Stokes 方程。
 
 ## 2. 科学问题
 
@@ -57,7 +71,7 @@ $$\Gamma_{ij}=logG(x_i-x_j,t_i-t_j;\theta_p)$$
 
 $$\Gamma=-\infty$$
 
-使其经过 softmax 后权重为 0。fileciteturn103file0L204-L213
+使其经过 softmax 后权重为 0。
 
 ### 4.2 热核物理偏置
 
@@ -71,7 +85,7 @@ $$\Gamma_{ij}=-\frac{||x_i-x_j||^2}{4\alpha\Delta t}-\frac d2log(4\pi\alpha\Delt
 - 扩散尺度；
 - 时间因果性。
 
-论文指出，不同类型 PDE 可以替换不同 Green 函数，例如波动方程使用有限传播速度约束。fileciteturn103file0L214-L235
+论文指出，不同类型 PDE 可以替换不同 Green 函数，例如波动方程使用有限传播速度约束。
 
 ## 5. 网络结构
 
@@ -81,7 +95,7 @@ PGT包括：
 2. query-coordinate cross attention；
 3. FiLM 调制 SIREN 隐式解码器。
 
-输入的稀疏观测首先转换为 context tokens，然后通过 physics-guided attention 建立物理一致的潜在表示，再查询任意时空位置得到连续场。fileciteturn103file0L160-L165
+输入的稀疏观测首先转换为 context tokens，然后通过 physics-guided attention 建立物理一致的潜在表示，再查询任意时空位置得到连续场。
 
 ## 6. 损失函数设计
 
@@ -103,7 +117,7 @@ $$L_{PDE}=||F(u_\theta)-f||^2$$
 
 $$L_{BC},L_{IC}$$
 
-不同于传统 PINN 手动设置权重，PGT通过可学习的不确定度参数自动调整各项权重。fileciteturn103file0L279-L281 fileciteturn103file0L336-L368
+不同于传统 PINN 手动设置权重，PGT通过可学习的不确定度参数自动调整各项权重。
 
 ## 7. 实验结果
 
@@ -112,14 +126,14 @@ $$L_{BC},L_{IC}$$
 100个观测点条件下：
 
 - Relative L2 error = $5.9\times10^{-3}$；
-- 相比 PINN 提升约38倍。fileciteturn103file0L21-L23
+- 相比 PINN 提升约38倍。
 
 ### Navier–Stokes
 
 1500个散点观测：
 
 - PDE residual = $8.3\times10^{-4}$；
-- Relative L2 error = 0.034。fileciteturn103file0L24-L29
+- Relative L2 error = 0.034。
 
 ## 8. 消融分析
 
@@ -127,7 +141,7 @@ $$L_{BC},L_{IC}$$
 
 - 去掉 physics-guided attention，重构精度明显下降；
 - 去掉 PDE loss，物理残差增加；
-- 二者不是替代关系，而是互补关系。fileciteturn103file0L570-L584
+- 二者不是替代关系，而是互补关系。
 
 ## 9. 对结构动力学研究的启示
 
@@ -184,3 +198,19 @@ $$\Gamma=f(M,K,C,\Phi,t)$$
 - [[pinn]]
 - [[cm-pinns]]
 - [[seisgpt]]
+
+## Paper Family Pages
+
+- [[zeraatkar2026-pgt-method]]
+- [[zeraatkar2026-pgt-results]]
+- [[zeraatkar2026-pgt-critical]]
+
+## Evidence By Source
+
+### `sources/papers/zeraatkar2026-pgt.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2603.27929v1.pdf`
+
+^[sources/papers/zeraatkar2026-pgt.md]

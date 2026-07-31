@@ -1,10 +1,28 @@
 ---
-title: "Hamiltonian Monte Carlo (HMC)"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--hamiltonian-monte-carlo
+title: Hamiltonian Monte Carlo (HMC)
 type: entity
-tags: [bayesian-inference, hamiltonian-monte-carlo, uncertainty-quantification, mcmc, physics-informed, pinn]
-sources: [raw/papers/10_1016_j_cma_2022_115346_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+keywords:
+- bayesian-inference
+- domain/ai4s
+- entity/model
+- hamiltonian-monte-carlo
+- mcmc
+- method/pinn
+- physics-informed
+- pinn
+- uncertainty-quantification
+sources:
+- raw/papers/10_1016_j_cma_2022_115346_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Hamiltonian Monte Carlo (HMC)
@@ -60,3 +78,12 @@ BPINN 使用 HMC 时的主要瓶颈：
 - [[bayesian-pinn]] — BPINN：HMC 的核心应用场景
 - [[linka2022-bayesian-pinn-analysis]] — 原始论文
 - [[linka2022-bayesian-pinn-critical]] — BPINN 的 HMC 计算成本讨论
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2022_115346_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2022_115346_extracted.txt]

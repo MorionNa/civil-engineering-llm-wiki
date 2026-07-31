@@ -1,10 +1,22 @@
 ---
-title: "ConfSeq 方法机制：内坐标序列化与 Transformer 统一架构"
-created: 2026-06-24
-updated: 2026-06-24
+id: papers--xiong2025-confseq-method
+title: ConfSeq 方法机制：内坐标序列化与 Transformer 统一架构
 type: paper-analysis
-tags: [chemical-language-model, molecular-conformation, sequence-modeling, internal-coordinates]
-sources: [raw/papers/10_1101_2025.05.07.652440.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/graph-neural-network
+- method/transformer
+keywords:
+- chemical-language-model
+- internal-coordinates
+- molecular-conformation
+- sequence-modeling
+sources:
+- sources/papers/xiong2025-confseq.md
+created: '2026-06-24'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -88,3 +100,17 @@ tokens: "{", "}"
 | 评分能力 | 内置 | 需额外模块 | 无 |
 | 架构兼容性 | 标准 Transformer | 专用 GNN/等变网络 | 标准模型但效果差 |
 | 数据增强 | 类似 SMILES 枚举 | 无等效方法 | 有限 |
+
+## Evidence By Source
+
+### `sources/papers/xiong2025-confseq.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1101_2025.05.07.652440.pdf`
+
+^[sources/papers/xiong2025-confseq.md]
+
+## Related Indexes
+
+- [[papers/index]]

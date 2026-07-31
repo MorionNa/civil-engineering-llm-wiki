@@ -1,17 +1,35 @@
 ---
-title: "Dai et al. (2024) — DeepSeekMoE 贡献+Negative+可迁移+机会"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--dai2024-deepseek-moe-critical
+title: Dai et al. (2024) — DeepSeekMoE 贡献+Negative+可迁移+机会
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, large-language-model, decoder-only-transformer, efficient-inference]
-sources: [raw/papers/dai2024_deepseek_moe.pdf]
-failure_modes: [limited-attention-parameters, knowledge-hybridity, knowledge-redundancy, mcq-limitations, non-sparse-attention]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- decoder-only-transformer
+- efficient-inference
+- large-language-model
+- mixture-of-experts
+- sparse-moe
+sources:
+- sources/papers/dai2024-deepseek-moe.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: high
+failure_modes:
+- limited-attention-parameters
+- knowledge-hybridity
+- knowledge-redundancy
+- mcq-limitations
+- non-sparse-attention
 reproducibility: high
 code_url:
-  - https://github.com/deepseek-ai/DeepSeek-MoE
+- https://github.com/deepseek-ai/DeepSeek-MoE
 dataset_url:
-  - https://github.com/deepseek-ai/DeepSeek-MoE
-confidence: high
+- https://github.com/deepseek-ai/DeepSeek-MoE
 ---
 
 # DeepSeekMoE 贡献 + Negative + 可迁移 + 研究机会
@@ -87,3 +105,13 @@ confidence: high
 - [[jiang2024-mixtral-of-experts-analysis]] — Mixtral（首个开源实用 MoE LLM）
 
 ← 实验结果：[[dai2024-deepseek-moe-results]]
+
+## Evidence By Source
+
+### `sources/papers/dai2024-deepseek-moe.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/dai2024_deepseek_moe.pdf`
+
+^[sources/papers/dai2024-deepseek-moe.md]

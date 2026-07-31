@@ -1,11 +1,27 @@
 ---
-title: "Serianni & Kalita (2023) — Critical Analysis: Training-free NAS for RNNs and Transformers"
-created: 2026-06-14
-updated: 2026-06-14
-type: paper-critical
-tags: [training-free-nas, rnn, transformer, limitation, research-opportunity, reproducibility]
-parent: [[serianni2023-training-free-nas-rnn-transformers-analysis]]
+id: papers--serianni2023-training-free-nas-rnn-transformers-critical
+title: 'Serianni & Kalita (2023) — Critical Analysis: Training-free NAS for RNNs and Transformers'
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- future-work
+- limitation
+- reproducibility
+- rnn
+- training-free-nas
+- transformer
+sources:
+- sources/papers/serianni2023-training-free-nas-rnn-transformers.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
+parent:
+- - serianni2023-training-free-nas-rnn-transformers-analysis
 ---
 
 # Critical Analysis: Training-free NAS for RNNs and Transformers
@@ -117,3 +133,13 @@ confidence: high
 - [[serianni2023-training-free-nas-rnn-transformers-results]] — 结果详情
 - [[entities/training-free-nas-transformers]] — 实体页
 - [[entities/nasbench201]] — NAS-Bench-201
+
+## Evidence By Source
+
+### `sources/papers/serianni2023-training-free-nas-rnn-transformers.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/training_free_nas2023.pdf`
+
+^[sources/papers/serianni2023-training-free-nas-rnn-transformers.md]

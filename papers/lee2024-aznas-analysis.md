@@ -1,19 +1,51 @@
 ---
-title: "Lee & Ham (2024) — AZ-NAS: Assembling Zero-Cost Proxies for NAS 论文分析"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--lee2024-aznas-analysis
+title: 'Lee & Ham (2024) — AZ-NAS: Assembling Zero-Cost Proxies for NAS 论文分析'
 type: paper-analysis
-tags: [training-free-nas, neural-architecture-search, zero-shot, nas-bench-201, weight-sharing-nas]
-methods: [pca-isotropy, jacobian-spectral-norm, non-linear-ranking-aggregation, evolutionary-search, zero-cost-proxy-ensemble]
-results: [nas-bench-201, mobilenetv2-imagenet, autoformer-vit, kendall-tau-0.741, imagenet-top1-81.1]
-failure_modes: [progressivity-fails-for-vit, single-proxy-insufficient, jacobian-approximation-linear, gaussian-input-only]
-datasets: [nas-bench-201, cifar-10, cifar-100, imagenet-16-120, imagenet, autoformer]
-sources: [raw/papers/aznas_lee2024.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- nas-bench-201
+- neural-architecture-search
+- training-free-nas
+- weight-sharing-nas
+- zero-shot
+sources:
+- sources/papers/lee2024-aznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: high
+methods:
+- pca-isotropy
+- jacobian-spectral-norm
+- non-linear-ranking-aggregation
+- evolutionary-search
+- zero-cost-proxy-ensemble
+results:
+- nas-bench-201
+- mobilenetv2-imagenet
+- autoformer-vit
+- kendall-tau-0.741
+- imagenet-top1-81.1
+failure_modes:
+- progressivity-fails-for-vit
+- single-proxy-insufficient
+- jacobian-approximation-linear
+- gaussian-input-only
+datasets:
+- nas-bench-201
+- cifar-10
+- cifar-100
+- imagenet-16-120
+- imagenet
+- autoformer
 reproducibility: high
 code_url:
-  - https://github.com/cvlab-yonsei/AZ-NAS
-dataset_url: []
-confidence: high
+- https://github.com/cvlab-yonsei/AZ-NAS
 ---
 
 # AZ-NAS: Assembling Zero-Cost Proxies for Network Architecture Search
@@ -134,3 +166,13 @@ confidence: high
 - [[eznas]] — EZNAS：遗传编程自动发现零成本代理
 - [[training-free-nas-transformers]] — 训练-free NAS 在 Transformer 上的探索
 - [[nasbench201]] — NAS-Bench-201 基准数据集
+
+## Evidence By Source
+
+### `sources/papers/lee2024-aznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/aznas_lee2024.pdf`
+
+^[sources/papers/lee2024-aznas.md]

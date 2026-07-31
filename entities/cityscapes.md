@@ -1,10 +1,24 @@
 ---
-title: "Cityscapes"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--cityscapes
+title: Cityscapes
 type: entity
-tags: [dataset, benchmark, semantic-segmentation, autonomous-driving]
+status: draft
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computer-vision
+- entity/dataset
+keywords:
+- autonomous-driving
+- benchmark
+- dataset
+- domain/civil-engineering
+- domain/computer-vision
+- entity/dataset
+- semantic-segmentation
 sources: []
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -38,3 +52,7 @@ Cordts et al. (CVPR 2016) 提出的城市场景理解基准数据集。包含 5,
 - [[chen2018-deeplabv3plus-analysis]] — DeepLabv3+ 论文分析
 - [[sun2019-hrnetv2-analysis]] — HRNetV2 论文分析
 - [[ade20k]] — ADE20K 场景解析 benchmark
+
+## Verification Needed
+
+- This historical page has no explicit source record. Recover and verify the original evidence before changing `status` from `draft`.

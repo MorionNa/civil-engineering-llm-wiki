@@ -1,18 +1,50 @@
 ---
-title: "Li & Wang (2025) — Bäcklund 变换约束双输出 PINN：方法机制"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--li2025-localized-waves-pinn-method
+title: Li & Wang (2025) — Bäcklund 变换约束双输出 PINN：方法机制
 type: paper-analysis
-tags: [neural-network, physics-informed, deep-learning, soft-constraint, collocation-strategy, nonlinear-systems, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1007_s11071-024-10359-7.pdf]
-methods: [backlund-transformation, multi-output-pinn, automatic-differentiation, latin-hypercube-sampling, lbfgs, xavier-initialization, adaptive-loss-weighting]
-results: [two-equation-simultaneous-solution, unsupervised-v-reconstruction]
-failure_modes: [irreversible-transformation, missing-weight-update-rule, soft-constraint-nonuniqueness, missing-code]
-datasets: [modified-kdv-one-soliton, modified-kdv-two-soliton, gaussian-initial-wave]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- collocation-strategy
+- deep-learning
+- neural-network
+- nonlinear-systems
+- physics-informed
+- physics-simulation
+- pinn
+- soft-constraint
+sources:
+- sources/papers/li2025-localized-waves-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- backlund-transformation
+- multi-output-pinn
+- automatic-differentiation
+- latin-hypercube-sampling
+- lbfgs
+- xavier-initialization
+- adaptive-loss-weighting
+results:
+- two-equation-simultaneous-solution
+- unsupervised-v-reconstruction
+failure_modes:
+- irreversible-transformation
+- missing-weight-update-rule
+- soft-constraint-nonuniqueness
+- missing-code
+datasets:
+- modified-kdv-one-soliton
+- modified-kdv-two-soliton
+- gaussian-initial-wave
+reproducibility: low
 ---
 
 # Li & Wang (2025) — 方法机制
@@ -101,3 +133,13 @@ $$u(x_{lb},t)=u_1(t),\quad u(x_{ub},t)=u_2(t),\quad u(x,t_0)=u_0(x).$$
 - [[li2025-localized-waves-pinn-critical]] — 逆变换、多解性与软约束风险
 - [[raissi2019-pinn-analysis]] — 经典算子非线性 PINN
 - [[pinn]] — PINN 实体页
+
+## Evidence By Source
+
+### `sources/papers/li2025-localized-waves-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s11071-024-10359-7.pdf`
+
+^[sources/papers/li2025-localized-waves-pinn.md]

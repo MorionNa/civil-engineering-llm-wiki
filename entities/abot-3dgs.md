@@ -1,10 +1,24 @@
 ---
-title: "ABot-3DGS"
-created: 2026-06-22
-updated: 2026-06-22
+id: entities--abot-3dgs
+title: ABot-3DGS
 type: entity
-tags: [3d-gaussian-splatting, 3d-reconstruction, photogrammetry, cross-view-fusion, abot-3dgs]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- entity/dataset
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- abot-3dgs
+- cross-view-fusion
+- domain/remote-sensing
+- entity/dataset
+- photogrammetry
+sources:
+- raw/papers/amapcvlab2026-abotearth.pdf
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -53,3 +67,12 @@ ABot-3DGS 提供高质量的真实世界 3DGS 重建作为 ground truth，ABot-E
 ## 关联页面
 - `[[entities/abot-earth]]` — ABot-Earth 生成系统
 - `[[amapcvlab2026-abotearth-method]]` — 数据管线详细展开
+
+## Evidence By Source
+
+### `raw/papers/amapcvlab2026-abotearth.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/amapcvlab2026-abotearth.pdf]

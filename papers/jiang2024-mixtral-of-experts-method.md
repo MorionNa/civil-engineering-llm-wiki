@@ -1,10 +1,25 @@
 ---
-title: "Mixtral 8x7B 方法机制展开"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--jiang2024-mixtral-of-experts-method
+title: Mixtral 8x7B 方法机制展开
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, gating-network, top-k-routing, swiglu, decoder-only-transformer, large-language-model]
-sources: [raw/papers/jiang2024_mixtral_of_experts.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- decoder-only-transformer
+- gating-network
+- large-language-model
+- mixture-of-experts
+- sparse-moe
+- swiglu
+- top-k-routing
+sources:
+- sources/papers/jiang2024-mixtral-of-experts.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -160,3 +175,13 @@ Token routing:
 - [[jiang2024-mixtral-of-experts-analysis]] — 全维度概述
 - [[jiang2024-mixtral-of-experts-results]] — 实验结果
 - [[jiang2024-mixtral-of-experts-critical]] — 贡献 + Negative + 可迁移
+
+## Evidence By Source
+
+### `sources/papers/jiang2024-mixtral-of-experts.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/jiang2024_mixtral_of_experts.md`
+
+^[sources/papers/jiang2024-mixtral-of-experts.md]

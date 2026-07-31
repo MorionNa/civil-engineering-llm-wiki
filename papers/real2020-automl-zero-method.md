@@ -1,12 +1,22 @@
 ---
-title: "Real et al. (2020) — 方法详解：AutoML-Zero 的三组件搜索空间与进化引擎"
-created: 2026-06-15
-updated: 2026-06-15
-type: paper-method
-tags: [evolutionary-search, genetic-programming, regularized-evolution, functional-equivalence-checking]
-sources: [raw/papers/automl_zero_real2020.pdf]
-reproducibility: high
+id: papers--real2020-automl-zero-method
+title: Real et al. (2020) — 方法详解：AutoML-Zero 的三组件搜索空间与进化引擎
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- evolutionary-search
+- functional-equivalence-checking
+- genetic-programming
+- regularized-evolution
+sources:
+- sources/papers/real2020-automl-zero.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
+reproducibility: high
 ---
 
 # AutoML-Zero 方法机制详解
@@ -182,3 +192,13 @@ AutoML-Zero 将每个机器学习算法表示为一个**包含三个组件函数
 - [[real2020-automl-zero-results]] — 实验结果详解
 - [[real2020-automl-zero-critical]] — 贡献 / 知识点 / Negative Knowledge
 - [[automl-zero]] — 实体页
+
+## Evidence By Source
+
+### `sources/papers/real2020-automl-zero.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/automl_zero_real2020.pdf`
+
+^[sources/papers/real2020-automl-zero.md]

@@ -1,10 +1,27 @@
 ---
-title: "Skyfall-GS 方法：卫星 3DGS 重建 + 课程式扩散 IDU"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--lee2026-skyfall-gs-method
+title: Skyfall-GS 方法：卫星 3DGS 重建 + 课程式扩散 IDU
 type: paper-analysis
-tags: [3d-gaussian-splatting, satellite-imagery, 3d-reconstruction, photogrammetry, multi-view-rendering, diffusion-models, satellite-conditioned-generation, reconstruction-based-generation]
-sources: [raw/papers/lee2026-skyfall-gs.pdf, raw/papers/lee2026-skyfall-gs-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computer-vision
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- diffusion-models
+- multi-view-rendering
+- photogrammetry
+- reconstruction-based-generation
+- satellite-conditioned-generation
+- satellite-imagery
+sources:
+- sources/papers/lee2026-skyfall-gs.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -40,7 +57,7 @@ $$
 
 $$
 \mathcal{L}_{color}=\lambda_{D-SSIM}\,DSSIM(\hat C,C)
-+(1-\lambda_{D-SSIM})\|\hat C-C\|_1.
++(1-\lambda_{D-SSIM})|\hat C-C|_1.
 $$
 
 ## 3. RPC 到透视相机近似
@@ -180,3 +197,13 @@ IDU 阶段关闭 opacity regularization，让半透明结构保留可变不透�
 - `[[lee2026-skyfall-gs-results]]` — 定量与消融
 - `[[lee2026-skyfall-gs-critical]]` — 失败边界与研究机会
 - `[[3d-gaussian-splatting]]` — 基础表示
+
+## Evidence By Source
+
+### `sources/papers/lee2026-skyfall-gs.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lee2026-skyfall-gs.pdf`, `raw/papers/lee2026-skyfall-gs-extracted.md`
+
+^[sources/papers/lee2026-skyfall-gs.md]

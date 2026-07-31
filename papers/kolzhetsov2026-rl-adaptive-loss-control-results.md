@@ -1,10 +1,23 @@
 ---
-title: "Kolzhetsov et al. (2026) — RL Adaptive Loss Control 结果"
-created: 2026-07-29
-updated: 2026-07-29
+id: papers--kolzhetsov2026-rl-adaptive-loss-control-results
+title: Kolzhetsov et al. (2026) — RL Adaptive Loss Control 结果
 type: paper-analysis
-tags: [physics-informed, pinn, reinforcement-learning, benchmark]
-sources: [raw/papers/kolzhetsov2026-accelerating-pinn-training-extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+- method/reinforcement-learning
+keywords:
+- benchmark
+- physics-informed
+- pinn
+- reinforcement-learning
+sources:
+- sources/papers/kolzhetsov2026-rl-adaptive-loss-control.md
+created: '2026-07-29'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -43,3 +56,13 @@ confidence: high
 
 - [[kolzhetsov2026-rl-adaptive-loss-control-analysis]]
 - [[kolzhetsov2026-rl-adaptive-loss-control-critical]]
+
+## Evidence By Source
+
+### `sources/papers/kolzhetsov2026-rl-adaptive-loss-control.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/kolzhetsov2026-accelerating-pinn-training-extracted.txt`
+
+^[sources/papers/kolzhetsov2026-rl-adaptive-loss-control.md]

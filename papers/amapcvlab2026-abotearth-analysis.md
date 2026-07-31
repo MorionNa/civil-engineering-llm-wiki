@@ -1,20 +1,73 @@
 ---
-title: "AMAP CV Lab (2026) — ABot-Earth 0.5: Generative 3D Earth Model 论文分析"
-created: 2026-06-22
-updated: 2026-06-22
+id: papers--amapcvlab2026-abotearth-analysis
+title: 'AMAP CV Lab (2026) — ABot-Earth 0.5: Generative 3D Earth Model 论文分析'
 type: paper-analysis
-tags: [3d-gaussian-splatting, satellite-imagery, remote-sensing, digital-earth, digital-twins, 3d-scene-generation, generative-3d-earth, urban-modeling, multi-lod, embodied-ai, uav-navigation, sim-to-real, satellite-conditioned-generation, reconstruction-based-generation]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
-methods: [3dgs, gaussian-primitives, compression-generation, multi-lod-decoding, bhattacharyya-distance, spatial-partitioning, multi-view-rendering, data-curation, vlm-quality-assessment, cross-view-fusion, tile-based-generation, georeferencing]
-results: [fid-16.1, kid-0.006, 320k-blocks, 3.2t-primitives, 300-cities, 190-countries, sub-10min-km2]
-failure_modes: [sim2real-gap-partial, aerial-only-coverage, no-street-level, distortion-high-latitudes, no-open-code]
-datasets: [dfc-2019, urbanscene3d, urbanbis, crossloc, mill-19, uavd4l, denseuav, uc-gs]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- 3d-scene-generation
+- digital-earth
+- digital-twins
+- embodied-ai
+- generative-3d-earth
+- multi-lod
+- reconstruction-based-generation
+- remote-sensing
+- satellite-conditioned-generation
+- satellite-imagery
+- sim-to-real
+- uav-navigation
+- urban-modeling
+sources:
+- sources/papers/amapcvlab2026-abotearth.md
+created: '2026-06-22'
+updated: '2026-07-31'
+confidence: high
+methods:
+- 3dgs
+- gaussian-primitives
+- compression-generation
+- multi-lod-decoding
+- bhattacharyya-distance
+- spatial-partitioning
+- multi-view-rendering
+- data-curation
+- vlm-quality-assessment
+- cross-view-fusion
+- tile-based-generation
+- georeferencing
+results:
+- fid-16.1
+- kid-0.006
+- 320k-blocks
+- 3.2t-primitives
+- 300-cities
+- 190-countries
+- sub-10min-km2
+failure_modes:
+- sim2real-gap-partial
+- aerial-only-coverage
+- no-street-level
+- distortion-high-latitudes
+- no-open-code
+datasets:
+- dfc-2019
+- urbanscene3d
+- urbanbis
+- crossloc
+- mill-19
+- uavd4l
+- denseuav
+- uc-gs
 reproducibility: low
 code_url:
-  - http://abot-earth.amap.com/
+- http://abot-earth.amap.com/
 dataset_url:
-  - http://abot-earth.amap.com/
-confidence: high
+- http://abot-earth.amap.com/
 ---
 
 # ABot-Earth 0.5: Generative 3D Earth Model
@@ -169,3 +222,13 @@ confidence: high
 - `[[amapcvlab2026-abotearth-method]]` — 方法展开
 - `[[amapcvlab2026-abotearth-results]]` — 结果展开
 - `[[amapcvlab2026-abotearth-critical]]` — 贡献+Negative+可迁移+研究机会
+
+## Evidence By Source
+
+### `sources/papers/amapcvlab2026-abotearth.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/amapcvlab2026-abotearth.pdf`
+
+^[sources/papers/amapcvlab2026-abotearth.md]

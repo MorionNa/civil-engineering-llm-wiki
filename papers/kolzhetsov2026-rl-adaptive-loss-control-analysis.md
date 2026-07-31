@@ -1,22 +1,61 @@
 ---
-title: "Kolzhetsov et al. (2026) — RL-Based Adaptive Loss Control：强化学习动态调节 PINN 损失权重"
-created: 2026-07-29
-updated: 2026-07-29
+id: papers--kolzhetsov2026-rl-adaptive-loss-control-analysis
+title: Kolzhetsov et al. (2026) — RL-Based Adaptive Loss Control：强化学习动态调节 PINN 损失权重
 type: paper-analysis
-tags: [physics-informed, pinn, scientific-machine-learning, pde, adaptive-weighting, physics-constrained-loss, physics-constraint-weight-tuning, ai4s]
-sources: [raw/papers/kolzhetsov2026-accelerating-pinn-training-extracted.txt]
-methods: [sequential-decision-making, reinforcement-learning, dqn, ddpg, multi-agent-ddpg, reward-shaping, dense-reward, dynamic-loss-weighting]
-results: [approximately-25-percent-epoch-reduction, solution-fidelity-preserved, heat-equation, nonlinear-schrodinger-equation, incompressible-navier-stokes]
-failure_modes: [baseline-trajectory-dependence, non-markov-state, rl-training-overhead, weight-positivity-unspecified, limited-benchmarks, no-code-release]
-datasets: [one-dimensional-heat-equation, nonlinear-schrodinger-equation, incompressible-navier-stokes]
-reproducibility: low
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+- method/reinforcement-learning
+keywords:
+- adaptive-weighting
+- ai4s
+- pde
+- physics-constrained-loss
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- scientific-machine-learning
+sources:
+- sources/papers/kolzhetsov2026-rl-adaptive-loss-control.md
+created: '2026-07-29'
+updated: '2026-07-31'
 confidence: high
+methods:
+- sequential-decision-making
+- reinforcement-learning
+- dqn
+- ddpg
+- multi-agent-ddpg
+- reward-shaping
+- dense-reward
+- dynamic-loss-weighting
+results:
+- approximately-25-percent-epoch-reduction
+- solution-fidelity-preserved
+- heat-equation
+- nonlinear-schrodinger-equation
+- incompressible-navier-stokes
+failure_modes:
+- baseline-trajectory-dependence
+- non-markov-state
+- rl-training-overhead
+- weight-positivity-unspecified
+- limited-benchmarks
+- no-code-release
+datasets:
+- one-dimensional-heat-equation
+- nonlinear-schrodinger-equation
+- incompressible-navier-stokes
+reproducibility: low
 ---
 
 # Accelerating PINN Training via RL-Based Adaptive Loss Control
 
-> **作者：** Vladislav Kolzhetsov, Andrei Zakharov, Ilya Makarov  
-> **会议：** ICLR 2026  
+> **作者：** Vladislav Kolzhetsov, Andrei Zakharov, Ilya Makarov
+> **会议：** ICLR 2026
 > **一句话定位：** 本文把 PINN 中 PDE、初始条件和边界条件损失的权重调节建模为连续序列决策问题，由强化学习策略按训练阶段动态修改权重，并在一维热传导方程上报告约 25% 的目标损失达成迭代数缩短。
 
 ## 1. 工程背景 (Engineering Background)
@@ -146,3 +185,13 @@ $$
 - [[kolzhetsov2026-rl-adaptive-loss-control-critical]]
 - [[song2025-rl-pinns-analysis]]
 - [[rathore2024-pinn-loss-landscape-analysis]]
+
+## Evidence By Source
+
+### `sources/papers/kolzhetsov2026-rl-adaptive-loss-control.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/kolzhetsov2026-accelerating-pinn-training-extracted.txt`
+
+^[sources/papers/kolzhetsov2026-rl-adaptive-loss-control.md]

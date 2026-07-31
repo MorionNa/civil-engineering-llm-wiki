@@ -1,13 +1,30 @@
 ---
-title: "PhyLSTM2 vs PhyLSTM3 vs LSTM — Performance Comparison"
-created: 2026-06-10
-updated: 2026-06-10
+id: comparisons--phylstm2-vs-phylstm3-vs-lstm
+title: PhyLSTM2 vs PhyLSTM3 vs LSTM — Performance Comparison
 type: comparison
-tags: [phylstm2, phylstm3, lstm, comparison, rate-independent, rate-dependent, architecture-selection, benchmark]
-sources: [raw/papers/zhang2020-phylstm.md]
-results: [cross-domain-generalization, extrapolation-ability]
-failure_modes: [architecture-mismatch-failure]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- method/evaluation
+keywords:
+- architecture-selection
+- benchmark
+- comparison
+- lstm
+- phylstm2
+- phylstm3
+- rate-dependent
+- rate-independent
+sources:
+- raw/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+results:
+- cross-domain-generalization
+- extrapolation-ability
+failure_modes:
+- architecture-mismatch-failure
 ---
 
 # PhyLSTM2 vs PhyLSTM3 vs LSTM — 性能对比
@@ -114,3 +131,12 @@ confidence: high
 - [[phylstm2]] — PhyLSTM2 架构
 - [[phylstm3]] — PhyLSTM3 架构
 - [[bouc-wen-model]] — Bouc-Wen 滞回模型
+
+## Evidence By Source
+
+### `raw/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/zhang2020-phylstm.md]

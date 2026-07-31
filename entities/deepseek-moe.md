@@ -1,10 +1,23 @@
 ---
-title: "DeepSeekMoE"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--deepseek-moe
+title: DeepSeekMoE
 type: entity
-tags: [mixture-of-experts, large-language-model, conditional-computation]
-sources: [raw/papers/dai2024_deepseek_moe.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/model
+keywords:
+- conditional-computation
+- domain/llm
+- entity/model
+- large-language-model
+- mixture-of-experts
+sources:
+- raw/papers/dai2024_deepseek_moe.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # DeepSeekMoE
@@ -32,3 +45,16 @@ DeepSeekMoE 是 DeepSeek 提出的细粒度 MoE 架构，通过专家分割（Ex
 
 ## 关联页面
 - [[dai2024-deepseek-moe-analysis]] — 完整论文分析
+
+## Evidence By Source
+
+### `raw/papers/dai2024_deepseek_moe.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/dai2024_deepseek_moe.pdf]
+
+## Related Indexes
+
+- [[entities/index]]

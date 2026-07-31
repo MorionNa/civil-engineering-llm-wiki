@@ -1,15 +1,36 @@
 ---
 id: paper-park2024-sevennet-parallel-gnn-ip-critical
-title: "Park et al. (2024) — SevenNet 批判、迁移与研究机会"
+title: Park et al. (2024) — SevenNet 批判、迁移与研究机会
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, distributed-training, gpu-computing, material-design, limitation, future-work]
-sources: [raw/papers/park2024-sevennet-parallel-gnn-ip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+keywords:
+- deep-learning
+- distributed-training
+- future-work
+- gpu-computing
+- limitation
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+sources:
+- sources/papers/park2024-sevennet-parallel-gnn-ip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-failure_modes: [communication-overhead, gpu-underutilization, load-imbalance, deep-network-communication-growth, pretrained-model-coverage]
+failure_modes:
+- communication-overhead
+- gpu-underutilization
+- load-imbalance
+- deep-network-communication-growth
+- pretrained-model-coverage
 reproducibility: high
 ---
 
@@ -119,3 +140,13 @@ SevenNet-0 覆盖 89 种元素，但元素出现不代表所有化学组合、�
 - [[allegro]]
 - [[pinn]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `sources/papers/park2024-sevennet-parallel-gnn-ip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/park2024-sevennet-parallel-gnn-ip-source.md`
+
+^[sources/papers/park2024-sevennet-parallel-gnn-ip.md]

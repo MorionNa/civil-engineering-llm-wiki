@@ -1,10 +1,24 @@
 ---
-title: "CLOD-GS"
-created: 2026-06-22
-updated: 2026-06-22
+id: entities--clod-gs
+title: CLOD-GS
 type: entity
-tags: [3d-gaussian-splatting, multi-lod, lod-hierarchy, bhattacharyya-distance, clod-gs]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- entity/model
+keywords:
+- 3d-gaussian-splatting
+- bhattacharyya-distance
+- clod-gs
+- domain/remote-sensing
+- entity/model
+- lod-hierarchy
+- multi-lod
+sources:
+- raw/papers/amapcvlab2026-abotearth.pdf
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -37,3 +51,12 @@ CLOD-GS 提供 3DGS 场景的连续 LOD 层级管理能力。ABot-Earth 0.5 依�
 ## 关联页面
 - `[[entities/abot-3dgs]]` — ABot-3DGS 重建引擎
 - `[[entities/3d-gaussian-splatting]]` — 3DGS 技术概述
+
+## Evidence By Source
+
+### `raw/papers/amapcvlab2026-abotearth.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/amapcvlab2026-abotearth.pdf]

@@ -1,10 +1,24 @@
 ---
-title: "Linka et al. (2022) — Bayesian PINNs: 方法机制展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--linka2022-bayesian-pinn-method
+title: 'Linka et al. (2022) — Bayesian PINNs: 方法机制展开'
 type: paper-analysis
-tags: [physics-informed, pinn, bayesian-inference, neural-network, hamiltonian-monte-carlo, self-adaptive-pinn]
-sources: [raw/papers/10_1016_j_cma_2022_115346_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- bayesian-inference
+- hamiltonian-monte-carlo
+- neural-network
+- physics-informed
+- pinn
+- self-adaptive-pinn
+sources:
+- sources/papers/linka2022-bayesian-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -43,7 +57,7 @@ Johns Hopkins University COVID-19 全球日新增确诊病例（2021 全年）�
 #### 1. NN（纯神经网络）
 - **输入：** 时间 t → 全连接前馈网络 → **输出：** 预测病例数 x(t)
 - **参数：** 网络权重 θ = {W_k, b_k}
-- **损失函数：** $L = L_{data} = \|x̂ - x(t)\|$
+- **损失函数：** $L = L_{data} = |x̂ - x(t)|$
 - **特点：** 无物理，无不确定量化，最简单
 
 #### 2. PINN（Physics Informed Neural Network）
@@ -53,7 +67,7 @@ Johns Hopkins University COVID-19 全球日新增确诊病例（2021 全年）�
 
 $$L = (1 - \varepsilon)L_{data} + \varepsilon L_{phys}$$
 
-$$L_{data} = \|\hat{x} - x(t)\|, \quad L_{phys} = \|r\|$$
+$$L_{data} = |\hat{x} - x(t)|, \quad L_{phys} = |r|$$
 
 其中物理残差 $r = \ddot{x} + c\dot{x} + k(x - x_0)$，通过自动微分从网络输出计算 $\dot{x}, \ddot{x}$。
 
@@ -123,3 +137,17 @@ $$P(Θ|x̂, r) ∝ P(x̂|Θ) · P(r|Θ) · P(Θ)$$
 - 物理参数后验均值 ± 标准差
 - 预测的 95% 可信区间（credible interval）
 - 外推性能（训练时间窗口外的预测能力）
+
+## Evidence By Source
+
+### `sources/papers/linka2022-bayesian-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_115346_extracted.txt`
+
+^[sources/papers/linka2022-bayesian-pinn.md]
+
+## Related Indexes
+
+- [[papers/index]]

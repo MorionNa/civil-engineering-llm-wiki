@@ -1,10 +1,21 @@
 ---
-title: "Lu et al. (2013) 倒塌模拟方法展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--lu2013-collapse-rc-highrise-method
+title: Lu et al. (2013) 倒塌模拟方法展开
 type: paper-analysis
-tags: [fiber-beam-element, multilayer-shell, elemental-deactivation, finite-element]
-sources: [raw/papers/lu2013-collapse-rc-highrise.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- evidence/paper
+keywords:
+- elemental-deactivation
+- fiber-beam-element
+- finite-element
+- multilayer-shell
+sources:
+- sources/papers/lu2013-collapse-rc-highrise.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -105,3 +116,13 @@ MSC.MARC 内置：所有单元定义为可变形接触体，每个增量步检�
 - [[lu2013-collapse-rc-highrise-analysis]] — 全维度概述
 - [[lu2013-collapse-rc-highrise-results]] — 倒塌过程结果
 - [[lu2013-collapse-rc-highrise-critical]] — 贡献 + Negative + 可迁移
+
+## Evidence By Source
+
+### `sources/papers/lu2013-collapse-rc-highrise.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lu2013-collapse-rc-highrise.md`, `raw/papers/10_1002_eqe_2240.pdf`
+
+^[sources/papers/lu2013-collapse-rc-highrise.md]

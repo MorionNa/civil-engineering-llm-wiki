@@ -1,20 +1,54 @@
 ---
-title: "Linka et al. (2022) — Bayesian PINNs for Nonlinear Dynamical Systems: 论文分析"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--linka2022-bayesian-pinn-analysis
+title: 'Linka et al. (2022) — Bayesian PINNs for Nonlinear Dynamical Systems: 论文分析'
 type: paper-analysis
-tags: [physics-informed, pinn, bayesian-inference, neural-network, nonlinear-dynamics, uncertainty-quantification, hamiltonian-monte-carlo, epidemiology, deep-learning, ai4s]
-sources: [raw/papers/10_1016_j_cma_2022_115346_extracted.txt]
-methods: [bayesian-pinn, self-adaptive-pinn, hamiltonian-monte-carlo, physics-constrained-loss, soft-constraint, collocation-strategy]
-results: [uncertainty-quantification, credible-intervals, forward-inverse-problem, extrapolation, small-data]
-failure_modes: [physics-constraint-weight-tuning, computational-cost, training-data-size-sensitivity]
-datasets: [jhu-covid19]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- bayesian-inference
+- deep-learning
+- epidemiology
+- hamiltonian-monte-carlo
+- neural-network
+- nonlinear-dynamics
+- physics-informed
+- pinn
+- uncertainty-quantification
+sources:
+- sources/papers/linka2022-bayesian-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
+confidence: high
+methods:
+- bayesian-pinn
+- self-adaptive-pinn
+- hamiltonian-monte-carlo
+- physics-constrained-loss
+- soft-constraint
+- collocation-strategy
+results:
+- uncertainty-quantification
+- credible-intervals
+- forward-inverse-problem
+- extrapolation
+- small-data
+failure_modes:
+- physics-constraint-weight-tuning
+- computational-cost
+- training-data-size-sensitivity
+datasets:
+- jhu-covid19
 reproducibility: high
 code_url:
-  - https://github.com/LivingMatterLab/xPINNs
+- https://github.com/LivingMatterLab/xPINNs
 dataset_url:
-  - https://coronavirus.jhu.edu
-confidence: high
+- https://coronavirus.jhu.edu
 ---
 
 # Bayesian Physics Informed Neural Networks for real-world nonlinear dynamical systems
@@ -143,3 +177,13 @@ Physics 参数反演：BI 恢复 c=1.111±0.126, k=402.4±1.7, x₀=0.541±0.002
 - [[pseudo-time-stepping]] — PINN 训练稳定性技术
 - [[wang2023-pinn-spurious-analysis]] — PINN 伪解问题：物理约束的另一类失败模式
 - [[zhang2020-phylstm-analysis]] — PhyLSTM：同类物理约束训练方法
+
+## Evidence By Source
+
+### `sources/papers/linka2022-bayesian-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_115346_extracted.txt`
+
+^[sources/papers/linka2022-bayesian-pinn.md]

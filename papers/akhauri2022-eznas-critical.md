@@ -1,11 +1,26 @@
 ---
-title: "EZNAS 批判性分析 — 贡献、局限、可迁移与未来方向"
-created: 2026-06-15
-updated: 2026-06-15
-type: paper-critical
-parent: akhauri2022-eznas-analysis
-tags: [training-free-nas, zero-cost-proxy, genetic-programming, evolutionary-search, critical-analysis]
+id: papers--akhauri2022-eznas-critical
+title: EZNAS 批判性分析 — 贡献、局限、可迁移与未来方向
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- evolutionary-search
+- genetic-programming
+- limitation
+- training-free-nas
+- zero-cost-proxy
+sources:
+- sources/papers/akhauri2022-eznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
+parent: akhauri2022-eznas-analysis
 ---
 
 # EZNAS 批判性分析
@@ -115,3 +130,13 @@ batch=1 时一个样本不足以描述架构（论文证实增大 batch 提升�
 - [[eznas]] — EZNAS 实体
 - [[te-nas]] — TE-NAS（手工设计的零成本代理先驱）
 - [[training-free-nas-transformers]] — 训练-free NAS 在 Transformer 上的拓展工作
+
+## Evidence By Source
+
+### `sources/papers/akhauri2022-eznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/eznas_akhauri2022.pdf`
+
+^[sources/papers/akhauri2022-eznas.md]

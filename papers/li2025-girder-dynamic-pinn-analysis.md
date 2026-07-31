@@ -1,20 +1,63 @@
 ---
-title: "Li et al. (2025) — 基于PINN的斜拉桥主梁动态线形重建：论文分析"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-girder-dynamic-pinn-analysis
+title: Li et al. (2025) — 基于PINN的斜拉桥主梁动态线形重建：论文分析
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, cable-stayed-bridge, dynamic-alignment, structural-health-monitoring, ai4s, neural-network, deep-learning, inverse-problem, fourier-embedding, causal-weight, deflection-reconstruction]
-sources: [raw/papers/10_1016_j_aei_2025_103581_extracted.txt]
-methods: [physics-informed, pinn, fourier-embedding, causal-weight, two-surrogate-model, cable-simplification, elastic-support, dimensionless-pde, spatial-causal-weight]
-results: [mgda-reconstruction, cable-stayed-bridge, deflection-reconstruction, random-load, vehicle-load, road-roughness, damage-state, measurement-noise, sensor-number]
-failure_modes: [physics-constraint-weight-tuning]
-datasets: [synthetic-data]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- cable-stayed-bridge
+- causal-weight
+- deep-learning
+- deflection-reconstruction
+- dynamic-alignment
+- fourier-embedding
+- inverse-problem
+- neural-network
+- physics-informed
+- pinn
+- structural-dynamics
+- structural-health-monitoring
+sources:
+- sources/papers/li2025-girder-dynamic-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
+confidence: high
+methods:
+- physics-informed
+- pinn
+- fourier-embedding
+- causal-weight
+- two-surrogate-model
+- cable-simplification
+- elastic-support
+- dimensionless-pde
+- spatial-causal-weight
+results:
+- mgda-reconstruction
+- cable-stayed-bridge
+- deflection-reconstruction
+- random-load
+- vehicle-load
+- road-roughness
+- damage-state
+- measurement-noise
+- sensor-number
+failure_modes:
+- physics-constraint-weight-tuning
+datasets:
+- synthetic-data
 reproducibility: medium
 code_url:
-  - 未公开
+- 未公开
 dataset_url:
-  - 合成数据（数值模拟生成）
-confidence: high
+- 合成数据（数值模拟生成）
 ---
 
 # 基于PINN的斜拉桥主梁动态线形重建
@@ -145,3 +188,13 @@ confidence: high
 - [[li2025-girder-dynamic-pinn-critical]] — 贡献 / Negative / 可迁移 / 研究机会
 - [[li2025-movingload-pinn-analysis]] — 同一第一作者的移动荷载 PINN 工作（互补参照）
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S PINN 入门讲座
+
+## Evidence By Source
+
+### `sources/papers/li2025-girder-dynamic-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103581_extracted.txt`
+
+^[sources/papers/li2025-girder-dynamic-pinn.md]

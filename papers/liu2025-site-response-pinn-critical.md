@@ -1,18 +1,56 @@
 ---
-title: "Liu et al. (2025) — 场地反应 PINN：贡献、局限与研究机会"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--liu2025-site-response-pinn-critical
+title: Liu et al. (2025) — 场地反应 PINN：贡献、局限与研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, seismic-response, equation-of-motion, ground-motion, physics-constraint-weight-tuning, neural-tangent-kernel, limitation, future-work, transfer-learning, cross-domain-generalization, ai4s]
-sources: [raw/papers/10_1016_j_compgeo_2025_107137.xml, raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt]
-methods: [fourier-feature-embedding, nondimensionalization, hyperparameter-search, relation-to-numerical-integration]
-results: [linear-site-response-validation, multi-layer-validation, wide-ground-motion-range]
-failure_modes: [finite-collocation-nonuniqueness, per-scenario-retraining, no-speed-benchmark, linear-soil-only, sigma-sensitivity, missing-code, no-experimental-validation]
-datasets: [NGA-West2-ground-motion-records, synthetic-layered-soil-profiles]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- cross-domain-generalization
+- equation-of-motion
+- future-work
+- ground-motion
+- limitation
+- neural-tangent-kernel
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- seismic-response
+- structural-dynamics
+- transfer-learning
+sources:
+- sources/papers/liu2025-site-response-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- fourier-feature-embedding
+- nondimensionalization
+- hyperparameter-search
+- relation-to-numerical-integration
+results:
+- linear-site-response-validation
+- multi-layer-validation
+- wide-ground-motion-range
+failure_modes:
+- finite-collocation-nonuniqueness
+- per-scenario-retraining
+- no-speed-benchmark
+- linear-soil-only
+- sigma-sensitivity
+- missing-code
+- no-experimental-validation
+datasets:
+- NGA-West2-ground-motion-records
+- synthetic-layered-soil-profiles
+reproducibility: low
 ---
 
 # Liu et al. (2025) — 批判分析
@@ -83,3 +121,13 @@ confidence: high
 - [[seismic-site-response-pinn]] — 方法实体与适用边界
 - [[pinn]] — PINN 基础实体
 - [[neural-tangent-kernel]] — 谱偏置理论背景
+
+## Evidence By Source
+
+### `sources/papers/liu2025-site-response-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_compgeo_2025_107137.xml`, `raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt`
+
+^[sources/papers/liu2025-site-response-pinn.md]

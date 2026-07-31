@@ -1,9 +1,25 @@
 ---
-title: "Jagtap et al. (2019) 自适应激活函数 — 贡献·Negative·可迁移"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--jagtap2019-adaptive-activation-critical
+title: Jagtap et al. (2019) 自适应激活函数 — 贡献·Negative·可迁移
 type: paper-analysis
-tags: [physics-informed, pinn, adaptive-activation, convergence-acceleration, limitation, future-work]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- adaptive-activation
+- convergence-acceleration
+- future-work
+- limitation
+- physics-informed
+- pinn
+sources:
+- sources/papers/jagtap2019-adaptive-activation.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -43,18 +59,18 @@ confidence: high
 
 | 知识 | 迁移到 | 做法 |
 |------|--------|------|
-| 自适应激活 | [[chen2025-at-pinn-hc-method\|AT-PINN-HC]] | 硬约束 + 自适应激活 = 双重加速 |
+| 自适应激活 | [[chen2025-at-pinn-hc-method|AT-PINN-HC]] | 硬约束 + 自适应激活 = 双重加速 |
 | 局部 `a_i` 多尺度 | 多尺度 PDE（湍流） | 高频区自动获得大 `a` |
 | 斜率恢复项 | 任何可训练激活参数 | 防止参数退化 |
 | 与 NTK 退火互补 | [[wang2021-pinn-ntk-failure-analysis]] | 激活侧 + 学习率侧 = 最优 |
 
 ## 11. 研究机会（5 项）
 
-| # | 方向 | 难度 | 
+| # | 方向 | 难度 |
 |---|------|:---:|
-| 1 | 自适应激活 + [[neural-tangent-kernel\|NTK]] 联合理论分析 | 🔴 |
+| 1 | 自适应激活 + [[neural-tangent-kernel|NTK]] 联合理论分析 | 🔴 |
 | 2 | 基函数扩展 (sigmoid/swish/sin) 的自适应版本 | 🟢 |
-| 3 | 自适应激活 + [[deeponet\|DeepONet]] 算子网络 | 🟡 |
+| 3 | 自适应激活 + [[deeponet|DeepONet]] 算子网络 | 🟡 |
 | 4 | 动态 n 值（可学习的 n 而非固定） | 🟢 |
 | 5 | 局部 a_i 可视化 → 揭示 PDE 多尺度结构 | 🟡 |
 
@@ -63,3 +79,13 @@ confidence: high
 - [[jagtap2019-adaptive-activation-analysis|← 总览]]
 - [[jagtap2019-adaptive-activation-method|← 方法]]
 - [[jagtap2019-adaptive-activation-results|← 结果]]
+
+## Evidence By Source
+
+### `sources/papers/jagtap2019-adaptive-activation.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2019_109136.xml`
+
+^[sources/papers/jagtap2019-adaptive-activation.md]

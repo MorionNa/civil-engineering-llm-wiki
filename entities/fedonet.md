@@ -1,10 +1,29 @@
 ---
-title: "FEDONet — Fourier-Embedded DeepONet (傅里叶嵌入深度算子网络)"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--fedonet
+title: FEDONet — Fourier-Embedded DeepONet (傅里叶嵌入深度算子网络)
 type: entity
-tags: [fedonet, deeponet, fourier-features, neural-operator, operator-learning, spectral-accuracy, ai4s, pde-surrogate]
-sources: [raw/papers/10_1016_j_jcp_2026_114931_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/neural-operator
+keywords:
+- ai4s
+- deeponet
+- domain/ai4s
+- entity/model
+- fedonet
+- fourier-features
+- method/neural-operator
+- neural-operator
+- operator-learning
+- pde-surrogate
+- spectral-accuracy
+sources:
+- raw/papers/10_1016_j_jcp_2026_114931_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -103,3 +122,12 @@ $$f(y) \approx \sum_{k=1}^{m} \left[a_k \cos(2\pi B_k \cdot y) + b_k \sin(2\pi B
 - Random Fourier Features 原始论文：Rahimi & Recht (2007) NIPS
 - Fourier Features 在深度学习中的推广：Tancik et al. (2020) NeurIPS
 - DeepONet 基础：Lu et al. (2021) Nature Machine Intelligence
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_jcp_2026_114931_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_jcp_2026_114931_extracted.txt]

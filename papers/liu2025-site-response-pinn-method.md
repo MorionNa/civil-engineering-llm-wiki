@@ -1,18 +1,58 @@
 ---
-title: "Liu et al. (2025) — 地震场地反应 PINN：方法机制"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--liu2025-site-response-pinn-method
+title: Liu et al. (2025) — 地震场地反应 PINN：方法机制
 type: paper-analysis
-tags: [neural-network, physics-informed, deep-learning, soft-constraint, collocation-strategy, structural-dynamics, seismic-response, equation-of-motion, ground-motion, physics-constraint-weight-tuning, neural-tangent-kernel, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1016_j_compgeo_2025_107137.xml, raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt]
-methods: [lumped-mass-formulation, fourier-feature-embedding, nondimensionalization, tree-structured-parzen-estimator, batch-normalization, tanh, adam, learning-rate-scheduling, automatic-differentiation]
-results: [spectral-bias-mitigation, stable-linear-site-response-solution]
-failure_modes: [finite-collocation-nonuniqueness, sigma-sensitivity, gradient-imbalance, relu-second-derivative-zero, per-scenario-retraining]
-datasets: [NGA-West2-ground-motion-records, synthetic-layered-soil-profiles]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- collocation-strategy
+- deep-learning
+- equation-of-motion
+- ground-motion
+- neural-network
+- neural-tangent-kernel
+- physics-constraint-weight-tuning
+- physics-informed
+- physics-simulation
+- pinn
+- seismic-response
+- soft-constraint
+- structural-dynamics
+sources:
+- sources/papers/liu2025-site-response-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- lumped-mass-formulation
+- fourier-feature-embedding
+- nondimensionalization
+- tree-structured-parzen-estimator
+- batch-normalization
+- tanh
+- adam
+- learning-rate-scheduling
+- automatic-differentiation
+results:
+- spectral-bias-mitigation
+- stable-linear-site-response-solution
+failure_modes:
+- finite-collocation-nonuniqueness
+- sigma-sensitivity
+- gradient-imbalance
+- relu-second-derivative-zero
+- per-scenario-retraining
+datasets:
+- NGA-West2-ground-motion-records
+- synthetic-layered-soil-profiles
+reproducibility: low
 ---
 
 # Liu et al. (2025) — 方法机制
@@ -35,9 +75,9 @@ $$\mathbf u(0)=\mathbf 0,\qquad \dot{\mathbf u}(0)=\mathbf 0.$$
 
 $$\mathcal L(\Theta)=\lambda\mathcal L_{ic}+\mathcal L_r,$$
 
-$$\mathcal L_{ic}=\|\mathbf N(0;\Theta)\|^2+\|\dot{\mathbf N}(0;\Theta)\|^2,$$
+$$\mathcal L_{ic}=|\mathbf N(0;\Theta)|^2+|\dot{\mathbf N}(0;\Theta)|^2,$$
 
-$$\mathcal L_r=\frac1{N_t}\sum_i\|\mathbf M\ddot{\mathbf N}(t_i)+\mathbf C\dot{\mathbf N}(t_i)+\mathbf K\mathbf N(t_i)+\mathbf M\mathbf I\ddot u_g(t_i)\|_2^2.$$
+$$\mathcal L_r=\frac1{N_t}\sum_i|\mathbf M\ddot{\mathbf N}(t_i)+\mathbf C\dot{\mathbf N}(t_i)+\mathbf K\mathbf N(t_i)+\mathbf M\mathbf I\ddot u_g(t_i)|_2^2.$$
 
 多自由度残差使用欧氏范数。有限时间点上的软约束是 [[pinn]] 训练信号，但不等同于在整个连续域严格满足方程。
 
@@ -98,3 +138,13 @@ t ─► Fourier embedding(m, σ) ─► 3×全连接层 ─► BatchNorm + tanh
 - [[liu2025-site-response-pinn-critical]] — 有限配点与逐场景重训风险
 - [[neural-tangent-kernel]] — 谱偏置解释
 - [[pinn]] — 经典 PINN 方法
+
+## Evidence By Source
+
+### `sources/papers/liu2025-site-response-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_compgeo_2025_107137.xml`, `raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt`
+
+^[sources/papers/liu2025-site-response-pinn.md]

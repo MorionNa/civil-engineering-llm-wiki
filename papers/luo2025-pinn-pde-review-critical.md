@@ -1,20 +1,44 @@
 ---
-title: "Luo et al. (2025) PINN-PDE 综述批判：覆盖边界、时效性与复现价值"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--luo2025-pinn-pde-review-critical
+title: Luo et al. (2025) PINN-PDE 综述批判：覆盖边界、时效性与复现价值
 type: paper-analysis
-tags: [physics-informed, pinn, review, limitation, future-work, comparison, cross-domain-generalization, architecture-selection]
-sources: [raw/papers/10_1007_s10462-025-11322-7.pdf]
-methods: [critical-appraisal, evidence-boundary-analysis, reproducibility-audit]
-results: [review-contribution, coverage-boundary, research-opportunities]
-failure_modes: [no-systematic-search-protocol, heterogeneous-evidence, unclear-coverage-cutoff, no-reproducible-review-corpus, overgeneralization-risk]
-datasets: []
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- architecture-selection
+- comparison
+- cross-domain-generalization
+- future-work
+- limitation
+- physics-informed
+- pinn
+- review
+sources:
+- sources/papers/luo2025-pinn-pde-review.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- critical-appraisal
+- evidence-boundary-analysis
+- reproducibility-audit
+results:
+- review-contribution
+- coverage-boundary
+- research-opportunities
+failure_modes:
+- no-systematic-search-protocol
+- heterogeneous-evidence
+- unclear-coverage-cutoff
+- no-reproducible-review-corpus
+- overgeneralization-risk
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # 批判分析：这篇综述能告诉我们什么，不能告诉我们什么
@@ -118,3 +142,13 @@ contradictions: []
 - [[luo2025-pinn-pde-review-analysis|← 概述]]
 - [[luo2025-pinn-pde-review-method|← 分类方法]]
 - [[luo2025-pinn-pde-review-results|← 结果证据]]
+
+## Evidence By Source
+
+### `sources/papers/luo2025-pinn-pde-review.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s10462-025-11322-7.pdf`
+
+^[sources/papers/luo2025-pinn-pde-review.md]

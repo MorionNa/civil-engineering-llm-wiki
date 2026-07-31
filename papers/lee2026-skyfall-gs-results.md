@@ -1,10 +1,25 @@
 ---
-title: "Skyfall-GS 结果：感知质量、几何消融、用户研究与多块扩展"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--lee2026-skyfall-gs-results
+title: Skyfall-GS 结果：感知质量、几何消融、用户研究与多块扩展
 type: paper-analysis
-tags: [3d-gaussian-splatting, satellite-imagery, 3d-reconstruction, 3d-scene-generation, urban-modeling, multi-view-rendering, embodied-ai]
-sources: [raw/papers/lee2026-skyfall-gs.pdf, raw/papers/lee2026-skyfall-gs-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- 3d-scene-generation
+- embodied-ai
+- multi-view-rendering
+- satellite-imagery
+- urban-modeling
+sources:
+- sources/papers/lee2026-skyfall-gs.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -172,3 +187,13 @@ Skyfall-GS 的强项不是像素级复原，而是把低空视角从“不可浏
 - `[[lee2026-skyfall-gs-method]]`
 - `[[lee2026-skyfall-gs-critical]]`
 - `[[skyfall-gs-vs-abot-earth]]`
+
+## Evidence By Source
+
+### `sources/papers/lee2026-skyfall-gs.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lee2026-skyfall-gs.pdf`, `raw/papers/lee2026-skyfall-gs-extracted.md`
+
+^[sources/papers/lee2026-skyfall-gs.md]

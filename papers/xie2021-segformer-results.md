@@ -1,13 +1,34 @@
 ---
-title: "SegFormer 实验结果展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--xie2021-segformer-results
+title: SegFormer 实验结果展开
 type: paper-analysis
-tags: [semantic-segmentation, vision-transformer, sota]
-sources: [raw/papers/segformer.pdf]
-results: [ade20k-51.8, cityscapes-84.0, cityscapes-83.1-test, coco-stuff-46.7, zero-shot-robustness]
-datasets: [ade20k, cityscapes, coco-stuff, cityscapes-c, mapillary-vistas]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+- method/transformer
+keywords:
+- benchmark
+- semantic-segmentation
+- vision-transformer
+sources:
+- sources/papers/xie2021-segformer.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+results:
+- ade20k-51.8
+- cityscapes-84.0
+- cityscapes-83.1-test
+- coco-stuff-46.7
+- zero-shot-robustness
+datasets:
+- ade20k
+- cityscapes
+- coco-stuff
+- cityscapes-c
+- mapillary-vistas
 ---
 
 # SegFormer 实验结果
@@ -134,3 +155,13 @@ CNN+MLP decoder 完全失败。Transformer 必须用所有 stage。
 - [[xie2021-segformer-analysis]] — 总览
 - [[chen2018-deeplabv3plus-results]] — DeepLabv3+ 结果对比
 - [[sun2019-hrnetv2-results]] — HRNet 结果对比
+
+## Evidence By Source
+
+### `sources/papers/xie2021-segformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/segformer.pdf`
+
+^[sources/papers/xie2021-segformer.md]

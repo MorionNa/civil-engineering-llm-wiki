@@ -1,15 +1,32 @@
 ---
 id: paper-batzner2022-nequip-method
-title: "Batzner et al. (2022) — NequIP 方法机制"
+title: Batzner et al. (2022) — NequIP 方法机制
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, se3-equivariance, material-design]
-sources: [raw/papers/batzner2022-nequip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+keywords:
+- deep-learning
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/batzner2022-nequip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-methods: [e3-equivariance, tensor-field-network, spherical-harmonics, radial-network, clebsch-gordan-tensor-product, energy-conserving-force-field]
+methods:
+- e3-equivariance
+- tensor-field-network
+- spherical-harmonics
+- radial-network
+- clebsch-gordan-tensor-product
+- energy-conserving-force-field
 reproducibility: high
 ---
 
@@ -110,7 +127,7 @@ ResNet-style 残差更新
 
 $$
 \mathcal L
-=\lambda_E\|\hat E-E\|_2^2
+=\lambda_E|\hat E-E|_2^2
 +\lambda_F\frac{1}{3N}
 \sum_{i=1}^{N}\sum_{\alpha=1}^{3}
 \left|-
@@ -145,3 +162,13 @@ $$
 - [[nequip]]
 - [[allegro]]
 - [[sevennet]]
+
+## Evidence By Source
+
+### `sources/papers/batzner2022-nequip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/batzner2022-nequip-source.md`
+
+^[sources/papers/batzner2022-nequip.md]

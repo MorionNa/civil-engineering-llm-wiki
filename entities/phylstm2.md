@@ -1,10 +1,30 @@
 ---
-title: "PhyLSTM2"
-created: 2026-06-10
-updated: 2026-06-13
+id: entities--phylstm2
+title: PhyLSTM2
 type: entity
-tags: [phylstm2, lstm, structural-dynamics, hysteresis]
-sources: [raw/papers/zhang2020-phylstm.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/tool
+- method/pinn
+keywords:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/tool
+- hysteresis
+- lstm
+- method/pinn
+- phylstm2
+- structural-dynamics
+sources:
+- raw/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # PhyLSTM2 — Physics-informed Double-LSTM Network
@@ -85,3 +105,12 @@ PhyLSTM2 的总损失由数据项和三个物理约束项组成：
 - [[phylstm3]] — 三 LSTM 架构（率相关滞回）
 - [[phylstm2-vs-phylstm3-vs-lstm]] — 性能对比
 - [[bouc-wen-model]] — Bouc-Wen 滞回模型
+
+## Evidence By Source
+
+### `raw/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/zhang2020-phylstm.md]

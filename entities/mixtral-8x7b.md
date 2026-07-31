@@ -1,10 +1,22 @@
 ---
-title: "Mixtral 8x7B"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--mixtral-8x7b
+title: Mixtral 8x7B
 type: entity
-tags: [mixture-of-experts, large-language-model]
-sources: [raw/papers/jiang2024_mixtral_of_experts.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/model
+keywords:
+- domain/llm
+- entity/model
+- large-language-model
+- mixture-of-experts
+sources:
+- raw/papers/jiang2024_mixtral_of_experts.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Mixtral 8x7B
@@ -34,3 +46,16 @@ Mixtral 8x7B 是 Mistral AI 发布的稀疏 MoE 大语言模型，包含 8 个�
 
 ## 关联页面
 - [[jiang2024-mixtral-of-experts-analysis]] — 完整论文分析
+
+## Evidence By Source
+
+### `raw/papers/jiang2024_mixtral_of_experts.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/jiang2024_mixtral_of_experts.pdf]
+
+## Related Indexes
+
+- [[entities/index]]

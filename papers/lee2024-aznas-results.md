@@ -1,10 +1,21 @@
 ---
-title: "Lee & Ham (2024) — AZ-NAS: 结果证据详解"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--lee2024-aznas-results
+title: 'Lee & Ham (2024) — AZ-NAS: 结果证据详解'
 type: paper-analysis
-tags: [training-free-nas, neural-architecture-search, zero-shot]
-sources: [raw/papers/aznas_lee2024.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- neural-architecture-search
+- training-free-nas
+- zero-shot
+sources:
+- sources/papers/lee2024-aznas.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -204,3 +215,13 @@ AZ-NAS 选出的架构在三个数据集上均达到了最高精度，且标准�
 - [[lee2024-aznas-critical]] — 贡献 / 失败知识 / 研究机会
 - [[az-nas]] — 实体页面
 - [[nasbench201]] — NAS-Bench-201 基准数据集
+
+## Evidence By Source
+
+### `sources/papers/lee2024-aznas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/aznas_lee2024.pdf`
+
+^[sources/papers/lee2024-aznas.md]

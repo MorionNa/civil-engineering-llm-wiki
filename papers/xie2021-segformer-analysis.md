@@ -1,24 +1,60 @@
 ---
-title: "Xie et al. (2021) — SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers: 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--xie2021-segformer-analysis
+title: 'Xie et al. (2021) — SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers: 论文分析'
 type: paper-analysis
-tags: [semantic-segmentation, vision-transformer, hierarchical-transformer, mlp-decoder, mix-ffn, efficient-self-attention, positional-encoding-free]
-sources: [raw/papers/segformer.pdf]
-methods: [mit-encoder, mix-ffn, mlp-decoder, efficient-self-attention, hierarchical-transformer, overlap-patch-merging]
-results: [ade20k-51.8, cityscapes-84.0, coco-stuff-46.7, sota, zero-shot-robustness, cityscapes-c]
-failure_modes: [mlp-decoder-cnn-incompatible, edge-device-unknown, imagenet-1k-only, no-decoder-refinement]
-datasets: [ade20k, cityscapes, coco-stuff, cityscapes-c, mapillary-vistas]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+- method/transformer
+keywords:
+- efficient-self-attention
+- hierarchical-transformer
+- mix-ffn
+- mlp-decoder
+- positional-encoding-free
+- semantic-segmentation
+- vision-transformer
+sources:
+- sources/papers/xie2021-segformer.md
+created: '2026-06-11'
+updated: '2026-07-31'
+confidence: high
+methods:
+- mit-encoder
+- mix-ffn
+- mlp-decoder
+- efficient-self-attention
+- hierarchical-transformer
+- overlap-patch-merging
+results:
+- ade20k-51.8
+- cityscapes-84.0
+- coco-stuff-46.7
+- sota
+- zero-shot-robustness
+- cityscapes-c
+failure_modes:
+- mlp-decoder-cnn-incompatible
+- edge-device-unknown
+- imagenet-1k-only
+- no-decoder-refinement
+datasets:
+- ade20k
+- cityscapes
+- coco-stuff
+- cityscapes-c
+- mapillary-vistas
 reproducibility: high
 code_url:
-  - https://github.com/NVIDIA/SegFormer
-  - https://huggingface.co/docs/transformers/model_doc/segformer
+- https://github.com/NVIDIA/SegFormer
+- https://huggingface.co/docs/transformers/model_doc/segformer
 dataset_url:
-  - https://groups.csail.mit.edu/vision/datasets/ADE20K/
-  - https://www.cityscapes-dataset.com/
-  - https://github.com/nightrome/cocostuff
-  - https://www.mapillary.com/dataset/vistas
-confidence: high
+- https://groups.csail.mit.edu/vision/datasets/ADE20K/
+- https://www.cityscapes-dataset.com/
+- https://github.com/nightrome/cocostuff
+- https://www.mapillary.com/dataset/vistas
 ---
 
 # SegFormer
@@ -143,3 +179,13 @@ ERF 分析：SegFormer Stage-4 天然具有非局部注意力（CNN 需要 ASPP 
 - [[chen2018-deeplabv3plus-analysis]] — CNN 时代最佳精度，SegFormer 全面超越
 - [[sun2019-hrnetv2-analysis]] — HRNet 的全分辨率保持 vs SegFormer 的 Transformer 大 ERF
 - [[zhao2017-pspnet-analysis]] — PSPNet 的 ERF 限制 → SegFormer 的天然大 ERF 不需要 PPM
+
+## Evidence By Source
+
+### `sources/papers/xie2021-segformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/segformer.pdf`
+
+^[sources/papers/xie2021-segformer.md]

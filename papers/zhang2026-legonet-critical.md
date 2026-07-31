@@ -1,10 +1,19 @@
 ---
-title: "LegONet 贡献与局限"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--zhang2026-legonet-critical
+title: LegONet 贡献与局限
 type: paper-analysis
-tags: [structure-preserving, limitation, future-work]
-sources: [raw/papers/2603.07882v1.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- future-work
+- limitation
+- structure-preserving
+sources:
+- sources/papers/zhang2026-legonet.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -35,3 +44,13 @@ confidence: high
 
 - [[zhang2026-legonet-analysis]]
 - [[legonet]]
+
+## Evidence By Source
+
+### `sources/papers/zhang2026-legonet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2603.07882v1.pdf`
+
+^[sources/papers/zhang2026-legonet.md]

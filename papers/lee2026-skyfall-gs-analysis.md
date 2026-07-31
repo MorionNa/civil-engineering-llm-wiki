@@ -1,28 +1,67 @@
 ---
-title: "Lee et al. (2026) — Skyfall-GS：从卫星影像合成可自由飞行的沉浸式 3D 城市"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--lee2026-skyfall-gs-analysis
+title: Lee et al. (2026) — Skyfall-GS：从卫星影像合成可自由飞行的沉浸式 3D 城市
 type: paper-analysis
-tags: [3d-gaussian-splatting, 3dgs, satellite-imagery, remote-sensing, 3d-scene-generation, 3d-reconstruction, photogrammetry, urban-modeling, multi-view-rendering, diffusion-models, satellite-conditioned-generation, reconstruction-based-generation, embodied-ai, uav-navigation]
-sources: [raw/papers/lee2026-skyfall-gs.pdf, raw/papers/lee2026-skyfall-gs-extracted.md]
-methods: [appearance-conditioned-3dgs, opacity-entropy-regularization, pseudo-camera-depth-supervision, curriculum-idu, flowedit, multi-sample-diffusion]
-results: [fidclip, cmmd, user-study, real-time-rendering, multi-block-scalability]
-failure_modes: [off-nadir-dependence, diffusion-hallucination, per-scene-optimization, heuristic-camera-blind-spots, city-scale-memory]
-datasets: [dfc-2019, googleearth]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- 3d-scene-generation
+- 3dgs
+- diffusion-models
+- embodied-ai
+- multi-view-rendering
+- photogrammetry
+- reconstruction-based-generation
+- remote-sensing
+- satellite-conditioned-generation
+- satellite-imagery
+- uav-navigation
+- urban-modeling
+sources:
+- sources/papers/lee2026-skyfall-gs.md
+created: '2026-07-16'
+updated: '2026-07-31'
+confidence: high
+methods:
+- appearance-conditioned-3dgs
+- opacity-entropy-regularization
+- pseudo-camera-depth-supervision
+- curriculum-idu
+- flowedit
+- multi-sample-diffusion
+results:
+- fidclip
+- cmmd
+- user-study
+- real-time-rendering
+- multi-block-scalability
+failure_modes:
+- off-nadir-dependence
+- diffusion-hallucination
+- per-scene-optimization
+- heuristic-camera-blind-spots
+- city-scale-memory
+datasets:
+- dfc-2019
+- googleearth
 reproducibility: high
 code_url:
-  - https://github.com/jayin92/Skyfall-GS
+- https://github.com/jayin92/Skyfall-GS
 dataset_url:
-  - https://huggingface.co/datasets/jayinnn/Skyfall-GS-datasets
-  - https://huggingface.co/datasets/jayinnn/Skyfall-GS-eval
-  - https://huggingface.co/jayinnn/Skyfall-GS-ply
-confidence: high
+- https://huggingface.co/datasets/jayinnn/Skyfall-GS-datasets
+- https://huggingface.co/datasets/jayinnn/Skyfall-GS-eval
+- https://huggingface.co/jayinnn/Skyfall-GS-ply
 ---
 
 # Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite Imagery
 
-> **作者：** Jie-Ying Lee, Yi-Ruei Liu, Shr-Ruei Tsai, Wei-Cheng Chang, Chung-Ho Wu, Jiewen Chan, Zhenjun Zhao, Chieh Hubert Lin, Yu-Lun Liu  
-> **发表状态：** ECCV 2026；arXiv:2510.15869（首次公开于 2025-10-17）  
+> **作者：** Jie-Ying Lee, Yi-Ruei Liu, Shr-Ruei Tsai, Wei-Cheng Chang, Chung-Ho Wu, Jiewen Chan, Zhenjun Zhao, Chieh Hubert Lin, Yu-Lun Liu
+> **发表状态：** ECCV 2026；arXiv:2510.15869（首次公开于 2025-10-17）
 > **一句话定位：** 先用多视角、多时相倾斜卫星影像重建“可信但粗糙”的 3DGS，再用开放域扩散模型按“高空→低空”的课程式视角逐轮修复渲染结果，使被遮挡立面逐步写回同一个可实时浏览的 3D 场景。
 
 ## 1. 工程背景 (Engineering Background)
@@ -139,3 +178,13 @@ Skyfall-GS 采用两阶段管线：
 - `[[3d-gaussian-splatting]]` — 基础 3D 表示
 - `[[amapcvlab2026-abotearth-analysis]]` — 同属卫星条件 3D 城市生成，但扩展尺度与范式不同
 - `[[skyfall-gs-vs-abot-earth]]` — 两种路线的并排比较
+
+## Evidence By Source
+
+### `sources/papers/lee2026-skyfall-gs.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lee2026-skyfall-gs.pdf`, `raw/papers/lee2026-skyfall-gs-extracted.md`
+
+^[sources/papers/lee2026-skyfall-gs.md]

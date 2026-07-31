@@ -1,24 +1,61 @@
 ---
-title: "Rathore et al. (2024) — PINN 训练挑战：损失景观、病态性与二阶优化"
-created: 2026-07-29
-updated: 2026-07-29
+id: papers--rathore2024-pinn-loss-landscape-analysis
+title: Rathore et al. (2024) — PINN 训练挑战：损失景观、病态性与二阶优化
 type: paper-analysis
-tags: [physics-informed, pinn, loss-landscape, hessian-spectrum, ill-conditioning, quasi-newton, second-order-optimization, adam-lbfgs, newton-cg, nystrom-preconditioning, hessian-vector-product, scientific-machine-learning]
-sources: [raw/papers/rathore24a.pdf]
-methods: [hessian-spectral-density, lbfgs-preconditioning, adam-lbfgs, nysnewton-cg, gradient-damped-newton-descent]
-results: [near-zero-loss-required, 1000x-conditioning-improvement, adam-lbfgs-superiority, nncg-post-training-improvement]
-failure_modes: [trivial-low-loss-solution, lbfgs-early-termination, second-order-cost, local-theory, benchmark-scope]
-datasets: [convection-pde, reaction-ode, wave-pde]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- hessian-spectrum
+- hessian-vector-product
+- ill-conditioning
+- loss-landscape
+- newton-cg
+- nystrom-preconditioning
+- physics-informed
+- pinn
+- quasi-newton
+- scientific-machine-learning
+- second-order-optimization
+sources:
+- sources/papers/rathore2024-pinn-loss-landscape.md
+created: '2026-07-29'
+updated: '2026-07-31'
+confidence: high
+methods:
+- hessian-spectral-density
+- lbfgs-preconditioning
+- adam-lbfgs
+- nysnewton-cg
+- gradient-damped-newton-descent
+results:
+- near-zero-loss-required
+- 1000x-conditioning-improvement
+- adam-lbfgs-superiority
+- nncg-post-training-improvement
+failure_modes:
+- trivial-low-loss-solution
+- lbfgs-early-termination
+- second-order-cost
+- local-theory
+- benchmark-scope
+datasets:
+- convection-pde
+- reaction-ode
+- wave-pde
 reproducibility: high
 code_url:
-  - https://github.com/pratikrathore8/opt_for_pinns
-confidence: high
+- https://github.com/pratikrathore8/opt_for_pinns
 ---
 
 # Challenges in Training PINNs: A Loss Landscape Perspective
 
-> **作者：** Pratik Rathore, Weimu Lei, Zachary Frangella, Lu Lu, Madeleine Udell  
-> **会议：** ICML 2024，PMLR 235  
+> **作者：** Pratik Rathore, Weimu Lei, Zachary Frangella, Lu Lu, Madeleine Udell
+> **会议：** ICML 2024，PMLR 235
 > **一句话定位：** 本文从 Hessian 谱和优化病态性解释 PINN 为什么难以训练，证明微分算子的病态会传递到 PINN 损失，并提出实用的三级优化流程：Adam 负责全局探索，L-BFGS 改善局部条件数，NysNewton-CG 在 L-BFGS 停滞后继续做高精度后训练。
 
 ## 1. 工程背景 (Engineering Background)
@@ -155,3 +192,13 @@ $$
 - [[wang2021-pinn-ntk-failure-analysis]]
 - [[optimizer-for-ai4s-and-physics-models]]
 - [[song2025-rl-pinns-analysis]]
+
+## Evidence By Source
+
+### `sources/papers/rathore2024-pinn-loss-landscape.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/rathore24a.pdf`
+
+^[sources/papers/rathore2024-pinn-loss-landscape.md]

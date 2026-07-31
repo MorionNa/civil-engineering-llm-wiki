@@ -1,27 +1,61 @@
 ---
 id: paper-park2024-sevennet-parallel-gnn-ip-analysis
-title: "Park et al. (2024) — SevenNet：可扩展并行图神经网络原子势"
+title: Park et al. (2024) — SevenNet：可扩展并行图神经网络原子势
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, distributed-training, gpu-computing, cross-domain-generalization]
-sources: [raw/papers/park2024-sevennet-parallel-gnn-ip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+keywords:
+- ai4s
+- cross-domain-generalization
+- deep-learning
+- distributed-training
+- gpu-computing
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+sources:
+- sources/papers/park2024-sevennet-parallel-gnn-ip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-methods: [spatial-decomposition, ghost-atoms, layerwise-forward-communication, reverse-gradient-communication, nequip-backbone, lammps-integration]
-results: [weak-scaling, parallel-efficiency, large-scale-md, sevennet-zero-potential]
-failure_modes: [gpu-underutilization, communication-overhead, load-imbalance, multi-node-accuracy-cost]
-datasets: [materials-project, m3gnet-dataset, amorphous-silica, amorphous-silicon-nitride]
+methods:
+- spatial-decomposition
+- ghost-atoms
+- layerwise-forward-communication
+- reverse-gradient-communication
+- nequip-backbone
+- lammps-integration
+results:
+- weak-scaling
+- parallel-efficiency
+- large-scale-md
+- sevennet-zero-potential
+failure_modes:
+- gpu-underutilization
+- communication-overhead
+- load-imbalance
+- multi-node-accuracy-cost
+datasets:
+- materials-project
+- m3gnet-dataset
+- amorphous-silica
+- amorphous-silicon-nitride
 reproducibility: high
 code_url:
-  - https://github.com/MDIL-SNU/SevenNet
+- https://github.com/MDIL-SNU/SevenNet
 ---
 
 # Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations
 
-> **作者：** Yutack Park, Jaesun Kim, Seungwoo Hwang, Seungwu Han  
-> **版本：** arXiv:2402.03789v1 (2024)  
+> **作者：** Yutack Park, Jaesun Kim, Seungwoo Hwang, Seungwu Han
+> **版本：** arXiv:2402.03789v1 (2024)
 > **一句话定位：** SevenNet 为 NequIP 类多层等变 GNN 原子势设计空间分解并行算法，通过逐层正向节点特征通信和反向梯度通信，在不扩大一次通信 cutoff 的前提下保持分布式结果与单域模型一致。
 
 ## 1. 工程背景 (Engineering Background)
@@ -166,3 +200,13 @@ reverse communication：反向交换特征梯度
 - [[allegro]]
 - [[pinn]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `sources/papers/park2024-sevennet-parallel-gnn-ip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/park2024-sevennet-parallel-gnn-ip-source.md`
+
+^[sources/papers/park2024-sevennet-parallel-gnn-ip.md]

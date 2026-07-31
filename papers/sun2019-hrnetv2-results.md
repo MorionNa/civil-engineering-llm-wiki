@@ -1,13 +1,38 @@
 ---
-title: "HRNetV2 实验结果展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--sun2019-hrnetv2-results
+title: HRNetV2 实验结果展开
 type: paper-analysis
-tags: [semantic-segmentation, high-resolution-representation, hrnet, sota]
-sources: [raw/papers/arxiv_1904.04514.pdf]
-results: [cityscapes-81.6, pascal-context-54.0, lip-sota, aflw-sota, 300w-sota, coco-detection]
-datasets: [cityscapes, pascal-context, lip, aflw, cofw, 300w, wflw, coco]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- benchmark
+- high-resolution-representation
+- hrnet
+- semantic-segmentation
+sources:
+- sources/papers/sun2019-hrnetv2.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+results:
+- cityscapes-81.6
+- pascal-context-54.0
+- lip-sota
+- aflw-sota
+- 300w-sota
+- coco-detection
+datasets:
+- cityscapes
+- pascal-context
+- lip
+- aflw
+- cofw
+- 300w
+- wflw
+- coco
 ---
 
 # HRNetV2 实验结果
@@ -127,3 +152,13 @@ HRNetV2-W18 在 WFLW 上同样最佳（论文 Table 11）。
 - [[sun2019-hrnetv2-analysis]] — 总览
 - [[zhao2017-pspnet-results]] — Cityscapes 对比
 - [[chen2018-deeplabv3plus-results]] — Cityscapes/VOC 对比
+
+## Evidence By Source
+
+### `sources/papers/sun2019-hrnetv2.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/arxiv_1904.04514.pdf`
+
+^[sources/papers/sun2019-hrnetv2.md]

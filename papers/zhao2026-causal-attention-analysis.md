@@ -1,18 +1,51 @@
 ---
-title: "Casual Attention: 自适应因果性时空加权 PINN 训练 — 论文分析"
-created: 2026-06-28
-updated: 2026-06-28
+id: papers--zhao2026-causal-attention-analysis
+title: 'Casual Attention: 自适应因果性时空加权 PINN 训练 — 论文分析'
 type: paper-analysis
-tags: [physics-informed, temporal-causality, adaptive-weighting, time-dependent-pde, collocation-strategy]
-sources: [raw/papers/10_1016_j_jcp_2026_115071_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- collocation-strategy
+- physics-informed
+- temporal-causality
+- time-dependent-pde
+sources:
+- sources/papers/zhao2026-causal-attention.md
+created: '2026-06-28'
+updated: '2026-07-31'
 confidence: high
-methods: [causal-attention-weighting, modified-mlp, fourier-feature-embedding, time-marching, resampling, adam-optimizer]
-results: [allen-cahn-1d-2d-3d, korteweg-de-vries-1d, kuramoto-sivashinsky-1d, burgers-1d-suboptimal]
-failure_modes: [initial-boundary-incompatibility, excessive-fourier-features, chaotic-sensitivity, curse-of-dimensionality-3d, tanh-vanishing-gradient]
-datasets: [allen-cahn, korteweg-de-vries, kuramoto-sivashinsky, burgers]
+methods:
+- causal-attention-weighting
+- modified-mlp
+- fourier-feature-embedding
+- time-marching
+- resampling
+- adam-optimizer
+results:
+- allen-cahn-1d-2d-3d
+- korteweg-de-vries-1d
+- kuramoto-sivashinsky-1d
+- burgers-1d-suboptimal
+failure_modes:
+- initial-boundary-incompatibility
+- excessive-fourier-features
+- chaotic-sensitivity
+- curse-of-dimensionality-3d
+- tanh-vanishing-gradient
+datasets:
+- allen-cahn
+- korteweg-de-vries
+- kuramoto-sivashinsky
+- burgers
 reproducibility: 🟢 high
 code_url: https://github.com/Chenrui-Z/Causal-Attention/
 ---
+
 # Casual Attention: 自适应因果性时空加权 PINN — 论文分析
 
 ## 基本信息
@@ -119,3 +152,13 @@ code_url: https://github.com/Chenrui-Z/Causal-Attention/
 - 🟢 **High** — 代码公开在 [GitHub](https://github.com/Chenrui-Z/Causal-Attention/)，PyTorch 实现，所有超参在 Appendix A 详细列出（7 张表），随机种子固定用于消融实验。
 - 仅使用 Adam 优化器（无 L-BFGS），FP32 单精度，NVIDIA RTX 6000 Ada GPU。
 - 高维参考解用 Julia Fourier 谱方法 + IMEX 生成并公开提供。
+
+## Evidence By Source
+
+### `sources/papers/zhao2026-causal-attention.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2026_115071_extracted.txt`
+
+^[sources/papers/zhao2026-causal-attention.md]

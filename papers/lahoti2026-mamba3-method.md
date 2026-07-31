@@ -1,3 +1,20 @@
+---
+id: papers--lahoti2026-mamba3-method
+title: Mamba-3 方法：状态空间原理驱动的三项改进
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- evidence/paper
+- method/graph-neural-network
+sources:
+- sources/papers/lahoti2026-mamba3.md
+created: '2026-07-31'
+updated: '2026-07-31'
+confidence: medium
+---
+
 # Mamba-3 方法：状态空间原理驱动的三项改进
 
 ## 1. Exponential-Trapezoidal Discretization
@@ -53,3 +70,18 @@ physics residual
           ↓
 large-scale structural solver
 ```
+
+## Evidence By Source
+
+### `sources/papers/lahoti2026-mamba3.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lahoti2026-mamba3-source.md`
+
+^[sources/papers/lahoti2026-mamba3.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

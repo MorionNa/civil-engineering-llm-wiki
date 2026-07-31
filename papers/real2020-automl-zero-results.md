@@ -1,12 +1,23 @@
 ---
-title: "Real et al. (2020) — 实验结果详解：进化发现的算法与技术涌现"
-created: 2026-06-15
-updated: 2026-06-15
-type: paper-results
-tags: [evolutionary-search, cifar-10, algorithm-discovery, backpropagation, emergent-techniques]
-sources: [raw/papers/automl_zero_real2020.pdf]
-reproducibility: high
+id: papers--real2020-automl-zero-results
+title: Real et al. (2020) — 实验结果详解：进化发现的算法与技术涌现
+type: paper-analysis
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- algorithm-discovery
+- backpropagation
+- cifar-10
+- emergent-techniques
+- evolutionary-search
+sources:
+- sources/papers/real2020-automl-zero.md
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
+reproducibility: high
 ---
 
 # AutoML-Zero 实验结果详解
@@ -141,7 +152,7 @@ Figure 6 展示了进化过程中的关键 stepping-stone 发现：
 以 Figure 5 的神经网络算法为初始化种群，在三种不同条件的任务上继续进化：
 
 - **小样本**：80 个训练样本/100 epochs
-- **快速训练**：800 个样本/10 epochs  
+- **快速训练**：800 个样本/10 epochs
 - **多分类**：CIFAR-10 全部 10 类
 
 每种条件运行 30 次独立实验 + 30 次对照实验。
@@ -223,3 +234,13 @@ Figure 8 展示了搜索方法各组件的消融效果：
 - [[real2020-automl-zero-method]] — 方法机制详解
 - [[real2020-automl-zero-critical]] — 贡献 / 知识点 / Negative Knowledge
 - [[automl-zero]] — 实体页
+
+## Evidence By Source
+
+### `sources/papers/real2020-automl-zero.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/automl_zero_real2020.pdf`
+
+^[sources/papers/real2020-automl-zero.md]

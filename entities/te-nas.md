@@ -1,10 +1,23 @@
 ---
-title: "TE-NAS"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--te-nas
+title: TE-NAS
 type: entity
-tags: [training-free-nas, neural-tangent-kernel, nas-bench-201]
-sources: [raw/papers/TE-NAS_chen2021_ICLR.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/model
+- method/neural-architecture-search
+keywords:
+- entity/model
+- method/neural-architecture-search
+- nas-bench-201
+- neural-tangent-kernel
+- training-free-nas
+sources:
+- raw/papers/TE-NAS_chen2021_ICLR.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # TE-NAS
@@ -33,3 +46,16 @@ TE-NAS 是一种免训练的神经架构搜索方法，通过 NTK 条件数（Tr
 
 ## 关联页面
 - [[chen2021-tenas-analysis]] — 完整论文分析
+
+## Evidence By Source
+
+### `raw/papers/TE-NAS_chen2021_ICLR.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/TE-NAS_chen2021_ICLR.pdf]
+
+## Related Indexes
+
+- [[entities/index]]

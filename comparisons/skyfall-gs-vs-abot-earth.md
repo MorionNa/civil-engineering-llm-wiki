@@ -1,10 +1,28 @@
 ---
-title: "Skyfall-GS vs ABot-Earth：卫星条件 3D 城市的精修路线与前向生成路线"
-created: 2026-07-16
-updated: 2026-07-16
+id: comparisons--skyfall-gs-vs-abot-earth
+title: Skyfall-GS vs ABot-Earth：卫星条件 3D 城市的精修路线与前向生成路线
 type: comparison
-tags: [comparison, 3d-gaussian-splatting, satellite-imagery, generative-3d-earth, 3d-scene-generation, 3d-reconstruction, satellite-conditioned-generation, reconstruction-based-generation, multi-lod, digital-earth]
-sources: [raw/papers/lee2026-skyfall-gs.pdf, raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- method/evaluation
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- 3d-scene-generation
+- comparison
+- digital-earth
+- generative-3d-earth
+- multi-lod
+- reconstruction-based-generation
+- satellite-conditioned-generation
+- satellite-imagery
+sources:
+- raw/papers/lee2026-skyfall-gs.pdf
+- raw/papers/amapcvlab2026-abotearth.pdf
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -87,3 +105,12 @@ ABot-Earth 式前向生成
 - `[[abot-earth]]`
 - `[[amapcvlab2026-abotearth-analysis]]`
 - `[[3d-gaussian-splatting]]`
+
+## Evidence By Source
+
+### `raw/papers/lee2026-skyfall-gs.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/lee2026-skyfall-gs.pdf]

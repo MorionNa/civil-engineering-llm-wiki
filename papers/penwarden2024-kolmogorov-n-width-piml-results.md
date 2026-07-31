@@ -1,9 +1,18 @@
 ---
-title: "Penwarden et al. (2024) — Kolmogorov n-width PIML 实验结果"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--penwarden2024-kolmogorov-n-width-piml-results
+title: Penwarden et al. (2024) — Kolmogorov n-width PIML 实验结果
 type: paper-analysis
-sources: [raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+sources:
+- sources/papers/penwarden2024-kolmogorov-n-width-piml.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -57,3 +66,18 @@ PI-DeepONet 在部分采样任务中误差更低，但 n-width 显示其共享�
 ## 结论
 
 平均测试误差不能替代连续任务族泛化评价，Kolmogorov n-width 提供了一种评价共享物理表示质量的新方式。
+
+## Evidence By Source
+
+### `sources/papers/penwarden2024-kolmogorov-n-width-piml.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md`
+
+^[sources/papers/penwarden2024-kolmogorov-n-width-piml.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

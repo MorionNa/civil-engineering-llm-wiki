@@ -1,10 +1,22 @@
 ---
-title: "Lu et al. (2013) 贡献·局限·可迁移·机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--lu2013-collapse-rc-highrise-critical
+title: Lu et al. (2013) 贡献·局限·可迁移·机会
 type: paper-analysis
-tags: [collapse-simulation, progressive-collapse, material-failure-criteria]
-sources: [raw/papers/lu2013-collapse-rc-highrise.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+keywords:
+- collapse-simulation
+- material-failure-criteria
+- progressive-collapse
+sources:
+- sources/papers/lu2013-collapse-rc-highrise.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -83,3 +95,13 @@ PhyLSTM 的 Bouc-Wen 验证案例处理的是构件级滞回行为。能否用 P
 - [[lu2013-collapse-rc-highrise-method]] — 方法机制
 - [[lu2013-collapse-rc-highrise-results]] — 实验结果
 - [[zhang2020-phylstm-analysis]] — PhyLSTM：可交叉的 ML 替代滞回建模方案
+
+## Evidence By Source
+
+### `sources/papers/lu2013-collapse-rc-highrise.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lu2013-collapse-rc-highrise.md`, `raw/papers/10_1002_eqe_2240.pdf`
+
+^[sources/papers/lu2013-collapse-rc-highrise.md]

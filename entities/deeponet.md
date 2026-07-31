@@ -1,10 +1,31 @@
 ---
-title: "DeepONet — 深度算子网络 (Deep Operator Network)"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--deeponet
+title: DeepONet — 深度算子网络 (Deep Operator Network)
 type: entity
-tags: [deeponet, neural-operator, deep-learning, neural-network, operator-learning, physics-informed, metamodeling, ai4s]
-sources: [raw/papers/10_1016_j_cma_2022_114587_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/neural-operator
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- deeponet
+- domain/ai4s
+- entity/model
+- metamodeling
+- method/neural-operator
+- method/pinn
+- neural-network
+- neural-operator
+- operator-learning
+- physics-informed
+sources:
+- raw/papers/10_1016_j_cma_2022_114587_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -85,3 +106,12 @@ V-DeepONet（Goswami et al., 2022）将 DeepONet 的物理约束从 PDE 残差�
 - 原始论文：Lu et al. (2021) "Learning nonlinear operators via DeepONet", Nature Machine Intelligence
 - DeepXDE 库：内置 DeepONet 实现 `deepxde.nn.DeepONet`
 - 综述：Operator Learning for Scientific Computing (arXiv 综述)
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2022_114587_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2022_114587_extracted.txt]

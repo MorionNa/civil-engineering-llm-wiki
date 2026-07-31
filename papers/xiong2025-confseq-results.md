@@ -1,10 +1,20 @@
 ---
-title: "ConfSeq 实验结果：四大任务全面 SOTA"
-created: 2026-06-24
-updated: 2026-06-24
+id: papers--xiong2025-confseq-results
+title: ConfSeq 实验结果：四大任务全面 SOTA
 type: paper-analysis
-tags: [molecular-conformation, 3d-molecular-generation, virtual-screening, drug-discovery]
-sources: [raw/papers/10_1101_2025.05.07.652440.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- 3d-molecular-generation
+- drug-discovery
+- molecular-conformation
+- virtual-screening
+sources:
+- sources/papers/xiong2025-confseq.md
+created: '2026-06-24'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -95,3 +105,17 @@ UMAP 可视化显示三大簇：簇 A (激酶抑制剂，芳香性高)、簇 B (
 发现多个新型抑制剂：
 - **STING 抑制剂**：IC₅₀ = 0.338–3.51 μM
 - **ALDH1B1 抑制剂**：活性水平具体数值见正式发表版
+
+## Evidence By Source
+
+### `sources/papers/xiong2025-confseq.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1101_2025.05.07.652440.pdf`
+
+^[sources/papers/xiong2025-confseq.md]
+
+## Related Indexes
+
+- [[papers/index]]

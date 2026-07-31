@@ -1,13 +1,38 @@
 ---
-title: "Wu et al. (2025) — CM-PINNs 实验结果展开"
-created: 2026-07-01
-updated: 2026-07-01
+id: papers--wu2025-cm-pinn-results
+title: Wu et al. (2025) — CM-PINNs 实验结果展开
 type: paper-analysis
-tags: [physics-informed, pinn, lstm, structural-dynamics, nonlinear-systems, seismic-response, hysteresis, synthetic-data, sdof, data-scarcity]
-sources: [raw/papers/wu2025-cm-pinn-extracted.md]
-results: [cross-domain-generalization, extrapolation-ability, synthetic-data]
-datasets: [blwn, synthetic-data]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- data-scarcity
+- hysteresis
+- lstm
+- nonlinear-systems
+- physics-informed
+- pinn
+- sdof
+- seismic-response
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/wu2025-cm-pinn.md
+created: '2026-07-01'
+updated: '2026-07-31'
 confidence: high
+results:
+- cross-domain-generalization
+- extrapolation-ability
+- synthetic-data
+datasets:
+- blwn
+- synthetic-data
 ---
 
 # Wu et al. (2025) — CM-PINNs 实验结果展开
@@ -113,3 +138,13 @@ SDOF 数据：100 条 BLWN 地震动，每条 30 s、50 Hz、1501 时间步；10
 - [[wu2025-cm-pinn-method]] — 方法机制
 - [[wu2025-cm-pinn-critical]] — 批判与机会
 - [[zhang2020-phylstm-results]] — PhyLSTM 原始结果对照
+
+## Evidence By Source
+
+### `sources/papers/wu2025-cm-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wu2025-cm-pinn-extracted.md`
+
+^[sources/papers/wu2025-cm-pinn.md]

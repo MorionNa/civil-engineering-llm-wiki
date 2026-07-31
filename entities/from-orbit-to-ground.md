@@ -1,10 +1,24 @@
 ---
-title: "FromOrbit2Ground"
-created: 2026-06-22
-updated: 2026-06-22
+id: entities--from-orbit-to-ground
+title: FromOrbit2Ground
 type: entity
-tags: [3d-gaussian-splatting, satellite-imagery, cross-view-fusion, 3d-reconstruction, from-orbit-to-ground]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/remote-sensing
+- entity/model
+keywords:
+- 3d-gaussian-splatting
+- 3d-reconstruction
+- cross-view-fusion
+- domain/remote-sensing
+- entity/model
+- from-orbit-to-ground
+- satellite-imagery
+sources:
+- raw/papers/amapcvlab2026-abotearth.pdf
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -36,3 +50,12 @@ FromOrbit2Ground 是 ABot-3DGS 的卫星专用子模块，解决从极低俯角 
 ## 关联页面
 - `[[entities/abot-3dgs]]` — ABot-3DGS 重建引擎
 - `[[entities/abot-earth]]` — ABot-Earth 生成系统
+
+## Evidence By Source
+
+### `raw/papers/amapcvlab2026-abotearth.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/amapcvlab2026-abotearth.pdf]

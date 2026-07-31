@@ -1,9 +1,20 @@
 ---
-title: "Ru et al. (2020) — NAGO 实验结果详解"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--ru2020-nago-results
+title: Ru et al. (2020) — NAGO 实验结果详解
 type: paper-analysis
-tags: [neural-architecture-search]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- neural-architecture-search
+sources:
+- sources/papers/ru2020-nago.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # NAGO 实验结果详解
@@ -166,3 +177,13 @@ Spearman 排名相关系数（CIFAR-10）：
 | FLOWERS102 | 15.6 → **7.49** | 0.19 → 0.18 |
 
 异方差 BNN 在 NLL 上一致且显著领先（NLL 同时依赖均值和方差预测），RMSE 也有改善——验证了建模 heteroscedastic noise 对 BO 探索的关键作用。
+
+## Evidence By Source
+
+### `sources/papers/ru2020-nago.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/nago_ru2020.pdf`
+
+^[sources/papers/ru2020-nago.md]

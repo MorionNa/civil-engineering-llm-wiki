@@ -1,9 +1,23 @@
 ---
-title: "Jagtap et al. (2019) 自适应激活函数 — 结果展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--jagtap2019-adaptive-activation-results
+title: Jagtap et al. (2019) 自适应激活函数 — 结果展开
 type: paper-analysis
-tags: [physics-informed, pinn, adaptive-activation, convergence-acceleration, pde-benchmarks]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-activation
+- convergence-acceleration
+- pde-benchmarks
+- physics-informed
+- pinn
+sources:
+- sources/papers/jagtap2019-adaptive-activation.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -88,3 +102,13 @@ $$u_{xx} + u_{yy} + k^2 u = f, \quad k = 10$$
 - [[jagtap2019-adaptive-activation-analysis|← 总览]]
 - [[jagtap2019-adaptive-activation-method|← 方法]]
 - [[jagtap2019-adaptive-activation-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/jagtap2019-adaptive-activation.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2019_109136.xml`
+
+^[sources/papers/jagtap2019-adaptive-activation.md]

@@ -1,13 +1,41 @@
 ---
-title: "物理约束训练的失败模式对比 — PhyLSTM vs PINN"
-created: 2026-06-10
-updated: 2026-06-10
+id: comparisons--physics-constrained-training-failure-modes
+title: 物理约束训练的失败模式对比 — PhyLSTM vs PINN
 type: comparison
-tags: [physics-constrained-loss, failure-modes, pinns, phylstm2, phylstm3, pseudo-time-stepping, spurious-solutions, architecture-mismatch-failure, loss-function-weakness]
-sources: [raw/papers/zhang2020-phylstm.md, raw/papers/wang2023-pinn-spurious.md]
-results: [cross-domain-generalization, extrapolation-ability, spurious-solution-avoidance, adaptive-step-size]
-failure_modes: [architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning, loss-function-weakness, step-size-sensitivity, optimization-vs-accuracy-tradeoff]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- method/evaluation
+- method/pinn
+keywords:
+- architecture-mismatch-failure
+- limitation
+- loss-function-weakness
+- phylstm2
+- phylstm3
+- physics-constrained-loss
+- pinn
+- pseudo-time-stepping
+- spurious-solutions
+sources:
+- raw/papers/zhang2020-phylstm.md
+- raw/papers/wang2023-pinn-spurious.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+results:
+- cross-domain-generalization
+- extrapolation-ability
+- spurious-solution-avoidance
+- adaptive-step-size
+failure_modes:
+- architecture-mismatch-failure
+- finite-difference-error
+- physics-constraint-weight-tuning
+- loss-function-weakness
+- step-size-sensitivity
+- optimization-vs-accuracy-tradeoff
 ---
 
 # 物理约束训练的失败模式对比 — PhyLSTM vs PINN
@@ -52,3 +80,12 @@ confidence: high
 - [[wang2023-pinn-spurious-analysis]] — PINN 概述
 - [[wang2023-pinn-spurious-critical]] — PINN failure_modes
 - [[pseudo-time-stepping]] — 伪时间步进方法
+
+## Evidence By Source
+
+### `raw/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/zhang2020-phylstm.md]

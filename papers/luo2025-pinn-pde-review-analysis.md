@@ -1,20 +1,48 @@
 ---
-title: "Luo et al. (2025) PINN 求解 PDE 综合综述：分类框架与证据边界"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--luo2025-pinn-pde-review-analysis
+title: Luo et al. (2025) PINN 求解 PDE 综合综述：分类框架与证据边界
 type: paper-analysis
-tags: [physics-informed, pinn, ai4s, review, comparison, collocation-strategy, adaptive-weighting, neural-tangent-kernel, inverse-problem]
-sources: [raw/papers/10_1007_s10462-025-11322-7.pdf]
-methods: [narrative-review, taxonomy, architecture-comparison, adaptive-sampling, loss-design, feature-embedding]
-results: [pinn-taxonomy, application-map, software-comparison, hybrid-adaptive-sampling-example]
-failure_modes: [no-systematic-search-protocol, heterogeneous-evidence, unclear-coverage-cutoff, no-reproducible-review-corpus]
-datasets: []
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- adaptive-weighting
+- ai4s
+- collocation-strategy
+- comparison
+- inverse-problem
+- neural-tangent-kernel
+- physics-informed
+- pinn
+- review
+sources:
+- sources/papers/luo2025-pinn-pde-review.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- narrative-review
+- taxonomy
+- architecture-comparison
+- adaptive-sampling
+- loss-design
+- feature-embedding
+results:
+- pinn-taxonomy
+- application-map
+- software-comparison
+- hybrid-adaptive-sampling-example
+failure_modes:
+- no-systematic-search-protocol
+- heterogeneous-evidence
+- unclear-coverage-cutoff
+- no-reproducible-review-corpus
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # Physics-informed neural networks for PDE problems: a comprehensive review
@@ -118,3 +146,13 @@ PINN 求解 PDE 的性能瓶颈究竟分布在哪些设计层：网络架构、�
 - [[wang2023-pinn-spurious-analysis]] — 低残差伪解边界
 - [[wang2024-causal-pinn-analysis]] — 时域因果训练
 - [[kin]] — 综述收录的 KAN-PINN 架构分支
+
+## Evidence By Source
+
+### `sources/papers/luo2025-pinn-pde-review.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s10462-025-11322-7.pdf`
+
+^[sources/papers/luo2025-pinn-pde-review.md]

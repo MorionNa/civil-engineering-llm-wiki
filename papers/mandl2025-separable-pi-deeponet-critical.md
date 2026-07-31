@@ -1,10 +1,26 @@
 ---
-title: "Mandl et al. (2025) — Sep-PI-DeepONet critical analysis"
-created: 2026-07-31
-updated: 2026-07-31
+id: papers--mandl2025-separable-pi-deeponet-critical
+title: Mandl et al. (2025) — Sep-PI-DeepONet critical analysis
 type: paper-analysis
-sources: [raw/papers/mandl2025-separable-pi-deeponet-source.md]
-tags: [physics-informed, neural-operator, deeponet, scientific-machine-learning, cross-domain-generalization]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- cross-domain-generalization
+- deeponet
+- neural-operator
+- physics-informed
+- scientific-machine-learning
+sources:
+- sources/papers/mandl2025-separable-pi-deeponet.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -43,3 +59,18 @@ Sep-PI-DeepONet 的核心贡献不是简单压缩网络，而是改变物理信�
 2. 用 Kolmogorov n-width 自适应确定结构响应低秩维度。
 3. 与 Mamba/SSM temporal backbone 结合，实现长时程地震响应预测。
 4. 与 PINN loss landscape 分析结合，区分表示不足和优化困难。
+
+## Evidence By Source
+
+### `sources/papers/mandl2025-separable-pi-deeponet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/mandl2025-separable-pi-deeponet-source.md`
+
+^[sources/papers/mandl2025-separable-pi-deeponet.md]
+
+## Related Indexes
+
+- [[papers/index]]
+- [[index]]

@@ -1,9 +1,19 @@
 ---
-title: "Ru et al. (2020) — NAGO 方法机制详解"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--ru2020-nago-method
+title: Ru et al. (2020) — NAGO 方法机制详解
 type: paper-analysis
-tags: [neural-architecture-search]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- neural-architecture-search
+sources:
+- sources/papers/ru2020-nago.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # NAGO 方法机制详解
@@ -134,3 +144,17 @@ for t = 1 to T:
 | 节点数范围 | [9, 1000] | [30, 120] |
 | 不同分辨率输入 | ✅ 同一节点接收不同 stage 的特征 | ❌ 同 stage 内固定分辨率 |
 | 优化 | ✅ BO 自动优化 | ❌ 手工设定 |
+
+## Evidence By Source
+
+### `sources/papers/ru2020-nago.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/nago_ru2020.pdf`
+
+^[sources/papers/ru2020-nago.md]
+
+## Related Indexes
+
+- [[papers/index]]

@@ -1,10 +1,26 @@
 ---
-title: "Wang et al. (2021) PINN 训练失败机制：神经正切核 (NTK) 视角"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2021-pinn-ntk-failure-analysis
+title: Wang et al. (2021) PINN 训练失败机制：神经正切核 (NTK) 视角
 type: paper-analysis
-tags: [physics-informed, pinn, neural-tangent-kernel, spectral-bias, gradient-pathology, multi-task-learning, scientific-machine-learning]
-sources: [raw/papers/10_1016_j_jcp_2021_110768.xml]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- gradient-pathology
+- multi-task-learning
+- neural-tangent-kernel
+- physics-informed
+- pinn
+- scientific-machine-learning
+- spectral-bias
+sources:
+- sources/papers/wang2021-pinn-ntk-failure.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 reproducibility: 🟢
 code_url: https://github.com/PredictiveIntelligenceLab/PINNsNTK
@@ -13,11 +29,11 @@ dataset_url: n/a
 
 # Wang et al. (2021) — When and why PINNs fail to train: A neural tangent kernel perspective
 
-> **作者:** Sifan Wang, Xinling Yu, Paris Perdikaris  
-> **期刊:** Journal of Computational Physics, Vol 449, 110768 (2022年1月发表)  
+> **作者:** Sifan Wang, Xinling Yu, Paris Perdikaris
+> **期刊:** Journal of Computational Physics, Vol 449, 110768 (2022年1月发表)
 > **DOI:** 10.1016/j.jcp.2021.110768 | **引用:** 1,177+
 
---- 
+---
 
 ## 1. 工程背景
 
@@ -102,3 +118,13 @@ dataset_url: n/a
 - [[linka2022-bayesian-pinn-analysis]] — Bayesian PINN
 - [[goswami2022-variational-deeponet-analysis]] — V-DeepONet
 - [[notes/lectures/ai4s-pinn-deepxde]] — DeepXDE 教程
+
+## Evidence By Source
+
+### `sources/papers/wang2021-pinn-ntk-failure.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2021_110768.xml`
+
+^[sources/papers/wang2021-pinn-ntk-failure.md]

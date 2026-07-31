@@ -1,13 +1,36 @@
 ---
-title: "Lepikhin et al. (2020) — 结果证据展开"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--lepikhin2021-gshard-results
+title: Lepikhin et al. (2020) — 结果证据展开
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, multilingual-data, sublinear-scaling, comparison, llm-benchmark]
-sources: [raw/papers/lepikhin2021_gshard.md]
-results: [sublinear-scaling, superlinear-quality, sample-efficiency, constant-memory, o1-compilation, 600b-parameters, multilingual-bleu]
-datasets: [in-house-web-scale-mt-corpus]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- comparison
+- llm-benchmark
+- mixture-of-experts
+- multilingual-data
+- sparse-moe
+- sublinear-scaling
+sources:
+- sources/papers/lepikhin2021-gshard.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+results:
+- sublinear-scaling
+- superlinear-quality
+- sample-efficiency
+- constant-memory
+- o1-compilation
+- 600b-parameters
+- multilingual-bleu
+datasets:
+- in-house-web-scale-mt-corpus
 ---
 
 # Lepikhin et al. (2020) — 结果证据展开
@@ -167,3 +190,13 @@ T(96L) 密集模型在低资源语言上超越浅 MoE(128E, 12L)，差距随资�
 - [[lepikhin2021-gshard-analysis]] — 论文概述
 - [[lepikhin2021-gshard-method]] — 方法机制展开
 - [[lepikhin2021-gshard-critical]] — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
+
+## Evidence By Source
+
+### `sources/papers/lepikhin2021-gshard.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lepikhin2021_gshard.md`
+
+^[sources/papers/lepikhin2021-gshard.md]

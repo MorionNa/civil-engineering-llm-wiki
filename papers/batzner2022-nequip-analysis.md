@@ -1,27 +1,61 @@
 ---
 id: paper-batzner2022-nequip-analysis
-title: "Batzner et al. (2022) — NequIP：E(3) 等变图神经网络原子势"
+title: Batzner et al. (2022) — NequIP：E(3) 等变图神经网络原子势
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance, cross-domain-generalization]
-sources: [raw/papers/batzner2022-nequip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+keywords:
+- ai4s
+- cross-domain-generalization
+- deep-learning
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/batzner2022-nequip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-methods: [e3-equivariance, tensor-field-network, message-passing, spherical-harmonics, clebsch-gordan-tensor-product, energy-conserving-force-field]
-results: [data-efficient-learning, md17-benchmark, water-ice-benchmark, molecular-dynamics-validation]
-failure_modes: [long-range-interaction-gap, interpretability-limit, distributed-receptive-field-growth]
-datasets: [original-md17, revised-md17, water-and-ice, formate-on-cu, li4p2o7, lips]
+methods:
+- e3-equivariance
+- tensor-field-network
+- message-passing
+- spherical-harmonics
+- clebsch-gordan-tensor-product
+- energy-conserving-force-field
+results:
+- data-efficient-learning
+- md17-benchmark
+- water-ice-benchmark
+- molecular-dynamics-validation
+failure_modes:
+- long-range-interaction-gap
+- interpretability-limit
+- distributed-receptive-field-growth
+datasets:
+- original-md17
+- revised-md17
+- water-and-ice
+- formate-on-cu
+- li4p2o7
+- lips
 reproducibility: high
 code_url:
-  - https://github.com/mir-group/nequip
+- https://github.com/mir-group/nequip
 ---
 
 # E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials
 
-> **作者：** Simon Batzner, Albert Musaelian, Lixin Sun, Mario Geiger, Jonathan P. Mailoa, Mordechai Kornbluth, Nicola Molinari, Tess E. Smidt, Boris Kozinsky  
-> **期刊：** Nature Communications 13 (2022), 2453  
+> **作者：** Simon Batzner, Albert Musaelian, Lixin Sun, Mario Geiger, Jonathan P. Mailoa, Mordechai Kornbluth, Nicola Molinari, Tess E. Smidt, Boris Kozinsky
+> **期刊：** Nature Communications 13 (2022), 2453
 > **一句话定位：** NequIP 将 E(3) 对称性直接写入原子图卷积，使网络内部同时传播标量、向量和高阶张量，并以原子能求和及势能梯度构造能量守恒力场，从而显著提高原子势的数据效率和精度。
 
 ## 1. 工程背景 (Engineering Background)
@@ -157,3 +191,13 @@ NequIP 的内部节点特征是 O(3) 不可约表示的直和，包含不同旋�
 - [[allegro]]
 - [[sevennet]]
 - [[pinn]]
+
+## Evidence By Source
+
+### `sources/papers/batzner2022-nequip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/batzner2022-nequip-source.md`
+
+^[sources/papers/batzner2022-nequip.md]

@@ -1,20 +1,60 @@
 ---
-title: "Chen et al. (2021) — AutoFormer: 视觉 Transformer 架构搜索: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--chen2021-autoformer-analysis
+title: 'Chen et al. (2021) — AutoFormer: 视觉 Transformer 架构搜索: 论文分析'
 type: paper-analysis
-tags: [neural-architecture-search, one-shot-nas, weight-entanglement, weight-sharing-nas, vision-transformer, transformer, evolutionary-search, autoformer]
-sources: [raw/papers/chen2021_autoformer.md]
-methods: [weight-entanglement, supernet-training, one-shot-nas, evolutionary-search, elastic-embedding-dim, elastic-head-num, elastic-mlp-ratio, elastic-depth]
-results: [imagenet-classification, transfer-learning, downstream-classification, knowledge-distillation, no-retraining-needed]
-failure_modes: [classical-weight-sharing-failure, transformer-overfit-scaling, cnn-efficiency-gap, search-space-discrete, training-cost-large]
-datasets: [imagenet, cifar-10, cifar-100, stanford-cars, oxford-flowers, oxford-pets]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- autoformer
+- evolutionary-search
+- neural-architecture-search
+- one-shot-nas
+- transformer
+- vision-transformer
+- weight-entanglement
+- weight-sharing-nas
+sources:
+- sources/papers/chen2021-autoformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: high
+methods:
+- weight-entanglement
+- supernet-training
+- one-shot-nas
+- evolutionary-search
+- elastic-embedding-dim
+- elastic-head-num
+- elastic-mlp-ratio
+- elastic-depth
+results:
+- imagenet-classification
+- transfer-learning
+- downstream-classification
+- knowledge-distillation
+- no-retraining-needed
+failure_modes:
+- classical-weight-sharing-failure
+- transformer-overfit-scaling
+- cnn-efficiency-gap
+- search-space-discrete
+- training-cost-large
+datasets:
+- imagenet
+- cifar-10
+- cifar-100
+- stanford-cars
+- oxford-flowers
+- oxford-pets
 reproducibility: high
 code_url:
-  - https://github.com/microsoft/AutoML
+- https://github.com/microsoft/AutoML
 dataset_url:
-  - https://www.image-net.org/
-confidence: high
+- https://www.image-net.org/
 ---
 
 # AutoFormer: Searching Transformers for Visual Recognition
@@ -132,3 +172,13 @@ Vision Transformer (ViT/DeiT) 在图像分类上展现出巨大潜力，但**手
 - [[chen2021-autoformer-critical]] — 贡献·Negative·可迁移·研究机会
 - [[chen2021-tenas-analysis]] — TE-NAS 训练-free NAS，互补的搜索范式
 - [[xie2021-segformer-analysis]] — SegFormer 也是 Transformer 架构设计的自动化思路
+
+## Evidence By Source
+
+### `sources/papers/chen2021-autoformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/chen2021_autoformer.md`
+
+^[sources/papers/chen2021-autoformer.md]

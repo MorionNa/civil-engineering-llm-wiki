@@ -1,10 +1,23 @@
 ---
-title: "DeepLabv3+"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--deeplabv3plus
+title: DeepLabv3+
 type: entity
-tags: [semantic-segmentation, atrous-convolution, depthwise-separable-convolution]
-sources: [raw/papers/deepLabv3plus.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- entity/model
+keywords:
+- atrous-convolution
+- depthwise-separable-convolution
+- domain/computer-vision
+- entity/model
+- semantic-segmentation
+sources:
+- raw/papers/deepLabv3plus.pdf
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # DeepLabv3+
@@ -19,3 +32,16 @@ DeepLabv3+ 是 DeepLab 系列的巅峰之作，采用 **ASPP encoder**（atrous 
 
 ## 关联页面
 - [[chen2018-deeplabv3plus-analysis]] — 论文完整分析
+
+## Evidence By Source
+
+### `raw/papers/deepLabv3plus.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/deepLabv3plus.pdf]
+
+## Related Indexes
+
+- [[entities/index]]

@@ -1,18 +1,56 @@
 ---
-title: "Li & Wang (2025) — Bäcklund 变换约束 PINN 生成非线性 PDE 局域波：论文分析"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--li2025-localized-waves-pinn-analysis
+title: Li & Wang (2025) — Bäcklund 变换约束 PINN 生成非线性 PDE 局域波：论文分析
 type: paper-analysis
-tags: [neural-network, physics-informed, deep-learning, soft-constraint, collocation-strategy, nonlinear-systems, synthetic-data, pinn, ai4s, physics-simulation]
-sources: [raw/papers/10_1007_s11071-024-10359-7.pdf]
-methods: [backlund-transformation, multi-output-pinn, automatic-differentiation, latin-hypercube-sampling, lbfgs, xavier-initialization, adaptive-loss-weighting]
-results: [one-soliton, two-soliton, flat-top-wave, stair-wave, gaussian-wave-evolution]
-failure_modes: [irreversible-transformation, no-v-reference-solution, missing-weight-update-rule, missing-code, multi-wave-cost-growth, waveform-terminology-ambiguity]
-datasets: [modified-kdv-one-soliton, modified-kdv-two-soliton, gaussian-initial-wave]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- collocation-strategy
+- deep-learning
+- neural-network
+- nonlinear-systems
+- physics-informed
+- physics-simulation
+- pinn
+- soft-constraint
+- synthetic-data
+sources:
+- sources/papers/li2025-localized-waves-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- backlund-transformation
+- multi-output-pinn
+- automatic-differentiation
+- latin-hypercube-sampling
+- lbfgs
+- xavier-initialization
+- adaptive-loss-weighting
+results:
+- one-soliton
+- two-soliton
+- flat-top-wave
+- stair-wave
+- gaussian-wave-evolution
+failure_modes:
+- irreversible-transformation
+- no-v-reference-solution
+- missing-weight-update-rule
+- missing-code
+- multi-wave-cost-growth
+- waveform-terminology-ambiguity
+datasets:
+- modified-kdv-one-soliton
+- modified-kdv-two-soliton
+- gaussian-initial-wave
+reproducibility: low
 ---
 
 # Data-driven localized waves via transformation and PINN
@@ -105,3 +143,13 @@ $$\mathrm{BT}=\hat u-\sin\hat v+\hat v_x$$
 - [[raissi2019-pinn-analysis]] — 非线性 PDE 的经典 PINN 基线
 - [[wang2023-pinn-spurious-analysis]] — 小残差不保证真解
 - [[wang2024-kinn-analysis]] — 可替换骨干网络的相关路线
+
+## Evidence By Source
+
+### `sources/papers/li2025-localized-waves-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1007_s11071-024-10359-7.pdf`
+
+^[sources/papers/li2025-localized-waves-pinn.md]

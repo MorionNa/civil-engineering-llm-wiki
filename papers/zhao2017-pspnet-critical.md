@@ -1,12 +1,31 @@
 ---
-title: "PSPNet 贡献·Negative·可迁移·研究机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--zhao2017-pspnet-critical
+title: PSPNet 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [semantic-segmentation, scene-parsing, pyramid-pooling, multi-scale-context, deep-supervision, auxiliary-loss]
-sources: [raw/papers/1612.01105v2.pdf]
-failure_modes: [pyramid-scale-sensitivity, auxiliary-loss-weight-tuning, crf-not-used, ms-testing-dependency, limited-dataset-validation]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+- method/transformer
+keywords:
+- auxiliary-loss
+- deep-supervision
+- multi-scale-context
+- pyramid-pooling
+- scene-parsing
+- semantic-segmentation
+sources:
+- sources/papers/zhao2017-pspnet.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- pyramid-scale-sensitivity
+- auxiliary-loss-weight-tuning
+- crf-not-used
+- ms-testing-dependency
+- limited-dataset-validation
 ---
 
 # PSPNet 贡献·Negative·可迁移·研究机会
@@ -82,3 +101,13 @@ confidence: high
 ## 关联页面
 - [[zhao2017-pspnet-analysis]] — 总览
 - [[ronneberger2015-unet-critical]] — U-Net 的 NK/TK/Opportunities 对比
+
+## Evidence By Source
+
+### `sources/papers/zhao2017-pspnet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/1612.01105v2.pdf`
+
+^[sources/papers/zhao2017-pspnet.md]

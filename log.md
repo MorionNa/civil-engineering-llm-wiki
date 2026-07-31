@@ -1,20 +1,30 @@
 ---
 id: log
-title: "Civil Engineering LLM Wiki Log"
+title: Civil Engineering LLM Wiki Log
 type: log
 status: active
 project: civil-engineering-llm-wiki
 tags: []
 sources: []
-created: 2026-06-28
-updated: 2026-07-31
+created: '2026-06-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
 # Wiki Log
 
-> Chronological record of meaningful wiki actions. Append-only; newest entries first.  
-> Format: `## [YYYY-MM-DD] action | subject`  
+## [2026-07-31] verify | Repository-wide historical llm-wiki migration
+
+- Migrated every maintained historical Markdown page to stable frontmatter with `id`, `type`, `status`, `project`, namespaced tags, preserved legacy `keywords`, sources, dates and confidence.
+- Kept all original materials under `raw/` immutable and created canonical paper source notes under `sources/papers/`.
+- Repaired incomplete full-text paper families, abstract-only evidence scopes, temporary citation tokens, provenance, wikilinks and section registries.
+- Added concepts/entities for previously unresolved reusable terms; unverifiable migration stubs remain `status: draft` with explicit verification tasks.
+- Extended strict lint from the recent three-paper repair scope to the complete maintained repository.
+- Restored read-only validation/deployment workflows; CI does not edit or push knowledge content.
+
+
+> Chronological record of meaningful wiki actions. Append-only; newest entries first.
+> Format: `## [YYYY-MM-DD] action | subject`
 > Actions: create, ingest, revise, verify, lint, deploy, query, archive, delete.
 
 ## [2026-07-31] verify | Unified llm-wiki compliance repair for NequIP, Allegro and SevenNet

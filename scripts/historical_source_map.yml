@@ -1,0 +1,143 @@
+akhauri2022-eznas:
+- raw/papers/eznas_akhauri2022.pdf
+amapcvlab2026-abotearth:
+- raw/papers/amapcvlab2026-abotearth.pdf
+batzner2022-nequip:
+- raw/papers/batzner2022-nequip-source.md
+chen2018-deeplabv3plus:
+- raw/papers/deepLabv3plus.pdf
+chen2021-autoformer:
+- raw/papers/chen2021_autoformer.md
+chen2021-tenas:
+- raw/papers/TE-NAS_chen2021_ICLR.pdf
+chen2025-at-pinn-hc:
+- raw/papers/10_1016_j_cma_2024_117691_extracted.txt
+chittyvenkata2022-nas-transformers-survey:
+- raw/papers/nas_transformers_survey2022.pdf
+dai2024-deepseek-moe:
+- raw/papers/dai2024_deepseek_moe.pdf
+du2026-hcff-pinn:
+- raw/papers/10_1016_j_engappai_2025_113640.xml
+- raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt
+fedus2021-switch-transformer:
+- raw/papers/fedus2021_switch_transformer.md
+gao2025-adaptive-loss-pinn:
+- raw/papers/10_1016_j_camwa_2025_01_007.xml
+- raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt
+giles2025-avbd:
+- raw/papers/giles2025-avbd.md
+goswami2022-variational-deeponet:
+- raw/papers/10_1016_j_cma_2022_114587_extracted.txt
+guo2026-phy-rlk:
+- raw/papers/10_1016_j_cma_2025_118422.xml
+jagtap2019-adaptive-activation:
+- raw/papers/10_1016_j_jcp_2019_109136.xml
+jiang2024-mixtral-of-experts:
+- raw/papers/jiang2024_mixtral_of_experts.md
+kolzhetsov2026-rl-adaptive-loss-control:
+- raw/papers/kolzhetsov2026-accelerating-pinn-training-extracted.txt
+lahoti2026-mamba3:
+- raw/papers/lahoti2026-mamba3-source.md
+lee2024-aznas:
+- raw/papers/aznas_lee2024.pdf
+lee2026-skyfall-gs:
+- raw/papers/lee2026-skyfall-gs.pdf
+- raw/papers/lee2026-skyfall-gs-extracted.md
+lepikhin2021-gshard:
+- raw/papers/lepikhin2021_gshard.md
+li2021-bossnas:
+- raw/papers/bossnas2021_iclr.pdf
+li2025-functional-scaling-laws:
+- raw/papers/li2025-functional-scaling-laws.pdf
+li2025-girder-dynamic-pinn:
+- raw/papers/10_1016_j_aei_2025_103581_extracted.txt
+li2025-localized-waves-pinn:
+- raw/papers/10_1007_s11071-024-10359-7.pdf
+li2025-movingload-pinn:
+- raw/papers/10_1016_j_aei_2025_103215_extracted.txt
+li2025-node-onet:
+- raw/papers/2510.15651v1.pdf
+li2026-exsgd:
+- raw/papers/li2026-exsgd-source.md
+li2026-sgno:
+- raw/papers/2602.18801v2.pdf
+linka2022-bayesian-pinn:
+- raw/papers/10_1016_j_cma_2022_115346_extracted.txt
+liu2025-site-response-pinn:
+- raw/papers/10_1016_j_compgeo_2025_107137.xml
+- raw/papers/extracted/10_1016_j_compgeo_2025_107137_extracted.txt
+lu2013-collapse-rc-highrise:
+- raw/papers/lu2013-collapse-rc-highrise.md
+- raw/papers/10_1002_eqe_2240.pdf
+luo2025-pinn-pde-review:
+- raw/papers/10_1007_s10462-025-11322-7.pdf
+maimon2026-sparse-dense:
+- raw/papers/10_1038_s41586-026-10537-0.pdf
+mandl2025-separable-pi-deeponet:
+- raw/papers/mandl2025-separable-pi-deeponet-source.md
+meng2026-seisgpt:
+- raw/papers/meng2026-seisgpt.pdf
+- raw/papers/meng2026-seisgpt-extracted.md
+musaelian2023-allegro:
+- raw/papers/musaelian2023-allegro-source.md
+park2024-sevennet-parallel-gnn-ip:
+- raw/papers/park2024-sevennet-parallel-gnn-ip-source.md
+penwarden2024-kolmogorov-n-width-piml:
+- raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md
+raissi2019-pinn:
+- raw/papers/10_1016_j_jcp_2018_10_045.xml
+rathore2024-pinn-loss-landscape:
+- raw/papers/rathore24a.pdf
+real2020-automl-zero:
+- raw/papers/automl_zero_real2020.pdf
+ronneberger2015-unet:
+- raw/papers/ronneberger2015-unet.md
+- raw/papers/10_1007_978-3-319-24574-4_28.pdf
+ru2020-nago:
+- raw/papers/nago_ru2020.pdf
+serianni2023-training-free-nas-rnn-transformers:
+- raw/papers/training_free_nas2023.pdf
+so2021-primer:
+- raw/papers/primer2021_efficient_transformers.pdf
+sojitra2026-fedonet:
+- raw/papers/10_1016_j_jcp_2026_114931_extracted.txt
+song2025-rl-pinns:
+- raw/papers/2504.12949v1.pdf
+sun2019-hrnetv2:
+- raw/papers/arxiv_1904.04514.pdf
+tao2026-fpikan:
+- raw/papers/extracted/10_1007_s10518-026-02408-w_abstract_extracted.txt
+wang2020-hat:
+- raw/papers/wang2020_hat.md
+wang2021-pinn-ntk-failure:
+- raw/papers/10_1016_j_jcp_2021_110768.xml
+wang2023-pinn-spurious:
+- raw/papers/wang2023-pinn-spurious.md
+wang2024-causal-pinn:
+- raw/papers/10_1016_j_cma_2024_116813_extracted.txt
+wang2024-kinn:
+- raw/papers/10_1016_j_cma_2024_117518_extracted.txt
+wang2024-nas-pinn:
+- raw/papers/wang2024-nas-pinn-source.md
+wu2025-cm-pinn:
+- raw/papers/wu2025-cm-pinn-extracted.md
+xie2021-segformer:
+- raw/papers/segformer.pdf
+xiong2025-confseq:
+- raw/papers/10_1101_2025.05.07.652440.pdf
+xu2021-nas-bert:
+- raw/papers/xu2021_nas_bert.md
+zeraatkar2026-pgt:
+- raw/papers/2603.27929v1.pdf
+zhang2020-phylstm:
+- raw/papers/zhang2020-phylstm.md
+zhang2025-mrf-pinn:
+- raw/papers/extracted/10_1007_s00466-024-02554-5_abstract_extracted.txt
+zhang2026-legonet:
+- raw/papers/2603.07882v1.pdf
+zhao2017-pspnet:
+- raw/papers/1612.01105v2.pdf
+zhao2021-memory-efficient-dnas:
+- raw/papers/memory_efficient_dnas2021.pdf
+zhao2026-causal-attention:
+- raw/papers/10_1016_j_jcp_2026_115071_extracted.txt

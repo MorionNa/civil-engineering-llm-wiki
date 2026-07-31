@@ -1,20 +1,54 @@
 ---
-title: "Guo & Xu (2026) Phy-RLK 批判：物理偏置、合成标签与泛化边界"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--guo2026-phy-rlk-critical
+title: Guo & Xu (2026) Phy-RLK 批判：物理偏置、合成标签与泛化边界
 type: paper-analysis
-tags: [physics-informed, lstm, structural-dynamics, nonlinear-systems, seismic-response, data-scarcity, synthetic-data, ground-motion, extrapolation-ability, limitation, future-work, cross-domain-generalization]
-sources: [raw/papers/10_1016_j_cma_2025_118422.xml]
-methods: [critical-appraisal, embedded-physics, architecture-ablation]
-results: [contribution, transferable-design, research-opportunities]
-failure_modes: [synthetic-label-dependence, structure-specific-retraining, physics-consistency-not-measured, no-real-world-validation, no-uncertainty-quantification, timing-inconsistency]
-datasets: [srm-bidirectional-ground-motions, opensees-six-story-rc-frame, opensees-five-story-rc-frame]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- cross-domain-generalization
+- data-scarcity
+- extrapolation-ability
+- future-work
+- ground-motion
+- limitation
+- lstm
+- nonlinear-systems
+- physics-informed
+- seismic-response
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/guo2026-phy-rlk.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- critical-appraisal
+- embedded-physics
+- architecture-ablation
+results:
+- contribution
+- transferable-design
+- research-opportunities
+failure_modes:
+- synthetic-label-dependence
+- structure-specific-retraining
+- physics-consistency-not-measured
+- no-real-world-validation
+- no-uncertainty-quantification
+- timing-inconsistency
+datasets:
+- srm-bidirectional-ground-motions
+- opensees-six-story-rc-frame
+- opensees-five-story-rc-frame
+reproducibility: low
 contested: false
-contradictions: []
 ---
 
 # 批判分析：架构内物理并不等于免数据或严格守恒
@@ -96,3 +130,13 @@ contradictions: []
 - [[guo2026-phy-rlk-method|← 方法]]
 - [[guo2026-phy-rlk-results|← 结果]]
 - [[phy-rlk]] — 模型实体
+
+## Evidence By Source
+
+### `sources/papers/guo2026-phy-rlk.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2025_118422.xml`
+
+^[sources/papers/guo2026-phy-rlk.md]

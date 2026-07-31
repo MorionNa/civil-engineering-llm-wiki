@@ -1,10 +1,27 @@
 ---
-title: "Deep Neural ODE Operator Networks for PDEs (NODE-ONet)：物理编码神经常微分方程算子网络"
-created: 2026-07-23
-updated: 2026-07-23
+id: papers--li2025-node-onet-analysis
+title: Deep Neural ODE Operator Networks for PDEs (NODE-ONet)：物理编码神经常微分方程算子网络
 type: paper-analysis
-tags: [neural-operator, neural-ode, physics-encoded-network, operator-learning, pinn, digital-twin, scientific-machine-learning]
-sources: [raw/papers/2510.15651v1.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- digital-twin
+- neural-ode
+- neural-operator
+- operator-learning
+- physics-encoded-network
+- pinn
+- scientific-machine-learning
+sources:
+- sources/papers/li2025-node-onet.md
+created: '2026-07-23'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -163,3 +180,29 @@ $$\dot z=F_\theta(z,M,K,C,f_{NL})$$
 - [[pgt]]
 - [[seisgpt]]
 - [[cm-pinns]]
+
+## 11. 研究机会 (Research Opportunity)
+
+- 在更复杂边界、非线性、多尺度和高维任务上检验方法边界。
+- 对照统一 wall-clock、精度、稳定性和数据效率指标开展复现。
+
+## 12. 可复现性 (Reproducibility)
+
+- 复现应以本页列出的原始来源、代码、数据与超参数为准。
+- 未公开实现细节应记录为复现缺口，不以模型推测补齐。
+
+## Paper Family Pages
+
+- [[li2025-node-onet-method]]
+- [[li2025-node-onet-results]]
+- [[li2025-node-onet-critical]]
+
+## Evidence By Source
+
+### `sources/papers/li2025-node-onet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/2510.15651v1.pdf`
+
+^[sources/papers/li2025-node-onet.md]

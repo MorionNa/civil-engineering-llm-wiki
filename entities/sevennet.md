@@ -1,13 +1,35 @@
 ---
 id: entity-sevennet
-title: "SevenNet — 分布式等变 GNN 原子势"
+title: SevenNet — 分布式等变 GNN 原子势
 type: entity
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, distributed-training, gpu-computing]
-sources: [raw/papers/park2024-sevennet-parallel-gnn-ip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/tool
+- method/graph-neural-network
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- distributed-training
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/tool
+- gpu-computing
+- material-design
+- method/graph-neural-network
+- method/pinn
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+sources:
+- raw/papers/park2024-sevennet-parallel-gnn-ip-source.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
 ---
 

@@ -1,13 +1,34 @@
 ---
-title: "Zhang et al. (2020) — 结果证据展开"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--zhang2020-phylstm-results
+title: Zhang et al. (2020) — 结果证据展开
 type: paper-analysis
-tags: [mrfs, bouc-wen, rate-independent, rate-dependent, ida, cross-domain-generalization, benchmark, peer-database, blwn, extrapolation-ability, comparison]
-sources: [raw/papers/zhang2020-phylstm.md]
-results: [cross-domain-generalization, extrapolation-ability]
-datasets: [blwn, peer-database]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+keywords:
+- benchmark
+- blwn
+- bouc-wen
+- comparison
+- cross-domain-generalization
+- extrapolation-ability
+- ida
+- mrfs
+- peer-database
+- rate-dependent
+- rate-independent
+sources:
+- sources/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
 confidence: high
+results:
+- cross-domain-generalization
+- extrapolation-ability
+datasets:
+- blwn
+- peer-database
 ---
 
 # Zhang et al. (2020) — 结果证据展开
@@ -130,3 +151,13 @@ confidence: high
 - [[phylstm2-vs-phylstm3-vs-lstm]] — 性能对比 + 选型指南
 - [[bouc-wen-model]] — Bouc-Wen 模型细节
 - [[peer-strong-motion-database]] — PEER 数据库细节
+
+## Evidence By Source
+
+### `sources/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/zhang2020-phylstm.md`
+
+^[sources/papers/zhang2020-phylstm.md]

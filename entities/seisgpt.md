@@ -1,19 +1,55 @@
 ---
-title: "SeisGPT"
-created: 2026-07-16
-updated: 2026-07-16
+id: entities--seisgpt
+title: SeisGPT
 type: entity
-tags: [physics-informed, metamodeling, deep-learning, sequence-modeling, transformer, lora, structural-dynamics, nonlinear-systems, seismic-response, finite-element, high-rise-building, real-time-simulation, gpu-computing, transfer-learning, cross-domain-generalization, ida]
-sources: [raw/papers/meng2026-seisgpt.pdf, raw/papers/meng2026-seisgpt-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/dataset
+- method/graph-neural-network
+- method/pinn
+- method/transformer
+keywords:
+- cross-domain-generalization
+- deep-learning
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/dataset
+- finite-element
+- gpu-computing
+- high-rise-building
+- ida
+- lora
+- metamodeling
+- method/graph-neural-network
+- method/pinn
+- method/transformer
+- nonlinear-systems
+- physics-informed
+- real-time-simulation
+- seismic-response
+- sequence-modeling
+- structural-dynamics
+- transfer-learning
+- transformer
+sources:
+- raw/papers/meng2026-seisgpt.pdf
+- raw/papers/meng2026-seisgpt-extracted.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
 # SeisGPT
 
-> **类型：** 物理信息结构动力学基础模型  
-> **作者团队：** 同济大学防灾国家重点实验室  
-> **期刊：** *Nature Communications* (2026, Article in Press)  
-> **DOI：** 10.1038/s41467-026-75508-5  
+> **类型：** 物理信息结构动力学基础模型
+> **作者团队：** 同济大学防灾国家重点实验室
+> **期刊：** *Nature Communications* (2026, Article in Press)
+> **DOI：** 10.1038/s41467-026-75508-5
 > **代码与数据：** https://doi.org/10.6084/m9.figshare.29957834
 
 ## 定义
@@ -114,3 +150,12 @@ SeisGPT-R 在结构图编码后融合传感器特征：有可靠观测时更多�
 - `[[phylstm2]]` / `[[phylstm3]]` — 物理约束结构响应序列模型
 - `[[cm-pinns]]` — 本构模型约束响应预测框架
 - `[[peer-strong-motion-database]]` — 地震动数据来源相关实体
+
+## Evidence By Source
+
+### `raw/papers/meng2026-seisgpt.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/meng2026-seisgpt.pdf]

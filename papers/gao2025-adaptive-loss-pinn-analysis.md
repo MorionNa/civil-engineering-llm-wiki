@@ -1,18 +1,48 @@
 ---
-title: "Gao et al. (2025) — APINNs：多任务自适应损失加权求解非线性 PDE"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--gao2025-adaptive-loss-pinn-analysis
+title: Gao et al. (2025) — APINNs：多任务自适应损失加权求解非线性 PDE
 type: paper-analysis
-tags: [physics-informed, pinn, adaptive-weighting, physics-constrained-loss, soft-constraint, collocation-strategy, neural-network, nonlinear-systems, synthetic-data, physics-constraint-weight-tuning]
-sources: [raw/papers/10_1016_j_camwa_2025_01_007.xml, raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt]
-methods: [multitask-learning, adaptive-loss-weighting, loss-magnitude-normalization, automatic-differentiation]
-results: [relative-l2-error-reduction, loss-scale-balancing, convergence-acceleration]
-failure_modes: [physics-constraint-weight-tuning, update-frequency-uncertainty, loss-scale-imbalance, reporting-inconsistency]
-datasets: [benjamin-ono-analytic-solution, sine-gordon-analytic-solution, mukherjee-kundu-analytic-solution]
-reproducibility: low
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- collocation-strategy
+- neural-network
+- nonlinear-systems
+- physics-constrained-loss
+- physics-constraint-weight-tuning
+- physics-informed
+- pinn
+- soft-constraint
+- synthetic-data
+sources:
+- sources/papers/gao2025-adaptive-loss-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- multitask-learning
+- adaptive-loss-weighting
+- loss-magnitude-normalization
+- automatic-differentiation
+results:
+- relative-l2-error-reduction
+- loss-scale-balancing
+- convergence-acceleration
+failure_modes:
+- physics-constraint-weight-tuning
+- update-frequency-uncertainty
+- loss-scale-imbalance
+- reporting-inconsistency
+datasets:
+- benjamin-ono-analytic-solution
+- sine-gordon-analytic-solution
+- mukherjee-kundu-analytic-solution
+reproducibility: low
 ---
 
 # Physics-informed neural networks with adaptive loss weighting algorithm for solving partial differential equations
@@ -84,3 +114,13 @@ APINNs 的核心不是修改网络表达能力，而是修改多约束优化的�
 - [[pinn]] — 标准 PINN 基础范式
 - [[wang2021-pinn-ntk-failure-analysis]] — 多损失训练失衡的 NTK 解释
 - [[jagtap2019-adaptive-activation-analysis]] — 表达侧自适应的对照路线
+
+## Evidence By Source
+
+### `sources/papers/gao2025-adaptive-loss-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_camwa_2025_01_007.xml`, `raw/papers/extracted/10_1016_j_camwa_2025_01_007_extracted.txt`
+
+^[sources/papers/gao2025-adaptive-loss-pinn.md]

@@ -1,12 +1,50 @@
 ---
-title: "Lepikhin et al. (2020) — 方法机制展开"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--lepikhin2021-gshard-method
+title: Lepikhin et al. (2020) — 方法机制展开
 type: paper-analysis
-tags: [neural-network, deep-learning, transformer, mixture-of-experts, sparse-moe, gating-network, top-k-routing, load-balancing, conditional-computation, automatic-sharding, spmd, model-parallelism, distributed-training, sublinear-scaling, einsum, compiler-optimization, xla-compiler]
-sources: [raw/papers/lepikhin2021_gshard.md]
-methods: [top-2-gating, expert-capacity, auxiliary-loss, random-routing, local-group-dispatching, einsum-partitioning, spmd-partitioning, alltoall-resharding, tensor-sharding-annotations, split-api, replicate-api, halo-exchange]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computational-mechanics
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- automatic-sharding
+- compiler-optimization
+- conditional-computation
+- deep-learning
+- distributed-training
+- einsum
+- gating-network
+- load-balancing
+- mixture-of-experts
+- model-parallelism
+- neural-network
+- sparse-moe
+- spmd
+- sublinear-scaling
+- top-k-routing
+- transformer
+- xla-compiler
+sources:
+- sources/papers/lepikhin2021-gshard.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
+methods:
+- top-2-gating
+- expert-capacity
+- auxiliary-loss
+- random-routing
+- local-group-dispatching
+- einsum-partitioning
+- spmd-partitioning
+- alltoall-resharding
+- tensor-sharding-annotations
+- split-api
+- replicate-api
+- halo-exchange
 ---
 
 # Lepikhin et al. (2020) — 方法机制展开
@@ -174,3 +212,13 @@ h = einsum("EGCM,EMH→EGCH", dispatched_inputs, wi)
 - [[lepikhin2021-gshard-analysis]] — 论文概述
 - [[lepikhin2021-gshard-results]] — 结果证据展开
 - [[lepikhin2021-gshard-critical]] — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
+
+## Evidence By Source
+
+### `sources/papers/lepikhin2021-gshard.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lepikhin2021_gshard.md`
+
+^[sources/papers/lepikhin2021-gshard.md]

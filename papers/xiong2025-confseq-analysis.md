@@ -1,20 +1,55 @@
 ---
-title: "Xiong et al. (2025) — ConfSeq 构象描述语言：3D 分子结构与 AI 的桥梁"
-created: 2026-06-24
-updated: 2026-06-24
+id: papers--xiong2025-confseq-analysis
+title: Xiong et al. (2025) — ConfSeq 构象描述语言：3D 分子结构与 AI 的桥梁
 type: paper-analysis
-tags: [chemical-language-model, molecular-conformation, 3d-molecular-generation, sequence-modeling, transformer, drug-discovery, internal-coordinates]
-sources: [raw/papers/10_1101_2025.05.07.652440.pdf]
-methods: [sequence-modeling, internal-coordinates, dihedral-angle, pseudo-chirality, se3-invariance]
-results: [conformation-prediction, molecular-generation, representation-learning, virtual-screening, state-of-the-art]
-failure_modes: [rotatable-bond-dependency, force-field-reference, data-scarcity]
-datasets: [geom-drugs, moses, chembl, bindingdb, dude, pcba]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/graph-neural-network
+- method/transformer
+keywords:
+- 3d-molecular-generation
+- chemical-language-model
+- drug-discovery
+- internal-coordinates
+- molecular-conformation
+- sequence-modeling
+- transformer
+sources:
+- sources/papers/xiong2025-confseq.md
+created: '2026-06-24'
+updated: '2026-07-31'
+confidence: high
+methods:
+- sequence-modeling
+- internal-coordinates
+- dihedral-angle
+- pseudo-chirality
+- se3-invariance
+results:
+- conformation-prediction
+- molecular-generation
+- representation-learning
+- virtual-screening
+- state-of-the-art
+failure_modes:
+- rotatable-bond-dependency
+- force-field-reference
+- data-scarcity
+datasets:
+- geom-drugs
+- moses
+- chembl
+- bindingdb
+- dude
+- pcba
 reproducibility: medium
 code_url:
-  - https://doi.org/10.5281/zenodo.19706011
+- https://doi.org/10.5281/zenodo.19706011
 dataset_url:
-  - https://github.com/learningmatter-mit/geom
-confidence: high
+- https://github.com/learningmatter-mit/geom
 ---
 
 # Bridging 3D Molecular Structures and Artificial Intelligence by a Conformation Description Language
@@ -122,3 +157,13 @@ ConfSeq 在 SMILES 序列中嵌入三种内坐标 token：(1) **二面角** `<11
 - `[[xiong2025-confseq-method]]` — 方法机制展开
 - `[[xiong2025-confseq-results]]` — 实验结果展开
 - `[[xiong2025-confseq-critical]]` — 贡献+Negative+可迁移+机会
+
+## Evidence By Source
+
+### `sources/papers/xiong2025-confseq.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1101_2025.05.07.652440.pdf`
+
+^[sources/papers/xiong2025-confseq.md]

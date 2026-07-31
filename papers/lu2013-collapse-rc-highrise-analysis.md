@@ -1,27 +1,60 @@
 ---
-title: "Lu et al. (2013) — RC 高层建筑极端地震倒塌模拟: 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--lu2013-collapse-rc-highrise-analysis
+title: 'Lu et al. (2013) — RC 高层建筑极端地震倒塌模拟: 论文分析'
 type: paper-analysis
-tags: [structural-dynamics, nonlinear-systems, seismic-response, collapse-simulation,
-       rc-structures, fiber-beam-element, multilayer-shell, elemental-deactivation,
-       finite-element, high-rise-building, progressive-collapse, material-failure-criteria]
-sources: [raw/papers/lu2013-collapse-rc-highrise.md, raw/papers/10_1002_eqe_2240.pdf]
-methods: [fiber-beam-element, multilayer-shell, elemental-deactivation, finite-element, contact-algorithm, strain-based-failure]
-results: [collapse-process-simulation, soft-story-identification, failure-criteria-sensitivity]
-failure_modes: [no-full-scale-validation, model-assumption-limitations, failure-criteria-arbitrariness]
-datasets: [el-centro-ground-motion, duzce-ground-motion, fema-p695-far-field]
-reproducibility: medium
-code_url: []
-dataset_url:
-  - https://ngawest2.berkeley.edu/
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+keywords:
+- collapse-simulation
+- elemental-deactivation
+- fiber-beam-element
+- finite-element
+- high-rise-building
+- material-failure-criteria
+- multilayer-shell
+- nonlinear-systems
+- progressive-collapse
+- rc-structures
+- seismic-response
+- structural-dynamics
+sources:
+- sources/papers/lu2013-collapse-rc-highrise.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+methods:
+- fiber-beam-element
+- multilayer-shell
+- elemental-deactivation
+- finite-element
+- contact-algorithm
+- strain-based-failure
+results:
+- collapse-process-simulation
+- soft-story-identification
+- failure-criteria-sensitivity
+failure_modes:
+- no-full-scale-validation
+- model-assumption-limitations
+- failure-criteria-arbitrariness
+datasets:
+- el-centro-ground-motion
+- duzce-ground-motion
+- fema-p695-far-field
+reproducibility: medium
+dataset_url:
+- https://ngawest2.berkeley.edu/
 ---
 
 # RC 高层建筑在极端地震下的倒塌模拟
 
-> Xiao Lu, **Xinzheng Lu (陆新征)**, Hong Guan, Lieping Ye (叶列平).  
-> Earthquake Engineering & Structural Dynamics, 2013, 42(5): 705–723. DOI: 10.1002/eqe.2240  
+> Xiao Lu, **Xinzheng Lu (陆新征)**, Hong Guan, Lieping Ye (叶列平).
+> Earthquake Engineering & Structural Dynamics, 2013, 42(5): 705–723. DOI: 10.1002/eqe.2240
 > 清华土木系 + Griffith University
 
 ## 1. 工程背景 (Engineering Background)
@@ -132,3 +165,13 @@ confidence: high
 - [[lu2013-collapse-rc-highrise-results]] — 实验结果展开
 - [[lu2013-collapse-rc-highrise-critical]] — 贡献 + Negative + 可迁移 + 机会
 - [[zhang2020-phylstm-analysis]] — PhyLSTM 滞回建模（可交叉迁移的替代方案）
+
+## Evidence By Source
+
+### `sources/papers/lu2013-collapse-rc-highrise.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lu2013-collapse-rc-highrise.md`, `raw/papers/10_1002_eqe_2240.pdf`
+
+^[sources/papers/lu2013-collapse-rc-highrise.md]

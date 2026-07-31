@@ -1,10 +1,34 @@
 ---
-title: "SeisGPT 批判性分析：基础模型边界、FE 标签依赖与工程部署"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--meng2026-seisgpt-critical
+title: SeisGPT 批判性分析：基础模型边界、FE 标签依赖与工程部署
 type: paper-analysis
-tags: [physics-informed, metamodeling, deep-learning, structural-dynamics, nonlinear-systems, seismic-response, finite-element, high-rise-building, real-time-simulation, transfer-learning, cross-domain-generalization, future-work, limitation, ida]
-sources: [raw/papers/meng2026-seisgpt.pdf, raw/papers/meng2026-seisgpt-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- cross-domain-generalization
+- deep-learning
+- finite-element
+- future-work
+- high-rise-building
+- ida
+- limitation
+- metamodeling
+- nonlinear-systems
+- physics-informed
+- real-time-simulation
+- seismic-response
+- structural-dynamics
+- transfer-learning
+sources:
+- sources/papers/meng2026-seisgpt.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -206,3 +230,13 @@ SeisGPT 可快速定位 failure-adjacent 状态、估计最大层间位移并筛
 - `[[zhang2020-phylstm-critical]]`
 - `[[wu2025-cm-pinn-critical]]`
 - `[[seisgpt-vs-phylstm-cm-pinns]]`
+
+## Evidence By Source
+
+### `sources/papers/meng2026-seisgpt.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/meng2026-seisgpt.pdf`, `raw/papers/meng2026-seisgpt-extracted.md`
+
+^[sources/papers/meng2026-seisgpt.md]

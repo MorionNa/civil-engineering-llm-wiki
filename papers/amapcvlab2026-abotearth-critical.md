@@ -1,10 +1,25 @@
 ---
-title: "ABot-Earth 0.5 — 贡献+Negative+可迁移+研究机会"
-created: 2026-06-22
-updated: 2026-06-22
+id: papers--amapcvlab2026-abotearth-critical
+title: ABot-Earth 0.5 — 贡献+Negative+可迁移+研究机会
 type: paper-analysis
-tags: [3d-gaussian-splatting, generative-3d-earth, digital-twins, sim-to-real, embodied-ai, reconstruction-based-generation]
-sources: [raw/papers/amapcvlab2026-abotearth.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/llm
+- domain/remote-sensing
+- evidence/paper
+keywords:
+- 3d-gaussian-splatting
+- digital-twins
+- embodied-ai
+- generative-3d-earth
+- reconstruction-based-generation
+- sim-to-real
+sources:
+- sources/papers/amapcvlab2026-abotearth.md
+created: '2026-06-22'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -125,3 +140,13 @@ confidence: high
 - `[[amapcvlab2026-abotearth-analysis]]` — 论文总览
 - `[[entities/abot-earth]]` — ABot-Earth 系统概述
 - `[[entities/3d-gaussian-splatting]]` — 3DGS 技术概述
+
+## Evidence By Source
+
+### `sources/papers/amapcvlab2026-abotearth.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/amapcvlab2026-abotearth.pdf`
+
+^[sources/papers/amapcvlab2026-abotearth.md]

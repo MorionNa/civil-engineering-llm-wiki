@@ -1,9 +1,19 @@
 ---
-title: "Ru et al. (2020) — NAGO 贡献 · 局限 · 延伸"
-created: 2026-06-15
-updated: 2026-06-15
+id: papers--ru2020-nago-critical
+title: Ru et al. (2020) — NAGO 贡献 · 局限 · 延伸
 type: paper-analysis
-tags: [neural-architecture-search]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+keywords:
+- neural-architecture-search
+sources:
+- sources/papers/ru2020-nago.md
+created: '2026-06-15'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # NAGO 贡献 · 局限 · 延伸
@@ -148,3 +158,13 @@ NAGO 不使用 DropPath 和 Auxiliary Towers——这两种技巧对 one-shot �
 - **优化高维扩展空间时性能退化**：如果必须搜索 >8 维，建议增加 BO 迭代次数或采用分阶段策略
 - **训练时间波动**：搜索 `θ_S` 和 `θ_C` 时个别配置的极端 stage ratio 会导致训练时间暴增
 - **与现有 NAS 生态的兼容性**：HNAG 架构不是 cell-based，不能直接使用 DARTS 等框架的训练 pipeline
+
+## Evidence By Source
+
+### `sources/papers/ru2020-nago.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/nago_ru2020.pdf`
+
+^[sources/papers/ru2020-nago.md]

@@ -1,9 +1,24 @@
 ---
-title: "Neural Tangent Kernel (NTK)"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--neural-tangent-kernel
+title: Neural Tangent Kernel (NTK)
 type: entity
-tags: [neural-tangent-kernel, spectral-bias, gradient-pathology, neural-network-theory]
+status: draft
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- entity/model
+- method/pinn
+keywords:
+- domain/ai4s
+- entity/model
+- gradient-pathology
+- method/pinn
+- neural-network-theory
+- neural-tangent-kernel
+- spectral-bias
+sources: []
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -51,3 +66,7 @@ $$\eta_k = \eta \cdot \frac{\max_j \lambda_{\max}(K_{jj})}{\lambda_{\max}(K_{kk}
 - [[pinn]] — PINN 实体
 - [[bayesian-pinn]] — Bayesian PINN 中梯度平衡的相关性
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败的总结
+
+## Verification Needed
+
+- This historical page has no explicit source record. Recover and verify the original evidence before changing `status` from `draft`.

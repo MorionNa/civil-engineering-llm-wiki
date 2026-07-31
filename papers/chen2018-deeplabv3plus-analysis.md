@@ -1,22 +1,60 @@
 ---
-title: "Chen et al. (2018) — DeepLabv3+: Encoder-Decoder with Atrous Separable Convolution: 论文分析"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--chen2018-deeplabv3plus-analysis
+title: 'Chen et al. (2018) — DeepLabv3+: Encoder-Decoder with Atrous Separable Convolution: 论文分析'
 type: paper-analysis
-tags: [semantic-segmentation, encoder-decoder, atrous-convolution, spatial-pyramid-pooling, depthwise-separable-convolution, xception, fully-convolutional]
-sources: [raw/papers/deepLabv3plus.pdf]
-methods: [aspp, atrous-separable-convolution, encoder-decoder, output-stride, depthwise-separable-convolution, aligned-xception, bilinear-upsample]
-results: [pascal-voc-89.0, cityscapes-82.1, sota, trimap-boundary, coco-pretraining, jft-pretraining]
-failure_modes: [output-stride-tradeoff, decoder-design-sensitivity, image-level-feature-dataset-specific, sofa-vs-chair-confusion, occlusion-failure, rare-view-failure]
-datasets: [pascal-voc-2012, cityscapes, ms-coco, imagenet, jft-300m]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+keywords:
+- atrous-convolution
+- depthwise-separable-convolution
+- encoder-decoder
+- fully-convolutional
+- semantic-segmentation
+- spatial-pyramid-pooling
+- xception
+sources:
+- sources/papers/chen2018-deeplabv3plus.md
+created: '2026-06-11'
+updated: '2026-07-31'
+confidence: high
+methods:
+- aspp
+- atrous-separable-convolution
+- encoder-decoder
+- output-stride
+- depthwise-separable-convolution
+- aligned-xception
+- bilinear-upsample
+results:
+- pascal-voc-89.0
+- cityscapes-82.1
+- sota
+- trimap-boundary
+- coco-pretraining
+- jft-pretraining
+failure_modes:
+- output-stride-tradeoff
+- decoder-design-sensitivity
+- image-level-feature-dataset-specific
+- sofa-vs-chair-confusion
+- occlusion-failure
+- rare-view-failure
+datasets:
+- pascal-voc-2012
+- cityscapes
+- ms-coco
+- imagenet
+- jft-300m
 reproducibility: high
 code_url:
-  - https://github.com/tensorflow/models/tree/master/research/deeplab
+- https://github.com/tensorflow/models/tree/master/research/deeplab
 dataset_url:
-  - http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
-  - https://www.cityscapes-dataset.com/
-  - https://cocodataset.org/
-confidence: high
+- http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
+- https://www.cityscapes-dataset.com/
+- https://cocodataset.org/
 ---
 
 # DeepLabv3+
@@ -148,3 +186,13 @@ Input → CNN Backbone (ResNet-101 / Modified Xception)
 
 - [[ronneberger2015-unet-analysis]] — U-Net encoder-decoder 范式起源，DeepLabv3+ 的 decoder 比 U-Net 更简洁
 - [[zhao2017-pspnet-analysis]] — PSPNet pyramid pooling vs DeepLabv3+ ASPP：同为多尺度上下文，ASPP 用 atrous conv 替代池化
+
+## Evidence By Source
+
+### `sources/papers/chen2018-deeplabv3plus.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/deepLabv3plus.pdf`
+
+^[sources/papers/chen2018-deeplabv3plus.md]

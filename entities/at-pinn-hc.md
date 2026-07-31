@@ -1,10 +1,33 @@
 ---
-title: "AT-PINN-HC"
-created: 2026-06-27
-updated: 2026-06-27
+id: entities--at-pinn-hc
+title: AT-PINN-HC
 type: entity
-tags: [pinn, physics-informed, hard-constraints, time-marching, auxiliary-function, structural-dynamics, vibration-analysis]
-sources: [raw/papers/10_1016_j_cma_2024_117691_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- method/pinn
+keywords:
+- auxiliary-function
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- hard-constraints
+- method/pinn
+- physics-informed
+- pinn
+- structural-dynamics
+- time-marching
+- vibration-analysis
+sources:
+- raw/papers/10_1016_j_cma_2024_117691_extracted.txt
+created: '2026-06-27'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # AT-PINN-HC
@@ -63,3 +86,12 @@ AT-PINN-HC
 - [[wang2023-pinn-spurious-analysis]] — PINN 伪解分析（互补方向）
 - [[zhang2020-phylstm-analysis]] — PhyLSTM（软约束对比）
 - [[pseudo-time-stepping]] — 伪时间步进（潜在结合方向）
+
+## Evidence By Source
+
+### `raw/papers/10_1016_j_cma_2024_117691_extracted.txt`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1016_j_cma_2024_117691_extracted.txt]

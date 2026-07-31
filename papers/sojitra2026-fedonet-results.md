@@ -1,13 +1,44 @@
 ---
-title: "Sojitra et al. (2026) — 结果证据展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--sojitra2026-fedonet-results
+title: Sojitra et al. (2026) — 结果证据展开
 type: paper-analysis
-tags: [deeponet, fourier-features, spectral-accuracy, pde-benchmark, burgers, poisson, eikonal, allen-cahn, kuramoto-sivashinsky, noise-robustness]
-sources: [raw/papers/10_1016_j_jcp_2026_114931_extracted.txt]
-results: [relative-l2-error, burgers-equation, 2d-poisson, eikonal-equation, allen-cahn, kuramoto-sivashinsky, data-scaling, noise-robustness]
-datasets: [burgers, poisson-2d, eikonal, allen-cahn, kuramoto-sivashinsky]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+keywords:
+- allen-cahn
+- burgers
+- deeponet
+- eikonal
+- fourier-features
+- kuramoto-sivashinsky
+- noise-robustness
+- pde-benchmark
+- poisson
+- spectral-accuracy
+sources:
+- sources/papers/sojitra2026-fedonet.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+results:
+- relative-l2-error
+- burgers-equation
+- 2d-poisson
+- eikonal-equation
+- allen-cahn
+- kuramoto-sivashinsky
+- data-scaling
+- noise-robustness
+datasets:
+- burgers
+- poisson-2d
+- eikonal
+- allen-cahn
+- kuramoto-sivashinsky
 ---
 
 # Sojitra et al. (2026) — 结果证据展开
@@ -128,3 +159,13 @@ FEDONet 在**全部 5 个 PDE 基准**上一致优于标准 DeepONet：
 - [[deeponet]] — DeepONet 神经算子
 - [[goswami2022-variational-deeponet-results]] — V-DeepONet 结果对比
 - [[fedonet]] — FEDONet 实体页
+
+## Evidence By Source
+
+### `sources/papers/sojitra2026-fedonet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2026_114931_extracted.txt`
+
+^[sources/papers/sojitra2026-fedonet.md]

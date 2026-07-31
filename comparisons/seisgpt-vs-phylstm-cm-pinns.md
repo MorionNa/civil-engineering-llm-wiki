@@ -1,10 +1,37 @@
 ---
-title: "SeisGPT vs PhyLSTM vs CM-PINNs：三类物理信息结构响应预测范式"
-created: 2026-07-16
-updated: 2026-07-16
+id: comparisons--seisgpt-vs-phylstm-cm-pinns
+title: SeisGPT vs PhyLSTM vs CM-PINNs：三类物理信息结构响应预测范式
 type: comparison
-tags: [comparison, physics-informed, metamodeling, lstm, transformer, structural-dynamics, nonlinear-systems, hysteresis, seismic-response, finite-element, transfer-learning, cross-domain-generalization]
-sources: [raw/papers/meng2026-seisgpt.pdf, raw/papers/zhang2020-phylstm.md, raw/papers/wu2025-cm-pinn-extracted.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- domain/llm
+- method/evaluation
+- method/graph-neural-network
+- method/pinn
+- method/transformer
+keywords:
+- comparison
+- cross-domain-generalization
+- finite-element
+- hysteresis
+- lstm
+- metamodeling
+- nonlinear-systems
+- physics-informed
+- seismic-response
+- structural-dynamics
+- transfer-learning
+- transformer
+sources:
+- raw/papers/meng2026-seisgpt.pdf
+- raw/papers/zhang2020-phylstm.md
+- raw/papers/wu2025-cm-pinn-extracted.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -49,14 +76,14 @@ PhyLSTM 的网络仍主要是通用 LSTM。物理通过损失检查输出是否�
 
 CM-PINNs 将本构模型计算出的恢复力 $f_{s2}$ 与网络预测恢复力 $f_{s1}$ 对齐。它特别适合本构已知、需要明确材料行为约束的场景。
 
-优势：屈服、滞回和恢复力机制更可解释。  
+优势：屈服、滞回和恢复力机制更可解释。
 限制：本构模型需要事先选定，且当前验证仍以低维剪切结构和合成数据为主。
 
 ### SeisGPT：传播算子物理化
 
 SeisGPT 让 $D=M^{-1/2}KM^{-1/2}$ 同时定义图连接和模态谱基，再以阻尼旋转传播 latent state。物理不是额外 loss，而是网络的“坐标系”和“信息传播规则”。
 
-优势：适合大规模、多结构预训练和跨建筑共享。  
+优势：适合大规模、多结构预训练和跨建筑共享。
 限制：材料非线性由数据和有理谱修正隐式表示，不如 CM-PINNs 的本构机制明确。
 
 ## 4. 选型建议
@@ -137,3 +164,12 @@ SeisGPT 大规模预训练表示
 - `[[wu2025-cm-pinn-analysis]]`
 - `[[phylstm2-vs-phylstm3-vs-lstm]]`
 - `[[physics-constrained-training-failure-modes]]`
+
+## Evidence By Source
+
+### `raw/papers/meng2026-seisgpt.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/meng2026-seisgpt.pdf]

@@ -1,18 +1,59 @@
 ---
-title: "Du et al. (2026) — HCFF-PINN 数值结果与证据核查"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--du2026-hcff-pinn-results
+title: Du et al. (2026) — HCFF-PINN 数值结果与证据核查
 type: paper-analysis
-tags: [physics-informed, pinn, neural-network, deep-learning, hard-constraints, structural-dynamics, seismic-response, equation-of-motion, vibration-analysis, sdof, ground-motion, synthetic-data, finite-element, benchmark, adam-lbfgs]
-sources: [raw/papers/10_1016_j_engappai_2025_113640.xml, raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt]
-methods: [physics-guided-fourier-features, hard-initial-conditions, tanh-squared-modulation, static-condensation, adam-lbfgs-optimization]
-results: [mixed-frequency-error-reduction, multi-degree-of-freedom-validation, cross-ground-motion-robustness, frequency-prior-sensitivity]
-failure_modes: [baseline-reporting-inconsistency, extreme-frequency-prior-mismatch, nonconvergence-of-gradient-and-self-adaptive-baselines]
-datasets: [synthetic-harmonic-loads, northridge-symlar, gazli-karakyr, kocaeli-duzce, el-centro-array, san-simeon-diablo-canyon]
-reproducibility: medium
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- benchmark
+- deep-learning
+- equation-of-motion
+- finite-element
+- ground-motion
+- hard-constraints
+- neural-network
+- physics-informed
+- pinn
+- sdof
+- seismic-response
+- structural-dynamics
+- synthetic-data
+- vibration-analysis
+sources:
+- sources/papers/du2026-hcff-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-guided-fourier-features
+- hard-initial-conditions
+- tanh-squared-modulation
+- static-condensation
+- adam-lbfgs-optimization
+results:
+- mixed-frequency-error-reduction
+- multi-degree-of-freedom-validation
+- cross-ground-motion-robustness
+- frequency-prior-sensitivity
+failure_modes:
+- baseline-reporting-inconsistency
+- extreme-frequency-prior-mismatch
+- nonconvergence-of-gradient-and-self-adaptive-baselines
+datasets:
+- synthetic-harmonic-loads
+- northridge-symlar
+- gazli-karakyr
+- kocaeli-duzce
+- el-centro-array
+- san-simeon-diablo-canyon
+reproducibility: medium
 ---
 
 # Du et al. (2026) — HCFF-PINN 数值结果与证据核查
@@ -79,3 +120,13 @@ G-PINN 与 SA-PINN 的失败说明：只加高阶残差或动态权重并没有�
 - [[du2026-hcff-pinn-critical]] — 局限与机会
 - [[hcff-pinn]] — HCFF-PINN 实体
 - [[at-pinn-hc]] — 硬约束结构振动对照方法
+
+## Evidence By Source
+
+### `sources/papers/du2026-hcff-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_engappai_2025_113640.xml`, `raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt`
+
+^[sources/papers/du2026-hcff-pinn.md]

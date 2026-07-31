@@ -1,22 +1,57 @@
 ---
-title: "Li et al. (2026) — ExSGD：利用历史梯度的分布式大批量建筑提取训练优化"
-created: 2026-07-30
-updated: 2026-07-30
+id: papers--li2026-exsgd-analysis
+title: Li et al. (2026) — ExSGD：利用历史梯度的分布式大批量建筑提取训练优化
 type: paper-analysis
-tags: [deep-learning, stochastic-gradient-descent, adaptive-weighting, remote-sensing, semantic-segmentation, distributed-training, computer-vision]
-sources: [raw/papers/li2026-exsgd-source.md]
-methods: [gradient-extrapolation, historical-gradient-aggregation, layer-wise-learning-rate, trust-ratio, large-batch-training]
-results: [building-extraction, whu-aerial, whu-sat, phb, f1-improvement, iou-improvement]
-failure_modes: [domain-shift, gaussian-parameter-assumption, distributed-hardware-dependence]
-datasets: [whu-aerial, whu-sat, phb]
-reproducibility: medium
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computer-vision
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- adaptive-weighting
+- computer-vision
+- deep-learning
+- distributed-training
+- remote-sensing
+- semantic-segmentation
+- stochastic-gradient-descent
+sources:
+- sources/papers/li2026-exsgd.md
+created: '2026-07-30'
+updated: '2026-07-31'
 confidence: high
+methods:
+- gradient-extrapolation
+- historical-gradient-aggregation
+- layer-wise-learning-rate
+- trust-ratio
+- large-batch-training
+results:
+- building-extraction
+- whu-aerial
+- whu-sat
+- phb
+- f1-improvement
+- iou-improvement
+failure_modes:
+- domain-shift
+- gaussian-parameter-assumption
+- distributed-hardware-dependence
+datasets:
+- whu-aerial
+- whu-sat
+- phb
+reproducibility: medium
 ---
 
 # ExSGD: Exploiting previous gradient for distributed large-batch training of building extraction network
 
-> **作者：** Panle Li et al.  
-> **期刊：** Expert Systems With Applications 297 (2026) 129347  
+> **作者：** Panle Li et al.
+> **期刊：** Expert Systems With Applications 297 (2026) 129347
 > **一句话定位：** ExSGD 针对建筑提取网络的大批量分布式训练，通过利用历史 epoch 梯度序列增强当前梯度信号，并结合自适应层级学习率调节，提高大规模遥感建筑提取模型训练稳定性。
 
 ## 1. 工程背景 (Engineering Background)
@@ -102,3 +137,13 @@ ExSGD 包含两个核心模块：
 - [[li2026-exsgd-results]]
 - [[li2026-exsgd-critical]]
 - [[optimizer-for-ai4s-and-physics-models]]
+
+## Evidence By Source
+
+### `sources/papers/li2026-exsgd.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/li2026-exsgd-source.md`
+
+^[sources/papers/li2026-exsgd.md]

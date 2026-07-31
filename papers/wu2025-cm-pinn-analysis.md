@@ -1,27 +1,64 @@
 ---
-title: "Wu et al. (2025) — CM-PINNs：本构模型约束 PINN 预测非线性结构地震响应"
-created: 2026-07-01
-updated: 2026-07-01
+id: papers--wu2025-cm-pinn-analysis
+title: Wu et al. (2025) — CM-PINNs：本构模型约束 PINN 预测非线性结构地震响应
 type: paper-analysis
-tags: [physics-informed, pinn, lstm, metamodeling, structural-dynamics, nonlinear-systems, hysteresis, seismic-response, data-scarcity, equation-of-motion, restoring-force, soft-constraint, finite-difference, adaptive-weighting, sdof]
-sources: [raw/papers/wu2025-cm-pinn-extracted.md]
-methods: [physics-constrained-loss, finite-difference, multi-lstm, adaptive-weighting, collocation-strategy]
-results: [cross-domain-generalization, extrapolation-ability, synthetic-data]
-failure_modes: [finite-difference-error, physics-constraint-weight-tuning]
-datasets: [blwn, synthetic-data]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- adaptive-weighting
+- data-scarcity
+- equation-of-motion
+- finite-difference
+- hysteresis
+- lstm
+- metamodeling
+- nonlinear-systems
+- physics-informed
+- pinn
+- restoring-force
+- sdof
+- seismic-response
+- soft-constraint
+- structural-dynamics
+sources:
+- sources/papers/wu2025-cm-pinn.md
+created: '2026-07-01'
+updated: '2026-07-31'
+confidence: high
+methods:
+- physics-constrained-loss
+- finite-difference
+- multi-lstm
+- adaptive-weighting
+- collocation-strategy
+results:
+- cross-domain-generalization
+- extrapolation-ability
+- synthetic-data
+failure_modes:
+- finite-difference-error
+- physics-constraint-weight-tuning
+datasets:
+- blwn
+- synthetic-data
 reproducibility: medium
 code_url:
-  - 待公开（论文声明发表后将在 GitHub 公开）
+- 待公开（论文声明发表后将在 GitHub 公开）
 dataset_url:
-  - BLWN 合成地震动；Chi-Chi 记录用于独立验证；代码/数据待 GitHub 公开
-confidence: high
+- BLWN 合成地震动；Chi-Chi 记录用于独立验证；代码/数据待 GitHub 公开
 ---
 
 # Constitutive model-constrained physics-informed neural networks framework for nonlinear structural seismic response prediction
 
 > **论文：** Yongxin Wu, Zhanpeng Yin, Yufeng Gao, Shangchuan Yang, Yue Hou (2025), *Computer Methods in Applied Mechanics and Engineering*, 443, 118079. DOI: 10.1016/j.cma.2025.118079
 > **核心定位：** 在 `[[zhang2020-phylstm-analysis]]` 的 PhyLSTM 路线上进一步把**非线性本构模型**显式放进 physics-informed loss，用 CM-PINNs 预测 SDOF 与 MDOF 剪切结构的非线性地震响应。
-> **原文：** `[[raw/papers/wu2025-cm-pinn-extracted]]`；PDF: `[[raw/papers/wu2025-cm-pinn.pdf]]`
+> **原文：** ``raw/papers/wu2025-cm-pinn-extracted``；PDF: ``raw/papers/wu2025-cm-pinn.pdf``
 
 ## 1. 工程背景 (Engineering Background)
 > **⚠️ 非线性类型：材料本构非线性 + 结构滞回响应。** 本文的“非线性”不是 Raissi 2019 那类 PDE 算子非线性，而是结构恢复力 $F_s(u)$ 由**双线性弹塑性本构/滞回模型**决定：屈服后刚度降低，恢复力依赖加载历史和未观测滞回变量 $r$。PINN 的作用不是只把运动方程写进残差，而是把**本构模型计算出的恢复力**作为额外约束嵌入 loss。^[raw/papers/wu2025-cm-pinn-extracted.md]
@@ -81,3 +118,13 @@ CM-PINNs 仍依赖已知且可张量化的本构模型；当前只验证双线�
 - [[bouc-wen-model]] — 可替换 BLCM 的典型率相关滞回本构
 - [[pinn]] — PINN 基础范式
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式对比
+
+## Evidence By Source
+
+### `sources/papers/wu2025-cm-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wu2025-cm-pinn-extracted.md`
+
+^[sources/papers/wu2025-cm-pinn.md]

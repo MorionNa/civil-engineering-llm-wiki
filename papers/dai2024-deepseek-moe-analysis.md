@@ -1,20 +1,71 @@
 ---
-title: "Dai et al. (2024) — DeepSeekMoE: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--dai2024-deepseek-moe-analysis
+title: 'Dai et al. (2024) — DeepSeekMoE: 论文分析'
 type: paper-analysis
-tags: [mixture-of-experts, sparse-moe, gating-network, top-k-routing, load-balancing, large-language-model, decoder-only-transformer, efficient-inference, deepseek-moe]
-sources: [raw/papers/dai2024_deepseek_moe.pdf]
-methods: [fine-grained-expert-segmentation, shared-expert-isolation, expert-level-balance-loss, top-k-routing, bilingual-pretraining]
-results: [sublinear-scaling, expert-specialization, parameter-efficiency, language-modeling, commonsense-reasoning, reading-comprehension, code-generation, math-reasoning]
-failure_modes: [limited-attention-parameters, knowledge-hybridity, knowledge-redundancy, mcq-limitations]
-datasets: [the-pile, hellaswag, piqa, arc, race, triviaqa, naturalquestions, humaneval, mbpp, gsm8k, math, mmlu, winogrande, cluewsc, ceval, cmmlu, chid]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- decoder-only-transformer
+- deepseek-moe
+- efficient-inference
+- gating-network
+- large-language-model
+- load-balancing
+- mixture-of-experts
+- sparse-moe
+- top-k-routing
+sources:
+- sources/papers/dai2024-deepseek-moe.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: high
+methods:
+- fine-grained-expert-segmentation
+- shared-expert-isolation
+- expert-level-balance-loss
+- top-k-routing
+- bilingual-pretraining
+results:
+- sublinear-scaling
+- expert-specialization
+- parameter-efficiency
+- language-modeling
+- commonsense-reasoning
+- reading-comprehension
+- code-generation
+- math-reasoning
+failure_modes:
+- limited-attention-parameters
+- knowledge-hybridity
+- knowledge-redundancy
+- mcq-limitations
+datasets:
+- the-pile
+- hellaswag
+- piqa
+- arc
+- race
+- triviaqa
+- naturalquestions
+- humaneval
+- mbpp
+- gsm8k
+- math
+- mmlu
+- winogrande
+- cluewsc
+- ceval
+- cmmlu
+- chid
 reproducibility: high
 code_url:
-  - https://github.com/deepseek-ai/DeepSeek-MoE
+- https://github.com/deepseek-ai/DeepSeek-MoE
 dataset_url:
-  - https://github.com/deepseek-ai/DeepSeek-MoE
-confidence: high
+- https://github.com/deepseek-ai/DeepSeek-MoE
 ---
 
 # DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models
@@ -71,7 +122,7 @@ DeepSeekMoE 在标准 MoE 之上引入两个互补策略（Figure 1）：
 
 见 [[dai2024-deepseek-moe-critical]]
 
-## 9-12. Negative Knowledge / 可迁移 / 研究机会 / 可复现性
+## 9. Negative Knowledge
 
 见 [[dai2024-deepseek-moe-critical]]
 
@@ -79,3 +130,28 @@ DeepSeekMoE 在标准 MoE 之上引入两个互补策略（Figure 1）：
 - [[lepikhin2021-gshard-analysis]] — GShard (top-2 routing baseline)
 - [[fedus2021-switch-transformer-analysis]] — Switch Transformer (top-1 routing)
 - [[jiang2024-mixtral-of-experts-analysis]] — Mixtral 8×7B (开源 MoE 应用)
+
+## 10. 可迁移知识 (Transferable Knowledge)
+
+- 将论文中的可复用机制抽取为方法组件，而不是直接照搬完整网络。
+- 迁移到结构工程或其他物理系统时，需要重新定义变量、边界、对称性与评价基准。
+
+## 11. 研究机会 (Research Opportunity)
+
+- 在更复杂边界、非线性、多尺度和高维任务上检验方法边界。
+- 对照统一 wall-clock、精度、稳定性和数据效率指标开展复现。
+
+## 12. 可复现性 (Reproducibility)
+
+- 复现应以本页列出的原始来源、代码、数据与超参数为准。
+- 未公开实现细节应记录为复现缺口，不以模型推测补齐。
+
+## Evidence By Source
+
+### `sources/papers/dai2024-deepseek-moe.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/dai2024_deepseek_moe.pdf`
+
+^[sources/papers/dai2024-deepseek-moe.md]

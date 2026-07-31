@@ -1,10 +1,23 @@
 ---
-title: "DARTSformer 实验结果：WMT'14 En-De / En-Fr · WMT'18 En-Cs · Ablation"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--zhao2021-memory-efficient-dnas-results
+title: DARTSformer 实验结果：WMT'14 En-De / En-Fr · WMT'18 En-Cs · Ablation
 type: paper-analysis
-tags: [machine-translation, wmt14, bleu, neural-architecture-search, transformer]
-sources: [raw/papers/memory_efficient_dnas2021.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- bleu
+- machine-translation
+- neural-architecture-search
+- transformer
+- wmt14
+sources:
+- sources/papers/zhao2021-memory-efficient-dnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -135,3 +148,13 @@ confidence: high
 - [[zhao2021-memory-efficient-dnas-critical]] — 贡献·局限·可迁移·机会
 - [[memory-efficient-dnas]] — 实体页
 - [[xu2021-nas-bert-results]] — NAS-BERT 的多尺寸压缩结果对比
+
+## Evidence By Source
+
+### `sources/papers/zhao2021-memory-efficient-dnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/memory_efficient_dnas2021.pdf`
+
+^[sources/papers/zhao2021-memory-efficient-dnas.md]

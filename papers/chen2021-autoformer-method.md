@@ -1,10 +1,25 @@
 ---
-title: "AutoFormer 方法机制：Weight Entanglement + 弹性搜索空间"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--chen2021-autoformer-method
+title: AutoFormer 方法机制：Weight Entanglement + 弹性搜索空间
 type: paper-analysis
-tags: [neural-architecture-search, one-shot-nas, weight-entanglement, weight-sharing-nas, vision-transformer, transformer, evolutionary-search]
-sources: [raw/papers/chen2021_autoformer.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- evolutionary-search
+- neural-architecture-search
+- one-shot-nas
+- transformer
+- vision-transformer
+- weight-entanglement
+- weight-sharing-nas
+sources:
+- sources/papers/chen2021-autoformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -142,3 +157,13 @@ AutoFormer 的 supernet 基于标准 ViT encoder：patch embedding → [class] t
 - [[chen2021-autoformer-analysis]] — 全维度总览
 - [[chen2021-autoformer-results]] — 实验结果
 - [[chen2021-autoformer-critical]] — 贡献·局限·可迁移·机会
+
+## Evidence By Source
+
+### `sources/papers/chen2021-autoformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/chen2021_autoformer.md`
+
+^[sources/papers/chen2021-autoformer.md]

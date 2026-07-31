@@ -1,9 +1,26 @@
 ---
-title: "Wang et al. (2021) PINN 失败机制 — 贡献·Negative·可迁移·研究机会"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2021-pinn-ntk-failure-critical
+title: Wang et al. (2021) PINN 失败机制 — 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, neural-tangent-kernel, spectral-bias, gradient-pathology, future-work, limitation]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- future-work
+- gradient-pathology
+- limitation
+- neural-tangent-kernel
+- physics-informed
+- pinn
+- spectral-bias
+sources:
+- sources/papers/wang2021-pinn-ntk-failure.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -47,10 +64,10 @@ confidence: high
 | 知识 | 迁移到 | 怎么做 |
 |------|--------|--------|
 | NTK 谱偏差分析 | 任何多损失 DL 任务 | 计算各 loss 的梯度范数比 |
-| 自适应学习率退火 | [[chen2025-at-pinn-hc-method\|AT-PINN-HC]] | 硬约束策略本质是消除 BC 损失项 = 根除谱偏差 |
-| 特征值比例诊断 | [[linka2022-bayesian-pinn-method\|Bayesian PINN]] | HMC 采样也受梯度不平衡影响 |
+| 自适应学习率退火 | [[chen2025-at-pinn-hc-method|AT-PINN-HC]] | 硬约束策略本质是消除 BC 损失项 = 根除谱偏差 |
+| 特征值比例诊断 | [[linka2022-bayesian-pinn-method|Bayesian PINN]] | HMC 采样也受梯度不平衡影响 |
 | 激波区域局部 NTK | 激波捕获、裂纹扩展 | 局部 NTK 引导自适应配点 |
-| 时域 PDE 谱偏差更重 | [[wang2023-pinn-spurious-method\|PINN 伪解问题]] | 伪时间步进 → 时间域分解 |
+| 时域 PDE 谱偏差更重 | [[wang2023-pinn-spurious-method|PINN 伪解问题]] | 伪时间步进 → 时间域分解 |
 
 ## 11. 研究机会（8 项）
 
@@ -76,3 +93,13 @@ confidence: high
 - [[wang2021-pinn-ntk-failure-analysis|← 总览]]
 - [[wang2021-pinn-ntk-failure-method|← 方法]]
 - [[wang2021-pinn-ntk-failure-results|← 结果]]
+
+## Evidence By Source
+
+### `sources/papers/wang2021-pinn-ntk-failure.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2021_110768.xml`
+
+^[sources/papers/wang2021-pinn-ntk-failure.md]

@@ -1,9 +1,26 @@
 ---
-title: "Raissi et al. (2019) PINN 结果展开：五类非线性 PDE 的求解验证"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--raissi2019-pinn-results
+title: Raissi et al. (2019) PINN 结果展开：五类非线性 PDE 的求解验证
 type: paper-analysis
-tags: [physics-informed, pinn, nonlinear-pde, pde-benchmarks, burgers, schrodinger, allen-cahn, navier-stokes]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- allen-cahn
+- burgers
+- navier-stokes
+- nonlinear-pde
+- pde-benchmarks
+- physics-informed
+- pinn
+- schrodinger
+sources:
+- sources/papers/raissi2019-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -90,7 +107,7 @@ $$u_t + \lambda_1 u u_x - \lambda_2 u_{xx} = 0$$
 | PDE | 非线性类型 | 阶数 | 传统方法痛点 | PINN 表现 |
 |-----|-----------|:---:|------------|:---:|
 | Burgers | 对流 $uu_x$ | 2 | 激波处震荡 | ✅ 无震荡 |
-| Schrödinger | 立方 $\|h\|^2h$ | 2 | 复数矩阵 | ✅ AD 透明 |
+| Schrödinger | 立方 $|h|^2h$ | 2 | 复数矩阵 | ✅ AD 透明 |
 | Allen-Cahn | 立方 $u^3$ | 2 | 算子分裂 | ✅ 直接优化 |
 | N-S | 向量对流 | 2 | 压力-速度耦合 | ✅ 联合优化 |
 | KdV | 色散 $uu_x+u_{xxx}$ | 3 | 高阶离散 | ✅ AD 高阶 |
@@ -102,3 +119,13 @@ $$u_t + \lambda_1 u u_x - \lambda_2 u_{xx} = 0$$
 - [[raissi2019-pinn-analysis|← 总览]]
 - [[raissi2019-pinn-method|← 方法]]
 - [[raissi2019-pinn-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/raissi2019-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2018_10_045.xml`
+
+^[sources/papers/raissi2019-pinn.md]

@@ -1,13 +1,13 @@
 ---
 id: index
-title: "Civil Engineering LLM Wiki Index"
+title: Civil Engineering LLM Wiki Index
 type: index
 status: active
 project: civil-engineering-llm-wiki
 tags: []
 sources: []
-created: 2026-07-16
-updated: 2026-07-31
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -109,3 +109,14 @@ confidence: high
 3. 新页面必须进入对应分区索引，并在必要时进入本页高优先级知识链。
 4. 每次 ingest/revise/verify/lint 均追加 [[log]]。
 5. 合并前运行严格 lint 和 MkDocs build；GitHub Actions 只验证与部署，不修改仓库。
+
+## Complete Knowledge Map
+
+- [[papers/index]]
+- [[entities/index]]
+- [[concepts/index]]
+- [[sources/index]]
+- [[notes/index]]
+- [[comparisons/index]]
+- [[SCHEMA]]
+- [[log]]

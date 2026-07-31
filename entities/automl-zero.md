@@ -1,10 +1,25 @@
 ---
-title: "AutoML-Zero"
-created: 2026-06-15
-updated: 2026-06-15
+id: entities--automl-zero
+title: AutoML-Zero
 type: entity
-tags: [evolutionary-search, automl, algorithm-discovery, genetic-programming]
-sources: [raw/papers/automl_zero_real2020.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- entity/dataset
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- algorithm-discovery
+- automl
+- entity/dataset
+- evolutionary-search
+- genetic-programming
+- method/neural-architecture-search
+- method/transformer
+sources:
+- raw/papers/automl_zero_real2020.pdf
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -62,3 +77,12 @@ AutoML-Zero 是 Google Brain 在 ICML 2020 提出的框架，旨在**仅使用�
 - [[te-nas]] — training-free NAS：用零成本指标替代训练评估，可能加速 AutoML-Zero
 - [[primer]] — PRIMER：同样用进化搜索发现 Transformer 架构
 - [[nasbench201]] — NAS 基准数据集，可用于对比 AutoML-Zero 与传统 NAS 的搜索难度
+
+## Evidence By Source
+
+### `raw/papers/automl_zero_real2020.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/automl_zero_real2020.pdf]

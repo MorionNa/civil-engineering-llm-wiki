@@ -1,20 +1,56 @@
 ---
-title: "Zhang et al. (2020) — PhyLSTM 论文分析"
-created: 2026-06-10
-updated: 2026-06-10
+id: papers--zhang2020-phylstm-analysis
+title: Zhang et al. (2020) — PhyLSTM 论文分析
 type: paper-analysis
-tags: [physics-informed, lstm, metamodeling, structural-dynamics, nonlinear-systems, hysteresis, seismic-response, data-scarcity, unobservable-variables, soft-constraint, equation-of-motion, multi-lstm]
-sources: [raw/papers/zhang2020-phylstm.md]
-methods: [physics-constrained-loss, adam-lbfgs, collocation-strategy, two-phase-optimization, soft-constraint, tensor-differentiator, finite-difference]
-results: [cross-domain-generalization, extrapolation-ability]
-failure_modes: [architecture-mismatch-failure, finite-difference-error, physics-constraint-weight-tuning]
-datasets: [blwn, peer-database]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- data-scarcity
+- equation-of-motion
+- hysteresis
+- lstm
+- metamodeling
+- multi-lstm
+- nonlinear-systems
+- physics-informed
+- seismic-response
+- soft-constraint
+- structural-dynamics
+- unobservable-variables
+sources:
+- sources/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
+confidence: high
+methods:
+- physics-constrained-loss
+- adam-lbfgs
+- collocation-strategy
+- two-phase-optimization
+- soft-constraint
+- tensor-differentiator
+- finite-difference
+results:
+- cross-domain-generalization
+- extrapolation-ability
+failure_modes:
+- architecture-mismatch-failure
+- finite-difference-error
+- physics-constraint-weight-tuning
+datasets:
+- blwn
+- peer-database
 reproducibility: high
 code_url:
-  - https://github.com/zhry10/PhyLSTM
+- https://github.com/zhry10/PhyLSTM
 dataset_url:
-  - https://ngawest2.berkeley.edu/
-confidence: high
+- https://ngawest2.berkeley.edu/
 ---
 
 # Zhang et al. (2020) — PhyLSTM 论文分析
@@ -146,3 +182,13 @@ confidence: high
 - [[zhang2020-phylstm-method]] — 方法机制展开
 - [[zhang2020-phylstm-results]] — 结果证据展开
 - [[zhang2020-phylstm-critical]] — 贡献+知识点+Negative+可迁移+研究机会
+
+## Evidence By Source
+
+### `sources/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/zhang2020-phylstm.md`
+
+^[sources/papers/zhang2020-phylstm.md]

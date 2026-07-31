@@ -1,10 +1,25 @@
 ---
-title: "Bouc-Wen Model"
-created: 2026-06-10
-updated: 2026-06-13
+id: entities--bouc-wen-model
+title: Bouc-Wen Model
 type: entity
-tags: [bouc-wen, hysteresis, structural-dynamics]
-sources: [raw/papers/zhang2020-phylstm.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+keywords:
+- bouc-wen
+- domain/civil-engineering
+- domain/computational-mechanics
+- entity/model
+- hysteresis
+- structural-dynamics
+sources:
+- raw/papers/zhang2020-phylstm.md
+created: '2026-06-10'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Bouc-Wen Hysteresis Model
@@ -57,3 +72,12 @@ $$\dot{r}_i = \Delta\dot{u}_i - \alpha_i |\Delta\dot{u}_i| |r_i|^{n_i-1} r_i - \
 - [[phylstm3]] — PhyLSTM3（适用此模型）
 - [[phylstm2]] — PhyLSTM2（不适用此模型）
 - [[phylstm2-vs-phylstm3-vs-lstm]] — 性能对比
+
+## Evidence By Source
+
+### `raw/papers/zhang2020-phylstm.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/zhang2020-phylstm.md]

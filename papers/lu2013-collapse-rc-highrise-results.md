@@ -1,10 +1,21 @@
 ---
-title: "Lu et al. (2013) 倒塌模拟结果展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--lu2013-collapse-rc-highrise-results
+title: Lu et al. (2013) 倒塌模拟结果展开
 type: paper-analysis
-tags: [collapse-simulation, high-rise-building, seismic-response]
-sources: [raw/papers/lu2013-collapse-rc-highrise.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+keywords:
+- collapse-simulation
+- high-rise-building
+- seismic-response
+sources:
+- sources/papers/lu2013-collapse-rc-highrise.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -112,3 +123,13 @@ t=16.3s  首层侧向倒塌
 - [[lu2013-collapse-rc-highrise-analysis]] — 全维度概述
 - [[lu2013-collapse-rc-highrise-method]] — 方法机制
 - [[lu2013-collapse-rc-highrise-critical]] — 贡献 + Negative + 可迁移
+
+## Evidence By Source
+
+### `sources/papers/lu2013-collapse-rc-highrise.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lu2013-collapse-rc-highrise.md`, `raw/papers/10_1002_eqe_2240.pdf`
+
+^[sources/papers/lu2013-collapse-rc-highrise.md]

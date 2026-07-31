@@ -1,12 +1,29 @@
 ---
-title: "SegFormer 贡献·Negative·可迁移·研究机会"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--xie2021-segformer-critical
+title: SegFormer 贡献·Negative·可迁移·研究机会
 type: paper-analysis
-tags: [semantic-segmentation, vision-transformer, mix-ffn, mlp-decoder]
-sources: [raw/papers/segformer.pdf]
-failure_modes: [mlp-decoder-cnn-incompatible, edge-device-unknown, imagenet-1k-only, no-decoder-refinement, transformer-training-data-hungry]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/computer-vision
+- evidence/paper
+- method/transformer
+keywords:
+- mix-ffn
+- mlp-decoder
+- semantic-segmentation
+- vision-transformer
+sources:
+- sources/papers/xie2021-segformer.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- mlp-decoder-cnn-incompatible
+- edge-device-unknown
+- imagenet-1k-only
+- no-decoder-refinement
+- transformer-training-data-hungry
 ---
 
 # SegFormer 贡献·Negative·可迁移·研究机会
@@ -98,3 +115,13 @@ Sequence reduction（R=[64,16,4,1]）将 attention 从 O(N²)→O(N²/R)，使�
 - [[sun2019-hrnetv2-critical]] — HRNet NK/TK 对比
 - [[chen2018-deeplabv3plus-critical]] — DeepLabv3+ NK/TK 对比
 - [[ronneberger2015-unet-critical]] — U-Net NK/TK 对比
+
+## Evidence By Source
+
+### `sources/papers/xie2021-segformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/segformer.pdf`
+
+^[sources/papers/xie2021-segformer.md]

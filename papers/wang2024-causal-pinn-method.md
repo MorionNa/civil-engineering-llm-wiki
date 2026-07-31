@@ -1,10 +1,23 @@
 ---
-title: "Wang et al. (2024) 因果训练 PINN — 方法展开：因果损失函数与时序权重"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2024-causal-pinn-method
+title: Wang et al. (2024) 因果训练 PINN — 方法展开：因果损失函数与时序权重
 type: paper-analysis
-tags: [physics-informed, pinn, deep-learning, time-marching, spectral-bias]
-sources: [raw/papers/10_1016_j_cma_2024_116813_extracted.txt]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- deep-learning
+- physics-informed
+- pinn
+- spectral-bias
+- time-marching
+sources:
+- sources/papers/wang2024-causal-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -63,7 +76,7 @@ $$\mathcal{L}_{causal}(\theta) = \frac{1}{M}\sum_{i=1}^{M} w_i \cdot \mathcal{L}
 ```
 时间前沿自动推进：
 w₁=1          → 先学 t₁
-w₂≈0 → ... → w₂=1 → 再学 t₂  
+w₂≈0 → ... → w₂=1 → 再学 t₂
 w₃≈0 → ... → w₃=1 → 再学 t₃
 ...
 ```
@@ -105,18 +118,18 @@ for epoch = 1 to max_epochs:
     # 1. 计算各时间片的 PDE 残差
     for i = 1 to M:
         L_i = MSE(N[u_θ] 在时间片 i 上的配点)
-    
+
     # 2. 计算因果权重
     w_1 = 1.0
     for i = 2 to M:
         w_i = exp(-ε * sum(L_1 ... L_{i-1}))
-    
+
     # 3. 加权因果损失
     L_causal = (1/M) * sum(w_i * L_i) + L_BC + L_IC
-    
+
     # 4. 梯度更新
     θ ← θ - η * ∇L_causal
-    
+
     # 5. 收敛检查
     if all(w_i > 0.99):
         训练完成，退出
@@ -138,3 +151,13 @@ for epoch = 1 to max_epochs:
 - [[wang2024-causal-pinn-critical|批判分析 →]]
 - [[wang2021-pinn-ntk-failure-method|← 同作者 (2021) NTK 方法]]
 - [[wang2023-pinn-spurious-method|← 同作者 (2023) 伪时间步进方法]]
+
+## Evidence By Source
+
+### `sources/papers/wang2024-causal-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_116813_extracted.txt`
+
+^[sources/papers/wang2024-causal-pinn.md]

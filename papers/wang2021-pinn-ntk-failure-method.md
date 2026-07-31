@@ -1,9 +1,24 @@
 ---
-title: "Wang et al. (2021) PINN 失败机制 — 方法展开：NTK 推导与自适应算法"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--wang2021-pinn-ntk-failure-method
+title: Wang et al. (2021) PINN 失败机制 — 方法展开：NTK 推导与自适应算法
 type: paper-analysis
-tags: [physics-informed, pinn, neural-tangent-kernel, spectral-bias, gradient-pathology, multi-task-learning]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- gradient-pathology
+- multi-task-learning
+- neural-tangent-kernel
+- physics-informed
+- pinn
+- spectral-bias
+sources:
+- sources/papers/wang2021-pinn-ntk-failure.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -77,7 +92,7 @@ for t = 1 to T:
         计算各损失分量的 NTK 块
         提取 λ_max(K_rr), λ_max(K_bb), λ_max(K_0)
         更新自适应学习率 η^{(t)}
-    
+
     # 标准梯度下降
     计算各损失分量的梯度
     θ ← θ - [η_r·∇L_r + η_b·∇L_b + η_0·∇L_0]
@@ -102,3 +117,13 @@ for t = 1 to T:
 - [[wang2021-pinn-ntk-failure-analysis|← 总览]]
 - [[wang2021-pinn-ntk-failure-results|结果展开 →]]
 - [[wang2021-pinn-ntk-failure-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/wang2021-pinn-ntk-failure.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2021_110768.xml`
+
+^[sources/papers/wang2021-pinn-ntk-failure.md]

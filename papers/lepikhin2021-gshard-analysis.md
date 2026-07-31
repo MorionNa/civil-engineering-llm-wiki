@@ -1,20 +1,68 @@
 ---
-title: "Lepikhin et al. (2020) — GShard: 论文分析"
-created: 2026-06-13
-updated: 2026-06-13
+id: papers--lepikhin2021-gshard-analysis
+title: 'Lepikhin et al. (2020) — GShard: 论文分析'
 type: paper-analysis
-tags: [neural-network, deep-learning, transformer, mixture-of-experts, sparse-moe, gating-network, top-k-routing, load-balancing, conditional-computation, automatic-sharding, spmd, model-parallelism, distributed-training, sublinear-scaling, compiler-optimization, xla-compiler, multilingual-data]
-sources: [raw/papers/lepikhin2021_gshard.md]
-methods: [mixture-of-experts, top-2-gating, expert-capacity, auxiliary-loss, random-routing, automatic-sharding, spmd-partitioning, alltoall-resharding, einsum-partitioning, tensor-sharding-annotations]
-results: [sublinear-scaling, superlinear-quality, sample-efficiency, constant-memory, o1-compilation, 600b-parameters, multilingual-bleu]
-failure_modes: [capacity-bottleneck, diminishing-returns, numerical-stability-bfloat16, gating-sequential-bottleneck, expert-load-imbalance]
-datasets: [in-house-web-scale-mt-corpus]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- evidence/paper
+- method/transformer
+keywords:
+- automatic-sharding
+- compiler-optimization
+- conditional-computation
+- deep-learning
+- distributed-training
+- gating-network
+- load-balancing
+- mixture-of-experts
+- model-parallelism
+- multilingual-data
+- neural-network
+- sparse-moe
+- spmd
+- sublinear-scaling
+- top-k-routing
+- transformer
+- xla-compiler
+sources:
+- sources/papers/lepikhin2021-gshard.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: high
+methods:
+- mixture-of-experts
+- top-2-gating
+- expert-capacity
+- auxiliary-loss
+- random-routing
+- automatic-sharding
+- spmd-partitioning
+- alltoall-resharding
+- einsum-partitioning
+- tensor-sharding-annotations
+results:
+- sublinear-scaling
+- superlinear-quality
+- sample-efficiency
+- constant-memory
+- o1-compilation
+- 600b-parameters
+- multilingual-bleu
+failure_modes:
+- capacity-bottleneck
+- diminishing-returns
+- numerical-stability-bfloat16
+- gating-sequential-bottleneck
+- expert-load-imbalance
+datasets:
+- in-house-web-scale-mt-corpus
 reproducibility: low
 code_url:
-  - https://github.com/tensorflow/tensorflow (XLA compiler)
+- https://github.com/tensorflow/tensorflow (XLA compiler)
 dataset_url:
-  - (in-house Google dataset, not publicly available)
-confidence: high
+- (in-house Google dataset, not publicly available)
 ---
 
 # Lepikhin et al. (2020) — GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding
@@ -128,3 +176,13 @@ GShard 系统分三层：**模型层** — Transformer 每隔一个 FFN 替换�
 - [[lepikhin2021-gshard-method]] — 方法机制展开：MoE 架构 + GShard API + SPMD 分区器
 - [[lepikhin2021-gshard-results]] — 结果证据展开：翻译质量 + 训练效率 + 显存与运行时
 - [[lepikhin2021-gshard-critical]] — 贡献 + 知识点 + Negative + 可迁移 + 研究机会
+
+## Evidence By Source
+
+### `sources/papers/lepikhin2021-gshard.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/lepikhin2021_gshard.md`
+
+^[sources/papers/lepikhin2021-gshard.md]

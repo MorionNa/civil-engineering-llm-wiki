@@ -1,18 +1,52 @@
 ---
-title: "Chen et al. (2025) — AT-PINN-HC：硬约束策略增强的时间推进 PINN 结构振动分析"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--chen2025-at-pinn-hc-analysis
+title: Chen et al. (2025) — AT-PINN-HC：硬约束策略增强的时间推进 PINN 结构振动分析
 type: paper-analysis
-tags: [physics-informed, pinn, hard-constraints, structural-dynamics, time-marching, auxiliary-function, deep-learning, vibration-analysis, ai4s]
-sources: [raw/papers/10_1016_j_cma_2024_117691_extracted.txt]
-methods: [hard-constraint-strategies, time-marching, auxiliary-function, trigonometric-auxiliary, exponential-auxiliary, polynomial-auxiliary]
-results: [error-reduction-1to4-orders, iteration-reduction-78percent, euler-bernoulli-beam, supersonic-panel, glass-plate-wind-load]
-failure_modes: [case-by-case-selection, hard-constraint-sensitivity, long-duration-drift]
-datasets: [euler-bernoulli-beam, supersonic-panel, glass-plate]
-reproducibility: medium
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- ai4s
+- auxiliary-function
+- deep-learning
+- hard-constraints
+- physics-informed
+- pinn
+- structural-dynamics
+- time-marching
+- vibration-analysis
+sources:
+- sources/papers/chen2025-at-pinn-hc.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: medium
+methods:
+- hard-constraint-strategies
+- time-marching
+- auxiliary-function
+- trigonometric-auxiliary
+- exponential-auxiliary
+- polynomial-auxiliary
+results:
+- error-reduction-1to4-orders
+- iteration-reduction-78percent
+- euler-bernoulli-beam
+- supersonic-panel
+- glass-plate-wind-load
+failure_modes:
+- case-by-case-selection
+- hard-constraint-sensitivity
+- long-duration-drift
+datasets:
+- euler-bernoulli-beam
+- supersonic-panel
+- glass-plate
+reproducibility: medium
 ---
 
 # Chen et al. (2025) — AT-PINN-HC: 硬约束增强时间推进 PINN
@@ -127,3 +161,13 @@ AT-PINN-HC = 时间推进 PINN (AT-PINN) + 三种硬约束策略 × 五类辅助
 - [[wang2023-pinn-spurious-analysis]] — PINN 伪解问题（共享 PINN 背景）
 - [[zhang2020-phylstm-analysis]] — PhyLSTM：同属物理约束训练
 - [[notes/lectures/ai4s-pinn-deepxde]] — AI4S PINN 入门（PINN 背景）
+
+## Evidence By Source
+
+### `sources/papers/chen2025-at-pinn-hc.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2024_117691_extracted.txt`
+
+^[sources/papers/chen2025-at-pinn-hc.md]

@@ -1,10 +1,26 @@
 ---
-title: "稀疏-密集编码（Sparse-to-Dense Coding）"
-created: 2026-06-15
-updated: 2026-06-15
+id: entities--sparse-dense-coding
+title: 稀疏-密集编码（Sparse-to-Dense Coding）
 type: entity
-tags: [sparse-coding, dense-coding, neural-coding, hippocampal-formation, population-coding, dimensionality-expansion, neuroscience-concept]
-sources: [raw/papers/10_1038_s41586-026-10537-0.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/neuroscience
+- entity/model
+keywords:
+- dense-coding
+- dimensionality-expansion
+- domain/neuroscience
+- entity/model
+- hippocampal-formation
+- neural-coding
+- neuroscience-concept
+- population-coding
+- sparse-coding
+sources:
+- raw/papers/10_1038_s41586-026-10537-0.pdf
+created: '2026-06-15'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -119,7 +135,7 @@ CA1 不仅接收 CA3 的空间输入，还接收：
 
 | 论文 | 年份 | 贡献 |
 |------|------|------|
-| [[maimon2026-sparse-dense-analysis\|Maimon et al.]] | 2026 | **首次直接证明** CA3→CA1 稀疏→密集编码转换（Nature） |
+| [[maimon2026-sparse-dense-analysis|Maimon et al.]] | 2026 | **首次直接证明** CA3→CA1 稀疏→密集编码转换（Nature） |
 | Eliav et al. | 2021 | 发现 CA1 多场多尺度编码（Science） |
 | Hahnloser et al. | 2002 | 发现鸣禽 HVC 超稀疏编码（Nature） |
 | Fiete et al. | 2004 | 提出稀疏→密集架构的快速学习理论（J. Neurophysiol.） |
@@ -149,3 +165,12 @@ CA1 不仅接收 CA3 的空间输入，还接收：
 - [[hippocampal-formation]] — 海马结构
 - [[place-cells]] — 位置细胞
 - [[retrospective-coding]] — 回顾性编码
+
+## Evidence By Source
+
+### `raw/papers/10_1038_s41586-026-10537-0.pdf`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/10_1038_s41586-026-10537-0.pdf]

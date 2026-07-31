@@ -1,16 +1,40 @@
 ---
 id: paper-batzner2022-nequip-results
-title: "Batzner et al. (2022) — NequIP 结果证据"
+title: Batzner et al. (2022) — NequIP 结果证据
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance]
-sources: [raw/papers/batzner2022-nequip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+keywords:
+- ai4s
+- deep-learning
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/batzner2022-nequip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-results: [md17-accuracy, water-ice-data-efficiency, glass-transfer, lithium-diffusivity, learning-curve-slope]
-datasets: [original-md17, revised-md17, water-and-ice, formate-on-cu, li4p2o7, lips]
+results:
+- md17-accuracy
+- water-ice-data-efficiency
+- glass-transfer
+- lithium-diffusivity
+- learning-curve-slope
+datasets:
+- original-md17
+- revised-md17
+- water-and-ice
+- formate-on-cu
+- li4p2o7
+- lips
 reproducibility: high
 ---
 
@@ -125,3 +149,13 @@ $$
 - [[nequip]]
 - [[allegro]]
 - [[sevennet]]
+
+## Evidence By Source
+
+### `sources/papers/batzner2022-nequip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/batzner2022-nequip-source.md`
+
+^[sources/papers/batzner2022-nequip.md]

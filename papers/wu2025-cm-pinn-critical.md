@@ -1,12 +1,35 @@
 ---
-title: "Wu et al. (2025) — CM-PINNs 贡献、Negative Knowledge 与研究机会"
-created: 2026-07-01
-updated: 2026-07-01
+id: papers--wu2025-cm-pinn-critical
+title: Wu et al. (2025) — CM-PINNs 贡献、Negative Knowledge 与研究机会
 type: paper-analysis
-tags: [physics-informed, pinn, lstm, structural-dynamics, nonlinear-systems, hysteresis, seismic-response, restoring-force, future-work, limitation, comparison]
-sources: [raw/papers/wu2025-cm-pinn-extracted.md]
-failure_modes: [finite-difference-error, physics-constraint-weight-tuning]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- comparison
+- future-work
+- hysteresis
+- limitation
+- lstm
+- nonlinear-systems
+- physics-informed
+- pinn
+- restoring-force
+- seismic-response
+- structural-dynamics
+sources:
+- sources/papers/wu2025-cm-pinn.md
+created: '2026-07-01'
+updated: '2026-07-31'
 confidence: high
+failure_modes:
+- finite-difference-error
+- physics-constraint-weight-tuning
 ---
 
 # Wu et al. (2025) — CM-PINNs 批判性分析
@@ -93,3 +116,13 @@ PINN 训练常见失败来自多损失项量级不一致。本文用 $L^D_u$ 作
 - [[wu2025-cm-pinn-results]] — 结果证据
 - [[cm-pinns]] — 方法实体
 - [[physics-constrained-training-failure-modes]] — 物理约束训练失败模式
+
+## Evidence By Source
+
+### `sources/papers/wu2025-cm-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/wu2025-cm-pinn-extracted.md`
+
+^[sources/papers/wu2025-cm-pinn.md]

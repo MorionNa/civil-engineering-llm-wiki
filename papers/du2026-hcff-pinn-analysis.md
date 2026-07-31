@@ -1,18 +1,64 @@
 ---
-title: "Du et al. (2026) — HCFF-PINN：频率先验 Fourier 特征与初值硬约束的无标签结构动力求解"
-created: 2026-07-16
-updated: 2026-07-16
+id: papers--du2026-hcff-pinn-analysis
+title: Du et al. (2026) — HCFF-PINN：频率先验 Fourier 特征与初值硬约束的无标签结构动力求解
 type: paper-analysis
-tags: [physics-informed, pinn, neural-network, deep-learning, hard-constraint-strategies, auxiliary-function, hard-constraints, structural-dynamics, seismic-response, equation-of-motion, vibration-analysis, sdof, ground-motion, synthetic-data, finite-element, benchmark, adam-lbfgs, two-phase-optimization, collocation-strategy]
-sources: [raw/papers/10_1016_j_engappai_2025_113640.xml, raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt]
-methods: [physics-guided-fourier-features, hard-initial-conditions, tanh-squared-modulation, automatic-differentiation, adam-lbfgs-optimization]
-results: [mixed-frequency-error-reduction, high-frequency-reconstruction, multi-degree-of-freedom-validation, cross-ground-motion-robustness]
-failure_modes: [frequency-prior-mismatch, hard-constraint-function-mismatch, high-dimensional-boundary-generalization, nonlinear-structure-unvalidated]
-datasets: [synthetic-harmonic-loads, northridge-symlar, gazli-karakyr, kocaeli-duzce, el-centro-array, san-simeon-diablo-canyon]
-reproducibility: medium
-code_url: []
-dataset_url: []
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- adam-lbfgs
+- auxiliary-function
+- benchmark
+- collocation-strategy
+- deep-learning
+- equation-of-motion
+- finite-element
+- ground-motion
+- hard-constraint-strategies
+- hard-constraints
+- neural-network
+- physics-informed
+- pinn
+- sdof
+- seismic-response
+- structural-dynamics
+- synthetic-data
+- two-phase-optimization
+- vibration-analysis
+sources:
+- sources/papers/du2026-hcff-pinn.md
+created: '2026-07-16'
+updated: '2026-07-31'
 confidence: high
+methods:
+- physics-guided-fourier-features
+- hard-initial-conditions
+- tanh-squared-modulation
+- automatic-differentiation
+- adam-lbfgs-optimization
+results:
+- mixed-frequency-error-reduction
+- high-frequency-reconstruction
+- multi-degree-of-freedom-validation
+- cross-ground-motion-robustness
+failure_modes:
+- frequency-prior-mismatch
+- hard-constraint-function-mismatch
+- high-dimensional-boundary-generalization
+- nonlinear-structure-unvalidated
+datasets:
+- synthetic-harmonic-loads
+- northridge-symlar
+- gazli-karakyr
+- kocaeli-duzce
+- el-centro-array
+- san-simeon-diablo-canyon
+reproducibility: medium
 ---
 
 # A label-free physics informed neural network with hard constraints and Fourier features spectrally-enhanced for multi-frequency seismic structural dynamic response
@@ -80,3 +126,13 @@ HCFF-PINN 分别在“表示”和“优化目标”两处动手：Fourier 特�
 - [[pinn]] — 标准 PINN 范式
 - [[neural-tangent-kernel]] — 谱偏差与多损失收敛率分析工具
 - [[at-pinn-hc]] — 另一条结构振动硬约束路线
+
+## Evidence By Source
+
+### `sources/papers/du2026-hcff-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_engappai_2025_113640.xml`, `raw/papers/extracted/10_1016_j_engappai_2025_113640_extracted.txt`
+
+^[sources/papers/du2026-hcff-pinn.md]

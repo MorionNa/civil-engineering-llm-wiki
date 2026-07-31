@@ -1,12 +1,28 @@
 ---
-title: "So et al. (2021) — Primer: 搜索空间、SQ-TC 搜索算法与训练策略"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--so2021-primer-method
+title: 'So et al. (2021) — Primer: 搜索空间、SQ-TC 搜索算法与训练策略'
 type: paper-analysis
-tags: [sq-tc-search, evolutionary-search, conceptual-initialization, halving-hurdles, primitives-search-space]
-sources: [raw/papers/primer2021_efficient_transformers.pdf]
-methods: [regularized-evolution, program-synthesis, low-level-tf-primitives, implicit-efficiency-objective]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/transformer
+keywords:
+- conceptual-initialization
+- evolutionary-search
+- halving-hurdles
+- primitives-search-space
+- sq-tc-search
+sources:
+- sources/papers/so2021-primer.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
+methods:
+- regularized-evolution
+- program-synthesis
+- low-level-tf-primitives
+- implicit-efficiency-objective
 ---
 
 # Primer 搜索空间、SQ-TC 搜索算法与训练策略
@@ -127,3 +143,17 @@ Mutation 后检查等价性：若 child 计算图和 parent 完全等价，重�
 - T2T：TRANSFORMER_TPU 参数
 - T5：开源 T5 参数，相对注意力 + SentencePiece
 - Lingvo：默认 Transformer 参数
+
+## Evidence By Source
+
+### `sources/papers/so2021-primer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/primer2021_efficient_transformers.pdf`
+
+^[sources/papers/so2021-primer.md]
+
+## Related Indexes
+
+- [[papers/index]]

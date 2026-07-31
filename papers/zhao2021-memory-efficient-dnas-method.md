@@ -1,10 +1,23 @@
 ---
-title: "DARTSformer 方法机制：Multi-Split Reversible Network + BP-with-Reconstruction + DARTS"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--zhao2021-memory-efficient-dnas-method
+title: DARTSformer 方法机制：Multi-Split Reversible Network + BP-with-Reconstruction + DARTS
 type: paper-analysis
-tags: [differentiable-nas, reversible-layer, gradient-checkpointing, transformer, machine-translation]
-sources: [raw/papers/memory_efficient_dnas2021.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- differentiable-nas
+- gradient-checkpointing
+- machine-translation
+- reversible-layer
+- transformer
+sources:
+- sources/papers/zhao2021-memory-efficient-dnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -220,3 +233,13 @@ Algorithm 2: DARTSformer 框架
 - [[zhao2021-memory-efficient-dnas-critical]] — 贡献·局限·可迁移·机会
 - [[memory-efficient-dnas]] — 实体页
 - [[wang2020-hat-method]] — HAT 进化搜索 + weight-sharing 的方法论对比
+
+## Evidence By Source
+
+### `sources/papers/zhao2021-memory-efficient-dnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/memory_efficient_dnas2021.pdf`
+
+^[sources/papers/zhao2021-memory-efficient-dnas.md]

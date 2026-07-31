@@ -1,10 +1,25 @@
 ---
-title: "Switch Transformer"
-created: 2026-06-13
-updated: 2026-06-13
+id: entities--switch-transformer
+title: Switch Transformer
 type: entity
-tags: [mixture-of-experts, model-parallelism, distributed-training]
-sources: [raw/papers/fedus2021_switch_transformer.md]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/llm
+- entity/dataset
+- method/transformer
+keywords:
+- distributed-training
+- domain/llm
+- entity/dataset
+- method/transformer
+- mixture-of-experts
+- model-parallelism
+sources:
+- raw/papers/fedus2021_switch_transformer.md
+created: '2026-06-13'
+updated: '2026-07-31'
+confidence: medium
 ---
 
 # Switch Transformer
@@ -33,3 +48,12 @@ Switch Transformer 是 Google 提出的稀疏 MoE 架构，采用 k=1 简化路�
 ## 关联页面
 - [[fedus2021-switch-transformer-analysis]] — 完整论文分析
 - [[fedus2021-switch-transformer-method]] — 方法机制
+
+## Evidence By Source
+
+### `raw/papers/fedus2021_switch_transformer.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/papers/fedus2021_switch_transformer.md]

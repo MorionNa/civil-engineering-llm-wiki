@@ -1,13 +1,32 @@
 ---
-title: "PSPNet 实验结果展开"
-created: 2026-06-11
-updated: 2026-06-11
+id: papers--zhao2017-pspnet-results
+title: PSPNet 实验结果展开
 type: paper-analysis
-tags: [semantic-segmentation, scene-parsing, pyramid-pooling, sota, multi-scale-testing]
-sources: [raw/papers/1612.01105v2.pdf]
-results: [ade20k-champion, pascal-voc-85.4-mIoU, cityscapes-80.2]
-datasets: [ade20k, pascal-voc-2012, cityscapes]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/civil-engineering
+- domain/computer-vision
+- evidence/paper
+keywords:
+- benchmark
+- multi-scale-testing
+- pyramid-pooling
+- scene-parsing
+- semantic-segmentation
+sources:
+- sources/papers/zhao2017-pspnet.md
+created: '2026-06-11'
+updated: '2026-07-31'
 confidence: high
+results:
+- ade20k-champion
+- pascal-voc-85.4-mIoU
+- cityscapes-80.2
+datasets:
+- ade20k
+- pascal-voc-2012
+- cityscapes
 ---
 
 # PSPNet 实验结果
@@ -126,3 +145,13 @@ confidence: high
 ## 关联页面
 - [[zhao2017-pspnet-analysis]] — 总览
 - [[ronneberger2015-unet-results]] — U-Net 结果对比（ISBI 挑战赛）
+
+## Evidence By Source
+
+### `sources/papers/zhao2017-pspnet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/1612.01105v2.pdf`
+
+^[sources/papers/zhao2017-pspnet.md]

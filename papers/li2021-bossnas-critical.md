@@ -1,10 +1,22 @@
 ---
-title: "BossNAS 批判性分析：贡献、局限与可迁移洞见"
-created: 2026-06-14
-updated: 2026-06-14
+id: papers--li2021-bossnas-critical
+title: BossNAS 批判性分析：贡献、局限与可迁移洞见
 type: paper-analysis
-tags: [neural-architecture-search, critical-analysis, self-supervised, failure-modes, research-directions]
-sources: [raw/papers/bossnas2021_iclr.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- evidence/paper
+- method/neural-architecture-search
+- method/transformer
+keywords:
+- limitation
+- neural-architecture-search
+- research-directions
+- self-supervised
+sources:
+- sources/papers/li2021-bossnas.md
+created: '2026-06-14'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -128,3 +140,13 @@ BossNAS 的 20 epoch/块训练仍然耗时。将 Ensemble Bootstrapping 的输�
 ---
 
 *回主分析页：[[li2021-bossnas-analysis]] | 方法 [[li2021-bossnas-method]] | 实验 [[li2021-bossnas-results]] | 实体 [[bossnas]]*
+
+## Evidence By Source
+
+### `sources/papers/li2021-bossnas.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/bossnas2021_iclr.pdf`
+
+^[sources/papers/li2021-bossnas.md]

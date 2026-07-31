@@ -1,10 +1,24 @@
 ---
-title: "Functional Scaling Laws 批判分析：贡献、限制与迁移机会"
-created: 2026-07-28
-updated: 2026-07-28
+id: papers--li2025-functional-scaling-laws-critical
+title: Functional Scaling Laws 批判分析：贡献、限制与迁移机会
 type: paper-analysis
-tags: [scaling-law, limitation, future-work, transfer-learning]
-sources: [raw/papers/li2025-functional-scaling-laws.pdf]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/llm
+- evidence/paper
+- method/pinn
+- method/transformer
+keywords:
+- future-work
+- limitation
+- scaling-law
+- transfer-learning
+sources:
+- sources/papers/li2025-functional-scaling-laws.md
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -33,3 +47,13 @@ confidence: high
 
 - [[li2025-functional-scaling-laws-analysis]]
 - [[functional-scaling-law]]
+
+## Evidence By Source
+
+### `sources/papers/li2025-functional-scaling-laws.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/li2025-functional-scaling-laws.pdf`
+
+^[sources/papers/li2025-functional-scaling-laws.md]

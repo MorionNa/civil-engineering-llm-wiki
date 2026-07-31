@@ -1,15 +1,35 @@
 ---
 id: paper-batzner2022-nequip-critical
-title: "Batzner et al. (2022) — NequIP 批判、迁移与研究机会"
+title: Batzner et al. (2022) — NequIP 批判、迁移与研究机会
 type: paper-analysis
 status: verified
 project: civil-engineering-llm-wiki
-tags: [neural-network, deep-learning, physics-simulation, scientific-machine-learning, ai4s, material-design, se3-equivariance, limitation, future-work]
-sources: [raw/papers/batzner2022-nequip-source.md]
-created: 2026-07-31
-updated: 2026-07-31
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/paper
+- method/graph-neural-network
+- method/pinn
+keywords:
+- ai4s
+- deep-learning
+- future-work
+- limitation
+- material-design
+- neural-network
+- physics-simulation
+- scientific-machine-learning
+- se3-equivariance
+sources:
+- sources/papers/batzner2022-nequip.md
+created: '2026-07-31'
+updated: '2026-07-31'
 confidence: high
-failure_modes: [long-range-interaction-gap, interpretability-limit, hyperparameter-dependence, distributed-receptive-field-growth]
+failure_modes:
+- long-range-interaction-gap
+- interpretability-limit
+- hyperparameter-dependence
+- distributed-receptive-field-growth
 reproducibility: high
 ---
 
@@ -124,3 +144,13 @@ E(3) 等变只保证坐标变换一致性，不能自动保证：
 - [[sevennet]]
 - [[pinn]]
 - [[seisgpt]]
+
+## Evidence By Source
+
+### `sources/papers/batzner2022-nequip.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/batzner2022-nequip-source.md`
+
+^[sources/papers/batzner2022-nequip.md]

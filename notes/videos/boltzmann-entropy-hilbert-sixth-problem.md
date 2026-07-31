@@ -1,13 +1,29 @@
 ---
-title: "时间为何不能倒流：从玻尔兹曼方程到希尔伯特第六问题"
-created: 2026-07-28
-updated: 2026-07-28
+id: notes--videos--boltzmann-entropy-hilbert-sixth-problem
+title: 时间为何不能倒流：从玻尔兹曼方程到希尔伯特第六问题
 type: video
-tags: [statistical-mechanics, kinetic-theory, entropy, irreversibility, boltzmann-equation, hilbert-sixth-problem, hard-sphere-dynamics, boltzmann-grad-limit]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/computational-mechanics
+- evidence/transcript
+- method/pinn
+keywords:
+- boltzmann-equation
+- boltzmann-grad-limit
+- entropy
+- hard-sphere-dynamics
+- hilbert-sixth-problem
+- irreversibility
+- kinetic-theory
+- statistical-mechanics
 sources:
-  - raw/transcripts/bv1ph3c6teqt/transcript.md
-  - raw/transcripts/bv1ph3c6teqt/segments.json
-  - raw/transcripts/bv1ph3c6teqt/metadata.json
+- raw/transcripts/bv1ph3c6teqt/transcript.md
+- raw/transcripts/bv1ph3c6teqt/segments.json
+- raw/transcripts/bv1ph3c6teqt/metadata.json
+created: '2026-07-28'
+updated: '2026-07-31'
 confidence: medium
 ---
 
@@ -128,3 +144,12 @@ Yu Deng、Zaher Hani 与 Xiao Ma 的工作把推导延伸到任意预先给定�
 - [[boltzmann-equation]] — 自由输运、碰撞算子、H 定理与适用边界
 - [[hilbert-sixth-problem]] — 从微观力学到动理学和流体方程的严格推导计划
 - [[pinn]] — 另一类把微分方程结构嵌入计算模型的路线，但不提供上述微观到宏观推导
+
+## Evidence By Source
+
+### `raw/transcripts/bv1ph3c6teqt/transcript.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+
+^[raw/transcripts/bv1ph3c6teqt/transcript.md]

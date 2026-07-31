@@ -1,12 +1,34 @@
 ---
-title: "Goswami et al. (2022) — 方法机制展开"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--goswami2022-variational-deeponet-method
+title: Goswami et al. (2022) — 方法机制展开
 type: paper-analysis
-tags: [deeponet, variational-formulation, energy-minimization, phase-field-fracture, physics-informed, hybrid-training, finite-element, deep-learning]
-sources: [raw/papers/10_1016_j_cma_2022_114587_extracted.txt]
-methods: [v-deeponet, branch-trunk-architecture, variational-energy-loss, phase-field-regularization, hybrid-training-strategy]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/neural-operator
+- method/pinn
+keywords:
+- deep-learning
+- deeponet
+- energy-minimization
+- finite-element
+- hybrid-training
+- phase-field-fracture
+- physics-informed
+- variational-formulation
+sources:
+- sources/papers/goswami2022-variational-deeponet.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+methods:
+- v-deeponet
+- branch-trunk-architecture
+- variational-energy-loss
+- phase-field-regularization
+- hybrid-training-strategy
 ---
 
 # Goswami et al. (2022) — 方法机制展开
@@ -22,7 +44,7 @@ V-DeepONet = **DeepONet 神经算子** + **变分能量物理约束**，用于�
     (在 m 个传感器点采样)               (域内任意位置评估)
          ↓                                     ↑
     Branch Net ──→ b_k ──→ Σ b_k · t_k ──→ u_pred, d_pred
-                         ↗                   
+                         ↗
     Trunk Net  ──→ t_k ──→  (在评估坐标 y_j 处)
 ```
 
@@ -122,3 +144,13 @@ Loss = λ_E · Π(u_θ, d_θ) + λ_data · (||u_θ - u_FEM||² + ||d_θ - d_FEM|
 - [[goswami2022-variational-deeponet-analysis]] — 概述
 - [[deeponet]] — DeepONet 神经算子基础
 - [[pinn]] — PINN 物理信息学习范式
+
+## Evidence By Source
+
+### `sources/papers/goswami2022-variational-deeponet.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_cma_2022_114587_extracted.txt`
+
+^[sources/papers/goswami2022-variational-deeponet.md]

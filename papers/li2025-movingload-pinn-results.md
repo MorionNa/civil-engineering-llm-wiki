@@ -1,12 +1,35 @@
 ---
-title: "Li et al. (2025) — 实验结果：五组数值实验验证"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--li2025-movingload-pinn-results
+title: Li et al. (2025) — 实验结果：五组数值实验验证
 type: paper-analysis
-tags: [physics-informed, pinn, structural-dynamics, equation-of-motion, bridge-dynamics, synthetic-data]
-sources: [raw/papers/10_1016_j_aei_2025_103215_extracted.txt]
-results: [bridge-dynamics, moving-load-response, nondimensional-pde, uniform-beam, non-uniform-beam, parameter-identification, inverse-problem]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- domain/civil-engineering
+- domain/computational-mechanics
+- evidence/paper
+- method/pinn
+keywords:
+- bridge-dynamics
+- equation-of-motion
+- physics-informed
+- pinn
+- structural-dynamics
+- synthetic-data
+sources:
+- sources/papers/li2025-movingload-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
+results:
+- bridge-dynamics
+- moving-load-response
+- nondimensional-pde
+- uniform-beam
+- non-uniform-beam
+- parameter-identification
+- inverse-problem
 ---
 
 # Li et al. (2025) — 实验结果展开
@@ -167,3 +190,13 @@ confidence: high
 - [[li2025-movingload-pinn-method]] — 方法机制
 - [[li2025-movingload-pinn-critical]] — 贡献 / Negative / 可迁移
 - [[pinn]] — 物理信息神经网络实体
+
+## Evidence By Source
+
+### `sources/papers/li2025-movingload-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_aei_2025_103215_extracted.txt`
+
+^[sources/papers/li2025-movingload-pinn.md]

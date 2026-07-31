@@ -1,9 +1,25 @@
 ---
-title: "Raissi et al. (2019) PINN 方法展开：连续/离散时间模型 + 非线性 PDE 的 AD 处理"
-created: 2026-06-27
-updated: 2026-06-27
+id: papers--raissi2019-pinn-method
+title: Raissi et al. (2019) PINN 方法展开：连续/离散时间模型 + 非线性 PDE 的 AD 处理
 type: paper-analysis
-tags: [physics-informed, pinn, automatic-differentiation, nonlinear-pde, continuous-time, discrete-time, runge-kutta]
+status: active
+project: civil-engineering-llm-wiki
+tags:
+- domain/ai4s
+- evidence/paper
+- method/pinn
+keywords:
+- automatic-differentiation
+- continuous-time
+- discrete-time
+- nonlinear-pde
+- physics-informed
+- pinn
+- runge-kutta
+sources:
+- sources/papers/raissi2019-pinn.md
+created: '2026-06-27'
+updated: '2026-07-31'
 confidence: high
 ---
 
@@ -40,12 +56,12 @@ def pinn_net(x, t):
     u_t = tf.gradients(u, t)[0]
     u_x = tf.gradients(u, x)[0]
     u_xx = tf.gradients(u_x, x)[0]
-    
+
     # === 非线性 PDE 残差 — AD 透明处理 ===
     # Burgers 方程
-    f = u_t + u * u_x - nu * u_xx  
+    f = u_t + u * u_x - nu * u_xx
     #        ^^^^^^^^ 非线性对流项，AD 无额外开销
-    
+
     return u, f
 ```
 
@@ -86,7 +102,7 @@ $$k_i = \mathcal{N}[u^n + \Delta t \sum_{j=1}^{q} a_{ij} k_j; \lambda]$$
 
 关键创新：**将 Runge-Kutta 的隐式关系也作为物理约束**
 
-$$\mathcal{L}_{RK} = \sum_{n} \sum_{i} \left\| k_i^n - \mathcal{N}[u^n + c_i \Delta t \sum_j a_{ij} k_j^n] \right\|^2$$
+$$\mathcal{L}_{RK} = \sum_{n} \sum_{i} \left| k_i^n - \mathcal{N}[u^n + c_i \Delta t \sum_j a_{ij} k_j^n] \right|^2$$
 
 这使得时间步长可取到 Δt ~ 0.5-1.0（远大于显式方法的 CFL 限制）。
 
@@ -96,7 +112,7 @@ $$\mathcal{L}_{RK} = \sum_{n} \sum_{i} \left\| k_i^n - \mathcal{N}[u^n + c_i \De
 |-----------|---------|---------|------------|
 | 对流 | $u \cdot \nabla u$ | `u * u_x` | 迎风格式 + Newton |
 | 反应 | $u(u^2-1)$ | `u*(u**2-1)` | 源项线性化 |
-| 复值 | $\|u\|^2 u$ | 实部+虚部分别 | 复数矩阵求逆 |
+| 复值 | $|u|^2 u$ | 实部+虚部分别 | 复数矩阵求逆 |
 | 高阶导数 | $u_{xxxx}$ | 4 次 `grad` 调用 | 窄模板有限差分 |
 
 ## 5.5 为什么 AD 处理非线性比传统方法更优雅
@@ -110,7 +126,7 @@ graph TD
     D --> F{收敛?}
     F -->|否| G[减小步长/换初值]
     G --> D
-    
+
     H[PINN] --> I[定义计算图]
     I --> J[AD 自动求所有导数]
     J --> K[非线性项 = 计算图节点]
@@ -124,3 +140,13 @@ graph TD
 - [[raissi2019-pinn-analysis|← 总览]]
 - [[raissi2019-pinn-results|结果展开 →]]
 - [[raissi2019-pinn-critical|批判分析 →]]
+
+## Evidence By Source
+
+### `sources/papers/raissi2019-pinn.md`
+
+- Key point: 本页内容由所列来源整理；跨领域应用明确作为迁移推论或研究建议。
+- Evidence location: 详见正文中的章节、表格、公式与可复现性说明。
+- Original material: `raw/papers/10_1016_j_jcp_2018_10_045.xml`
+
+^[sources/papers/raissi2019-pinn.md]
