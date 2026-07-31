@@ -1,71 +1,102 @@
+---
+id: entities-index
+title: "Entities Index"
+type: index
+status: active
+project: civil-engineering-llm-wiki
+tags: []
+sources: []
+created: 2026-07-16
+updated: 2026-07-31
+confidence: high
+---
+
 # Entities Index
 
-> 模型、算法、组织、数据集、人物 — wiki 中引用的所有实体。
+> 模型、算法、数据集、工具、组织与其他可复用命名对象。实体页强调定义、关系、证据、适用边界和项目角色。
 
-## 模型 (Models)
+## 等变图神经网络与物理图学习
 
-### 物理图学习与 AI4S
-- [[nequip]] — NequIP: E(3) 等变图神经网络原子势，几何张量表示 + 能量守恒力预测
-- [[allegro]] — Allegro: 严格局部等变原子势，面向超大规模动力学模拟
-- [[sevennet]] — SevenNet: GNN 原子势空间分解并行算法，多 GPU 大规模模拟
-
-### 大语言模型
-- [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数, 4× T5-XXL 加速
-- [[gshard]] — GShard: 自动分片+条件计算, 600B MoE Transformer
-- [[mixtral-8x7b]] — Mixtral 8×7B: 8 专家 Top-2, 首个开源实用级 MoE LLM
-- [[deepseek-moe]] — DeepSeekMoE: 细粒度专家分割+共享专家隔离
-- [[glm-5]] — GLM-5.0: 全球第四、开源第一 (AI Index v4.0)
-- [[hydroglm]] — HydroGLM: 水利水电行业大模型, 总评 88.6 碾压 DeepSeek
-
-### 语义分割模型
-- [[u-net]] — U-Net: Encoder-decoder + skip connections, 小样本语义分割
-- [[pspnet]] — PSPNet: 金字塔池化, ImageNet 2016 场景解析冠军
-- [[deeplabv3plus]] — DeepLabv3+: ASPP encoder + simple decoder, VOC 89.0%
-- [[hrnet]] — HRNet: 高分辨率并行卷积, Cityscapes 81.6%
-- [[segformer]] — SegFormer: Hierarchical Transformer + MLP decoder
-
-### NAS 模型
-- [[hat]] — HAT: 首个 Hardware-Aware NAS for Transformer
-- [[autoformer]] — AutoFormer: 首个 ViT 专用 NAS, one-shot supernet
-- [[nas-bert]] — NAS-BERT: BERT 压缩 NAS, 5M-60M task-agnostic
+- [[nequip]] — E(3) 等变消息传递原子势：几何张量表示、数据效率与能量守恒力场。
+- [[allegro]] — 严格局部 pair-centered 等变原子势：固定通信半径内构造高阶多体表示。
+- [[sevennet]] — NequIP 类 GNN 原子势的分布式空间分解：逐层正向特征与反向梯度通信。
 
 ## 物理信息结构响应模型
-- [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer，多建筑预训练、LoRA 个性化与稀疏传感器重建
-- [[phy-rlk]] — Phy-RLK: Newmark-β 物理残差 LSTM + KAN，双向非线性 RC 结构响应代理
-- [[hcff-pinn]] — HCFF-PINN: 结构频率 Fourier 特征 + 初值硬约束，线性结构动力响应求解
-- [[fpikan]] — FPIKAN: Fourier 输入与 Fourier-series KAN 激活增强的地震响应 PINN（摘要证据）
-- [[seismic-site-response-pinn]] — 地震场地反应 PINN: 集中质量土柱 + Fourier embedding + TPE
 
-## 算法 (Algorithms)
+- [[seisgpt]] — 质量–刚度图与 SDG-Mixer 的多建筑结构响应基础模型。
+- [[phy-rlk]] — Newmark-β 物理残差 LSTM + KAN 双向结构响应代理。
+- [[hcff-pinn]] — 结构频率 Fourier 特征与初值硬约束 PINN。
+- [[fpikan]] — Fourier 输入与 Fourier-series KAN 激活结构地震响应 PINN。
+- [[seismic-site-response-pinn]] — 一维地震场地反应 PINN。
+- [[cm-pinns]] — 本构模型约束 PINN。
+- [[phylstm2]] — 双 LSTM 物理约束滞回元模型。
+- [[phylstm3]] — 三 LSTM 增强物理约束滞回元模型。
 
-- [[legonet]] — LegONet: 边界适配 baseplate 上可插拔的耗散/守恒/残差 PDE 算子块库
-- [[functional-scaling-law]] — Functional Scaling Law: 内禀时间 + 遗忘核描述完整训练 loss 轨迹
-- [[sgno]] — SGNO: 面向长时 PDE 自回归预测的谱生成神经算子
-- [[node-onet]] — NODE-ONet: 物理编码 Neural ODE 算子网络
-- [[pgt]] — PGT: Green 函数物理偏置引导 Transformer 信息传播
-- [[te-nas]] — TE-NAS: Training-free NAS via NTK + 线性区域
-- [[avbd]] — AVBD: Augmented Lagrangian VBD，硬约束物理仿真
-- [[phylstm2]] — PhyLSTM2: 双 LSTM, physics-constrained 非线性滞回元模型
-- [[phylstm3]] — PhyLSTM3: 三 LSTM, 增强非线表征
-- [[bouc-wen-model]] — Bouc-Wen: 率相关滞回模型
-- [[pseudo-time-stepping]] — 伪时间步进: PINN PDE 残差伪解解决方案
-- [[cm-pinns]] — CM-PINNs: 本构模型约束 PINN，预测非线性结构地震响应
-- [[adaptive-loss-weighting-pinn]] — APINNs: 基于近期任务损失量级的有界自适应加权
-- [[mrf-pinn]] — MRF-PINN: 多感受野卷积 + Taylor padding + 高阶有限差分（摘要证据）
-- [[backlund-transformation-pinn]] — Bäcklund Transformation PINN: 以跨方程变换残差恢复无标签目标解
+## PINN、神经算子与训练方法
+
+- [[pinn]] — Physics-Informed Neural Network。
+- [[deeponet]] — Deep Operator Network。
+- [[node-onet]] — 物理编码 Neural ODE 算子网络。
+- [[sgno]] — 面向长时 PDE 的谱生成神经算子。
+- [[pgt]] — Green 函数物理偏置注意力模型。
+- [[legonet]] — 可组合结构保持 PDE 算子块库。
+- [[functional-scaling-law]] — 内禀时间与遗忘核描述完整训练 loss 轨迹。
+- [[neural-tangent-kernel]] — PINN 训练动力学分析工具。
+- [[causal-training]] — 时间因果损失加权策略。
+- [[causal-attention]] — 初始条件误差驱动的因果权重。
+- [[adaptive-loss-weighting-pinn]] — 有界自适应 PINN 损失权重。
+- [[pseudo-time-stepping]] — PINN 伪解修复的伪时间推进方法。
+
+## 计算力学与物理仿真
+
+- [[avbd]] — 增广拉格朗日 Vertex Block Descent 硬约束仿真。
+- [[bouc-wen-model]] — Bouc–Wen 滞回模型。
+- [[at-pinn-hc]] — 硬约束增强时间推进 PINN。
+
+## 计算机视觉
+
+- [[u-net]] — Encoder–decoder 与 skip connections 小样本分割模型。
+- [[pspnet]] — 金字塔池化场景解析模型。
+- [[deeplabv3plus]] — ASPP encoder 与轻量 decoder。
+- [[hrnet]] — 全程高分辨率并行卷积。
+- [[segformer]] — 层级 Transformer 与 MLP decoder。
+
+## 架构搜索
+
+- [[te-nas]] — NTK 与线性区域训练免费 NAS。
+- [[hat]] — Hardware-Aware NAS for Transformer。
+- [[autoformer]] — ViT one-shot NAS。
+- [[nas-bert]] — BERT 压缩 NAS。
+- [[primer]] — 进化搜索高效 Transformer。
+- [[bossnas]] — 块级自监督 hybrid CNN–Transformer NAS。
+- [[automl-zero]] — 从零进化机器学习算法。
+
+## 大语言模型
+
+- [[switch-transformer]] — Top-1 sparse MoE Transformer。
+- [[gshard]] — 自动分片与条件计算系统。
+- [[mixtral-8x7b]] — Top-2 稀疏 MoE 模型。
+- [[deepseek-moe]] — 细粒度专家与共享专家隔离。
+- [[glm-5]] — GLM 系列模型实体。
+- [[hydroglm]] — 水利水电行业大模型。
+
+## 生成式三维与遥感
+
+- [[skyfall-gs]] — 卫星 3DGS 重建与扩散视图生成。
+- [[abot-earth]] — 卫星条件生成式三维地球模型。
+- [[abot-3dgs]] — 城市级 3DGS 重建引擎。
+- [[3d-gaussian-splatting]] — 实时可微点基渲染表示。
+- [[from-orbit-to-ground]] — 卫星视角到地面视角转换模块。
+- [[clod-gs]] — 连续 LOD Gaussian Splatting。
 
 ## 数学物理与动理学
-- [[boltzmann-equation]] — 玻尔兹曼方程: 自由输运 + 二体碰撞算子，连接粒子动力学与流体方程
-- [[hilbert-sixth-problem]] — 希尔伯特第六问题: 从硬球牛顿动力学经动理学到连续介质方程的严格推导计划
 
-## 组织 (Organizations)
-- [[zhipu-ai]] — 智谱AI: GLM/ChatGLM 系列大模型
-- [[guoneng-bigdata]] — 国能大数据: HydroGLM 总体架构
-- [[daduhe-company]] — 大渡河公司: 水利水电业务落地
-- [[tsinghua-dhe]] — 清华大学水利系: 水利专业支持
+- [[boltzmann-equation]] — 玻尔兹曼方程。
+- [[hilbert-sixth-problem]] — 希尔伯特第六问题。
 
-## 数据集 (Datasets)
-- [[nasbench201]] — NAS-Bench-201: 15,625 架构 NAS benchmark
-- [[ade20k]] — ADE20K: 场景解析 benchmark, 150 类
-- [[cityscapes]] — Cityscapes: 城市场景理解, 19 类
-- [[peer-strong-motion-database]] — PEER: 强震记录数据库
+## 数据集
+
+- [[nasbench201]] — NAS-Bench-201。
+- [[ade20k]] — ADE20K 场景解析数据集。
+- [[cityscapes]] — Cityscapes 城市场景数据集。
+- [[peer-strong-motion-database]] — PEER 强震数据库。
