@@ -54,7 +54,9 @@ jobs:
 
       - name: Apply repository-wide llm-wiki migration
         if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
-        run: python scripts/migrate_all_history.py
+        run: |
+          python scripts/migrate_all_history.py
+          rm -f test
 
       - name: Verify raw source immutability
         if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
@@ -79,6 +81,7 @@ jobs:
           git show origin/main:.github/workflows/validate.yml > /tmp/wiki-verify/.github/workflows/validate.yml
           git show origin/main:.github/workflows/deploy.yml > /tmp/wiki-verify/.github/workflows/deploy.yml
           rm -f /tmp/wiki-verify/.github/workflows/apply-all-history-migration.yml
+          rm -f /tmp/wiki-verify/test
           rm -rf \
             /tmp/wiki-verify/scripts/.migration_bootstrap \
             /tmp/wiki-verify/scripts/.migration_parts \
@@ -92,6 +95,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
         shell: bash
         run: |
+          rm -f test
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
