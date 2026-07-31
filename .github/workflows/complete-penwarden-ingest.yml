@@ -1,0 +1,204 @@
+name: Complete Penwarden ingest
+
+on:
+  push:
+    paths:
+      - .github/workflows/complete-penwarden-ingest.yml
+
+permissions:
+  contents: write
+
+jobs:
+  complete-ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Complete entity, indexes, log, and MkDocs navigation
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          entity_path = Path('entities/kolmogorov-n-width-piml.md')
+          entity_path.write_text('''---
+title: "Kolmogorov n-width for PIML — 多任务物理信息模型的最坏情形泛化度量"
+created: 2026-07-31
+updated: 2026-07-31
+type: entity
+tags: [physics-informed, pinn, neural-operator, operator-learning, scientific-machine-learning, pde, cross-domain-generalization, architecture-selection, spectral-method]
+sources: [raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md]
+confidence: high
+---
+
+# Kolmogorov n-width for PIML
+
+## 定义
+
+Kolmogorov $n$-width 衡量一个 $n$ 维近似空间对整个解流形的最佳最坏情形逼近能力。对多任务物理信息机器学习，[[penwarden2024-kolmogorov-n-width-piml-analysis]] 将网络共享表示解释为可学习基函数空间，并用
+
+$$
+\tilde{\mathcal K}=\inf_{W^1}\sup_c\inf_{W^2}
+\|u(c)-\tilde u(W^1,W^2)\|
+$$
+
+评价最佳可学习基空间在任务族中最困难任务上的最佳逼近误差。
+
+## 三层含义
+
+| 运算 | PIML 含义 |
+|---|---|
+| $\inf_{W^1}$ | 寻找最佳共享基函数空间，如 Multihead PINN 的 body 或 [[deeponet]] 的 trunk |
+| $\sup_c$ | 在有界任务族中寻找最难逼近的参数、载荷、边界或源项组合 |
+| $\inf_{W^2}$ | 在固定共享基空间下寻找该任务的最佳系数，隔离表示能力上限 |
+
+因此，该指标不同于普通测试集平均误差：平均误差描述被抽中任务的表现，而 $n$-width 更接近连续任务族中的最坏情形性能下界。
+
+## 两种用途
+
+### 1. 架构评价指标
+
+训练多任务 PIML 后冻结共享基函数，再通过任务参数梯度上升与模型系数梯度下降寻找近似最坏任务。它可用于比较不同架构、激活函数和共享表示是否覆盖完整解流形。
+
+### 2. 最坏情形正则项
+
+把竞争优化找到的最难任务误差加入物理损失，反向更新共享基函数。该过程可能略微提高离散训练任务的平均误差，但减少选择性采样和离散任务过拟合。
+
+## 与相邻概念的区别
+
+- 与测试集均值不同：它不依赖少量随机任务代表整个连续任务空间。
+- 与解快照 SVD 不同：快照谱只描述解流形复杂度；本文的 $\inf\sup\inf$ 同时评价模型实际学习到的近似空间。
+- 与 [[rathore2024-pinn-loss-landscape-analysis]] 不同：$n$-width 主要诊断表示空间是否足够，Hessian 谱主要诊断参数优化是否病态。
+- 与 [[neural-tangent-kernel]] 不同：NTK 描述训练动力学与不同损失分量的收敛偏置，不直接给出连续任务族最坏情形逼近误差。
+
+## 对结构动力学的迁移
+
+结构动力任务族可以由拓扑、质量/刚度矩阵、阻尼、本构参数、地震动和初始状态共同定义。将 MechConv、GRU/Mamba 或神经算子输出的共享时空表示视为动力基函数后，可用 $n$-width：
+
+1. 主动寻找最困难的“结构—地震动—本构”组合；
+2. 判断大图拆分是否丢失跨子图全局模态；
+3. 区分共享表示不足与训练器未充分利用表示；
+4. 以质量加权、能量范数、峰值响应或损伤敏感范数替代普通 $L_2$ 范数；
+5. 用 OpenSees、MARC 或其他 FEM 求解器提供少量高保真参考。
+
+## 风险与边界
+
+- 数值结果依赖非凸 min-max 优化、初始化、任务边界和误差估计器，不能视为严格解析 $n$-width；
+- 参考论文使用 sine 制造解族，天然有利于 sine 激活，不能推广为普遍激活函数排序；
+- 计算最坏情形需要参考解或可靠误差估计器，成本高于普通 PINN 训练；
+- 任务空间定义不完整会得到虚假的“最坏情形保证”；
+- 较小的表示下界不保证物理训练一定找到最佳任务系数。
+
+## 关联页面
+
+- [[penwarden2024-kolmogorov-n-width-piml-analysis]]
+- [[penwarden2024-kolmogorov-n-width-piml-method]]
+- [[penwarden2024-kolmogorov-n-width-piml-results]]
+- [[penwarden2024-kolmogorov-n-width-piml-critical]]
+- [[pinn]]
+- [[deeponet]]
+- [[rathore2024-pinn-loss-landscape-analysis]]
+''', encoding='utf-8')
+
+          def insert_after(text: str, anchor: str, block: str) -> str:
+              if block.strip() in text:
+                  return text
+              if anchor not in text:
+                  raise RuntimeError(f'Anchor not found: {anchor!r}')
+              return text.replace(anchor, anchor + '\n' + block, 1)
+
+          # papers/index.md
+          p = Path('papers/index.md')
+          text = p.read_text(encoding='utf-8')
+          paper_index_block = '- [[penwarden2024-kolmogorov-n-width-piml-analysis]] — Penwarden et al. (2024)：用 Kolmogorov n-width 评价并正则化多任务 PIML 的最坏情形泛化能力，Neural Networks'
+          text = insert_after(text, '## PINN 与自动优化', paper_index_block)
+          p.write_text(text, encoding='utf-8')
+
+          # entities/index.md
+          p = Path('entities/index.md')
+          text = p.read_text(encoding='utf-8')
+          entity_index_block = '- [[kolmogorov-n-width-piml]] — 多任务 PIML 的最佳基空间—最坏任务—最佳系数泛化度量与正则项'
+          text = insert_after(text, '## 算法 (Algorithms)', entity_index_block)
+          p.write_text(text, encoding='utf-8')
+
+          # global index.md
+          p = Path('index.md')
+          text = p.read_text(encoding='utf-8')
+          paper_entries = '''- [[penwarden2024-kolmogorov-n-width-piml-analysis]] — Penwarden et al. (2024)：Kolmogorov n-width 多任务 PIML 最坏情形泛化度量，Neural Networks
+- [[penwarden2024-kolmogorov-n-width-piml-method]] — 方法：共享基函数解释、inf-sup-inf 指标、竞争式双优化与三重优化正则
+- [[penwarden2024-kolmogorov-n-width-piml-results]] — 结果：Poisson/Allen–Cahn 中采样均值掩盖最坏情形失败，正则化降低全部架构 n-width
+- [[penwarden2024-kolmogorov-n-width-piml-critical]] — 批判：非凸近似、制造解偏置、参考解依赖及结构动力学迁移'''
+          text = insert_after(text, '## Papers', paper_entries)
+          entity_entry = '- [[kolmogorov-n-width-piml]] — Kolmogorov n-width：连续多任务 PIML 的最坏情形共享基空间评价与正则化'
+          text = insert_after(text, '## Entities', entity_entry)
+
+          def count_pages(root: str) -> int:
+              return sum(1 for x in Path(root).rglob('*.md') if x.name != 'index.md')
+
+          papers = count_pages('papers')
+          notes = count_pages('notes')
+          entities = count_pages('entities')
+          comparisons = count_pages('comparisons')
+          total = papers + notes + entities + comparisons
+          text = re.sub(
+              r'> Last updated: .*?\| Total pages: .*?\(Papers: .*?, Notes: .*?, Entities: .*?, Comparisons: .*?\)',
+              f'> Last updated: 2026-07-31 | Total pages: {total} (Papers: {papers}, Notes: {notes}, Entities: {entities}, Comparisons: {comparisons})',
+              text,
+              count=1,
+          )
+          p.write_text(text, encoding='utf-8')
+
+          # mkdocs.yml navigation
+          p = Path('mkdocs.yml')
+          text = p.read_text(encoding='utf-8')
+          paper_nav = '''      - Penwarden 2024 Kolmogorov n-width PIML:
+          - papers/penwarden2024-kolmogorov-n-width-piml-analysis.md
+          - papers/penwarden2024-kolmogorov-n-width-piml-method.md
+          - papers/penwarden2024-kolmogorov-n-width-piml-results.md
+          - papers/penwarden2024-kolmogorov-n-width-piml-critical.md'''
+          text = insert_after(text, '      - papers/index.md', paper_nav)
+          entity_nav = '          - entities/kolmogorov-n-width-piml.md'
+          text = insert_after(text, '      - 物理信息机器学习:', entity_nav)
+          p.write_text(text, encoding='utf-8')
+
+          # append-only log: prepend newest action after the format header
+          p = Path('log.md')
+          text = p.read_text(encoding='utf-8')
+          log_block = '''## [2026-07-31] ingest | Penwarden et al. (2024) — Kolmogorov n-widths for multitask PIML
+- Source: user-provided `1-s2.0-S0893608024006270-main (2).pdf` (Neural Networks 180, 106703)
+- Existing source metadata confirmed: raw/papers/penwarden2024-kolmogorov-n-width-piml-source.md
+- Created: papers/penwarden2024-kolmogorov-n-width-piml-{analysis,method,results,critical}.md
+- Created: entities/kolmogorov-n-width-piml.md
+- Updated: index.md, papers/index.md, entities/index.md, mkdocs.yml, log.md
+- Core: inf-sup-inf worst-case metric, competitive optimization, n-width regularization, learned-basis analysis
+'''
+          if '## [2026-07-31] ingest | Penwarden et al. (2024)' not in text:
+              anchor = '> When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.\n'
+              text = text.replace(anchor, anchor + '\n' + log_block, 1)
+          p.write_text(text, encoding='utf-8')
+
+          # Remove this one-time workflow after it has done its job.
+          Path('.github/workflows/complete-penwarden-ingest.yml').unlink()
+          PY
+
+      - name: Validate expected files and navigation
+        shell: bash
+        run: |
+          test -f entities/kolmogorov-n-width-piml.md
+          grep -q 'penwarden2024-kolmogorov-n-width-piml-analysis' index.md
+          grep -q 'penwarden2024-kolmogorov-n-width-piml-analysis' papers/index.md
+          grep -q 'kolmogorov-n-width-piml' entities/index.md
+          grep -q 'Penwarden 2024 Kolmogorov n-width PIML' mkdocs.yml
+          grep -q 'Penwarden et al. (2024)' log.md
+
+      - name: Commit completed ingest
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "ingest: complete Penwarden Kolmogorov n-width PIML registration"
+          git push
