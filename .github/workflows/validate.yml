@@ -6,106 +6,30 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-
-concurrency:
-  group: validate-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  contents: read
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
-          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install migration dependency
-        run: pip install pyyaml
-
-      - name: Reconstruct audited migration tools
-        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
-        shell: bash
-        run: |
-          cat \
-            scripts/.migration_test/test-3000 \
-            scripts/.migration_exact/part-001 \
-            scripts/.migration_exact/part-002 \
-            scripts/.migration_exact/part-003 \
-            scripts/.migration_exact/part-004 \
-            scripts/.migration_exact/part-005 \
-            scripts/.migration_bootstrap/chunk-01.txt \
-            scripts/.migration_parts/part-006 \
-            scripts/.migration_exact/part-014 \
-            scripts/.migration_exact/part-015 \
-            scripts/.migration_exact/part-016 \
-            scripts/.migration_exact/part-017 \
-            > /tmp/llm-wiki-migration.b64
-          test "$(wc -c < /tmp/llm-wiki-migration.b64)" -eq 52872
-          echo "60fab9b71c6ce732c7ec096525f12ad81db24e87b008ee0dbdca896fb51446d8  /tmp/llm-wiki-migration.b64" | sha256sum -c -
-          base64 --decode /tmp/llm-wiki-migration.b64 > /tmp/llm-wiki-migration.tar.gz
-          echo "9c326cc882452994036f44bac9012f748d397a43d86412e267a9b4dbaefbf77e  /tmp/llm-wiki-migration.tar.gz" | sha256sum -c -
-          tar -xzf /tmp/llm-wiki-migration.tar.gz
-
-      - name: Apply repository-wide llm-wiki migration
-        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
-        run: |
-          python scripts/migrate_all_history.py
-          rm -f test
-
-      - name: Verify raw source immutability
-        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
-        run: git diff --exit-code -- raw
-
       - name: Install validation dependencies
-        run: pip install mkdocs-material mkdocs-roamlinks-plugin
+        run: |
+          pip install pyyaml mkdocs-material mkdocs-roamlinks-plugin
 
       - name: Patch roamlinks symlink support
-        shell: bash
         run: |
           PLUGIN=$(python -c "import mkdocs_roamlinks_plugin, os; print(os.path.join(os.path.dirname(mkdocs_roamlinks_plugin.__file__), 'plugin.py'))")
           sed -i 's/os.walk(self.base_docs_url)/os.walk(self.base_docs_url, followlinks=True)/g' "$PLUGIN"
+          echo "Patched: $PLUGIN"
 
-      - name: Validate complete migrated repository in clean CI view
-        shell: bash
-        run: |
-          git fetch origin main
-          rm -rf /tmp/wiki-verify
-          mkdir -p /tmp/wiki-verify
-          rsync -a --exclude='.git' ./ /tmp/wiki-verify/
-          git show origin/main:.github/workflows/validate.yml > /tmp/wiki-verify/.github/workflows/validate.yml
-          git show origin/main:.github/workflows/deploy.yml > /tmp/wiki-verify/.github/workflows/deploy.yml
-          rm -f /tmp/wiki-verify/.github/workflows/apply-all-history-migration.yml
-          rm -f /tmp/wiki-verify/test
-          rm -rf \
-            /tmp/wiki-verify/scripts/.migration_bootstrap \
-            /tmp/wiki-verify/scripts/.migration_parts \
-            /tmp/wiki-verify/scripts/.migration_exact \
-            /tmp/wiki-verify/scripts/.migration_test
-          cd /tmp/wiki-verify
-          python scripts/wiki_lint.py
-          mkdocs build
+      - name: Run strict llm-wiki compliance lint
+        run: python scripts/wiki_lint.py
 
-      - name: Commit migrated knowledge pages to PR branch
-        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
-        shell: bash
-        run: |
-          rm -f test
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git reset -- \
-            .github/workflows \
-            scripts/.migration_bootstrap \
-            scripts/.migration_parts \
-            scripts/.migration_exact \
-            scripts/.migration_test
-          if ! git diff --cached --quiet; then
-            git commit -m "repair: migrate all historical pages to llm-wiki schema"
-            git push origin HEAD:${{ github.head_ref }}
-          fi
+      - name: Build MkDocs
+        run: mkdocs build
