@@ -4,27 +4,12 @@
 
 ## 模型 (Models)
 
-### 大语言模型
-- [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数, 4× T5-XXL 加速
-- [[gshard]] — GShard: 自动分片+条件计算, 600B MoE Transformer
-- [[mixtral-8x7b]] — Mixtral 8×7B: 8 专家 Top-2, 首个开源实用级 MoE LLM
-- [[deepseek-moe]] — DeepSeekMoE: 细粒度专家分割+共享专家隔离
-- [[glm-5]] — GLM-5.0: 全球第四、开源第一 (AI Index v4.0)
-- [[hydroglm]] — HydroGLM: 水利水电行业大模型, 总评 88.6 碾压 DeepSeek
+### 物理图学习与 AI4S
+- [[nequip]] — NequIP: E(3) 等变图神经网络原子势，几何张量表示 + 能量守恒力预测
+- [[allegro]] — Allegro: 严格局部等变原子势，面向超大规模动力学模拟
+- [[sevennet]] — SevenNet: GNN 原子势空间分解并行算法，多 GPU 大规模模拟
 
-### 语义分割模型
-- [[u-net]] — U-Net: Encoder-decoder + skip connections, 小样本语义分割
-- [[pspnet]] — PSPNet: 金字塔池化, ImageNet 2016 场景解析冠军
-- [[deeplabv3plus]] — DeepLabv3+: ASPP encoder + simple decoder, VOC 89.0%
-- [[hrnet]] — HRNet: 高分辨率并行卷积, Cityscapes 81.6%
-- [[segformer]] — SegFormer: Hierarchical Transformer + MLP decoder
-
-### NAS 模型
-- [[hat]] — HAT: 首个 Hardware-Aware NAS for Transformer
-- [[autoformer]] — AutoFormer: 首个 ViT 专用 NAS, one-shot supernet
-- [[nas-bert]] — NAS-BERT: BERT 压缩 NAS, 5M-60M task-agnostic
-
-## 物理信息结构响应模型
+### 物理信息结构响应模型
 - [[seisgpt]] — SeisGPT: 质量–刚度图 + SDG-Mixer，多建筑预训练、LoRA 个性化与稀疏传感器重建
 - [[phy-rlk]] — Phy-RLK: Newmark-β 物理残差 LSTM + KAN，双向非线性 RC 结构响应代理
 - [[hcff-pinn]] — HCFF-PINN: 结构频率 Fourier 特征 + 初值硬约束，线性结构动力响应求解
@@ -50,17 +35,17 @@
 - [[backlund-transformation-pinn]] — Bäcklund Transformation PINN: 以跨方程变换残差恢复无标签目标解
 
 ## 数学物理与动理学
-- [[boltzmann-equation]] — 玻尔兹曼方程: 自由输运 + 二体碰撞算子，连接粒子动力学与流体方程
-- [[hilbert-sixth-problem]] — 希尔伯特第六问题: 从硬球牛顿动力学经动理学到连续介质方程的严格推导计划
+- [[boltzmann-equation]] — 玻尔兹曼方程
+- [[hilbert-sixth-problem]] — 希尔伯特第六问题
 
 ## 组织 (Organizations)
-- [[zhipu-ai]] — 智谱AI: GLM/ChatGLM 系列大模型
-- [[guoneng-bigdata]] — 国能大数据: HydroGLM 总体架构
-- [[daduhe-company]] — 大渡河公司: 水利水电业务落地
-- [[tsinghua-dhe]] — 清华大学水利系: 水利专业支持
+- [[zhipu-ai]] — 智谱AI
+- [[guoneng-bigdata]] — 国能大数据
+- [[daduhe-company]] — 大渡河公司
+- [[tsinghua-dhe]] — 清华大学水利系
 
 ## 数据集 (Datasets)
-- [[nasbench201]] — NAS-Bench-201: 15,625 架构 NAS benchmark
-- [[ade20k]] — ADE20K: 场景解析 benchmark, 150 类
-- [[cityscapes]] — Cityscapes: 城市场景理解, 19 类
-- [[peer-strong-motion-database]] — PEER: 强震记录数据库
+- [[nasbench201]] — NAS-Bench-201
+- [[ade20k]] — ADE20K
+- [[cityscapes]] — Cityscapes
+- [[peer-strong-motion-database]] — PEER 强震数据库
