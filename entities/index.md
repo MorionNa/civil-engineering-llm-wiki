@@ -4,6 +4,11 @@
 
 ## 模型 (Models)
 
+### 物理图学习与 AI4S
+- [[nequip]] — NequIP: E(3) 等变图神经网络原子势，几何张量表示 + 能量守恒力预测
+- [[allegro]] — Allegro: 严格局部等变原子势，面向超大规模动力学模拟
+- [[sevennet]] — SevenNet: GNN 原子势空间分解并行算法，多 GPU 大规模模拟
+
 ### 大语言模型
 - [[switch-transformer]] — Switch Transformer: MoE k=1 routing, 万亿参数, 4× T5-XXL 加速
 - [[gshard]] — GShard: 自动分片+条件计算, 600B MoE Transformer
