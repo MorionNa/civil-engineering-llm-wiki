@@ -13,3 +13,9 @@
 - [[wang2024-nas-pinn-analysis]] — Wang & Zhong (2024) NAS-PINN：神经架构搜索自动设计 PINN 网络结构，JCP
 - [[kolzhetsov2026-rl-adaptive-loss-control-analysis]] — RL-Based Adaptive Loss Control：强化学习动态调节 PINN 损失权重
 - [[rathore2024-pinn-loss-landscape-analysis]] — PINN loss landscape：Hessian 谱与二阶优化
+
+## 等变图神经网络与大规模物理图学习
+
+- [[batzner2022-nequip-analysis]] — Batzner et al. (2022) NequIP：E(3) 等变张量消息传递显著提高原子势精度与数据效率，Nature Communications
+- [[musaelian2023-allegro-analysis]] — Musaelian et al. (2023) Allegro：以严格局部 pair-centered 等变张量积兼顾精度与亿原子扩展性，Nature Communications
+- [[park2024-sevennet-parallel-gnn-ip-analysis]] — Park et al. (2024) SevenNet：通过正向节点特征与反向梯度通信并行 NequIP 类 GNN 原子势
