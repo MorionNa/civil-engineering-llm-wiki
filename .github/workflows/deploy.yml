@@ -26,7 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material mkdocs-roamlinks-plugin
+          pip install pyyaml mkdocs-material mkdocs-roamlinks-plugin
 
       - name: Patch roamlinks symlink support
         run: |
@@ -34,8 +34,11 @@ jobs:
           sed -i 's/os.walk(self.base_docs_url)/os.walk(self.base_docs_url, followlinks=True)/g' "$PLUGIN"
           echo "Patched: $PLUGIN"
 
-      - name: Build site
-        run: mkdocs build
+      - name: Run llm-wiki compliance lint
+        run: python scripts/wiki_lint.py
+
+      - name: Build site strictly
+        run: mkdocs build --strict
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
