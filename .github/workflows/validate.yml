@@ -29,7 +29,20 @@ jobs:
         if: ${{ github.event_name == 'pull_request' && github.head_ref == 'repair/all-history-llm-wiki-20260731' }}
         shell: bash
         run: |
-          cat scripts/.migration_bootstrap/chunk-*.txt > /tmp/llm-wiki-migration.b64
+          cat \
+            scripts/.migration_test/test-3000 \
+            scripts/.migration_exact/part-001 \
+            scripts/.migration_exact/part-002 \
+            scripts/.migration_exact/part-003 \
+            scripts/.migration_exact/part-004 \
+            scripts/.migration_exact/part-005 \
+            scripts/.migration_bootstrap/chunk-01.txt \
+            scripts/.migration_parts/part-006 \
+            scripts/.migration_exact/part-014 \
+            scripts/.migration_exact/part-015 \
+            scripts/.migration_exact/part-016 \
+            scripts/.migration_exact/part-017 \
+            > /tmp/llm-wiki-migration.b64
           test "$(wc -c < /tmp/llm-wiki-migration.b64)" -eq 52872
           echo "60fab9b71c6ce732c7ec096525f12ad81db24e87b008ee0dbdca896fb51446d8  /tmp/llm-wiki-migration.b64" | sha256sum -c -
           base64 --decode /tmp/llm-wiki-migration.b64 > /tmp/llm-wiki-migration.tar.gz
@@ -63,8 +76,11 @@ jobs:
           git show origin/main:.github/workflows/validate.yml > /tmp/wiki-verify/.github/workflows/validate.yml
           git show origin/main:.github/workflows/deploy.yml > /tmp/wiki-verify/.github/workflows/deploy.yml
           rm -f /tmp/wiki-verify/.github/workflows/apply-all-history-migration.yml
-          rm -rf /tmp/wiki-verify/scripts/.migration_bootstrap
-          rm -f /tmp/wiki-verify/test
+          rm -rf \
+            /tmp/wiki-verify/scripts/.migration_bootstrap \
+            /tmp/wiki-verify/scripts/.migration_parts \
+            /tmp/wiki-verify/scripts/.migration_exact \
+            /tmp/wiki-verify/scripts/.migration_test
           cd /tmp/wiki-verify
           python scripts/wiki_lint.py
           mkdocs build
@@ -76,7 +92,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git reset -- .github/workflows scripts/.migration_bootstrap
+          git reset -- \
+            .github/workflows \
+            scripts/.migration_bootstrap \
+            scripts/.migration_parts \
+            scripts/.migration_exact \
+            scripts/.migration_test
           if ! git diff --cached --quiet; then
             git commit -m "repair: migrate all historical pages to llm-wiki schema"
             git push origin HEAD:${{ github.head_ref }}
