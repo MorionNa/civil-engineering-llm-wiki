@@ -6,150 +6,29 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref || github.ref_name }}
-          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Finalize NequIP chain registration
-        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'ingest/batzner2022-nequip' }}
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-
-          def insert_after(text: str, anchor: str, block: str, marker: str) -> str:
-              if marker in text:
-                  return text
-              if anchor not in text:
-                  raise RuntimeError(f"Anchor not found: {anchor!r}")
-              return text.replace(anchor, anchor + "\n" + block, 1)
-
-          required = [
-              "papers/batzner2022-nequip-analysis.md",
-              "papers/batzner2022-nequip-method.md",
-              "papers/batzner2022-nequip-results.md",
-              "papers/batzner2022-nequip-critical.md",
-              "entities/nequip.md",
-              "papers/musaelian2023-allegro-analysis.md",
-              "entities/allegro.md",
-              "papers/park2024-sevennet-parallel-gnn-ip-analysis.md",
-              "entities/sevennet.md",
-          ]
-          missing = [p for p in required if not Path(p).exists()]
-          if missing:
-              raise RuntimeError("Missing required pages: " + ", ".join(missing))
-
-          p = Path("index.md")
-          text = p.read_text(encoding="utf-8")
-          paper_block = """- [[batzner2022-nequip-analysis]] — Batzner et al. (2022) NequIP：E(3) 等变张量消息传递提高原子势精度与数据效率，Nature Communications
-- [[batzner2022-nequip-method]] — NequIP 方法：O(3) 不可约表示、球谐方向基、Clebsch–Gordan 张量积与能量守恒力场
-- [[batzner2022-nequip-results]] — NequIP 结果：MD-17、水/冰、反应界面和离子输运的少样本验证
-- [[batzner2022-nequip-critical]] — NequIP 批判：长程作用、解释性、并行感受野及结构动力迁移
-- [[musaelian2023-allegro-analysis]] — Musaelian et al. (2023) Allegro：严格局部等变原子势与亿原子扩展
-- [[musaelian2023-allegro-method]] — Allegro 方法：pair-centered 双潜空间、局部环境嵌入与迭代张量积
-- [[musaelian2023-allegro-results]] — Allegro 结果：QM9、revMD-17、Li3PO4 动力学与超大规模并行
-- [[musaelian2023-allegro-critical]] — Allegro 批判：局部性、长程项、pair 显存和结构图迁移
-- [[park2024-sevennet-parallel-gnn-ip-analysis]] — Park et al. (2024) SevenNet：NequIP 类 GNN 原子势的空间分解并行
-- [[park2024-sevennet-parallel-gnn-ip-method]] — SevenNet 方法：ghost atoms、正向节点特征与反向梯度通信
-- [[park2024-sevennet-parallel-gnn-ip-results]] — SevenNet 结果：32 GPU 扩展与 112,000 原子 Si3N4 模拟
-- [[park2024-sevennet-parallel-gnn-ip-critical]] — SevenNet 批判：GPU 利用率、通信开销与子结构并行迁移"""
-          text = insert_after(text, "## Papers", paper_block, "[[batzner2022-nequip-analysis]]")
-
-          entity_block = """### 等变图神经网络与物理图学习
-- [[nequip]] — NequIP：E(3) 等变消息传递、几何张量表示与能量守恒力场
-- [[allegro]] — Allegro：严格局部 pair-centered 等变原子势
-- [[sevennet]] — SevenNet：NequIP 类 GNN 原子势的分布式空间分解"""
-          text = insert_after(text, "## Entities", entity_block, "### 等变图神经网络与物理图学习")
-
-          def count_pages(root: str) -> int:
-              base = Path(root)
-              return sum(1 for f in base.rglob("*.md") if f.name != "index.md") if base.exists() else 0
-
-          papers = count_pages("papers")
-          notes = count_pages("notes")
-          entities = count_pages("entities")
-          comparisons = count_pages("comparisons")
-          total = papers + notes + entities + comparisons
-          text = re.sub(
-              r"> Last updated: .*?\| Total pages: .*?\(Papers: .*?, Notes: .*?, Entities: .*?, Comparisons: .*?\)",
-              f"> Last updated: 2026-07-31 | Total pages: {total} (Papers: {papers}, Notes: {notes}, Entities: {entities}, Comparisons: {comparisons})",
-              text,
-              count=1,
-          )
-          p.write_text(text, encoding="utf-8")
-
-          p = Path("mkdocs.yml")
-          text = p.read_text(encoding="utf-8")
-          paper_nav = """      - Batzner 2022 NequIP:
-          - papers/batzner2022-nequip-analysis.md
-          - papers/batzner2022-nequip-method.md
-          - papers/batzner2022-nequip-results.md
-          - papers/batzner2022-nequip-critical.md
-      - Musaelian 2023 Allegro:
-          - papers/musaelian2023-allegro-analysis.md
-          - papers/musaelian2023-allegro-method.md
-          - papers/musaelian2023-allegro-results.md
-          - papers/musaelian2023-allegro-critical.md
-      - Park 2024 SevenNet:
-          - papers/park2024-sevennet-parallel-gnn-ip-analysis.md
-          - papers/park2024-sevennet-parallel-gnn-ip-method.md
-          - papers/park2024-sevennet-parallel-gnn-ip-results.md
-          - papers/park2024-sevennet-parallel-gnn-ip-critical.md"""
-          text = insert_after(text, "      - papers/index.md", paper_nav, "      - Batzner 2022 NequIP:")
-          entity_nav = """          - entities/nequip.md
-          - entities/allegro.md
-          - entities/sevennet.md"""
-          text = insert_after(text, "      - 物理信息机器学习:", entity_nav, "          - entities/nequip.md")
-          p.write_text(text, encoding="utf-8")
-          PY
-
-          rm -f .github/workflows/register-nequip-chain.yml
-          rm -f notes/nequip-chain-registration.md
-          git fetch origin main
-          git checkout origin/main -- .github/workflows/validate.yml
-
       - name: Install MkDocs dependencies
         run: |
           pip install mkdocs-material mkdocs-roamlinks-plugin
-          PLUGIN=$(python -c "import mkdocs_roamlinks_plugin, os; print(os.path.join(os.path.dirname(mkdocs_roamlinks_plugin.__file__), 'plugin.py'))")
-          sed -i 's/os.walk(self.base_docs_url)/os.walk(self.base_docs_url, followlinks=True)/g' "$PLUGIN"
 
       - name: Build MkDocs
         run: mkdocs build
 
-      - name: Check required pages and registration
+      - name: Check required Sep-PI-DeepONet pages
         run: |
-          test -f papers/batzner2022-nequip-analysis.md
-          test -f papers/batzner2022-nequip-method.md
-          test -f papers/batzner2022-nequip-results.md
-          test -f papers/batzner2022-nequip-critical.md
-          test -f entities/nequip.md
-          grep -q 'batzner2022-nequip-analysis' papers/index.md
-          grep -q 'batzner2022-nequip-analysis' index.md
-          grep -q 'Batzner 2022 NequIP' mkdocs.yml
-          grep -q 'entities/nequip.md' mkdocs.yml
-          grep -q 'Batzner et al. (2022) — NequIP' log.md
-
-      - name: Commit finalized registration to PR branch
-        if: ${{ github.event_name == 'pull_request' && github.head_ref == 'ingest/batzner2022-nequip' }}
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "index: publish NequIP Allegro SevenNet chain"
-            git push origin HEAD:${{ github.head_ref }}
-          fi
+          test -f papers/mandl2025-separable-pi-deeponet-analysis.md
+          test -f papers/mandl2025-separable-pi-deeponet-method.md
+          test -f papers/mandl2025-separable-pi-deeponet-results.md
+          test -f papers/mandl2025-separable-pi-deeponet-critical.md
+          test -f entities/separable-pi-deeponet.md
