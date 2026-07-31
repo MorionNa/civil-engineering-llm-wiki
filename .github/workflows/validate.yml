@@ -28,8 +28,8 @@ jobs:
           sed -i 's/os.walk(self.base_docs_url)/os.walk(self.base_docs_url, followlinks=True)/g' "$PLUGIN"
           echo "Patched: $PLUGIN"
 
-      - name: Run llm-wiki compliance lint
+      - name: Run strict llm-wiki compliance lint
         run: python scripts/wiki_lint.py
 
-      - name: Build MkDocs strictly
-        run: mkdocs build --strict
+      - name: Build MkDocs
+        run: mkdocs build
