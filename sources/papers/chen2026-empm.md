@@ -1,6 +1,6 @@
 ---
 id: sources--papers--chen2026-empm
-title: Chen et al. (2026) — EMPM: Embodied MPM for Modeling and Simulation of Deformable Objects
+title: 'Chen et al. (2026) — EMPM: Embodied MPM for Modeling and Simulation of Deformable Objects'
 type: source
 status: active
 project: civil-engineering-llm-wiki
