@@ -34,21 +34,21 @@ theme:
         icon: material/brightness-7
         name: 亮色模式
 
-# The Papers block is replaced at build time by scripts/mkdocs_hooks.py.
-# Every Markdown page under docs/papers is therefore exposed in the sidebar.
+# 下列知识分区会在构建时由 scripts/mkdocs_hooks.py 扫描并补全全部页面。
 nav:
   - 首页: index.md
   - Papers:
       - 论文索引: papers/index.md
   - Entities:
       - 实体索引: entities/index.md
-      - NequIP: entities/nequip.md
-      - Allegro: entities/allegro.md
-      - SevenNet: entities/sevennet.md
+  - Concepts:
+      - 概念索引: concepts/index.md
+  - Sources:
+      - 来源索引: sources/index.md
   - Notes:
       - 笔记索引: notes/index.md
-      - 物理 Token 与 Transolver: notes/articles/shenlan2026-physical-token-transolver.md
-  - Comparisons: comparisons/index.md
+  - Comparisons:
+      - 对比索引: comparisons/index.md
   - SCHEMA: SCHEMA.md
   - 日志: log.md
 

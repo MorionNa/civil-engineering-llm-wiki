@@ -1,6 +1,6 @@
 ---
 id: entity--empm
-title: EMPM — Embodied Material Point Method
+title: EMPM — 具身可微材料点法框架
 type: entity
 status: active
 project: civil-engineering-llm-wiki
@@ -24,29 +24,29 @@ confidence: high
 
 # EMPM
 
-## Definition
+## 定义
 
-EMPM is an embodied, differentiable Material Point Method framework for reconstructing, identifying, simulating and visually rendering deformable objects from multi-view RGB-D observations. It combines MPM continuum mechanics, parameter optimization, 3D point-cloud supervision and Gaussian Splatting. ^[sources/papers/chen2026-empm.md]
+EMPM 是一种由多视角 RGB-D 观测驱动的具身可微材料点法框架，用于重建、识别、模拟并渲染可变形物体。它将 MPM 连续介质力学、材料参数优化、三维点云监督和三维高斯泼溅整合在一个真实—仿真—真实流程中。^[sources/papers/chen2026-empm.md]
 
-## Core Components
+## 核心组成
 
-- Multi-view RGB-D fusion and segmentation.
-- Offline 3D point tracking.
-- APIC-style differentiable MPM implemented with Warp.
-- Fixed Corotated elasticity and von Mises plastic return mapping.
-- Chamfer, tracking and mask losses.
-- Offline and online material-parameter correction.
-- 3DGS appearance model driven by MPM particles.
+- 多视角 RGB-D 融合与目标分割。
+- 离线三维点追踪。
+- 基于 Warp 实现的 APIC 风格可微 MPM。
+- Fixed Corotated 弹性和 von Mises 塑性返回映射。
+- Chamfer、追踪点和掩膜损失。
+- 离线与在线材料参数校正。
+- 由 MPM 粒子驱动的 3DGS 外观模型。
 
-## Project Role
+## 在本知识库中的作用
 
-EMPM is relevant to differentiable system identification and local particle-based fracture simulation. For the user's structural-collapse research, it is most useful as evidence that MPM parameters can be updated from observation and embedded in an action-conditioned digital twin. It is not itself a building-collapse solver.
+EMPM 与可微系统识别和局部粒子断裂仿真密切相关。对结构倒塌研究而言，其主要价值是证明 MPM 参数能够利用观测误差在线更新，并嵌入动作条件数字孪生；但 EMPM 本身并不是建筑倒塌求解器。
 
-## Evidence Boundary
+## 证据边界
 
-The current entity page is grounded in the full text of arXiv:2601.17251v1. No independent code execution or reproduction was performed.
+本实体页基于 arXiv:2601.17251v1 全文建立，未执行代码复现或独立实验验证。
 
-## Related Pages
+## 关联页面
 
 - [[chen2026-empm-analysis]]
 - [[chen2026-empm-method]]
