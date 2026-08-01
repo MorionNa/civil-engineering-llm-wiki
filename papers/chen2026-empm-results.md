@@ -1,6 +1,6 @@
 ---
 id: paper--chen2026-empm-results
-title: Chen et al. (2026) — EMPM 结果证据
+title: Chen 等（2026）— EMPM 结果证据
 type: paper-analysis
 status: active
 project: civil-engineering-llm-wiki
@@ -24,54 +24,54 @@ evidence_scope: full-text
 
 # EMPM 结果证据
 
-## Experimental Scope
+## 实验范围
 
-The study uses three elastic objects—rope, soft elastic toy and cloth—and three elastoplastic objects—pita bread, bread dough and plasticine. Data are collected with three RealSense D455 cameras. Offline interaction uses human hands; online experiments use two Franka arms. Training and online optimization run on one NVIDIA A6000. ^[sources/papers/chen2026-empm.md]
+实验包含三类弹性物体：绳索、软弹性玩具和布料；以及三类弹塑性物体：皮塔饼、面团和橡皮泥。数据由三台 RealSense D455 采集，离线交互由人手完成，在线实验采用两台 Franka 机械臂。训练与在线优化均在单张 NVIDIA A6000 上运行。^[sources/papers/chen2026-empm.md]
 
-## Offline Quantitative Comparison
+## 离线定量比较
 
-| Category | Method | Dist ↓ | Track ↓ | IoU ↑ | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
+| 类别 | 方法 | Dist ↓ | Track ↓ | IoU ↑ | PSNR ↑ | SSIM ↑ | LPIPS ↓ |
 |---|---|---:|---:|---:|---:|---:|---:|
-| Elastic | PGND | 0.0618 | — | 0.6898 | 21.06 | 0.8938 | 0.0977 |
-| Elastic | PhysTwin | 0.0227 | 0.1467 | 0.6981 | 24.12 | 0.9312 | 0.0756 |
-| Elastic | EMPM | **0.0222** | **0.1377** | **0.7095** | **24.19** | **0.9319** | **0.0711** |
-| Elastoplastic | PGND | 0.0245 | — | 0.5069 | 21.26 | 0.9472 | 0.0738 |
-| Elastoplastic | PhysTwin | 0.0177 | 0.1108 | 0.6918 | 27.01 | 0.9695 | 0.0353 |
-| Elastoplastic | EMPM | **0.0082** | **0.1014** | **0.7768** | **27.82** | **0.9725** | **0.0291** |
+| 弹性 | PGND | 0.0618 | — | 0.6898 | 21.06 | 0.8938 | 0.0977 |
+| 弹性 | PhysTwin | 0.0227 | 0.1467 | 0.6981 | 24.12 | 0.9312 | 0.0756 |
+| 弹性 | EMPM | **0.0222** | **0.1377** | **0.7095** | **24.19** | **0.9319** | **0.0711** |
+| 弹塑性 | PGND | 0.0245 | — | 0.5069 | 21.26 | 0.9472 | 0.0738 |
+| 弹塑性 | PhysTwin | 0.0177 | 0.1108 | 0.6918 | 27.01 | 0.9695 | 0.0353 |
+| 弹塑性 | EMPM | **0.0082** | **0.1014** | **0.7768** | **27.82** | **0.9725** | **0.0291** |
 
-Table 1 reports EMPM as best across all listed metrics, with a much larger geometric advantage for elastoplastic objects. ^[sources/papers/chen2026-empm.md]
+表 1 中，EMPM 在全部报告指标上均为最优，且在弹塑性对象上的几何误差优势更明显。^[sources/papers/chen2026-empm.md]
 
-## Qualitative Evidence
+## 定性结果
 
-Figure 4 shows better handling of fracture in pita bread and squeezing in plasticine than the spring-mass PhysTwin baseline. The authors attribute this to continuum elastoplastic and fracture capability that a spring network does not naturally represent. Figure 5 shows Gaussian-rendered sequences aligned with observations.
+图 4 显示，EMPM 在皮塔饼断裂和橡皮泥挤压任务上优于弹簧—质点基线 PhysTwin。作者认为，连续介质弹塑性与断裂能力能够表达弹簧网络难以自然描述的永久变形和破坏。图 5 的高斯渲染序列也与真实观测保持较好一致。
 
-## Online Correction
+## 在线校正
 
-| Object | Mask loss without | Dist without | Mask loss with | Dist with |
+| 对象 | 未优化掩膜损失 | 未优化距离 | 优化后掩膜损失 | 优化后距离 |
 |---|---:|---:|---:|---:|
-| Rope | 0.0456 | 0.0057 | **0.0428** | **0.0054** |
-| Bread dough | 0.0031 | 0.0060 | **0.0024** | **0.0059** |
+| 绳索 | 0.0456 | 0.0057 | **0.0428** | **0.0054** |
+| 面团 | 0.0031 | 0.0060 | **0.0024** | **0.0059** |
 
-The improvement is consistent but modest for 3D distance. The paper updates once every five streaming steps when the object is relatively steady and uses ten forward steps per correction.
+在线校正对两类误差均有改善，但三维距离的改善幅度较小。实验中每五个流式步骤尝试一次更新，并且只在物体相对稳定时执行；每次优化包含十个前向模拟步骤。
 
-## Runtime
+## 运行时间
 
-| Method | Elastic train (s) | Elastic test (s) | Elastoplastic train (s) | Elastoplastic test (s) |
+| 方法 | 弹性训练（s） | 弹性测试（s） | 弹塑性训练（s） | 弹塑性测试（s） |
 |---|---:|---:|---:|---:|
 | PGND | 50675.50 | **5.06** | 48464.40 | **5.34** |
 | PhysTwin | 496.84 | 11.49 | 589.51 | 15.94 |
 | EMPM | **161.80** | 14.71 | **171.60** | 22.21 |
 
-EMPM has the lowest reported training time but slower inference than PGND and somewhat slower inference than PhysTwin, especially for elastoplastic objects. ^[sources/papers/chen2026-empm.md]
+EMPM 的参数优化时间最短，但推理速度慢于前馈式 PGND，也略慢于 PhysTwin，尤其是在弹塑性对象上。^[sources/papers/chen2026-empm.md]
 
-## Interpretation Limits
+## 解释边界
 
-- Metrics aggregate a small set of object classes and manipulation sequences.
-- Baseline correspondence differences prevent PGND tracking-error comparison.
-- Runtime includes different model classes and training procedures, so it is not a pure kernel-level simulator benchmark.
-- The autonomous-control claim remains prospective; Figure 7 is a proof-of-concept rollout and tracking demonstration.
+- 指标来自有限的物体类别和操控序列。
+- PGND 与本方法之间缺少统一粒子对应，因此无法比较其追踪误差。
+- 运行时间比较涉及不同模型和训练流程，不能视为纯模拟器内核性能比较。
+- 自主控制仍是未来目标；图 7 只是概念验证性质的轨迹推进与跟踪演示。
 
-## Related Pages
+## 关联页面
 
 - [[chen2026-empm-analysis]]
 - [[chen2026-empm-method]]

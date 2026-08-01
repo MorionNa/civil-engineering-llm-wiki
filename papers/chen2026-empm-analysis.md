@@ -1,6 +1,6 @@
 ---
 id: paper--chen2026-empm-analysis
-title: Chen et al. (2026) — EMPM 论文分析
+title: Chen 等（2026）— EMPM 论文分析
 type: paper-analysis
 status: active
 project: civil-engineering-llm-wiki
@@ -24,57 +24,60 @@ evidence_scope: full-text
 reproducibility: medium
 ---
 
-# EMPM: Embodied MPM for Modeling and Simulation of Deformable Objects
+# EMPM：面向可变形物体建模与仿真的具身材料点法
 
-## 1. Engineering Background
+## 1. 工程背景
 
-Robotic manipulation of ropes, cloth, dough, plasticine and other deformable objects requires a model that simultaneously captures geometry, appearance, material properties and dynamics. Purely visual reconstruction can render the object but does not provide a physically predictive world model; spring-mass and learned dynamics models may simplify continuum behavior or require large training sets. ^[sources/papers/chen2026-empm.md]
+机器人操控绳索、布料、面团、橡皮泥等可变形物体时，需要同时描述几何、外观、材料属性与动力学。纯视觉重建能够生成逼真外观，却不能直接形成具有预测能力的物理模型；弹簧—质点模型可能过度简化连续介质行为，学习型动力学模型又常依赖大量训练数据。^[sources/papers/chen2026-empm.md]
 
-## 2. Research Gap
+## 2. 研究缺口
 
-Existing real-to-sim methods either rely on simplified spring-mass physics, focus on a narrower material class, omit photorealistic rendering, or lack online correction from streaming observations. The paper targets elastic and elastoplastic materials in a single differentiable MPM pipeline. ^[sources/papers/chen2026-empm.md]
+现有真实世界到仿真的方法往往依赖简化弹簧模型，只覆盖有限材料类型，缺少逼真外观渲染，或者不能利用连续传感观测在线修正物理参数。本文试图在统一的可微 MPM 框架中同时处理弹性与弹塑性材料。^[sources/papers/chen2026-empm.md]
 
-## 3. Scientific Question
+## 3. 科学问题
 
-Can a differentiable particle-grid continuum simulator be identified from multi-view RGB-D observations, updated online, and used as an action-conditioned digital twin for complex deformable-object manipulation?
+能否从多视角 RGB-D 观测中识别一个可微的粒子—网格连续介质模拟器，并在交互过程中在线更新参数，使其成为可用于复杂可变形物体操控的动作条件数字孪生？
 
-## 4. Research Objective
+## 4. 研究目标
 
-The objective is to reconstruct object geometry and appearance, identify MPM material parameters from observed deformation, correct them online from sensory feedback, and produce predictive rollouts for robotic interaction. ^[sources/papers/chen2026-empm.md]
+从视觉观测重建物体几何和外观，根据真实变形识别 MPM 材料参数，利用实时反馈进行在线校正，并生成面向机器人交互的预测性动力学轨迹。^[sources/papers/chen2026-empm.md]
 
-## 5. Method And Mechanism
+## 5. 方法与机理
 
-EMPM fuses multi-view RGB-D data into a point cloud, uses Grounded SAM2 and 3D tracking for preprocessing, constructs a 3D Gaussian Splatting appearance model, and runs an action-conditioned differentiable MPM simulator. Particle states include position, velocity and deformation gradient; material parameters include Young's modulus, Poisson's ratio, density and plastic yield stress. Offline identification minimizes point-cloud Chamfer and tracked-point losses. Online correction uses 3D Chamfer plus 2D mask loss at quasi-static states. See [[chen2026-empm-method]].
+EMPM 将多视角 RGB-D 数据融合为点云，使用 Grounded SAM2 和三维点追踪进行预处理，以三维高斯泼溅建立外观模型，并运行受手或机械夹爪动作约束的可微 MPM 模拟器。粒子状态包括位置、速度和变形梯度；材料参数包括杨氏模量、泊松比、密度和塑性屈服应力。离线识别使用点云 Chamfer 距离和追踪点误差，在线校正则在准静态状态下使用三维距离与二维掩膜损失。详见 [[chen2026-empm-method]]。
 
-## 6. Result And Evidence
+## 6. 结果与证据
 
-Across elastic and elastoplastic categories, EMPM reports the best values in every metric in Table 1. The largest advantage appears for elastoplastic objects, where its distance error is 0.0082 versus 0.0177 for PhysTwin and 0.0245 for PGND, while IoU reaches 0.7768. Online correction reduces both mask and 3D distance errors for rope and bread dough. See [[chen2026-empm-results]]. ^[sources/papers/chen2026-empm.md]
+在弹性和弹塑性两类对象上，EMPM 在表 1 的全部报告指标中均取得最优值。其在弹塑性对象上的优势尤其明显：距离误差为 0.0082，PhysTwin 为 0.0177，PGND 为 0.0245；IoU 达到 0.7768。在线校正降低了绳索和面团实验中的掩膜误差与三维距离误差。详见 [[chen2026-empm-results]]。^[sources/papers/chen2026-empm.md]
 
-## 7. Contribution
+## 7. 主要贡献
 
-The work contributes: (1) a real-to-sim-to-real differentiable MPM system grounded in RGB-D observations; (2) online material-parameter adaptation; (3) support for both elastic and elastoplastic objects; and (4) integration of physics simulation with Gaussian rendering and robot interaction.
+1. 提出由 RGB-D 观测驱动的真实—仿真—真实可微 MPM 系统。
+2. 提出在线材料参数自适应机制。
+3. 在同一框架中覆盖弹性与弹塑性物体。
+4. 将物理仿真、三维高斯渲染和机器人交互连接起来。
 
-## 8. Core Knowledge
+## 8. 核心知识
 
-The central reusable idea is that a continuum simulator can serve as a differentiable, action-conditioned digital twin. Perception provides geometry and boundary motion; MPM provides constitutive and contact dynamics; gradients from observation mismatch identify physical parameters.
+最值得复用的思想是：连续介质模拟器可以成为可微、动作条件的数字孪生。感知模块提供几何状态和边界运动，MPM 提供本构、接触与大变形动力学，观测与模拟之间的误差梯度则用于识别材料参数。
 
 ## 9. Negative Knowledge
 
-The system does not eliminate perception uncertainty. Point tracking degrades under occlusion and large deformation, online optimization is restricted to quasi-static moments to avoid unstable gradients, material parameters are assumed spatially constant, and the paper does not yet demonstrate autonomous model-based control. See [[chen2026-empm-critical]].
+该系统没有消除感知不确定性。遮挡和大变形会使点追踪迅速退化；为避免梯度不稳定，在线优化仅在准静态时刻执行；材料参数被假定为空间常量；论文也尚未完成自主模型预测控制。详见 [[chen2026-empm-critical]]。
 
-## 10. Transferable Knowledge
+## 10. 可迁移知识
 
-For structural collapse or local MPM coupling, the paper provides a concrete pattern: reconstruct state from observation, impose measured motion as boundary conditions, differentiate through MPM, and update material parameters online. This is a migration inference rather than a demonstrated civil-engineering result.
+对结构倒塌或局部 MPM 耦合研究而言，本文给出了一条具体技术路径：从观测重建状态，将实测运动施加为边界条件，对 MPM 过程求导，并在线更新材料参数。此处属于迁移推论，不是论文已经验证的土木工程结论。
 
-## 11. Research Opportunities
+## 11. 研究机会
 
-Promising extensions include spatially varying constitutive parameters, uncertainty-aware tracking, adaptive particle resolution, fracture calibration, contact-parameter identification, and integration with model predictive control. For building collapse, one could investigate local MPM regions coupled to beam-shell models, but EMPM itself does not solve that coupling problem.
+可进一步研究空间变化的本构参数、带不确定性的系统识别、自适应粒子分辨率、断裂参数标定、接触参数识别和模型预测控制。针对建筑倒塌，可探索局部 MPM 区域与梁—壳模型的耦合，但本文本身并未解决该耦合问题。
 
-## 12. Reproducibility
+## 12. 可复现性
 
-The paper specifies Warp, PyTorch integration, AdamW with learning rate $10^{-4}$, one NVIDIA A6000, three RealSense D455 cameras, Grounded SAM2, 3D tracking, 3DGS/gsplat and six object classes. However, the PDF does not provide a public code repository, complete hyperparameter tables, exact camera calibration files or full dataset release details. Reproducibility is therefore assessed as medium.
+论文给出了 Warp、PyTorch 接口、AdamW 学习率 $10^{-4}$、单张 NVIDIA A6000、三台 RealSense D455、Grounded SAM2、三维追踪、3DGS/gsplat 和六类实验对象等信息。但 PDF 未提供公开代码仓库、完整超参数表、相机标定文件和完整数据集，因此可复现性评估为中等。
 
-## Related Pages
+## 关联页面
 
 - [[chen2026-empm-method]]
 - [[chen2026-empm-results]]
