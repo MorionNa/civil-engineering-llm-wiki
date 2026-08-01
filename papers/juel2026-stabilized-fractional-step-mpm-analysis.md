@@ -43,11 +43,11 @@ reproducibility: medium
 
 ## 5. 方法与机制
 
-模型采用固相与液相两套材料点，网格上依次执行速度预测、压力泊松求解和速度校正。压力隐式处理，固相有效应力显式处理；默认采用半隐式阻力。压力泊松系统用矩阵自由预条件共轭梯度求解，Taichi 实现 GPU 与稀疏网格加速。详见 [[papers/juel2026-stabilized-fractional-step-mpm-method]]。^[sources/papers/juel2026-stabilized-fractional-step-mpm.md]
+模型采用固相与液相两套材料点，网格上依次执行速度预测、压力泊松求解和速度校正。压力隐式处理，固相有效应力显式处理；默认采用半隐式阻力。压力泊松系统用矩阵自由预条件共轭梯度求解，Taichi 实现 GPU 与稀疏网格加速。详见 [[juel2026-stabilized-fractional-step-mpm-method]]。^[sources/papers/juel2026-stabilized-fractional-step-mpm.md]
 
 ## 6. 结果与证据
 
-增量格式在渗透率从 $10^{-10}$ 降至 $10^{-12}\,\mathrm{m^2}$ 时基本不受渗透率影响；非增量格式则出现过度耗散或虚假孔压积累。推荐 $\tau_{stab}=2\Delta t$。大应变固结达到 76% 压缩；三维 860 万粒子算例在 RTX 4070 Ti 上约 100 min。详见 [[papers/juel2026-stabilized-fractional-step-mpm-results]]。
+增量格式在渗透率从 $10^{-10}$ 降至 $10^{-12}\,\mathrm{m^2}$ 时基本不受渗透率影响；非增量格式则出现过度耗散或虚假孔压积累。推荐 $\tau_{stab}=2\Delta t$。大应变固结达到 76% 压缩；三维 860 万粒子算例在 RTX 4070 Ti 上约 100 min。详见 [[juel2026-stabilized-fractional-step-mpm-results]]。
 
 ## 7. 贡献
 
@@ -81,6 +81,9 @@ reproducibility: medium
 
 ## 关联页面
 
+- [[juel2026-stabilized-fractional-step-mpm-method]]
+- [[juel2026-stabilized-fractional-step-mpm-results]]
+- [[juel2026-stabilized-fractional-step-mpm-critical]]
 - [[entities/stabilized-fractional-step-two-phase-mpm]]
 - [[concepts/stabilized-pressure-gradient-projection]]
 - [[concepts/tpic-pressure-mapping]]
