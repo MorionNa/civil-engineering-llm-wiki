@@ -55,7 +55,7 @@ The simulator uses APIC-style particle-to-grid transfer, grid update under stres
 
 The offline loss combines 3D Chamfer distance and tracked-particle squared error:
 
-$$L_{offline}=\lambda_{dist}\sum_t Chamfer(\hat X_t,\tilde X_t)+\lambda_{trk}\sum_t\sum_{j\in T_t}\|\hat X_{t,j}-\tilde X^{trk}_{t,j}\|_2^2.$$
+$$L_{offline}=\lambda_{dist}\sum_t Chamfer(\hat X_t,\tilde X_t)+\lambda_{trk}\sum_t\sum_{j\in T_t}\lVert\hat X_{t,j}-\tilde X^{trk}_{t,j}\rVert_2^2.$$
 
 Warp differentiates through the rollout. The authors also retain CMA-ES as a zero-order option when memory or aggressive parameter search is preferred.
 
