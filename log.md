@@ -7,11 +7,20 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-06-28'
-updated: '2026-07-31'
+updated: '2026-08-01'
 confidence: high
 ---
 
 # Wiki Log
+
+## [2026-08-01] ingest | 深蓝（2026）— 从 CFD 到 Transolver：物理世界的 Token
+
+- Source: user-provided 7-page Zhihu PDF capture; technical body reviewed on pages 1-5.
+- Preserved immutable source metadata and SHA-256 under `raw/webpages/shenlan2026-physical-token-transolver-source.md`.
+- Created `notes/articles/shenlan2026-physical-token-transolver.md` and registered it in the notes index and MkDocs navigation.
+- Core: node-level full-attention bottleneck, POD/DMD compact-representation analogy, feature-space Dynamic Slicing, learned physical Token and Physics Attention.
+- Added an explicitly labelled structural-dynamics/MechConv migration inference; it is not presented as an article conclusion.
+- Evidence boundary: secondary technical article, not the Transolver primary paper or an independent reproduction.
 
 ## [2026-07-31] verify | Repository-wide historical llm-wiki migration
 
