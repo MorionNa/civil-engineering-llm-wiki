@@ -5,6 +5,9 @@ repo_url: "https://github.com/MorionNa/civil-engineering-llm-wiki"
 repo_name: "MorionNa/civil-engineering-llm-wiki"
 docs_dir: "docs"
 
+hooks:
+  - scripts/mkdocs_hooks.py
+
 theme:
   name: material
   language: zh
@@ -13,7 +16,6 @@ theme:
     - navigation.tracking
     - navigation.indexes
     - navigation.top
-    - navigation.expand
     - navigation.path
     - search.suggest
     - search.highlight
@@ -32,27 +34,12 @@ theme:
         icon: material/brightness-7
         name: 亮色模式
 
-# Keep the curated navigation compact and stable. All unlisted Markdown pages are
-# still built, searchable, and reachable through the section indexes and wikilinks.
+# The Papers block is replaced at build time by scripts/mkdocs_hooks.py.
+# Every Markdown page under docs/papers is therefore exposed in the sidebar.
 nav:
   - 首页: index.md
   - Papers:
       - 论文索引: papers/index.md
-      - Batzner 2022 NequIP:
-          - 概览: papers/batzner2022-nequip-analysis.md
-          - 方法: papers/batzner2022-nequip-method.md
-          - 结果: papers/batzner2022-nequip-results.md
-          - 批判与迁移: papers/batzner2022-nequip-critical.md
-      - Musaelian 2023 Allegro:
-          - 概览: papers/musaelian2023-allegro-analysis.md
-          - 方法: papers/musaelian2023-allegro-method.md
-          - 结果: papers/musaelian2023-allegro-results.md
-          - 批判与迁移: papers/musaelian2023-allegro-critical.md
-      - Park 2024 SevenNet:
-          - 概览: papers/park2024-sevennet-parallel-gnn-ip-analysis.md
-          - 方法: papers/park2024-sevennet-parallel-gnn-ip-method.md
-          - 结果: papers/park2024-sevennet-parallel-gnn-ip-results.md
-          - 批判与迁移: papers/park2024-sevennet-parallel-gnn-ip-critical.md
   - Entities:
       - 实体索引: entities/index.md
       - NequIP: entities/nequip.md
