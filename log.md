@@ -13,6 +13,14 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-01] revise | 自动生成完整论文侧边导航
+
+- Replaced the manually curated three-paper MkDocs sidebar with a read-only build hook that scans every Markdown page under `docs/papers/`.
+- Groups the standard `analysis + method + results + critical` family under one collapsible paper entry and also exposes single-page paper records.
+- Keeps `papers/index.md` as the first paper-navigation item and sorts paper families deterministically by title.
+- Removed global `navigation.expand` so the much larger complete registry remains collapsed and usable by default.
+- Future paper ingests require no manual `mkdocs.yml` edit: the next site build automatically includes the new pages.
+
 ## [2026-08-01] ingest | 深蓝（2026）— 从 CFD 到 Transolver：物理世界的 Token
 
 - Source: user-provided 7-page Zhihu PDF capture; technical body reviewed on pages 1-5.
