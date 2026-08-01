@@ -19,7 +19,7 @@ keywords:
 - reduced-order-model
 - transolver
 sources:
-- sources/articles/shenlan2026-physical-token-transolver.md
+- raw/webpages/shenlan2026-physical-token-transolver-source.md
 created: '2026-08-01'
 updated: '2026-08-01'
 confidence: medium
@@ -29,11 +29,11 @@ evidence_scope: webpage
 # 从 CFD 到 Transolver：物理世界的 Token 是什么？
 
 > **来源：** 深蓝，知乎技术文章，2026-06-19。
-> **一句话定位：** 文章把 CFD、GNN 与 Transformer 统一为“信息在什么对象之间传播”的问题，并用 [[concepts/dynamic-slicing]] 将大量物理节点压缩为少量可学习的 [[concepts/physical-token]]，再通过 [[concepts/physics-attention]] 完成全局交互。
+> **一句话定位：** 文章把 CFD、GNN 与 Transformer 统一为“信息在什么对象之间传播”的问题，并解释 Transolver 如何通过 Dynamic Slicing 将大量物理节点压缩为少量学习型 Slice Token，再通过 Physics Attention 完成全局交互。
 
 ## 1. 文章要回答的核心问题
 
-传统 CFD 或有限元方法把连续空间离散成网格/单元，信息通过离散方程在相邻单元之间传播；MeshGraphNet 一类 GNN 把网格节点和连接关系转换为节点-边消息传递；Transformer 则在 Token 之间传播信息。文章据此提出：**语言有单词、视觉有 Patch，但复杂物理系统中的 Token 应该是什么？** ^[sources/articles/shenlan2026-physical-token-transolver.md]
+传统 CFD 或有限元方法把连续空间离散成网格/单元，信息通过离散方程在相邻单元之间传播；MeshGraphNet 一类 GNN 把网格节点和连接关系转换为节点-边消息传递；Transformer 则在 Token 之间传播信息。文章据此提出：**语言有单词、视觉有 Patch，但复杂物理系统中的 Token 应该是什么？** ^[raw/webpages/shenlan2026-physical-token-transolver-source.md]
 
 ## 2. 为什么不能直接把每个节点都当作 Token
 
@@ -45,11 +45,11 @@ evidence_scope: webpage
 | $512\times512$ 二维场 | 约 26 万 | 接近 700 亿 |
 | $256^3$ 三维场 | 约 1,700 万 | 约 $2.8\times10^{14}$ |
 
-文章进一步指出，最后一个例子的 Attention 矩阵仅以 FP16 保存也会超过 500 TB，尚未包含 Q、K、V、梯度和其他中间变量。因此，高分辨率物理问题既需要全局感受野，又不能承受节点级全连接 Attention。 ^[sources/articles/shenlan2026-physical-token-transolver.md]
+文章进一步指出，最后一个例子的 Attention 矩阵仅以 FP16 保存也会超过 500 TB，尚未包含 Q、K、V、梯度和其他中间变量。因此，高分辨率物理问题既需要全局感受野，又不能承受节点级全连接 Attention。 ^[raw/webpages/shenlan2026-physical-token-transolver-source.md]
 
 ## 3. 从 POD/DMD 获得的关键启发
 
-POD、DMD 等降阶方法说明，离散自由度很多并不意味着系统的有效自由度同样多。复杂流场往往可以由更紧凑的模态或基表示描述。文章认为 [[entities/transolver]] 与这一思想相似：都希望找到少量代表性状态，但 Transolver 试图让表示由网络端到端学习，并随输入动态改变，而不是预先固定一组线性模态。 ^[sources/articles/shenlan2026-physical-token-transolver.md]
+POD、DMD 等降阶方法说明，离散自由度很多并不意味着系统的有效自由度同样多。复杂流场往往可以由更紧凑的模态或基表示描述。文章认为 Transolver 与这一思想相似：都希望找到少量代表性状态，但 Transolver 试图让表示由网络端到端学习，并随输入动态改变，而不是预先固定一组线性模态。 ^[raw/webpages/shenlan2026-physical-token-transolver-source.md]
 
 ## 4. Dynamic Slicing 不是固定空间切片
 
@@ -63,7 +63,7 @@ POD、DMD 等降阶方法说明，离散自由度很多并不意味着系统的�
         → 少量 Slice Token
 ```
 
-每个节点可以同时对多个 Slice 贡献不同权重，因此节点与 Slice 是多对多的软关系。空间上距离很远但状态特征相似的节点可能被聚合到同一 Slice；空间上相邻但处于不同物理状态的节点，也可能在不同 Slice 中获得不同权重。 ^[sources/articles/shenlan2026-physical-token-transolver.md]
+每个节点可以同时对多个 Slice 贡献不同权重，因此节点与 Slice 是多对多的软关系。空间上距离很远但状态特征相似的节点可能被聚合到同一 Slice；空间上相邻但处于不同物理状态的节点，也可能在不同 Slice 中获得不同权重。 ^[raw/webpages/shenlan2026-physical-token-transolver-source.md]
 
 ## 5. 什么是物理 Token
 
@@ -76,7 +76,7 @@ POD、DMD 等降阶方法说明，离散自由度很多并不意味着系统的�
 1. **可学习：** Token 由训练形成，而不是人工预定义。
 2. **输入相关：** 不同流场或结构状态可以形成不同的 Slice 组合。
 3. **非局部：** 同一 Token 可以吸收几何上相距较远但特征相似的节点。
-4. **压缩：** Token 数量远少于节点数，用较小的信息瓶颈承载全局交互。 ^[sources/articles/shenlan2026-physical-token-transolver.md]
+4. **压缩：** Token 数量远少于节点数，用较小的信息瓶颈承载全局交互。 ^[raw/webpages/shenlan2026-physical-token-transolver-source.md]
 
 ## 6. Physics Attention 的角色
 
@@ -86,7 +86,7 @@ Dynamic Slicing 解决“哪些紧凑表示值得作为 Token”的问题，Phys
 节点 → Slice Token → Token 间全局 Attention → 全局信息反馈节点
 ```
 
-这样既避免了对所有节点对直接做 Attention，又保留了跨区域传播全局信息的能力。文章把这一步视为 Transolver 的核心信息传播机制。 ^[sources/articles/shenlan2026-physical-token-transolver.md]
+这样既避免了对所有节点对直接做 Attention，又保留了跨区域传播全局信息的能力。文章把这一步视为 Transolver 的核心信息传播机制。 ^[raw/webpages/shenlan2026-physical-token-transolver-source.md]
 
 ## 7. 与 CFD、GNN 和视觉 Patch 的区别
 
@@ -125,12 +125,17 @@ Dynamic Slicing 解决“哪些紧凑表示值得作为 Token”的问题，Phys
 
 ## 10. 阅读结论
 
-文章最有价值的不是把 Attention 搬到 PDE 上，而是把问题前移了一层：**在构建全局交互之前，先学习物理系统中真正值得交互的紧凑状态表示。** 这使 [[entities/transolver]] 成为连接降阶表示、图消息传递和 Transformer 全局建模的一条重要思路。
+文章最有价值的不是把 Attention 搬到 PDE 上，而是把问题前移了一层：**在构建全局交互之前，先学习物理系统中真正值得交互的紧凑状态表示。** 这使 Transolver 成为连接降阶表示、图消息传递和 Transformer 全局建模的一条重要思路。
+
+## 证据边界
+
+- 本来源是技术科普文章，不是 Transolver 原始论文，也不是独立复现实验。
+- 技术正文位于 PDF 第 1-5 页；第 6-7 页主要是作者卡片、推荐和评论，没有作为技术证据使用。
+- 文中的显存数字是解释性数量级估算，本次 ingest 未重新核验完整训练显存。
 
 ## 关联页面
 
-- [[entities/transolver]]
-- [[concepts/physical-token]]
-- [[concepts/dynamic-slicing]]
-- [[concepts/physics-attention]]
 - [[concepts/neural-operator]]
+- [[entities/seisgpt]]
+- [[entities/pgt]]
+- [[entities/nequip]]
