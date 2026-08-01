@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-07-31'
+updated: '2026-08-01'
 confidence: high
 ---
 
@@ -189,5 +189,7 @@ confidence: high
 - [[entities/tsinghua-dhe]] — 清华大学水利系 (Tsinghua DHE)
 - [[entities/u-net]] — U-Net
 - [[entities/zhipu-ai]] — 智谱AI (Zhipu AI)
+
+- [[entities/empm]] — EMPM — Embodied Material Point Method
 
 <!-- AUTO-REGISTRY:END -->

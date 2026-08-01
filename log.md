@@ -13,6 +13,14 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-01] ingest | Chen et al. (2026) — EMPM
+
+- Source: user-provided `2601.17251v1.pdf` (arXiv:2601.17251v1).
+- Created canonical source note and full 1+3 paper family.
+- Created `entities/empm.md`.
+- Core: differentiable MPM, RGB-D reconstruction, Gaussian Splatting, offline/online material identification and embodied deformable-object simulation.
+- Verified numerical evidence from Tables 1–3 and recorded tracking, homogeneity and quasi-static-update limitations.
+
 ## [2026-08-01] revise | 自动生成完整论文侧边导航
 
 - Replaced the manually curated three-paper MkDocs sidebar with a read-only build hook that scans every Markdown page under `docs/papers/`.
