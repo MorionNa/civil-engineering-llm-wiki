@@ -132,6 +132,7 @@ confidence: high
 - [[entities/deeplabv3plus]] — DeepLabv3+
 - [[entities/deeponet]] — DeepONet — 深度算子网络 (Deep Operator Network)
 - [[entities/deepseek-moe]] — DeepSeekMoE
+- [[entities/empm]] — EMPM — 具身可微材料点法框架
 - [[entities/eznas]] — EZNAS
 - [[entities/fedonet]] — FEDONet — Fourier-Embedded DeepONet (傅里叶嵌入深度算子网络)
 - [[entities/fpikan]] — FPIKAN — Fourier-enhanced Physics-Informed Kolmogorov–Arnold Network
@@ -183,13 +184,12 @@ confidence: high
 - [[entities/sgno]] — Spectral Generator Neural Operator (SGNO)
 - [[entities/skyfall-gs]] — Skyfall-GS
 - [[entities/sparse-dense-coding]] — 稀疏-密集编码（Sparse-to-Dense Coding）
+- [[entities/stabilized-fractional-step-two-phase-mpm]] — 稳定化增量分步双相双点 MPM
 - [[entities/switch-transformer]] — Switch Transformer
 - [[entities/te-nas]] — TE-NAS
 - [[entities/training-free-nas-transformers]] — Training-free NAS for Transformers
 - [[entities/tsinghua-dhe]] — 清华大学水利系 (Tsinghua DHE)
 - [[entities/u-net]] — U-Net
 - [[entities/zhipu-ai]] — 智谱AI (Zhipu AI)
-
-- [[entities/empm]] — EMPM — Embodied Material Point Method
 
 <!-- AUTO-REGISTRY:END -->
