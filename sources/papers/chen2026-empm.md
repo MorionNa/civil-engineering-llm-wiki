@@ -36,6 +36,7 @@ dataset_url: []
 - **Version:** arXiv:2601.17251v1, 24 January 2026
 - **Project website:** https://embodied-mpm.github.io
 - **Evidence:** user-provided 9-page full-text PDF.
+- **Code/data status:** no public code or dataset URL was identified in the supplied PDF.
 
 ## Evidence Scope
 
