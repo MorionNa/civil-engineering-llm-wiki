@@ -1,23 +1,34 @@
-name: Generate EMPM Index Artifact
+name: Finalize EMPM Indexes
 
 on:
-  pull_request:
-    branches: [main]
-  workflow_dispatch:
+  push:
+    branches:
+      - ingest/empm-2601-17251-20260801
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  generate:
+  finalize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ingest/empm-2601-17251-20260801
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/generate_empm_indexes.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: empm-generated-indexes
-          path: generated-empm-indexes/
+      - name: Generate complete registries
+        run: python scripts/generate_empm_indexes.py
+      - name: Remove one-time helper files
+        run: |
+          rm -rf generated-empm-indexes
+          rm -f scripts/generate_empm_indexes.py
+          rm -f .github/workflows/generate-empm-indexes.yml
+      - name: Commit generated indexes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/index.md sources/index.md entities/index.md log.md scripts/generate_empm_indexes.py .github/workflows/generate-empm-indexes.yml
+          git commit -m "chore: register EMPM pages and remove one-time helper"
+          git push origin HEAD:ingest/empm-2601-17251-20260801
