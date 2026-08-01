@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-07-31'
+updated: '2026-08-01'
 confidence: high
 ---
 
@@ -358,5 +358,10 @@ confidence: high
 - [[papers/zhao2026-causal-attention-critical]] — Casual Attention 批判性分析：贡献 / Negative / 可迁移 / 研究机会
 - [[papers/zhao2026-causal-attention-method]] — Casual Attention 方法展开：CA 权重 + mMLP + Fourier 特征 + 重采样
 - [[papers/zhao2026-causal-attention-results]] — Casual Attention 实验结果：Allen-Cahn / KdV / KS / Burgers 全基准
+
+- [[papers/chen2026-empm-analysis]] — Chen et al. (2026) — EMPM 论文分析
+- [[papers/chen2026-empm-method]] — EMPM 方法机制：可微 MPM、离线与在线参数识别
+- [[papers/chen2026-empm-results]] — EMPM 结果证据：弹性/弹塑性对象、在线校正与运行时间
+- [[papers/chen2026-empm-critical]] — EMPM 批判、迁移与研究机会
 
 <!-- AUTO-REGISTRY:END -->

@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-07-31'
+updated: '2026-08-01'
 confidence: high
 ---
 
@@ -85,5 +85,7 @@ confidence: high
 - [[sources/papers/zhao2017-pspnet]] — Zhao et al. (2017) — Pyramid Scene Parsing Network (PSPNet): 论文分析 — source note
 - [[sources/papers/zhao2021-memory-efficient-dnas]] — Zhao et al. (2021) — Memory-Efficient Differentiable Transformer Architecture Search 论文分析 — source note
 - [[sources/papers/zhao2026-causal-attention]] — Casual Attention: 自适应因果性时空加权 PINN 训练 — 论文分析 — source note
+
+- [[sources/papers/chen2026-empm]] — Chen et al. (2026) — EMPM: Embodied MPM for Modeling and Simulation of Deformable Objects — source note
 
 <!-- AUTO-REGISTRY:END -->
