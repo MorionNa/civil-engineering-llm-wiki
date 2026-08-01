@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-07-31'
+updated: '2026-08-01'
 confidence: high
 ---
 
@@ -30,7 +30,9 @@ confidence: high
 - [[concepts/randomly-wired-networks]] — Randomly Wired Networks
 - [[concepts/retrospective-coding]] — Retrospective Coding
 - [[concepts/self-adaptive-pinn]] — Self Adaptive Pinn
+- [[concepts/stabilized-pressure-gradient-projection]] — SPGP — 稳定化压力梯度投影
 - [[concepts/structural-health-monitoring]] — Structural Health Monitoring
 - [[concepts/tetrode-recording]] — Tetrode Recording
+- [[concepts/tpic-pressure-mapping]] — TPIC 压力映射 — 一阶 Taylor 粒子网格传递
 
 <!-- AUTO-REGISTRY:END -->
