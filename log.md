@@ -13,6 +13,17 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-02] ingest | Zhao et al. (2026) — Unified Sparse MPM
+
+- Source: user-provided `2605.28525v3.pdf`, arXiv:2605.28525v3 [cs.CE], version dated 2026-07-28.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/zhao2026-unified-sparse-mpm-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/unified-sparse-mpm.md`, `concepts/active-node-compact-indexing.md`, and `comparisons/scan-vs-hash-sparse-mpm.md`.
+- Recorded the active-node-set/compact-index abstraction, block-level CPU prefix scan, GPU 64-bit-key hashing, atomic insertion and overflow rebuilding.
+- Preserved numerical evidence for the sliding box, granular collapse and Blatten landslide, including sparsity ratios, single-GPU memory boundary and architecture-specific performance.
+- Distinguished computational scalability evidence from physical landslide validation and marked multi-GPU, implicit, multiphase and structural-collapse extensions as research opportunities.
+- Updated exhaustive paper/source/entity/concept/comparison registries, the main knowledge map and automatic web-navigation inputs.
+
 ## [2026-08-02] ingest | Feng et al. (2026) — MPM Lite
 
 - Source: user-provided `3811294(1).pdf`, ACM TOG 45(4), Article 152, DOI 10.1145/3811294.
