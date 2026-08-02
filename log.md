@@ -13,6 +13,17 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-02] ingest | Pantidis et al. (2026) — PICNN-IFENN phase-field fracture
+
+- Source: user-provided `1-s2.0-S0045782525007571-main.pdf`, CMAME 448 (2026) 118485, DOI 10.1016/j.cma.2025.118485.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/pantidis2026-ifenn-phase-field-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/picnn-ifenn-phase-field.md` and reusable concepts for history-variable spatial coupling and physics-informed Laplacian convolution.
+- Recorded the two-increment, approximately five-minute training setup, fully convolutional input-size generalization, multi-pass convergence reduction, and multi-crack/rectangular-domain evidence.
+- Preserved limitations concerning FEM-based initiation, structured meshes, Gaussian-filter residual stiffness, characteristic-length ratio dependence, and incomplete damage at asymmetric crack coalescence.
+- Distinguished direct paper conclusions from concrete-fracture, structural-collapse and MPM-coupling migration inferences.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web-navigation inputs.
+
 ## [2026-08-02] ingest | Liu et al. (2025) — Incompressible Crack MPM
 
 - Source: user-provided `3728298.pdf`, PACMCGIT 8(1), Article 6, DOI 10.1145/3728298.

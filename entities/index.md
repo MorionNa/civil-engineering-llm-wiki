@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学与物理仿真
 
+- [[picnn-ifenn-phase-field]] — PICNN-IFENN：相场传播由物理信息卷积网络求解、平衡方程由 FEM 保持。
 - [[incompressible-crack-mpm]] — 体积保持损伤–碎屑转换的动态断裂 MPM。
 - [[unified-sparse-mpm]] — 面向 CPU/GPU 的活跃节点紧凑索引与块级稀疏背景网格框架。
 - [[mpm-lite]] — 求解阶段采用固定网格积分、粒子仅携带状态与历史的材料点法。
@@ -104,6 +105,7 @@ confidence: high
 - [[entities/phycrnet]] — Phycrnet
 - [[entities/phylstm2]] — PhyLSTM2
 - [[entities/phylstm3]] — PhyLSTM3
+- [[entities/picnn-ifenn-phase-field]] — PICNN-IFENN — 相场断裂混合 FEM–神经求解器
 - [[entities/pinn]] — PINN — 物理信息神经网络 (Physics-Informed Neural Network)
 - [[entities/primer]] — Primer
 - [[entities/pseudo-time-stepping]] — Pseudo Time Stepping

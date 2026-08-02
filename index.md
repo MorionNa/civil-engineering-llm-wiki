@@ -28,16 +28,17 @@ confidence: high
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
 
-## 最新知识链：大规模、高效、断裂与双相 MPM
+## 最新知识链：断裂场代理与高效 MPM
 
+- [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：用两个传播增量训练相场 PDE 代理，FEM 保持机械平衡。
+- [[pantidis2026-ifenn-phase-field-method]] — 无时序空间耦合、对称卷积核、固定 Laplacian 残差和交错求解。
+- [[pantidis2026-ifenn-phase-field-results]] — 跨载荷步、网格密度、双裂纹方向与矩形域泛化。
+- [[pantidis2026-ifenn-phase-field-critical]] — 起裂阶段、长度尺度、Gaussian 残余刚度和工程迁移边界。
+- [[picnn-ifenn-phase-field]] — PICNN-IFENN 实体页。
 - [[liu2025-incompressible-crack-mpm-analysis]] — 不可压缩裂纹 MPM：部分损伤软化、完全损伤碎屑转换与体积历史。
 - [[liu2025-incompressible-crack-mpm-method]] — 压缩感知状态转换、非关联 Drucker–Prager 回映射和额外体积变形梯度。
 - [[liu2025-incompressible-crack-mpm-critical]] — 网格相关裂纹增厚、视觉验证边界及 RC 倒塌迁移推论。
 - [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：把大范围空域压缩为活跃节点集合与紧凑索引。
-- [[zhao2026-unified-sparse-mpm-method]] — CPU 块级 prefix scan、GPU 哈希原子插入与架构专用实现。
-- [[zhao2026-unified-sparse-mpm-results]] — Blatten 强稀疏案例的一至两个数量级时间/内存收益。
-- [[zhao2026-unified-sparse-mpm-critical]] — 低稀疏度、块内浪费、哈希竞争与单节点验证边界。
-- [[unified-sparse-mpm]] — Unified Sparse MPM 实体页。
 - [[feng2026-mpm-lite-analysis]] — MPM Lite：固定网格积分与 PPC 无关的隐式求解阶段。
 - [[juel2026-stabilized-fractional-step-mpm-analysis]] — 稳定化分步双相 MPM：固–液大变形与压力稳定化。
 

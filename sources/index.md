@@ -59,6 +59,7 @@ confidence: high
 - [[sources/papers/mandl2025-separable-pi-deeponet]]
 - [[sources/papers/meng2026-seisgpt]]
 - [[sources/papers/musaelian2023-allegro]]
+- [[sources/papers/pantidis2026-ifenn-phase-field]]
 - [[sources/papers/park2024-sevennet-parallel-gnn-ip]]
 - [[sources/papers/penwarden2024-kolmogorov-n-width-piml]]
 - [[sources/papers/raissi2019-pinn]]
