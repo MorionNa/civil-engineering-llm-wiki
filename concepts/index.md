@@ -17,6 +17,7 @@ confidence: high
 
 ## Complete Registry
 
+- [[concepts/active-node-compact-indexing]] — 活跃节点紧凑索引 — 物理网格坐标与存储位置解耦
 - [[concepts/adaptive-sampling-pinn]] — Adaptive Sampling Pinn
 - [[concepts/ca1]] — Ca1
 - [[concepts/ca3]] — Ca3

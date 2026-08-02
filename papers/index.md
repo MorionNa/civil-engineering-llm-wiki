@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学、MPM 与倒塌
 
+- [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：活跃节点紧凑索引、CPU 扫描和 GPU 哈希实现。
 - [[feng2026-mpm-lite-analysis]] — MPM Lite：线性核、固定网格积分与 PPC 无关的隐式求解阶段。
 - [[juel2026-stabilized-fractional-step-mpm-analysis]] — 稳定化分步双相 MPM。
 - [[giles2025-avbd-analysis]] — AVBD。
@@ -332,5 +333,9 @@ confidence: high
 - [[papers/zhao2026-causal-attention-critical]]
 - [[papers/zhao2026-causal-attention-method]]
 - [[papers/zhao2026-causal-attention-results]]
+- [[papers/zhao2026-unified-sparse-mpm-analysis]]
+- [[papers/zhao2026-unified-sparse-mpm-critical]]
+- [[papers/zhao2026-unified-sparse-mpm-method]]
+- [[papers/zhao2026-unified-sparse-mpm-results]]
 
 <!-- AUTO-REGISTRY:END -->

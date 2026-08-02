@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学与物理仿真
 
+- [[unified-sparse-mpm]] — 面向 CPU/GPU 的活跃节点紧凑索引与块级稀疏背景网格框架。
 - [[mpm-lite]] — 求解阶段采用固定网格积分、粒子仅携带状态与历史的材料点法。
 - [[stabilized-fractional-step-two-phase-mpm]] — 稳定化增量分步双相双点 MPM。
 - [[avbd]] — 增广拉格朗日 Vertex Block Descent 硬约束仿真。
@@ -123,6 +124,7 @@ confidence: high
 - [[entities/training-free-nas-transformers]] — Training-free NAS for Transformers
 - [[entities/tsinghua-dhe]] — 清华大学水利系 (Tsinghua DHE)
 - [[entities/u-net]] — U-Net
+- [[entities/unified-sparse-mpm]] — Unified Sparse MPM — 架构解耦的活跃网格框架
 - [[entities/zhipu-ai]] — 智谱AI (Zhipu AI)
 
 <!-- AUTO-REGISTRY:END -->

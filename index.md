@@ -28,13 +28,14 @@ confidence: high
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
 
-## 最新知识链：高效 MPM 求解与双相大变形
+## 最新知识链：大规模、高效与双相 MPM
 
-- [[feng2026-mpm-lite-analysis]] — MPM Lite：把粒子从力积分和隐式求解中移除，以固定网格积分获得紧凑线性模板与 PPC 扩展性。
-- [[feng2026-mpm-lite-method]] — 广延 Kirchhoff 应力传递、旋转无关伸长重构与 FEM 式增量势。
-- [[feng2026-mpm-lite-results]] — 显式 1.88 倍、隐式最高 15.9 倍加速及多材料百万粒子证据。
-- [[feng2026-mpm-lite-critical]] — 各向同性、欠积分、薄结构和结构倒塌迁移边界。
-- [[mpm-lite]] — MPM Lite 实体页。
+- [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：把大范围空域压缩为活跃节点集合与紧凑索引。
+- [[zhao2026-unified-sparse-mpm-method]] — CPU 块级 prefix scan、GPU 哈希原子插入与架构专用实现。
+- [[zhao2026-unified-sparse-mpm-results]] — Blatten 强稀疏案例的一至两个数量级时间/内存收益。
+- [[zhao2026-unified-sparse-mpm-critical]] — 低稀疏度、块内浪费、哈希竞争与单节点验证边界。
+- [[unified-sparse-mpm]] — Unified Sparse MPM 实体页。
+- [[feng2026-mpm-lite-analysis]] — MPM Lite：固定网格积分与 PPC 无关的隐式求解阶段。
 - [[juel2026-stabilized-fractional-step-mpm-analysis]] — 稳定化分步双相 MPM：固–液大变形与压力稳定化。
 
 ## 结构动力学与物理信息机器学习
