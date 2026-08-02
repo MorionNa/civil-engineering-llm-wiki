@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-01'
+updated: '2026-08-02'
 confidence: high
 ---
 
@@ -26,9 +26,11 @@ confidence: high
 - [[concepts/kolmogorov-n-width-piml]] — Kolmogorov N Width Piml
 - [[concepts/nas-evaluation-hard]] — Nas Evaluation Hard
 - [[concepts/neural-operator]] — Neural Operator
+- [[concepts/particle-independent-grid-integration]] — 粒子无关的网格积分
 - [[concepts/place-cells]] — Place Cells
 - [[concepts/randomly-wired-networks]] — Randomly Wired Networks
 - [[concepts/retrospective-coding]] — Retrospective Coding
+- [[concepts/rotation-free-stretch-reconstruction]] — 旋转无关伸长重构
 - [[concepts/self-adaptive-pinn]] — Self Adaptive Pinn
 - [[concepts/stabilized-pressure-gradient-projection]] — SPGP — 稳定化压力梯度投影
 - [[concepts/structural-health-monitoring]] — Structural Health Monitoring
