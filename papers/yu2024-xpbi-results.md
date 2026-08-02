@@ -1,7 +1,7 @@
 ---
 id: paper--yu2024-xpbi-results
 title: "Yu et al. (2024) — XPBI 结果"
-type: paper-results
+type: paper-analysis
 status: active
 project: civil-engineering-llm-wiki
 tags:
