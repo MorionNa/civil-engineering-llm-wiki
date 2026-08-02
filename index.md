@@ -28,8 +28,13 @@ confidence: high
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
 
-## 最新知识链：断裂场代理与高效 MPM
+## 最新知识链：约束粒子、断裂场代理与高效 MPM
 
+- [[yu2024-xpbi-analysis]] — XPBI：以速度梯度、更新拉格朗日状态和 XPBD 内循环塑性处理连续介质非弹性。
+- [[yu2024-xpbi-method]] — 修正 Wendland 核、逐粒子能量约束、塑性固定点和着色 Gauss–Seidel。
+- [[yu2024-xpbi-results]] — Von Mises、Drucker–Prager、NACC、Herschel–Bulkley 与百万粒子证据。
+- [[yu2024-xpbi-critical]] — 塑性收敛、邻域依赖、耗散和工程迁移边界。
+- [[xpbi]] — XPBI 实体页。
 - [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：用两个传播增量训练相场 PDE 代理，FEM 保持机械平衡。
 - [[pantidis2026-ifenn-phase-field-method]] — 无时序空间耦合、对称卷积核、固定 Laplacian 残差和交错求解。
 - [[pantidis2026-ifenn-phase-field-results]] — 跨载荷步、网格密度、双裂纹方向与矩形域泛化。

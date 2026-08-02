@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学、MPM 与倒塌
 
+- [[yu2024-xpbi-analysis]] — XPBI：平滑核、更新拉格朗日与 XPBD 内循环塑性。
 - [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：极少训练数据驱动的混合 FEM–相场断裂传播求解。
 - [[liu2025-incompressible-crack-mpm-analysis]] — 不可压缩裂纹 MPM：损伤–碎屑状态转换与体积保持塑性。
 - [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：活跃节点紧凑索引、CPU 扫描和 GPU 哈希实现。
@@ -318,6 +319,10 @@ confidence: high
 - [[papers/xu2021-nas-bert-critical]]
 - [[papers/xu2021-nas-bert-method]]
 - [[papers/xu2021-nas-bert-results]]
+- [[papers/yu2024-xpbi-analysis]]
+- [[papers/yu2024-xpbi-critical]]
+- [[papers/yu2024-xpbi-method]]
+- [[papers/yu2024-xpbi-results]]
 - [[papers/zeraatkar2026-pgt-analysis]]
 - [[papers/zeraatkar2026-pgt-critical]]
 - [[papers/zeraatkar2026-pgt-method]]

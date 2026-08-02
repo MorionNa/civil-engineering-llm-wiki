@@ -13,6 +13,18 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-02] ingest | Yu et al. (2024) — XPBI
+
+- Source: user-provided `2405.11694v2.pdf`, arXiv:2405.11694v2 [cs.GR], version dated 2024-09-14.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/yu2024-xpbi-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/xpbi.md` and reusable concepts for velocity-gradient updated-Lagrangian state tracking and plasticity-in-the-loop XPBD.
+- Recorded StVK-Hencky constraints, corrected Wendland-kernel gradients, fixed-point implicit plasticity, colored Gauss–Seidel, XSPH and position correction.
+- Preserved evidence for Von Mises, Drucker–Prager, NACC and Herschel–Bulkley materials, up to four million particles, scalability and the 20k-particle 30-fps interaction case.
+- Explicitly retained the missing implementation code, unmonitored plastic fixed-point convergence, neighborhood-quality dependence, timestep/damping dependence and engineering-validation limitations.
+- Distinguished direct paper conclusions from RC-collapse, post-failure particle conversion and hybrid FEM/MPM/XPBI migration inferences.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web-navigation inputs.
+
 ## [2026-08-02] ingest | Pantidis et al. (2026) — PICNN-IFENN phase-field fracture
 
 - Source: user-provided `1-s2.0-S0045782525007571-main.pdf`, CMAME 448 (2026) 118485, DOI 10.1016/j.cma.2025.118485.
