@@ -13,6 +13,18 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-02] ingest | Liu et al. (2025) — Incompressible Crack MPM
+
+- Source: user-provided `3728298.pdf`, PACMCGIT 8(1), Article 6, DOI 10.1145/3728298.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/liu2025-incompressible-crack-mpm-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/incompressible-crack-mpm.md` and reusable concepts for compression-aware damage transition and volume-preserving debris plasticity.
+- Recorded Weibull particle strength, tensile-only damage softening, complete-damage state conversion, non-associated Drucker–Prager return mapping and the additional true-volume deformation gradient.
+- Preserved visual and performance evidence for Brazilian-disc compression, complex meshes, tensile loading, repeated debris compression and the reported 3.2%/7.9% runtime overheads.
+- Explicitly retained the local-damage grid dependence, crack-thickening, low-resolution fluidization, missing engineering calibration and non-equivalent baseline limitations.
+- Distinguished paper conclusions from RC-collapse, concrete crushing and high-fidelity fragmentation migration inferences.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web-navigation inputs.
+
 ## [2026-08-02] ingest | Zhao et al. (2026) — Unified Sparse MPM
 
 - Source: user-provided `2605.28525v3.pdf`, arXiv:2605.28525v3 [cs.CE], version dated 2026-07-28.
