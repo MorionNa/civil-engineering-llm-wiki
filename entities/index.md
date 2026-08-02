@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学与物理仿真
 
+- [[xpbi]] — 基于平滑核、更新拉格朗日与内循环塑性的纯粒子 XPBD 非弹性框架。
 - [[picnn-ifenn-phase-field]] — PICNN-IFENN：相场传播由物理信息卷积网络求解、平衡方程由 FEM 保持。
 - [[incompressible-crack-mpm]] — 体积保持损伤–碎屑转换的动态断裂 MPM。
 - [[unified-sparse-mpm]] — 面向 CPU/GPU 的活跃节点紧凑索引与块级稀疏背景网格框架。
@@ -129,6 +130,7 @@ confidence: high
 - [[entities/tsinghua-dhe]] — 清华大学水利系 (Tsinghua DHE)
 - [[entities/u-net]] — U-Net
 - [[entities/unified-sparse-mpm]] — Unified Sparse MPM — 架构解耦的活跃网格框架
+- [[entities/xpbi]] — XPBI — 基于平滑核的扩展位置非弹性动力学
 - [[entities/zhipu-ai]] — 智谱AI (Zhipu AI)
 
 <!-- AUTO-REGISTRY:END -->
