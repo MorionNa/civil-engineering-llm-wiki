@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学、MPM 与倒塌
 
+- [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：极少训练数据驱动的混合 FEM–相场断裂传播求解。
 - [[liu2025-incompressible-crack-mpm-analysis]] — 不可压缩裂纹 MPM：损伤–碎屑状态转换与体积保持塑性。
 - [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：活跃节点紧凑索引、CPU 扫描和 GPU 哈希实现。
 - [[feng2026-mpm-lite-analysis]] — MPM Lite：线性核、固定网格积分与 PPC 无关的隐式求解阶段。
@@ -224,6 +225,10 @@ confidence: high
 - [[papers/musaelian2023-allegro-critical]]
 - [[papers/musaelian2023-allegro-method]]
 - [[papers/musaelian2023-allegro-results]]
+- [[papers/pantidis2026-ifenn-phase-field-analysis]]
+- [[papers/pantidis2026-ifenn-phase-field-critical]]
+- [[papers/pantidis2026-ifenn-phase-field-method]]
+- [[papers/pantidis2026-ifenn-phase-field-results]]
 - [[papers/park2024-sevennet-parallel-gnn-ip-analysis]]
 - [[papers/park2024-sevennet-parallel-gnn-ip-critical]]
 - [[papers/park2024-sevennet-parallel-gnn-ip-method]]
