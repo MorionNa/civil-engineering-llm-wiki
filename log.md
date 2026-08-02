@@ -7,11 +7,21 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-06-28'
-updated: '2026-08-01'
+updated: '2026-08-02'
 confidence: high
 ---
 
 # Wiki Log
+
+## [2026-08-02] ingest | Feng et al. (2026) — MPM Lite
+
+- Source: user-provided `3811294(1).pdf`, ACM TOG 45(4), Article 152, DOI 10.1145/3811294.
+- Preserved immutable source metadata, file size and SHA-256 under `raw/papers/feng2026-mpm-lite-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/mpm-lite.md` and reusable concepts for particle-independent grid integration and rotation-free stretch reconstruction.
+- Recorded linear-kernel two-hop transfer, extensive Kirchhoff-stress resampling, FEM-style incremental-potential integration, explicit/implicit performance and material-versatility evidence.
+- Explicitly separated paper conclusions from structural-collapse migration inferences and retained anisotropy, reduced-integration, thin-structure and particle-scaling limitations.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web navigation inputs.
 
 ## [2026-08-01] ingest | Chen et al. (2026) — EMPM
 
@@ -46,7 +56,6 @@ confidence: high
 - Added concepts/entities for previously unresolved reusable terms; unverifiable migration stubs remain `status: draft` with explicit verification tasks.
 - Extended strict lint from the recent three-paper repair scope to the complete maintained repository.
 - Restored read-only validation/deployment workflows; CI does not edit or push knowledge content.
-
 
 > Chronological record of meaningful wiki actions. Append-only; newest entries first.
 > Format: `## [YYYY-MM-DD] action | subject`
