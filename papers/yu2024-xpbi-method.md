@@ -1,7 +1,7 @@
 ---
 id: paper--yu2024-xpbi-method
 title: "Yu et al. (2024) — XPBI 方法"
-type: paper-method
+type: paper-analysis
 status: active
 project: civil-engineering-llm-wiki
 tags:
