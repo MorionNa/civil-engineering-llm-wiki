@@ -28,8 +28,11 @@ confidence: high
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
 
-## 最新知识链：大规模、高效与双相 MPM
+## 最新知识链：大规模、高效、断裂与双相 MPM
 
+- [[liu2025-incompressible-crack-mpm-analysis]] — 不可压缩裂纹 MPM：部分损伤软化、完全损伤碎屑转换与体积历史。
+- [[liu2025-incompressible-crack-mpm-method]] — 压缩感知状态转换、非关联 Drucker–Prager 回映射和额外体积变形梯度。
+- [[liu2025-incompressible-crack-mpm-critical]] — 网格相关裂纹增厚、视觉验证边界及 RC 倒塌迁移推论。
 - [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：把大范围空域压缩为活跃节点集合与紧凑索引。
 - [[zhao2026-unified-sparse-mpm-method]] — CPU 块级 prefix scan、GPU 哈希原子插入与架构专用实现。
 - [[zhao2026-unified-sparse-mpm-results]] — Blatten 强稀疏案例的一至两个数量级时间/内存收益。
