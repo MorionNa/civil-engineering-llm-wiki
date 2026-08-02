@@ -51,6 +51,7 @@ confidence: high
 - [[sources/papers/li2026-exsgd]]
 - [[sources/papers/li2026-sgno]]
 - [[sources/papers/linka2022-bayesian-pinn]]
+- [[sources/papers/liu2025-incompressible-crack-mpm]]
 - [[sources/papers/liu2025-site-response-pinn]]
 - [[sources/papers/lu2013-collapse-rc-highrise]]
 - [[sources/papers/luo2025-pinn-pde-review]]

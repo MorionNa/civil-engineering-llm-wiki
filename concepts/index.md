@@ -22,6 +22,7 @@ confidence: high
 - [[concepts/ca1]] — Ca1
 - [[concepts/ca3]] — Ca3
 - [[concepts/cell-based-nas]] — Cell Based Nas
+- [[concepts/compression-aware-damage-transition]] — 压缩感知损伤–碎屑状态转换
 - [[concepts/dentate-gyrus]] — Dentate Gyrus
 - [[concepts/hippocampal-formation]] — Hippocampal Formation
 - [[concepts/kolmogorov-n-width-piml]] — Kolmogorov N Width Piml
@@ -37,5 +38,6 @@ confidence: high
 - [[concepts/structural-health-monitoring]] — Structural Health Monitoring
 - [[concepts/tetrode-recording]] — Tetrode Recording
 - [[concepts/tpic-pressure-mapping]] — TPIC 压力映射 — 一阶 Taylor 粒子网格传递
+- [[concepts/volume-preserving-debris-plasticity]] — 体积保持碎屑塑性 — 真实体积历史驱动的 Drucker–Prager 回映射
 
 <!-- AUTO-REGISTRY:END -->
