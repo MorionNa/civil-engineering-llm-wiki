@@ -31,6 +31,7 @@ confidence: high
 - [[concepts/particle-independent-grid-integration]] — 粒子无关的网格积分
 - [[concepts/physics-informed-laplacian-convolution]] — 物理信息 Laplacian 卷积 — 用固定差分核构造 PDE 残差
 - [[concepts/place-cells]] — Place Cells
+- [[concepts/plasticity-in-the-loop-xpbd]] — XPBD 内循环塑性 — 约束迭代与回映射交替
 - [[concepts/randomly-wired-networks]] — Randomly Wired Networks
 - [[concepts/retrospective-coding]] — Retrospective Coding
 - [[concepts/rotation-free-stretch-reconstruction]] — 旋转无关伸长重构
@@ -40,6 +41,7 @@ confidence: high
 - [[concepts/structural-health-monitoring]] — Structural Health Monitoring
 - [[concepts/tetrode-recording]] — Tetrode Recording
 - [[concepts/tpic-pressure-mapping]] — TPIC 压力映射 — 一阶 Taylor 粒子网格传递
+- [[concepts/velocity-gradient-updated-lagrangian]] — 速度梯度驱动的更新拉格朗日粒子状态
 - [[concepts/volume-preserving-debris-plasticity]] — 体积保持碎屑塑性 — 真实体积历史驱动的 Drucker–Prager 回映射
 
 <!-- AUTO-REGISTRY:END -->
