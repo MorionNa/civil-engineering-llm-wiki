@@ -88,5 +88,6 @@ confidence: high
 - [[sources/papers/zhao2017-pspnet]]
 - [[sources/papers/zhao2021-memory-efficient-dnas]]
 - [[sources/papers/zhao2026-causal-attention]]
+- [[sources/papers/zhao2026-unified-sparse-mpm]]
 
 <!-- AUTO-REGISTRY:END -->
