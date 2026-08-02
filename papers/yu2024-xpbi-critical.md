@@ -1,7 +1,7 @@
 ---
 id: paper--yu2024-xpbi-critical
 title: "Yu et al. (2024) — XPBI 批判性分析"
-type: paper-critical
+type: paper-analysis
 status: active
 project: civil-engineering-llm-wiki
 tags:
