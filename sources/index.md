@@ -83,6 +83,7 @@ confidence: high
 - [[sources/papers/xie2021-segformer]]
 - [[sources/papers/xiong2025-confseq]]
 - [[sources/papers/xu2021-nas-bert]]
+- [[sources/papers/yu2024-xpbi]]
 - [[sources/papers/zeraatkar2026-pgt]]
 - [[sources/papers/zhang2020-phylstm]]
 - [[sources/papers/zhang2025-mrf-pinn]]
