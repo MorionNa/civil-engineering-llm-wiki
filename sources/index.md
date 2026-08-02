@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-01'
+updated: '2026-08-02'
 confidence: high
 ---
 
@@ -29,6 +29,7 @@ confidence: high
 - [[sources/papers/dai2024-deepseek-moe]]
 - [[sources/papers/du2026-hcff-pinn]]
 - [[sources/papers/fedus2021-switch-transformer]]
+- [[sources/papers/feng2026-mpm-lite]]
 - [[sources/papers/gao2025-adaptive-loss-pinn]]
 - [[sources/papers/giles2025-avbd]]
 - [[sources/papers/goswami2022-variational-deeponet]]
