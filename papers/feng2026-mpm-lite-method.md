@@ -70,7 +70,7 @@ $$
 应力率式 Jaumann 隐式更新会因旋转项产生非对称 Jacobian，不能由弹性势导出。MPM Lite 改用速度主变量的 backward Euler 增量势：
 
 $$
-\min_v\sum_i\frac12m_i\|v_i-v_i^n\|^2+
+\min_v\sum_i\frac12m_i\lVert v_i-v_i^n\rVert^2+
 \sum_cV_c^n\psi\!\left((I+\Delta tG_c(v))F_c^{base}\right).
 $$
 
