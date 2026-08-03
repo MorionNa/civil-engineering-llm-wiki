@@ -211,3 +211,13 @@ confidence: high
 - Added 14 canonical source-note stubs and registered all imported pages in the section indexes.
 - Preserved local transfer audits and negative evidence; imported pages remain `draft` until canonical source verification.
 - Added the message-passing, spectral-bias and parallel-computing tags to the controlled taxonomy.
+
+## [2026-08-03] experiment ingest | Fixed 5DOF MTP strict label-free V1 NO-GO
+
+- Ingested the completed one-structure-one-random-model physics-only experiment.
+- Training used 0 response labels, 0 teacher trajectories and no checkpoint warm start; 120 remote GPU epochs took 673.183 s.
+- Locked official-90 pooled R2 for u/v/a/F was -0.129127 / 0.000772 / 0.091187 / -0.234775; independent force relative RMS was 1.158799.
+- Recorded the causal-scan latency regression: 4.30499 s for 90 histories, 12.36x slower than MTP-bu.
+- Created: comparisons/fixed-mdof5-mtp-strict-label-free-v1-nogo-20260803.md.
+- Updated: comparisons/index.md and index.md.
+- Skipped entity: this is a negative experiment variant of the existing MTP-MechConv entity, not a new reusable model or dataset.

@@ -73,6 +73,7 @@ confidence: high
 - [[baseline-unified-r2-reassessment-2026-08-03]] — PhyLSTM3 与 CM-PINN 的 pooled/macro/worst-case R² 统一复算。
 - [[inference-speed-evidence-2026-08-03]] — 5DOF 批量、大规模 50kDOF 与 OpenSeesPy 证据缺口。
 - [[one-structure-one-model-contract-2026-08-03]] — 一个结构对应一个模型，不要求跨结构零样本泛化。
+- [[fixed-mdof5-mtp-strict-label-free-v1-nogo-20260803]] - Strict label-free fixed-structure MTP fails official-90 accuracy, independent physics, and inference speed.
 - [[reproduction-schemes-inventory-2026-08-03]] — CM-PINN、PhyLSTM、HCFF-PINN、图网络与时间积分复现总览。
 
 ## 等变图学习与神经算子

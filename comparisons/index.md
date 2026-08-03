@@ -22,6 +22,7 @@ confidence: high
 - [[baseline-unified-r2-reassessment-2026-08-03]] — PhyLSTM3 与 CM-PINN 的统一 R² 复算
 - [[inference-speed-evidence-2026-08-03]] — 5DOF、50kDOF、物理 oracle 与 OpenSeesPy 的速度证据边界
 - [[one-structure-one-model-contract-2026-08-03]] — 一结构一模型与同结构加载泛化合同
+- [[fixed-mdof5-mtp-strict-label-free-v1-nogo-20260803]] - Strict label-free MTP negative result for one fixed 5DOF structure and one random model
 
 对比分析：并排比较不同方法、模型的性能与适用场景。
 
@@ -95,6 +96,7 @@ confidence: high
 - [[comparisons/ecaso_m0_nogo_20260803]] ? ECASO M0 — NO-GO record
 - [[comparisons/fbpinn-xpinn-structgraph-pignn-transfer-boundaries]] ? FBPINN / XPINN / StructGraph-Dyna / PI-GNN：对 MTP-MechConv 的迁移边界
 - [[comparisons/fdvi_m0_nogo_20260803]] ? FDVI-MechConv M0 NO-GO (2026-08-03)
+- [[comparisons/fixed-mdof5-mtp-strict-label-free-v1-nogo-20260803]] - Fixed 5DOF MTP strict label-free V1 NO-GO (2026-08-03)
 - [[comparisons/independent_boucwen_split_contract_v1_20260803]] ? Independent Bouc–Wen truth split v1 — evidence card
 - [[comparisons/lco_rk48_shared_m0_nogo_20260803]] ? LCO-RK48 Shared-MechConv M0 NO-GO (2026-08-03)
 - [[comparisons/lco_rk8_m0_nogo_20260803]] ? LCO-RK8(4)-MechConv M0 NO-GO (2026-08-03)
