@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-02'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -42,6 +42,7 @@ confidence: high
 - [[sources/papers/lee2024-aznas]]
 - [[sources/papers/lee2026-skyfall-gs]]
 - [[sources/papers/lepikhin2021-gshard]]
+- [[sources/papers/li2020-incremental-potential-contact]]
 - [[sources/papers/li2021-bossnas]]
 - [[sources/papers/li2025-functional-scaling-laws]]
 - [[sources/papers/li2025-girder-dynamic-pinn]]

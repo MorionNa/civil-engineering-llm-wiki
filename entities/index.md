@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-02'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学与物理仿真
 
+- [[incremental-potential-contact]] — IPC：局部障碍势与 CCD 可行线搜索的大变形接触求解器。
 - [[xpbi]] — 基于平滑核、更新拉格朗日与内循环塑性的纯粒子 XPBD 非弹性框架。
 - [[picnn-ifenn-phase-field]] — PICNN-IFENN：相场传播由物理信息卷积网络求解、平衡方程由 FEM 保持。
 - [[incompressible-crack-mpm]] — 体积保持损伤–碎屑转换的动态断裂 MPM。
@@ -84,6 +85,7 @@ confidence: high
 - [[entities/hrnet]] — HRNet
 - [[entities/hydroglm]] — HydroGLM
 - [[entities/incompressible-crack-mpm]] — 不可压缩裂纹 MPM — 体积保持损伤–碎屑转换模型
+- [[entities/incremental-potential-contact]] — Incremental Potential Contact（IPC）— 可行路径大变形接触求解器
 - [[entities/kin]] — KINN — Kolmogorov–Arnold-Informed Neural Network (KAN + PINN)
 - [[entities/legonet]] — LegONet
 - [[entities/mamba3]] — Mamba-3

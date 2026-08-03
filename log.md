@@ -7,11 +7,23 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-06-28'
-updated: '2026-08-02'
+updated: '2026-08-03'
 confidence: high
 ---
 
 # Wiki Log
+
+## [2026-08-03] ingest | Li et al. (2020) — Incremental Potential Contact
+
+- Source: user-provided `3386569.3392425.pdf`, ACM TOG 39(4), Article 49, DOI 10.1145/3386569.3392425.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/li2020-incremental-potential-contact-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/incremental-potential-contact.md` and reusable concepts for local smooth contact barriers and CCD-filtered feasible line search.
+- Recorded unsigned primitive distances, finite-support C2 barriers, projected Newton, adaptive barrier conditioning, CCD-aware line search and lagged variational friction.
+- Preserved evidence for aligned and codimensional contact, high-speed impact, extreme compression, friction-dependent structures, time steps from 0.002 s to 2 s, and models up to 688K nodes / 2.3M tetrahedra / 498K contacts per step.
+- Explicitly retained positive-gap initialization, non-inverting-energy conditions, friction-lag convergence limits, floating-point CCD boundaries, dense-contact linear-system cost and unchanged-topology assumptions.
+- Distinguished direct paper conclusions from RC-collapse, fragment-contact and hybrid FEM/MPM/XPBI migration inferences.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web-navigation inputs.
 
 ## [2026-08-02] ingest | Yu et al. (2024) — XPBI
 
