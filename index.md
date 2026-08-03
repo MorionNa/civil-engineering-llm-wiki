@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-02'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -28,8 +28,13 @@ confidence: high
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
 
-## 最新知识链：约束粒子、断裂场代理与高效 MPM
+## 最新知识链：高鲁棒接触、约束粒子、断裂场代理与高效 MPM
 
+- [[li2020-incremental-potential-contact-analysis]] — IPC：在每个非线性迭代中保持无交叉、无反转的接触可行路径。
+- [[li2020-incremental-potential-contact-method]] — 无符号距离障碍势、Projected Newton、CCD 线搜索和滞后变分摩擦。
+- [[li2020-incremental-potential-contact-results]] — 高速、尖锐障碍、极端压缩、摩擦结构与 2.3M 四面体规模证据。
+- [[li2020-incremental-potential-contact-critical]] — 摩擦 lagging、正间隙初始化、线性系统成本与断裂拓扑边界。
+- [[incremental-potential-contact]] — IPC 实体页。
 - [[yu2024-xpbi-analysis]] — XPBI：以速度梯度、更新拉格朗日状态和 XPBD 内循环塑性处理连续介质非弹性。
 - [[yu2024-xpbi-method]] — 修正 Wendland 核、逐粒子能量约束、塑性固定点和着色 Gauss–Seidel。
 - [[yu2024-xpbi-results]] — Von Mises、Drucker–Prager、NACC、Herschel–Bulkley 与百万粒子证据。
