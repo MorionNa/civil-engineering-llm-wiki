@@ -1,7 +1,7 @@
 ---
 id: source--zhao2021-structural-drawing-bim
 title: Zhao et al. (2021) — Reconstructing BIM from 2D structural drawings
- type: source
+type: source
 status: active
 project: civil-engineering-llm-wiki
 tags:
