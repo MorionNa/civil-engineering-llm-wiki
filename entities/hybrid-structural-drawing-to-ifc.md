@@ -1,7 +1,7 @@
 ---
 id: entity--hybrid-structural-drawing-to-ifc
 title: Hybrid Structural-Drawing-to-IFC Pipeline
- type: entity
+type: entity
 status: active
 project: civil-engineering-llm-wiki
 tags:
