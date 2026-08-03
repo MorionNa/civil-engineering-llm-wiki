@@ -167,4 +167,7 @@ confidence: high
 - [[entities/xpinn-generalization]] ? XPINN Generalization Trade-off — Hu et al. (2022)
 - [[entities/zhipu-ai]] ? 智谱AI (Zhipu AI)
 
+- [[entities/fixed-point-neural-operator]] — Fixed-Point Neural Operator (FPNO)
+- [[entities/np-newton]] — Neural-Operator Preconditioned Newton
+
 <!-- AUTO-REGISTRY:END -->

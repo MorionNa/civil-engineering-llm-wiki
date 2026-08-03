@@ -109,4 +109,6 @@ confidence: high
 - [[sources/papers/zhao2026-unified-sparse-mpm]] ? Zhao et al. (2026) — 大规模 MPM 统一稀疏框架
 - [[sources/papers/zhou2025-learnable-physics-engine]] ? Canonical source record — Zhou & Feng (2025) — The novel learnable physics engines for interpretable elastoplastic models of geomaterials: 论文分析
 
+- [[sources/papers/lee2025-np-newton]] — Lee et al. (2025) — Neural-Operator Preconditioned Newton — source note
+
 <!-- AUTO-REGISTRY:END -->

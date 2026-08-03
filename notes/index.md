@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -44,5 +44,17 @@ confidence: high
 - [[notes/v20-2-rk4z-stage-head-screen25-failure-2026-08-01]] ? V20.2 RK4Z stage-head screen25: failure evidence
 - [[notes/videos/avbd-siggraph2025]] ? AVBD 物理仿真算法 (SIGGRAPH 2025) — B站视频笔记
 - [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] ? 时间为何不能倒流：从玻尔兹曼方程到希尔伯特第六问题
+
+- [[notes/cycle38-drc-nc-nogo-2026-08-03]] ? Cycle 38 DRC-NC: certified accuracy but no net speed benefit
+
+- [[notes/cycle39-canonical-admissibility-refrozen-2026-08-03]] ? Cycle 39 C0: same-step exactness concealed acceleration discretization error
+
+- [[notes/cycle39-bapc-d0-nogo-2026-08-03]] ? Cycle 39 BAPC D0: accurate and faster than OpenSees, but no robust backbone gain
+
+- [[notes/cycle40-cs-lbpc-nogo-hysteresis-2026-08-04]] ? Cycle 40 CS-LBPC: accurate 1500-step dynamics but inactive hysteresis
+
+- [[notes/cycle41-hn-cs-lbpc-nogo-m1-2026-08-04]] ? Cycle 41 HN-CS-LBPC: normalized Bouc-Wen equivalence failed M1
+
+- [[notes/cycle42-exact-bilinear-nogo-h1-2026-08-04]] ? Cycle 42 exact bilinear: qualified return map but only 2/4 visible loops
 
 <!-- AUTO-REGISTRY:END -->

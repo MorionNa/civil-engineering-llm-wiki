@@ -131,6 +131,14 @@ confidence: high
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: create, ingest, revise, verify, lint, deploy, query, archive, delete.
 
+## [2026-08-03] ingest | Lee et al. (2025) — NP-Newton and Cycle-37 transfer audit
+
+- Added the canonical source note and complete analysis/method/results/critical paper family.
+- Added FPNO and NP-Newton entities with persistent provenance.
+- Recorded reported iteration, wall-clock and training-cost evidence without extrapolating it to structural dynamics or OpenSeesPy.
+- Linked the paper's negative speedup on easy problems to the residual-gated PC-NP Dynamics design and retained the dynamics/50kDOF evidence gap.
+- Registered all seven pages in exhaustive section indexes and verified the strict repository lint/build.
+
 ## [2026-08-03] ingest | nonlinear-pinn 全量方案、复现与当前性能证据
 
 - 登记 `docs/plans/` 下 133/133 份方案、设计、正式结果、NO-GO 与 fail-closed 文档。
@@ -221,3 +229,51 @@ confidence: high
 - Created: comparisons/fixed-mdof5-mtp-strict-label-free-v1-nogo-20260803.md.
 - Updated: comparisons/index.md and index.md.
 - Skipped entity: this is a negative experiment variant of the existing MTP-MechConv entity, not a new reusable model or dataset.
+
+## [2026-08-03] experiment ingest | Cycle 38 DRC-NC NO-GO
+
+- Recorded the transactional Newmark corrector and strengthened OpenSeesPy opponent.
+- Preserved exact discrete dynamics and u/v/a/F R2 while exposing the per-step neural-overhead failure.
+- At 500 DOFs, gated DRC was 9.15% faster than OpenSeesPy but 3.35% slower than its own exact backbone.
+- Created: `notes/cycle38-drc-nc-nogo-2026-08-03.md`.
+- Decision: amortize inference over bounded known-load blocks and require a real-model D0 speed screen before training.
+
+## [2026-08-03] experiment ingest | Cycle 39 canonical admissibility refrozen
+
+- Recorded that the prior same-step R2=1 comparison concealed large acceleration discretization error.
+- Rejected internal dt 0.02, 0.01 and 0.005 under the unchanged u/v/a/F routes.
+- Selected internal dt 0.0025 on calibration and independently passed four-history validation against dt 0.000625.
+- Created: `notes/cycle39-canonical-admissibility-refrozen-2026-08-03.md`.
+- Consequence: all Cycle 39 BAPC, canonical and OpenSees timing must use dt 0.0025 with dt 0.02 host output.
+
+## [2026-08-03] experiment ingest | Cycle 39 BAPC D0 NO-GO
+
+- Recorded the legal block-oracle with all packing, transfer, decode, certification, replay and host-output costs.
+- Oracle retained the unchanged u/v/a/F accuracy and physics routes and was 20.12% faster than OpenSees.
+- Oracle was only 0.643% faster than its exact canonical backbone, failing the preregistered 2% robust-headroom gate.
+- Created: `notes/cycle39-bapc-d0-nogo-2026-08-03.md`.
+- Decision: no training; a new cycle must change selection/slack contracts and use new engineering validation.
+
+## [2026-08-04] experiment ingest | Cycle 40 CS-LBPC hysteresis NO-GO
+
+- Recorded a fresh eight-trajectory engineering pool with exactly 1,500 intervals per excitation and no response-field leakage.
+- Preserved certified dynamics and passed the original u/v/a/F accuracy routes against a dt/4 reference.
+- Applied a force–deformation geometric contract frozen before inspecting the response arrays; all eight nonlinear cases failed visible-hysteresis validity.
+- Created: `notes/cycle40-cs-lbpc-nogo-hysteresis-2026-08-04.md`.
+- Decision: stop before runtime selection or training; the next cycle must activate and verify hysteresis before speed work.
+
+## [2026-08-04] experiment ingest | Cycle 41 HN-CS-LBPC M1 NO-GO
+
+- Recorded the selection-only normalized Bouc--Wen scale and complete 500DOF equivalence audit over four 1,500-interval histories.
+- Tangent sweeps, reversal, time-step convergence and the no-clipping invariant passed.
+- Full-rollout velocity, physical state, tangent and accepted-residual relative differences exceeded their frozen thresholds.
+- Created: `notes/cycle41-hn-cs-lbpc-nogo-m1-2026-08-04.md`.
+- Decision: stop before H1/H2, validation generation or training; prefer a well-conditioned exact return-mapping constitutive law in Cycle 42.
+
+## [2026-08-04] experiment ingest | Cycle 42 exact-bilinear H1 NO-GO
+
+- Recorded the corrected H0 audit and exact kinematic-hardening return-map qualification.
+- Certified 500DOF dynamics passed on four complete 1,500-interval development histories.
+- Only two histories passed the unchanged visible-loop contract; two high-amplitude cases failed normalized p90 branch separation, and one also failed loop work.
+- Created: `notes/cycle42-exact-bilinear-nogo-h1-2026-08-04.md`.
+- Decision: stop before H2, validation generation, speed work or training; test a fresh-split exact elastic-perfectly-plastic mechanism next.

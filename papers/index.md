@@ -419,4 +419,9 @@ confidence: high
 - [[papers/zhou2025-learnable-physics-engine-method]] ? Zhou & Feng (2025) — Learnable physics engine：方法机制
 - [[papers/zhou2025-learnable-physics-engine-results]] ? Zhou & Feng (2025) — Learnable physics engine：结果与实验数字
 
+- [[papers/lee2025-np-newton-analysis]] — Lee et al. (2025) — Neural-Operator Preconditioned Newton
+- [[papers/lee2025-np-newton-critical]] — NP-Newton 批判、迁移边界与研究机会
+- [[papers/lee2025-np-newton-method]] — NP-Newton 方法与固定点神经算子机制
+- [[papers/lee2025-np-newton-results]] — NP-Newton 迭代数、墙钟与训练成本证据
+
 <!-- AUTO-REGISTRY:END -->

@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -73,6 +73,8 @@ confidence: high
 - [[baseline-unified-r2-reassessment-2026-08-03]] — PhyLSTM3 与 CM-PINN 的 pooled/macro/worst-case R² 统一复算。
 - [[inference-speed-evidence-2026-08-03]] — 5DOF 批量、大规模 50kDOF 与 OpenSeesPy 证据缺口。
 - [[one-structure-one-model-contract-2026-08-03]] — 一个结构对应一个模型，不要求跨结构零样本泛化。
+- [[notes/cycle41-hn-cs-lbpc-nogo-m1-2026-08-04]] - Cycle 41 normalized Bouc-Wen equivalence failed the frozen M1 gate before validation or training.
+- [[notes/cycle42-exact-bilinear-nogo-h1-2026-08-04]] - Cycle 42 exact bilinear passed H0 but only two of four development histories passed visible-loop validity.
 - [[fixed-mdof5-mtp-strict-label-free-v1-nogo-20260803]] - Strict label-free fixed-structure MTP fails official-90 accuracy, independent physics, and inference speed.
 - [[reproduction-schemes-inventory-2026-08-03]] — CM-PINN、PhyLSTM、HCFF-PINN、图网络与时间积分复现总览。
 
