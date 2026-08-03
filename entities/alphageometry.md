@@ -5,9 +5,9 @@ type: entity
 status: active
 project: civil-engineering-llm-wiki
 tags:
-- domain/automated-reasoning
+- domain/llm
 - domain/ai4s
-- entity/system
+- entity/tool
 keywords:
 - geometry-theorem-prover
 - neuro-symbolic

@@ -5,7 +5,7 @@ type: source
 status: active
 project: civil-engineering-llm-wiki
 tags:
-- domain/automated-reasoning
+- domain/llm
 - domain/ai4s
 - evidence/paper
 keywords:

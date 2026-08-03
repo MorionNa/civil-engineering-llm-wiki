@@ -5,7 +5,7 @@ type: paper-analysis
 status: active
 project: civil-engineering-llm-wiki
 tags:
-- domain/automated-reasoning
+- domain/llm
 - evidence/paper
 keywords:
 - imo-ag-30

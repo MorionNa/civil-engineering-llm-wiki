@@ -5,7 +5,7 @@ type: concept
 status: active
 project: civil-engineering-llm-wiki
 tags:
-- domain/automated-reasoning
+- domain/llm
 - domain/ai4s
 keywords:
 - dependency-difference
