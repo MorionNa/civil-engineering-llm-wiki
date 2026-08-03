@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -32,6 +32,8 @@ confidence: high
 - [[avbd]] — 增广拉格朗日 Vertex Block Descent 硬约束仿真。
 - [[bouc-wen-model]] — Bouc–Wen 滞回模型。
 - [[at-pinn-hc]] — 硬约束增强时间推进 PINN。
+- [[embedded-ipc]] — 低分辨率弹性与高分辨率 IPC 接触相分离的约化仿真框架。
+- [[plasticitynet]] — 学习局部弹塑性势能并接入优化时间积分的神经本构模块。
 
 ## 物理信息结构响应模型
 
@@ -42,6 +44,10 @@ confidence: high
 - [[cm-pinns]] — 本构模型约束 PINN。
 - [[phylstm2]] — 双 LSTM 物理约束滞回元模型。
 - [[phylstm3]] — 三 LSTM 增强物理约束滞回元模型。
+
+## 自动推理与科研 Agent
+
+- [[alphageometry]] — 语言模型提出辅助构造、符号引擎验证的神经–符号几何证明系统。
 
 <!-- AUTO-REGISTRY:START -->
 
@@ -172,5 +178,8 @@ confidence: high
 - [[entities/zhipu-ai]] ? 智谱AI (Zhipu AI)
 
 - [[entities/hybrid-structural-drawing-to-ifc]] — Hybrid Structural-Drawing-to-IFC Pipeline
+- [[entities/alphageometry]] — AlphaGeometry
+- [[entities/embedded-ipc]] — Embedded IPC
+- [[entities/plasticitynet]] — PlasticityNet
 
 <!-- AUTO-REGISTRY:END -->
