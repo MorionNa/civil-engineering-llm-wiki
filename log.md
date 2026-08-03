@@ -13,6 +13,18 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-03] ingest | Li et al. (2022) — BFEMP
+
+- Source: user-provided `1-s2.0-S0045782521006277-main.pdf`, CMAME 390 (2022) 114350, DOI 10.1016/j.cma.2021.114350.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/li2022-bfemp-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/bfemp.md` and reusable concepts for particle–simplex barrier coupling and FEM-defined separable MPM boundaries.
+- Recorded monolithic variational MPM–FEM integration, chain-rule contact-force transfer, projected Newton, CCD/determinant-filtered line search and lagged friction.
+- Preserved evidence for exact momentum conservation, 8.57%/9.67% APIC/FLIP energy loss, non-adhesive irregular boundaries, Hertz contact, sub-0.01% friction tests, PPC=16 convergence order 2.75 and the 3D twist case.
+- Explicitly retained finite-particle-support overlap, approximate surface weights, friction-lag convergence limits, MPM transfer dissipation, unchanged topology and limited 3D/engineering validation.
+- Distinguished direct paper conclusions from RC-collapse, dynamic FEM-to-MPM conversion and hybrid fracture/debris migration inferences.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web-navigation inputs.
+
 ## [2026-08-03] ingest | Li et al. (2020) — Incremental Potential Contact
 
 - Source: user-provided `3386569.3392425.pdf`, ACM TOG 39(4), Article 49, DOI 10.1145/3386569.3392425.
