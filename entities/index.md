@@ -15,6 +15,10 @@ confidence: high
 
 > 模型、算法、数据集、工具、组织与其他可复用命名对象。实体页强调定义、关系、证据、适用边界和项目角色。
 
+## 建筑图纸解析与 BIM
+
+- [[hybrid-structural-drawing-to-ifc]] — 学习检测、OCR、轴网坐标恢复与 IFC 生成的混合流水线。
+
 ## 计算力学与物理仿真
 
 - [[bfemp]] — BFEMP：粒子–单纯形障碍接触驱动的隐式 MPM–FEM 单体耦合。
@@ -166,5 +170,7 @@ confidence: high
 - [[entities/xpbi]] ? XPBI — 基于平滑核的扩展位置非弹性动力学
 - [[entities/xpinn-generalization]] ? XPINN Generalization Trade-off — Hu et al. (2022)
 - [[entities/zhipu-ai]] ? 智谱AI (Zhipu AI)
+
+- [[entities/hybrid-structural-drawing-to-ifc]] — Hybrid Structural-Drawing-to-IFC Pipeline
 
 <!-- AUTO-REGISTRY:END -->
