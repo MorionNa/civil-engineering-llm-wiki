@@ -1,0 +1,21 @@
+name: Export Working Tree
+
+on:
+  push:
+    branches:
+      - complete/pending-ingests-20260804
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: working-tree
+          path: .
+          include-hidden-files: true
+          retention-days: 1
