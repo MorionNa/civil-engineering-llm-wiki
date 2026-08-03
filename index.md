@@ -57,6 +57,14 @@ confidence: high
 - [[feng2026-mpm-lite-analysis]] — MPM Lite：固定网格积分与 PPC 无关的隐式求解阶段。
 - [[juel2026-stabilized-fractional-step-mpm-analysis]] — 稳定化分步双相 MPM：固–液大变形与压力稳定化。
 
+## 建筑结构图纸解析与可计算数据
+
+- [[zhao2021-structural-drawing-bim-analysis]] — 从扫描框架平面图识别轴网、梁柱并生成 IFC 的早期混合路线。
+- [[zhao2021-structural-drawing-bim-method]] — Faster R-CNN、OCR 标注匹配、轴网坐标恢复与 IFC 映射。
+- [[zhao2021-structural-drawing-bim-results]] — 500 张原图、4000 张增强图、检测指标和单栋学校案例。
+- [[zhao2021-structural-drawing-bim-critical]] — 默认高度、轴距梁长、单标准数据及字段级验收缺失。
+- [[hybrid-structural-drawing-to-ifc]] — 混合结构图纸到 IFC 流水线实体页。
+
 ## 结构动力学与物理信息机器学习
 
 - [[meng2026-seisgpt-analysis]] — SeisGPT。
@@ -86,14 +94,14 @@ confidence: high
 
 ## Local Workspace Merge (2026-08-03)
 
-- [[papers/list2025-unrolled-training-analysis]] ? ????????????????
-- [[papers/brandstetter2022-mp-pde-analysis]] ? Message Passing Neural PDE Solvers
-- [[papers/moseley2023-fbpinn-analysis]] ? FBPINN ?????????
-- [[entities/mtp-mechconv-v2]] ? ???????? MechConv ??
-- [[entities/message-passing-reach-contract]] ? ????????????????
-- [[comparisons/mtp-mechconv-v2-evidence]] ? ?????reach????halo ???????
-- [[comparisons/cycle36_pdps_mco_literature_20260803]] ? PDPS/MCO ??? M0 ????
-- [[notes/ingest-v20-rk4z-2026-08-01]] ? V20-RK4Z ??????
+- [[papers/list2025-unrolled-training-analysis]] — 瞬态神经物理模拟器的展开训练。
+- [[papers/brandstetter2022-mp-pde-analysis]] — Message Passing Neural PDE Solvers。
+- [[papers/moseley2023-fbpinn-analysis]] — FBPINN 有限基域分解。
+- [[entities/mtp-mechconv-v2]] — 当前研究的 MechConv 架构实体。
+- [[entities/message-passing-reach-contract]] — 消息传递可达性约束。
+- [[comparisons/mtp-mechconv-v2-evidence]] — 结构可达域与 halo 证据对照。
+- [[comparisons/cycle36_pdps_mco_literature_20260803]] — PDPS/MCO 文献比较。
+- [[notes/ingest-v20-rk4z-2026-08-01]] — V20-RK4Z 研究记录。
 
 ## Maintenance Rules
 
