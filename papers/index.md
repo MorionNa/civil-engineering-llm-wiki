@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -380,3 +380,15 @@ confidence: high
 - [[papers/zhou2025-learnable-physics-engine-critical]]
 - [[papers/zhou2025-learnable-physics-engine-method]]
 - [[papers/zhou2025-learnable-physics-engine-results]]
+- [[papers/du2024-embedded-ipc-analysis]]
+- [[papers/du2024-embedded-ipc-critical]]
+- [[papers/du2024-embedded-ipc-method]]
+- [[papers/du2024-embedded-ipc-results]]
+- [[papers/plasticitynet-2022-analysis]]
+- [[papers/plasticitynet-2022-critical]]
+- [[papers/plasticitynet-2022-method]]
+- [[papers/plasticitynet-2022-results]]
+- [[papers/trinh2024-alphageometry-analysis]]
+- [[papers/trinh2024-alphageometry-critical]]
+- [[papers/trinh2024-alphageometry-method]]
+- [[papers/trinh2024-alphageometry-results]]
