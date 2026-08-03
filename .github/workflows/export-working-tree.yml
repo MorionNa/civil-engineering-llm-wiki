@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - complete/pending-ingests-20260804
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: read
