@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-02'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学、MPM 与倒塌
 
+- [[li2020-incremental-potential-contact-analysis]] — IPC：局部障碍势、CCD 可行线搜索与变分摩擦的大变形接触。
 - [[yu2024-xpbi-analysis]] — XPBI：平滑核、更新拉格朗日与 XPBD 内循环塑性。
 - [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：极少训练数据驱动的混合 FEM–相场断裂传播求解。
 - [[liu2025-incompressible-crack-mpm-analysis]] — 不可压缩裂纹 MPM：损伤–碎屑状态转换与体积保持塑性。
@@ -158,6 +159,10 @@ confidence: high
 - [[papers/lepikhin2021-gshard-critical]]
 - [[papers/lepikhin2021-gshard-method]]
 - [[papers/lepikhin2021-gshard-results]]
+- [[papers/li2020-incremental-potential-contact-analysis]]
+- [[papers/li2020-incremental-potential-contact-critical]]
+- [[papers/li2020-incremental-potential-contact-method]]
+- [[papers/li2020-incremental-potential-contact-results]]
 - [[papers/li2021-bossnas-analysis]]
 - [[papers/li2021-bossnas-critical]]
 - [[papers/li2021-bossnas-method]]
