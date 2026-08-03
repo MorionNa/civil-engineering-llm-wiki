@@ -13,6 +13,17 @@ confidence: high
 
 # Wiki Log
 
+## [2026-08-03] ingest | Zhao et al. (2021) — Structural drawings to IFC BIM
+
+- Source: user-provided `1-s2.0-S0926580521002016-main(2).pdf`, Automation in Construction 128 (2021) 103750, DOI 10.1016/j.autcon.2021.103750.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/zhao2021-structural-drawing-bim-source.md`.
+- Created canonical source note and the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/hybrid-structural-drawing-to-ifc.md` and reusable concepts for grid-anchored drawing coordinates and constrained annotation–object matching.
+- Recorded the Faster R-CNN + OCR + DCS + XML/IFC pipeline, 500 raw drawings / 4000 augmented drawings, five-class detection evidence, font-adapted OCR and the real-school case.
+- Preserved limitations concerning default elevations, grid-span beam length, incomplete object scope, one-standard/one-building evidence, missing end-to-end field accuracy and unavailable full code/data.
+- Distinguished direct paper conclusions from the user's precision-first, multi-drawing, indexed structural-data parsing migration design.
+- Updated exhaustive paper/source/entity/concept registries, the main knowledge map and automatic web-navigation inputs.
+
 ## [2026-08-03] ingest | Li et al. (2022) — BFEMP
 
 - Source: user-provided `1-s2.0-S0045782521006277-main.pdf`, CMAME 390 (2022) 114350, DOI 10.1016/j.cma.2021.114350.
