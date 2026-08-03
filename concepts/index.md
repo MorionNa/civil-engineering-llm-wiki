@@ -31,6 +31,7 @@ confidence: high
 - [[concepts/nas-evaluation-hard]] — Nas Evaluation Hard
 - [[concepts/neural-operator]] — Neural Operator
 - [[concepts/particle-independent-grid-integration]] — 粒子无关的网格积分
+- [[concepts/particle-simplex-barrier-coupling]] — 粒子–单纯形障碍耦合 — 异构离散间的几何接触势
 - [[concepts/physics-informed-laplacian-convolution]] — 物理信息 Laplacian 卷积 — 用固定差分核构造 PDE 残差
 - [[concepts/place-cells]] — Place Cells
 - [[concepts/plasticity-in-the-loop-xpbd]] — XPBD 内循环塑性 — 约束迭代与回映射交替
@@ -38,6 +39,7 @@ confidence: high
 - [[concepts/retrospective-coding]] — Retrospective Coding
 - [[concepts/rotation-free-stretch-reconstruction]] — 旋转无关伸长重构
 - [[concepts/self-adaptive-pinn]] — Self Adaptive Pinn
+- [[concepts/separable-mpm-boundary-via-fem]] — FEM 显式几何驱动的可分离 MPM 边界
 - [[concepts/spatial-coupling-without-temporal-features]] — 无时序特征的空间耦合学习 — 以历史变量承载路径依赖
 - [[concepts/stabilized-pressure-gradient-projection]] — SPGP — 稳定化压力梯度投影
 - [[concepts/structural-health-monitoring]] — Structural Health Monitoring
