@@ -28,8 +28,13 @@ confidence: high
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
 
-## 最新知识链：高鲁棒接触、约束粒子、断裂场代理与高效 MPM
+## 最新知识链：高鲁棒接触、异构耦合、约束粒子与高效 MPM
 
+- [[li2022-bfemp-analysis]] — BFEMP：以粒子–FEM 边界障碍势单体耦合隐式 MPM 与 FEM。
+- [[li2022-bfemp-method]] — 链式接触力传递、投影 Newton、CCD/行列式过滤与 lagged 摩擦。
+- [[li2022-bfemp-results]] — 动量、Hertz 接触、临界摩擦、细化收敛、屈曲和三维扭转证据。
+- [[li2022-bfemp-critical]] — 有限粒子域重叠、表面权重、摩擦收敛和动态转换边界。
+- [[bfemp]] — BFEMP 实体页。
 - [[li2020-incremental-potential-contact-analysis]] — IPC：在每个非线性迭代中保持无交叉、无反转的接触可行路径。
 - [[li2020-incremental-potential-contact-method]] — 无符号距离障碍势、Projected Newton、CCD 线搜索和滞后变分摩擦。
 - [[li2020-incremental-potential-contact-results]] — 高速、尖锐障碍、极端压缩、摩擦结构与 2.3M 四面体规模证据。
