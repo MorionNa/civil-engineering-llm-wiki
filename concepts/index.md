@@ -48,4 +48,7 @@ confidence: high
 - [[concepts/velocity-gradient-updated-lagrangian]] ? 速度梯度驱动的更新拉格朗日粒子状态
 - [[concepts/volume-preserving-debris-plasticity]] ? 体积保持碎屑塑性 — 真实体积历史驱动的 Drucker–Prager 回映射
 
+- [[concepts/constrained-annotation-object-matching]] — 约束驱动的图纸标注—构件匹配
+- [[concepts/grid-anchored-drawing-coordinate-system]] — 轴网锚定的图纸坐标系
+
 <!-- AUTO-REGISTRY:END -->
