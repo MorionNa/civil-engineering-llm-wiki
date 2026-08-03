@@ -26,7 +26,7 @@ confidence: high
 
 BFEMP 将 FEM 节点和 MPM 网格节点堆叠为统一自由度。对 backward Euler 或 Newmark-β，惯性与超弹性能组成增量势：
 
-$$\Pi(x)=\frac12\|x-\hat x^n\|_M^2+2\alpha\beta\Delta t^2\Psi(x).$$
+$$\Pi(x)=\frac12\lVert x-\hat x^n\rVert_M^2+2\alpha\beta\Delta t^2\Psi(x).$$
 
 FEM 和 MPM 在无接触时各自独立；接触势加入后形成单体求解。^[sources/papers/li2022-bfemp.md]
 
