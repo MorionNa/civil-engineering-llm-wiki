@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -50,5 +50,13 @@ confidence: high
 
 - [[concepts/constrained-annotation-object-matching]] — 约束驱动的图纸标注—构件匹配
 - [[concepts/grid-anchored-drawing-coordinate-system]] — 轴网锚定的图纸坐标系
+
+- [[concepts/alternating-neural-symbolic-proof-search]] — 神经–符号交替证明搜索
+- [[concepts/coarse-elasticity-fine-contact-embedding]] — 粗弹性–细接触嵌入
+- [[concepts/dependency-difference-auxiliary-construction]] — 依赖差驱动的辅助构造学习
+- [[concepts/fixed-point-optimization-plasticity]] — 固定点外循环的优化塑性积分
+- [[concepts/local-elastoplastic-potential-family]] — 局部弹塑性势能族
+- [[concepts/reduced-coordinate-ipc]] — 约化坐标 IPC
+- [[concepts/traceback-synthetic-theorem-generation]] — 回溯式合成定理–证明生成
 
 <!-- AUTO-REGISTRY:END -->
