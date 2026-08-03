@@ -192,3 +192,10 @@ confidence: high
 
 - Source: DOI 10.1016/j.jcp.2026.115071.
 - Core: adaptive causality-aware spatiotemporal weighting for PINNs.
+
+## [2026-08-03] merge | Local MTP-MechConv v2 knowledge pages into strict wiki baseline
+
+- Merged 180 local pages covering papers, entities, comparisons and experiment notes into the latest GitHub mainline.
+- Added 14 canonical source-note stubs and registered all imported pages in the section indexes.
+- Preserved local transfer audits and negative evidence; imported pages remain `draft` until canonical source verification.
+- Added the message-passing, spectral-bias and parallel-computing tags to the controlled taxonomy.

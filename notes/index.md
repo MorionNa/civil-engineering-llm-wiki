@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-01'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -34,13 +34,15 @@ confidence: high
 
 ## Complete Registry
 
-- [[notes/articles/agentic-engineering-22-tips]] — Agentic Engineering 22 条技巧 (Matt Van Horn, 2026.06)
-- [[notes/articles/jordan2024-muon-optimizer]] — Keller Jordan (2024) — Muon：面向神经网络隐藏层的矩阵正交化优化器
-- [[notes/articles/shenlan2026-physical-token-transolver]] — 深蓝（2026）— 从 CFD 到 Transolver：物理世界的 Token
-- [[notes/briefings/glm-hydropower-2026]] — GLM 水利水电行业大模型汇报笔记 (2026-06-13)
-- [[notes/lectures/ai4s-diffusion-models]] — 扩散生成模型：从物理原理到蛋白质设计（AI4S 第二讲）
-- [[notes/lectures/ai4s-pinn-deepxde]] — AI如何求解物理问题 — PINN 入门到实战 (AI4S第一课)
-- [[notes/videos/avbd-siggraph2025]] — AVBD 物理仿真算法 (SIGGRAPH 2025) — B站视频笔记
-- [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] — 时间为何不能倒流：从玻尔兹曼方程到希尔伯特第六问题
+- [[notes/articles/agentic-engineering-22-tips]] ? Agentic Engineering 22 条技巧 (Matt Van Horn, 2026.06)
+- [[notes/articles/jordan2024-muon-optimizer]] ? Keller Jordan (2024) — Muon：面向神经网络隐藏层的矩阵正交化优化器
+- [[notes/articles/shenlan2026-physical-token-transolver]] ? 从CFD到Transolver：物理世界的 Token、Dynamic Slicing 与 Physics Attention
+- [[notes/briefings/glm-hydropower-2026]] ? GLM 水利水电行业大模型汇报笔记 (2026-06-13)
+- [[notes/ingest-v20-rk4z-2026-08-01]] ? 2026-08-01 V20-RK4Z 文献入库记录
+- [[notes/lectures/ai4s-diffusion-models]] ? 扩散生成模型：从物理原理到蛋白质设计（AI4S 第二讲）
+- [[notes/lectures/ai4s-pinn-deepxde]] ? AI如何求解物理问题 — PINN 入门到实战 (AI4S第一课)
+- [[notes/v20-2-rk4z-stage-head-screen25-failure-2026-08-01]] ? V20.2 RK4Z stage-head screen25: failure evidence
+- [[notes/videos/avbd-siggraph2025]] ? AVBD 物理仿真算法 (SIGGRAPH 2025) — B站视频笔记
+- [[notes/videos/boltzmann-entropy-hilbert-sixth-problem]] ? 时间为何不能倒流：从玻尔兹曼方程到希尔伯特第六问题
 
 <!-- AUTO-REGISTRY:END -->

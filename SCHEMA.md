@@ -11,7 +11,7 @@ keywords:
 - source-grounded
 sources: []
 created: '2026-07-16'
-updated: '2026-07-31'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -162,6 +162,9 @@ Rules:
 - `method/pinn`
 - `method/neural-operator`
 - `method/graph-neural-network`
+- `method/message-passing`
+- `method/spectral-bias`
+- `method/parallel-computing`
 - `method/transformer`
 - `method/neural-architecture-search`
 - `method/reinforcement-learning`
