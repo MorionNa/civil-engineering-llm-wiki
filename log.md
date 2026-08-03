@@ -131,6 +131,18 @@ confidence: high
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: create, ingest, revise, verify, lint, deploy, query, archive, delete.
 
+## [2026-08-03] ingest | nonlinear-pinn 全量方案、复现与当前性能证据
+
+- 登记 `docs/plans/` 下 133/133 份方案、设计、正式结果、NO-GO 与 fail-closed 文档。
+- 登记 `reproductions/` 下 9/9 个顶层复现家族；保留指标、训练历史、预测和 checkpoint 的项目原路径。
+- 新增当前性能排名：MTP-bu 是学习模型中最接近要求的候选，但仅能证明 5DOF 核心 R² 门通过。
+- 新增 PhyLSTM3 与 CM-PINN 的统一 pooled/macro/worst-case R² 复算，明确 MTP-bu 不是所有通道全面领先。
+- 新增推理速度证据页；记录 50kDOF 相对优化向量化 RK4 的 0.088× 负结果，并把 OpenSeesPy 对比保持为未完成门。
+- 固化“一结构一模型”边界：不要求跨结构零样本泛化，但仍要求同结构跨加载、高低频、独立物理和公平速度测试。
+- 训练时间按可核验性报告：MTP-bu 为 1434.685 s/150 epochs；历史 checkpoint 或基线缺失值明确标为不可核验。
+- 未创建新论文实体：本次工作是项目方案与实验结果的证据整合，现有模型/方法实体足以承接。
+- 修复 Windows 物化构建中的 6 个 MkDocs 导航告警；全库严格构建通过。
+
 ## [2026-07-31] verify | Unified llm-wiki compliance repair for NequIP, Allegro and SevenNet
 
 - Scope: 3 source metadata notes, 12 paper pages, 3 entity pages, schema, global/section indexes, validation workflow and web navigation.

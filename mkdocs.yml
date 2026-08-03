@@ -4,6 +4,7 @@ site_author: "MorionNa"
 repo_url: "https://github.com/MorionNa/civil-engineering-llm-wiki"
 repo_name: "MorionNa/civil-engineering-llm-wiki"
 docs_dir: "docs"
+exclude_docs: README.md
 
 hooks:
   - scripts/mkdocs_hooks.py

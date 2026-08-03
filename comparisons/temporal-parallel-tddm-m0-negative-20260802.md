@@ -17,7 +17,7 @@ TDDM-M0 matched the model's causal BDF2 independent defect to the detached train
 
 The screen preserved pooled response quality and passed the speed budget, but did not reach the project's hard independent-physics gates: acceleration RMS `0.034001` versus `≤0.030`, force RMS `0.049416` versus `≤0.045`. Worst displacement R² remained `0.741350`, and the high-modal minimum score was `0.766607`. The candidate is rejected and frozen; the selected parent remains the production reference.
 
-Evidence: [remote result](../../../docs/plans/temporal_parallel_tddm_m0_remote_result_20260802.md), [local artifact bundle](../../../outputs/remote_temporal_parallel_tddm_m0_screen_20260802/).
+Evidence: `docs/plans/temporal_parallel_tddm_m0_remote_result_20260802.md` and `outputs/remote_temporal_parallel_tddm_m0_screen_20260802/`.^[../../../docs/plans/temporal_parallel_tddm_m0_remote_result_20260802.md]
 
 ## Verification Needed
 

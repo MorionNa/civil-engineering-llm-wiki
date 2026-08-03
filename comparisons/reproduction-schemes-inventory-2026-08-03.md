@@ -2,13 +2,27 @@
 id: comparison--reproduction-schemes-inventory-2026-08-03
 title: 2026 当前复现方案总览：证据、优势与边界
 type: comparison
-status: draft
+status: active
 project: civil-engineering-llm-wiki
-tags: []
-sources: []
+tags:
+- domain/civil-engineering
+- domain/ai4s
+- method/pinn
+- method/evaluation
+- evidence/report
+sources:
+- ../../../reproductions/cm-pinn/README.md
+- ../../../reproductions/dynamic-pignn/README.md
+- ../../../reproductions/graph-phygru/README.md
+- ../../../reproductions/hcff-pinn/README.md
+- ../../../reproductions/phylstm/README.md
+- ../../../reproductions/phylstm-pignn/README.md
+- ../../../reproductions/step-integrator/README.md
+- ../../../reproductions/upstream/README.md
+- ../../../docs/plans/experiment_plan.md
 created: '2026-08-03'
 updated: '2026-08-03'
-confidence: low
+confidence: high
 legacy_tags:
 - comparison
 - structural-dynamics
@@ -33,13 +47,15 @@ legacy_sources:
 
 本页把项目当前已经运行过、正在运行或明确作为迁移参考的复现方案放在同一张证据地图中。这里的“复现成功”不是只看一个低损失或一个 pooled (R^2)，而是同时看：来源是否可追溯、数据划分是否公平、动力学残差是否独立、最差样本是否过关、长程 rollout 是否稳定，以及 checkpoint 和预测产物是否可复核。
 
+本总览遵循 [[one-structure-one-model-contract-2026-08-03]]：不把跨结构零样本泛化当作硬门；每个结构可以重新训练一个模型。跨激励、高低频、独立物理、训练时间和公平推理计时仍是硬证据要求。当前精确排名、统一 R² 与速度结论分别见 [[current-structural-pinn-ranking-2026-08-03]]、[[baseline-unified-r2-reassessment-2026-08-03]] 和 [[inference-speed-evidence-2026-08-03]]。
+
 ## 1. 证据分级
 
 - **L0 文献范围**：只证明论文提出了某个方法，不能证明本仓库实现正确。
 - **L1 源码可运行**：官方或重建代码能完成最小 smoke test；仍不能证明指标或物理正确。
 - **L2 复现实验**：固定数据、随机种子、分辨率和训练协议后产生了可保存的指标与预测。
 - **L3 独立物理核验**：用独立差分、独立 constitutive evaluation、边界/初值和能量检查复算，不复用训练时的构造量。
-- **L4 迁移/锁定验证**：换结构、频带、时间窗或 halo 后，最差样本和 rollout 仍通过预设门槛。
+- **L4 同结构锁定验证**：对一个结构单独训练后，换未见激励、频带和时间窗，最差样本与 rollout 仍通过预设门槛；跨结构迁移只作为额外结果。
 
 当前大多数方案位于 L1–L2；L3/L4 只能由独立审计和锁定测试授予。[[reproduction-failure-prevention-contract-2026-08-03]] 规定了晋级条件，[[mtp-mechconv-v2-experiment-ledger]] 展示了为什么构造出来的 force-balance 指标不能直接当作预测指标。
 
@@ -89,6 +105,6 @@ legacy_sources:
 
 当前最稳妥的路线不是把所有方案合成一个总榜，而是保留任务边界：HCFF-PINN 作为单实例高频基线，PhyLSTM3/CM-PINN 作为论文协议基线，Graph-PhyGRU/Dynamic PIGNN 作为结构图候选，Step-integrator 作为时间推进与失败诊断，FBPINNs/MP-Neural-PDE/SGNO/APEBench/PRNN/PI-GNN 作为受限迁移参考。任何方案要成为正式结论，都必须满足 [[reproduction-failure-prevention-contract-2026-08-03]] 的证据合同。
 
-## Verification Needed
+## Provenance
 
-This page was carried over from the local workspace during the merge. Verify its source record and promote it from draft before treating the claims as independently verified.
+^[../../../reproductions/phylstm/README.md] ^[../../../reproductions/cm-pinn/README.md]

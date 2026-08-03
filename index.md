@@ -66,6 +66,15 @@ confidence: high
 - [[rathore2024-pinn-loss-landscape-analysis]] — PINN 损失景观与二阶优化。
 - [[mandl2025-separable-pi-deeponet-analysis]] — 可分离物理信息 DeepONet。
 
+### nonlinear-pinn 项目证据（2026-08-03）
+
+- [[project-scheme-ingest-manifest-2026-08-03]] — 133 份方案/结果文档与 9 个复现家族的全量覆盖清单。
+- [[current-structural-pinn-ranking-2026-08-03]] — 当前最接近六项目标的方案、硬门通过情况与未完成项。
+- [[baseline-unified-r2-reassessment-2026-08-03]] — PhyLSTM3 与 CM-PINN 的 pooled/macro/worst-case R² 统一复算。
+- [[inference-speed-evidence-2026-08-03]] — 5DOF 批量、大规模 50kDOF 与 OpenSeesPy 证据缺口。
+- [[one-structure-one-model-contract-2026-08-03]] — 一个结构对应一个模型，不要求跨结构零样本泛化。
+- [[reproduction-schemes-inventory-2026-08-03]] — CM-PINN、PhyLSTM、HCFF-PINN、图网络与时间积分复现总览。
+
 ## 等变图学习与神经算子
 
 - [[batzner2022-nequip-analysis]] — NequIP。
@@ -86,14 +95,14 @@ confidence: high
 
 ## Local Workspace Merge (2026-08-03)
 
-- [[papers/list2025-unrolled-training-analysis]] ? ????????????????
-- [[papers/brandstetter2022-mp-pde-analysis]] ? Message Passing Neural PDE Solvers
-- [[papers/moseley2023-fbpinn-analysis]] ? FBPINN ?????????
-- [[entities/mtp-mechconv-v2]] ? ???????? MechConv ??
-- [[entities/message-passing-reach-contract]] ? ????????????????
-- [[comparisons/mtp-mechconv-v2-evidence]] ? ?????reach????halo ???????
-- [[comparisons/cycle36_pdps_mco_literature_20260803]] ? PDPS/MCO ??? M0 ????
-- [[notes/ingest-v20-rk4z-2026-08-01]] ? V20-RK4Z ??????
+- [[papers/list2025-unrolled-training-analysis]] — 非线性结构动力学的展开训练与长期积分稳定性。
+- [[papers/brandstetter2022-mp-pde-analysis]] — Message Passing Neural PDE Solvers。
+- [[papers/moseley2023-fbpinn-analysis]] — FBPINN 的时空分解与局部归一化。
+- [[entities/mtp-mechconv-v2]] — 项目主线 MTP-MechConv 实体。
+- [[entities/message-passing-reach-contract]] — 消息传递可达域与 halo 合同。
+- [[comparisons/mtp-mechconv-v2-evidence]] — 时间并行、reach、粗层、halo 与本构证据矩阵。
+- [[comparisons/cycle36_pdps_mco_literature_20260803]] — PDPS/MCO 文献证据与 M0 边界。
+- [[notes/ingest-v20-rk4z-2026-08-01]] — V20-RK4Z 项目证据入口。
 
 ## Maintenance Rules
 

@@ -17,6 +17,11 @@ confidence: high
 - [[mtp-mechconv-v2-experiment-ledger]] — 独立物理复评、矩阵块自由度、因果本构和稀疏多层实现账本
 - [[mtp-mechconv-v2-evidence]] — 五篇全文对时间并行、reach、粗层、halo、本构与速度的采用/拒绝矩阵
 - [[mtp-mechconv-v2-grill-audit]] — 反方审查后 v2.1 的物理独立审计、数据锁定和可证伪门槛
+- [[project-scheme-ingest-manifest-2026-08-03]] — 133 份方案/结果文档与 9 个复现家族的全量入库清单
+- [[current-structural-pinn-ranking-2026-08-03]] — 当前性能排名及用户六项目标的逐项判定
+- [[baseline-unified-r2-reassessment-2026-08-03]] — PhyLSTM3 与 CM-PINN 的统一 R² 复算
+- [[inference-speed-evidence-2026-08-03]] — 5DOF、50kDOF、物理 oracle 与 OpenSeesPy 的速度证据边界
+- [[one-structure-one-model-contract-2026-08-03]] — 一结构一模型与同结构加载泛化合同
 
 对比分析：并排比较不同方法、模型的性能与适用场景。
 
@@ -26,6 +31,12 @@ confidence: high
 <!-- AUTO-REGISTRY:START -->
 
 ## Complete Registry
+
+- [[comparisons/baseline-unified-r2-reassessment-2026-08-03]] — PhyLSTM3 与 CM-PINN 的统一 R² 复算
+- [[comparisons/current-structural-pinn-ranking-2026-08-03]] — 当前结构动力学 PINN 排名与六项目标差距（2026-08-03）
+- [[comparisons/inference-speed-evidence-2026-08-03]] — 推理效率证据：学习模型、物理 oracle 与 OpenSeesPy 缺口
+- [[comparisons/one-structure-one-model-contract-2026-08-03]] — 一结构一模型：当前结构动力学 PINN 的适用边界
+- [[comparisons/project-scheme-ingest-manifest-2026-08-03]] — nonlinear-pinn 全量方案与复现入库清单（2026-08-03）
 
 - [[comparisons/cdno-d-corrected-remote-code-failclosed-20260802]] ? CDNO-D corrected remote attempt — code-interface failure (2026-08-02)
 - [[comparisons/cdno-d-formal-v2-parent-source-sync-result-20260802]] ? CDNO-D formal v2: parent-source-sync result (2026-08-02)

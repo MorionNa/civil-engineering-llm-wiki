@@ -106,7 +106,7 @@ $$\text{Progress} = \frac{\text{被激活的时间片数}}{M}$$
 
 当全部 $M$ 个时间片的权重都达到 > 0.99（即 $\mathcal{L}_i < \text{tol}$ 对所有 i），训练完成。
 
-这解决了 PINN 训练中长期缺少可靠收敛诊断的问题——此前只能看 loss 曲线（而 loss 下降不一定意味着解正确，如 [[wang2023-pinn-spurious-analysis|2023 所揭示]]）。
+这解决了 PINN 训练中长期缺少可靠收敛诊断的问题——此前只能看 loss 曲线（而 loss 下降不一定意味着解正确，如 [[wang2023-pinn-spurious-analysis]] 在 2023 年所揭示）。
 
 ## 5.4 算法流程
 
