@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学与物理仿真
 
+- [[bfemp]] — BFEMP：粒子–单纯形障碍接触驱动的隐式 MPM–FEM 单体耦合。
 - [[incremental-potential-contact]] — IPC：局部障碍势与 CCD 可行线搜索的大变形接触求解器。
 - [[xpbi]] — 基于平滑核、更新拉格朗日与内循环塑性的纯粒子 XPBD 非弹性框架。
 - [[picnn-ifenn-phase-field]] — PICNN-IFENN：相场传播由物理信息卷积网络求解、平衡方程由 FEM 保持。
@@ -55,6 +56,7 @@ confidence: high
 - [[entities/az-nas]] — AZ-NAS
 - [[entities/backlund-transformation-pinn]] — Bäcklund Transformation PINN — 变换约束的双方程物理信息学习
 - [[entities/bayesian-pinn]] — Bayesian Physics Informed Neural Network (BPINN)
+- [[entities/bfemp]] — BFEMP — 障碍接触隐式 MPM–FEM 耦合框架
 - [[entities/boltzmann-equation]] — 玻尔兹曼方程 (Boltzmann Equation)
 - [[entities/bossnas]] — BossNAS
 - [[entities/bouc-wen-model]] — Bouc-Wen Model
