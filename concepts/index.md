@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-02'
+updated: '2026-08-03'
 confidence: high
 ---
 
@@ -21,11 +21,13 @@ confidence: high
 - [[concepts/adaptive-sampling-pinn]] — Adaptive Sampling Pinn
 - [[concepts/ca1]] — Ca1
 - [[concepts/ca3]] — Ca3
+- [[concepts/ccd-filtered-feasible-line-search]] — CCD 过滤的可行线搜索 — 让每个 Newton 步保持无碰撞
 - [[concepts/cell-based-nas]] — Cell Based Nas
 - [[concepts/compression-aware-damage-transition]] — 压缩感知损伤–碎屑状态转换
 - [[concepts/dentate-gyrus]] — Dentate Gyrus
 - [[concepts/hippocampal-formation]] — Hippocampal Formation
 - [[concepts/kolmogorov-n-width-piml]] — Kolmogorov N Width Piml
+- [[concepts/local-smooth-contact-barrier]] — 局部光滑接触障碍势 — 有限支撑的非穿透能量
 - [[concepts/nas-evaluation-hard]] — Nas Evaluation Hard
 - [[concepts/neural-operator]] — Neural Operator
 - [[concepts/particle-independent-grid-integration]] — 粒子无关的网格积分
