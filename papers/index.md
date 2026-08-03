@@ -17,6 +17,7 @@ confidence: high
 
 ## 计算力学、MPM 与倒塌
 
+- [[li2022-bfemp-analysis]] — BFEMP：粒子–单纯形障碍接触驱动的隐式 MPM–FEM 单体耦合。
 - [[li2020-incremental-potential-contact-analysis]] — IPC：局部障碍势、CCD 可行线搜索与变分摩擦的大变形接触。
 - [[yu2024-xpbi-analysis]] — XPBI：平滑核、更新拉格朗日与 XPBD 内循环塑性。
 - [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：极少训练数据驱动的混合 FEM–相场断裂传播求解。
@@ -167,6 +168,10 @@ confidence: high
 - [[papers/li2021-bossnas-critical]]
 - [[papers/li2021-bossnas-method]]
 - [[papers/li2021-bossnas-results]]
+- [[papers/li2022-bfemp-analysis]]
+- [[papers/li2022-bfemp-critical]]
+- [[papers/li2022-bfemp-method]]
+- [[papers/li2022-bfemp-results]]
 - [[papers/li2025-functional-scaling-laws-analysis]]
 - [[papers/li2025-functional-scaling-laws-critical]]
 - [[papers/li2025-functional-scaling-laws-method]]

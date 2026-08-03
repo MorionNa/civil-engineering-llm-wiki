@@ -44,6 +44,7 @@ confidence: high
 - [[sources/papers/lepikhin2021-gshard]]
 - [[sources/papers/li2020-incremental-potential-contact]]
 - [[sources/papers/li2021-bossnas]]
+- [[sources/papers/li2022-bfemp]]
 - [[sources/papers/li2025-functional-scaling-laws]]
 - [[sources/papers/li2025-girder-dynamic-pinn]]
 - [[sources/papers/li2025-localized-waves-pinn]]
