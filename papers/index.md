@@ -13,410 +13,370 @@ confidence: high
 
 # Papers Index
 
-> 全文论文采用 `analysis + method + results + critical` 的 1+3 结构。此页是论文分区目录；具体页面也可通过站内搜索和交叉 wikilink 到达。
+> 全文论文采用 `analysis + method + results + critical` 的 1+3 结构。此页提供完整论文分区注册表；具体页面也可通过站内搜索和交叉 wikilink 到达。
 
-## 计算力学、MPM 与倒塌
+## 建筑结构图纸解析与 BIM
 
-- [[li2022-bfemp-analysis]] — BFEMP：粒子–单纯形障碍接触驱动的隐式 MPM–FEM 单体耦合。
-- [[li2020-incremental-potential-contact-analysis]] — IPC：局部障碍势、CCD 可行线搜索与变分摩擦的大变形接触。
-- [[yu2024-xpbi-analysis]] — XPBI：平滑核、更新拉格朗日与 XPBD 内循环塑性。
-- [[pantidis2026-ifenn-phase-field-analysis]] — PICNN-IFENN：极少训练数据驱动的混合 FEM–相场断裂传播求解。
-- [[liu2025-incompressible-crack-mpm-analysis]] — 不可压缩裂纹 MPM：损伤–碎屑状态转换与体积保持塑性。
-- [[zhao2026-unified-sparse-mpm-analysis]] — Unified Sparse MPM：活跃节点紧凑索引、CPU 扫描和 GPU 哈希实现。
-- [[feng2026-mpm-lite-analysis]] — MPM Lite：线性核、固定网格积分与 PPC 无关的隐式求解阶段。
-- [[juel2026-stabilized-fractional-step-mpm-analysis]] — 稳定化分步双相 MPM。
-- [[giles2025-avbd-analysis]] — AVBD。
-- [[lu2013-collapse-rc-highrise-analysis]] — RC 高层倒塌模拟。
-- [[goswami2022-variational-deeponet-analysis]] — V-DeepONet 相位场裂纹算子学习。
-
-## 结构动力响应与物理信息学习
-
-- [[meng2026-seisgpt-analysis]] — SeisGPT。
-- [[wu2025-cm-pinn-analysis]] — CM-PINNs。
-- [[zhang2020-phylstm-analysis]] — PhyLSTM2/3。
-- [[du2026-hcff-pinn-analysis]] — HCFF-PINN。
-- [[liu2025-site-response-pinn-analysis]] — 地震场地反应 PINN。
-- [[rathore2024-pinn-loss-landscape-analysis]] — PINN 损失景观与二阶优化。
-- [[mandl2025-separable-pi-deeponet-analysis]] — 可分离物理信息 DeepONet。
-
-## 等变图学习、神经算子与 AI4S
-
-- [[batzner2022-nequip-analysis]] — NequIP。
-- [[musaelian2023-allegro-analysis]] — Allegro。
-- [[park2024-sevennet-parallel-gnn-ip-analysis]] — SevenNet。
-- [[li2025-node-onet-analysis]] — NODE-ONet。
-- [[li2026-sgno-analysis]] — SGNO。
-- [[zeraatkar2026-pgt-analysis]] — PGT。
-- [[zhang2026-legonet-analysis]] — LegONet。
-
-## 计算机视觉、生成式三维与大模型
-
-- [[ronneberger2015-unet-analysis]] — U-Net。
-- [[chen2018-deeplabv3plus-analysis]] — DeepLabv3+。
-- [[xie2021-segformer-analysis]] — SegFormer。
-- [[lee2026-skyfall-gs-analysis]] — Skyfall-GS。
-- [[amapcvlab2026-abotearth-analysis]] — ABot-Earth。
-- [[fedus2021-switch-transformer-analysis]] — Switch Transformer。
-- [[jiang2024-mixtral-of-experts-analysis]] — Mixtral。
-
-<!-- AUTO-REGISTRY:START -->
+- [[zhao2021-structural-drawing-bim-analysis]] — 扫描结构平面图中的轴网、梁柱、OCR 标注、坐标恢复与 IFC 重建。
 
 ## Complete Registry
 
-- [[papers/akhauri2022-eznas-analysis]] ? Akhauri et al. (2022) — EZNAS: Evolving Zero Cost Proxies For NAS Scoring 论文分析
-- [[papers/akhauri2022-eznas-critical]] ? EZNAS 批判性分析 — 贡献、局限、可迁移与未来方向
-- [[papers/akhauri2022-eznas-method]] ? EZNAS 方法机制 — 遗传编程驱动零成本 NAS 代理自动发现
-- [[papers/akhauri2022-eznas-results]] ? EZNAS 结果证据 — 跨搜索空间评分-精度相关性
-- [[papers/amapcvlab2026-abotearth-analysis]] ? AMAP CV Lab (2026) — ABot-Earth 0.5: Generative 3D Earth Model 论文分析
-- [[papers/amapcvlab2026-abotearth-critical]] ? ABot-Earth 0.5 — 贡献+Negative+可迁移+研究机会
-- [[papers/amapcvlab2026-abotearth-method]] ? ABot-Earth 0.5 — 方法机制展开
-- [[papers/amapcvlab2026-abotearth-results]] ? ABot-Earth 0.5 — 实验结果与证据
-- [[papers/batzner2022-nequip-analysis]] ? Batzner et al. (2022) — NequIP：E(3) 等变图神经网络原子势
-- [[papers/batzner2022-nequip-critical]] ? Batzner et al. (2022) — NequIP 批判、迁移与研究机会
-- [[papers/batzner2022-nequip-method]] ? Batzner et al. (2022) — NequIP 方法机制
-- [[papers/batzner2022-nequip-results]] ? Batzner et al. (2022) — NequIP 结果证据
-- [[papers/brandstetter2022-mp-pde-analysis]] ? Brandstetter et al. (2022) — Message Passing Neural PDE Solvers
-- [[papers/brandstetter2022-mp-pde-critical]] ? Brandstetter et al. (2022) — MP-PDE 批判与结构动力迁移
-- [[papers/brandstetter2022-mp-pde-method]] ? Brandstetter et al. (2022) — MP-PDE 方法
-- [[papers/brandstetter2022-mp-pde-results]] ? Brandstetter et al. (2022) — MP-PDE 结果
-- [[papers/caliari2021-rexii-analysis]] ? Caliari et al. (2021)：振荡 PDE 的时间并行 REXII
-- [[papers/caliari2021-rexii-critical]] ? Caliari et al. (2021)：批判性边界
-- [[papers/caliari2021-rexii-method]] ? Caliari et al. (2021)：方法
-- [[papers/caliari2021-rexii-results]] ? Caliari et al. (2021)：结果
-- [[papers/chen2018-deeplabv3plus-analysis]] ? Chen et al. (2018) — DeepLabv3+: Encoder-Decoder with Atrous Separable Convolution: 论文分析
-- [[papers/chen2018-deeplabv3plus-critical]] ? DeepLabv3+ 贡献·Negative·可迁移·研究机会
-- [[papers/chen2018-deeplabv3plus-method]] ? DeepLabv3+ 方法机制展开
-- [[papers/chen2018-deeplabv3plus-results]] ? DeepLabv3+ 实验结果展开
-- [[papers/chen2021-autoformer-analysis]] ? Chen et al. (2021) — AutoFormer: 视觉 Transformer 架构搜索: 论文分析
-- [[papers/chen2021-autoformer-critical]] ? AutoFormer 贡献·局限·可迁移·研究机会
-- [[papers/chen2021-autoformer-method]] ? AutoFormer 方法机制：Weight Entanglement + 弹性搜索空间
-- [[papers/chen2021-autoformer-results]] ? AutoFormer 实验结果：ImageNet / 迁移学习 / 蒸馏
-- [[papers/chen2021-tenas-analysis]] ? Chen et al. (2021) — TE-NAS: Training-Free NAS via NTK: 论文分析
-- [[papers/chen2021-tenas-critical]] ? TE-NAS 贡献·局限·可迁移·研究机会
-- [[papers/chen2021-tenas-method]] ? TE-NAS 方法机制：NTK 条件数 + 线性区域 + Pruning 搜索
-- [[papers/chen2021-tenas-results]] ? TE-NAS 实验结果：NAS-Bench-201 / DARTS / ImageNet
-- [[papers/chen2025-at-pinn-hc-analysis]] ? Chen et al. (2025) — AT-PINN-HC：硬约束策略增强的时间推进 PINN 结构振动分析
-- [[papers/chen2025-at-pinn-hc-critical]] ? Chen et al. (2025) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/chen2025-at-pinn-hc-method]] ? Chen et al. (2025) — AT-PINN-HC 方法机制展开
-- [[papers/chen2025-at-pinn-hc-results]] ? Chen et al. (2025) — AT-PINN-HC 实验结果展开
-- [[papers/chen2026-empm-analysis]] ? Chen 等（2026）— EMPM 论文分析
-- [[papers/chen2026-empm-critical]] ? Chen 等（2026）— EMPM 批判、迁移与研究机会
-- [[papers/chen2026-empm-method]] ? Chen 等（2026）— EMPM 方法机制
-- [[papers/chen2026-empm-results]] ? Chen 等（2026）— EMPM 结果证据
-- [[papers/chittyvenkata2022-nas-transformers-survey]] ? Chitty-Venkata et al. (2022) — NAS for Transformers Survey: 论文分析
-- [[papers/dai2024-deepseek-moe-analysis]] ? Dai et al. (2024) — DeepSeekMoE: 论文分析
-- [[papers/dai2024-deepseek-moe-critical]] ? Dai et al. (2024) — DeepSeekMoE 贡献+Negative+可迁移+机会
-- [[papers/dai2024-deepseek-moe-method]] ? Dai et al. (2024) — DeepSeekMoE 方法展开
-- [[papers/dai2024-deepseek-moe-results]] ? Dai et al. (2024) — DeepSeekMoE 实验结果
-- [[papers/dolean2024-multilevel-fbpinn-analysis]] ? Dolean et al. (2024) — 多层域分解 FBPINN
-- [[papers/dolean2024-multilevel-fbpinn-critical]] ? Dolean et al. (2024) — 多层 FBPINN 批判与图结构迁移
-- [[papers/dolean2024-multilevel-fbpinn-method]] ? Dolean et al. (2024) — 多层 FBPINN 方法
-- [[papers/dolean2024-multilevel-fbpinn-results]] ? Dolean et al. (2024) — 多层 FBPINN 结果
-- [[papers/du2026-hcff-pinn-analysis]] ? Du et al. (2026) — HCFF-PINN：频率先验 Fourier 特征与初值硬约束的无标签结构动力求解
-- [[papers/du2026-hcff-pinn-critical]] ? Du et al. (2026) — HCFF-PINN 贡献、局限与研究机会
-- [[papers/du2026-hcff-pinn-method]] ? Du et al. (2026) — HCFF-PINN 方法机制展开
-- [[papers/du2026-hcff-pinn-results]] ? Du et al. (2026) — HCFF-PINN 数值结果与证据核查
-- [[papers/fedus2021-switch-transformer-analysis]] ? Fedus et al. (2021) — Switch Transformers: 论文分析
-- [[papers/fedus2021-switch-transformer-critical]] ? Fedus et al. (2021) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/fedus2021-switch-transformer-method]] ? Fedus et al. (2021) — 方法机制展开
-- [[papers/fedus2021-switch-transformer-results]] ? Fedus et al. (2021) — 结果证据展开
-- [[papers/feng2026-mpm-lite-analysis]] ? Feng et al. (2026) — MPM Lite 论文分析
-- [[papers/feng2026-mpm-lite-critical]] ? Feng et al. (2026) — MPM Lite 批判与迁移
-- [[papers/feng2026-mpm-lite-method]] ? Feng et al. (2026) — MPM Lite 方法机制
-- [[papers/feng2026-mpm-lite-results]] ? Feng et al. (2026) — MPM Lite 结果证据
-- [[papers/gander2024-paradiag-analysis]] ? Gander & Palitta (2024)：新型 ParaDiag 时间并行算法
-- [[papers/gander2024-paradiag-critical]] ? Gander & Palitta (2024)：批判性边界
-- [[papers/gander2024-paradiag-method]] ? Gander & Palitta (2024)：方法
-- [[papers/gander2024-paradiag-results]] ? Gander & Palitta (2024)：结果
-- [[papers/gao2025-adaptive-loss-pinn-analysis]] ? Gao et al. (2025) — APINNs：多任务自适应损失加权求解非线性 PDE
-- [[papers/gao2025-adaptive-loss-pinn-critical]] ? Gao et al. (2025) — APINNs 贡献、局限与研究机会
-- [[papers/gao2025-adaptive-loss-pinn-method]] ? Gao et al. (2025) — APINNs 方法机制展开
-- [[papers/gao2025-adaptive-loss-pinn-results]] ? Gao et al. (2025) — APINNs 数值结果与证据核查
-- [[papers/giles2025-avbd-analysis]] ? Giles et al. (2025) — Augmented Vertex Block Descent (AVBD): 论文分析
-- [[papers/giles2025-avbd-critical]] ? AVBD 贡献·局限·可迁移·机会
-- [[papers/giles2025-avbd-method]] ? AVBD 方法机制展开
-- [[papers/giles2025-avbd-results]] ? AVBD 实验结果展开
-- [[papers/goswami2022-variational-deeponet-analysis]] ? Goswami et al. (2022) — A Physics-Informed Variational DeepONet for Crack Path Prediction: 论文分析
-- [[papers/goswami2022-variational-deeponet-critical]] ? Goswami et al. (2022) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/goswami2022-variational-deeponet-method]] ? Goswami et al. (2022) — 方法机制展开
-- [[papers/goswami2022-variational-deeponet-results]] ? Goswami et al. (2022) — 结果证据展开
-- [[papers/gu2022-s4-analysis]] ? Gu et al. (2022) — S4：结构化状态空间长序列模型
-- [[papers/gu2022-s4-critical]] ? Gu et al. (2022) S4 — 批判与迁移边界
-- [[papers/gu2022-s4-method]] ? Gu et al. (2022) S4 — 方法
-- [[papers/gu2022-s4-results]] ? Gu et al. (2022) S4 — 结果
-- [[papers/guo2026-phy-rlk-analysis]] ? Guo & Xu (2026) Phy-RLK：双向地震作用下非线性结构响应的物理残差 LSTM-KAN
-- [[papers/guo2026-phy-rlk-critical]] ? Guo & Xu (2026) Phy-RLK 批判：物理偏置、合成标签与泛化边界
-- [[papers/guo2026-phy-rlk-method]] ? Guo & Xu (2026) Phy-RLK 方法：Newmark-β 残差门控与 KAN 解码
-- [[papers/guo2026-phy-rlk-results]] ? Guo & Xu (2026) Phy-RLK 结果：双向 RC 框架响应与峰值误差
-- [[papers/hu2022-xpinn-generalization-analysis]] ? Hu et al. (2022) — When Do Extended Physics-Informed Neural Networks (XPINNs) Improve Generalization?：论文分析
-- [[papers/hu2022-xpinn-generalization-critical]] ? Hu et al. (2022) — XPINN 泛化分析：贡献、Negative Knowledge 与迁移边界
-- [[papers/hu2022-xpinn-generalization-method]] ? Hu et al. (2022) — XPINN 泛化分析：方法机制与理论 bound
-- [[papers/hu2022-xpinn-generalization-results]] ? Hu et al. (2022) — XPINN 泛化分析：解析例子与五类 PDE 结果
-- [[papers/jagtap2019-adaptive-activation-analysis]] ? Jagtap et al. (2019) 自适应激活函数加速 PINN 收敛
-- [[papers/jagtap2019-adaptive-activation-critical]] ? Jagtap et al. (2019) 自适应激活函数 — 贡献·Negative·可迁移
-- [[papers/jagtap2019-adaptive-activation-method]] ? Jagtap et al. (2019) 自适应激活函数 — 方法展开
-- [[papers/jagtap2019-adaptive-activation-results]] ? Jagtap et al. (2019) 自适应激活函数 — 结果展开
-- [[papers/jiang2024-mixtral-of-experts-analysis]] ? Jiang et al. (2024) — Mixtral of Experts: 论文分析
-- [[papers/jiang2024-mixtral-of-experts-critical]] ? Mixtral 8x7B 贡献·局限·可迁移·机会
-- [[papers/jiang2024-mixtral-of-experts-method]] ? Mixtral 8x7B 方法机制展开
-- [[papers/jiang2024-mixtral-of-experts-results]] ? Mixtral 8x7B 实验结果展开
-- [[papers/juel2026-stabilized-fractional-step-mpm-analysis]] ? Juel et al. (2026) — 稳定化分步双相 MPM 论文分析
-- [[papers/juel2026-stabilized-fractional-step-mpm-critical]] ? Juel et al. (2026) — 稳定化分步双相 MPM 批判与迁移
-- [[papers/juel2026-stabilized-fractional-step-mpm-method]] ? Juel et al. (2026) — 稳定化分步双相 MPM 方法机制
-- [[papers/juel2026-stabilized-fractional-step-mpm-results]] ? Juel et al. (2026) — 稳定化分步双相 MPM 结果证据
-- [[papers/kolzhetsov2026-rl-adaptive-loss-control-analysis]] ? Kolzhetsov et al. (2026) — RL-Based Adaptive Loss Control：强化学习动态调节 PINN 损失权重
-- [[papers/kolzhetsov2026-rl-adaptive-loss-control-critical]] ? Kolzhetsov et al. (2026) — RL Adaptive Loss Control 批判与迁移
-- [[papers/kolzhetsov2026-rl-adaptive-loss-control-method]] ? Kolzhetsov et al. (2026) — RL Adaptive Loss Control 方法
-- [[papers/kolzhetsov2026-rl-adaptive-loss-control-results]] ? Kolzhetsov et al. (2026) — RL Adaptive Loss Control 结果
-- [[papers/kopanicakova2024-dd-preconditioning-analysis]] ? Kopaničáková et al. (2024) — Enhancing Training of Physics-Informed Neural Networks Using Domain Decomposition–Based Preconditioning Strategies
-- [[papers/kopanicakova2024-dd-preconditioning-critical]] ? Kopaničáková et al. (2024) — SPQN 批判、边界与迁移
-- [[papers/kopanicakova2024-dd-preconditioning-method]] ? Kopaničáková et al. (2024) — SPQN 方法机制
-- [[papers/kopanicakova2024-dd-preconditioning-results]] ? Kopaničáková et al. (2024) — SPQN 实验结果
-- [[papers/lahoti2026-mamba3-analysis]] ? Lahoti et al. (2026) — Mamba-3：基于状态空间原理的高效序列建模
-- [[papers/lahoti2026-mamba3-critical]] ? Mamba-3 批判与研究机会
-- [[papers/lahoti2026-mamba3-method]] ? Mamba-3 方法：状态空间原理驱动的三项改进
-- [[papers/lahoti2026-mamba3-results]] ? Mamba-3 结果
-- [[papers/lee2024-aznas-analysis]] ? Lee & Ham (2024) — AZ-NAS: Assembling Zero-Cost Proxies for NAS 论文分析
-- [[papers/lee2024-aznas-critical]] ? Lee & Ham (2024) — AZ-NAS: 贡献 / 失败知识 / 可迁移知识 / 研究机会
-- [[papers/lee2024-aznas-method]] ? Lee & Ham (2024) — AZ-NAS: 方法机制详解
-- [[papers/lee2024-aznas-results]] ? Lee & Ham (2024) — AZ-NAS: 结果证据详解
-- [[papers/lee2026-skyfall-gs-analysis]] ? Lee et al. (2026) — Skyfall-GS：从卫星影像合成可自由飞行的沉浸式 3D 城市
-- [[papers/lee2026-skyfall-gs-critical]] ? Skyfall-GS 批判性分析：贡献、幻觉边界、可迁移机制与研究机会
-- [[papers/lee2026-skyfall-gs-method]] ? Skyfall-GS 方法：卫星 3DGS 重建 + 课程式扩散 IDU
-- [[papers/lee2026-skyfall-gs-results]] ? Skyfall-GS 结果：感知质量、几何消融、用户研究与多块扩展
-- [[papers/lepikhin2021-gshard-analysis]] ? Lepikhin et al. (2020) — GShard: 论文分析
-- [[papers/lepikhin2021-gshard-critical]] ? Lepikhin et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/lepikhin2021-gshard-method]] ? Lepikhin et al. (2020) — 方法机制展开
-- [[papers/lepikhin2021-gshard-results]] ? Lepikhin et al. (2020) — 结果证据展开
-- [[papers/leveque2024-all-at-once-rk-analysis]] ? Leveque et al. (2024)：全时域 Runge-Kutta 并行求解
-- [[papers/leveque2024-all-at-once-rk-critical]] ? Leveque et al. (2024)：批判性边界
-- [[papers/leveque2024-all-at-once-rk-method]] ? Leveque et al. (2024)：方法
-- [[papers/leveque2024-all-at-once-rk-results]] ? Leveque et al. (2024)：结果
-- [[papers/li2020-incremental-potential-contact-analysis]] ? Li et al. (2020) — IPC 大变形接触论文分析
-- [[papers/li2020-incremental-potential-contact-critical]] ? Li et al. (2020) — IPC 批判性分析
-- [[papers/li2020-incremental-potential-contact-method]] ? Li et al. (2020) — IPC 方法机制
-- [[papers/li2020-incremental-potential-contact-results]] ? Li et al. (2020) — IPC 结果与证据
-- [[papers/li2021-bossnas-analysis]] ? Li et al. (2021) — BossNAS: Block-wisely Self-supervised NAS for Hybrid CNN-Transformers 论文分析
-- [[papers/li2021-bossnas-critical]] ? BossNAS 批判性分析：贡献、局限与可迁移洞见
-- [[papers/li2021-bossnas-method]] ? BossNAS 方法细节：Ensemble Bootstrapping 与 HyTra 搜索空间
-- [[papers/li2021-bossnas-results]] ? BossNAS 实验结果：ImageNet / CIFAR / 迁移学习
-- [[papers/li2022-bfemp-analysis]] ? Li et al. (2022) — BFEMP 隐式 MPM–FEM 接触耦合论文分析
-- [[papers/li2022-bfemp-critical]] ? Li et al. (2022) — BFEMP 批判性分析
-- [[papers/li2022-bfemp-method]] ? Li et al. (2022) — BFEMP 方法机制
-- [[papers/li2022-bfemp-results]] ? Li et al. (2022) — BFEMP 结果
-- [[papers/li2025-functional-scaling-laws-analysis]] ? Li et al. (2025) — Functional Scaling Laws：学习率计划下完整损失轨迹的函数型缩放律
-- [[papers/li2025-functional-scaling-laws-critical]] ? Functional Scaling Laws 批判分析：贡献、限制与迁移机会
-- [[papers/li2025-functional-scaling-laws-method]] ? Functional Scaling Laws 方法：内禀时间、SDE 与遗忘核卷积
-- [[papers/li2025-functional-scaling-laws-results]] ? Functional Scaling Laws 结果：WSD 优势与 LLM loss 轨迹预测
-- [[papers/li2025-girder-dynamic-pinn-analysis]] ? Li et al. (2025) — 基于PINN的斜拉桥主梁动态线形重建：论文分析
-- [[papers/li2025-girder-dynamic-pinn-critical]] ? Li et al. (2025) — 贡献 / Negative / 可迁移 / 研究机会
-- [[papers/li2025-girder-dynamic-pinn-method]] ? Li et al. (2025) — 方法机制：双代理模型PINN斜拉桥动态线形重建
-- [[papers/li2025-girder-dynamic-pinn-results]] ? Li et al. (2025) — 实验结果：传感器稀疏条件下的MGDA重建验证
-- [[papers/li2025-localized-waves-pinn-analysis]] ? Li & Wang (2025) — Bäcklund 变换约束 PINN 生成非线性 PDE 局域波：论文分析
-- [[papers/li2025-localized-waves-pinn-critical]] ? Li & Wang (2025) — Bäcklund-PINN 的贡献、局限与研究机会
-- [[papers/li2025-localized-waves-pinn-method]] ? Li & Wang (2025) — Bäcklund 变换约束双输出 PINN：方法机制
-- [[papers/li2025-localized-waves-pinn-results]] ? Li & Wang (2025) — 局域波实验：数值结果与证据
-- [[papers/li2025-movingload-pinn-analysis]] ? Li et al. (2025) — 基于物理信息神经网络的桥梁移动荷载动力响应分析：论文分析
-- [[papers/li2025-movingload-pinn-critical]] ? Li et al. (2025) — 贡献 / Negative / 可迁移 / 研究机会
-- [[papers/li2025-movingload-pinn-method]] ? Li et al. (2025) — 方法机制：PINN 桥梁移动荷载动力响应分析
-- [[papers/li2025-movingload-pinn-results]] ? Li et al. (2025) — 实验结果：五组数值实验验证
-- [[papers/li2025-node-onet-analysis]] ? Deep Neural ODE Operator Networks for PDEs (NODE-ONet)：物理编码神经常微分方程算子网络
-- [[papers/li2025-node-onet-critical]] ? NODE-ONet 批判分析
-- [[papers/li2025-node-onet-method]] ? NODE-ONet 方法机制
-- [[papers/li2025-node-onet-results]] ? NODE-ONet 结果与证据
-- [[papers/li2026-exsgd-analysis]] ? Li et al. (2026) — ExSGD：利用历史梯度的分布式大批量建筑提取训练优化
-- [[papers/li2026-exsgd-critical]] ? ExSGD 贡献与批判
-- [[papers/li2026-exsgd-method]] ? ExSGD 方法机制
-- [[papers/li2026-exsgd-results]] ? ExSGD 实验结果
-- [[papers/li2026-sgno-analysis]] ? Li et al. (2026) — SGNO：稳定长时域 PDE 滚动预测的谱生成神经算子
-- [[papers/li2026-sgno-critical]] ? SGNO 批判分析
-- [[papers/li2026-sgno-method]] ? SGNO 方法机制
-- [[papers/li2026-sgno-results]] ? SGNO 结果与证据
-- [[papers/linka2022-bayesian-pinn-analysis]] ? Linka et al. (2022) — Bayesian PINNs for Nonlinear Dynamical Systems: 论文分析
-- [[papers/linka2022-bayesian-pinn-critical]] ? Linka et al. (2022) — Bayesian PINNs: 贡献/知识/Negative/可迁移/机会
-- [[papers/linka2022-bayesian-pinn-method]] ? Linka et al. (2022) — Bayesian PINNs: 方法机制展开
-- [[papers/linka2022-bayesian-pinn-results]] ? Linka et al. (2022) — Bayesian PINNs: 结果证据展开
-- [[papers/list2025-unrolled-training-analysis]] ? List et al. (2025) — 瞬态神经物理模拟器的展开训练与可微性
-- [[papers/list2025-unrolled-training-critical]] ? List et al. (2025) — 展开训练批判与迁移边界
-- [[papers/list2025-unrolled-training-method]] ? List et al. (2025) — 展开训练方法
-- [[papers/list2025-unrolled-training-results]] ? List et al. (2025) — 展开训练结果
-- [[papers/liu2025-incompressible-crack-mpm-analysis]] ? Liu et al. (2025) — 体积保持 MPM 不可压缩裂纹模型论文分析
-- [[papers/liu2025-incompressible-crack-mpm-critical]] ? Liu et al. (2025) — 体积保持 MPM 不可压缩裂纹模型批判与迁移
-- [[papers/liu2025-incompressible-crack-mpm-method]] ? Liu et al. (2025) — 体积保持 MPM 不可压缩裂纹模型方法机制
-- [[papers/liu2025-incompressible-crack-mpm-results]] ? Liu et al. (2025) — 体积保持 MPM 不可压缩裂纹模型结果证据
-- [[papers/liu2025-site-response-pinn-analysis]] ? Liu et al. (2025) — PINN 用于一维地震场地反应分析：论文分析
-- [[papers/liu2025-site-response-pinn-critical]] ? Liu et al. (2025) — 场地反应 PINN：贡献、局限与研究机会
-- [[papers/liu2025-site-response-pinn-method]] ? Liu et al. (2025) — 地震场地反应 PINN：方法机制
-- [[papers/liu2025-site-response-pinn-results]] ? Liu et al. (2025) — 场地反应 PINN：结果与定量证据
-- [[papers/lu2013-collapse-rc-highrise-analysis]] ? Lu et al. (2013) — RC 高层建筑极端地震倒塌模拟: 论文分析
-- [[papers/lu2013-collapse-rc-highrise-critical]] ? Lu et al. (2013) 贡献·局限·可迁移·机会
-- [[papers/lu2013-collapse-rc-highrise-method]] ? Lu et al. (2013) 倒塌模拟方法展开
-- [[papers/lu2013-collapse-rc-highrise-results]] ? Lu et al. (2013) 倒塌模拟结果展开
-- [[papers/luo2025-pinn-pde-review-analysis]] ? Luo et al. (2025) PINN 求解 PDE 综合综述：分类框架与证据边界
-- [[papers/luo2025-pinn-pde-review-critical]] ? Luo et al. (2025) PINN-PDE 综述批判：覆盖边界、时效性与复现价值
-- [[papers/luo2025-pinn-pde-review-method]] ? Luo et al. (2025) PINN-PDE 综述方法：多轴分类框架
-- [[papers/luo2025-pinn-pde-review-results]] ? Luo et al. (2025) PINN-PDE 综述结果：分类、比较与证据层级
-- [[papers/maimon2026-sparse-dense-analysis]] ? Maimon et al. (2026) — Sparse-to-Dense Coding Transformation Between Hippocampal CA3 and CA1 论文分析
-- [[papers/maimon2026-sparse-dense-critical]] ? Maimon et al. (2026) — 贡献 / 失败知识 / 可迁移知识 / 研究机会
-- [[papers/maimon2026-sparse-dense-method]] ? Maimon et al. (2026) — 方法机制详解
-- [[papers/maimon2026-sparse-dense-results]] ? Maimon et al. (2026) — 实验结果证据详解
-- [[papers/mandl2025-separable-pi-deeponet-analysis]] ? Mandl et al. (2025) — Separable Physics-Informed DeepONet
-- [[papers/mandl2025-separable-pi-deeponet-critical]] ? Mandl et al. (2025) — Sep-PI-DeepONet critical analysis
-- [[papers/mandl2025-separable-pi-deeponet-method]] ? Sep-PI-DeepONet Method
-- [[papers/mandl2025-separable-pi-deeponet-results]] ? Sep-PI-DeepONet Results
-- [[papers/melenk2021-rkcq-superconvergence-analysis]] ? Melenk & Rieder (2021)：波动方程 RK-CQ 超收敛
-- [[papers/melenk2021-rkcq-superconvergence-critical]] ? Melenk & Rieder (2021)：批判性边界
-- [[papers/melenk2021-rkcq-superconvergence-method]] ? Melenk & Rieder (2021)：方法
-- [[papers/melenk2021-rkcq-superconvergence-results]] ? Melenk & Rieder (2021)：结果
-- [[papers/meng2026-seisgpt-analysis]] ? Meng et al. (2026) — SeisGPT：面向高保真结构响应预测的物理信息基础模型
-- [[papers/meng2026-seisgpt-critical]] ? SeisGPT 批判性分析：基础模型边界、FE 标签依赖与工程部署
-- [[papers/meng2026-seisgpt-method]] ? SeisGPT 方法：SDR 低保真先验、质量刚度图编码与 SDG-Mixer
-- [[papers/meng2026-seisgpt-results]] ? SeisGPT 结果：跨建筑预测、跨体系零样本、稀疏重建与 IDA
-- [[papers/moseley2023-fbpinn-analysis]] ? Moseley et al. (2023) — FBPINN：有限基域分解 PINN
-- [[papers/moseley2023-fbpinn-critical]] ? Moseley et al. (2023) — FBPINN 批判与 MechConv 迁移
-- [[papers/moseley2023-fbpinn-method]] ? Moseley et al. (2023) — FBPINN 方法
-- [[papers/moseley2023-fbpinn-results]] ? Moseley et al. (2023) — FBPINN 结果
-- [[papers/musaelian2023-allegro-analysis]] ? Musaelian et al. (2023) — Allegro：严格局部等变原子势
-- [[papers/musaelian2023-allegro-critical]] ? Musaelian et al. (2023) — Allegro 批判、迁移与研究机会
-- [[papers/musaelian2023-allegro-method]] ? Musaelian et al. (2023) — Allegro 方法机制
-- [[papers/musaelian2023-allegro-results]] ? Musaelian et al. (2023) — Allegro 结果证据
-- [[papers/pantidis2026-ifenn-phase-field-analysis]] ? Pantidis et al. (2026) — PICNN-IFENN 相场断裂论文分析
-- [[papers/pantidis2026-ifenn-phase-field-critical]] ? Pantidis et al. (2026) — PICNN-IFENN 相场断裂批判与迁移
-- [[papers/pantidis2026-ifenn-phase-field-method]] ? Pantidis et al. (2026) — PICNN-IFENN 相场断裂方法机制
-- [[papers/pantidis2026-ifenn-phase-field-results]] ? Pantidis et al. (2026) — PICNN-IFENN 相场断裂结果证据
-- [[papers/park2024-sevennet-parallel-gnn-ip-analysis]] ? Park et al. (2024) — SevenNet：可扩展并行图神经网络原子势
-- [[papers/park2024-sevennet-parallel-gnn-ip-critical]] ? Park et al. (2024) — SevenNet 批判、迁移与研究机会
-- [[papers/park2024-sevennet-parallel-gnn-ip-method]] ? Park et al. (2024) — SevenNet 并行方法
-- [[papers/park2024-sevennet-parallel-gnn-ip-results]] ? Park et al. (2024) — SevenNet 结果证据
-- [[papers/penwarden2024-kolmogorov-n-width-piml-analysis]] ? Penwarden et al. (2024) — Kolmogorov n-width：多任务 PIML 的最坏情形泛化度量
-- [[papers/penwarden2024-kolmogorov-n-width-piml-critical]] ? Penwarden et al. (2024) — Kolmogorov n-width PIML 批判分析
-- [[papers/penwarden2024-kolmogorov-n-width-piml-method]] ? Penwarden et al. (2024) — Kolmogorov n-width PIML 方法
-- [[papers/penwarden2024-kolmogorov-n-width-piml-results]] ? Penwarden et al. (2024) — Kolmogorov n-width PIML 实验结果
-- [[papers/raissi2019-pinn-analysis]] ? Raissi et al. (2019) PINN 开山之作：非线性 PDE 的深度学习求解框架
-- [[papers/raissi2019-pinn-critical]] ? Raissi et al. (2019) PINN — 贡献·Negative·可迁移·研究机会
-- [[papers/raissi2019-pinn-method]] ? Raissi et al. (2019) PINN 方法展开：连续/离散时间模型 + 非线性 PDE 的 AD 处理
-- [[papers/raissi2019-pinn-results]] ? Raissi et al. (2019) PINN 结果展开：五类非线性 PDE 的求解验证
-- [[papers/rathore2024-pinn-loss-landscape-analysis]] ? Rathore et al. (2024) — PINN 训练挑战：损失景观、病态性与二阶优化
-- [[papers/rathore2024-pinn-loss-landscape-critical]] ? PINN 损失景观论文批判分析
-- [[papers/rathore2024-pinn-loss-landscape-method]] ? PINN 损失景观与 NysNewton-CG 方法
-- [[papers/rathore2024-pinn-loss-landscape-results]] ? PINN 损失景观结果与证据
-- [[papers/real2020-automl-zero-analysis]] ? Real et al. (2020) — AutoML-Zero: 从零进化机器学习算法 论文分析
-- [[papers/real2020-automl-zero-critical]] ? Real et al. (2020) — 深度分析：贡献 / 知识点 / Negative Knowledge / 可迁移 / 研究机会
-- [[papers/real2020-automl-zero-method]] ? Real et al. (2020) — 方法详解：AutoML-Zero 的三组件搜索空间与进化引擎
-- [[papers/real2020-automl-zero-results]] ? Real et al. (2020) — 实验结果详解：进化发现的算法与技术涌现
-- [[papers/ronneberger2015-unet-analysis]] ? Ronneberger et al. (2015) — U-Net: 论文分析
-- [[papers/ronneberger2015-unet-critical]] ? U-Net 贡献·局限·可迁移·机会
-- [[papers/ronneberger2015-unet-method]] ? U-Net 方法机制展开
-- [[papers/ronneberger2015-unet-results]] ? U-Net 实验结果展开
-- [[papers/ru2020-nago-analysis]] ? Ru et al. (2020) — Neural Architecture Generator Optimization 论文分析
-- [[papers/ru2020-nago-critical]] ? Ru et al. (2020) — NAGO 贡献 · 局限 · 延伸
-- [[papers/ru2020-nago-method]] ? Ru et al. (2020) — NAGO 方法机制详解
-- [[papers/ru2020-nago-results]] ? Ru et al. (2020) — NAGO 实验结果详解
-- [[papers/schadle2006-fast-convolution-quadrature-analysis]] ? Schädle et al. (2006) — Fast and Oblivious Convolution Quadrature
-- [[papers/schadle2006-fast-convolution-quadrature-critical]] ? Schädle et al. (2006) 快速卷积求积 — 批判与迁移边界
-- [[papers/schadle2006-fast-convolution-quadrature-method]] ? Schädle et al. (2006) 快速卷积求积 — 方法
-- [[papers/schadle2006-fast-convolution-quadrature-results]] ? Schädle et al. (2006) 快速卷积求积 — 结果
-- [[papers/serianni2023-training-free-nas-rnn-transformers-analysis]] ? Serianni & Kalita (2023) — Training-free NAS for RNNs and Transformers 论文分析
-- [[papers/serianni2023-training-free-nas-rnn-transformers-critical]] ? Serianni & Kalita (2023) — Critical Analysis: Training-free NAS for RNNs and Transformers
-- [[papers/serianni2023-training-free-nas-rnn-transformers-method]] ? Serianni & Kalita (2023) — Method: Training-free NAS Proxies for RNNs and Transformers
-- [[papers/serianni2023-training-free-nas-rnn-transformers-results]] ? Serianni & Kalita (2023) — Results: Training-free NAS for RNNs and Transformers
-- [[papers/so2021-primer-analysis]] ? So et al. (2021) — Primer: Searching for Efficient Transformers for Language Modeling 论文分析
-- [[papers/so2021-primer-critical]] ? So et al. (2021) — Primer 贡献·局限·可迁移·研究机会
-- [[papers/so2021-primer-method]] ? So et al. (2021) — Primer: 搜索空间、SQ-TC 搜索算法与训练策略
-- [[papers/so2021-primer-results]] ? So et al. (2021) — Primer: 关键实验与结果
-- [[papers/sojitra2026-fedonet-analysis]] ? Sojitra et al. (2026) — FEDONet: Fourier-Embedded DeepONet for Spectrally Accurate Operator Learning: 论文分析
-- [[papers/sojitra2026-fedonet-critical]] ? Sojitra et al. (2026) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/sojitra2026-fedonet-method]] ? Sojitra et al. (2026) — 方法机制展开
-- [[papers/sojitra2026-fedonet-results]] ? Sojitra et al. (2026) — 结果证据展开
-- [[papers/song2025-rl-pinns-analysis]] ? Song (2025) — RL-PINNs：强化学习驱动的单轮自适应配点
-- [[papers/song2025-rl-pinns-critical]] ? RL-PINNs 批判分析
-- [[papers/song2025-rl-pinns-method]] ? RL-PINNs 方法机制
-- [[papers/song2025-rl-pinns-results]] ? RL-PINNs 结果与证据
-- [[papers/sun2019-hrnetv2-analysis]] ? Sun et al. (2019) — High-Resolution Representations for Labeling Pixels and Regions (HRNetV2): 论文分析
-- [[papers/sun2019-hrnetv2-critical]] ? HRNetV2 贡献·Negative·可迁移·研究机会
-- [[papers/sun2019-hrnetv2-method]] ? HRNet 方法机制展开
-- [[papers/sun2019-hrnetv2-results]] ? HRNetV2 实验结果展开
-- [[papers/tao2026-fpikan]] ? Tao et al. (2026) FPIKAN：Fourier 特征增强的物理信息 KAN（摘要级概览）
-- [[papers/tesan2025-under-reaching-analysis]] ? Tesan et al. (2025) — 消息传递 PDE 求解器的 under-reaching 与 CFL 下界
-- [[papers/tesan2025-under-reaching-critical]] ? Tesan et al. (2025) — Under-reaching 批判与结构动力迁移
-- [[papers/tesan2025-under-reaching-method]] ? Tesan et al. (2025) — 消息传播物理下界方法
-- [[papers/tesan2025-under-reaching-results]] ? Tesan et al. (2025) — Under-reaching 实验结果
-- [[papers/wang2020-hat-analysis]] ? Wang et al. (2020) — HAT: Hardware-Aware Transformers: 论文分析
-- [[papers/wang2020-hat-critical]] ? HAT 贡献·局限·可迁移·研究机会
-- [[papers/wang2020-hat-method]] ? HAT 方法机制：SuperTransformer + 延迟预测器 + 进化搜索
-- [[papers/wang2020-hat-results]] ? HAT 实验结果：四任务×三硬件 BLEU-Latency 全面对比
-- [[papers/wang2021-pinn-ntk-failure-analysis]] ? Wang et al. (2021) PINN 训练失败机制：神经正切核 (NTK) 视角
-- [[papers/wang2021-pinn-ntk-failure-critical]] ? Wang et al. (2021) PINN 失败机制 — 贡献·Negative·可迁移·研究机会
-- [[papers/wang2021-pinn-ntk-failure-method]] ? Wang et al. (2021) PINN 失败机制 — 方法展开：NTK 推导与自适应算法
-- [[papers/wang2021-pinn-ntk-failure-results]] ? Wang et al. (2021) PINN 失败机制 — 结果展开：四个 PDE 谱偏差验证
-- [[papers/wang2023-pinn-spurious-analysis]] ? Wang et al. (2023) — When PINNs Go Wrong: Pseudo-Time Stepping Against Spurious Solutions
-- [[papers/wang2023-pinn-spurious-critical]] ? Wang et al. (2023) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/wang2023-pinn-spurious-method]] ? Wang et al. (2023) — 方法机制展开
-- [[papers/wang2023-pinn-spurious-results]] ? Wang et al. (2023) — 结果证据展开
-- [[papers/wang2024-causal-pinn-analysis]] ? Wang et al. (2024) — Respecting Causality for Training PINNs: 因果训练范式
-- [[papers/wang2024-causal-pinn-critical]] ? Wang et al. (2024) 因果训练 PINN — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/wang2024-causal-pinn-method]] ? Wang et al. (2024) 因果训练 PINN — 方法展开：因果损失函数与时序权重
-- [[papers/wang2024-causal-pinn-results]] ? Wang et al. (2024) 因果训练 PINN — 结果展开：混沌系统首次成功
-- [[papers/wang2024-kinn-analysis]] ? Wang et al. (2024) KINN：以 Kolmogorov–Arnold 网络替代 MLP 的物理信息神经网络骨干
-- [[papers/wang2024-kinn-critical]] ? Wang et al. (2024) KINN — 贡献·Negative·可迁移·研究机会
-- [[papers/wang2024-kinn-method]] ? Wang et al. (2024) KINN 方法机制展开：KAN 替换 MLP + 三种 PDE 形式
-- [[papers/wang2024-kinn-results]] ? Wang et al. (2024) KINN 结果展开：六类固体力学问题的 KAN vs MLP 系统对比
-- [[papers/wang2024-nas-pinn-analysis]] ? Wang & Zhong (2024) — NAS-PINN: Neural architecture search-guided physics-informed neural network
-- [[papers/wang2024-nas-pinn-critical]] ? Wang & Zhong (2024) — NAS-PINN critical analysis
-- [[papers/wang2024-nas-pinn-method]] ? Wang & Zhong (2024) — NAS-PINN method
-- [[papers/wang2024-nas-pinn-results]] ? Wang & Zhong (2024) — NAS-PINN results
-- [[papers/wu2025-cm-pinn-analysis]] ? Wu et al. (2025) — CM-PINNs：本构模型约束 PINN 预测非线性结构地震响应
-- [[papers/wu2025-cm-pinn-critical]] ? Wu et al. (2025) — CM-PINNs 贡献、Negative Knowledge 与研究机会
-- [[papers/wu2025-cm-pinn-method]] ? Wu et al. (2025) — CM-PINNs 方法机制展开
-- [[papers/wu2025-cm-pinn-results]] ? Wu et al. (2025) — CM-PINNs 实验结果展开
-- [[papers/xie2021-segformer-analysis]] ? Xie et al. (2021) — SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers: 论文分析
-- [[papers/xie2021-segformer-critical]] ? SegFormer 贡献·Negative·可迁移·研究机会
-- [[papers/xie2021-segformer-method]] ? SegFormer 方法机制展开
-- [[papers/xie2021-segformer-results]] ? SegFormer 实验结果展开
-- [[papers/xiong2025-confseq-analysis]] ? Xiong et al. (2025) — ConfSeq 构象描述语言：3D 分子结构与 AI 的桥梁
-- [[papers/xiong2025-confseq-critical]] ? ConfSeq 贡献 + Negative + 可迁移 + 研究机会
-- [[papers/xiong2025-confseq-method]] ? ConfSeq 方法机制：内坐标序列化与 Transformer 统一架构
-- [[papers/xiong2025-confseq-results]] ? ConfSeq 实验结果：四大任务全面 SOTA
-- [[papers/xu2021-nas-bert-analysis]] ? Xu et al. (2021) — NAS-BERT: Task-Agnostic BERT Compression with NAS: 论文分析
-- [[papers/xu2021-nas-bert-critical]] ? NAS-BERT 批判分析：贡献 · 知识点 · Negative · 可迁移 · 研究机会
-- [[papers/xu2021-nas-bert-method]] ? NAS-BERT 方法机制：Block-Wise Supernet 训练 + Progressive Shrinking + Model Selection
-- [[papers/xu2021-nas-bert-results]] ? NAS-BERT 实验结果：GLUE · SQuAD · Ablation · Multi-Size 验证
-- [[papers/yu2024-xpbi-analysis]] ? Yu et al. (2024) — XPBI 连续介质非弹性论文分析
-- [[papers/yu2024-xpbi-critical]] ? Yu et al. (2024) — XPBI 批判性分析
-- [[papers/yu2024-xpbi-method]] ? Yu et al. (2024) — XPBI 方法
-- [[papers/yu2024-xpbi-results]] ? Yu et al. (2024) — XPBI 结果
-- [[papers/zeraatkar2026-pgt-analysis]] ? Physics-Guided Transformer (PGT)：面向 PINN 的物理感知注意力机制
-- [[papers/zeraatkar2026-pgt-critical]] ? Physics-Guided Transformer 批判分析
-- [[papers/zeraatkar2026-pgt-method]] ? Physics-Guided Transformer 方法机制
-- [[papers/zeraatkar2026-pgt-results]] ? Physics-Guided Transformer 结果与证据
-- [[papers/zhang2020-phylstm-analysis]] ? Zhang et al. (2020) — PhyLSTM 论文分析
-- [[papers/zhang2020-phylstm-critical]] ? Zhang et al. (2020) — 贡献 / 知识点 / Negative / 可迁移 / 研究机会
-- [[papers/zhang2020-phylstm-method]] ? Zhang et al. (2020) — 方法机制展开
-- [[papers/zhang2020-phylstm-results]] ? Zhang et al. (2020) — 结果证据展开
-- [[papers/zhang2025-mrf-pinn]] ? Zhang et al. (2025) — MRF-PINN：多感受野卷积物理信息网络（摘要级概览）
-- [[papers/zhang2026-legonet-analysis]] ? Zhang et al. (2026) — LegONet：可插拔、结构保持的组合式 PDE 神经算子积木
-- [[papers/zhang2026-legonet-critical]] ? LegONet 贡献与局限
-- [[papers/zhang2026-legonet-method]] ? LegONet 方法机制：结构保持 operator blocks 与组合式 PDE 求解
-- [[papers/zhang2026-legonet-results]] ? LegONet 结果：跨 PDE 组合、长时稳定与结构保持
-- [[papers/zhao2017-pspnet-analysis]] ? Zhao et al. (2017) — Pyramid Scene Parsing Network (PSPNet): 论文分析
-- [[papers/zhao2017-pspnet-critical]] ? PSPNet 贡献·Negative·可迁移·研究机会
-- [[papers/zhao2017-pspnet-method]] ? PSPNet 方法机制展开
-- [[papers/zhao2017-pspnet-results]] ? PSPNet 实验结果展开
-- [[papers/zhao2021-memory-efficient-dnas-analysis]] ? Zhao et al. (2021) — Memory-Efficient Differentiable Transformer Architecture Search 论文分析
-- [[papers/zhao2021-memory-efficient-dnas-critical]] ? DARTSformer 批判分析：贡献 · 知识点 · Negative · 可迁移 · 研究机会
-- [[papers/zhao2021-memory-efficient-dnas-method]] ? DARTSformer 方法机制：Multi-Split Reversible Network + BP-with-Reconstruction + DARTS
-- [[papers/zhao2021-memory-efficient-dnas-results]] ? DARTSformer 实验结果：WMT'14 En-De / En-Fr · WMT'18 En-Cs · Ablation
-- [[papers/zhao2026-causal-attention-analysis]] ? Casual Attention: 自适应因果性时空加权 PINN 训练 — 论文分析
-- [[papers/zhao2026-causal-attention-critical]] ? Casual Attention 批判性分析：贡献 / Negative / 可迁移 / 研究机会
-- [[papers/zhao2026-causal-attention-method]] ? Casual Attention 方法展开：CA 权重 + mMLP + Fourier 特征 + 重采样
-- [[papers/zhao2026-causal-attention-results]] ? Casual Attention 实验结果：Allen-Cahn / KdV / KS / Burgers 全基准
-- [[papers/zhao2026-unified-sparse-mpm-analysis]] ? Zhao et al. (2026) — 大规模 MPM 统一稀疏框架论文分析
-- [[papers/zhao2026-unified-sparse-mpm-critical]] ? Zhao et al. (2026) — 大规模 MPM 统一稀疏框架批判与迁移
-- [[papers/zhao2026-unified-sparse-mpm-method]] ? Zhao et al. (2026) — 大规模 MPM 统一稀疏框架方法机制
-- [[papers/zhao2026-unified-sparse-mpm-results]] ? Zhao et al. (2026) — 大规模 MPM 统一稀疏框架结果证据
-- [[papers/zhou2025-learnable-physics-engine-analysis]] ? Zhou & Feng (2025) — The novel learnable physics engines for interpretable elastoplastic models of geomaterials: 论文分析
-- [[papers/zhou2025-learnable-physics-engine-critical]] ? Zhou & Feng (2025) — Learnable physics engine：批判性分析
-- [[papers/zhou2025-learnable-physics-engine-method]] ? Zhou & Feng (2025) — Learnable physics engine：方法机制
-- [[papers/zhou2025-learnable-physics-engine-results]] ? Zhou & Feng (2025) — Learnable physics engine：结果与实验数字
-
-<!-- AUTO-REGISTRY:END -->
+- [[papers/akhauri2022-eznas-analysis]]
+- [[papers/akhauri2022-eznas-critical]]
+- [[papers/akhauri2022-eznas-method]]
+- [[papers/akhauri2022-eznas-results]]
+- [[papers/amapcvlab2026-abotearth-analysis]]
+- [[papers/amapcvlab2026-abotearth-critical]]
+- [[papers/amapcvlab2026-abotearth-method]]
+- [[papers/amapcvlab2026-abotearth-results]]
+- [[papers/batzner2022-nequip-analysis]]
+- [[papers/batzner2022-nequip-critical]]
+- [[papers/batzner2022-nequip-method]]
+- [[papers/batzner2022-nequip-results]]
+- [[papers/brandstetter2022-mp-pde-analysis]]
+- [[papers/brandstetter2022-mp-pde-critical]]
+- [[papers/brandstetter2022-mp-pde-method]]
+- [[papers/brandstetter2022-mp-pde-results]]
+- [[papers/caliari2021-rexii-analysis]]
+- [[papers/caliari2021-rexii-critical]]
+- [[papers/caliari2021-rexii-method]]
+- [[papers/caliari2021-rexii-results]]
+- [[papers/chen2018-deeplabv3plus-analysis]]
+- [[papers/chen2018-deeplabv3plus-critical]]
+- [[papers/chen2018-deeplabv3plus-method]]
+- [[papers/chen2018-deeplabv3plus-results]]
+- [[papers/chen2021-autoformer-analysis]]
+- [[papers/chen2021-autoformer-critical]]
+- [[papers/chen2021-autoformer-method]]
+- [[papers/chen2021-autoformer-results]]
+- [[papers/chen2021-tenas-analysis]]
+- [[papers/chen2021-tenas-critical]]
+- [[papers/chen2021-tenas-method]]
+- [[papers/chen2021-tenas-results]]
+- [[papers/chen2025-at-pinn-hc-analysis]]
+- [[papers/chen2025-at-pinn-hc-critical]]
+- [[papers/chen2025-at-pinn-hc-method]]
+- [[papers/chen2025-at-pinn-hc-results]]
+- [[papers/chen2026-empm-analysis]]
+- [[papers/chen2026-empm-critical]]
+- [[papers/chen2026-empm-method]]
+- [[papers/chen2026-empm-results]]
+- [[papers/chittyvenkata2022-nas-transformers-survey]]
+- [[papers/dai2024-deepseek-moe-analysis]]
+- [[papers/dai2024-deepseek-moe-critical]]
+- [[papers/dai2024-deepseek-moe-method]]
+- [[papers/dai2024-deepseek-moe-results]]
+- [[papers/dolean2024-multilevel-fbpinn-analysis]]
+- [[papers/dolean2024-multilevel-fbpinn-critical]]
+- [[papers/dolean2024-multilevel-fbpinn-method]]
+- [[papers/dolean2024-multilevel-fbpinn-results]]
+- [[papers/du2026-hcff-pinn-analysis]]
+- [[papers/du2026-hcff-pinn-critical]]
+- [[papers/du2026-hcff-pinn-method]]
+- [[papers/du2026-hcff-pinn-results]]
+- [[papers/fedus2021-switch-transformer-analysis]]
+- [[papers/fedus2021-switch-transformer-critical]]
+- [[papers/fedus2021-switch-transformer-method]]
+- [[papers/fedus2021-switch-transformer-results]]
+- [[papers/feng2026-mpm-lite-analysis]]
+- [[papers/feng2026-mpm-lite-critical]]
+- [[papers/feng2026-mpm-lite-method]]
+- [[papers/feng2026-mpm-lite-results]]
+- [[papers/gander2024-paradiag-analysis]]
+- [[papers/gander2024-paradiag-critical]]
+- [[papers/gander2024-paradiag-method]]
+- [[papers/gander2024-paradiag-results]]
+- [[papers/gao2025-adaptive-loss-pinn-analysis]]
+- [[papers/gao2025-adaptive-loss-pinn-critical]]
+- [[papers/gao2025-adaptive-loss-pinn-method]]
+- [[papers/gao2025-adaptive-loss-pinn-results]]
+- [[papers/giles2025-avbd-analysis]]
+- [[papers/giles2025-avbd-critical]]
+- [[papers/giles2025-avbd-method]]
+- [[papers/giles2025-avbd-results]]
+- [[papers/goswami2022-variational-deeponet-analysis]]
+- [[papers/goswami2022-variational-deeponet-critical]]
+- [[papers/goswami2022-variational-deeponet-method]]
+- [[papers/goswami2022-variational-deeponet-results]]
+- [[papers/gu2022-s4-analysis]]
+- [[papers/gu2022-s4-critical]]
+- [[papers/gu2022-s4-method]]
+- [[papers/gu2022-s4-results]]
+- [[papers/guo2026-phy-rlk-analysis]]
+- [[papers/guo2026-phy-rlk-critical]]
+- [[papers/guo2026-phy-rlk-method]]
+- [[papers/guo2026-phy-rlk-results]]
+- [[papers/hu2022-xpinn-generalization-analysis]]
+- [[papers/hu2022-xpinn-generalization-critical]]
+- [[papers/hu2022-xpinn-generalization-method]]
+- [[papers/hu2022-xpinn-generalization-results]]
+- [[papers/jagtap2019-adaptive-activation-analysis]]
+- [[papers/jagtap2019-adaptive-activation-critical]]
+- [[papers/jagtap2019-adaptive-activation-method]]
+- [[papers/jagtap2019-adaptive-activation-results]]
+- [[papers/jiang2024-mixtral-of-experts-analysis]]
+- [[papers/jiang2024-mixtral-of-experts-critical]]
+- [[papers/jiang2024-mixtral-of-experts-method]]
+- [[papers/jiang2024-mixtral-of-experts-results]]
+- [[papers/juel2026-stabilized-fractional-step-mpm-analysis]]
+- [[papers/juel2026-stabilized-fractional-step-mpm-critical]]
+- [[papers/juel2026-stabilized-fractional-step-mpm-method]]
+- [[papers/juel2026-stabilized-fractional-step-mpm-results]]
+- [[papers/kolzhetsov2026-rl-adaptive-loss-control-analysis]]
+- [[papers/kolzhetsov2026-rl-adaptive-loss-control-critical]]
+- [[papers/kolzhetsov2026-rl-adaptive-loss-control-method]]
+- [[papers/kolzhetsov2026-rl-adaptive-loss-control-results]]
+- [[papers/kopanicakova2024-dd-preconditioning-analysis]]
+- [[papers/kopanicakova2024-dd-preconditioning-critical]]
+- [[papers/kopanicakova2024-dd-preconditioning-method]]
+- [[papers/kopanicakova2024-dd-preconditioning-results]]
+- [[papers/lahoti2026-mamba3-analysis]]
+- [[papers/lahoti2026-mamba3-critical]]
+- [[papers/lahoti2026-mamba3-method]]
+- [[papers/lahoti2026-mamba3-results]]
+- [[papers/lee2024-aznas-analysis]]
+- [[papers/lee2024-aznas-critical]]
+- [[papers/lee2024-aznas-method]]
+- [[papers/lee2024-aznas-results]]
+- [[papers/lee2026-skyfall-gs-analysis]]
+- [[papers/lee2026-skyfall-gs-critical]]
+- [[papers/lee2026-skyfall-gs-method]]
+- [[papers/lee2026-skyfall-gs-results]]
+- [[papers/lepikhin2021-gshard-analysis]]
+- [[papers/lepikhin2021-gshard-critical]]
+- [[papers/lepikhin2021-gshard-method]]
+- [[papers/lepikhin2021-gshard-results]]
+- [[papers/leveque2024-all-at-once-rk-analysis]]
+- [[papers/leveque2024-all-at-once-rk-critical]]
+- [[papers/leveque2024-all-at-once-rk-method]]
+- [[papers/leveque2024-all-at-once-rk-results]]
+- [[papers/li2020-incremental-potential-contact-analysis]]
+- [[papers/li2020-incremental-potential-contact-critical]]
+- [[papers/li2020-incremental-potential-contact-method]]
+- [[papers/li2020-incremental-potential-contact-results]]
+- [[papers/li2021-bossnas-analysis]]
+- [[papers/li2021-bossnas-critical]]
+- [[papers/li2021-bossnas-method]]
+- [[papers/li2021-bossnas-results]]
+- [[papers/li2022-bfemp-analysis]]
+- [[papers/li2022-bfemp-critical]]
+- [[papers/li2022-bfemp-method]]
+- [[papers/li2022-bfemp-results]]
+- [[papers/li2025-functional-scaling-laws-analysis]]
+- [[papers/li2025-functional-scaling-laws-critical]]
+- [[papers/li2025-functional-scaling-laws-method]]
+- [[papers/li2025-functional-scaling-laws-results]]
+- [[papers/li2025-girder-dynamic-pinn-analysis]]
+- [[papers/li2025-girder-dynamic-pinn-critical]]
+- [[papers/li2025-girder-dynamic-pinn-method]]
+- [[papers/li2025-girder-dynamic-pinn-results]]
+- [[papers/li2025-localized-waves-pinn-analysis]]
+- [[papers/li2025-localized-waves-pinn-critical]]
+- [[papers/li2025-localized-waves-pinn-method]]
+- [[papers/li2025-localized-waves-pinn-results]]
+- [[papers/li2025-movingload-pinn-analysis]]
+- [[papers/li2025-movingload-pinn-critical]]
+- [[papers/li2025-movingload-pinn-method]]
+- [[papers/li2025-movingload-pinn-results]]
+- [[papers/li2025-node-onet-analysis]]
+- [[papers/li2025-node-onet-critical]]
+- [[papers/li2025-node-onet-method]]
+- [[papers/li2025-node-onet-results]]
+- [[papers/li2026-exsgd-analysis]]
+- [[papers/li2026-exsgd-critical]]
+- [[papers/li2026-exsgd-method]]
+- [[papers/li2026-exsgd-results]]
+- [[papers/li2026-sgno-analysis]]
+- [[papers/li2026-sgno-critical]]
+- [[papers/li2026-sgno-method]]
+- [[papers/li2026-sgno-results]]
+- [[papers/linka2022-bayesian-pinn-analysis]]
+- [[papers/linka2022-bayesian-pinn-critical]]
+- [[papers/linka2022-bayesian-pinn-method]]
+- [[papers/linka2022-bayesian-pinn-results]]
+- [[papers/list2025-unrolled-training-analysis]]
+- [[papers/list2025-unrolled-training-critical]]
+- [[papers/list2025-unrolled-training-method]]
+- [[papers/list2025-unrolled-training-results]]
+- [[papers/liu2025-incompressible-crack-mpm-analysis]]
+- [[papers/liu2025-incompressible-crack-mpm-critical]]
+- [[papers/liu2025-incompressible-crack-mpm-method]]
+- [[papers/liu2025-incompressible-crack-mpm-results]]
+- [[papers/liu2025-site-response-pinn-analysis]]
+- [[papers/liu2025-site-response-pinn-critical]]
+- [[papers/liu2025-site-response-pinn-method]]
+- [[papers/liu2025-site-response-pinn-results]]
+- [[papers/lu2013-collapse-rc-highrise-analysis]]
+- [[papers/lu2013-collapse-rc-highrise-critical]]
+- [[papers/lu2013-collapse-rc-highrise-method]]
+- [[papers/lu2013-collapse-rc-highrise-results]]
+- [[papers/luo2025-pinn-pde-review-analysis]]
+- [[papers/luo2025-pinn-pde-review-critical]]
+- [[papers/luo2025-pinn-pde-review-method]]
+- [[papers/luo2025-pinn-pde-review-results]]
+- [[papers/maimon2026-sparse-dense-analysis]]
+- [[papers/maimon2026-sparse-dense-critical]]
+- [[papers/maimon2026-sparse-dense-method]]
+- [[papers/maimon2026-sparse-dense-results]]
+- [[papers/mandl2025-separable-pi-deeponet-analysis]]
+- [[papers/mandl2025-separable-pi-deeponet-critical]]
+- [[papers/mandl2025-separable-pi-deeponet-method]]
+- [[papers/mandl2025-separable-pi-deeponet-results]]
+- [[papers/melenk2021-rkcq-superconvergence-analysis]]
+- [[papers/melenk2021-rkcq-superconvergence-critical]]
+- [[papers/melenk2021-rkcq-superconvergence-method]]
+- [[papers/melenk2021-rkcq-superconvergence-results]]
+- [[papers/meng2026-seisgpt-analysis]]
+- [[papers/meng2026-seisgpt-critical]]
+- [[papers/meng2026-seisgpt-method]]
+- [[papers/meng2026-seisgpt-results]]
+- [[papers/moseley2023-fbpinn-analysis]]
+- [[papers/moseley2023-fbpinn-critical]]
+- [[papers/moseley2023-fbpinn-method]]
+- [[papers/moseley2023-fbpinn-results]]
+- [[papers/musaelian2023-allegro-analysis]]
+- [[papers/musaelian2023-allegro-critical]]
+- [[papers/musaelian2023-allegro-method]]
+- [[papers/musaelian2023-allegro-results]]
+- [[papers/pantidis2026-ifenn-phase-field-analysis]]
+- [[papers/pantidis2026-ifenn-phase-field-critical]]
+- [[papers/pantidis2026-ifenn-phase-field-method]]
+- [[papers/pantidis2026-ifenn-phase-field-results]]
+- [[papers/park2024-sevennet-parallel-gnn-ip-analysis]]
+- [[papers/park2024-sevennet-parallel-gnn-ip-critical]]
+- [[papers/park2024-sevennet-parallel-gnn-ip-method]]
+- [[papers/park2024-sevennet-parallel-gnn-ip-results]]
+- [[papers/penwarden2024-kolmogorov-n-width-piml-analysis]]
+- [[papers/penwarden2024-kolmogorov-n-width-piml-critical]]
+- [[papers/penwarden2024-kolmogorov-n-width-piml-method]]
+- [[papers/penwarden2024-kolmogorov-n-width-piml-results]]
+- [[papers/raissi2019-pinn-analysis]]
+- [[papers/raissi2019-pinn-critical]]
+- [[papers/raissi2019-pinn-method]]
+- [[papers/raissi2019-pinn-results]]
+- [[papers/rathore2024-pinn-loss-landscape-analysis]]
+- [[papers/rathore2024-pinn-loss-landscape-critical]]
+- [[papers/rathore2024-pinn-loss-landscape-method]]
+- [[papers/rathore2024-pinn-loss-landscape-results]]
+- [[papers/real2020-automl-zero-analysis]]
+- [[papers/real2020-automl-zero-critical]]
+- [[papers/real2020-automl-zero-method]]
+- [[papers/real2020-automl-zero-results]]
+- [[papers/ronneberger2015-unet-analysis]]
+- [[papers/ronneberger2015-unet-critical]]
+- [[papers/ronneberger2015-unet-method]]
+- [[papers/ronneberger2015-unet-results]]
+- [[papers/ru2020-nago-analysis]]
+- [[papers/ru2020-nago-critical]]
+- [[papers/ru2020-nago-method]]
+- [[papers/ru2020-nago-results]]
+- [[papers/schadle2006-fast-convolution-quadrature-analysis]]
+- [[papers/schadle2006-fast-convolution-quadrature-critical]]
+- [[papers/schadle2006-fast-convolution-quadrature-method]]
+- [[papers/schadle2006-fast-convolution-quadrature-results]]
+- [[papers/serianni2023-training-free-nas-rnn-transformers-analysis]]
+- [[papers/serianni2023-training-free-nas-rnn-transformers-critical]]
+- [[papers/serianni2023-training-free-nas-rnn-transformers-method]]
+- [[papers/serianni2023-training-free-nas-rnn-transformers-results]]
+- [[papers/so2021-primer-analysis]]
+- [[papers/so2021-primer-critical]]
+- [[papers/so2021-primer-method]]
+- [[papers/so2021-primer-results]]
+- [[papers/sojitra2026-fedonet-analysis]]
+- [[papers/sojitra2026-fedonet-critical]]
+- [[papers/sojitra2026-fedonet-method]]
+- [[papers/sojitra2026-fedonet-results]]
+- [[papers/song2025-rl-pinns-analysis]]
+- [[papers/song2025-rl-pinns-critical]]
+- [[papers/song2025-rl-pinns-method]]
+- [[papers/song2025-rl-pinns-results]]
+- [[papers/sun2019-hrnetv2-analysis]]
+- [[papers/sun2019-hrnetv2-critical]]
+- [[papers/sun2019-hrnetv2-method]]
+- [[papers/sun2019-hrnetv2-results]]
+- [[papers/tao2026-fpikan]]
+- [[papers/tesan2025-under-reaching-analysis]]
+- [[papers/tesan2025-under-reaching-critical]]
+- [[papers/tesan2025-under-reaching-method]]
+- [[papers/tesan2025-under-reaching-results]]
+- [[papers/wang2020-hat-analysis]]
+- [[papers/wang2020-hat-critical]]
+- [[papers/wang2020-hat-method]]
+- [[papers/wang2020-hat-results]]
+- [[papers/wang2021-pinn-ntk-failure-analysis]]
+- [[papers/wang2021-pinn-ntk-failure-critical]]
+- [[papers/wang2021-pinn-ntk-failure-method]]
+- [[papers/wang2021-pinn-ntk-failure-results]]
+- [[papers/wang2023-pinn-spurious-analysis]]
+- [[papers/wang2023-pinn-spurious-critical]]
+- [[papers/wang2023-pinn-spurious-method]]
+- [[papers/wang2023-pinn-spurious-results]]
+- [[papers/wang2024-causal-pinn-analysis]]
+- [[papers/wang2024-causal-pinn-critical]]
+- [[papers/wang2024-causal-pinn-method]]
+- [[papers/wang2024-causal-pinn-results]]
+- [[papers/wang2024-kinn-analysis]]
+- [[papers/wang2024-kinn-critical]]
+- [[papers/wang2024-kinn-method]]
+- [[papers/wang2024-kinn-results]]
+- [[papers/wang2024-nas-pinn-analysis]]
+- [[papers/wang2024-nas-pinn-critical]]
+- [[papers/wang2024-nas-pinn-method]]
+- [[papers/wang2024-nas-pinn-results]]
+- [[papers/wu2025-cm-pinn-analysis]]
+- [[papers/wu2025-cm-pinn-critical]]
+- [[papers/wu2025-cm-pinn-method]]
+- [[papers/wu2025-cm-pinn-results]]
+- [[papers/xie2021-segformer-analysis]]
+- [[papers/xie2021-segformer-critical]]
+- [[papers/xie2021-segformer-method]]
+- [[papers/xie2021-segformer-results]]
+- [[papers/xiong2025-confseq-analysis]]
+- [[papers/xiong2025-confseq-critical]]
+- [[papers/xiong2025-confseq-method]]
+- [[papers/xiong2025-confseq-results]]
+- [[papers/xu2021-nas-bert-analysis]]
+- [[papers/xu2021-nas-bert-critical]]
+- [[papers/xu2021-nas-bert-method]]
+- [[papers/xu2021-nas-bert-results]]
+- [[papers/yu2024-xpbi-analysis]]
+- [[papers/yu2024-xpbi-critical]]
+- [[papers/yu2024-xpbi-method]]
+- [[papers/yu2024-xpbi-results]]
+- [[papers/zeraatkar2026-pgt-analysis]]
+- [[papers/zeraatkar2026-pgt-critical]]
+- [[papers/zeraatkar2026-pgt-method]]
+- [[papers/zeraatkar2026-pgt-results]]
+- [[papers/zhang2020-phylstm-analysis]]
+- [[papers/zhang2020-phylstm-critical]]
+- [[papers/zhang2020-phylstm-method]]
+- [[papers/zhang2020-phylstm-results]]
+- [[papers/zhang2025-mrf-pinn]]
+- [[papers/zhang2026-legonet-analysis]]
+- [[papers/zhang2026-legonet-critical]]
+- [[papers/zhang2026-legonet-method]]
+- [[papers/zhang2026-legonet-results]]
+- [[papers/zhao2017-pspnet-analysis]]
+- [[papers/zhao2017-pspnet-critical]]
+- [[papers/zhao2017-pspnet-method]]
+- [[papers/zhao2017-pspnet-results]]
+- [[papers/zhao2021-memory-efficient-dnas-analysis]]
+- [[papers/zhao2021-memory-efficient-dnas-critical]]
+- [[papers/zhao2021-memory-efficient-dnas-method]]
+- [[papers/zhao2021-memory-efficient-dnas-results]]
+- [[papers/zhao2021-structural-drawing-bim-analysis]]
+- [[papers/zhao2021-structural-drawing-bim-critical]]
+- [[papers/zhao2021-structural-drawing-bim-method]]
+- [[papers/zhao2021-structural-drawing-bim-results]]
+- [[papers/zhao2026-causal-attention-analysis]]
+- [[papers/zhao2026-causal-attention-critical]]
+- [[papers/zhao2026-causal-attention-method]]
+- [[papers/zhao2026-causal-attention-results]]
+- [[papers/zhao2026-unified-sparse-mpm-analysis]]
+- [[papers/zhao2026-unified-sparse-mpm-critical]]
+- [[papers/zhao2026-unified-sparse-mpm-method]]
+- [[papers/zhao2026-unified-sparse-mpm-results]]
+- [[papers/zhou2025-learnable-physics-engine-analysis]]
+- [[papers/zhou2025-learnable-physics-engine-critical]]
+- [[papers/zhou2025-learnable-physics-engine-method]]
+- [[papers/zhou2025-learnable-physics-engine-results]]
