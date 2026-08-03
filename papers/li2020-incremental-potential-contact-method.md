@@ -22,6 +22,8 @@ confidence: high
 
 # IPC 方法机制
 
+以下方法机制均依据论文全文整理。^[sources/papers/li2020-incremental-potential-contact.md]
+
 ## 1. 增量势时间推进
 
 对每个时间步，IPC 将隐式 Euler 或 Newmark 更新写成关于新节点位置 $x$ 的增量势最小化。动力学、外力和超弹性统一进入 $E(x)$，接触通过障碍势加入。
