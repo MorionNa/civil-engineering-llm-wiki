@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -109,5 +109,9 @@ confidence: high
 - [[sources/papers/zhao2026-causal-attention]]
 - [[sources/papers/zhao2026-unified-sparse-mpm]]
 - [[sources/papers/zhou2025-learnable-physics-engine]]
+
+- [[sources/papers/du2024-embedded-ipc]]
+- [[sources/papers/plasticitynet-2022]]
+- [[sources/papers/trinh2024-alphageometry]]
 
 <!-- AUTO-REGISTRY:END -->

@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-04'
 confidence: high
 ---
 
@@ -27,6 +27,21 @@ confidence: high
 - **操作记录：** [[log]]
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
+
+## 最新补齐：材料学习、约化接触与可验证推理
+
+- [[plasticitynet-2022-analysis]] — PlasticityNet：学习局部弹塑性势并嵌入优化时间积分。
+- [[plasticitynet-2022-method]] — 局部势能、固定点塑性更新与材料模型接口。
+- [[plasticitynet-2022-critical]] — 泛化、训练数据、材料覆盖和工程验证边界。
+- [[plasticitynet]] — PlasticityNet 实体页。
+- [[du2024-embedded-ipc-analysis]] — Embedded IPC：粗弹性状态与细碰撞表面的约化无穿透仿真。
+- [[du2024-embedded-ipc-method]] — 线性嵌入、约化 Hessian、IPC 障碍势、CCD/ACCD 线搜索。
+- [[du2024-embedded-ipc-critical]] — 锁定、启发式嵌入、拓扑变化与建筑倒塌迁移边界。
+- [[embedded-ipc]] — Embedded IPC 实体页。
+- [[trinh2024-alphageometry-analysis]] — AlphaGeometry：合成证明数据与神经–符号辅助构造搜索。
+- [[trinh2024-alphageometry-method]] — DD+AR、traceback、dependency difference 与交替证明搜索。
+- [[trinh2024-alphageometry-critical]] — 专用形式语言、计算成本、证明可读性与跨域迁移限制。
+- [[alphageometry]] — AlphaGeometry 实体页。
 
 ## 最新知识链：高鲁棒接触、异构耦合、约束粒子与高效 MPM
 
