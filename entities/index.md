@@ -173,4 +173,25 @@ confidence: high
 
 - [[entities/hybrid-structural-drawing-to-ifc]] — Hybrid Structural-Drawing-to-IFC Pipeline
 
+- [[entities/alphageometry]]
+- [[entities/alphageometry-synthetic]]
+- [[entities/atlas-lean]]
+- [[entities/autoformbot]]
+- [[entities/chihadeh-implicit-mpm-fem]]
+- [[entities/eed-score]]
+- [[entities/formalphysics]]
+- [[entities/formalscience]]
+- [[entities/hartree-fock-llm-prompting]]
+- [[entities/heplean-index-notation]]
+- [[entities/kang-beam-particle]]
+- [[entities/lean-dimensional-analysis]]
+- [[entities/leanmarathon]]
+- [[entities/lian-local-multimesh-contact]]
+- [[entities/lv-phase-field-gimp]]
+- [[entities/marj]]
+- [[entities/oropeza-microplane-damage]]
+- [[entities/phybench]]
+- [[entities/ugphysics]]
+- [[entities/wu-llm-autoformalization]]
+
 <!-- AUTO-REGISTRY:END -->

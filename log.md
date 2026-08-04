@@ -210,3 +210,13 @@ confidence: high
 - Added 14 canonical source-note stubs and registered all imported pages in the section indexes.
 - Preserved local transfer audits and negative evidence; imported pages remain `draft` until canonical source verification.
 - Added the message-passing, spectral-bias and parallel-computing tags to the controlled taxonomy.
+
+## [2026-08-04] merge | Import 16 full-text papers from the local workspace
+
+
+- Added 16 canonical source notes under `sources/papers/` and immutable raw source manifests under `raw/papers/`.
+- Added 64 strict `analysis + method + results + critical` paper pages under `papers/`.
+- Added 20 reusable entity pages under `entities/`; flat paths were normalized to match the target repository.
+- Rebuilt imported frontmatter to the target schema and added persistent provenance markers.
+- Registered all imported pages in the papers, entities and sources indexes; target MkDocs symlink navigation remains unchanged.
+- Evidence scope is full text; no independent reproduction is claimed.

@@ -18,6 +18,7 @@ Thumbs.db
 
 # Raw sources (copyright)
 raw/
+*.pdf
 
 # Video processing artifacts
 processed/

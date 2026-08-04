@@ -103,6 +103,16 @@ confidence: high
 - [[comparisons/cycle36_pdps_mco_literature_20260803]] — PDPS/MCO 文献比较。
 - [[notes/ingest-v20-rk4z-2026-08-01]] — V20-RK4Z 研究记录。
 
+
+## Batch Ingest — 16 Full-Text Papers (2026-08-04)
+
+本批次从当前工作区提供的 16 份完整 PDF 建立 16 个 canonical source notes、64 个 1+3 论文页面和 20 个可复用实体页；原始 PDF 保留在本地工作区，仓库只提交不可变来源记录。
+
+- [[papers/index]]
+- [[sources/index]]
+- [[entities/index]]
+- [[log]]
+
 ## Maintenance Rules
 
 1. 新论文先创建 raw source record 与 canonical source note，再完成中文 1+3 页面并创建/更新实体与概念。

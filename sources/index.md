@@ -110,4 +110,21 @@ confidence: high
 - [[sources/papers/zhao2026-unified-sparse-mpm]]
 - [[sources/papers/zhou2025-learnable-physics-engine]]
 
+- [[sources/papers/bobbin2025-dimensional-analysis]]
+- [[sources/papers/chihadeh2023-implicit-mpm-fem-fracture]]
+- [[sources/papers/kang2022-beam-contact-mpm]]
+- [[sources/papers/lian2011-mpm-fem-coupling]]
+- [[sources/papers/lu2026-language-agents-physics]]
+- [[sources/papers/lv2025-phase-field-gimp-fracture]]
+- [[sources/papers/meadows2026-formalscience]]
+- [[sources/papers/oropeza-navarro2024-microplane-damage]]
+- [[sources/papers/pan2025-quantum-many-body-llm]]
+- [[sources/papers/qiu2025-phybench]]
+- [[sources/papers/rammal2026-autoformbot-atlas]]
+- [[sources/papers/tooby-smith2024-physics-index-notation]]
+- [[sources/papers/trinh2024-alphageometry]]
+- [[sources/papers/wu2022-llm-autoformalization]]
+- [[sources/papers/xu2025-ugphysics]]
+- [[sources/papers/zhang2026-leanmarathon]]
+
 <!-- AUTO-REGISTRY:END -->
