@@ -220,3 +220,9 @@ confidence: high
 - Rebuilt imported frontmatter to the target schema and added persistent provenance markers.
 - Registered all imported pages in the papers, entities and sources indexes; target MkDocs symlink navigation remains unchanged.
 - Evidence scope is full text; no independent reproduction is claimed.
+
+## [2026-08-04] repair | Restore full MkDocs section navigation
+
+- Added immutable docs links for `concepts/` and `sources/` so their indexes and pages are published.
+- Added docs links for the two root-level Notes pages that were present in the wiki but absent from the deployed site.
+- The repair changes only the publication mapping; knowledge-page contents remain unchanged.
