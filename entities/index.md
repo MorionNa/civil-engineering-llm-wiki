@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-06'
 confidence: high
 ---
 
@@ -42,6 +42,7 @@ confidence: high
 - [[cm-pinns]] — 本构模型约束 PINN。
 - [[phylstm2]] — 双 LSTM 物理约束滞回元模型。
 - [[phylstm3]] — 三 LSTM 增强物理约束滞回元模型。
+- [[qpinn-rar]] — 参数化量子线路与残差自适应加点结合的物理信息 PDE 求解模型。
 
 <!-- AUTO-REGISTRY:START -->
 
@@ -140,6 +141,7 @@ confidence: high
 - [[entities/primer]] ? Primer
 - [[entities/pseudo-time-stepping]] ? Pseudo Time Stepping
 - [[entities/pspnet]] ? PSPNet
+- [[entities/qpinn-rar]] ? QPINN-RAR — 残差自适应量子物理信息神经网络
 - [[entities/raj2026-history-dependent-constitutive]] ? Raj et al. (2026) — History-Dependent Constitutive Laws and Identifiability
 - [[entities/residual-error-corrector-2024]] ? Residual-Based Error Corrector Operator：残差线性变分校正器
 - [[entities/rl-adaptive-loss-control-pinn]] ? RL Adaptive Loss Control for PINN
