@@ -7,13 +7,20 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-06'
 confidence: high
 ---
 
 # Papers Index
 
 > 全文论文采用 `analysis + method + results + critical` 的 1+3 结构。此页提供完整论文分区注册表；具体页面也可通过站内搜索和交叉 wikilink 到达。
+
+## 量子物理信息网络与自适应采样
+
+- [[li2026-qpinn-rar-analysis]] — QPINN-RAR 总体分析、证据边界与结构动力迁移。
+- [[li2026-qpinn-rar-method]] — 混合量子—经典网络、物理损失、RAR 与复现参数。
+- [[li2026-qpinn-rar-results]] — 三组 PDE 表格结果、均值/标准差与公式一致性警报。
+- [[li2026-qpinn-rar-critical]] — Negative Knowledge、量子优势边界与研究机会。
 
 ## 建筑结构图纸解析与 BIM
 
@@ -186,6 +193,10 @@ confidence: high
 - [[papers/li2026-exsgd-critical]]
 - [[papers/li2026-exsgd-method]]
 - [[papers/li2026-exsgd-results]]
+- [[papers/li2026-qpinn-rar-analysis]]
+- [[papers/li2026-qpinn-rar-critical]]
+- [[papers/li2026-qpinn-rar-method]]
+- [[papers/li2026-qpinn-rar-results]]
 - [[papers/li2026-sgno-analysis]]
 - [[papers/li2026-sgno-critical]]
 - [[papers/li2026-sgno-method]]
