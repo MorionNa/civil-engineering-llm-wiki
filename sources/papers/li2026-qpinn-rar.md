@@ -10,7 +10,7 @@ tags:
 - evidence/paper
 keywords:
 - quantum-physics-informed-neural-network
-- qpin
+- qpinn
 - residual-based-adaptive-refinement
 - adaptive-collocation
 - parametrized-quantum-circuit
@@ -71,4 +71,5 @@ contradictions:
 - [[papers/li2026-qpinn-rar-results]]
 - [[papers/li2026-qpinn-rar-critical]]
 - [[entities/qpinn-rar]]
+- [[concepts/residual-based-adaptive-refinement]]
 - [[concepts/adaptive-sampling-pinn]]
