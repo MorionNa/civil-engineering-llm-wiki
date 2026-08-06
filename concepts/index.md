@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-03'
+updated: '2026-08-06'
 confidence: high
 ---
 
@@ -19,6 +19,7 @@ confidence: high
 
 - [[concepts/active-node-compact-indexing]] ? 活跃节点紧凑索引 — 物理网格坐标与存储位置解耦
 - [[concepts/adaptive-sampling-pinn]] ? Adaptive Sampling Pinn
+- [[concepts/residual-based-adaptive-refinement]] ? Residual-Based Adaptive Refinement（RAR）— 残差驱动的物理信息采样加密
 - [[concepts/ca1]] ? Ca1
 - [[concepts/ca3]] ? Ca3
 - [[concepts/ccd-filtered-feasible-line-search]] ? CCD 过滤的可行线搜索 — 让每个 Newton 步保持无碰撞

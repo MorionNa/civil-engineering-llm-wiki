@@ -7,11 +7,24 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-06-28'
-updated: '2026-08-03'
+updated: '2026-08-06'
 confidence: high
 ---
 
 # Wiki Log
+
+## [2026-08-06] ingest | Li et al. (2026) — QPINN-RAR
+
+- Source: user-provided `lb19-wv6f.pdf`, Physical Review Research 8, 033042 (2026), DOI 10.1103/lb19-wv6f.
+- Preserved immutable source metadata, exact file size and SHA-256 under `raw/papers/li2026-qpinn-rar-source.md`.
+- Created canonical source note `sources/papers/li2026-qpinn-rar.md` with full-text evidence scope and an explicit evidence map.
+- Created the complete Chinese `analysis + method + results + critical` paper family.
+- Created `entities/qpinn-rar.md` and `concepts/residual-based-adaptive-refinement.md`.
+- Recorded the hybrid quantum–classical architecture, five-qubit PQC, physics loss, RAR loop, optimization settings and ten-run numerical tables.
+- Preserved the paper's internal equation-consistency warning for the example labelled as a diffusion equation.
+- Preserved Negative Knowledge: parameter reduction is not equivalent to quantum acceleration, simulator evidence is not real-hardware validation, and analytic PDE benchmarks are not engineering validation.
+- Distinguished direct paper conclusions from structural-dynamics migration inferences.
+- Updated exhaustive paper/source/entity/concept registries, the root knowledge map and web-navigation inputs.
 
 ## [2026-08-03] ingest | Zhao et al. (2021) — Structural drawings to IFC BIM
 
@@ -212,7 +225,6 @@ confidence: high
 - Added the message-passing, spectral-bias and parallel-computing tags to the controlled taxonomy.
 
 ## [2026-08-04] merge | Import 16 full-text papers from the local workspace
-
 
 - Added 16 canonical source notes under `sources/papers/` and immutable raw source manifests under `raw/papers/`.
 - Added 64 strict `analysis + method + results + critical` paper pages under `papers/`.

@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-31'
-updated: '2026-08-03'
+updated: '2026-08-06'
 confidence: high
 ---
 
@@ -59,6 +59,7 @@ confidence: high
 - [[sources/papers/li2025-movingload-pinn]]
 - [[sources/papers/li2025-node-onet]]
 - [[sources/papers/li2026-exsgd]]
+- [[sources/papers/li2026-qpinn-rar]]
 - [[sources/papers/li2026-sgno]]
 - [[sources/papers/linka2022-bayesian-pinn]]
 - [[sources/papers/list2025-unrolled-training]]
