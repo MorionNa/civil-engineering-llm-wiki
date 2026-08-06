@@ -7,7 +7,7 @@ project: civil-engineering-llm-wiki
 tags: []
 sources: []
 created: '2026-07-16'
-updated: '2026-08-03'
+updated: '2026-08-06'
 confidence: high
 ---
 
@@ -27,6 +27,16 @@ confidence: high
 - **操作记录：** [[log]]
 
 所有页面通过上述分区索引、wikilink 和站内搜索可达。`mkdocs.yml` 保持精选导航，完整侧栏由构建 hook 自动生成。
+
+## 最新知识链：QPINN-RAR 与残差自适应加点
+
+- [[li2026-qpinn-rar-analysis]] — 量子物理信息网络、残差自适应采样、证据边界与结构动力迁移。
+- [[li2026-qpinn-rar-method]] — 经典前后处理、五量子比特 PQC、物理损失、RAR、Adam→L-BFGS 与复现参数。
+- [[li2026-qpinn-rar-results]] — Burgers、论文标为扩散方程的算例和三维热方程结果，并保留公式一致性警报。
+- [[li2026-qpinn-rar-critical]] — 参数效率不等于量子加速、真实硬件与工程迁移边界。
+- [[qpinn-rar]] — QPINN-RAR 模型实体。
+- [[residual-based-adaptive-refinement]] — 残差驱动的物理信息配置点加密机制。
+- [[sources/papers/li2026-qpinn-rar]] — Canonical source note 与证据地图。
 
 ## 最新知识链：高鲁棒接触、异构耦合、约束粒子与高效 MPM
 
@@ -102,7 +112,6 @@ confidence: high
 - [[comparisons/mtp-mechconv-v2-evidence]] — 结构可达域与 halo 证据对照。
 - [[comparisons/cycle36_pdps_mco_literature_20260803]] — PDPS/MCO 文献比较。
 - [[notes/ingest-v20-rk4z-2026-08-01]] — V20-RK4Z 研究记录。
-
 
 ## Batch Ingest — 16 Full-Text Papers (2026-08-04)
 
